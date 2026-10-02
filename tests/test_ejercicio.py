@@ -43,6 +43,24 @@ def test_minimo_comentarios_y_componentes_del_tema():
     assert ej.componentes_del_tema({"componente": ej.FUERA}) == [ej.FUERA]
 
 
+def test_copia_anonimizada(tmp_path):
+    from openpyxl import Workbook, load_workbook
+    wb = Workbook()
+    ws = wb.active
+    ws.append(["ID", "Correo electrónico", "Nombre", "¿Qué ajustaría?", "Tema principal (Jev)"])
+    ws.append([7, "ana@x.co", "Ana Pérez", "Que el profesor Juan explique mejor", "Docentes"])
+    ws.append([8, "luis@x.co", "Luis Gómez", None, "(sin comentario)"])
+    ruta = tmp_path / "Clasificacion_Prueba.xlsx"
+    wb.save(ruta)
+    com = pd.DataFrame({"id_resp": [7, 8], "comentario_anon": ["Que el profesor [PERSONA] explique mejor", ""]})
+    destino = ej.copia_anonimizada(ruta, "¿Qué ajustaría?", com)
+    assert destino.name == "Clasificacion_Prueba_anonimizado.xlsx"
+    filas = list(load_workbook(destino).active.iter_rows(min_row=2, values_only=True))
+    assert filas[0] == (7, "[CORREO]", "[NOMBRE]", "Que el profesor [PERSONA] explique mejor", "Docentes")
+    assert filas[1] == (8, "[CORREO]", "[NOMBRE]", None, "(sin comentario)")
+    assert load_workbook(ruta).active.cell(row=2, column=3).value == "Ana Pérez"   # el original no se toca
+
+
 def test_slug_y_nombres():
     fechas = ["2026-08-19", "2026-08-18"]
     assert ej.slug_ejercicio("Ubaté", fechas, "UC para la Vida") == "ubate_2026-08-18_a_2026-08-19_uc_para_la_vida"

@@ -36,7 +36,7 @@ Usa siempre `.venv\Scripts\python.exe`. Para varios ejercicios a la vez: `python
 - **Privacidad (Ley 1581 de 2012):**
   - a Jev y a ti solo llega texto anonimizado;
   - nunca imprimas Nombre ni Correo en el chat;
-  - el Excel de clasificación es solo para uso local.
+  - el Excel de clasificación es solo para uso local; lo que se comparte o publica es su copia `…_anonimizado.xlsx`.
 - **Clave de TypeSafe:** se lee de `.env` y nunca se imprime.
 - **Modelo fijo:** `jev-1.13.0` (`config/params.yaml`), nunca `jev-latest`.
 - **No borres nada sin confirmar.** Antes de regenerar con temas distintos, respalda los Excel en `outputs/<transformación>/version_N/`.
@@ -65,11 +65,15 @@ El remoto es `https://github.com/Nicolaserd/Planeacion_estrategica_transformacio
 git config core.hooksPath .githooks
 ```
 **Nunca se suben** (decisión de Nicolás, 2026-10-02; ya están en `.gitignore`):
-- datos con Nombre o Correo: `data/`, `outputs/` y cualquier `Experiencia*.xlsx` de Forms;
+- datos con Nombre o Correo: `data/`, los Excel de clasificación originales (`outputs/**/Clasificacion_*.xlsx`) y cualquier `Experiencia*.xlsx` de Forms;
 - `cache/` y `.env`;
 - el PDF "06. PLAN ESTRATÉGICO 2027-2037…".
 
-Antes de cada commit, revisa con `git diff --cached --name-only` que no se cuele nada de eso. Todo lo que se suba debe estar anonimizado.
+**De `outputs/` se suben** los Excel de temas y las **copias anonimizadas** de clasificación (`…_anonimizado.xlsx`):
+- `exportar` genera la copia automáticamente;
+- para versiones anteriores se usa `python scripts/anonimizar_outputs.py`.
+
+Antes de cada commit, revisa con `git diff --cached --name-only` que no se cuele nada de lo excluido. Todo lo que se suba debe estar anonimizado.
 
 ### La carpeta `.claude/` no se toca sin preguntar
 **Antes de crear, editar o borrar cualquier archivo en `.claude/`**, pide aprobación a Nicolás. Esto incluye este `CLAUDE.md`, las reglas, los hooks y la configuración. El hook `.claude/hooks/proteger_carpeta_claude.py` lo exige: ante un `Edit`, `Write` o un comando que escriba en `.claude/`, responde "ask" y Claude Code pide confirmación. `docs/` y el resto del proyecto no requieren aprobación.

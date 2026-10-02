@@ -26,7 +26,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import yaml
-from openpyxl import Workbook
+from openpyxl import Workbook, load_workbook
 from openpyxl.formatting.rule import ColorScaleRule
 from openpyxl.utils import get_column_letter
 
@@ -121,6 +121,33 @@ def nombre_hoja(unidad: str, fechas: list[str]) -> str:
     else:
         txt = f"{d[0].day} {MESES[d[0].month - 1]}-{d[-1].day} {MESES[d[-1].month - 1]} {d[-1].year}"
     return re.sub(r"[\[\]:*?/\\]", " ", f"{unidad} {txt}")[:31].strip()
+
+
+def copia_anonimizada(ruta: Path, columna_comentario: str, com: pd.DataFrame) -> Path:
+    """Copia del Excel de clasificación apta para publicar, con el mismo formato y las mismas columnas.
+
+    Nombre pasa a "[NOMBRE]", el correo a "[CORREO]" y el comentario original a su versión anonimizada
+    (`comentario_anon`). Se guarda junto al original como <nombre>_anonimizado.xlsx.
+    """
+    anon = dict(zip(com["id_resp"].astype(int), com["comentario_anon"]))
+    wb = load_workbook(ruta)
+    ws = wb.active
+    enc = {ws.cell(row=1, column=j).value: j for j in range(1, ws.max_column + 1)}
+    personales = {j: "[CORREO]" if slug(str(h)).startswith("correo") else "[NOMBRE]"
+                  for h, j in enc.items() if h and (slug(str(h)).startswith("correo") or slug(str(h)) == "nombre")}
+    j_id, j_com = enc["ID"], enc[columna_comentario]
+    for i in range(2, ws.max_row + 1):
+        id_resp = int(ws.cell(row=i, column=j_id).value)
+        if id_resp not in anon:
+            raise SystemExit(f"{ruta.name}: el ID {id_resp} no está en comentarios.parquet; no se puede anonimizar")
+        for j, marca in personales.items():
+            if ws.cell(row=i, column=j).value not in (None, ""):
+                ws.cell(row=i, column=j).value = marca
+        if ws.cell(row=i, column=j_com).value not in (None, ""):
+            ws.cell(row=i, column=j_com).value = anon[id_resp] or None
+    destino = ruta.with_name(f"{ruta.stem}_anonimizado.xlsx")
+    wb.save(destino)
+    return destino
 
 
 def filtrar(df: pd.DataFrame, mapeo: dict, unidad: str, fechas: list[str], transformacion: str,
@@ -503,6 +530,7 @@ def exportar(slug_ej: str):
     ws2.conditional_formatting.add(f"{letra}2:{get_column_letter(j_temas[-1])}{ult2}", ColorScaleRule(**ESCALA_CONF))
     ruta2 = carpeta / ficha["archivos_salida"]["clasificacion"]
     wb2.save(ruta2)
+    ruta2_anon = copia_anonimizada(ruta2, col_com, cls)   # la que se puede publicar
 
     # Verificaciones
     assert len(filas2) == N == len(enc), "Excel 2: no tiene una fila por respuesta"
@@ -513,7 +541,8 @@ def exportar(slug_ej: str):
     assert sum(v is not None for f in filas2 for v in f[j_pct:]) == n_asig, "Excel 2: las columnas de tema no cuadran"
     bitacora(slug_ej, f"exportar: {ruta1.name} (1 hoja, {len(lista)} temas, {n_asig} asignaciones, {sin_tema} sin tema) y "
                       f"{ruta2.name} (1 hoja '{ws2.title}', {len(filas2)} filas = respuestas, una columna por tema; incluye "
-                      "Nombre y Correo: archivo solo para uso local).")
+                      f"Nombre y Correo: archivo solo para uso local) y su copia publicable {ruta2_anon.name} (sin Nombre ni "
+                      "Correo, comentario anonimizado).")
     print(json.dumps({"temas": ruta1.name, "clasificacion": ruta2.name, "hoja": ws2.title, "filas_excel2": len(filas2),
                       "asignaciones": n_asig, "sin_tema": sin_tema}, ensure_ascii=False, indent=1))
 

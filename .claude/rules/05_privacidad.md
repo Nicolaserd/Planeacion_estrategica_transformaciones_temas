@@ -8,12 +8,19 @@
 | `data/interim/<slug>/encuesta.parquet` | Sí: todas las columnas de la encuesta | Local; alimenta el Excel 2 |
 | `data/interim/<slug>/comentarios.parquet` | No: texto anonimizado | Es lo único que leen Claude y Jev |
 | `data/interim/<slug>/clasificacion*.parquet` | No | Probabilidades de Jev por comentario |
-| `outputs/**/Clasificacion_*.xlsx` | **Sí: Nombre y Correo** (decisión de Nicolás) | **Solo uso local**, no se comparte fuera del equipo |
-| `outputs/**/Temas_*.xlsx` | No (comentarios anonimizados) | Se puede compartir con el equipo |
+| `outputs/**/Clasificacion_*.xlsx` | **Sí: Nombre, Correo y comentario original** (decisión de Nicolás) | **Solo uso local**: nunca se sube ni se comparte fuera del equipo |
+| `outputs/**/Clasificacion_*_anonimizado.xlsx` | No: "[NOMBRE]", "[CORREO]" y comentario anonimizado | Se publica en el repositorio |
+| `outputs/**/Temas_*.xlsx` | No (comentarios anonimizados) | Se publica en el repositorio |
 | `cache/jev_respuestas.jsonl` | No (texto anonimizado) | Caché de Jev |
 | `.env` | Clave de TypeSafe | Nunca se imprime ni se copia |
 
-`.gitignore` excluye `.env`, `.venv/`, `data/`, `cache/` y `outputs/`.
+El repositorio de GitHub es **público**. `.gitignore` excluye:
+- `.env`, `.venv/`, `data/` y `cache/`;
+- los Excel de clasificación originales;
+- cualquier `Experiencia*.xlsx` de Forms;
+- el PDF del Plan Estratégico.
+
+De `outputs/` solo se suben los Excel de temas y las copias `…_anonimizado.xlsx`.
 
 ## Reglas
 

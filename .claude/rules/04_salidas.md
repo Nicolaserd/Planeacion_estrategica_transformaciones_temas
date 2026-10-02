@@ -48,6 +48,14 @@
   - **Una columna por tema**, en el mismo orden que el Excel 1. Lleva el % de Jev si asignó ese tema y queda vacía si no. Sirve para filtrar "todos los grupos que hablaron de X" o para sumar.
 - **Contiene Nombre y Correo:** es solo para uso local (ver `05_privacidad.md`).
 
+## Copia publicable del Excel 2 (`…_anonimizado.xlsx`)
+
+`exportar` guarda junto al Excel 2 una copia con el mismo formato y las mismas columnas (`ejercicio.copia_anonimizada`):
+- Nombre pasa a "[NOMBRE]" y el correo a "[CORREO]";
+- el comentario original se reemplaza por el anonimizado.
+
+Esa copia es la que se sube al repositorio público y la que se comparte fuera del equipo. Para las versiones anteriores (`version_N/`), o para regenerar las copias, usa `python scripts/anonimizar_outputs.py [filtro]`.
+
 ## Formato (`src/excel_estilo.py`)
 
 - **Encabezado:** fondo azul `1F4E78`, letra blanca en negrita, texto ajustado y bordes grises.

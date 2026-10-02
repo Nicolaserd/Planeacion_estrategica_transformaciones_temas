@@ -2,7 +2,10 @@
 .venv/
 data/
 cache/
-outputs/
+# outputs/ se publica, salvo los Excel de clasificación originales (Nombre, Correo y comentario sin anonimizar):
+# de ellos solo se sube la copia …_anonimizado.xlsx
+outputs/**/Clasificacion_*.xlsx
+!outputs/**/Clasificacion_*_anonimizado.xlsx
 __pycache__/
 .pytest_cache/
 # Configuración personal de Claude Code (cada persona tiene la suya; la del proyecto es .claude/settings.json)
