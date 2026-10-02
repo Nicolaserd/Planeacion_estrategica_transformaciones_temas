@@ -112,7 +112,8 @@ Un **ejercicio** se nombra `unidad_fechas_transformación`, por ejemplo `girardo
 
 ## Reglas de trabajo con git y con Claude
 
-- **Autoría única.** Los commits y los push quedan solo a nombre de quien hace el push, sin coautores ni atribución a Claude. Si el proyecto se pone en git, cada persona ejecuta una vez `git config core.hooksPath .githooks`. Desde ese momento:
+- **Repositorio público.** El proyecto está en `github.com/Nicolaserd/Planeacion_estrategica_transformaciones_temas`. Allí nunca se suben los datos con Nombre o Correo (`data/`, `outputs/`, los Excel de Forms), ni `cache/`, `.env` o el PDF del Plan Estratégico. Ya están excluidos en `.gitignore`.
+- **Autoría única.** Los commits y los push quedan solo a nombre de quien hace el push, sin coautores ni atribución a Claude. Quien clone el repositorio ejecuta una vez `git config core.hooksPath .githooks`. Desde ese momento:
   - el mensaje de cada commit se limpia solo;
   - el push se cancela si incluye commits de otra persona o con coautores.
 - **La carpeta `.claude/` está protegida.** Claude debe pedir aprobación antes de cambiar sus reglas, hooks o configuración.

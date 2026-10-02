@@ -59,11 +59,17 @@ Esto se aplica en tres capas:
 | Hook de Claude (PreToolUse, Bash/PowerShell) | `.claude/hooks/autoria_git.py` | **Bloquea** un `git commit` con coautores, atribución o `--author`, y un `git push` si algún commit por subir es de otro autor o trae coautores |
 | Hooks de git (cualquier persona) | `.githooks/commit-msg` y `.githooks/pre-push` | `commit-msg` **quita** las líneas de coautoría y atribución; `pre-push` **cancela** el push si algún commit es de otro autor o tiene coautores |
 
-El proyecto aún no es un repositorio git. Al inicializarlo, cada persona debe activar los hooks de git una vez:
+### Repositorio (público)
+El remoto es `https://github.com/Nicolaserd/Planeacion_estrategica_transformaciones_temas` (rama `main`) y es **público**. Quien clone el repositorio debe activar los hooks de git una vez:
 ```
-git init
 git config core.hooksPath .githooks
 ```
+**Nunca se suben** (decisión de Nicolás, 2026-10-02; ya están en `.gitignore`):
+- datos con Nombre o Correo: `data/`, `outputs/` y cualquier `Experiencia*.xlsx` de Forms;
+- `cache/` y `.env`;
+- el PDF "06. PLAN ESTRATÉGICO 2027-2037…".
+
+Antes de cada commit, revisa con `git diff --cached --name-only` que no se cuele nada de eso. Todo lo que se suba debe estar anonimizado.
 
 ### La carpeta `.claude/` no se toca sin preguntar
 **Antes de crear, editar o borrar cualquier archivo en `.claude/`**, pide aprobación a Nicolás. Esto incluye este `CLAUDE.md`, las reglas, los hooks y la configuración. El hook `.claude/hooks/proteger_carpeta_claude.py` lo exige: ante un `Edit`, `Write` o un comando que escriba en `.claude/`, responde "ask" y Claude Code pide confirmación. `docs/` y el resto del proyecto no requieren aprobación.
