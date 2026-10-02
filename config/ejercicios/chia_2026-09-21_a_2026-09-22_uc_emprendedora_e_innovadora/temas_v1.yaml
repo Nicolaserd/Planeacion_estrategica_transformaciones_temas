@@ -1,0 +1,146 @@
+# Temas de Chía · 21-22 sep 2026 · UC Emprendedora e Innovadora (lista propia de esta unidad).
+# Anclados a los componentes de "UC Emprendedora e Innovadora" en contexto/Transformaciones_estrategicas_5_frentes.md (líneas 86-100).
+transformacion: UC Emprendedora e Innovadora
+version: 1
+temas:
+  - id: acompanamiento_mentoria
+    nombre: "Escuchar, validar y acompañar las ideas con mentoría"
+    componente: "Ecosistemas de innovación"
+    justificacion: "Componente 'Ecosistemas de innovación': la universidad como puente que escucha, valida y acompaña; estudio de factibilidad, filtro de ideas por un comité, mentores y seguimiento."
+    critico: false
+    instruccion: "¿El `comentario` pide que la universidad escuche, valide, guíe, asesore o acompañe las ideas o proyectos?"
+    criterio_true: "Menciona escuchar o validar las ideas, acompañamiento, asesoría, mentoría o mentores, tutorías, guía, seguimiento, estudio de factibilidad o viabilidad, filtro o aprobación por un comité, ayuda profesional o herramientas y guías para desarrollar la idea."
+    criterio_false: "No habla de acompañar, asesorar ni validar ideas. Pedir solo dinero tiene su propio tema."
+    ejemplos_si: ["La Universidad de Cundinamarca debe actuar como un puente que escucha, valida y articula la idea", "Acompañarla con mentores de distintas facultades"]
+
+  - id: financiacion
+    nombre: "Financiación y apoyo económico"
+    componente: "Emprendimiento"
+    justificacion: "Componente 'Emprendimiento': apoyos presupuestales, financiamiento, aprobación de recursos, inversión y donaciones para los emprendimientos."
+    critico: false
+    instruccion: "¿El `comentario` pide financiación, presupuesto, recursos económicos o inversión para las ideas o emprendimientos?"
+    criterio_true: "Menciona financiamiento, apoyos presupuestales o económicos, presupuesto, recursos (monetarios o necesarios), aprobación de recursos, inversión o donaciones."
+    criterio_false: "No menciona dinero, presupuesto ni recursos."
+    ejemplos_si: ["Se necesita financiamiento", "Mejorar los apoyos económicos desde la universidad para todos los emprendimientos"]
+
+  - id: problemas_comunidad
+    nombre: "Escuchar a la comunidad y resolver sus problemas"
+    componente: "Innovación social"
+    justificacion: "Componente 'Innovación social': estudiar el territorio con mesas y encuestas, charlas de problemáticas, micro-comunidades por territorio y soluciones con impacto real."
+    critico: false
+    instruccion: "¿El `comentario` pide conocer los problemas de la comunidad o el territorio y orientar las ideas a resolverlos?"
+    criterio_true: "Menciona la comunidad, el territorio, necesidades locales o translocales, problemáticas sociales o reales, mesas de debate o encuestas a la comunidad, charlas de problemáticas, estar en el campo de acción o soluciones con impacto en el territorio."
+    criterio_false: "No menciona la comunidad, el territorio ni problemas sociales."
+    ejemplos_si: ["Estudiar el territorio haciendo mesas de debate o encuestas a la comunidad", "Preguntar sobre las problemáticas en la comunidad y así poder innovar y emprender"]
+
+  - id: alianzas_convenios
+    nombre: "Alianzas y convenios con entidades públicas y privadas"
+    componente: "Relacionamiento con los sectores sociales, productivos, públicos y comunitarios"
+    justificacion: "Componente 'Relacionamiento con los sectores sociales, productivos, públicos y comunitarios': convenios con entidades públicas y privadas, alianzas con instituciones, gobernación y municipio, red de apoyos."
+    critico: false
+    instruccion: "¿El `comentario` pide alianzas, convenios o vínculos con entidades públicas, privadas, instituciones o el gobierno?"
+    criterio_true: "Menciona convenios, alianzas o vínculos con entidades públicas o privadas, otras instituciones, la gobernación, el municipio, aliados o una red de apoyos."
+    criterio_false: "No menciona entidades externas ni alianzas."
+    ejemplos_si: ["Instrumentalizar asociaciones o convenios con entidades públicas o privadas", "Mayores alianzas estratégicas que permitan generar mayores oportunidades"]
+
+  - id: visibilidad_reconocimiento
+    nombre: "Visibilizar y reconocer a los emprendedores"
+    componente: "cultura institucional emprendedora"
+    justificacion: "'Qué busca': promover 'una cultura institucional emprendedora': socializar los procesos, visibilizar las soluciones y reconocer y apoyar a los emprendedores dentro de la comunidad."
+    critico: false
+    instruccion: "¿El `comentario` pide dar a conocer, socializar, visibilizar o reconocer los emprendimientos, los apoyos o las soluciones?"
+    criterio_true: "Menciona socializar, dar a conocer, visibilizar o visualizar los emprendimientos, las soluciones o los apoyos, o reconocer a los emprendedores."
+    criterio_false: "No habla de visibilidad, divulgación ni reconocimiento."
+    ejemplos_si: ["Creo que falta reconocimiento a los emprendedores", "La visibilidad y apoyo al emprendedor entre la misma comunidad universitaria"]
+
+  - id: simplificar_metodologia
+    nombre: "Simplificar y fortalecer la metodología CMA"
+    componente: "desarrollar soluciones"
+    justificacion: "'Qué busca': facilitar 'desarrollar soluciones': simplificar la metodología del campo de aprendizaje (de 9 a 3 pasos) con entregables concretos."
+    critico: false
+    instruccion: "¿El `comentario` pide simplificar o fortalecer la metodología CMA o del campo de aprendizaje?"
+    criterio_true: "Menciona la metodología CMA o MCA, simplificarla, reducir sus pasos o entregables concretos."
+    criterio_false: "No menciona la metodología CMA."
+    ejemplos_si: ["Metodología CMA 9 pasos a 3 pasos", "Simplificar la metodología a entregables concretos"]
+
+  - id: trabajo_entre_carreras
+    nombre: "Trabajo entre carreras, sedes y graduados"
+    componente: "Ecosistemas de innovación"
+    justificacion: "Componente 'Ecosistemas de innovación': mentores de distintas facultades, conectar sedes y que graduados de diferentes carreras emprendan juntos."
+    critico: false
+    instruccion: "¿El `comentario` pide trabajar entre diferentes carreras, facultades, sedes o graduados?"
+    criterio_true: "Menciona distintas facultades o carreras trabajando juntas, conectar diferentes sedes o graduados de diferentes carreras."
+    criterio_false: "No habla de trabajo entre carreras ni sedes."
+    ejemplos_si: ["Se debería implementar un plan para conectar entre diferentes sedes", "entre graduados de diferentes carreras puedan emprender"]
+
+  - id: oportunidades
+    nombre: "Más oportunidades: laborales, de ingresos y de exportación"
+    componente: "Creación de oportunidades"
+    justificacion: "Componente 'Creación de oportunidades': herramientas para el campo laboral, más fuentes de ingreso, mayores oportunidades y volvernos exportadores."
+    critico: false
+    instruccion: "¿El `comentario` pide crear más oportunidades laborales, de ingresos o de negocio?"
+    criterio_true: "Menciona oportunidades, campo laboral, fuentes de ingreso o volvernos más exportadores."
+    criterio_false: "No menciona oportunidades laborales ni de ingresos."
+    ejemplos_si: ["herramientas para tener más de una fuente de ingresos", "Mayores alianzas estratégicas que permitan generar mayores oportunidades"]
+
+  - id: emprendimiento_administrativos
+    nombre: "Apoyo al emprendimiento de los administrativos"
+    componente: "Creación de oportunidades"
+    justificacion: "Componente 'Creación de oportunidades': hay apoyo para estudiantes y docentes, pero falta para los administrativos."
+    critico: false
+    instruccion: "¿El `comentario` pide apoyo o información sobre emprendimiento para el personal administrativo?"
+    criterio_true: "Menciona apoyo, información o iniciativas de emprendimiento para los administrativos."
+    criterio_false: "No menciona a los administrativos en relación con el emprendimiento."
+    ejemplos_si: ["Existe el apoyo para creadores de oportunidades y gestores del conocimiento sin embargo falta apoyo a administrativos", "Dar a conocer mas los apoyos a las iniciativas de emprendimiento para los administravivos"]
+
+  - id: conformidad
+    nombre: "Conformidad con la transformación (sin ajustes)"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: dicen expresamente que no ajustarían nada, que es perfecta o que están de acuerdo."
+    critico: false
+    instruccion: "¿El `comentario` dice expresamente que no haría ajustes o que está de acuerdo con la transformación?"
+    criterio_true: "Dice de forma explícita que no ajustaría nada, nada por el momento, ningún ajuste, que es perfecta o muy favorable, o que está de acuerdo."
+    criterio_false: "Pide, propone o menciona cualquier cosa por mejorar."
+    ejemplos_si: ["Ningún ajuste", "Totalmente de acuerdo con la formación implementa en esta ocasión"]
+
+  - id: concretar_practica
+    nombre: "Concretar las decisiones y llevarlas a la práctica"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: concretar las decisiones tomadas y llevar la iniciativa a la práctica."
+    critico: false
+    instruccion: "¿El `comentario` dice expresamente que la propia transformación o sus decisiones deben concretarse o llevarse a la práctica?"
+    criterio_true: "Dice de forma explícita que hay que concretar las decisiones tomadas, hacer seguimiento a lo decidido o poner ya en práctica la iniciativa institucional."
+    criterio_false: "No se refiere a la transformación como un todo. Pedir acompañar, financiar o desarrollar una idea concreta hasta convertirla en solución no cuenta."
+    ejemplos_si: ["Evaluar estrategias de seguimiento y concretar las decisiones tomadas", "un poco más sobre el incentivo de ponerlo más ya en práctica a la realidad"]
+
+  - id: semilleros_investigacion
+    nombre: "Semilleros e investigación para desarrollar las ideas"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Emprendedora; el documento lo ubica en UC Translocal ('Ciencia, tecnología e innovación')."
+    critico: false
+    instruccion: "¿El `comentario` pide vincular las ideas a semilleros o a la investigación?"
+    criterio_true: "Menciona semilleros, grupos de investigación o investigaciones."
+    criterio_false: "No menciona semilleros ni investigación."
+    ejemplos_si: ["Vincularlo a grupos de semilleros de investigación", "reunir conocimientos en semilleros con profesores"]
+
+  - id: condiciones_personal
+    nombre: "Condiciones del personal (estabilidad, docentes ISU, equipo administrativo)"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Emprendedora; el documento lo ubica en UC para la Vida ('Desarrollo del talento humano')."
+    critico: false
+    instruccion: "¿El `comentario` habla de la estabilidad laboral o salarial, contratos o fortalecimiento del personal?"
+    criterio_true: "Menciona estabilidad laboral o salarial, contratos de 11 meses o fortalecer el área administrativa."
+    criterio_false: "No habla de las condiciones del personal."
+    ejemplos_si: ["nos contribuiría más una mejor estabilidad laboral y salarial", "Los profesores de ISu deberían estar a 11 meses"]
+
+  - id: infraestructura_espacios
+    nombre: "Espacios, infraestructura y herramientas"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Emprendedora de forma explícita."
+    critico: false
+    instruccion: "¿El `comentario` pide mejorar los espacios, la infraestructura o las herramientas tecnológicas?"
+    criterio_true: "Menciona espacios de la universidad, infraestructura o herramientas tecnológicas."
+    criterio_false: "No menciona espacios ni infraestructura."
+    ejemplos_si: ["Mejorando los espacios de la universidad y calidad de actividades", "dotar de herramientas tecnológicas e infraestructura"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

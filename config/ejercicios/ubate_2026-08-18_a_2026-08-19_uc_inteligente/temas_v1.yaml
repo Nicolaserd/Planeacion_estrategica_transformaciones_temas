@@ -1,0 +1,116 @@
+# Temas de Ubaté · 18-19 ago 2026 · UC Inteligente (lista propia de esta unidad).
+# Anclados a los componentes de "UC Inteligente" en contexto/Transformaciones_estrategicas_5_frentes.md (líneas 26-42).
+transformacion: UC Inteligente
+version: 1
+temas:
+  - id: decisiones_datos_anticipacion
+    nombre: "Decisiones basadas en datos y anticipación a los problemas"
+    componente: "Gobierno y uso estratégico de los datos"
+    justificacion: "Componente 'Gobierno y uso estratégico de los datos' y enunciado 'toma de decisiones basada en datos': analítica, indicadores, información para anticipar necesidades y decidir."
+    critico: false
+    instruccion: "¿El `comentario` pide usar datos, información o indicadores para tomar decisiones o para anticiparse a problemas y necesidades?"
+    criterio_true: "Menciona datos, analítica de datos, cifras, bases de datos, indicadores, información para decidir, toma de decisiones basada en datos, predecir, prever o anticiparse a problemas, necesidades o tendencias."
+    criterio_false: "No menciona datos, información ni anticipación. Pedir solo mejora continua, eficiencia o comunicación no basta."
+    ejemplos_si: ["tomar decisiones basadas en datos y aprender continuamente de sus experiencias", "Para la toma de decisiones debemos estar atentos a los datos y cifras"]
+
+  - id: calidad_mejora_continua
+    nombre: "Calidad, autoevaluación y mejora continua"
+    componente: "Calidad y mejora continua"
+    justificacion: "Componente 'Calidad y mejora continua' y 'SIAC': mejora constante, estándares de calidad educativa, autoevaluación y planes de mejora."
+    critico: false
+    instruccion: "¿El `comentario` pide o menciona la calidad, la mejora continua, la autoevaluación o los planes de mejora?"
+    criterio_true: "Menciona mejora continua o constante, evolución y mejora, calidad educativa o de los procesos, estándares de calidad, autoevaluación, evaluación institucional o planes de mejora."
+    criterio_false: "No menciona calidad, mejora continua ni evaluación institucional."
+    ejemplos_si: ["La mejora continua", "Evaluación institucional y socialización,plan de mejora"]
+
+  - id: planeacion_eficiencia
+    nombre: "Planeación, eficiencia y gestión orientada a resultados"
+    componente: "Gestión orientada a resultados"
+    justificacion: "Componente 'Gestión orientada a resultados': planes de acción eficientes y eficaces, mejor uso del tiempo y de los recursos, buena planeación."
+    critico: false
+    instruccion: "¿El `comentario` pide mejor planeación, eficiencia, eficacia u optimización de recursos y tiempos en la gestión de la universidad?"
+    criterio_true: "Menciona planeación, planes de acción, eficiencia, eficacia, gestión orientada a resultados, optimizar recursos, tiempo o procesos, o mejor administración de actividades."
+    criterio_false: "No habla de planeación ni de eficiencia de la gestión."
+    ejemplos_si: ["El diseño de los planes de acción para actuar de una manera eficiente y eficaz", "Es importante el tema de eficaz y eficiente"]
+
+  - id: dialogo_participacion
+    nombre: "Diálogo, comunicación y participación en la gestión"
+    componente: "Gobernanza estratégica"
+    justificacion: "Componente 'Gobernanza estratégica': comunicación abierta con la comunidad, participación de estudiantes y administrativos en las decisiones, información oportuna."
+    critico: false
+    instruccion: "¿El `comentario` pide diálogo, comunicación o participación de la comunidad (estudiantes, administrativos) en la gestión y las decisiones de la universidad?"
+    criterio_true: "Menciona diálogo o comunicación con la comunidad, escuchar a los estudiantes, participación, cocreación, mantener informada a la comunidad, comunicación institucional o tener en cuenta a los administrativos."
+    criterio_false: "No habla de diálogo, comunicación ni participación en la gestión."
+    ejemplos_si: ["no debe dejar de lado la comunicación abierta y permanente con la comunidad estudiantil", "Es necesario tomar en cuenta el estamento administrativo"]
+
+  - id: inteligencia_artificial
+    nombre: "Política y formación para el uso de la inteligencia artificial"
+    componente: "Inteligencia artificial"
+    justificacion: "Componente 'Inteligencia artificial': piden una política institucional y conocimiento para usar la IA en los procesos."
+    critico: false
+    instruccion: "¿El `comentario` habla de la inteligencia artificial, algoritmos o de una política para su uso?"
+    criterio_true: "Menciona inteligencia artificial, IA, algoritmos o una política o capacitación para usarlos."
+    criterio_false: "No menciona inteligencia artificial ni algoritmos."
+    ejemplos_si: ["Que se cree una Politica institucional donde todos los administrativos podamos tener el conocimiento para el buen uso de la IA"]
+
+  - id: seguridad_informacion
+    nombre: "Seguridad y confiabilidad de la información"
+    componente: "Gobierno y uso estratégico de los datos"
+    justificacion: "Componente 'Gobierno y uso estratégico de los datos': seguridad de la información (ISO 27001), uso seguro de los datos y gestión del riesgo."
+    critico: false
+    instruccion: "¿El `comentario` habla de la seguridad, la veracidad o el riesgo de la información o de los datos?"
+    criterio_true: "Menciona seguridad de la información, ISO 27001, uso seguro de datos, información verídica o mitigar el riesgo de la información."
+    criterio_false: "No habla de la seguridad ni del riesgo de la información."
+    ejemplos_si: ["Fortalecimiento del sistema de gestión de seguridad de la información ISO 27001", "Uso de datos seguro"]
+
+  - id: pertinencia_oferta_academica
+    nombre: "Oferta académica y planes de estudio acordes a las necesidades"
+    componente: "Inteligencia institucional"
+    justificacion: "Componente 'Inteligencia institucional': usar el conocimiento del entorno y de las tendencias para ajustar la oferta de programas y los planes de estudio."
+    critico: false
+    instruccion: "¿El `comentario` pide que la oferta de programas o los planes de estudio respondan a las necesidades actuales o futuras?"
+    criterio_true: "Menciona la oferta de programas o carreras, los planes de estudio, carreras acertadas para cada tiempo, o formar a los profesionales que el futuro necesitará."
+    criterio_false: "No habla de la oferta académica ni de los planes de estudio."
+    ejemplos_si: ["Mirar las necesidades del entorno, para la oferta de los programas académicos ofrecidos", "Carreras acertivas para cada tiempo"]
+
+  - id: conformidad
+    nombre: "Conformidad con la transformación (sin ajustes)"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: dicen expresamente que está completa o que se ajusta."
+    critico: false
+    instruccion: "¿El `comentario` dice expresamente que está de acuerdo con la transformación o que no necesita ajustes?"
+    criterio_true: "Dice de forma explícita que la transformación está completa, que está de acuerdo o que se ajusta a lo proyectado, sin pedir cambios."
+    criterio_false: "Pide, propone o menciona cualquier cosa por mejorar o fortalecer."
+    ejemplos_si: ["De acuerdo, se ajusta a lo proyectado", "La transformación está muy completa"]
+
+  - id: impacto_territorio
+    nombre: "Impacto en la comunidad, la región y conexiones externas"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Inteligente; el documento lo ubica en UC Translocal ('Impacto territorial', 'Redes y cooperación')."
+    critico: false
+    instruccion: "¿El `comentario` habla del impacto de la universidad en la comunidad, la región o el territorio, o de conexiones nacionales e internacionales?"
+    criterio_true: "Menciona la calidad de vida de los habitantes, la región, la localidad, el territorio, lo translocal, el entorno o conexiones nacionales e internacionales."
+    criterio_false: "No menciona la comunidad externa, la región ni conexiones externas."
+    ejemplos_si: ["medidas estratégicas para la toma de decisiones que generen impacto y beneficio en cada región", "conexiones tanto nacionales como internacionales"]
+
+  - id: automatizacion_sistemas
+    nombre: "Automatización de procesos e integración de sistemas"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Inteligente; el documento lo ubica en UC Digital ('Automatización de procesos')."
+    critico: false
+    instruccion: "¿El `comentario` pide automatizar procesos o integrar los sistemas de información?"
+    criterio_true: "Menciona automatizar o automatización de procesos, o integrar los sistemas de información."
+    criterio_false: "No menciona automatización ni integración de sistemas."
+    ejemplos_si: ["Automatización de procesos para graduados", "Integrar sus sistemas de información"]
+
+  - id: bienestar_permanencia
+    nombre: "Bienestar, acompañamiento y flexibilidad para los estudiantes"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Inteligente; el documento lo ubica en UC para la Vida ('Felicidad y bienestar')."
+    critico: false
+    instruccion: "¿El `comentario` pide bienestar, acompañamiento o flexibilidad ante las situaciones personales, familiares o laborales de los estudiantes?"
+    criterio_true: "Menciona bienestar, acompañamiento, deserción, calamidades, situaciones familiares o laborales de los estudiantes, o ser flexibles con ellos."
+    criterio_false: "No habla del bienestar ni de las situaciones personales de los estudiantes."
+    ejemplos_si: ["El fortalecimiento del bienestar y el acompañamiento por parte de la universidad para lograr disminuir los índices de deserción"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

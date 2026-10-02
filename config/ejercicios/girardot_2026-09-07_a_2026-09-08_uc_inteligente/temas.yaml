@@ -1,0 +1,156 @@
+# Temas v2 de Girardot · UC Inteligente (lista propia de esta unidad).
+# Versión 2: menos temas (máx. 10) por fusión de los de la versión 1 (respaldada en temas_v1.yaml).
+# Anclados a Transformaciones_estrategicas_5_frentes.md · '## 1. UC Inteligente' · líneas 26-42.
+transformacion: UC Inteligente
+version: 2.2
+temas:
+- id: anticipacion_curriculo
+  nombre: 'Anticipación: prevenir riesgos y deserción y actualizar el currículo'
+  componente: Inteligencia institucional
+  justificacion: 'Fusión de 3 temas afines de la versión 1 (anticipación y prevención de riesgos y problemas; actualización curricular según tendencias y necesidades reales; prevención de la deserción y
+    del riesgo académico). Ancla: componente ''Inteligencia institucional''.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: anticipación y prevención de riesgos y problemas; actualización curricular según tendencias y necesidades reales; prevención
+    de la deserción y del riesgo académico?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Anticipación y prevención de riesgos y problemas: menciona anticiparse, anticipación, prever, prevenir, predecir o pronosticar problemas, riesgos
+    o necesidades, planes estratégicos ante riesgos, planes de contingencia, alertas o estar preparados para crisis. (2) Actualización curricular según tendencias y necesidades reales: menciona ajustar
+    o actualizar los currículos o el PAD, tendencias académicas, la realidad de cada carrera o de las empresas, preparar para los empleos del futuro o la oferta profesional según las necesidades. (3) Prevención
+    de la deserción y del riesgo académico: menciona deserción, seguimiento individual a estudiantes o riesgos académicos.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita. Aprender de errores ya ocurridos sin hablar de prevenir o anticiparse tiene su propio tema.
+  ejemplos_si:
+  - Planes estratégicos anticipados a riesgos que puedan presentarse
+  - Ajustar sus curriculos continuamente
+  - Seguimiento individual para prevenir la deserción estudiantil
+  fusiona_v1:
+  - anticipacion_riesgos
+  - actualizacion_curricular
+  - desercion_riesgo_academico
+- id: decisiones_datos
+  nombre: Decisiones basadas en datos y evidencias
+  componente: Gobierno y uso estratégico de los datos
+  justificacion: 'Componente ''Gobierno y uso estratégico de los datos'' y enunciado ''toma de decisiones basada en datos'': gobernar con evidencias, analizar información y gestionar datos internos y externos.'
+  critico: false
+  instruccion: ¿El `comentario` pide usar datos, evidencias o información analizada para tomar decisiones?
+  criterio_true: Menciona datos, bases de datos, análisis de información, evidencias, gestión de datos, inteligencia de negocios, encuestas o decisiones basadas en datos.
+  criterio_false: No menciona datos, evidencias ni análisis de información.
+  ejemplos_si:
+  - Gobernar con evidencias
+  - utilizando la información y los datos para tomar mejores decisiones
+- id: mejora_acreditacion
+  nombre: Mejora continua, aprender de los errores y acreditación
+  componente: Calidad y mejora continua
+  otros_componentes:
+  - Acreditación institucional
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (aprender de los errores y mejora continua; acreditación, certificaciones y posicionamiento). Ancla: componente ''Calidad y mejora continua'';
+    también toca: Acreditación institucional.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: aprender de los errores y mejora continua; acreditación, certificaciones y posicionamiento?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Aprender de los errores y mejora continua: menciona aprender de los errores, reconocer los errores, retroalimentarse, mejora continua, ciclos
+    de mejora, autoevaluación, planes de mejoramiento o calidad a través de la mejora. (2) Acreditación, certificaciones y posicionamiento: menciona acreditación institucional o de programas, alta calidad,
+    certificaciones nacionales o internacionales, o ser más competentes y posicionados frente a otras universidades.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Aprender de los errores que se cometieron
+  - Certificaciones nacionales e Internacionales
+  fusiona_v1:
+  - aprender_errores_mejora
+  - acreditacion_posicionamiento
+- id: inteligencia_artificial
+  nombre: 'Inteligencia artificial: formación, integración y uso estratégico'
+  componente: Inteligencia artificial
+  justificacion: 'Componente ''Inteligencia artificial'': enseñar y certificar su uso, integrarla en los procesos, usarla para anticipar y cuidar las competencias humanas.'
+  critico: false
+  instruccion: '¿El `comentario` habla de la inteligencia artificial (IA): enseñarla, integrarla, usarla o cuidar su impacto?'
+  criterio_true: 'Menciona inteligencia artificial o IA: enseñar o certificar su uso, integrarla en los procesos, fortalecerla, usarla para prevenir o anticipar, o su impacto en los estudiantes.'
+  criterio_false: No menciona la inteligencia artificial.
+  ejemplos_si:
+  - Que nos enseñen el buen manejo de la Inteligencia Artificial y se nos certifique
+  - Mayor integración de la IA en los procesos universitarios
+- id: comunicacion_participacion
+  nombre: Comunicación, escucha, transparencia y participación
+  componente: Gobernanza estratégica
+  justificacion: 'Componente ''Gobernanza estratégica'': escuchar a la comunidad, comunicación clara, transparencia en las decisiones y gobernanza participativa.'
+  critico: false
+  instruccion: ¿El `comentario` pide comunicación, escucha, transparencia o participación de la comunidad en las decisiones de la universidad?
+  criterio_true: Menciona comunicación, diálogo, escuchar a la comunidad o a los graduados, transparencia en las decisiones, participación o gobernanza participativa, o informar mejor a la comunidad.
+  criterio_false: No habla de comunicación, escucha, transparencia ni participación.
+  ejemplos_si:
+  - La comunicación entre la universidad y los estudiantes
+  - 'Gobernanza participativa: incorporar activamente las perspectivas de estudiantes, docentes y gestores'
+- id: procesos_recursos
+  nombre: Procesos eficientes, coherencia entre lo planeado y lo hecho, y recursos
+  componente: Gestión orientada a resultados
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (procesos administrativos eficientes y coherencia entre lo planeado y lo ejecutado; financiación y recursos de la universidad). Ancla: componente
+    ''Gestión orientada a resultados''.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: procesos administrativos eficientes y coherencia entre lo planeado y lo ejecutado; financiación y recursos de la universidad?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Procesos administrativos eficientes y coherencia entre lo planeado y lo ejecutado: menciona mejorar los procesos administrativos, procesos
+    eficientes o dinámicos, decisiones ágiles, reducir costos o esfuerzos, productividad, concordancia entre lo planeado y lo ejecutado, terminar las transformaciones o continuidad de los procesos. (2)
+    Financiación y recursos de la universidad: menciona financiarse, fondos, dinero, recaudación o economía de la universidad.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Mejorar los procesos administrativos
+  - Capaz de buscar estrategias para financiarse
+  fusiona_v1:
+  - procesos_eficientes
+  - financiacion
+- id: conformidad
+  nombre: Conformidad con la transformación (sin ajustes)
+  componente: transformacion_en_general
+  justificacion: 'Comentarios sobre la transformación como un todo: dicen expresamente que está bien, que no ajustarían nada o que va en el camino correcto.'
+  critico: false
+  instruccion: ¿El `comentario` dice expresamente que no haría ajustes, que está de acuerdo o que la transformación está bien tal como está?
+  criterio_true: Dice de forma explícita que está bien, ta bien, vamos bien, nada que ajustar, ningún ajuste, totalmente de acuerdo, va en el camino correcto, estamos alineados, o solo agradece.
+  criterio_false: Pide, propone o menciona cualquier cosa por mejorar, o critica la transformación.
+  ejemplos_si:
+  - No tengo ningún ajuste
+  - Totalmente de acuerdo
+- id: tecnologia_herramientas
+  nombre: Tecnología, conectividad y herramientas digitales
+  componente: fuera_de_la_transformacion
+  justificacion: No figura en la sección de UC Inteligente; el documento lo ubica en UC Digital ('Tecnologías emergentes', 'Ecosistemas digitales').
+  critico: false
+  instruccion: ¿El `comentario` pide más o mejor tecnología, conectividad, licencias, aplicaciones o aulas digitales?
+  criterio_true: Menciona tecnología, nuevas tecnologías, conectividad, fibra óptica, licencias o herramientas digitales, aplicaciones, aulas digitales o infraestructura tecnológica.
+  criterio_false: No menciona tecnología ni herramientas digitales. Hablar solo de inteligencia artificial tiene su propio tema.
+  ejemplos_si:
+  - Tener más tecnología disponibles
+  - Conectividad total
+- id: territorio_impacto
+  nombre: Necesidades del territorio, la región y el impacto social
+  componente: fuera_de_la_transformacion
+  justificacion: No figura en la sección de UC Inteligente; el documento lo ubica en UC Translocal ('Impacto territorial', 'Identidad translocal').
+  critico: false
+  instruccion: ¿El `comentario` habla del territorio, la región, la sociedad o el impacto social de la universidad?
+  criterio_true: Menciona el territorio, la región, la ciudad, la sociedad, problemáticas sociales o ambientales del territorio, saberes propios, integración con entes de la región o impacto social.
+  criterio_false: No menciona el territorio, la región ni la sociedad.
+  ejemplos_si:
+  - Que se inicie un reconocimiento del territorio para atender las necesidades primarias
+  - Integración con los diferentes entes del la ciudad y la región
+- id: otros_fuera
+  nombre: Otros asuntos fuera de la transformación
+  componente: fuera_de_la_transformacion
+  justificacion: 'Asuntos sin anclaje en la sección de UC Inteligente del documento marco, cada uno con menos del 10 % de los comentarios; se agrupan en un solo tema (versión 2). Incluye: inclusión y equidad
+    (discapacidad, poblaciones vulnerables); fortalecer la investigación; emprendimiento y empleabilidad de egresados; equilibrio entre lo digital y lo humano o presencial; contratación y beneficios del
+    personal.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Inteligente: inclusión y equidad (discapacidad, poblaciones vulnerables); fortalecer la investigación;
+    emprendimiento y empleabilidad de egresados; equilibrio entre lo digital y lo humano o presencial; contratación y beneficios del personal?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Inclusión y equidad (discapacidad, poblaciones vulnerables): menciona inclusión, universidad inclusiva, oportunidades para todos, personas
+    con discapacidad, minorías, poblaciones vulnerables, integración social o derechos fundamentales. (2) Fortalecer la investigación: menciona investigación, procesos de investigación, convocatorias o
+    innovación como investigación. (3) Emprendimiento y empleabilidad de egresados: menciona emprendimiento, empleabilidad, oportunidades laborales, mundo laboral o empleos del futuro para estudiantes y
+    egresados. (4) Equilibrio entre lo digital y lo humano o presencial: menciona humanización de la educación, competencias humanas, presencialidad o semipresencialidad, o que lo digital no afecte el deber
+    ser de una carrera. (5) Contratación y beneficios del personal: menciona estabilidad contractual, contratación fija de los docentes o gestores, o beneficios para los empleados.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Más acceso o inclusión con personas con Discapacidad
+  - Fortalecimiento de la investigación y gestión de datos
+  - necesitamos que la universidad sea un apoyo de emprendimiento
+  - mas alla de forzar el uso de la ia es fortalecer las competencias huamanas
+  fusiona_v1:
+  - inclusion_equidad
+  - investigacion
+  - emprendimiento_empleo
+  - humano_presencial
+  - condiciones_personal
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?

@@ -1,0 +1,374 @@
+{
+  "hojas": [
+    "Sheet1"
+  ],
+  "dimensiones": [
+    649,
+    26
+  ],
+  "columnas_vacias": 15,
+  "estructura": [
+    {
+      "columna": "ID",
+      "tipo": "int64",
+      "nulos": 0,
+      "unicos": 649
+    },
+    {
+      "columna": "Hora de inicio",
+      "tipo": "datetime64[us]",
+      "nulos": 0,
+      "unicos": 566
+    },
+    {
+      "columna": "Hora de finalización",
+      "tipo": "datetime64[us]",
+      "nulos": 0,
+      "unicos": 623
+    },
+    {
+      "columna": "Correo electrónico",
+      "tipo": "str",
+      "nulos": 0,
+      "unicos": 47
+    },
+    {
+      "columna": "Nombre",
+      "tipo": "str",
+      "nulos": 603,
+      "unicos": 46
+    },
+    {
+      "columna": "Total de puntos",
+      "tipo": "float64",
+      "nulos": 649,
+      "unicos": 0
+    },
+    {
+      "columna": "Comentarios del cuestionario",
+      "tipo": "float64",
+      "nulos": 649,
+      "unicos": 0
+    },
+    {
+      "columna": "Hora de la última modificación",
+      "tipo": "float64",
+      "nulos": 649,
+      "unicos": 0
+    },
+    {
+      "columna": "Tipo de actor",
+      "tipo": "str",
+      "nulos": 1,
+      "unicos": 4
+    },
+    {
+      "columna": "Puntos: Tipo de actor",
+      "tipo": "float64",
+      "nulos": 649,
+      "unicos": 0
+    },
+    {
+      "columna": "Comentarios: Tipo de actor",
+      "tipo": "float64",
+      "nulos": 649,
+      "unicos": 0
+    },
+    {
+      "columna": "De que programa eres graduado",
+      "tipo": "str",
+      "nulos": 240,
+      "unicos": 175
+    },
+    {
+      "columna": "Puntos: De que programa eres graduado",
+      "tipo": "float64",
+      "nulos": 649,
+      "unicos": 0
+    },
+    {
+      "columna": "Comentarios: De que programa eres graduado",
+      "tipo": "float64",
+      "nulos": 649,
+      "unicos": 0
+    },
+    {
+      "columna": "Unidad Regional",
+      "tipo": "str",
+      "nulos": 7,
+      "unicos": 6
+    },
+    {
+      "columna": "Puntos: Unidad Regional",
+      "tipo": "float64",
+      "nulos": 649,
+      "unicos": 0
+    },
+    {
+      "columna": "Comentarios: Unidad Regional",
+      "tipo": "float64",
+      "nulos": 649,
+      "unicos": 0
+    },
+    {
+      "columna": "Transformación",
+      "tipo": "str",
+      "nulos": 78,
+      "unicos": 1
+    },
+    {
+      "columna": "Puntos: Transformación",
+      "tipo": "float64",
+      "nulos": 649,
+      "unicos": 0
+    },
+    {
+      "columna": "Comentarios: Transformación",
+      "tipo": "float64",
+      "nulos": 649,
+      "unicos": 0
+    },
+    {
+      "columna": "¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?",
+      "tipo": "str",
+      "nulos": 1,
+      "unicos": 3
+    },
+    {
+      "columna": "Puntos: ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?",
+      "tipo": "float64",
+      "nulos": 649,
+      "unicos": 0
+    },
+    {
+      "columna": "Comentarios: ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?",
+      "tipo": "float64",
+      "nulos": 649,
+      "unicos": 0
+    },
+    {
+      "columna": "¿Qué ajustaría en esta transformación?",
+      "tipo": "str",
+      "nulos": 113,
+      "unicos": 497
+    },
+    {
+      "columna": "Puntos: ¿Qué ajustaría en esta transformación?",
+      "tipo": "float64",
+      "nulos": 649,
+      "unicos": 0
+    },
+    {
+      "columna": "Comentarios: ¿Qué ajustaría en esta transformación?",
+      "tipo": "float64",
+      "nulos": 649,
+      "unicos": 0
+    }
+  ],
+  "mapeo": {
+    "id_resp": "ID",
+    "comentarios": [
+      {
+        "columna": "¿Qué ajustaría en esta transformación?",
+        "pregunta": "P1",
+        "texto_pregunta": "¿Qué ajustaría en esta transformación?"
+      }
+    ],
+    "grupo": "Tipo de actor",
+    "programa": "De que programa eres graduado",
+    "unidad_regional": "Unidad Regional",
+    "sede": "Unidad Regional",
+    "fecha": "Hora de inicio",
+    "transformacion_declarada": "Transformación",
+    "valoracion_cerrada": "¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?",
+    "columnas_personales_descartar": [
+      "Correo electrónico",
+      "Nombre"
+    ],
+    "columnas_vacias_ignorar": [
+      "Total de puntos",
+      "Comentarios del cuestionario",
+      "Hora de la última modificación",
+      "Puntos: Tipo de actor",
+      "Comentarios: Tipo de actor",
+      "Puntos: De que programa eres graduado",
+      "Comentarios: De que programa eres graduado",
+      "Puntos: Unidad Regional",
+      "Comentarios: Unidad Regional",
+      "Puntos: Transformación",
+      "Comentarios: Transformación",
+      "Puntos: ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?",
+      "Comentarios: ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?",
+      "Puntos: ¿Qué ajustaría en esta transformación?",
+      "Comentarios: ¿Qué ajustaría en esta transformación?"
+    ],
+    "nota": "Una sola pregunta abierta: no hace falta formato largo; id_com = '<ID>-P1'. 'De que programa eres graduado' contiene el programa de todos los tipos de actor, no solo de graduados. 'Unidad Regional' cumple el papel de sede."
+  },
+  "equivalencia": {
+    "UC para la Vida": "T5",
+    "(vacío)": "sin_frente_declarado"
+  },
+  "diferencias_con_ficha": {
+    "lugar_fuera_de_fechas": [
+      {
+        "ID": 408,
+        "fecha": "2026-09-21"
+      },
+      {
+        "ID": 493,
+        "fecha": "2026-09-28"
+      }
+    ],
+    "fechas_de_otro_lugar": 0,
+    "unidad_vacia_en_fechas": 0
+  },
+  "perfil_ejercicio": {
+    "N_filas": 65,
+    "N_con_comentario": 44,
+    "pct_vacios": 32.3,
+    "por_transformacion_declarada": {
+      "UC para la Vida": 58,
+      "(vacío)": 7
+    },
+    "por_grupo": {
+      "Creadores de Oportunidades (estudiantes)": 36,
+      "Gestores del Conocimiento y el Aprendizaje": 10,
+      "Graduados": 10,
+      "Administrativos": 9
+    },
+    "por_unidad_regional": {
+      "Seccional Ubaté": 65
+    },
+    "por_fecha": {
+      "2026-08-18": 56,
+      "2026-08-19": 9
+    },
+    "por_valoracion": {
+      "Parcialmente": 35,
+      "Si": 29,
+      "No": 1
+    },
+    "programas_distintos": 12,
+    "programa_vacio": 49,
+    "longitud_comentario": {
+      "p25": 107.25,
+      "mediana": 144.0,
+      "p75": 204.25,
+      "p95": 442.00000000000006,
+      "max": 474
+    },
+    "comentarios_texto_repetido": 0,
+    "filas_identicas_salvo_id_y_hora": 0,
+    "respuestas_menos_30s": 19,
+    "duracion_mediana_s": 57.0
+  },
+  "perfil_archivo_completo": {
+    "N_filas": 649,
+    "N_con_comentario": 536,
+    "pct_vacios": 17.4,
+    "por_transformacion_declarada": {
+      "UC para la Vida": 571,
+      "(vacío)": 78
+    },
+    "por_grupo": {
+      "Creadores de Oportunidades (estudiantes)": 400,
+      "Administrativos": 117,
+      "Gestores del Conocimiento y el Aprendizaje": 75,
+      "Graduados": 56,
+      "(vacío)": 1
+    },
+    "por_unidad_regional": {
+      "Sede Fusagasugá": 223,
+      "Seccional Girardot": 146,
+      "Extensión Chía": 98,
+      "Extensión Soacha": 83,
+      "Seccional Ubaté": 67,
+      "Extensión Zipaquirá": 25,
+      "(vacío)": 7
+    },
+    "por_fecha": {
+      "2026-08-18": 56,
+      "2026-08-19": 9,
+      "2026-08-31": 22,
+      "2026-09-07": 136,
+      "2026-09-08": 13,
+      "2026-09-14": 76,
+      "2026-09-15": 9,
+      "2026-09-21": 91,
+      "2026-09-22": 14,
+      "2026-09-28": 223
+    },
+    "por_valoracion": {
+      "Si": 489,
+      "Parcialmente": 136,
+      "No": 23,
+      "(vacío)": 1
+    },
+    "programas_distintos": 175,
+    "programa_vacio": 240,
+    "longitud_comentario": {
+      "p25": 44.75,
+      "mediana": 108.0,
+      "p75": 197.0,
+      "p95": 382.25,
+      "max": 764
+    },
+    "comentarios_texto_repetido": 44,
+    "filas_identicas_salvo_id_y_hora": 32,
+    "respuestas_menos_30s": 121,
+    "duracion_mediana_s": 66.0
+  },
+  "unidades_archivo_completo": {
+    "Seccional Ubaté": {
+      "n_filas": 67,
+      "n_comentarios": 45,
+      "fechas": [
+        "2026-08-18",
+        "2026-08-19",
+        "2026-09-21",
+        "2026-09-28"
+      ]
+    },
+    "Extensión Zipaquirá": {
+      "n_filas": 25,
+      "n_comentarios": 25,
+      "fechas": [
+        "2026-08-31",
+        "2026-09-22"
+      ]
+    },
+    "Seccional Girardot": {
+      "n_filas": 146,
+      "n_comentarios": 122,
+      "fechas": [
+        "2026-09-07",
+        "2026-09-08"
+      ]
+    },
+    "Sede Fusagasugá": {
+      "n_filas": 223,
+      "n_comentarios": 178,
+      "fechas": [
+        "2026-09-07",
+        "2026-09-14",
+        "2026-09-28"
+      ]
+    },
+    "Extensión Soacha": {
+      "n_filas": 83,
+      "n_comentarios": 79,
+      "fechas": [
+        "2026-09-14",
+        "2026-09-15"
+      ]
+    },
+    "Extensión Chía": {
+      "n_filas": 98,
+      "n_comentarios": 84,
+      "fechas": [
+        "2026-09-21",
+        "2026-09-22"
+      ]
+    }
+  }
+}

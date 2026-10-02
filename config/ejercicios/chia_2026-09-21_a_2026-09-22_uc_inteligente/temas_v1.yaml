@@ -1,0 +1,176 @@
+# Temas de Chía · 21-22 sep 2026 · UC Inteligente (lista propia de esta unidad).
+# Anclados a los componentes de "UC Inteligente" en contexto/Transformaciones_estrategicas_5_frentes.md (líneas 26-42).
+transformacion: UC Inteligente
+version: 1
+temas:
+  - id: anticipacion_prediccion
+    nombre: "Anticipación, prevención y predicción"
+    componente: "Inteligencia institucional"
+    justificacion: "Componente 'Inteligencia institucional': pasar de reaccionar a predecir, prospectiva, sistemas de predicción y estar preparados ante crisis."
+    critico: false
+    instruccion: "¿El `comentario` pide anticiparse, prever, prevenir o predecir problemas, necesidades o cambios?"
+    criterio_true: "Menciona anticiparse, anticipar, prever, ser prevenidos, predecir, sistema de predicción, prospectiva, visión a futuro o estar preparados para emergencias."
+    criterio_false: "No habla de anticipar, prevenir ni predecir."
+    ejemplos_si: ["Una universidad que aprende de lo que ocurre y se anticipa, sería capaz de dejar de reaccionar y empezar a predecir", "Ser prevenidos"]
+
+  - id: decisiones_datos
+    nombre: "Decisiones basadas en datos e información confiable"
+    componente: "Gobierno y uso estratégico de los datos"
+    justificacion: "Componente 'Gobierno y uso estratégico de los datos': bases de datos adecuadas, analítica, veracidad de los datos y decisiones con datos y no con intuición."
+    critico: false
+    instruccion: "¿El `comentario` pide recolectar, analizar o usar datos o información para tomar decisiones o resolver problemas?"
+    criterio_true: "Menciona datos, bases de datos, analítica de datos, datos estadísticos, información previa, veracidad de los datos, seguimiento con datos o decisiones con datos."
+    criterio_false: "No menciona datos ni información para decidir."
+    ejemplos_si: ["Tomar decisiones con datos, no con intuición", "Que tenga la capacidad de resolver problemas basado en datos de problemas anteriores"]
+
+  - id: aprender_errores_mejora
+    nombre: "Aprender de los errores, retroalimentación y mejora continua"
+    componente: "Calidad y mejora continua"
+    justificacion: "Componente 'Calidad y mejora continua': reconocer los errores, retroalimentar, acciones de mejora, evaluaciones objetivas y calidad de la formación."
+    critico: false
+    instruccion: "¿El `comentario` pide aprender de los errores o experiencias, retroalimentarse, la mejora continua o evaluaciones que sirvan para mejorar?"
+    criterio_true: "Menciona aprender de los errores o del pasado, reconocer errores, retroalimentación, acciones de mejora, mejora continua, cambio continuo, asegurar la calidad o evaluaciones objetivas."
+    criterio_false: "No habla de aprender de errores, retroalimentación ni mejora continua."
+    ejemplos_si: ["Quien conoce los errores es capaz de retroalimentar y buscar acciones de mejora", "sería una universidad que aprende de lo que pasó para decidir mejor lo que viene"]
+
+  - id: gobernanza_participativa
+    nombre: "Gobernanza participativa, transparente y descentralizada"
+    componente: "Gobernanza estratégica"
+    justificacion: "Componente 'Gobernanza estratégica': escuchar a todos los actores, cocreación, transparencia en los recursos y decisiones por sede y no solo centralizadas."
+    critico: false
+    instruccion: "¿El `comentario` pide escuchar a la comunidad, participación o cocreación en las decisiones, transparencia o decisiones menos centralizadas?"
+    criterio_true: "Menciona escuchar o tomar en cuenta la opinión de los actores, participación, cocreación, cultura participativa, propuestas de los estudiantes, transparencia en los recursos, gobernanza o decisiones por sede y no solo centralizadas."
+    criterio_false: "No habla de participación, escucha, transparencia ni gobernanza."
+    ejemplos_si: ["es clave tomar en cuenta la opinión de todo es los actores implicados", "que no solo se dependa de una toma centralizada de décidiones"]
+
+  - id: inteligencia_artificial
+    nombre: "Inteligencia artificial en la educación y la gestión"
+    componente: "Inteligencia artificial"
+    justificacion: "Componente 'Inteligencia artificial': incorporar la IA en la educación, en el análisis de datos y en una universidad predictiva."
+    critico: false
+    instruccion: "¿El `comentario` habla de la inteligencia artificial (IA)?"
+    criterio_true: "Menciona inteligencia artificial o IA: incluirla, incorporarla en la educación o en el análisis de datos, o cursos para usarla."
+    criterio_false: "No menciona la inteligencia artificial."
+    ejemplos_si: ["Incluir la IA", "Universidad Adaptativa y Predictiva impulsada por Inteligencia Artificial"]
+
+  - id: planeacion_organizacion
+    nombre: "Planeación, organización y agilidad administrativa"
+    componente: "Gestión orientada a resultados"
+    justificacion: "Componente 'Gestión orientada a resultados': planear, organizar, menos papeleo, eliminar cuellos de botella, no trabajar por islas y optimizar recursos."
+    critico: false
+    instruccion: "¿El `comentario` pide mejor planeación, organización administrativa, menos papeleo o procesos más ágiles y eficientes?"
+    criterio_true: "Menciona planear, planeación, organización administrativa o interna, menos papeleo, agilizar procesos, cuellos de botella, no trabajar por islas, optimizar procesos o recursos, eficiencia o logística."
+    criterio_false: "No habla de planeación, organización ni agilidad administrativa."
+    ejemplos_si: ["Organizacion administrativa", "Menos papeleo y más implementación en los gestores de conocimiento"]
+
+  - id: planes_estudio_oferta
+    nombre: "Planes de estudio, rutas formativas y oferta adaptadas"
+    componente: "Inteligencia institucional"
+    justificacion: "Componente 'Inteligencia institucional': usar lo que se sabe de estudiantes y egresados para adaptar planes de estudio, ritmos, rutas formativas y la oferta de programas."
+    critico: false
+    instruccion: "¿El `comentario` pide adaptar los planes de estudio, las rutas formativas, el pensum o la oferta de programas?"
+    criterio_true: "Menciona adaptar o actualizar planes de estudio, pensum, rutas formativas o ritmos de enseñanza, nivelar estudiantes, ajustar los programas según los egresados o el mercado, o más programas en todas las sedes."
+    criterio_false: "No habla de planes de estudio, programas ni oferta académica."
+    ejemplos_si: ["Adaptar los planes de estudio y ritmos de enseñanza según el rendimiento, intereses y dificultades de cada estudiante", "Seguimiento real a egresados como saber dónde trabajan y qué les faltó, y ajustar los programas con eso"]
+
+  - id: comunicacion_informacion
+    nombre: "Comunicación y difusión de la información"
+    componente: "Gobernanza estratégica"
+    justificacion: "Componente 'Gobernanza estratégica': diversificar los canales de información y mejorar la comunicación entre áreas."
+    critico: false
+    instruccion: "¿El `comentario` pide mejorar los medios de comunicación, la difusión de información o la comunicación entre áreas?"
+    criterio_true: "Menciona medios de comunicación, publicar información por más canales, comunicación entre áreas o mejor comunicación."
+    criterio_false: "No habla de comunicación ni difusión de información."
+    ejemplos_si: ["Que diversifiquen la publicación de la información ya que casi todo es por facebook", "Mejorar la comunicación entre áreas"]
+
+  - id: reconocimiento_calidad
+    nombre: "Reconocimiento nacional e internacional y titulación de alta calidad"
+    componente: "Acreditación institucional"
+    justificacion: "Componente 'Acreditación institucional': mejorar académicamente para ser reconocidos a nivel nacional y latinoamericano con titulación de alta calidad."
+    critico: false
+    instruccion: "¿El `comentario` pide reconocimiento nacional o internacional, alta calidad o mejor nivel académico de la universidad?"
+    criterio_true: "Menciona reconocimiento nacional, latinoamericano o internacional, titulación de alta calidad, calidad de la educación o reconocimiento de graduados."
+    criterio_false: "No menciona reconocimiento ni alta calidad."
+    ejemplos_si: ["Ser reconocido a nivel nacional e internacional", "no tiene reconocimiento a nivel nacional ni a nivel latinoamerica"]
+
+  - id: conformidad
+    nombre: "Conformidad con la transformación (sin ajustes)"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: dicen expresamente que no ajustarían nada o que están de acuerdo."
+    critico: false
+    instruccion: "¿El `comentario` dice expresamente que no haría ajustes o que está de acuerdo con la transformación tal como está?"
+    criterio_true: "Dice de forma explícita que no ajustaría o no quitaría nada, que todo está bien enfocado, que está de acuerdo o que la transformación es pertinente."
+    criterio_false: "Pide, propone o menciona cualquier cosa por mejorar."
+    ejemplos_si: ["No ajustaría nada", "Nada, todo está enfocado de la mejor manera"]
+
+  - id: territorio_comunidad
+    nombre: "Territorio, comunidad y problemas de la región"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Inteligente; el documento lo ubica en UC Translocal ('Impacto territorial', 'Interacción Social Universitaria')."
+    critico: false
+    instruccion: "¿El `comentario` habla del territorio, la región, la comunidad local o el entorno de cada sede?"
+    criterio_true: "Menciona el territorio, la región, el desarrollo local, la comunidad, instituciones territoriales, el entorno social de cada sede, problemas de la sociedad o ISU."
+    criterio_false: "No menciona el territorio, la región ni la comunidad externa."
+    ejemplos_si: ["Importante fortalecer los vínculos con las Instituciones territoriales", "actuar como puente entre el territorio y el conocimiento académico"]
+
+  - id: redes_otras_universidades
+    nombre: "Redes, movilidad y colaboración con otras universidades"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Inteligente; el documento lo ubica en UC Translocal ('Redes y cooperación', 'Internacionalización')."
+    critico: false
+    instruccion: "¿El `comentario` pide relación, colaboración o movilidad con otras universidades o instituciones nacionales e internacionales?"
+    criterio_true: "Menciona otras universidades, relación nacional e internacional, compartir conocimientos con otras instituciones, colaboraciones o movilidad."
+    criterio_false: "No menciona otras universidades ni movilidad."
+    ejemplos_si: ["Tenga mayor relación nacional e internacional, compartiendo conocimientos y experiencias con otras instituciones"]
+
+  - id: investigacion
+    nombre: "Investigación aplicada a la región y a la comunidad"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Inteligente; el documento lo ubica en UC Translocal ('Ciencia, tecnología e innovación')."
+    critico: false
+    instruccion: "¿El `comentario` pide más investigación, casos de estudio o investigación aplicada?"
+    criterio_true: "Menciona investigación, nuevas investigaciones, banco de casos de estudio o investigación para diagnosticar problemas."
+    criterio_false: "No menciona la investigación."
+    ejemplos_si: ["Crear Banco de Casos de estudio", "Más investigación enfocada al diagnóstico para la comunidad educativa"]
+
+  - id: tecnologia
+    nombre: "Tecnología, transformación digital y programación"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Inteligente; el documento lo ubica en UC Digital."
+    critico: false
+    instruccion: "¿El `comentario` pide tecnología, transformación digital, herramientas o formación en programación?"
+    criterio_true: "Menciona tecnología, desarrollo tecnológico o digital, transformación digital, herramientas, programación o implementos para los salones."
+    criterio_false: "No menciona tecnología. Hablar solo de inteligencia artificial tiene su propio tema."
+    ejemplos_si: ["En transformación digital", "La complementaria con temas de programación, para docentes y estudiantes"]
+
+  - id: espacios_descanso
+    nombre: "Espacios de descanso y salones"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Inteligente; corresponde a las condiciones para el aprendizaje y el bienestar (UC para la Vida)."
+    critico: false
+    instruccion: "¿El `comentario` pide espacios de descanso, salones o lugares para los estudiantes?"
+    criterio_true: "Menciona lugares o salones para descansar o dormir, mejores salones o espacios dedicados a los estudiantes."
+    criterio_false: "No menciona espacios físicos."
+    ejemplos_si: ["Tener un lugar de descanso en la Universidad", "salón dedicados para dormir ya que no se encuentra en la sede"]
+
+  - id: empleabilidad_oportunidades
+    nombre: "Oportunidades laborales y vínculo con empresas"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Inteligente; el documento lo ubica en UC Emprendedora e Innovadora."
+    critico: false
+    instruccion: "¿El `comentario` habla de oportunidades laborales, empleo de egresados o vínculo con empresas?"
+    criterio_true: "Menciona oportunidades de trabajo, dónde trabajan los egresados, conectar con pequeñas y medianas empresas o crear nuevas oportunidades."
+    criterio_false: "No menciona empleo, oportunidades ni empresas."
+    ejemplos_si: ["universidad que vonecte con pequeñas y medianas empresas", "oportunidades del trabajo saliendo con una titulación de alta calidad"]
+
+  - id: lo_humano
+    nombre: "Enfoque en el ser humano y mirada integral"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Inteligente; el documento lo ubica en UC para la Vida ('Persona Transhumana')."
+    critico: false
+    instruccion: "¿El `comentario` pide mantener el enfoque en el ser humano, los principios de la educación o una mirada integral?"
+    criterio_true: "Menciona el ser humano, el MEDIT enfocado en el ser humano, no dejar atrás los principios de educación y aprendizaje, o mirar la universidad holísticamente."
+    criterio_false: "No habla del ser humano ni de una mirada integral."
+    ejemplos_si: ["Continuar con el medit enfocado 100% en el ser humano", "Mirar la universidad holisticamente"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

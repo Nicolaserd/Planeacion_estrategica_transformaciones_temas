@@ -1,0 +1,86 @@
+# Temas de Zipaquirá · 31 ago 2026 · UC Digital (lista propia de esta unidad).
+# Anclados a los componentes de "UC Digital" en contexto/Transformaciones_estrategicas_5_frentes.md (líneas 66-82).
+transformacion: UC Digital
+version: 1
+temas:
+  - id: registros_procesos_app
+    nombre: "Simplificar registros, asistencia y procesos con una app institucional"
+    componente: "Automatización de procesos"
+    justificacion: "Componente 'Automatización de procesos': un único registro de asistencia, separar espacios y préstamos vía plataforma, unificar procesos en una app y solicitudes de recursos más efectivas."
+    critico: false
+    instruccion: "¿El `comentario` pide simplificar, digitalizar o unificar registros, la asistencia, préstamos, reservas o solicitudes?"
+    criterio_true: "Menciona registros docentes o de ingreso, asistencia, digitalizar asistencias, préstamo de elementos o espacios, reservar espacios por plataforma, una aplicación institucional, optimizar procesos digitales o solicitudes de recursos."
+    criterio_false: "No habla de registros, asistencia ni procesos."
+    ejemplos_si: ["Un único registro de asistencia", "Unificación de procesos digitales mediante una aplicación institucional"]
+
+  - id: equipos_software_musica
+    nombre: "Equipos, software y tecnología para la música"
+    componente: "Tecnologías emergentes"
+    justificacion: "Componente 'Tecnologías emergentes': software de notación y DAWs actualizados, equipos e instrumentos, infraestructura tecnológica musical y herramientas para producción e ingeniería de sonido."
+    critico: false
+    instruccion: "¿El `comentario` pide equipos, software, herramientas o infraestructura tecnológica para aprender o producir música?"
+    criterio_true: "Menciona software, DAWs, equipos, instrumentos, herramientas tecnológicas, recursos técnicos, tecnología de vanguardia o infraestructura tecnológica para la música o la producción."
+    criterio_false: "No menciona equipos, software ni herramientas tecnológicas."
+    ejemplos_si: ["Software más nuevos para notación", "Recurso tecnológico: actualizado en equipos, instrumentos, Daws"]
+
+  - id: conectividad_trabajo_remoto
+    nombre: "Conectividad, internet y trabajo remoto"
+    componente: "Ecosistemas digitales"
+    justificacion: "Componente 'Ecosistemas digitales': red de internet sólida, servicios continuos de conectividad y trabajo remoto."
+    critico: false
+    instruccion: "¿El `comentario` pide mejor internet, conectividad o trabajo remoto?"
+    criterio_true: "Menciona internet, red, conexiones tecnológicas, conectividad o trabajo remoto."
+    criterio_false: "No menciona internet, conectividad ni trabajo remoto."
+    ejemplos_si: ["Tener una Red de Internet Sólida", "Servicios continuos de conectividad"]
+
+  - id: virtualidad_modalidad_dual
+    nombre: "Virtualidad y modalidad dual en las clases"
+    componente: "fortalecer el aprendizaje"
+    justificacion: "'Qué busca': transformación digital 'para fortalecer el aprendizaje': clases virtuales, materias transversales virtuales, formación mediada por tecnología y modalidad dual."
+    critico: false
+    instruccion: "¿El `comentario` pide clases o materias virtuales, formación mediada por tecnología o modalidad dual?"
+    criterio_true: "Menciona virtualidad en las clases, virtualizar materias, modalidad dual o formación mediada por la tecnología."
+    criterio_false: "No menciona virtualidad ni modalidad dual."
+    ejemplos_si: ["Virtualización de materias transversales", "La modalidad dual colabora en la gestión de horarios"]
+
+  - id: servicios_digitales_graduados
+    nombre: "Servicios digitales: marketing, portafolio y plataformas para graduados"
+    componente: "Servicios digitales"
+    justificacion: "Componente 'Servicios digitales': plataformas para graduados, marketing digital musical, portafolio profesional digital y transmisión de recitales."
+    critico: false
+    instruccion: "¿El `comentario` pide servicios digitales como plataformas para graduados, marketing digital, portafolio digital o transmisiones?"
+    criterio_true: "Menciona plataformas de servicios a graduados, marketing digital, portafolio profesional digital o transmitir recitales vía digital."
+    criterio_false: "No menciona servicios digitales para la comunidad."
+    ejemplos_si: ["La implementacion de marketing digital enfocado a la musica", "construir y desarrollar su propio portafolio profesional digital"]
+
+  - id: participacion_ecosistema
+    nombre: "Participación de la comunidad en el ecosistema digital"
+    componente: "Ecosistemas digitales"
+    justificacion: "Componente 'Ecosistemas digitales': que los estudiantes participen en el desarrollo del ecosistema y que haya canales de discusión."
+    critico: false
+    instruccion: "¿El `comentario` pide que los estudiantes participen en el desarrollo del ecosistema digital o canales de discusión?"
+    criterio_true: "Menciona que los creadores de oportunidades participen en el desarrollo del ecosistema o fortalecer los canales de discusión."
+    criterio_false: "No habla de participación en el ecosistema digital."
+    ejemplos_si: ["Que los creadores de oportunidades sean participes del proceso de desarrollo del ecosistema", "Fortalecer canales de discusión de las actividades"]
+
+  - id: libertad_catedra
+    nombre: "Libertad de cátedra y autonomía docente"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Digital; el documento lo ubica en UC para la Vida ('Libertad')."
+    critico: false
+    instruccion: "¿El `comentario` defiende la libertad de cátedra o la autonomía docente?"
+    criterio_true: "Menciona libertad de cátedra, autonomía del docente o que la metodología no sea una camisa de fuerza."
+    criterio_false: "No menciona la libertad de cátedra ni la autonomía docente."
+    ejemplos_si: ["Favorecer la libertad de cátedra", "La libertad de cátedra incluye la autonomía del docente"]
+
+  - id: accesibilidad_infraestructura
+    nombre: "Accesibilidad, infraestructura y horarios"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Digital de forma explícita."
+    critico: false
+    instruccion: "¿El `comentario` pide ascensor, accesibilidad a las aulas o extensión de horarios?"
+    criterio_true: "Menciona ascensor, infraestructura, accesibilidad a las aulas o extensión de horarios."
+    criterio_false: "No menciona accesibilidad, infraestructura ni horarios."
+    ejemplos_si: ["Infraestructura ascensor, extención de horarios", "Aumentar la accesibilidad a las aulas"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

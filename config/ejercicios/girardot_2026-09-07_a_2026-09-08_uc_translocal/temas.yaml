@@ -1,0 +1,143 @@
+# Temas v2 de Girardot · UC Translocal (lista propia de esta unidad).
+# Versión 2: menos temas (máx. 10) por fusión de los de la versión 1 (respaldada en temas_v1.yaml).
+# Anclados a Transformaciones_estrategicas_5_frentes.md · '## 2. UC Translocal' · líneas 46-62.
+transformacion: UC Translocal
+version: 2.2
+temas:
+- id: articulacion_sedes
+  nombre: Articulación, integración e intercambio entre sedes
+  componente: Identidad translocal
+  justificacion: 'Componente ''Identidad translocal'': una sola universidad con sedes conectadas (''7 caminos, una sola meta''); hoy se perciben dispersas y desarticuladas.'
+  critico: false
+  instruccion: ¿El `comentario` pide integrar, articular o conectar las sedes, seccionales y extensiones, o intercambios y proyectos entre ellas?
+  criterio_true: Menciona integración, unión, articulación, sinergia o interacción entre sedes, seccionales o extensiones, intercambios o proyectos entre estudiantes de diferentes sedes, redes entre sedes,
+    o una sola universidad y no por extensiones.
+  criterio_false: No habla de conectar ni integrar las sedes.
+  ejemplos_si:
+  - Mayor integración entre las sedes, seccionales y extensiones.
+  - Se requiere mayor interactividad entre territorios. Hoy estamos dispersos y desarticulados
+- id: soluciones_acceso_territorio
+  nombre: Soluciones a las necesidades de cada territorio y acceso a la educación
+  componente: Impacto territorial
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (soluciones a los problemas y necesidades de cada territorio; acceso a la educación en municipios y zonas rurales). Ancla: componente ''Impacto
+    territorial''.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: soluciones a los problemas y necesidades de cada territorio; acceso a la educación en municipios y zonas rurales?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Soluciones a los problemas y necesidades de cada territorio: menciona soluciones a problemáticas o necesidades del territorio, la región o
+    el municipio, impacto territorial, desarrollo del territorio, incluir más municipios, problemas ambientales o planificación del territorio, o ir al territorio a analizar falencias. (2) Acceso a la educación
+    en municipios y zonas rurales: menciona acceso a la educación, jóvenes sin acceso, población rural o en riesgo, conectar a personas fuera de la región con educación, o igualdad de programas en las distintas
+    sedes.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Que cada facultad desde su área busque soluciones a problemáticas de cada territorio
+  - incrementarla sobre todo el municipios donde los grupos poblacionales de adolescentes y jóvenes no tengan acceso a la educación
+  fusiona_v1:
+  - soluciones_territorio
+  - acceso_educacion
+- id: interaccion_social_comunidad
+  nombre: Interacción social universitaria y trabajo con la comunidad
+  componente: Interacción Social Universitaria
+  justificacion: 'Componente ''Interacción Social Universitaria'': escuchar a la comunidad, mesas de trabajo con ella, ISU con más tiempo y reconocimiento, inmersión y trabajo comunitario.'
+  critico: false
+  instruccion: ¿El `comentario` pide fortalecer la interacción social universitaria (ISU), el trabajo comunitario o escuchar e incluir a la comunidad externa?
+  criterio_true: Menciona expresamente la interacción social universitaria o ISU, el trabajo comunitario, la extensión universitaria, mesas de trabajo con la comunidad externa, escuchar o incluir las experiencias
+    de las comunidades, o inmersión de estudiantes y docentes en el territorio.
+  criterio_false: No menciona expresamente la ISU, el trabajo comunitario ni la participación de la comunidad externa. Pedir solucionar problemas o necesidades del territorio, articular sedes o investigar
+    no basta.
+  ejemplos_si:
+  - Los procesos de interacción social universitaria deberían ser más amplios en tiempo
+  - incluir mesas de trabajo en las que se incluya a la comunidad externa
+- id: internacionalizacion_proyeccion
+  nombre: Internacionalización, redes, visibilidad y proyección
+  componente: Internacionalización
+  otros_componentes:
+  - proyección de la Universidad
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (internacionalización, convenios y redes con otras universidades; visibilidad y proyección de la universidad). Ancla: componente ''Internacionalización'';
+    también toca: proyección de la Universidad.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: internacionalización, convenios y redes con otras universidades; visibilidad y proyección de la universidad?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Internacionalización, convenios y redes con otras universidades: menciona internacionalización, nivel internacional, convenios internacionales,
+    intercambios, redes nacionales o internacionales, conexión con otras universidades o visión global. (2) Visibilidad y proyección de la universidad: menciona visibilidad, reconocimiento, feria de las
+    carreras, proyección, llegar a más lugares o más peso como actor departamental.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita. Conectar sedes de la misma universidad tiene su propio tema.
+  ejemplos_si:
+  - El aprovechamiento de los convenios internacionales
+  - Feria reconocedora nacional de las carreras de la U cundinamarca
+  fusiona_v1:
+  - internacionalizacion_redes
+  - visibilidad_proyeccion
+- id: identidad_vocacion
+  nombre: Identidad, saberes y vocación propia de cada territorio y sede
+  componente: reconociendo su diversidad
+  otros_componentes:
+  - desde su propia realidad
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (cultura, saberes e identidad de cada territorio; descentralización y vocación propia de cada sede). Ancla: componente ''reconociendo su diversidad'';
+    también toca: desde su propia realidad.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: cultura, saberes e identidad de cada territorio; descentralización y vocación propia de cada sede?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Cultura, saberes e identidad de cada territorio: menciona la cultura o el conocimiento cultural de cada sede o territorio, saberes, identidad,
+    particularidades de la región, sentido de pertenencia, momentos o actividades culturales, o llevar lo representativo de la región. (2) Descentralización y vocación propia de cada sede: menciona expresamente
+    descentralizar, no concentrar el poder, un observatorio de necesidades locales, la vocación regional propia de cada seccional, potencializar cada sede con impacto propio, ajustarse más a lo local, o
+    la tensión entre la delimitación territorial y la vocación productiva.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita. Pedir solucionar problemas del territorio o integrar sedes tiene su propio tema.
+  ejemplos_si:
+  - Reconocer la cultura y los diferentes conocimientos presentes en cada una de las sedes
+  - Se enfatiza la necesidad de descentralizar el territorio en lugar de concentrar el poder
+  fusiona_v1:
+  - identidad_cultural_diversidad
+  - descentralizacion_vocacion
+- id: investigacion_innovacion
+  nombre: Investigación, semilleros e innovación
+  componente: Ciencia, tecnología e innovación
+  justificacion: 'Componente ''Ciencia, tecnología e innovación'': semilleros unidos entre sedes, más recursos e información para ellos, innovación y redes de investigación.'
+  critico: false
+  instruccion: ¿El `comentario` pide investigación, semilleros o innovación?
+  criterio_true: Menciona investigación, semilleros, proyectos de investigación, innovación o universidad innovadora.
+  criterio_false: No menciona investigación, semilleros ni innovación.
+  ejemplos_si:
+  - Crear oportunidades de unión investigativa entre semilleros de las distintas sedes
+  - Mejorar los recursos que están disponible para los semilleros
+- id: formacion_contextualizada
+  nombre: Formación contextualizada, crítica y ética
+  componente: Formación y aprendizaje
+  justificacion: 'Componente ''Formación y aprendizaje'': formación que responda a necesidades locales y mundiales, rutas académicas, pensamiento crítico, ética y calidad del egresado.'
+  critico: false
+  instruccion: ¿El `comentario` pide una formación más contextualizada, crítica, ética o de mejor calidad?
+  criterio_true: Menciona formación contextualizada o integral, actualizar la formación a las necesidades del medio, rutas académicas, programas articulados con la transmodernidad, pensamiento crítico,
+    ética, calidad del egresado o estandarizar procesos formativos.
+  criterio_false: No habla de la formación de los estudiantes.
+  ejemplos_si:
+  - Formación más contextualizada capaz de responder a las necesidades locales y mundiales
+  - Priorizar el pensamiento crítico en los estudiantes y docentes
+- id: conformidad
+  nombre: Conformidad con la transformación (sin ajustes)
+  componente: transformacion_en_general
+  justificacion: 'Comentarios sobre la transformación como un todo: dicen expresamente que no ajustarían nada o que está bien.'
+  critico: false
+  instruccion: ¿El `comentario` dice expresamente que no haría ajustes o que la transformación está bien tal como está?
+  criterio_true: Dice de forma explícita que no ajustaría nada, ningún ajuste, que está bien, completa, bien fundamentada, excelente, viable, o que está de acuerdo, sin pedir cambios.
+  criterio_false: Pide, propone o menciona cualquier cosa por mejorar o agregar.
+  ejemplos_si:
+  - No cambiaria nada así como esta se encuentra bien
+  - Ninguna, todo está completo
+- id: otros_fuera
+  nombre: Otros asuntos fuera de la transformación
+  componente: fuera_de_la_transformacion
+  justificacion: 'Asuntos sin anclaje en la sección de UC Translocal del documento marco, cada uno con menos del 10 % de los comentarios; se agrupan en un solo tema (versión 2). Incluye: emprendimiento
+    y oportunidades para estudiantes y graduados; tecnología y desarrollo tecnológico; procesos administrativos eficientes y sin burocracia.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Translocal: emprendimiento y oportunidades para estudiantes y graduados; tecnología y desarrollo tecnológico;
+    procesos administrativos eficientes y sin burocracia?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Emprendimiento y oportunidades para estudiantes y graduados: menciona emprendimiento, emprendedores, creación de empresas, apoyo empresarial,
+    ferias de emprendimiento u oportunidades para graduados. (2) Tecnología y desarrollo tecnológico: menciona tecnología, nuevas tecnologías, desarrollo tecnológico o competencias digitales. (3) Procesos
+    administrativos eficientes y sin burocracia: menciona procesos administrativos eficientes o coherentes, universidad ágil o sin burocracia.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Unificar apoyos para los emprendedores locales
+  - Implementar más tecnología funcional
+  - Los procesos administrativos más eficientes
+  fusiona_v1:
+  - emprendimiento_oportunidades
+  - tecnologia
+  - procesos_administrativos
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?

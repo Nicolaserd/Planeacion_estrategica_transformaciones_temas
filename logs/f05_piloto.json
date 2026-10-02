@@ -1,0 +1,181 @@
+{
+  "modelo_pedido": "jev-1.13.0",
+  "modelos_respondieron": [
+    "jev-1.13.0"
+  ],
+  "n_preguntas_por_peticion": 24,
+  "piloto_n": 10,
+  "fallas": {},
+  "input_tokens": {
+    "media": 4147.9,
+    "max": 4168
+  },
+  "bajo_limites": true,
+  "textos_unicos": 44,
+  "costo_estimado_usd": 0.00767,
+  "hashes": {
+    "marco": "8a09071207b9c20f9e8ead214eb35668ad6e6e0789fa508fe5dd2c6eb1b7f134",
+    "taxonomia": "104dec2b23f28dbb686523335c9843841b6a39244e51d1d659a1af4d057254c7",
+    "version_taxonomia": 1
+  },
+  "tabla": [
+    {
+      "id_com": "8-P1",
+      "comentario": "Mejora continua en cada uno de los procesos ",
+      "transformaciones_p>=0.5": {
+        "T1": 0.81
+      },
+      "principal": "T1 (0.96)",
+      "temas_p>=0.5": {
+        "calidad_exigencia_academica": 0.98
+      },
+      "tipo": "oportunidad_de_mejora (0.28)",
+      "sin_contenido": 0.38
+    },
+    {
+      "id_com": "408-P1",
+      "comentario": "Agregar temática de desarrollo personal ",
+      "transformaciones_p>=0.5": {
+        "T5": 0.97
+      },
+      "principal": "T5 (1.00)",
+      "temas_p>=0.5": {
+        "formacion_integral_desarrollo_personal": 0.95,
+        "ajustes_enfoque_transformacion": 0.92
+      },
+      "tipo": "oportunidad_de_mejora (1.00)",
+      "sin_contenido": 0.11
+    },
+    {
+      "id_com": "16-P1",
+      "comentario": "Como estudiante de la u cundinamarca cambiaria los aspectos para que la transformacion fue…",
+      "transformaciones_p>=0.5": {
+        "T4": 0.86
+      },
+      "principal": "T4 (0.68)",
+      "temas_p>=0.5": {
+        "practicas_formacion_aplicada": 0.95,
+        "empleabilidad": 0.95,
+        "bienestar_salud_mental": 0.96
+      },
+      "tipo": "oportunidad_de_mejora (1.00)",
+      "sin_contenido": 0.09
+    },
+    {
+      "id_com": "47-P1",
+      "comentario": "Que sea más práctica la carrera para poner en práctica los conocimientos tener la oportuni…",
+      "transformaciones_p>=0.5": {
+        "T1": 0.66,
+        "T4": 0.59
+      },
+      "principal": "ninguna (0.49)",
+      "temas_p>=0.5": {
+        "calidad_exigencia_academica": 0.97,
+        "practicas_formacion_aplicada": 0.98
+      },
+      "tipo": "oportunidad_de_mejora (1.00)",
+      "sin_contenido": 0.03
+    },
+    {
+      "id_com": "52-P1",
+      "comentario": "Socialización programas de bienestar universitario,acceso a prácticas empresariales",
+      "transformaciones_p>=0.5": {
+        "T4": 0.9,
+        "T5": 0.76
+      },
+      "principal": "T5 (0.59)",
+      "temas_p>=0.5": {
+        "practicas_formacion_aplicada": 0.87,
+        "empleabilidad": 0.88,
+        "vinculos_empresas_sector": 0.91,
+        "bienestar_salud_mental": 0.98
+      },
+      "tipo": "oportunidad_de_mejora (0.33)",
+      "sin_contenido": 0.13
+    },
+    {
+      "id_com": "26-P1",
+      "comentario": "Gestionar proyectos y espacios de interacción y comunicación con demás entes dentro de la …",
+      "transformaciones_p>=0.5": {
+        "T4": 0.78
+      },
+      "principal": "T4 (0.90)",
+      "temas_p>=0.5": {
+        "empleabilidad": 0.75,
+        "vinculos_empresas_sector": 0.98,
+        "participacion_comunicacion": 0.77
+      },
+      "tipo": "neutro_observacion (0.63)",
+      "sin_contenido": 0.06
+    },
+    {
+      "id_com": "11-P1",
+      "comentario": "Más conexion con la realidad Laboral, aumentar las oportunidades de participación de biene…",
+      "transformaciones_p>=0.5": {
+        "T5": 0.97
+      },
+      "principal": "T5 (1.00)",
+      "temas_p>=0.5": {
+        "empleabilidad": 0.75,
+        "vinculos_empresas_sector": 0.53,
+        "bienestar_salud_mental": 0.98,
+        "condiciones_laborales_administrativos": 0.55,
+        "formacion_integral_desarrollo_personal": 0.74,
+        "convivencia_comunidad": 0.89,
+        "participacion_comunicacion": 0.7
+      },
+      "tipo": "oportunidad_de_mejora (1.00)",
+      "sin_contenido": 0.02
+    },
+    {
+      "id_com": "32-P1",
+      "comentario": "Oportunidades laborales, personales e interpersonales ademas de conocimiento capaz de tran…",
+      "transformaciones_p>=0.5": {
+        "T2": 0.76,
+        "T4": 0.84
+      },
+      "principal": "T2 (0.71)",
+      "temas_p>=0.5": {
+        "pertinencia_territorial": 0.88,
+        "empleabilidad": 0.81,
+        "vinculos_empresas_sector": 0.5,
+        "formacion_integral_desarrollo_personal": 0.86,
+        "convivencia_comunidad": 0.57
+      },
+      "tipo": "reconocimiento (0.82)",
+      "sin_contenido": 0.08
+    },
+    {
+      "id_com": "28-P1",
+      "comentario": "Que brinde aprendizajes, herramientas y estrategias más allá del ámbito profesional. Que f…",
+      "transformaciones_p>=0.5": {
+        "T5": 0.91
+      },
+      "principal": "T5 (0.99)",
+      "temas_p>=0.5": {
+        "formacion_integral_desarrollo_personal": 0.98,
+        "ajustes_enfoque_transformacion": 0.58
+      },
+      "tipo": "oportunidad_de_mejora (0.98)",
+      "sin_contenido": 0.03
+    },
+    {
+      "id_com": "50-P1",
+      "comentario": "Desarrollo como profesional y acercamiento a empresas en el desarrollo de procesos según á…",
+      "transformaciones_p>=0.5": {
+        "T2": 0.6,
+        "T4": 0.84,
+        "T5": 0.57
+      },
+      "principal": "T4 (0.96)",
+      "temas_p>=0.5": {
+        "segunda_lengua": 0.83,
+        "practicas_formacion_aplicada": 0.52,
+        "empleabilidad": 0.74,
+        "vinculos_empresas_sector": 0.94
+      },
+      "tipo": "reconocimiento (0.19)",
+      "sin_contenido": 0.09
+    }
+  ]
+}

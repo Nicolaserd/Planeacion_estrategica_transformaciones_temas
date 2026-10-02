@@ -1,0 +1,86 @@
+# Temas de Zipaquirá · 31 ago 2026 · UC Emprendedora e Innovadora (lista propia de esta unidad).
+# Anclados a los componentes de "UC Emprendedora e Innovadora" en contexto/Transformaciones_estrategicas_5_frentes.md (líneas 86-100).
+transformacion: UC Emprendedora e Innovadora
+version: 1
+temas:
+  - id: acompanamiento_asesoria
+    nombre: "Acompañamiento, mentoría y asesoría a los proyectos"
+    componente: "Ecosistemas de innovación"
+    justificacion: "Componente 'Ecosistemas de innovación': mentoría continua, estudio de viabilidad e impacto, asesoría legal, empresarial y de investigación, banco de proyectos y mesas de trabajo."
+    critico: false
+    instruccion: "¿El `comentario` pide acompañamiento, mentoría, asesoría o estudio de viabilidad para los proyectos?"
+    criterio_true: "Menciona acompañamiento, mentoría, asesoría (legal, empresarial, de investigación), estudio de viabilidad o impacto de los proyectos, banco de proyectos o ideas, mesa de trabajo o canales de formación y apoyo."
+    criterio_false: "No habla de acompañar ni asesorar proyectos."
+    ejemplos_si: ["Un acompañamiento eficiente que asesore la forma del proyecto, su viabilidad y ejecución", "Mentoría personalizada continua de docentes, investigadores y otro ideadores"]
+
+  - id: financiacion_apoyo_economico
+    nombre: "Financiación y apoyo económico a los emprendimientos"
+    componente: "Emprendimiento"
+    justificacion: "Componente 'Emprendimiento': presupuesto, apoyo monetario, recursos para ejecutar y apoyo a los emprendimientos de los graduados."
+    critico: false
+    instruccion: "¿El `comentario` pide presupuesto, recursos, financiación o apoyo económico para proyectos o emprendimientos?"
+    criterio_true: "Menciona presupuesto, recursos, financiación, apoyo monetario o económico, o apoyo a emprendimientos."
+    criterio_false: "No menciona recursos económicos ni financiación."
+    ejemplos_si: ["de apoyo monetario para llevar a cabo muchas de los problemas en nuestro territorio", "Apoyo a emprendimientos y marketing profesional a los graduados"]
+
+  - id: alianzas_sector_cultural
+    nombre: "Alianzas con el sector cultural y la industria musical"
+    componente: "Relacionamiento con los sectores sociales, productivos, públicos y comunitarios"
+    justificacion: "Componente 'Relacionamiento con los sectores sociales, productivos, públicos y comunitarios': convenios con disqueras, productores, casas de la cultura, instituciones culturales e industria musical."
+    critico: false
+    instruccion: "¿El `comentario` pide convenios o alianzas con el sector cultural, la industria musical u otras entidades externas?"
+    criterio_true: "Menciona convenios o alianzas con plataformas, disqueras, productores, entidades o instituciones culturales, casas de la cultura, la industria musical o del entretenimiento, o entidades y empresas a las que direccionar proyectos."
+    criterio_false: "No menciona alianzas ni entidades externas."
+    ejemplos_si: ["Convenios con plataformas, disqueras, productores y sector de educación", "Alianzas estratégicas con instituciones culturales de la región"]
+
+  - id: soluciones_territorio
+    nombre: "Proyectos que respondan a los problemas del territorio"
+    componente: "Innovación social"
+    justificacion: "Componente 'Innovación social': espacios para discutir y solucionar problemas del territorio, incidir en problemáticas translocales y proyectos de construcción social."
+    critico: false
+    instruccion: "¿El `comentario` pide proyectos o espacios para resolver problemas del territorio o de los sectores sociales?"
+    criterio_true: "Menciona problemas o problemáticas del territorio o translocales, sectores sociales o proyectos de construcción social."
+    criterio_false: "No menciona el territorio ni problemas sociales."
+    ejemplos_si: ["Que hayan espacios donde se discutan los problemas del territorio", "Banco de Proyectos de construcción social"]
+
+  - id: ordenar_la_casa
+    nombre: "Primero ordenar la casa: resolver lo interno y escuchar a los docentes"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre el planteamiento de la transformación: resolver primero los problemas internos y escuchar a los docentes antes de proyectarse hacia afuera."
+    critico: false
+    instruccion: "¿El `comentario` plantea que primero hay que resolver los problemas internos de la universidad antes de proyectarse hacia afuera?"
+    criterio_true: "Dice que hay que resolver problemas internos primero, ordenar la casa, o hacer auto observación institucional antes de proyectarse hacia afuera."
+    criterio_false: "No plantea priorizar lo interno sobre lo externo."
+    ejemplos_si: ["Primero ordenar la casa y después tratar de ayudar a solucionar los problemas del entorno", "Hay que resolver problemas internos primero"]
+
+  - id: comunicacion_docentes
+    nombre: "Comunicación y escucha con los docentes"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Emprendedora; el documento lo ubica en UC Inteligente ('Gobernanza estratégica')."
+    critico: false
+    instruccion: "¿El `comentario` pide una comunicación más clara, asertiva o abierta, o escuchar a los docentes?"
+    criterio_true: "Menciona comunicación asertiva, clara o bidireccional, discusión abierta o escuchar a los docentes."
+    criterio_false: "No habla de comunicación ni de escucha."
+    ejemplos_si: ["La Universidad tendría que fortalecer una comunicación más asertiva, clara y bidireccional con los docentes", "Requiere incorporar la escucha a la docentes"]
+
+  - id: investigacion
+    nombre: "Acceso a la investigación y su articulación con el emprendimiento"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Emprendedora; el documento lo ubica en UC Translocal ('Ciencia, tecnología e innovación')."
+    critico: false
+    instruccion: "¿El `comentario` pide democratizar el acceso a la investigación o articularla con el emprendimiento?"
+    criterio_true: "Menciona investigación, convocatorias, grupos de investigación o articulación entre emprendimiento e investigación."
+    criterio_false: "No menciona la investigación."
+    ejemplos_si: ["ARTICULACIÓN ENTRE EMPRENDIMIENTO E INVESTIGACIÓN.", "debería democratizar el acceso a la investigación"]
+
+  - id: infraestructura_tiempos
+    nombre: "Acceso a infraestructura, laboratorios y tiempos para trabajar"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Emprendedora de forma explícita."
+    critico: false
+    instruccion: "¿El `comentario` pide acceso a infraestructura, laboratorios o espacios, o más horas para trabajar en la universidad?"
+    criterio_true: "Menciona infraestructura, laboratorios, estudios, espacios físicos o extender la jornada."
+    criterio_false: "No menciona infraestructura ni horarios."
+    ejemplos_si: ["Acceso total a infraestructura y laboratorios: Disponibilidad 24/7", "Extender la jornada dos horas para estudio individual"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

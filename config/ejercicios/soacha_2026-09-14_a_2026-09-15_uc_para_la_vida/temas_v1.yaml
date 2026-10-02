@@ -1,0 +1,179 @@
+# Temas de Soacha · 14-15 sep 2026 · UC para la Vida (lista propia de esta unidad).
+# Definidos con los 77 comentarios del ejercicio y anclados a los componentes (o a "Qué busca") de
+# "UC para la Vida" en contexto/Transformaciones_estrategicas_5_frentes.md (líneas 104-121).
+# transformacion_en_general = sobre la transformación como un todo; fuera_de_la_transformacion = sin anclaje.
+# Los ejemplos no se envían a Jev.
+transformacion: UC para la Vida
+version: 1
+temas:
+  - id: condiciones_laborales_personal
+    nombre: "Estabilidad laboral, contratación y remuneración de docentes y administrativos"
+    componente: "Desarrollo del talento humano"
+    justificacion: "Componente 'Desarrollo del talento humano': estabilidad, contratos de 12 meses, concurso de planta, carga equilibrada y remuneración equitativa."
+    critico: false
+    instruccion: "¿El `comentario` habla de la estabilidad laboral, los contratos, la carga de trabajo o la remuneración de los docentes o administrativos de la universidad?"
+    criterio_true: "Menciona estabilidad laboral o económica, contratación, contratos de 12 meses, concurso o planta docente, carga de trabajo equilibrada, salario o remuneración, reconocimiento económico o condiciones laborales del personal."
+    criterio_false: "No habla de las condiciones de trabajo del personal de la universidad. El empleo de estudiantes o egresados no cuenta."
+    ejemplos_si: ["Brindar estabilidad laboral y carga equilibrada para contribuir a la calidad de vida de los gestores del conocimiento", "Estabilidad económica, contratos de 12 meses"]
+
+  - id: reconocimiento_docentes
+    nombre: "Reconocimiento y valoración de los docentes (Gestores del Conocimiento)"
+    componente: "Gestores del Conocimiento y el Aprendizaje"
+    justificacion: "Componente 'Gestores del Conocimiento y el Aprendizaje': los docentes piden sentirse valorados por su labor, su dedicación y su aporte a los estudiantes."
+    critico: false
+    instruccion: "¿El `comentario` pide que se valore o reconozca la labor, la dedicación o el aporte de los docentes (gestores del conocimiento)?"
+    criterio_true: "Menciona sentirse valorado o reconocido como docente o gestor, el aprecio por su dedicación, que su trabajo deje huella en los estudiantes, o que no se les vea solo como un indicador."
+    criterio_false: "No habla del reconocimiento de los docentes. Pedir solo estabilidad o salario no basta."
+    ejemplos_si: ["sentirme valorado tanto en el ámbito profesional como en el personal", "Los gestores no sólo somos un indicador positivo"]
+
+  - id: formacion_crecimiento_personal_u
+    nombre: "Formación y crecimiento profesional del personal"
+    componente: "Desarrollo del talento humano"
+    justificacion: "Componente 'Desarrollo del talento humano': capacitación, planes de crecimiento profesional y oportunidades de estudio para docentes y administrativos."
+    critico: false
+    instruccion: "¿El `comentario` pide capacitación, formación, estudio o crecimiento profesional para los docentes o administrativos?"
+    criterio_true: "Menciona capacitación, formación o estudio para el personal, planes de crecimiento profesional, desarrollo académico o profesional de los docentes, o fortalecimiento del talento humano."
+    criterio_false: "No habla de formar al personal de la universidad. La formación de los estudiantes no cuenta."
+    ejemplos_si: ["Más capacitación para administrativos", "Que se generen planes de crecimiento profesional orientados a la comunidad administrativa"]
+
+  - id: bienestar_felicidad
+    nombre: "Bienestar, felicidad y calidad de vida de la comunidad"
+    componente: "Felicidad y bienestar"
+    justificacion: "Componente 'Felicidad y bienestar': más apoyo de bienestar universitario, bienestar que llegue a los gestores y a las sedes, espacios deportivos y de esparcimiento, estabilidad emocional."
+    critico: false
+    instruccion: "¿El `comentario` pide o menciona el bienestar, la felicidad, la calidad de vida, la estabilidad emocional o espacios deportivos o de esparcimiento?"
+    criterio_true: "Menciona bienestar universitario o docente, felicidad, calidad de vida, estabilidad emocional, espacios deportivos o de esparcimiento, o ser incluidos en las actividades de bienestar."
+    criterio_false: "No menciona bienestar, felicidad ni calidad de vida. Las ayudas económicas tienen su propio tema."
+    ejemplos_si: ["Mayor apoyo por parte de bienestar universitario", "Más espacios deportivos"]
+
+  - id: apoyos_socioeconomicos
+    nombre: "Apoyos socioeconómicos (matrícula cero, alimentación, ayudas)"
+    componente: "Felicidad y bienestar"
+    justificacion: "Componente 'Felicidad y bienestar': matrícula cero, apoyos económicos, alimentación y educación pública como condiciones para estudiar."
+    critico: false
+    instruccion: "¿El `comentario` menciona apoyos económicos, matrícula cero, alimentación, ayudas o la educación pública?"
+    criterio_true: "Menciona matrícula cero, ayuda o apoyo económico, alimentación, apoyos para estudiar, o incentivar la educación pública."
+    criterio_false: "No menciona apoyos económicos ni la gratuidad de la educación."
+    ejemplos_si: ["Una forma para mejorar su futuro gracias a la matrícula cero", "apoyos económicos y alimentación"]
+
+  - id: practicas_salidas
+    nombre: "Prácticas, salidas pedagógicas y experiencias de campo"
+    componente: "condiciones que favorezcan el aprendizaje"
+    justificacion: "'Qué busca': 'condiciones que favorezcan el aprendizaje'. Piden prácticas desde los primeros semestres, salidas pedagógicas y de campo y experiencias reales de la carrera."
+    critico: false
+    instruccion: "¿El `comentario` pide prácticas, salidas pedagógicas o de campo, o experiencias reales y prácticas durante la carrera?"
+    criterio_true: "Menciona prácticas, convenios de práctica, salidas pedagógicas, académicas o de campo, experiencias de campo, acercamiento a la vida real de la carrera, o más práctica y no esperar al último semestre."
+    criterio_false: "No pide práctica ni salidas. Pedir empleo al graduarse sin mencionar prácticas no cuenta."
+    ejemplos_si: ["MÁS PRÁCTICA DURANTE LA CARRERA CON LA VIDA LABORAL REAL", "sería bastante importante más salidas pedagógicas"]
+
+  - id: empleabilidad_empresas
+    nombre: "Empleabilidad y vínculos con empresas"
+    componente: "Creadores de Oportunidades"
+    justificacion: "Componente 'Creadores de Oportunidades': convenios y alianzas con empresas, inclusión laboral, competencia en el mercado y transición exitosa de egresados al trabajo."
+    critico: false
+    instruccion: "¿El `comentario` pide empleabilidad, inclusión laboral, alianzas o convenios con empresas, o apoyo para que estudiantes y egresados consigan trabajo?"
+    criterio_true: "Menciona trabajo, inclusión o vinculación laboral, mercado laboral, convenios o alianzas con empresas, llegada de empresas, integración en empresas, hoja de vida, oportunidades al graduarse o éxito profesional."
+    criterio_false: "No habla del empleo de estudiantes o egresados ni de empresas. Las condiciones del personal de la universidad no cuentan."
+    ejemplos_si: ["la universidad necesita implementar convenios con empresas", "Valorar la inclusión laboral y convenios con empresas del municipio"]
+
+  - id: emprendimiento_proyectos
+    nombre: "Emprendimiento y visibilidad de proyectos"
+    componente: "Creadores de Oportunidades"
+    justificacion: "Componente 'Creadores de Oportunidades': crear emprendimiento propio y visibilizar los proyectos, la investigación y la tecnología de los programas."
+    critico: false
+    instruccion: "¿El `comentario` pide apoyo al emprendimiento o dar visibilidad a los proyectos de los estudiantes?"
+    criterio_true: "Menciona emprendimiento, crear su propio emprendimiento, visibilidad de proyectos, proyectos para la vida real o visibilizar la investigación y la tecnología de los programas."
+    criterio_false: "No menciona emprendimiento ni proyectos de los estudiantes."
+    ejemplos_si: ["la opción de poder crear uno mismo su emprendimiento", "Mejoraría la visibilidad de proyectos para la implementación en la vida real"]
+
+  - id: crecimiento_personal_formacion_integral
+    nombre: "Crecimiento personal y formación integral"
+    componente: "Persona Transhumana"
+    justificacion: "Componente 'Persona Transhumana': crecer como persona, salir de la zona de confort, formación social e integral, proyecto de vida y descubrir el propio talento."
+    critico: false
+    instruccion: "¿El `comentario` habla del crecimiento o la transformación personal, la formación integral o social, o de formar mejores personas además de profesionales?"
+    criterio_true: "Menciona crecer o transformarse personalmente, responsabilidad, salir de la zona de confort, formación integral o social, mejores personas, encontrar el propio talento, superar barreras, realizar objetivos o la Persona Transhumana."
+    criterio_false: "Solo habla de empleo, prácticas, salario o recursos, sin referirse al crecimiento de la persona."
+    ejemplos_si: ["permite crecer tanto académicamente como personalmente", "que no nos ven como solo estudiantes sino que forman profesionales y mejores personas"]
+
+  - id: convivencia_integracion
+    nombre: "Convivencia, integración y relaciones interpersonales"
+    componente: "Convivencia"
+    justificacion: "Componente 'Convivencia': unión, trabajo en equipo, relaciones sociales y actividades de integración entre estudiantes y entre administrativos."
+    critico: false
+    instruccion: "¿El `comentario` habla de la unión, la integración, el trabajo en equipo o las relaciones entre las personas de la universidad?"
+    criterio_true: "Menciona unión, integración, trabajo en equipo, relaciones interpersonales o sociales, conocer personas, o actividades de integración para estudiantes o personal."
+    criterio_false: "No habla de relaciones entre personas ni de integración."
+    ejemplos_si: ["La union", "fortalecer las actividades de integración para el personal"]
+
+  - id: participacion
+    nombre: "Participación y tiempo para participar"
+    componente: "Valores democráticos"
+    justificacion: "Componente 'Valores democráticos': piden participación, más tiempo para tratar estos temas y horarios que permitan participar."
+    critico: false
+    instruccion: "¿El `comentario` habla de la participación o del tiempo y los horarios para participar en actividades como esta?"
+    criterio_true: "Menciona la participación, que no sea tan corto el tiempo para tratar estos temas, o los horarios de las actividades para poder participar."
+    criterio_false: "No habla de participación ni de tiempos o horarios para participar."
+    ejemplos_si: ["La participación", "Que no sea tan corto el tiempo para tratar estos temas"]
+
+  - id: recursos_tecnologia
+    nombre: "Recursos, laboratorios y tecnología para aprender"
+    componente: "condiciones que favorezcan el aprendizaje"
+    justificacion: "'Qué busca': 'condiciones que favorezcan el aprendizaje'. Piden laboratorios, materiales, internet, recursos electrónicos y equilibrar lo digital con lo presencial."
+    critico: false
+    instruccion: "¿El `comentario` pide laboratorios, materiales, internet, recursos electrónicos, tecnología o equilibrio entre lo digital y lo presencial para aprender?"
+    criterio_true: "Menciona laboratorios, elementos o materiales, internet, recursos electrónicos, calidad del aprendizaje, nuevas tecnologías, o ajustar la digitalización frente a la presencialidad."
+    criterio_false: "No menciona recursos, laboratorios ni tecnología."
+    ejemplos_si: ["Aportes en internet, materiales, recursos electrónicos y calidad de aprendizaje", "Más laboratorio como hass de física"]
+
+  - id: modelo_educativo_ensenanza
+    nombre: "Modelo educativo (MEDIT) y forma de enseñar"
+    componente: "Gestores del Conocimiento y el Aprendizaje"
+    justificacion: "Componente 'Gestores del Conocimiento y el Aprendizaje': conocer y dominar el MEDIT, cocreación, docentes a la vanguardia y aprender de forma divertida."
+    critico: false
+    instruccion: "¿El `comentario` habla del modelo educativo (MEDIT), de la forma de enseñar o de la actualización de los docentes?"
+    criterio_true: "Menciona el MEDIT, la cocreación, la evaluación del aprendizaje, docentes o gestores a la vanguardia, o actividades que hagan el conocimiento divertido."
+    criterio_false: "No habla del modelo educativo ni de la forma de enseñar."
+    ejemplos_si: ["Dominar el Medit desde los GCA y los creadores logrando concretar la cocreación", "Actividades que promuevan el conocimiento como algo divertido"]
+
+  - id: ajustes_enfoque
+    nombre: "Ajustes al enfoque de la transformación"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: incluir el frente ambiental, enfocar la felicidad en la valoración de la persona y medir la calidad de vida."
+    critico: false
+    instruccion: "¿El `comentario` propone de forma explícita cambiar el planteamiento o los conceptos de la transformación misma (no pedir acciones concretas)?"
+    criterio_true: "Propone explícitamente modificar el enfoque o los conceptos de la transformación: agregar un nuevo frente o a otros actores (familia, administrativos), redefinir la felicidad o la Persona Transhumana, o exigir que el discurso de la transformación se traduzca en condiciones reales."
+    criterio_false: "Pide acciones concretas (bienestar, contratos, salario, prácticas, herramientas, recursos, formación) sin cuestionar el planteamiento de la transformación. Describir experiencias, valorar la universidad o una sola palabra sin contexto tampoco cuentan."
+    ejemplos_si: ["propondríamos la inclusión del frente ambiental", "La felicidad y bienestar esta bien pero necesita enfocarse mas en la valoración"]
+
+  - id: conformidad
+    nombre: "Conformidad y valoración positiva (sin ajustes)"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: consideran que se ajusta, no proponen cambios o valoran lo que la universidad ya hace."
+    critico: false
+    instruccion: "¿El `comentario` dice expresamente que no haría ningún ajuste o cambio a la transformación, o que está de acuerdo con ella tal como está?"
+    criterio_true: "Dice de forma explícita que no ajustaría nada, ningún ajuste, que todo está bien o perfecto, que está de acuerdo con la transformación tal como está, o solo agradece, sin pedir nada."
+    criterio_false: "Pide, propone o menciona cualquier cosa por mejorar o fortalecer (contratos, bienestar, prácticas, empleo, recursos, etc.). Tampoco cuenta describir experiencias vividas, lo que la universidad aporta o cómo cambió la vida de alguien si no dice explícitamente que no haría ajustes."
+    ejemplos_si: ["Consideramos que si se ajusta", "No hay nada en particular"]
+
+  - id: internacionalizacion
+    nombre: "Intercambio y experiencia internacional"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC para la Vida; el documento lo ubica en UC Translocal ('Internacionalización')."
+    critico: false
+    instruccion: "¿El `comentario` pide intercambios, movilidad o experiencias con universidades o lugares nacionales o internacionales?"
+    criterio_true: "Menciona intercambio, movilidad académica, experiencia internacional o con otras universidades nacionales o internacionales."
+    criterio_false: "No menciona intercambio, movilidad ni experiencia internacional."
+    ejemplos_si: ["Intercambios con otras universidades nacionales e internacionales", "Mayor experiencia internacional"]
+
+  - id: territorio_comunidad
+    nombre: "Vínculo con el territorio y la comunidad"
+    componente: fuera_de_la_transformacion
+    justificacion: "La sección de UC para la Vida no menciona el territorio; el documento lo ubica en UC Translocal ('Impacto territorial', 'Identidad translocal')."
+    critico: false
+    instruccion: "¿El `comentario` habla del territorio, el municipio, la comunidad local o el aporte de la universidad a su entorno?"
+    criterio_true: "Menciona el territorio, el municipio, lo translocal, la comunidad, la sociedad o el desarrollo del entorno."
+    criterio_false: "No menciona el territorio, la comunidad ni el entorno."
+    ejemplos_si: ["el tema trans local que articula la academia con la comunidad", "un sentido de pertenencia a nivel terrorial"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

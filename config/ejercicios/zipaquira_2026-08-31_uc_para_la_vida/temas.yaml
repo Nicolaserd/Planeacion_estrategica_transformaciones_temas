@@ -1,0 +1,108 @@
+# Temas v2 de Zipaquirá · UC para la Vida (lista propia de esta unidad).
+# Versión 2: menos temas (máx. 10) por fusión de los de la versión 1 (respaldada en temas_v1.yaml).
+# Anclados a Transformaciones_estrategicas_5_frentes.md · '## 5. UC para la Vida' · líneas 104-121.
+transformacion: UC para la Vida
+version: 2.2
+temas:
+- id: condiciones_docentes
+  nombre: Condiciones laborales, reconocimiento y formación de los docentes
+  componente: Desarrollo del talento humano
+  otros_componentes:
+  - Gestores del Conocimiento y el Aprendizaje
+  justificacion: 'Fusión de 3 temas afines de la versión 1 (estabilidad laboral y condiciones de trabajo de los docentes; reconocimiento, respeto y ambiente laboral sano para los docentes; formación e investigación
+    para los docentes). Ancla: componente ''Desarrollo del talento humano''; también toca: Gestores del Conocimiento y el Aprendizaje.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: estabilidad laboral y condiciones de trabajo de los docentes; reconocimiento, respeto y ambiente laboral sano para los docentes;
+    formación e investigación para los docentes?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Estabilidad laboral y condiciones de trabajo de los docentes: menciona estabilidad o continuidad laboral, contratación, salario o remuneración,
+    docentes hora cátedra u ocasionales, políticas laborales, mejores condiciones laborales, o que la universidad sea una fuente de trabajo estable para sus docentes. (2) Reconocimiento, respeto y ambiente
+    laboral sano para los docentes: menciona respeto o reconocimiento a la labor docente, el sentido humano o la cercanía entre los docentes (gestores del conocimiento) y la universidad, o un ambiente laboral
+    sano y agradable. (3) Formación e investigación para los docentes: menciona capacitación o formación docente, una escuela de formación docente, cursos para docentes, convocatorias de investigación o
+    que todos los docentes (cátedra o tiempo completo) puedan investigar.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita. Las oportunidades de empleo y los posgrados para estudiantes o egresados no cuentan.
+  ejemplos_si:
+  - Mejorar la estabilidad laboral
+  - Recibir respeto absoluto por la labor docente
+  - ampliar las oportunidades de capacitación docente
+  fusiona_v1:
+  - condiciones_laborales_docentes
+  - reconocimiento_ambiente_docente
+  - formacion_investigacion_docente
+- id: bienestar_convivencia_espacios
+  nombre: Bienestar, convivencia y espacios para estudiar y esparcirse
+  componente: Felicidad y bienestar
+  otros_componentes:
+  - Convivencia
+  - condiciones que favorezcan el aprendizaje
+  justificacion: 'Fusión de 3 temas afines de la versión 1 (bienestar, salud mental y salud física; convivencia y vínculos humanos en la comunidad; espacios para estudiar y para el esparcimiento). Ancla:
+    componente ''Felicidad y bienestar''; también toca: Convivencia; condiciones que favorezcan el aprendizaje.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: bienestar, salud mental y salud física; convivencia y vínculos humanos en la comunidad; espacios para estudiar y para el esparcimiento?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Bienestar, salud mental y salud física: menciona salud mental, acompañamiento psicológico, fisioterapia o salud física, bienestar o felicidad
+    de estudiantes o docentes, espacios de esparcimiento, o servicios como la caja de compensación. (2) Convivencia y vínculos humanos en la comunidad: menciona conocer personas, vínculos o cercanía humana,
+    relaciones más allá del aula, o compartir con otros. (3) Espacios para estudiar y para el esparcimiento: menciona espacios de estudio o de esparcimiento, infraestructura, comodidad de los espacios,
+    o espacios abiertos más horas.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita. Hablar solo de salario o estabilidad laboral no cuenta. Los contactos para conseguir empleo no cuentan.
+  ejemplos_si:
+  - Acompañamiento permanente psicológico
+  - creando vínculos que vas más allá del aula de clase
+  - espacios 24 horas para estudio y gestión de labores educativas
+  fusiona_v1:
+  - bienestar_salud
+  - convivencia_vinculos
+  - espacios_estudio_esparcimiento
+- id: insercion_emprendimiento_posgrados
+  nombre: Inserción laboral, emprendimiento y educación continua
+  componente: Creadores de Oportunidades
+  otros_componentes:
+  - Desarrollo del talento humano
+  justificacion: 'Fusión de 3 temas afines de la versión 1 (inserción laboral y conexión con el mundo profesional; emprendimiento y formación económica para el profesional; posgrados, profundizaciones y
+    educación continua). Ancla: componente ''Creadores de Oportunidades''; también toca: Desarrollo del talento humano.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: inserción laboral y conexión con el mundo profesional; emprendimiento y formación económica para el profesional; posgrados, profundizaciones
+    y educación continua?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Inserción laboral y conexión con el mundo profesional: menciona oportunidades en el mundo laboral, inserción a la vida profesional, exigencias
+    laborales, competitividad en el mercado, apertura a la industria, circulación profesional o convenios para trabajar. (2) Emprendimiento y formación económica para el profesional: menciona emprendimiento,
+    sostenibilidad financiera, propiedad intelectual, economía real, saber cobrar por el trabajo, o espacios relacionados con actividades económicas. (3) Posgrados, profundizaciones y educación continua:
+    menciona maestrías, posgrados, profundizaciones, especializaciones o educación continua.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita. La estabilidad laboral y la capacitación de los docentes tienen su propio tema.
+  ejemplos_si:
+  - Es fundamental que la universidad propicie escenarios reales de inserción a la vida profesional
+  - formando en sostenibilidad financiera, propiedad intelectual y emprendimiento
+  - Una educación continua con espacios de posgrados para nuestra area
+  fusiona_v1:
+  - insercion_laboral
+  - emprendimiento_economia
+  - posgrados_educacion_continua
+- id: vision_transformacion_vida
+  nombre: Visión de la transformación de la vida (ciclos, proyecto de vida, tranquilidad)
+  componente: Persona Transhumana
+  justificacion: 'Componente ''Persona Transhumana'': los grupos reflexionan sobre qué significa transformar la vida (ciclos, momentos de la vida, plan de vida, tranquilidad como personas transhumanas).'
+  critico: false
+  instruccion: ¿El `comentario` reflexiona sobre qué significa transformar la vida (por ejemplo, que depende de los momentos o ciclos de la vida), habla del plan o proyecto de vida, o menciona ser personas
+    transhumanas?
+  criterio_true: Menciona que la transformación de la vida depende de los momentos o ciclos de la vida, el plan o proyecto de vida, o la tranquilidad o el desarrollo como personas transhumanas.
+  criterio_false: No reflexiona sobre la transformación de la vida, el proyecto de vida ni la Persona Transhumana. Si lo hace, cuenta aunque además pida acciones concretas (estabilidad, salario, ambiente
+    laboral).
+  ejemplos_si:
+  - Depende de los momentos de la vida se da la 'transformación de la vida'
+  - Las transformaciones son ciclos dependiendo del punto en el que se encuentre el docente
+- id: otros_fuera
+  nombre: Otros asuntos fuera de la transformación
+  componente: fuera_de_la_transformacion
+  justificacion: 'Asuntos sin anclaje en la sección de UC para la Vida del documento marco, cada uno con menos del 10 % de los comentarios; se agrupan en un solo tema (versión 2). Incluye: intercambios,
+    salidas y contacto con músicos de otros lugares; presencia y reciprocidad con el territorio.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC para la Vida: intercambios, salidas y contacto con músicos de otros lugares; presencia y reciprocidad
+    con el territorio?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Intercambios, salidas y contacto con músicos de otros lugares: menciona salidas locales o internacionales, intercambios, movilidad, conocer
+    o traer músicos o personas de otros lugares o del mundo. (2) Presencia y reciprocidad con el territorio: menciona el territorio, Zipaquirá y sus alrededores, la región, o la reciprocidad de la universidad
+    con el territorio y la comunidad.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - sería bueno sería hacer salidas, intercambios conocer músicos de otros lugares
+  - reciprocidad con el territorio y la comunidad
+  fusiona_v1:
+  - movilidad_intercambios
+  - territorio
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?

@@ -1,0 +1,65 @@
+seed: 2026
+z: 1.959964
+# Regla de censo (pedida por Nicolás, 2026-10-01): metricas.protocolo_por_tamano(N_s).
+#   N_s <= 385  -> B_censo: la muestra necesaria (±5 pp, IC 95 %) sería más de la mitad de N_s.
+#   386-1.199   -> muestreo reducido: no alcanzan D + V + gold disjuntos (500 + 300 + 400).
+#   >= 1.200    -> diseño completo del prompt.
+regla_censo:
+  fraccion_max_muestra: 0.5
+  n_diseno_completo: 1200
+# Umbral para asignar un tema en el flujo por ejercicio (src/ejercicio.py), fijado el 2026-10-01.
+# Con 0,5 Jev asignaba 821 temas frente a 529 de la lectura de Claude en las 5 unidades (micro-F1 medio 0,76).
+# Con 0,70: 611 asignaciones y micro-F1 medio 0,83; mejora en Ubaté, Girardot, Soacha y Chía, y baja en Zipaquirá (0,93 -> 0,86).
+# La referencia es la lectura de Claude, no un etiquetado humano: es un ajuste indicativo.
+umbral_tema_ejercicio: 0.70
+# Decisión de Nicolás (PC2, 2026-10-01): Protocolo B, censo de Ubaté (N = 67 filas, 44 con comentario).
+# Los valores del bloque `censo` reemplazan a los generales de abajo, pensados para N_s de miles.
+protocolo: B_censo
+censo:
+  descubrimiento: todos             # se leen todos los comentarios con contenido (no hay muestra D)
+  lote_lectura: 15
+  validacion_cobertura: no_aplica   # no hay comentarios disjuntos de D; se declara como limitación
+  gold: todos                       # Nicolás etiqueta todos, a ciegas
+  division_dev_test: false          # sin ajuste con el gold: umbrales fijados a priori
+  tau_fijo: 0.5                     # Nouls de transformaciones, temas y sin_contenido
+  c_estrella: 0.5                   # confianza mínima de las Choice; < 0,5 = revisar (docs.typesafe.ai/confidence)
+  min_comentarios_tema: 2           # un tema con 1 solo comentario se fusiona (salvo críticos)
+  rondas_redaccion: 0               # ajustar tras ver el gold contaminaría la única evaluación
+  pruebas_ab: false                 # sin potencia estadística con n ≈ 45
+  auditoria_excluidos: todos
+  auditoria_anonimizacion: todos
+n_descubrimiento: 500
+lote_lectura: 50
+min_leidos_saturacion: 300
+max_descubrimiento: 800
+n_validacion_cobertura: 300
+n_gold: 400
+proporcion_dev: 0.60                  # 240 dev / 160 test
+min_estrato: 20
+min_positivos_umbral: 15              # para umbral propio (tema o transformación)
+min_positivos_metricas_test: 10
+bootstrap_B: 2000
+max_rondas_redaccion: 3
+max_iteraciones_residual: 2
+residual_max: 0.10
+frecuencia_min_tema_nuevo: 0.01
+mejora_min_ab: 0.02
+concurrencia_jev: 8
+n_verificacion_transferencia: 100     # ejercicios posteriores
+n_voces_por_tema: 3
+incluir_original_en_registro: false   # true solo si el archivo de registro se queda en tu equipo
+umbral_revisar_confianza: null        # se fija en la Fase 7 con los umbrales por elemento
+precio_usd_por_millon_tokens: 0.042   # verificado en docs.typesafe.ai/models (2026-10-01)
+modelo_jev: jev-1.13.0                 # fijado en la Fase 0 (2026-10-01)
+aceptacion:
+  micro_f1_transformaciones: 0.80
+  kappa_por_transformacion: 0.61
+  kappa_transformacion_principal: 0.61
+  micro_f1_temas: 0.80
+  macro_f1_temas: 0.70
+  kappa_por_tema: 0.61
+  kappa_tipo: 0.61
+  ece_max: 0.10
+  coherencia_jerarquica_min: 0.90
+  cobertura_min: 0.90
+  falsos_descartes_max: 0.03

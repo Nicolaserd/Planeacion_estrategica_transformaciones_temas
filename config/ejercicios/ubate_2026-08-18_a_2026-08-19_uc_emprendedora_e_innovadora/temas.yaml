@@ -1,0 +1,115 @@
+# Temas v2 de Ubaté · UC Emprendedora e Innovadora (lista propia de esta unidad).
+# Versión 2: menos temas (máx. 10) por fusión de los de la versión 1 (respaldada en temas_v1.yaml).
+# Anclados a Transformaciones_estrategicas_5_frentes.md · '## 4. UC Emprendedora e Innovadora' · líneas 86-100.
+transformacion: UC Emprendedora e Innovadora
+version: 2.1
+temas:
+- id: financiacion_capital_semilla
+  nombre: 'Financiación: capital semilla, fondos y recursos para los proyectos'
+  componente: Emprendimiento
+  justificacion: 'Componente ''Emprendimiento'': capital semilla, fondos concursables, incubadora con acceso a recursos, recursos financieros ágiles y búsqueda de inversión.'
+  critico: false
+  instruccion: ¿El `comentario` pide financiación, recursos económicos, capital semilla o inversión para los proyectos o emprendimientos?
+  criterio_true: Menciona capital semilla, fondos, financiamiento o fuentes de financiación, recursos económicos o financieros, apoyo económico, búsqueda de recursos o inversión, o gestión de recursos como
+    capital inicial.
+  criterio_false: No menciona dinero, recursos económicos ni financiación. El acompañamiento sin recursos tiene su propio tema.
+  ejemplos_si:
+  - Capital semilla y financiamiento,fondos concursables
+  - Mayor recursos economicos y financiamientos.
+- id: acompanamiento_interdisciplinario
+  nombre: Acompañamiento a las ideas, trabajo interdisciplinario e infraestructura para emprender
+  componente: Ecosistemas de innovación
+  justificacion: 'Fusión de 3 temas afines de la versión 1 (acompañamiento, asesoría y seguimiento a las ideas; trabajo interdisciplinario y repositorios compartidos; infraestructura para sostener emprendimientos).
+    Ancla: componente ''Ecosistemas de innovación''.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: acompañamiento, asesoría y seguimiento a las ideas; trabajo interdisciplinario y repositorios compartidos; infraestructura para
+    sostener emprendimientos?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Acompañamiento, asesoría y seguimiento a las ideas: menciona acompañamiento, asesoría, guía, orientación, seguimiento, incubadora, evaluar
+    la viabilidad de una idea, secuencia para llevar a cabo las ideas, banco de ideas o que las ideas no se queden solo en propuestas. (2) Trabajo interdisciplinario y repositorios compartidos: menciona
+    trabajo o grupos interdisciplinarios, entrelazar herramientas o compartir repositorios entre carreras. (3) Infraestructura para sostener emprendimientos: menciona infraestructura, instalaciones o falta
+    de infraestructura para emprendimientos o proyectos.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Que se cree una incubadora empresarial que haga seguimiento a los proyectos
+  - Proponemos que los repositorios se compartan con las demás carreras
+  - Mejora de infraestructuras capaces de sostener nuevos emprendimientos
+  fusiona_v1:
+  - acompanamiento_ideas
+  - trabajo_interdisciplinario
+  - infraestructura_emprender
+- id: cultura_emprendedora_temprana
+  nombre: 'Cultura emprendedora: fortalecer el enfoque, empezar desde los primeros semestres y reconocer a quienes emprenden'
+  componente: cultura institucional emprendedora
+  justificacion: '''Qué busca'': ''una cultura institucional emprendedora e innovadora'': emprendimiento desde el primer semestre y en todas las carreras, planeación emprendedora y reconocimiento a quienes
+    emprenden.'
+  critico: false
+  instruccion: '¿El `comentario` pide fortalecer o fomentar el emprendimiento como cultura de la universidad: más enfoque o planeación emprendedora, fomentar empresas, empezar desde los primeros semestres
+    o en todas las carreras, o reconocer a quienes emprenden e innovan?'
+  criterio_true: Menciona emprendimiento desde el primer semestre o semestres iniciales, en todas las carreras, planeación emprendedora, fomentar empresas, fortalecer el enfoque de emprendimiento o reconocer
+    a quienes emprenden e innovan.
+  criterio_false: No habla de la cultura emprendedora de la universidad. Pedir solo dinero, acompañamiento o alianzas tiene su propio tema.
+  ejemplos_si:
+  - Incluir una propuesta para que se de emprendimiento desde el primer semestre
+  - Necesita una mejor planeación emprendedora para fomentar las empresas en la zona
+- id: soluciones_comunidad_territorio
+  nombre: Soluciones con y para la comunidad y el territorio
+  componente: Innovación social
+  justificacion: 'Componente ''Innovación social'': escuchar las propuestas de la comunidad, ser puente entre ideas y necesidades, proyectos ISU y soluciones reales a problemáticas del territorio.'
+  critico: false
+  instruccion: ¿El `comentario` pide desarrollar soluciones o proyectos con la comunidad o para resolver problemas del territorio?
+  criterio_true: Menciona la comunidad, la sociedad, el territorio o la región, problemáticas locales o translocales, soluciones reales, escuchar propuestas de la comunidad, proyectos ISU o impacto positivo
+    en la comunidad.
+  criterio_false: No menciona la comunidad, el territorio ni problemas sociales.
+  ejemplos_si:
+  - La Universidad debe ser un puente entre las ideas y necesidades de la comunidad
+  - Escuchar y analizar la propuesta de la comunidad
+- id: alianzas_sectores
+  nombre: Alianzas con empresas y gobierno
+  componente: Relacionamiento con los sectores sociales, productivos, públicos y comunitarios
+  justificacion: 'Componente ''Relacionamiento con los sectores sociales, productivos, públicos y comunitarios'': articulación con empresas, mesas de negociación con el gobierno y alianzas.'
+  critico: false
+  instruccion: ¿El `comentario` pide alianzas o articulación con empresas, el gobierno u otros sectores externos?
+  criterio_true: Menciona articulación o alianzas con empresas, el gobierno o entidades, o mesas de negociación con el gobierno.
+  criterio_false: No menciona empresas, gobierno ni alianzas externas.
+  ejemplos_si:
+  - Generar mesas de negociaciongo con el gobierno para una mejor ayuda gubernamental
+  - Articulación con empresas investigación
+- id: ajustes_inclusion
+  nombre: 'Ajustes al planteamiento: incluir oportunidades, étnicos, sedes y administrativos'
+  componente: transformacion_en_general
+  justificacion: 'Comentarios sobre la transformación como un todo: incluir oportunidades y no solo problemas, comunidades étnicas, equidad entre sedes y a los administrativos.'
+  critico: false
+  instruccion: ¿El `comentario` señala que la transformación deja por fuera a algún grupo o enfoque y propone incluirlo?
+  criterio_true: Dice que la transformación no está bien estructurada o que debe incluir oportunidades además de problemas, a las comunidades étnicas, a todas las sedes por igual o al personal administrativo.
+  criterio_false: No critica el planteamiento ni pide incluir grupos o enfoques.
+  ejemplos_si:
+  - No está bien estructurada la idea, falta integrar las comunidades étnicas y su economía
+  - La relevancia que se le da a los administrativos, no se incluyen realmente en el plan
+- id: investigacion
+  nombre: Investigación y semilleros para emprender
+  componente: fuera_de_la_transformacion
+  justificacion: No figura en la sección de UC Emprendedora; el documento lo ubica en UC Translocal ('Ciencia, tecnología e innovación').
+  critico: false
+  instruccion: ¿El `comentario` pide fortalecer la investigación, los semilleros o un banco de proyectos de investigación?
+  criterio_true: Menciona investigación, procesos investigativos, semilleros, banco de proyectos de investigación o CTeI.
+  criterio_false: No menciona la investigación.
+  ejemplos_si:
+  - no podemos dejar de lado la investigación
+  - banco de proyectos de investigación para graduados y estudiantes
+- id: otros_fuera
+  nombre: Otros asuntos fuera de la transformación
+  componente: fuera_de_la_transformacion
+  justificacion: 'Asuntos sin anclaje en la sección de UC Emprendedora e Innovadora del documento marco, cada uno con menos del 10 % de los comentarios; se agrupan en un solo tema (versión 2). Incluye:
+    datos y planeación desde las unidades regionales; tecnología para emprender.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Emprendedora e Innovadora: datos y planeación desde las unidades regionales; tecnología para emprender?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Datos y planeación desde las unidades regionales: menciona datos estadísticos, centralizar datos o información, o planeación desde las unidades
+    regionales. (2) Tecnología para emprender: menciona tecnología o herramientas tecnológicas.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Recopilar información datos estadísticos
+  - Ingresar la tecnología
+  fusiona_v1:
+  - datos_planeacion
+  - tecnologia
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?

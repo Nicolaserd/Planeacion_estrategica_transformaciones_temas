@@ -1,0 +1,89 @@
+{
+  "env": {
+    "cargada": true,
+    "variable_usada": "plan_estrategico",
+    "longitud": 108
+  },
+  "ficha": {
+    "nombre_ejercicio": "Experiencia 'Transformaciones que nos conectan' - formulario UC para la Vida - Seccional Ubaté",
+    "fechas_desarrollo": [
+      "2026-08-18",
+      "2026-08-19"
+    ],
+    "lugar_desarrollo": "Ubaté",
+    "poblacion": "Creadores de Oportunidades (estudiantes), Gestores del Conocimiento y el Aprendizaje (docentes), administrativos y graduados",
+    "archivo_datos": "data/raw/experiencia_uc_para_la_vida.xlsx",
+    "columna_transformacion": "Transformación",
+    "documento_marco": "contexto/Transformaciones_estrategicas_5_frentes.md",
+    "observaciones": "El Excel original (649 filas) mezcla 6 unidades regionales y 10 fechas (2026-08-18 a 2026-09-28). Este ejercicio corresponde solo a Seccional Ubaté, 18 y 19 de agosto de 2026. columna_unidad_regional: 'Unidad Regional' (valor 'Seccional Ubaté'); columna_fecha: 'Hora de inicio'.",
+    "slug_ejercicio": "2026-08-18_a_2026-08-19_ubate"
+  },
+  "control_subconjunto": {
+    "filas_excel": 649,
+    "filas_ejercicio": 65,
+    "filas_lugar_otras_fechas": 2,
+    "filas_fechas_otro_lugar": 0,
+    "comentarios_no_vacios": 44,
+    "transformacion_declarada": {
+      "UC para la Vida": 58,
+      "(vacío)": 7
+    }
+  },
+  "entorno": {
+    "python": "3.11.9",
+    "typesafe-sdk": "0.7.2",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "statsmodels": "0.15.0",
+    "openpyxl": "3.1.5",
+    "matplotlib": "3.11.2",
+    "python-dotenv": "1.2.4",
+    "PyYAML": "6.0.3",
+    "pyarrow": "25.0.1",
+    "pytest": "9.1.1"
+  },
+  "modelos": [
+    {
+      "name": "jev-latest",
+      "release_date": "2026-09-10T18:38:01.391457+00:00",
+      "description": "The latest iteration of TypeSafe's System One Model: Jev"
+    },
+    {
+      "name": "jev-preview",
+      "release_date": "2026-09-10T18:39:06.057655+00:00",
+      "description": "A preview version of `jev-latest`: should be better in most ways"
+    }
+  ],
+  "resolucion_modelo": "/v1/models solo lista alias; jev-latest respondió como `jev-1.13.0`",
+  "humo": {
+    "modelo_respondio": "jev-1.13.0",
+    "claves_respuesta": [
+      "infraestructura",
+      "tipo"
+    ],
+    "noul_infraestructura": 0.91,
+    "choice_tipo": "oportunidad_de_mejora",
+    "probabilidades_tipo": {
+      "reconocimiento": 0.0,
+      "oportunidad_de_mejora": 1.0,
+      "neutro_observacion": 0.0
+    },
+    "suma_probabilidades": 1.0,
+    "confidence_tipo": 0.99,
+    "usage": {
+      "input_tokens": 425,
+      "output_tokens": 81
+    },
+    "checks": {
+      "una_respuesta_por_clave": true,
+      "noul_en_0_1": true,
+      "choice_valida": true,
+      "probs_suman_1": true,
+      "confidence_en_0_1": true,
+      "usage_reportado": true
+    }
+  },
+  "modelo_fijado": "jev-1.13.0"
+}

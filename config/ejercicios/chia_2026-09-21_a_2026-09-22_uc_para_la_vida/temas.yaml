@@ -1,0 +1,169 @@
+# Temas v2 de Chía · UC para la Vida (lista propia de esta unidad).
+# Versión 2: menos temas (máx. 10) por fusión de los de la versión 1 (respaldada en temas_v1.yaml).
+# Anclados a Transformaciones_estrategicas_5_frentes.md · '## 5. UC para la Vida' · líneas 104-121.
+transformacion: UC para la Vida
+version: 2.2
+temas:
+- id: condiciones_personal
+  nombre: Condiciones laborales, reconocimiento y formación continua del personal
+  componente: Desarrollo del talento humano
+  otros_componentes:
+  - Gestores del Conocimiento y el Aprendizaje
+  justificacion: 'Fusión de 3 temas afines de la versión 1 (salario, contratos e igualdad para el personal administrativo; condiciones laborales, categorización y reconocimiento de los docentes; formación
+    continua: cursos, diplomados y especializaciones). Ancla: componente ''Desarrollo del talento humano''; también toca: Gestores del Conocimiento y el Aprendizaje.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: salario, contratos e igualdad para el personal administrativo; condiciones laborales, categorización y reconocimiento de los
+    docentes; formación continua: cursos, diplomados y especializaciones?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Salario, contratos e igualdad para el personal administrativo: menciona contratos a término indefinido, asimilación salarial, carrera administrativa,
+    incentivos o salarios, beneficios para las familias, equilibrio entre lo laboral y lo familiar, o igualdad de condiciones y clasismo según el rol. (2) Condiciones laborales, categorización y reconocimiento
+    de los docentes: menciona categorización de docentes o gestores, reconocimiento de la formación posgradual, contratos de corta duración, contratación, beneficios, sobrecarga o responsabilidades administrativas
+    que no corresponden al rol docente. (3) Formación continua: cursos, diplomados y especializaciones: menciona cursos libres, diplomados, especializaciones, posgrados accesibles, formación para gestores
+    o crecimiento de conocimiento en el área de trabajo.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Asimilación salarial y carrera administrativa
+  - la categorización de profesores, debería transformarse
+  - Fortalecer formación para los gestores a través de cursos libres
+  fusiona_v1:
+  - condiciones_administrativos
+  - condiciones_reconocimiento_docentes
+  - formacion_continua
+- id: bienestar_recreacion
+  nombre: Bienestar, felicidad y actividades recreativas, deportivas y culturales
+  componente: Felicidad y bienestar
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (bienestar y felicidad para toda la comunidad; actividades recreativas, deportivas y culturales). Ancla: componente ''Felicidad y bienestar''.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: bienestar y felicidad para toda la comunidad; actividades recreativas, deportivas y culturales?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Bienestar y felicidad para toda la comunidad: menciona bienestar, bienestar personal, ser felices, apoyo a los estudiantes, o bienestar en
+    igualdad de condiciones para administrativos u otros roles. (2) Actividades recreativas, deportivas y culturales: menciona actividades recreativas, deportivas, lúdicas o artísticas, grupos deportivos
+    o de arte, gimnasio, canchas o espacios lúdicos y recreativos.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - El bienestar en igualdad de condiciones para generar más apropiación de parte del personal administrativo
+  - Que vuelva a realizar actividades recreativas, como hace unos semestre que traían tarima, canchas inflables
+  fusiona_v1:
+  - bienestar_igualdad
+  - recreacion_deporte
+- id: crecimiento_personal_formacion_integral
+  nombre: Crecimiento personal y formación integral (ser persona antes que profesional)
+  componente: Persona Transhumana
+  justificacion: 'Componente ''Persona Transhumana'': conocerse, crecer como persona, autonomía, proyecto de vida, habilidades blandas y ''clases de cómo ser persona antes que profesional''.'
+  critico: false
+  instruccion: ¿El `comentario` habla del crecimiento o desarrollo personal, de conocerse a sí mismo, del proyecto de vida, o de formar a la persona y no solo al profesional?
+  criterio_true: Menciona crecer o mejorar como persona, conocerse o quererse, autonomía, responsabilidad, proyecto de vida o futuro, habilidades blandas, desarrollo integral, formar para la vida o ser
+    persona antes que profesional.
+  criterio_false: Solo habla de empleo, prácticas, salario, recursos o bienestar, sin referirse al crecimiento de la persona.
+  ejemplos_si:
+  - Clases de cómo ser persona antes que un profesional
+  - Nos gustaría mejorar cada vez como persona y no solo tener un título
+- id: empleabilidad_emprendimiento
+  nombre: Empleabilidad, emprendimiento y herramientas para la vida laboral
+  componente: Creadores de Oportunidades
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (empleabilidad y herramientas para la vida laboral; emprendimiento y oportunidades de negocio). Ancla: componente ''Creadores de Oportunidades''.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: empleabilidad y herramientas para la vida laboral; emprendimiento y oportunidades de negocio?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Empleabilidad y herramientas para la vida laboral: menciona conseguir trabajo, oportunidades de empleo, ejercer la profesión, vida o campo
+    laboral, herramientas para el trabajo, experiencia laboral o fuentes de ingreso. (2) Emprendimiento y oportunidades de negocio: menciona emprendimiento, oportunidades de negocio o tener más de una fuente
+    de ingresos.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita. Las condiciones del personal de la universidad no cuentan.
+  ejemplos_si:
+  - Cómo puedo conseguir trabajo.
+  - Se deben crear nuevas oportunidades de negocio en el area de emprendimiento
+  fusiona_v1:
+  - empleabilidad
+  - emprendimiento
+- id: condiciones_aprendizaje
+  nombre: 'Condiciones para aprender: prácticas, laboratorios y flexibilidad académica'
+  componente: condiciones que favorezcan el aprendizaje
+  justificacion: 'Fusión de 3 temas afines de la versión 1 (prácticas, pasantías y aprendizaje aplicado; instalaciones, laboratorios y herramientas para aprender; oferta y flexibilidad académica). Ancla:
+    componente ''condiciones que favorezcan el aprendizaje''.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: prácticas, pasantías y aprendizaje aplicado; instalaciones, laboratorios y herramientas para aprender; oferta y flexibilidad
+    académica?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Prácticas, pasantías y aprendizaje aplicado: menciona prácticas, pasantías, experiencias inmersivas, conocimientos adquiridos de manera práctica,
+    pasar de lo teórico a lo práctico o usar lo aprendido en entornos reales. (2) Instalaciones, laboratorios y herramientas para aprender: menciona instalaciones, laboratorios, equipamiento, logística,
+    herramientas virtuales o recursos para investigar. (3) Oferta y flexibilidad académica: menciona más carreras, validar materias, no atrasarse en el programa, o replantear módulos o planes de aprendizaje.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Practicas  Experiencias inmersivas  Apoyo colectivo
+  - tener los mejores laboratorios para un mejor desarrollo en esta carrera
+  - Facilitar las opciones y formas de validar materias para poder ver otras y no atrasarse
+  fusiona_v1:
+  - practicas_aprendizaje_aplicado
+  - recursos_laboratorios
+  - oferta_flexibilidad_academica
+- id: docentes_metodologia_medit
+  nombre: Docentes, metodologías y modelo educativo (MEDIT)
+  componente: Gestores del Conocimiento y el Aprendizaje
+  justificacion: 'Componente ''Gestores del Conocimiento y el Aprendizaje'': buenos profesores, metodologías actualizadas, confianza docente-estudiante, comunidades de práctica y el MEDIT.'
+  critico: false
+  instruccion: ¿El `comentario` habla de los docentes, la forma de enseñar, las metodologías o el modelo educativo (MEDIT)?
+  criterio_true: Menciona buenos profesores o gestores, metodologías actualizadas, la confianza entre docentes y estudiantes, comunidades de práctica, estrategias de enseñanza, el modelo de enseñanza o
+    el MEDIT.
+  criterio_false: No habla de los docentes ni de la enseñanza. Las condiciones laborales de los docentes tienen su propio tema.
+  ejemplos_si:
+  - Contar con los docentes con metodologias actualizadas
+  - No cambiaria nada el modelo transhumano que maneja el medit me parece muy acertado
+- id: convivencia_valores
+  nombre: Convivencia, valores y trato respetuoso
+  componente: Convivencia
+  otros_componentes:
+  - Valores democráticos
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (convivencia, solidaridad y vínculos entre personas y sedes; valores, ética y trato respetuoso). Ancla: componente ''Convivencia''; también toca:
+    Valores democráticos.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: convivencia, solidaridad y vínculos entre personas y sedes; valores, ética y trato respetuoso?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Convivencia, solidaridad y vínculos entre personas y sedes: menciona convivencia, solidaridad, amor o respeto hacia los demás, amistades o
+    compañeros, conectar con nuevas personas, trabajo en equipo, multiculturalidad o compartir con otras sedes. (2) Valores, ética y trato respetuoso: menciona valores, ética profesional, honestidad, transparencia,
+    libertad, respeto, empatía o percepción de clasismo.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - La manera de la transformación para impactar las acciones del creador de oportunidad ha sido la convivencia.
+  - La universidad transforma la vida por los valores que enseñan honestidad transparencia
+  fusiona_v1:
+  - convivencia_comunidad
+  - valores_etica
+- id: conformidad
+  nombre: Conformidad y agradecimiento (sin ajustes)
+  componente: transformacion_en_general
+  justificacion: 'Comentarios sobre la transformación como un todo: todo está bien, ningún ajuste, agradecimiento.'
+  critico: false
+  instruccion: El `comentario` responde a la pregunta '¿Qué ajustaría en esta transformación?'. ¿Responde que no ajustaría nada o que está de acuerdo con la transformación tal como está?
+  criterio_true: 'Responde que no ajustaría nada o que está de acuerdo, aunque sea con pocas palabras: ''nada'', ''ninguno'', ''ninguna, está perfecta'', ''no se me ocurre nada'', ''no hay nada en particular'',
+    ''consideramos que sí se ajusta'', ''así como se planteó está bien''; o solo agradece o valora la transformación, sin pedir ningún cambio.'
+  criterio_false: Pide, propone o menciona cualquier ajuste o cosa por mejorar o fortalecer (contratos, bienestar, prácticas, empleo, recursos, etc.), aunque empiece con 'nada' o elogie la transformación.
+    Describir experiencias o lo que aporta la universidad sin decir que no ajustaría nada o que está de acuerdo tampoco cuenta.
+  ejemplos_si:
+  - Nada me parece que todo esta bien y bastante completo
+  - Altamente agradecidos con la universidad de Cundinamarca
+- id: ajustes_enfoque
+  nombre: 'Ajustes al enfoque: coherencia con la realidad, familia y todos los roles'
+  componente: transformacion_en_general
+  justificacion: 'Comentarios sobre la transformación como un todo: que la ''Universidad Transhumana'' se traduzca en condiciones reales, que incluya a la familia y al entorno, a los administrativos, y
+    que sea estable e inclusiva.'
+  critico: false
+  instruccion: ¿El `comentario` propone de forma explícita cambiar el planteamiento o los conceptos de la transformación misma (no pedir acciones concretas)?
+  criterio_true: 'Propone explícitamente modificar el enfoque o los conceptos de la transformación: agregar un nuevo frente o a otros actores (familia, administrativos), redefinir la felicidad o la Persona
+    Transhumana, o exigir que el discurso de la transformación se traduzca en condiciones reales.'
+  criterio_false: Pide acciones concretas (bienestar, contratos, salario, prácticas, herramientas, recursos, formación) sin cuestionar el planteamiento de la transformación. Describir experiencias, valorar
+    la universidad o una sola palabra sin contexto tampoco cuentan.
+  ejemplos_si:
+  - Falta la complementación de como la Universidad influye por fuera de la vida de la persona, su familia y su entorno
+  - la apuesta por una Universidad Transhumana requiere traducirse en condiciones y mecanismos de reconocimiento coherentes con la realidad
+- id: otros_fuera
+  nombre: Otros asuntos fuera de la transformación
+  componente: fuera_de_la_transformacion
+  justificacion: 'Asuntos sin anclaje en la sección de UC para la Vida del documento marco, cada uno con menos del 10 % de los comentarios; se agrupan en un solo tema (versión 2). Incluye: proyección territorial
+    y reconocimiento nacional; administración y objetivos medibles.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC para la Vida: proyección territorial y reconocimiento nacional; administración y objetivos medibles?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Proyección territorial y reconocimiento nacional: menciona el territorio, escenarios translocales, la transformación territorial, actuar en
+    la sociedad, el entorno, o ser reconocida a nivel nacional y latinoamericano. (2) Administración y objetivos medibles: menciona mejor administración, gestión, objetivos medibles u objetividad SMART.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Debe buscar un desarrollo académico y lograr ser mas reconocido a nivel nacional y latinoamerica
+  - Mejor administracion
+  fusiona_v1:
+  - territorio_proyeccion
+  - gestion_institucional
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?

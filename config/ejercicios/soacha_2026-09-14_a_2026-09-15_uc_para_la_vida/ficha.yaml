@@ -1,0 +1,53 @@
+slug: soacha_2026-09-14_a_2026-09-15_uc_para_la_vida
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\experiencia_uc_para_la_vida.xlsx
+sha256_archivo: 8c88a892a5ca9ff1d6ea8fc93792c520a4ab9581eccac5a6a165560bc8fdbf0f
+transformacion:
+  id: T5
+  nombre_oficial: UC para la Vida
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 5. UC para la Vida' · líneas 104-121
+unidad: Soacha
+fechas:
+- '2026-09-14'
+- '2026-09-15'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 83
+N_s: 77
+textos_unicos: 77
+excluidos:
+  vacio: 4
+  solo_signos_o_numeros: 2
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 77
+  n_muestra_requerida: 64.3
+  fraccion: 0.835
+  protocolo: B_censo
+informe_filtro:
+  filas: 83
+  unidades_que_coinciden:
+  - Extensión Soacha
+  transformacion_vacia_asumida: 11
+  fuera_de_fecha_no_incluidas: []
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Soacha_2026-09-14_a_2026-09-15_UC_para_la_Vida.xlsx
+  clasificacion: Clasificacion_Soacha_2026-09-14_a_2026-09-15_UC_para_la_Vida.xlsx
+  hoja: Soacha 14-15 sep 2026
+preparado: '2026-10-01'

@@ -1,0 +1,55 @@
+slug: ubate_2026-08-18_a_2026-08-19_uc_inteligente
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_.
+  (UC INTELIGENTE)(1-589) (1).xlsx
+sha256_archivo: f686c38a876dd0da2ecf472c82dd4027460dbff8feec7503ad6a03b62d86fdcc
+transformacion:
+  id: T1
+  nombre_oficial: UC Inteligente
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 1. UC Inteligente' · líneas 26-42
+unidad: Ubaté
+fechas:
+- '2026-08-18'
+- '2026-08-19'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 63
+N_s: 40
+textos_unicos: 40
+excluidos:
+  vacio: 23
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 40
+  n_muestra_requerida: 36.3
+  fraccion: 0.908
+  protocolo: B_censo
+informe_filtro:
+  filas: 63
+  unidades_que_coinciden:
+  - Seccional Ubaté
+  transformacion_vacia_asumida: 7
+  fuera_de_fecha_no_incluidas:
+  - ID: 402
+    fecha: '2026-09-21'
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Ubate_2026-08-18_a_2026-08-19_UC_Inteligente.xlsx
+  clasificacion: Clasificacion_Ubate_2026-08-18_a_2026-08-19_UC_Inteligente.xlsx
+  hoja: Ubaté 18-19 ago 2026
+preparado: '2026-10-01'

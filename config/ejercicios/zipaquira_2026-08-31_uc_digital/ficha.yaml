@@ -1,0 +1,59 @@
+slug: zipaquira_2026-08-31_uc_digital
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_. (UC
+  DIGITAL)(1-576) (1).xlsx
+sha256_archivo: 42da8c1102bd203dc2dae9fe8fbc2da8176d34fa9a6f0fb0caa653d597763c0a
+transformacion:
+  id: T3
+  nombre_oficial: UC Digital
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 3. UC Digital' · líneas 66-82
+unidad: Zipaquirá
+fechas:
+- '2026-08-31'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 23
+N_s: 23
+textos_unicos: 23
+excluidos: {}
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 23
+  n_muestra_requerida: 21.8
+  fraccion: 0.946
+  protocolo: B_censo
+informe_filtro:
+  filas: 23
+  unidades_que_coinciden:
+  - Extensión Zipaquirá
+  transformacion_vacia_asumida: 0
+  fuera_de_fecha_no_incluidas:
+  - ID: 417
+    fecha: '2026-09-22'
+  - ID: 418
+    fecha: '2026-09-22'
+  - ID: 420
+    fecha: '2026-09-22'
+  - ID: 428
+    fecha: '2026-09-22'
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Zipaquira_2026-08-31_UC_Digital.xlsx
+  clasificacion: Clasificacion_Zipaquira_2026-08-31_UC_Digital.xlsx
+  hoja: Zipaquirá 31 ago 2026
+preparado: '2026-10-01'

@@ -1,0 +1,57 @@
+slug: girardot_2026-09-07_a_2026-09-08_uc_translocal
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_.
+  (UC TRANSLOCAL)(1-648) (1).xlsx
+sha256_archivo: 7762409541f57ca6132403022797482c53bcd776cc8fd6f960aee62d7fc5d476
+transformacion:
+  id: T2
+  nombre_oficial: UC Translocal
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 2. UC Translocal' · líneas 46-62
+unidad: Girardot
+fechas:
+- '2026-09-07'
+- '2026-09-08'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 156
+N_s: 117
+textos_unicos: 117
+excluidos:
+  vacio: 29
+  no_respuesta: 8
+  solo_signos_o_numeros: 2
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 117
+  n_muestra_requerida: 89.9
+  fraccion: 0.768
+  protocolo: B_censo
+informe_filtro:
+  filas: 156
+  unidades_que_coinciden:
+  - Seccional Girardot
+  transformacion_vacia_asumida: 20
+  fuera_de_fecha_no_incluidas:
+  - ID: 321
+    fecha: '2026-09-18'
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Girardot_2026-09-07_a_2026-09-08_UC_Translocal.xlsx
+  clasificacion: Clasificacion_Girardot_2026-09-07_a_2026-09-08_UC_Translocal.xlsx
+  hoja: Girardot 7-8 sep 2026
+preparado: '2026-10-01'

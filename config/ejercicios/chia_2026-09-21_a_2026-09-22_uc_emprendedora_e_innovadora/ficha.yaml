@@ -1,0 +1,55 @@
+slug: chia_2026-09-21_a_2026-09-22_uc_emprendedora_e_innovadora
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_. (UC
+  EMPRENDEDORA E INNOVADORA)(1-537) (1).xlsx
+sha256_archivo: a8d2796d8d7125da0e67fb5c048ed2f03b0c33e45bf7c7815e23f0b406238695
+transformacion:
+  id: T4
+  nombre_oficial: UC Emprendedora e Innovadora
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 4. UC Emprendedora e Innovadora' · líneas 86-100
+unidad: Chía
+fechas:
+- '2026-09-21'
+- '2026-09-22'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 96
+N_s: 78
+textos_unicos: 78
+excluidos:
+  vacio: 14
+  solo_signos_o_numeros: 2
+  no_respuesta: 2
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 78
+  n_muestra_requerida: 65.0
+  fraccion: 0.833
+  protocolo: B_censo
+informe_filtro:
+  filas: 96
+  unidades_que_coinciden:
+  - Extensión Chía
+  transformacion_vacia_asumida: 9
+  fuera_de_fecha_no_incluidas: []
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Chia_2026-09-21_a_2026-09-22_UC_Emprendedora_e_Innovadora.xlsx
+  clasificacion: Clasificacion_Chia_2026-09-21_a_2026-09-22_UC_Emprendedora_e_Innovadora.xlsx
+  hoja: Chía 21-22 sep 2026
+preparado: '2026-10-01'

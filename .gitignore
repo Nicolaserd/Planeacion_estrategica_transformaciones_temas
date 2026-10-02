@@ -1,0 +1,13 @@
+.env
+.venv/
+data/
+cache/
+outputs/
+__pycache__/
+.pytest_cache/
+# Configuración personal de Claude Code (cada persona tiene la suya; la del proyecto es .claude/settings.json)
+.claude/settings.local.json
+# Encuestas originales de Forms (traen Nombre y Correo): nunca se suben, en ninguna carpeta
+**/Experiencia*.xlsx
+# Documento del Plan Estratégico: no se publica (decisión de Nicolás, 2026-10-02)
+**/06. PLAN ESTRAT*

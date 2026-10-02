@@ -1,0 +1,116 @@
+# Temas de Ubaté · 18-19 ago 2026 · UC Emprendedora e Innovadora (lista propia de esta unidad).
+# Anclados a los componentes de "UC Emprendedora e Innovadora" en contexto/Transformaciones_estrategicas_5_frentes.md (líneas 86-100).
+transformacion: UC Emprendedora e Innovadora
+version: 1
+temas:
+  - id: financiacion_capital_semilla
+    nombre: "Financiación: capital semilla, fondos y recursos para los proyectos"
+    componente: "Emprendimiento"
+    justificacion: "Componente 'Emprendimiento': capital semilla, fondos concursables, incubadora con acceso a recursos, recursos financieros ágiles y búsqueda de inversión."
+    critico: false
+    instruccion: "¿El `comentario` pide financiación, recursos económicos, capital semilla o inversión para los proyectos o emprendimientos?"
+    criterio_true: "Menciona capital semilla, fondos, financiamiento o fuentes de financiación, recursos económicos o financieros, apoyo económico, búsqueda de recursos o inversión, o gestión de recursos como capital inicial."
+    criterio_false: "No menciona dinero, recursos económicos ni financiación. El acompañamiento sin recursos tiene su propio tema."
+    ejemplos_si: ["Capital semilla y financiamiento,fondos concursables", "Mayor recursos economicos y financiamientos."]
+
+  - id: acompanamiento_ideas
+    nombre: "Acompañamiento, asesoría y seguimiento a las ideas"
+    componente: "Ecosistemas de innovación"
+    justificacion: "Componente 'Ecosistemas de innovación': incubadora, evaluar la viabilidad de las ideas, acompañamiento y guía de la universidad, entornos de confianza y banco de ideas."
+    critico: false
+    instruccion: "¿El `comentario` pide acompañamiento, asesoría, orientación o seguimiento para desarrollar ideas, proyectos o emprendimientos?"
+    criterio_true: "Menciona acompañamiento, asesoría, guía, orientación, seguimiento, incubadora, evaluar la viabilidad de una idea, secuencia para llevar a cabo las ideas, banco de ideas o que las ideas no se queden solo en propuestas."
+    criterio_false: "No habla de acompañar ni asesorar ideas o proyectos."
+    ejemplos_si: ["Que se cree una incubadora empresarial que haga seguimiento a los proyectos", "para que las ideas de los estudiantes no se queden solo en propuestas"]
+
+  - id: cultura_emprendedora_temprana
+    nombre: "Cultura emprendedora desde los primeros semestres"
+    componente: "cultura institucional emprendedora"
+    justificacion: "'Qué busca': 'una cultura institucional emprendedora e innovadora': emprendimiento desde el primer semestre y en todas las carreras, planeación emprendedora y reconocimiento a quienes emprenden."
+    critico: false
+    instruccion: "¿El `comentario` pide fomentar una cultura emprendedora, el emprendimiento desde los primeros semestres o en todas las carreras?"
+    criterio_true: "Menciona emprendimiento desde el primer semestre o semestres iniciales, en todas las carreras, planeación emprendedora, fomentar empresas, fortalecer el enfoque de emprendimiento o reconocer a quienes emprenden e innovan."
+    criterio_false: "No habla de la cultura emprendedora ni de emprender desde temprano."
+    ejemplos_si: ["Incluir una propuesta para que se de emprendimiento desde el primer semestre", "Necesita una mejor planeación emprendedora para fomentar las empresas en la zona"]
+
+  - id: soluciones_comunidad_territorio
+    nombre: "Soluciones con y para la comunidad y el territorio"
+    componente: "Innovación social"
+    justificacion: "Componente 'Innovación social': escuchar las propuestas de la comunidad, ser puente entre ideas y necesidades, proyectos ISU y soluciones reales a problemáticas del territorio."
+    critico: false
+    instruccion: "¿El `comentario` pide desarrollar soluciones o proyectos con la comunidad o para resolver problemas del territorio?"
+    criterio_true: "Menciona la comunidad, la sociedad, el territorio o la región, problemáticas locales o translocales, soluciones reales, escuchar propuestas de la comunidad, proyectos ISU o impacto positivo en la comunidad."
+    criterio_false: "No menciona la comunidad, el territorio ni problemas sociales."
+    ejemplos_si: ["La Universidad debe ser un puente entre las ideas y necesidades de la comunidad", "Escuchar y analizar la propuesta de la comunidad"]
+
+  - id: alianzas_sectores
+    nombre: "Alianzas con empresas y gobierno"
+    componente: "Relacionamiento con los sectores sociales, productivos, públicos y comunitarios"
+    justificacion: "Componente 'Relacionamiento con los sectores sociales, productivos, públicos y comunitarios': articulación con empresas, mesas de negociación con el gobierno y alianzas."
+    critico: false
+    instruccion: "¿El `comentario` pide alianzas o articulación con empresas, el gobierno u otros sectores externos?"
+    criterio_true: "Menciona articulación o alianzas con empresas, el gobierno o entidades, o mesas de negociación con el gobierno."
+    criterio_false: "No menciona empresas, gobierno ni alianzas externas."
+    ejemplos_si: ["Generar mesas de negociaciongo con el gobierno para una mejor ayuda gubernamental", "Articulación con empresas investigación"]
+
+  - id: trabajo_interdisciplinario
+    nombre: "Trabajo interdisciplinario y repositorios compartidos"
+    componente: "Ecosistemas de innovación"
+    justificacion: "Componente 'Ecosistemas de innovación': grupos interdisciplinarios y repositorios compartidos entre carreras para terminar de desarrollar las ideas."
+    critico: false
+    instruccion: "¿El `comentario` pide trabajo interdisciplinario o compartir repositorios e ideas entre carreras?"
+    criterio_true: "Menciona trabajo o grupos interdisciplinarios, entrelazar herramientas o compartir repositorios entre carreras."
+    criterio_false: "No habla de trabajo interdisciplinario ni de compartir entre carreras."
+    ejemplos_si: ["Proponemos que los repositorios se compartan con las demás carreras", "Herramientas y entrelazamiento de las mismas, mediante trabajo interdisciplinario"]
+
+  - id: infraestructura_emprender
+    nombre: "Infraestructura para sostener emprendimientos"
+    componente: "Ecosistemas de innovación"
+    justificacion: "Componente 'Ecosistemas de innovación': infraestructura capaz de sostener nuevos emprendimientos y unidades regionales con las instalaciones necesarias."
+    critico: false
+    instruccion: "¿El `comentario` pide infraestructura o instalaciones para emprender o desarrollar proyectos?"
+    criterio_true: "Menciona infraestructura, instalaciones o falta de infraestructura para emprendimientos o proyectos."
+    criterio_false: "No menciona infraestructura."
+    ejemplos_si: ["Mejora de infraestructuras capaces de sostener nuevos emprendimientos", "Mvz sin la infraestructura necesaria"]
+
+  - id: ajustes_inclusion
+    nombre: "Ajustes al planteamiento: incluir oportunidades, étnicos, sedes y administrativos"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: incluir oportunidades y no solo problemas, comunidades étnicas, equidad entre sedes y a los administrativos."
+    critico: false
+    instruccion: "¿El `comentario` señala que la transformación deja por fuera a algún grupo o enfoque y propone incluirlo?"
+    criterio_true: "Dice que la transformación no está bien estructurada o que debe incluir oportunidades además de problemas, a las comunidades étnicas, a todas las sedes por igual o al personal administrativo."
+    criterio_false: "No critica el planteamiento ni pide incluir grupos o enfoques."
+    ejemplos_si: ["No está bien estructurada la idea, falta integrar las comunidades étnicas y su economía", "La relevancia que se le da a los administrativos, no se incluyen realmente en el plan"]
+
+  - id: investigacion
+    nombre: "Investigación y semilleros para emprender"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Emprendedora; el documento lo ubica en UC Translocal ('Ciencia, tecnología e innovación')."
+    critico: false
+    instruccion: "¿El `comentario` pide fortalecer la investigación, los semilleros o un banco de proyectos de investigación?"
+    criterio_true: "Menciona investigación, procesos investigativos, semilleros, banco de proyectos de investigación o CTeI."
+    criterio_false: "No menciona la investigación."
+    ejemplos_si: ["no podemos dejar de lado la investigación", "banco de proyectos de investigación para graduados y estudiantes"]
+
+  - id: datos_planeacion
+    nombre: "Datos y planeación desde las unidades regionales"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Emprendedora; el documento lo ubica en UC Inteligente."
+    critico: false
+    instruccion: "¿El `comentario` pide recopilar datos, centralizar información o planear desde las unidades regionales?"
+    criterio_true: "Menciona datos estadísticos, centralizar datos o información, o planeación desde las unidades regionales."
+    criterio_false: "No menciona datos ni planeación."
+    ejemplos_si: ["Recopilar información datos estadísticos", "Planeación desde las unidades regionales"]
+
+  - id: tecnologia
+    nombre: "Tecnología para emprender"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Emprendedora; el documento lo ubica en UC Digital."
+    critico: false
+    instruccion: "¿El `comentario` pide tecnología o herramientas tecnológicas?"
+    criterio_true: "Menciona tecnología o herramientas tecnológicas."
+    criterio_false: "No menciona tecnología."
+    ejemplos_si: ["Ingresar la tecnología", "Apoyar al emprendedor con las herramientas de investigación y tecnológicas"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

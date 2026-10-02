@@ -1,0 +1,133 @@
+# Temas v2 de Chía · UC Emprendedora e Innovadora (lista propia de esta unidad).
+# Versión 2: menos temas (máx. 10) por fusión de los de la versión 1 (respaldada en temas_v1.yaml).
+# Anclados a Transformaciones_estrategicas_5_frentes.md · '## 4. UC Emprendedora e Innovadora' · líneas 86-100.
+transformacion: UC Emprendedora e Innovadora
+version: 2
+temas:
+- id: acompanamiento_ideas
+  nombre: 'Escuchar, validar y acompañar las ideas: mentoría, trabajo entre carreras y metodología CMA'
+  componente: Ecosistemas de innovación
+  otros_componentes:
+  - desarrollar soluciones
+  justificacion: 'Fusión de 3 temas afines de la versión 1 (escuchar, validar y acompañar las ideas con mentoría; trabajo entre carreras, sedes y graduados; simplificar y fortalecer la metodología CMA).
+    Ancla: componente ''Ecosistemas de innovación''; también toca: desarrollar soluciones.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: escuchar, validar y acompañar las ideas con mentoría; trabajo entre carreras, sedes y graduados; simplificar y fortalecer la
+    metodología CMA?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Escuchar, validar y acompañar las ideas con mentoría: menciona escuchar o validar las ideas, acompañamiento, asesoría, mentoría o mentores,
+    tutorías, guía, seguimiento, estudio de factibilidad o viabilidad, filtro o aprobación por un comité, ayuda profesional o herramientas y guías para desarrollar la idea. (2) Trabajo entre carreras, sedes
+    y graduados: menciona distintas facultades o carreras trabajando juntas, conectar diferentes sedes o graduados de diferentes carreras. (3) Simplificar y fortalecer la metodología CMA: menciona la metodología
+    CMA o MCA, simplificarla, reducir sus pasos o entregables concretos.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita. Pedir solo dinero tiene su propio tema.
+  ejemplos_si:
+  - La Universidad de Cundinamarca debe actuar como un puente que escucha, valida y articula la idea
+  - Se debería implementar un plan para conectar entre diferentes sedes
+  - Metodología CMA 9 pasos a 3 pasos
+  fusiona_v1:
+  - acompanamiento_mentoria
+  - trabajo_entre_carreras
+  - simplificar_metodologia
+- id: financiacion
+  nombre: Financiación y apoyo económico
+  componente: Emprendimiento
+  justificacion: 'Componente ''Emprendimiento'': apoyos presupuestales, financiamiento, aprobación de recursos, inversión y donaciones para los emprendimientos.'
+  critico: false
+  instruccion: ¿El `comentario` pide financiación, presupuesto, recursos económicos o inversión para las ideas o emprendimientos?
+  criterio_true: Menciona financiamiento, apoyos presupuestales o económicos, presupuesto, recursos (monetarios o necesarios), aprobación de recursos, inversión o donaciones.
+  criterio_false: No menciona dinero, presupuesto ni recursos.
+  ejemplos_si:
+  - Se necesita financiamiento
+  - Mejorar los apoyos económicos desde la universidad para todos los emprendimientos
+- id: problemas_comunidad
+  nombre: Escuchar a la comunidad y resolver sus problemas
+  componente: Innovación social
+  justificacion: 'Componente ''Innovación social'': estudiar el territorio con mesas y encuestas, charlas de problemáticas, micro-comunidades por territorio y soluciones con impacto real.'
+  critico: false
+  instruccion: ¿El `comentario` pide conocer los problemas de la comunidad o el territorio y orientar las ideas a resolverlos?
+  criterio_true: Menciona la comunidad, el territorio, necesidades locales o translocales, problemáticas sociales o reales, mesas de debate o encuestas a la comunidad, charlas de problemáticas, estar en
+    el campo de acción o soluciones con impacto en el territorio.
+  criterio_false: No menciona la comunidad, el territorio ni problemas sociales.
+  ejemplos_si:
+  - Estudiar el territorio haciendo mesas de debate o encuestas a la comunidad
+  - Preguntar sobre las problemáticas en la comunidad y así poder innovar y emprender
+- id: alianzas_convenios
+  nombre: Alianzas y convenios con entidades públicas y privadas
+  componente: Relacionamiento con los sectores sociales, productivos, públicos y comunitarios
+  justificacion: 'Componente ''Relacionamiento con los sectores sociales, productivos, públicos y comunitarios'': convenios con entidades públicas y privadas, alianzas con instituciones, gobernación y municipio,
+    red de apoyos.'
+  critico: false
+  instruccion: ¿El `comentario` pide alianzas, convenios o vínculos con entidades públicas, privadas, instituciones o el gobierno?
+  criterio_true: Menciona convenios, alianzas o vínculos con entidades públicas o privadas, otras instituciones, la gobernación, el municipio, aliados o una red de apoyos.
+  criterio_false: No menciona entidades externas ni alianzas.
+  ejemplos_si:
+  - Instrumentalizar asociaciones o convenios con entidades públicas o privadas
+  - Mayores alianzas estratégicas que permitan generar mayores oportunidades
+- id: visibilidad_reconocimiento
+  nombre: Visibilizar y reconocer a los emprendedores
+  componente: cultura institucional emprendedora
+  justificacion: '''Qué busca'': promover ''una cultura institucional emprendedora'': socializar los procesos, visibilizar las soluciones y reconocer y apoyar a los emprendedores dentro de la comunidad.'
+  critico: false
+  instruccion: ¿El `comentario` pide dar a conocer, socializar, visibilizar o reconocer los emprendimientos, los apoyos o las soluciones?
+  criterio_true: Menciona socializar, dar a conocer, visibilizar o visualizar los emprendimientos, las soluciones o los apoyos, o reconocer a los emprendedores.
+  criterio_false: No habla de visibilidad, divulgación ni reconocimiento.
+  ejemplos_si:
+  - Creo que falta reconocimiento a los emprendedores
+  - La visibilidad y apoyo al emprendedor entre la misma comunidad universitaria
+- id: oportunidades_administrativos
+  nombre: Más oportunidades laborales y de ingresos, también para los administrativos
+  componente: Creación de oportunidades
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (más oportunidades: laborales, de ingresos y de exportación; apoyo al emprendimiento de los administrativos). Ancla: componente ''Creación de oportunidades''.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: más oportunidades: laborales, de ingresos y de exportación; apoyo al emprendimiento de los administrativos?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Más oportunidades: laborales, de ingresos y de exportación: menciona oportunidades, campo laboral, fuentes de ingreso o volvernos más exportadores.
+    (2) Apoyo al emprendimiento de los administrativos: menciona apoyo, información o iniciativas de emprendimiento para los administrativos.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - herramientas para tener más de una fuente de ingresos
+  - Existe el apoyo para creadores de oportunidades y gestores del conocimiento sin embargo falta apoyo a administrativos
+  fusiona_v1:
+  - oportunidades
+  - emprendimiento_administrativos
+- id: conformidad
+  nombre: Conformidad con la transformación (sin ajustes)
+  componente: transformacion_en_general
+  justificacion: 'Comentarios sobre la transformación como un todo: dicen expresamente que no ajustarían nada, que es perfecta o que están de acuerdo.'
+  critico: false
+  instruccion: ¿El `comentario` dice expresamente que no haría ajustes o que está de acuerdo con la transformación?
+  criterio_true: Dice de forma explícita que no ajustaría nada, nada por el momento, ningún ajuste, que es perfecta o muy favorable, o que está de acuerdo.
+  criterio_false: Pide, propone o menciona cualquier cosa por mejorar.
+  ejemplos_si:
+  - Ningún ajuste
+  - Totalmente de acuerdo con la formación implementa en esta ocasión
+- id: concretar_practica
+  nombre: Concretar las decisiones y llevarlas a la práctica
+  componente: transformacion_en_general
+  justificacion: 'Comentarios sobre la transformación como un todo: concretar las decisiones tomadas y llevar la iniciativa a la práctica.'
+  critico: false
+  instruccion: ¿El `comentario` dice expresamente que la propia transformación o sus decisiones deben concretarse o llevarse a la práctica?
+  criterio_true: Dice de forma explícita que hay que concretar las decisiones tomadas, hacer seguimiento a lo decidido o poner ya en práctica la iniciativa institucional.
+  criterio_false: No se refiere a la transformación como un todo. Pedir acompañar, financiar o desarrollar una idea concreta hasta convertirla en solución no cuenta.
+  ejemplos_si:
+  - Evaluar estrategias de seguimiento y concretar las decisiones tomadas
+  - un poco más sobre el incentivo de ponerlo más ya en práctica a la realidad
+- id: otros_fuera
+  nombre: Otros asuntos fuera de la transformación
+  componente: fuera_de_la_transformacion
+  justificacion: 'Asuntos sin anclaje en la sección de UC Emprendedora e Innovadora del documento marco, cada uno con menos del 10 % de los comentarios; se agrupan en un solo tema (versión 2). Incluye:
+    semilleros e investigación para desarrollar las ideas; condiciones del personal (estabilidad, docentes ISU, equipo administrativo); espacios, infraestructura y herramientas.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Emprendedora e Innovadora: semilleros e investigación para desarrollar las ideas; condiciones del personal
+    (estabilidad, docentes ISU, equipo administrativo); espacios, infraestructura y herramientas?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Semilleros e investigación para desarrollar las ideas: menciona semilleros, grupos de investigación o investigaciones. (2) Condiciones del
+    personal (estabilidad, docentes ISU, equipo administrativo): menciona estabilidad laboral o salarial, contratos de 11 meses o fortalecer el área administrativa. (3) Espacios, infraestructura y herramientas:
+    menciona espacios de la universidad, infraestructura o herramientas tecnológicas.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Vincularlo a grupos de semilleros de investigación
+  - nos contribuiría más una mejor estabilidad laboral y salarial
+  - Mejorando los espacios de la universidad y calidad de actividades
+  fusiona_v1:
+  - semilleros_investigacion
+  - condiciones_personal
+  - infraestructura_espacios
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?

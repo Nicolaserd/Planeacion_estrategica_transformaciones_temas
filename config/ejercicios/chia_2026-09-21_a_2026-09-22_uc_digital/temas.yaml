@@ -1,0 +1,143 @@
+# Temas v2 de Chía · UC Digital (lista propia de esta unidad).
+# Versión 2: menos temas (máx. 10) por fusión de los de la versión 1 (respaldada en temas_v1.yaml).
+# Anclados a Transformaciones_estrategicas_5_frentes.md · '## 3. UC Digital' · líneas 66-82.
+transformacion: UC Digital
+version: 2
+temas:
+- id: procesos_cero_papel
+  nombre: Procesos digitales unificados, trámites ágiles y cero papel
+  componente: Automatización de procesos
+  otros_componentes:
+  - Cero papel
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (procesos digitales unificados: un solo registro y trámites ágiles; cero papel). Ancla: componente ''Automatización de procesos''; también toca:
+    Cero papel.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: procesos digitales unificados: un solo registro y trámites ágiles; cero papel?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Procesos digitales unificados: un solo registro y trámites ágiles: menciona trámites, registros, formatos, procesos repetitivos o redundantes,
+    un solo registro, ventanilla única, firma digital, inscripción de materias, certificados, contratación, solicitud de espacios, asistencia o marcación, resolver dudas sin filas o automatizar la página
+    de servicios. (2) Cero papel: menciona cero papel, disminuir las hojas de papel, eliminar papel o no diligenciar formatos físicos.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - un solo registro que sirva para varios procesos, reducir procesos repetitivos
+  - Priorizar el cero papel y mejorar la escritura digital
+  fusiona_v1:
+  - procesos_digitales_unificados
+  - cero_papel
+- id: inteligencia_artificial
+  nombre: Aprender a usar la IA con profundidad, ética y sin miedo
+  componente: Inteligencia artificial
+  justificacion: 'Componente ''Inteligencia artificial'': enseñar IA con profundidad, cursos y campos de aprendizaje de IA, restringirla menos, usarla de forma crítica y ética, y competencias de IA para
+    docentes.'
+  critico: false
+  instruccion: '¿El `comentario` habla de la inteligencia artificial (IA): enseñarla, usarla, acceder a ella o integrarla?'
+  criterio_true: Menciona inteligencia artificial, IA, IAs, agentes, una herramienta como Claude, competencias o cursos de IA, restringir menos su uso, usarla de forma crítica y ética, o integrarla en procesos
+    y documentos.
+  criterio_false: No menciona la inteligencia artificial ni agentes de IA.
+  ejemplos_si:
+  - El uso de inteligencias artificiales debería enseñarse con más profundidad sin miedo o temor a lo desconocido
+  - que todo estudiante, sin importar su carrera, salga sabiendo usar la inteligencia artificial de forma crítica y ética
+- id: conectividad_comunicacion
+  nombre: Conectividad, plataformas integradas y comunicación digital
+  componente: Ecosistemas digitales
+  otros_componentes:
+  - Experiencia digital de la comunidad universitaria
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (conectividad, red y plataformas integradas; comunicación digital cercana con estudiantes, docentes y graduados). Ancla: componente ''Ecosistemas
+    digitales''; también toca: Experiencia digital de la comunidad universitaria.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: conectividad, red y plataformas integradas; comunicación digital cercana con estudiantes, docentes y graduados?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Conectividad, red y plataformas integradas: menciona internet, red, conectividad, plataformas o su infraestructura, integración o centralización
+    de la información, tecnología unificada, ecosistema digital integrado o acceso desde cualquier dispositivo. (2) Comunicación digital cercana con estudiantes, docentes y graduados: menciona comunicación
+    más fácil, directa o personalizada entre estudiantes, docentes, administrativos y graduados, notificaciones automáticas, el correo institucional o comunicación con otros sectores.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Mejoramiento de la red para que todos tengamos acceso
+  - Súper importante que los accesos y la comunicación sea más fácil y más directa
+  fusiona_v1:
+  - conectividad_plataformas
+  - comunicacion_digital
+- id: laboratorios_tecnologias
+  nombre: Laboratorios, espacios y tecnologías emergentes
+  componente: fortalecer el aprendizaje
+  otros_componentes:
+  - Tecnologías emergentes
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (laboratorios y espacios tecnológicos y creativos; más tecnologías emergentes en la sede). Ancla: componente ''fortalecer el aprendizaje''; también
+    toca: Tecnologías emergentes.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: laboratorios y espacios tecnológicos y creativos; más tecnologías emergentes en la sede?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Laboratorios y espacios tecnológicos y creativos: menciona laboratorios (físicos, virtuales o de investigación), equipos actualizados, espacios
+    creativos o tecnológicos, simuladores o espacios para poner en práctica los conocimientos. (2) Más tecnologías emergentes en la sede: pide de forma general, sin especificar qué, más tecnología, tecnologías
+    emergentes, avanzadas o inteligentes, o que todo sea más digital.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Más laboratorios y equipos más actualizados
+  - Faltaría la implementación de tecnología emergentes
+  fusiona_v1:
+  - laboratorios_espacios
+  - mas_tecnologias_emergentes
+- id: aprendizaje_digital
+  nombre: Aprendizaje digital, virtual y personalizado
+  componente: Transformación digital
+  justificacion: 'Componente ''Transformación digital'': conciliar presencialidad y digitalización, clases y carreras virtuales, modelo de estudio con herramientas digitales y aprendizaje personalizado.'
+  critico: false
+  instruccion: ¿El `comentario` pide cambiar el modelo de estudio con herramientas digitales, clases o carreras virtuales, o aprendizaje personalizado?
+  criterio_true: Menciona el modelo o la metodología de estudio con herramientas digitales, conciliar presencialidad y digitalización, clases o carreras virtuales, acceso a clases y materiales digitales,
+    aprendizaje personalizado o didáctico con tecnología.
+  criterio_false: No habla del aprendizaje ni de las clases.
+  ejemplos_si:
+  - Conciliar la presencialidad y la digitalización en procesos formativos
+  - Mejorar el modelo de estudio, la forma de aprender ha cambiado, con herramientas digitales
+- id: enfoque_humano_concepto
+  nombre: 'Enfoque: la tecnología al servicio de las personas y claridad del concepto digital'
+  componente: transformacion_en_general
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (la tecnología al servicio de las personas, no al revés; aclarar el concepto de lo digital en la transformación). Ancla: La transformación en general.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: la tecnología al servicio de las personas, no al revés; aclarar el concepto de lo digital en la transformación?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) La tecnología al servicio de las personas, no al revés: menciona que la tecnología esté al servicio de las personas, que no reemplace a las
+    personas, integración medida, priorizar al sujeto o uso responsable de la tecnología. (2) Aclarar el concepto de lo digital en la transformación: pide más claridad en el concepto de lo digital o en
+    los pilares de la transformación, o dice que es compleja o una metodología para pocas personas.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - La tecnología tendría que estar al servicio de las personas y no las personas al servicio de la tecnología
+  - Aclarar el concepto de Digital en el modelo
+  fusiona_v1:
+  - tecnologia_al_servicio_humano
+  - claridad_concepto_digital
+- id: conformidad
+  nombre: Conformidad con la transformación
+  componente: transformacion_en_general
+  justificacion: 'Comentarios sobre la transformación como un todo: dicen expresamente que es pertinente o que están de acuerdo.'
+  critico: false
+  instruccion: ¿El `comentario` dice expresamente que está de acuerdo con la transformación o que es pertinente?
+  criterio_true: Dice de forma explícita que está de acuerdo, que la transformación es pertinente o que se está avanzando bien.
+  criterio_false: No expresa acuerdo explícito con la transformación.
+  ejemplos_si:
+  - si estamos deacuerdo
+  - Si es pertinente porque mejoraria los procesos repetitivos
+- id: otros_fuera
+  nombre: Otros asuntos fuera de la transformación
+  componente: fuera_de_la_transformacion
+  justificacion: 'Asuntos sin anclaje en la sección de UC Digital del documento marco, cada uno con menos del 10 % de los comentarios; se agrupan en un solo tema (versión 2). Incluye: empleo, oportunidades
+    y alianzas con empresas; territorio y red de saberes desde los municipios; investigación y semilleros; comunicación con otras universidades e internacionalización; bienestar y recreación; inclusión:
+    dispositivos para quien no tiene y discapacidad.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Digital: empleo, oportunidades y alianzas con empresas; territorio y red de saberes desde los municipios;
+    investigación y semilleros; comunicación con otras universidades e internacionalización; bienestar y recreación; inclusión: dispositivos para quien no tiene y discapacidad?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Empleo, oportunidades y alianzas con empresas: menciona campo laboral, oportunidades laborales o empresariales, prácticas, empleos o alianzas
+    con empresas tecnológicas. (2) Territorio y red de saberes desde los municipios: menciona el territorio, la región, municipios, nodos territoriales, red de saberes o el ecosistema translocal. (3) Investigación
+    y semilleros: menciona semilleros, investigación, calidad de la investigación o laboratorios de investigación. (4) Comunicación con otras universidades e internacionalización: menciona otras universidades,
+    sectores nacionales e internacionales o internacionalización. (5) Bienestar y recreación: menciona recreación, campos recreativos, recursos para bienestar o una aplicación de bienestar. (6) Inclusión:
+    dispositivos para quien no tiene y discapacidad: menciona estudiantes sin acceso a dispositivos, inclusión o población con discapacidad.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Tener más oportunidades tanto laborales como empresariales.
+  - dejamos de ser 7 sedes aisladas y nos convertimos en una red
+  - Más semilleros Para facilitar los proyectos de investigación
+  - Hacer comunicaciones con otras universidades para saber que tienen ellos
+  fusiona_v1:
+  - empleo_oportunidades
+  - territorio_red
+  - investigacion_semilleros
+  - otras_universidades
+  - bienestar_recreacion
+  - inclusion_acceso
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?

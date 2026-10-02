@@ -1,0 +1,57 @@
+slug: ubate_2026-08-18_a_2026-08-19_uc_translocal
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_.
+  (UC TRANSLOCAL)(1-648) (1).xlsx
+sha256_archivo: 7762409541f57ca6132403022797482c53bcd776cc8fd6f960aee62d7fc5d476
+transformacion:
+  id: T2
+  nombre_oficial: UC Translocal
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 2. UC Translocal' · líneas 46-62
+unidad: Ubaté
+fechas:
+- '2026-08-18'
+- '2026-08-19'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 65
+N_s: 42
+textos_unicos: 42
+excluidos:
+  vacio: 23
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 42
+  n_muestra_requerida: 37.9
+  fraccion: 0.904
+  protocolo: B_censo
+informe_filtro:
+  filas: 65
+  unidades_que_coinciden:
+  - Seccional Ubaté
+  transformacion_vacia_asumida: 4
+  fuera_de_fecha_no_incluidas:
+  - ID: 2
+    fecha: '2026-08-17'
+  - ID: 399
+    fecha: '2026-09-21'
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Ubate_2026-08-18_a_2026-08-19_UC_Translocal.xlsx
+  clasificacion: Clasificacion_Ubate_2026-08-18_a_2026-08-19_UC_Translocal.xlsx
+  hoja: Ubaté 18-19 ago 2026
+preparado: '2026-10-01'

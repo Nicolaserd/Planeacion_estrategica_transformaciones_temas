@@ -1,0 +1,35 @@
+id_resp: ID
+comentarios:
+- columna: ¿Qué ajustaría en esta transformación?
+  pregunta: P1
+  texto_pregunta: ¿Qué ajustaría en esta transformación?
+grupo: Tipo de actor
+programa: De que programa eres graduado
+unidad_regional: Unidad Regional
+sede: Unidad Regional
+fecha: Hora de inicio
+transformacion_declarada: Transformación
+valoracion_cerrada: ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al
+  2037?
+columnas_personales_descartar:
+- Correo electrónico
+- Nombre
+columnas_vacias_ignorar:
+- Total de puntos
+- Comentarios del cuestionario
+- Hora de la última modificación
+- 'Puntos: Tipo de actor'
+- 'Comentarios: Tipo de actor'
+- 'Puntos: De que programa eres graduado'
+- 'Comentarios: De que programa eres graduado'
+- 'Puntos: Unidad Regional'
+- 'Comentarios: Unidad Regional'
+- 'Puntos: Transformación'
+- 'Comentarios: Transformación'
+- 'Puntos: ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?'
+- 'Comentarios: ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?'
+- 'Puntos: ¿Qué ajustaría en esta transformación?'
+- 'Comentarios: ¿Qué ajustaría en esta transformación?'
+nota: 'Una sola pregunta abierta: no hace falta formato largo; id_com = ''<ID>-P1''. ''De que programa eres graduado''
+  contiene el programa de todos los tipos de actor, no solo de graduados. ''Unidad Regional'' cumple el papel de
+  sede.'

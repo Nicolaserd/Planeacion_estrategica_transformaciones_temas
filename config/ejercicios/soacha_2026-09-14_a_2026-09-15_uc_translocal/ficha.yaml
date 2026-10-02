@@ -1,0 +1,53 @@
+slug: soacha_2026-09-14_a_2026-09-15_uc_translocal
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_.
+  (UC TRANSLOCAL)(1-648) (1).xlsx
+sha256_archivo: 7762409541f57ca6132403022797482c53bcd776cc8fd6f960aee62d7fc5d476
+transformacion:
+  id: T2
+  nombre_oficial: UC Translocal
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 2. UC Translocal' · líneas 46-62
+unidad: Soacha
+fechas:
+- '2026-09-14'
+- '2026-09-15'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 72
+N_s: 64
+textos_unicos: 64
+excluidos:
+  vacio: 8
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 64
+  n_muestra_requerida: 55.0
+  fraccion: 0.859
+  protocolo: B_censo
+informe_filtro:
+  filas: 72
+  unidades_que_coinciden:
+  - Extensión Soacha
+  transformacion_vacia_asumida: 11
+  fuera_de_fecha_no_incluidas: []
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Soacha_2026-09-14_a_2026-09-15_UC_Translocal.xlsx
+  clasificacion: Clasificacion_Soacha_2026-09-14_a_2026-09-15_UC_Translocal.xlsx
+  hoja: Soacha 14-15 sep 2026
+preparado: '2026-10-01'

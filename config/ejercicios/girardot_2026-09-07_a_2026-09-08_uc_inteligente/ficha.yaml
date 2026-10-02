@@ -1,0 +1,55 @@
+slug: girardot_2026-09-07_a_2026-09-08_uc_inteligente
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_.
+  (UC INTELIGENTE)(1-589) (1).xlsx
+sha256_archivo: f686c38a876dd0da2ecf472c82dd4027460dbff8feec7503ad6a03b62d86fdcc
+transformacion:
+  id: T1
+  nombre_oficial: UC Inteligente
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 1. UC Inteligente' · líneas 26-42
+unidad: Girardot
+fechas:
+- '2026-09-07'
+- '2026-09-08'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 140
+N_s: 119
+textos_unicos: 119
+excluidos:
+  no_respuesta: 15
+  menos_de_3_letras: 3
+  solo_signos_o_numeros: 3
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 119
+  n_muestra_requerida: 91.0
+  fraccion: 0.765
+  protocolo: B_censo
+informe_filtro:
+  filas: 140
+  unidades_que_coinciden:
+  - Seccional Girardot
+  transformacion_vacia_asumida: 19
+  fuera_de_fecha_no_incluidas: []
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Girardot_2026-09-07_a_2026-09-08_UC_Inteligente.xlsx
+  clasificacion: Clasificacion_Girardot_2026-09-07_a_2026-09-08_UC_Inteligente.xlsx
+  hoja: Girardot 7-8 sep 2026
+preparado: '2026-10-01'

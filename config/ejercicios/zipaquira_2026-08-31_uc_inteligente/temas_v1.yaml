@@ -1,0 +1,96 @@
+# Temas de Zipaquirá · 31 ago 2026 · UC Inteligente (lista propia de esta unidad).
+# Anclados a los componentes de "UC Inteligente" en contexto/Transformaciones_estrategicas_5_frentes.md (líneas 26-42).
+transformacion: UC Inteligente
+version: 1
+temas:
+  - id: procesos_agiles
+    nombre: "Agilidad y eficiencia de los procesos administrativos y logísticos"
+    componente: "Gestión orientada a resultados"
+    justificacion: "Componente 'Gestión orientada a resultados': procesos más ágiles, con menos intermediarios, menos carga administrativa y mejor logística."
+    critico: false
+    instruccion: "¿El `comentario` pide procesos administrativos o logísticos más ágiles, eficientes o con menos trámites y carga para estudiantes y docentes?"
+    criterio_true: "Menciona agilizar procesos o trámites, procesos ágiles y eficientes, menos intermediarios, reducir carga administrativa, inteligencia logística, optimizar procesos internos o mejorar la toma de asistencia."
+    criterio_false: "No habla de la agilidad o eficiencia de los procesos de la universidad."
+    ejemplos_si: ["Procesos más ágiles y con menos intermediarios", "Se necesita una universidad más ágil en sus procesos"]
+
+  - id: digitalizacion_tramites
+    nombre: "Digitalización y automatización de trámites y servicios"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Inteligente; el documento lo ubica en UC Digital ('Automatización de procesos', 'Servicios digitales')."
+    critico: false
+    instruccion: "¿El `comentario` pide hacer trámites o servicios de forma digital, en una aplicación o plataforma, o automatizarlos?"
+    criterio_true: "Menciona solicitudes digitales, aplicaciones o plataformas de servicios, carné electrónico, generar formatos desde la plataforma, o sistemas automatizados de asignación o préstamo."
+    criterio_false: "No menciona trámites digitales, aplicaciones ni automatización."
+    ejemplos_si: ["Pedir solicitudes administrativas de manera digital", "Gestión administrativa por medio de app de servicios para estudiantes y graduados"]
+
+  - id: datos_personalizacion
+    nombre: "Uso de datos para conocer a estudiantes y egresados y medir impacto"
+    componente: "Gobierno y uso estratégico de los datos"
+    justificacion: "Componente 'Gobierno y uso estratégico de los datos': datos de cada estudiante para personalizar la formación, medir el impacto cultural y aprender de la experiencia de los egresados."
+    critico: false
+    instruccion: "¿El `comentario` pide recopilar o usar datos o información sobre estudiantes, egresados o impacto para orientar decisiones?"
+    criterio_true: "Menciona recopilar o analizar datos de los estudiantes, inteligencia de datos, medir el impacto cultural o la empleabilidad, o escuchar la experiencia de los egresados para no repetir obstáculos."
+    criterio_false: "No menciona datos ni información para orientar decisiones."
+    ejemplos_si: ["contar con la capacidad tecnológica para recopilar, analizar y utilizar de manera estratégica los datos de cada estudiante", "Ajustar la inteligencia de datos para que no mida solo lo administrativo"]
+
+  - id: inteligencia_artificial
+    nombre: "Inteligencia artificial en la creación y sus límites en la educación"
+    componente: "Inteligencia artificial"
+    justificacion: "Componente 'Inteligencia artificial': orientar la IA a la creación sonora y cuidar su uso excesivo en la educación."
+    critico: false
+    instruccion: "¿El `comentario` habla de la inteligencia artificial, de cómo usarla o de los riesgos de su uso?"
+    criterio_true: "Menciona inteligencia artificial o IA, su uso en la creación o la producción, o los retos de su uso excesivo."
+    criterio_false: "No menciona la inteligencia artificial."
+    ejemplos_si: ["Orientar la IA a la creación sonora", "el uso excesivo de IA en la educación puede representar retos"]
+
+  - id: decisiones_concertadas_programa
+    nombre: "Decisiones concertadas y ajustadas a cada programa"
+    componente: "Gobernanza estratégica"
+    justificacion: "Componente 'Gobernanza estratégica': decisiones tomadas desde el campo específico, concertadas, sin cambios innecesarios y con diálogo sobre el modelo."
+    critico: false
+    instruccion: "¿El `comentario` pide que las decisiones o cambios institucionales se concierten, se ajusten a las particularidades de cada programa o eviten cambios innecesarios?"
+    criterio_true: "Menciona concertar las decisiones, decidir desde el campo específico, especializarse según cada programa, no cambiar lo que funciona, no cambiar términos que confunden, libertad de cátedra, o diálogo para aplicar el modelo educativo."
+    criterio_false: "No habla de cómo se toman o se concertan las decisiones institucionales."
+    ejemplos_si: ["Concertar las decisiones para ser funcionales", "Cambiar las cosas cuando están funcionando bien, hace que sea algo innecesario"]
+
+  - id: tecnologia_equipos
+    nombre: "Tecnología, equipos e infraestructura para la música"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Inteligente; el documento lo ubica en UC Digital ('Tecnologías emergentes') y en las condiciones para el aprendizaje."
+    critico: false
+    instruccion: "¿El `comentario` pide equipos, tecnología, estudios de grabación, instrumentos o infraestructura?"
+    criterio_true: "Menciona equipos actualizados, herramientas tecnológicas, estudio de grabación, dotación de instrumentos, infraestructura o nuevas tecnologías."
+    criterio_false: "No menciona equipos, tecnología ni infraestructura."
+    ejemplos_si: ["es necesario contar con equipos actualizados", "generar el espacio de un estudio de grabación"]
+
+  - id: pertinencia_empleo
+    nombre: "Currículo pertinente y proyección laboral de los egresados"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Inteligente; el documento lo ubica en UC Emprendedora e Innovadora ('Creación de oportunidades') y UC Translocal."
+    critico: false
+    instruccion: "¿El `comentario` pide que el currículo responda al campo laboral o apoyo para la inserción y proyección profesional de los egresados?"
+    criterio_true: "Menciona el campo laboral, el pensum que responda a lo que la sociedad necesita, oportunidades laborales, inserción laboral, conexiones con el mercado o proyección profesional de los egresados."
+    criterio_false: "No menciona el empleo ni la proyección profesional."
+    ejemplos_si: ["Estar actualizado en el frente del campo laboral", "para no repetir los mismos obstáculos en la inserción laboral"]
+
+  - id: humanizacion
+    nombre: "Humanización, trato digno y ética en la gestión"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Inteligente; el documento lo ubica en UC para la Vida ('Felicidad y bienestar', 'Cultura institucional')."
+    critico: false
+    instruccion: "¿El `comentario` pide humanización, trato digno o no perder la dimensión humana en la universidad?"
+    criterio_true: "Menciona humanización, humanidad, trato digno a estudiantes y docentes, ética o el bienestar de las personas."
+    criterio_false: "No habla del trato humano ni de la ética."
+    ejemplos_si: ["la humanización, es una parte importante para la educación, en donde se vea un trato digno", "no perder de vista la humanidad en todas sus dimensiones"]
+
+  - id: retroalimentacion_mejora
+    nombre: "Retroalimentación, autocrítica y adaptación al cambio"
+    componente: "Calidad y mejora continua"
+    justificacion: "Componente 'Calidad y mejora continua': capacidad de autocrítica, corrección y adaptación, y espacios para recibir retroalimentación sobre avances y falencias."
+    critico: false
+    instruccion: "¿El `comentario` pide retroalimentación, autocrítica, corrección o adaptación al cambio para mejorar?"
+    criterio_true: "Menciona autocrítica, corrección, adaptación al cambio, opinar sobre avances y falencias o espacios de retroalimentación."
+    criterio_false: "No habla de retroalimentación ni de mejora continua."
+    ejemplos_si: ["con capacidad de autocrítica, corrección y adaptación", "Espacios donde el músico sea participe de mas fogueos y opinen sobre nuestro avance y falencias"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

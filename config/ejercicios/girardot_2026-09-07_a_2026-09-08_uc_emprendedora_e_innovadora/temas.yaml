@@ -1,0 +1,135 @@
+# Temas v2 de Girardot · UC Emprendedora e Innovadora (lista propia de esta unidad).
+# Versión 2: menos temas (máx. 10) por fusión de los de la versión 1 (respaldada en temas_v1.yaml).
+# Anclados a Transformaciones_estrategicas_5_frentes.md · '## 4. UC Emprendedora e Innovadora' · líneas 86-100.
+transformacion: UC Emprendedora e Innovadora
+version: 2
+temas:
+- id: acompanamiento_ideas
+  nombre: Escuchar, evaluar la viabilidad y acompañar las ideas hasta el final
+  componente: Ecosistemas de innovación
+  justificacion: 'Componente ''Ecosistemas de innovación'': escuchar la propuesta, evaluar su viabilidad, orientar, asesorar y acompañar desde el primer boceto hasta la solución final.'
+  critico: false
+  instruccion: ¿El `comentario` pide que la universidad escuche, oriente, asesore o acompañe a quien tiene una idea o proyecto?
+  criterio_true: Menciona escuchar al creador de oportunidades o su propuesta, evaluar la viabilidad, orientación, guía, asesoría, acompañamiento (también en la opción de grado), seguimiento hasta el final
+    o brindar herramientas y espacios para desarrollar la idea.
+  criterio_false: No habla de escuchar, orientar ni acompañar ideas o proyectos. Pedir solo dinero tiene su propio tema.
+  ejemplos_si:
+  - Primero escuchar al creador de oportunidades, siguiente mirar la viabilidad y luego apoyar
+  - Ajustaría en no quedarnos solo en el comienzo de un proyecto si no seguir acompañando hasta el final
+- id: financiacion_recursos
+  nombre: 'Financiación: capital semilla, fondos y recursos'
+  componente: Emprendimiento
+  justificacion: 'Componente ''Emprendimiento'': capital semilla, fondos concursables y fondo propio de emprendimiento, inversión, incentivos económicos y presupuesto.'
+  critico: false
+  instruccion: ¿El `comentario` pide financiación, recursos económicos, inversión o capital semilla para proyectos o emprendimientos?
+  criterio_true: Menciona capital semilla, fondos (concursables o propios), financiamiento, apoyo económico o financiero, impulso económico, inversión, incentivos económicos, presupuesto o recursos para
+    ejecutar.
+  criterio_false: No menciona dinero, financiación ni recursos económicos.
+  ejemplos_si:
+  - 'Capital semilla y financiamiento: Crear fondos concursables para financiar prototipos'
+  - Si creamos nuestro propio fondo de emprender , seria genial 10/10
+- id: formacion_emprendimiento_carreras
+  nombre: Formación en emprendimiento para todas las carreras
+  componente: cultura institucional emprendedora
+  otros_componentes:
+  - Emprendimiento
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (emprendimiento para todas las carreras; capacitación y formación para emprender). Ancla: componente ''cultura institucional emprendedora''; también
+    toca: Emprendimiento.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: emprendimiento para todas las carreras; capacitación y formación para emprender?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Emprendimiento para todas las carreras: menciona integrar o adaptar el emprendimiento a todas las carreras o programas, a una carrera concreta
+    (enfermería, software, ambiental), hacerlo transversal o electivo, CAI de emprendimiento, motivar o enamorar del emprendimiento, o pedir más emprendimiento. (2) Capacitación y formación para emprender:
+    menciona capacitaciones, formación práctica o continua, herramientas de gestión, finanzas o liderazgo, crear habilidades o capacitar a los gestores en emprendimiento.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Porque debería de integrarse todas las carreras y no solo administración de empresas.
+  - Capacitar a gestores en emprendimiento
+  fusiona_v1:
+  - emprendimiento_todas_carreras
+  - capacitacion_emprendedores
+- id: alianzas_oportunidades
+  nombre: Alianzas con empresas y entidades y creación de oportunidades laborales
+  componente: Relacionamiento con los sectores sociales, productivos, públicos y comunitarios
+  otros_componentes:
+  - Creación de oportunidades
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (alianzas con empresas, entidades y el sector público; creación de oportunidades laborales). Ancla: componente ''Relacionamiento con los sectores
+    sociales, productivos, públicos y comunitarios''; también toca: Creación de oportunidades.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: alianzas con empresas, entidades y el sector público; creación de oportunidades laborales?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Alianzas con empresas, entidades y el sector público: menciona alianzas o convenios con empresas, instituciones o entidades, entidades privadas,
+    la alcaldía, colegios, consultorios para el sector empresarial, networking o relacionamiento con los sectores. (2) Creación de oportunidades laborales: menciona oportunidades laborales, apoyo laboral,
+    visión laboral o crear más oportunidades para los estudiantes.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Generar consultorios para el sector empresarial local
+  - Más oportunidades laborales y apoyo financiero de entidades privadas
+  fusiona_v1:
+  - alianzas_sectores
+  - oportunidades_laborales
+- id: soluciones_comunidad
+  nombre: Soluciones reales a problemas de la comunidad y el territorio
+  componente: Innovación social
+  justificacion: 'Componente ''Innovación social'': acercarse a la comunidad, conocer su necesidad real, banco de soluciones, proyectos ISU y soluciones con impacto en el territorio.'
+  critico: false
+  instruccion: ¿El `comentario` pide conocer los problemas de la comunidad o el territorio y convertir las ideas en soluciones para ellos?
+  criterio_true: Menciona la comunidad, el territorio, la región, problemas o necesidades reales, problemáticas sociales, inmersión social, banco de soluciones, proyectos ISU o soluciones con impacto en
+    la comunidad.
+  criterio_false: No menciona la comunidad, el territorio ni problemas sociales.
+  ejemplos_si:
+  - La universidad debe acercarse a la comunidad que presenta algún tipo de problema para poder conocer la necesidad real
+  - Transformar las ideas de nuestra comunidad en soluciones que generen un verdadero impacto en el territorio.
+- id: visibilidad_informacion
+  nombre: Visibilizar los emprendimientos y la información de apoyos
+  componente: cultura institucional emprendedora
+  justificacion: '''Qué busca'': promover ''una cultura institucional emprendedora'': divulgar los procesos y logros de emprendimiento, informar los apoyos y llegar a graduados y otras universidades.'
+  critico: false
+  instruccion: ¿El `comentario` pide divulgar, visibilizar o informar sobre los emprendimientos, logros o apoyos de la universidad?
+  criterio_true: Menciona divulgar o dar a conocer los emprendimientos o procesos, visibilizar a los emprendedores, información de los apoyos o logros, reconocimiento o replicarlos a nivel nacional.
+  criterio_false: No habla de divulgación, visibilidad ni información.
+  ejemplos_si:
+  - Divulgar y dar a conocer todos los procesos de emprendimiento que hace en la universidad
+  - Mayor gestión del alcance de la información de apoyos a los emprendedores.
+- id: innovacion_tecnologia
+  nombre: Innovación y tecnología en los proyectos
+  componente: Innovación
+  justificacion: 'Componente ''Innovación'': innovación en tecnologías emergentes, proyectos innovadores y tecnológicos, estrategias y apoyo tecnológico.'
+  critico: false
+  instruccion: ¿El `comentario` pide innovación, tecnologías o proyectos innovadores y tecnológicos?
+  criterio_true: Menciona innovación, tecnologías emergentes o eficientes, apoyo o estrategias tecnológicas, o proyectos innovadores, creativos o tecnológicos.
+  criterio_false: No menciona innovación ni tecnología.
+  ejemplos_si:
+  - Ampliación y innovación en tecnologías emergentes.
+  - Que se manejaran proyectos, innovadores, creativos, tecnológicos
+- id: conformidad
+  nombre: Conformidad y valoración positiva (sin ajustes)
+  componente: transformacion_en_general
+  justificacion: 'Comentarios sobre la transformación como un todo: dicen expresamente que no ajustarían nada, que está bien o completa, o valoran lo que la universidad ya hace.'
+  critico: false
+  instruccion: ¿El `comentario` dice expresamente que no ajustaría nada a la transformación, que está bien o completa, o solo valora lo que la universidad ya hace?
+  criterio_true: Dice de forma explícita que no ajustaría nada, ningún ajuste, por el momento nada, ta bien, todo perfecto, está completo o bien proyectado, o valora que la universidad ya participa en estos
+    procesos, sin pedir cambios.
+  criterio_false: Pide, propone o menciona cualquier cosa por mejorar.
+  ejemplos_si:
+  - No ajustaría nada ya que pienso que las herramientas que nos dan han sido las óptimas
+  - Lo que explicaron está completo
+- id: otros_fuera
+  nombre: Otros asuntos fuera de la transformación
+  componente: fuera_de_la_transformacion
+  justificacion: 'Asuntos sin anclaje en la sección de UC Emprendedora e Innovadora del documento marco, cada uno con menos del 10 % de los comentarios; se agrupan en un solo tema (versión 2). Incluye:
+    investigación, laboratorios abiertos y articulación con CTeI e ISU; bienestar y cuidado (salud mental, madres estudiantes); procesos administrativos y comunicación entre áreas.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Emprendedora e Innovadora: investigación, laboratorios abiertos y articulación con CTeI e ISU; bienestar
+    y cuidado (salud mental, madres estudiantes); procesos administrativos y comunicación entre áreas?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Investigación, laboratorios abiertos y articulación con CTeI e ISU: menciona investigación o investigaciones, laboratorios de investigación,
+    semilleros, CTeI, CTI o articulación con ISU. (2) Bienestar y cuidado (salud mental, madres estudiantes): menciona salud mental, espacio para los hijos de las madres que estudian o puntos de vacunación.
+    (3) Procesos administrativos y comunicación entre áreas: menciona procesos administrativos eficientes, calidad en la gestión o comunicación asertiva entre áreas.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Creación de espacios de laboratorio de investigación abiertos
+  - Más enfoque en la salud mental
+  - Procesos administrativos más eficientes
+  fusiona_v1:
+  - investigacion
+  - bienestar_cuidado
+  - procesos_gestion
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?

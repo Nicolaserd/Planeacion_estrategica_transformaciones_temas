@@ -1,0 +1,204 @@
+# Redacción de la taxonomía (Fase 4). src/f04_descubrimiento.py calcula las frecuencias y genera
+# config/taxonomia_v1.yaml. Los ejemplos son textos anonimizados reales: sirven de guía para Nicolás
+# y NO se envían a Jev (con el censo, D = todos los comentarios, y enviarlos inflaría el acuerdo).
+
+version: 1
+temas:
+  - id: calidad_exigencia_academica
+    nombre: "Calidad educativa, exigencia académica y mejora continua"
+    transformacion_padre: T1
+    justificacion_marco: "T1 · componentes 'Calidad y mejora continua' y 'SIAC'; enunciado: 'el aseguramiento de la calidad y la excelencia institucional'."
+    nota_frontera: "Si pide que la carrera sea más práctica, eso es el tema de prácticas (T4); aquí cuenta solo la calidad o la exigencia."
+    critico: false
+    instruccion: "¿El `comentario` pide o menciona la calidad de la educación, la exigencia académica o la mejora continua de los procesos de la universidad?"
+    criterio_true: "Menciona educación de alta calidad, más exigencia académica, mejorar continuamente los procesos, o actualizarse y mantener un buen nivel académico, aunque sea en pocas palabras o con errores de ortografía."
+    criterio_false: "No habla de calidad, exigencia ni mejora continua. Pedir prácticas, empleo o bienestar sin mencionar la calidad no cuenta."
+    ejemplos_si: ["Mejora continua en cada uno de los procesos", "falta más exigencia en lo académico"]
+    ejemplos_no_cercanos: ["Que sea más práctica la carrera para poner en práctica los conocimientos"]
+
+  - id: pertinencia_territorial
+    nombre: "Pertinencia de la formación y el conocimiento para la región"
+    transformacion_padre: T2
+    justificacion_marco: "T2 · 'articulando las funciones sustantivas con las realidades de los territorios'; componente 'Impacto territorial'."
+    nota_frontera: "El empleo en la región también toca empleabilidad (T4); este tema cuenta cuando se liga la formación, las carreras o el conocimiento con las necesidades del territorio."
+    critico: false
+    instruccion: "¿El `comentario` pide que la formación, las carreras o el conocimiento de la universidad respondan a la región o al territorio y a sus problemas reales?"
+    criterio_true: "Menciona la región, el territorio, el municipio o sus problemáticas reales en relación con lo que se enseña, se investiga o las carreras que se ofrecen; por ejemplo, transformar el territorio con el conocimiento o evitar que sobren egresados de una carrera en la región."
+    criterio_false: "No menciona la región ni el territorio. Hablar de la 'realidad laboral' o del 'mundo real' sin referirse a la región no cuenta."
+    ejemplos_si: ["aplicada a las problemáticas reales de la región", "conocimiento capaz de transformar el territorio"]
+    ejemplos_no_cercanos: ["Más énfasis a lo laborar o a la realidad que vamos a enfrentar"]
+
+  - id: movilidad_redes_cooperacion
+    nombre: "Movilidad, redes y alianzas con otras instituciones"
+    transformacion_padre: T2
+    justificacion_marco: "T2 · componentes 'Internacionalización' y 'Redes y cooperación'."
+    nota_frontera: "Las alianzas con empresas para prácticas o empleo son de T4; aquí cuentan la movilidad y las alianzas con instituciones académicas u otras entidades, nacionales o internacionales."
+    critico: false
+    instruccion: "¿El `comentario` pide movilidad nacional o internacional, o alianzas, convenios o relaciones con otras universidades o instituciones?"
+    criterio_true: "Menciona movilidad o intercambio nacional o internacional, relaciones o convenios con otras entidades académicas, o alianzas institucionales, por ejemplo para acceder a posgrados que la universidad no ofrece."
+    criterio_false: "No menciona movilidad ni relaciones con otras instituciones. Los convenios de prácticas con empresas o el acercamiento a empresas no cuentan aquí."
+    ejemplos_si: ["oportunidades en movilidad nacional e internacional", "Hacer alianzas institucionales para mejorar perfil profesional y poder acceder a postgrados y maestrías que no ofrece la Universidad"]
+    ejemplos_no_cercanos: ["Deberian de hacer convenios de prácticas con el fin de fortalecer las habilidades de los profesionales"]
+
+  - id: segunda_lengua
+    nombre: "Segunda lengua e idiomas"
+    transformacion_padre: T2
+    justificacion_marco: "T2 · componente 'Internacionalización'; el Anexo pide que la internacionalización 'impacte el currículo, no solo la movilidad'."
+    nota_frontera: "El documento no menciona los idiomas de forma explícita; se ubica en T2 por la internacionalización del currículo. Si Nicolás lo prefiere, pasa a fuera_del_marco."
+    critico: false
+    instruccion: "¿El `comentario` pide aprender, reforzar o exigir una segunda lengua o idiomas extranjeros?"
+    criterio_true: "Menciona segundo idioma, segunda lengua, inglés u otros idiomas, bilingüismo o refuerzo en idiomas."
+    criterio_false: "No menciona idiomas ni lenguas extranjeras."
+    ejemplos_si: ["Segundo idioma obligatorio", "El refuerzo en componente de idiomas"]
+    ejemplos_no_cercanos: ["oportunidades en movilidad nacional e internacional"]
+
+  - id: tecnologia_digitalizacion
+    nombre: "Actualización tecnológica y digitalización de procesos"
+    transformacion_padre: T3
+    justificacion_marco: "T3 · componentes 'Transformación digital', 'Tecnologías emergentes' y 'Automatización de procesos'."
+    nota_frontera: "Criticar la mediación de pantallas para pedir experiencias presenciales es del tema de prácticas y formación aplicada (T4)."
+    critico: false
+    instruccion: "¿El `comentario` pide o menciona actualización tecnológica, nuevas tecnologías, o simplificar y digitalizar procesos y trámites?"
+    criterio_true: "Menciona nuevas tecnologías, mejoras en temas tecnológicos, mantenerse actualizada en tecnología, digitalizar o simplificar procesos y trámites, o reducir tareas repetitivas."
+    criterio_false: "No menciona tecnología ni digitalización. Mencionar 'una pantalla' solo para pedir experiencias presenciales no cuenta."
+    ejemplos_si: ["la universidad tiene que mantenerse actualizada en las nuevas técnologiad", "Simplificar y digitalizar procesos, reduciendo trámites y tareas repetitivas"]
+    ejemplos_no_cercanos: ["Que halla más experiencias reales y no solo a través de una pantalla"]
+
+  - id: practicas_formacion_aplicada
+    nombre: "Prácticas, pasantías y formación aplicada"
+    transformacion_padre: T4
+    justificacion_marco: "T4 · componentes 'Relacionamiento con los sectores sociales, productivos, públicos y comunitarios' y 'Creación de oportunidades'."
+    nota_frontera: "La parte pedagógica (menos teoría, más práctica) roza 'Formación y aprendizaje' (T2) y las 'condiciones que favorezcan el aprendizaje' (T5); se ubica en T4 porque los comentarios la orientan al mundo laboral y al vínculo con el sector productivo."
+    critico: false
+    instruccion: "¿El `comentario` pide prácticas, pasantías, experiencias en campo o una formación más práctica y menos teórica?"
+    criterio_true: "Menciona prácticas, pasantías, convenios de prácticas, experiencias en campo o reales, aplicar lo aprendido, espacios o entornos prácticos, o que la carrera sea más práctica y no solo teórica."
+    criterio_false: "No pide práctica ni experiencias aplicadas. Pedir empleo al graduarse sin mencionar prácticas o formación práctica no cuenta; tampoco recordar o valorar experiencias que la universidad ya dio."
+    ejemplos_si: ["Que sea más práctica la carrera para poner en práctica los conocimientos", "El acceso a las practicas"]
+    ejemplos_no_cercanos: ["Que se enfatiza más el ámbito laboral y se pueda proyectar más a los estudiantes a genera o buscar empleos relacionados a lo aprendido"]
+
+  - id: empleabilidad
+    nombre: "Empleabilidad e inserción laboral"
+    transformacion_padre: T4
+    justificacion_marco: "T4 · componente 'Creación de oportunidades'; el Anexo cita 'fomentar el emprendimiento de graduados y articularse con el sector productivo'."
+    nota_frontera: "El salario y la estabilidad del personal de la universidad son de T5 (condiciones laborales); aquí cuenta el empleo de estudiantes y graduados."
+    critico: false
+    instruccion: "¿El `comentario` pide preparar o apoyar a estudiantes o graduados para conseguir empleo, o conectarlos con la realidad laboral?"
+    criterio_true: "Menciona empleo, empleabilidad, vinculación o inclusión laboral, oportunidades laborales o profesionales, asesoría para conseguir trabajo, redes de graduados para el empleo, o más énfasis en el ámbito o la realidad laboral."
+    criterio_false: "No habla del empleo de estudiantes o graduados. No cuenta si habla del salario, la estabilidad o las condiciones de trabajo del personal de la universidad."
+    ejemplos_si: ["la vinculación laboral al momento de terminar la carrera", "Más énfasis a lo laborar o a la realidad que vamos a enfrentar"]
+    ejemplos_no_cercanos: ["mejorar la estabilidad laboral en plantas y mejorar la nivelación salarial de los administrativos"]
+
+  - id: vinculos_empresas_sector
+    nombre: "Vínculos con empresas y el sector productivo"
+    transformacion_padre: T4
+    justificacion_marco: "T4 · 'articularse con los sectores sociales, productivos, públicos y comunitarios para aportar al desarrollo del territorio'."
+    nota_frontera: "Si el vínculo es para hacer prácticas, cuenta también el tema de prácticas; si es con otras universidades, es movilidad y redes (T2)."
+    critico: false
+    instruccion: "¿El `comentario` pide acercamiento, conexión o proyectos conjuntos con empresas, el sector productivo o el mercado?"
+    criterio_true: "Menciona acercarse a empresas, conexiones de apoyo con empresas del sector, impactar al sector o al mercado real, relaciones con entidades laborales, o gestionar proyectos con actores fuera de la universidad."
+    criterio_false: "No menciona empresas, sector productivo ni mercado. Las alianzas con otras universidades o para posgrados no cuentan aquí."
+    ejemplos_si: ["conexiones de apoyo con empresas del sector para el área profesional y laboral", "acercamiento a empresas en el desarrollo de procesos según ámbito"]
+    ejemplos_no_cercanos: ["Hacer alianzas institucionales para mejorar perfil profesional y poder acceder a postgrados"]
+
+  - id: emprendimiento_innovacion
+    nombre: "Emprendimiento, innovación e impulso a ideas propias"
+    transformacion_padre: T4
+    justificacion_marco: "T4 · componentes 'Emprendimiento', 'Innovación' e 'Innovación social'."
+    nota_frontera: ""
+    critico: false
+    instruccion: "¿El `comentario` pide apoyo al emprendimiento, a la innovación o a que la universidad impulse las ideas o iniciativas propias de los estudiantes?"
+    criterio_true: "Menciona emprender, emprendimiento, innovación, investigación, o impulsar ideas, proyectos o iniciativas propias."
+    criterio_false: "No menciona emprendimiento, innovación ni ideas propias. Pedir empleo o prácticas no basta."
+    ejemplos_si: ["Como grupo nos gustaría que la universidad impulsará las ideas personales", "oportunidades reales de empleo, emprendimiento, investigación, innovación"]
+    ejemplos_no_cercanos: ["Oportunidades laborales, personales e interpersonales"]
+
+  - id: bienestar_salud_mental
+    nombre: "Bienestar universitario, salud mental y acompañamiento"
+    transformacion_padre: T5
+    justificacion_marco: "T5 · componente 'Felicidad y bienestar'; el Anexo cita 'atender la salud mental como prioridad'."
+    nota_frontera: "El bienestar laboral del personal (salario, estabilidad) tiene su propio tema."
+    critico: false
+    instruccion: "¿El `comentario` pide o menciona el bienestar universitario, la salud mental o emocional, o el acompañamiento a las personas?"
+    criterio_true: "Menciona bienestar, programas de bienestar universitario, salud mental o emocional, lo emocional, prevención, acompañamiento a estudiantes o a la comunidad, o que se tenga en cuenta el bienestar de todos."
+    criterio_false: "No menciona bienestar, salud mental ni acompañamiento. Hablar solo de salario o estabilidad laboral no cuenta aquí."
+    ejemplos_si: ["bienestar más preventivo sobretodo salud mental", "Socialización programas de bienestar universitario"]
+    ejemplos_no_cercanos: ["mejorar la nivelación salarial de los administrativos"]
+
+  - id: condiciones_laborales_administrativos
+    nombre: "Condiciones laborales y reconocimiento del personal administrativo"
+    transformacion_padre: T5
+    justificacion_marco: "T5 · componentes 'Desarrollo del talento humano' y 'Felicidad y bienestar'."
+    nota_frontera: "El empleo de estudiantes y graduados es de T4 (empleabilidad)."
+    critico: false
+    instruccion: "¿El `comentario` habla de las condiciones de trabajo, el salario, la estabilidad laboral o el reconocimiento del personal administrativo de la universidad?"
+    criterio_true: "Menciona estabilidad laboral, nombramiento o carrera administrativa, nivelación salarial, salario emocional, beneficios, estabilidad económica, o que se tenga en cuenta o no se olvide a los administrativos."
+    criterio_false: "No habla del personal de la universidad ni de sus condiciones de trabajo. Las oportunidades de empleo para estudiantes o graduados no cuentan."
+    ejemplos_si: ["mejorar la estabilidad laboral en plantas y mejorar la nivelación salarial de los administrativos", "Mejorar el salario emocional y beneficios para los administrativos"]
+    ejemplos_no_cercanos: ["la vinculación laboral al momento de terminar la carrera"]
+
+  - id: formacion_continua_talento_humano
+    nombre: "Formación continua y desarrollo profesional del personal y los graduados"
+    transformacion_padre: T5
+    justificacion_marco: "T5 · componente 'Desarrollo del talento humano'."
+    nota_frontera: "La formación de los estudiantes durante su carrera no cuenta aquí; ver formación integral o prácticas."
+    critico: false
+    instruccion: "¿El `comentario` pide formación, capacitación o actualización profesional para el personal de la universidad o para los graduados?"
+    criterio_true: "Menciona capacitar o formar al personal administrativo o docente, posgrados o maestrías para el personal, actualización profesional, mentorías, o procesos de formación y crecimiento continuo."
+    criterio_false: "No habla de formar o actualizar al personal o a los graduados. La formación de los estudiantes durante su carrera no cuenta."
+    ejemplos_si: ["Fomentar la formación profesional del personal administrativo", "redes que permitan oportunidades laborales, mentorías y actualización profesional"]
+    ejemplos_no_cercanos: ["Que brinde aprendizajes, herramientas y estrategias más allá del ámbito profesional"]
+
+  - id: formacion_integral_desarrollo_personal
+    nombre: "Formación integral, desarrollo personal y proyecto de vida"
+    transformacion_padre: T5
+    justificacion_marco: "T5 · 'formación de la Persona Transhumana'; componentes 'Persona Transhumana' y 'Creadores de Oportunidades'."
+    nota_frontera: "Si el comentario propone cambiar los conceptos de la transformación, cuenta también 'Ajustes al enfoque'."
+    critico: false
+    instruccion: "¿El `comentario` habla del desarrollo personal o humano, de una formación que vaya más allá de lo profesional, o de experiencias que transforman la vida o el proyecto de vida?"
+    criterio_true: "Menciona desarrollo o crecimiento personal, formar personas autónomas, aprendizajes más allá de lo profesional, transformar a la persona o el ser, experiencias que cambiaron su vida, proyecto de vida, logros personales, o la dimensión humana y familiar."
+    criterio_false: "Solo habla de habilidades para el empleo, prácticas o formación técnica, sin referencia a la persona o a su vida."
+    ejemplos_si: ["Que forme también personas autónomas", "Haber vivido experiencias que transformaron su ser y su criterio propio"]
+    ejemplos_no_cercanos: ["Deberian de hacer convenios de prácticas con el fin de fortalecer las habilidades de los profesionales"]
+
+  - id: convivencia_comunidad
+    nombre: "Convivencia, sentido de comunidad y pertenencia"
+    transformacion_padre: T5
+    justificacion_marco: "T5 · componentes 'Convivencia' y 'Cultura institucional'."
+    nota_frontera: "La pertenencia a la región o a la sede sería T2; aquí cuenta la comunidad universitaria."
+    critico: false
+    instruccion: "¿El `comentario` habla de la convivencia, de las relaciones entre las personas o del sentido de comunidad y pertenencia en la universidad?"
+    criterio_true: "Menciona convivencia, convivir, compartir con otras personas, conocer personas, sentirse parte de una comunidad, sentido de pertenencia, reconocer las diferencias, o pensar en la comunidad y no solo en el individuo."
+    criterio_false: "No habla de relaciones entre personas ni de comunidad. Las redes de contactos para conseguir empleo no cuentan."
+    ejemplos_si: ["Reconocerse en el otro y sentirse parte de una comunidad", "no pensar solo en persona, también en comunidad"]
+    ejemplos_no_cercanos: ["Conexión con los graduados: crear redes que permitan oportunidades laborales"]
+
+  - id: participacion_comunicacion
+    nombre: "Participación, escucha y comunicación interna"
+    transformacion_padre: T5
+    justificacion_marco: "T5 · componentes 'Valores democráticos' y 'Cultura institucional'."
+    nota_frontera: "Toca la gobernanza (T1) cuando pide participar en las decisiones; se ubica en T5 por los valores democráticos y la cultura institucional (matriz de fronteras T1-T5)."
+    critico: false
+    instruccion: "¿El `comentario` pide más participación, escuchar las ideas de la comunidad o mejorar la comunicación dentro de la universidad?"
+    criterio_true: "Menciona participar o aportar en la retroalimentación o en las decisiones, escuchar y valorar las ideas del personal o de la comunidad, buena comunicación entre la comunidad educativa, comunicación interna, o espacios de interacción y comunicación."
+    criterio_false: "No habla de participación, escucha ni comunicación. Difundir los programas de bienestar no basta."
+    ejemplos_si: ["Escuchar y valorar al personal administrativo, haciendo que sus ideas aporten a las decisiones", "Mayor aporte en las diferentes etapas de retroalimentación"]
+    ejemplos_no_cercanos: ["Socialización programas de bienestar universitario"]
+
+  - id: ajustes_enfoque_transformacion
+    nombre: "Ajustes al enfoque y a los conceptos de la transformación"
+    transformacion_padre: T5
+    justificacion_marco: "T5 · conceptos del enunciado ('la vida, la felicidad, el bienestar', 'Persona Transhumana'); el Anexo pide 'pasar del discurso a la evidencia medible'."
+    nota_frontera: "Tema sobre la redacción de la propia transformación UC para la Vida: insumo directo para revisar su enunciado."
+    critico: false
+    instruccion: "¿El `comentario` propone cambiar, ampliar o aterrizar los conceptos o principios de la transformación, como la felicidad, la Persona Transhumana o el desarrollo personal?"
+    criterio_true: "Propone ajustar un concepto (por ejemplo, la felicidad), agregar una temática, incluir la comunidad o la familia además de la persona, o que los principios sean aplicables a la vida real."
+    criterio_false: "Pide acciones concretas de la universidad (prácticas, bienestar, empleo) sin referirse a los conceptos o principios de la transformación."
+    ejemplos_si: ["Ajustar el concepto de felicidad, enmacarlo a los logros y éxito de la ruta desde lo personal", "Los principios que se mencionan en la transformación son buenos pero lo ideal es que estos sean aplicables a la vida real"]
+    ejemplos_no_cercanos: ["aumentar las oportunidades de participación de bienestar"]
+
+# Preguntas fijas (4.5)
+tipo:
+  oportunidad_de_mejora: "Contiene al menos una queja, problema, propuesta o sugerencia de cambio; si además valora algo positivo, sigue siendo esta opción."
+  reconocimiento: "Solo valora positivamente o agradece lo que la universidad ya hace o ya aportó, sin pedir cambios."
+  neutro_observacion: "Describe o comenta sin queja, sugerencia, propuesta ni valoración positiva."
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

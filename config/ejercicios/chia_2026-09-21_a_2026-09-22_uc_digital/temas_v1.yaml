@@ -1,0 +1,176 @@
+# Temas de Chía · 21-22 sep 2026 · UC Digital (lista propia de esta unidad).
+# Anclados a los componentes de "UC Digital" en contexto/Transformaciones_estrategicas_5_frentes.md (líneas 66-82).
+transformacion: UC Digital
+version: 1
+temas:
+  - id: procesos_digitales_unificados
+    nombre: "Procesos digitales unificados: un solo registro y trámites ágiles"
+    componente: "Automatización de procesos"
+    justificacion: "Componente 'Automatización de procesos': ventanilla única digital, un solo registro para varios procesos, inscripción, certificados y contratación ágiles, reserva de espacios y asistencia digital."
+    critico: false
+    instruccion: "¿El `comentario` pide digitalizar, automatizar, unificar o agilizar trámites, registros y procesos administrativos?"
+    criterio_true: "Menciona trámites, registros, formatos, procesos repetitivos o redundantes, un solo registro, ventanilla única, firma digital, inscripción de materias, certificados, contratación, solicitud de espacios, asistencia o marcación, resolver dudas sin filas o automatizar la página de servicios."
+    criterio_false: "No habla de trámites ni de procesos administrativos."
+    ejemplos_si: ["un solo registro que sirva para varios procesos, reducir procesos repetitivos", "Optimizar procesos de certificaciones laborales, actualmente el proceso es muy engorroso y demorado"]
+
+  - id: inteligencia_artificial
+    nombre: "Aprender a usar la IA con profundidad, ética y sin miedo"
+    componente: "Inteligencia artificial"
+    justificacion: "Componente 'Inteligencia artificial': enseñar IA con profundidad, cursos y campos de aprendizaje de IA, restringirla menos, usarla de forma crítica y ética, y competencias de IA para docentes."
+    critico: false
+    instruccion: "¿El `comentario` habla de la inteligencia artificial (IA): enseñarla, usarla, acceder a ella o integrarla?"
+    criterio_true: "Menciona inteligencia artificial, IA, IAs, agentes, una herramienta como Claude, competencias o cursos de IA, restringir menos su uso, usarla de forma crítica y ética, o integrarla en procesos y documentos."
+    criterio_false: "No menciona la inteligencia artificial ni agentes de IA."
+    ejemplos_si: ["El uso de inteligencias artificiales debería enseñarse con más profundidad sin miedo o temor a lo desconocido", "que todo estudiante, sin importar su carrera, salga sabiendo usar la inteligencia artificial de forma crítica y ética"]
+
+  - id: conectividad_plataformas
+    nombre: "Conectividad, red y plataformas integradas"
+    componente: "Ecosistemas digitales"
+    justificacion: "Componente 'Ecosistemas digitales': mejor red e internet, plataformas mejoradas e integradas, información centralizada y un ecosistema digital integrado."
+    critico: false
+    instruccion: "¿El `comentario` pide mejor internet o red, mejores plataformas, integración de la información o un ecosistema digital integrado?"
+    criterio_true: "Menciona internet, red, conectividad, plataformas o su infraestructura, integración o centralización de la información, tecnología unificada, ecosistema digital integrado o acceso desde cualquier dispositivo."
+    criterio_false: "No menciona conectividad, plataformas ni integración de la información."
+    ejemplos_si: ["Mejoramiento de la red para que todos tengamos acceso", "trabajar desde un ecosistema digital integrado"]
+
+  - id: laboratorios_espacios
+    nombre: "Laboratorios y espacios tecnológicos y creativos"
+    componente: "fortalecer el aprendizaje"
+    justificacion: "'Qué busca': transformación digital 'para fortalecer el aprendizaje': más laboratorios físicos y virtuales, de investigación, espacios creativos y simuladores."
+    critico: false
+    instruccion: "¿El `comentario` pide laboratorios, espacios creativos o tecnológicos, o simuladores para aprender?"
+    criterio_true: "Menciona laboratorios (físicos, virtuales o de investigación), equipos actualizados, espacios creativos o tecnológicos, simuladores o espacios para poner en práctica los conocimientos."
+    criterio_false: "No menciona laboratorios ni espacios para aprender."
+    ejemplos_si: ["Más laboratorios y equipos más actualizados", "Laboratorios virtuales, más espacios creativos"]
+
+  - id: aprendizaje_digital
+    nombre: "Aprendizaje digital, virtual y personalizado"
+    componente: "Transformación digital"
+    justificacion: "Componente 'Transformación digital': conciliar presencialidad y digitalización, clases y carreras virtuales, modelo de estudio con herramientas digitales y aprendizaje personalizado."
+    critico: false
+    instruccion: "¿El `comentario` pide cambiar el modelo de estudio con herramientas digitales, clases o carreras virtuales, o aprendizaje personalizado?"
+    criterio_true: "Menciona el modelo o la metodología de estudio con herramientas digitales, conciliar presencialidad y digitalización, clases o carreras virtuales, acceso a clases y materiales digitales, aprendizaje personalizado o didáctico con tecnología."
+    criterio_false: "No habla del aprendizaje ni de las clases."
+    ejemplos_si: ["Conciliar la presencialidad y la digitalización en procesos formativos", "Mejorar el modelo de estudio, la forma de aprender ha cambiado, con herramientas digitales"]
+
+  - id: comunicacion_digital
+    nombre: "Comunicación digital cercana con estudiantes, docentes y graduados"
+    componente: "Experiencia digital de la comunidad universitaria"
+    justificacion: "Componente 'Experiencia digital de la comunidad universitaria': comunicación más fácil y directa, notificaciones, correo institucional ampliado y vínculo digital con los graduados."
+    critico: false
+    instruccion: "¿El `comentario` pide una comunicación digital más fácil, directa o personalizada entre la universidad y su comunidad?"
+    criterio_true: "Menciona comunicación más fácil, directa o personalizada entre estudiantes, docentes, administrativos y graduados, notificaciones automáticas, el correo institucional o comunicación con otros sectores."
+    criterio_false: "No habla de comunicación."
+    ejemplos_si: ["Súper importante que los accesos y la comunicación sea más fácil y más directa", "Recibir notificaciones automáticas sobre cambios de horario"]
+
+  - id: cero_papel
+    nombre: "Cero papel"
+    componente: "Cero papel"
+    justificacion: "Componente 'Cero papel': todo digital sin formatos, eliminar papel y priorizar la escritura digital."
+    critico: false
+    instruccion: "¿El `comentario` pide eliminar o disminuir el papel o los formatos físicos?"
+    criterio_true: "Menciona cero papel, disminuir las hojas de papel, eliminar papel o no diligenciar formatos físicos."
+    criterio_false: "No menciona el papel."
+    ejemplos_si: ["Priorizar el cero papel y mejorar la escritura digital", "Disminuir el uso de hojas de papel"]
+
+  - id: mas_tecnologias_emergentes
+    nombre: "Más tecnologías emergentes en la sede"
+    componente: "Tecnologías emergentes"
+    justificacion: "Componente 'Tecnologías emergentes': implementar más tecnologías emergentes y ayudas tecnológicas en la sede."
+    critico: false
+    instruccion: "¿El `comentario` pide, de forma general, más tecnologías emergentes o ayudas tecnológicas?"
+    criterio_true: "Pide de forma general, sin especificar qué, más tecnología, tecnologías emergentes, avanzadas o inteligentes, o que todo sea más digital."
+    criterio_false: "Si el comentario pide algo concreto (simuladores, realidad virtual, laboratorios, salas, IA, software, licencias, conectividad, trámites, biblioteca, capacitación), no cuenta aquí: ese pedido tiene su propio tema."
+    ejemplos_si: ["Faltaría la implementación de tecnología emergentes", "Más ayudas tecnológicas para facilitar más las cosas"]
+
+  - id: tecnologia_al_servicio_humano
+    nombre: "La tecnología al servicio de las personas, no al revés"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre el enfoque de la transformación: integración medida de la tecnología, que facilite y no reemplace a las personas, priorizar al sujeto y uso responsable."
+    critico: false
+    instruccion: "¿El `comentario` advierte que la tecnología debe estar al servicio de las personas, no reemplazarlas, o pide un uso medido y responsable?"
+    criterio_true: "Menciona que la tecnología esté al servicio de las personas, que no reemplace a las personas, integración medida, priorizar al sujeto o uso responsable de la tecnología."
+    criterio_false: "Solo pide más tecnología sin advertir sus límites."
+    ejemplos_si: ["La tecnología tendría que estar al servicio de las personas y no las personas al servicio de la tecnología", "Que faciliten los procesos más no que reemplacen las personas"]
+
+  - id: claridad_concepto_digital
+    nombre: "Aclarar el concepto de lo digital en la transformación"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: aclarar el concepto de 'digital' y sus pilares; la ven compleja o pensada para pocas personas."
+    critico: false
+    instruccion: "¿El `comentario` pide aclarar el concepto o los pilares de la transformación digital, o la critica por compleja o excluyente?"
+    criterio_true: "Pide más claridad en el concepto de lo digital o en los pilares de la transformación, o dice que es compleja o una metodología para pocas personas."
+    criterio_false: "No se refiere a la claridad ni al alcance de la transformación."
+    ejemplos_si: ["Aclarar el concepto de Digital en el modelo", "Más claridad en los pilares de la transformación digital"]
+
+  - id: conformidad
+    nombre: "Conformidad con la transformación"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: dicen expresamente que es pertinente o que están de acuerdo."
+    critico: false
+    instruccion: "¿El `comentario` dice expresamente que está de acuerdo con la transformación o que es pertinente?"
+    criterio_true: "Dice de forma explícita que está de acuerdo, que la transformación es pertinente o que se está avanzando bien."
+    criterio_false: "No expresa acuerdo explícito con la transformación."
+    ejemplos_si: ["si estamos deacuerdo", "Si es pertinente porque mejoraria los procesos repetitivos"]
+
+  - id: investigacion_semilleros
+    nombre: "Investigación y semilleros"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Digital; el documento lo ubica en UC Translocal ('Ciencia, tecnología e innovación')."
+    critico: false
+    instruccion: "¿El `comentario` pide más semilleros, investigación o laboratorios de investigación?"
+    criterio_true: "Menciona semilleros, investigación, calidad de la investigación o laboratorios de investigación."
+    criterio_false: "No menciona la investigación."
+    ejemplos_si: ["Más semilleros Para facilitar los proyectos de investigación", "Me gustarua que la universidad contara con laboratorios de investigacion"]
+
+  - id: empleo_oportunidades
+    nombre: "Empleo, oportunidades y alianzas con empresas"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Digital; el documento lo ubica en UC Emprendedora e Innovadora."
+    critico: false
+    instruccion: "¿El `comentario` habla de empleo, campo laboral, prácticas, oportunidades empresariales o alianzas con empresas?"
+    criterio_true: "Menciona campo laboral, oportunidades laborales o empresariales, prácticas, empleos o alianzas con empresas tecnológicas."
+    criterio_false: "No menciona empleo, oportunidades ni empresas."
+    ejemplos_si: ["Tener más oportunidades tanto laborales como empresariales.", "Contar con herramientas para encontrar prácticas, empleos y oportunidades académica"]
+
+  - id: territorio_red
+    nombre: "Territorio y red de saberes desde los municipios"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Digital; el documento lo ubica en UC Translocal."
+    critico: false
+    instruccion: "¿El `comentario` habla del territorio, la región, los municipios o una red translocal?"
+    criterio_true: "Menciona el territorio, la región, municipios, nodos territoriales, red de saberes o el ecosistema translocal."
+    criterio_false: "No menciona el territorio ni la región."
+    ejemplos_si: ["dejamos de ser 7 sedes aisladas y nos convertimos en una red", "Campus multidisciplinar integrados a los nodos territoriales"]
+
+  - id: otras_universidades
+    nombre: "Comunicación con otras universidades e internacionalización"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Digital; el documento lo ubica en UC Translocal ('Redes y cooperación', 'Internacionalización')."
+    critico: false
+    instruccion: "¿El `comentario` pide comunicación o alianzas con otras universidades o sectores nacionales e internacionales?"
+    criterio_true: "Menciona otras universidades, sectores nacionales e internacionales o internacionalización."
+    criterio_false: "No menciona otras universidades ni lo internacional."
+    ejemplos_si: ["Hacer comunicaciones con otras universidades para saber que tienen ellos", "Mejorar la forma de comunicación con otros sectores nacionales e internacionales"]
+
+  - id: bienestar_recreacion
+    nombre: "Bienestar y recreación"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Digital; corresponde a UC para la Vida."
+    critico: false
+    instruccion: "¿El `comentario` pide recreación, campos recreativos o recursos para bienestar?"
+    criterio_true: "Menciona recreación, campos recreativos, recursos para bienestar o una aplicación de bienestar."
+    criterio_false: "No menciona bienestar ni recreación."
+    ejemplos_si: ["Mejorar los campos que ya tenemos y más campos recreativos", "dar más recursos a bienestar"]
+
+  - id: inclusion_acceso
+    nombre: "Inclusión: dispositivos para quien no tiene y discapacidad"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Digital; corresponde a UC para la Vida."
+    critico: false
+    instruccion: "¿El `comentario` pide incluir a estudiantes sin dispositivos o a población con discapacidad?"
+    criterio_true: "Menciona estudiantes sin acceso a dispositivos, inclusión o población con discapacidad."
+    criterio_false: "No habla de inclusión."
+    ejemplos_si: ["Implementacion de un plan para estudiantes que no tienen acceso a dispositivos electrónicos para mayor inclusión"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

@@ -1,0 +1,10 @@
+# Bitácora · chia_2026-09-21_a_2026-09-22_uc_translocal
+
+- **2026-10-01** · preparar: Experiencia_ _Transformaciones que nos conectan_. (UC TRANSLOCAL)(1-648) (1).xlsx · UC Translocal (T2) · Chía · ['2026-09-21', '2026-09-22'] · incluir_ids=[]. N=93, N_s=86, excluidos={'vacio': 5, 'no_respuesta': 2}, anonimización={'CORREO': 0, 'URL': 0, 'TELEFONO': 0, 'PERSONA': 0}, protocolo=B_censo. Fuera de fecha no incluidas: [].
+- **2026-10-01** · clasificar: Jev (jev-1.13.0) · 86/86 textos únicos válidos · 14 temas + sin_contenido · llamadas nuevas 86 · tokens 147509 · costo USD 0.00620.
+- **2026-10-01** · exportar: Temas_Chia_2026-09-21_a_2026-09-22_UC_Translocal.xlsx (1 hoja, 14 temas, 146 asignaciones, 11 sin tema) y Clasificacion_Chia_2026-09-21_a_2026-09-22_UC_Translocal.xlsx (1 hoja 'Chía 21-22 sep 2026', 93 filas = respuestas; incluye Nombre y Correo: archivo solo para uso local).
+- **2026-10-02** · clasificar: Jev (jev-1.13.0) · 86/86 textos únicos válidos · 10 temas + sin_contenido · llamadas nuevas 86 · tokens 138565 · costo USD 0.00582.
+- **2026-10-02** · temas v2.2: 'visibilidad_redes' recupera la exclusión de la v1: Conectar sedes de la misma universidad tiene su propio tema.
+- **2026-10-02** · clasificar: Jev (jev-1.13.0) · 86/86 textos únicos válidos · 10 temas + sin_contenido · llamadas nuevas 86 · tokens 139683 · costo USD 0.00587.
+- **2026-10-02** · exportar: Temas_Chia_2026-09-21_a_2026-09-22_UC_Translocal.xlsx (1 hoja, 10 temas, 140 asignaciones, 11 sin tema) y Clasificacion_Chia_2026-09-21_a_2026-09-22_UC_Translocal.xlsx (1 hoja 'Chía 21-22 sep 2026', 93 filas = respuestas, una columna por tema; incluye Nombre y Correo: archivo solo para uso local).
+- **2026-10-02** · VERSIÓN 2 (decisión de Nicolás tras la auditoría): temas de 14 a 10 por fusión de afines; lo de fuera de la transformación agrupado en 'Otros asuntos fuera de la transformación' (salvo asuntos ≥ 10 % de N_s); codificación de Claude trasladada a los temas nuevos; Excel de clasificación con una columna por tema. Versión 1 conservada en temas_v1.yaml, codificacion_v1.jsonl, clasificacion_v1.parquet y outputs/UC Translocal/version_1/.

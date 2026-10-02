@@ -1,0 +1,5 @@
+equivalencia:
+  UC para la Vida: T5
+# Decisión de Nicolás (PC2, 2026-10-01): el archivo es la exportación del formulario "UC para la Vida";
+# las filas con la columna vacía también pertenecen a ese formulario.
+vacio: T5

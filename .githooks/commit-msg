@@ -1,0 +1,12 @@
+#!/bin/sh
+# Hook de git · commit-msg
+# Regla del proyecto (2026-10-02): cada commit tiene una sola autoría, la de quien lo hace.
+# Quita del mensaje las líneas de coautoría (Co-Authored-By) y de atribución a herramientas
+# ("Generated with Claude Code", noreply@anthropic.com).
+# Activación (una vez por copia del repositorio): git config core.hooksPath .githooks
+
+archivo="$1"
+tmp="$archivo.unica_autoria"
+grep -viE '^[[:space:]]*co-authored-by[[:space:]]*:|noreply@anthropic\.com|generated with \[?claude' "$archivo" > "$tmp"
+mv "$tmp" "$archivo"
+exit 0

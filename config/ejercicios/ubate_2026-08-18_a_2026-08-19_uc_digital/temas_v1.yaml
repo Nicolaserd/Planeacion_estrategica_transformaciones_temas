@@ -1,0 +1,156 @@
+# Temas de Ubaté · 18-19 ago 2026 · UC Digital (lista propia de esta unidad).
+# Anclados a los componentes de "UC Digital" en contexto/Transformaciones_estrategicas_5_frentes.md (líneas 66-82).
+transformacion: UC Digital
+version: 1
+temas:
+  - id: inteligencia_artificial
+    nombre: "Inteligencia artificial en el aprendizaje y en los procesos"
+    componente: "Inteligencia artificial"
+    justificacion: "Componente 'Inteligencia artificial': acceso a la IA, IA institucional, agentes virtuales, IA en procesos administrativos y en el acompañamiento."
+    critico: false
+    instruccion: "¿El `comentario` habla de la inteligencia artificial (IA) o de agentes virtuales?"
+    criterio_true: "Menciona inteligencia artificial o IA, agentes de IA o agentes virtuales, IA institucional, o usar la IA en el aprendizaje, el acompañamiento o los procesos."
+    criterio_false: "No menciona la inteligencia artificial ni agentes virtuales."
+    ejemplos_si: ["desarrollo de una IA institucional para graduados", "Agentes virtuales que permitan optimizar tareas"]
+
+  - id: automatizacion_procesos
+    nombre: "Automatización y simplificación de procesos administrativos"
+    componente: "Automatización de procesos"
+    justificacion: "Componente 'Automatización de procesos': trámites integrados y ágiles, menos formatos físicos, unificar el flujo de información y automatizar la contratación."
+    critico: false
+    instruccion: "¿El `comentario` pide automatizar, digitalizar o simplificar procesos y trámites administrativos?"
+    criterio_true: "Menciona automatizar o automatización de procesos, trámites ágiles, digitalizar soportes, simplificar procesos sin formatos físicos, unificar el flujo de información entre dependencias, optimizar procesos repetitivos o servicios administrativos digitales."
+    criterio_false: "No habla de automatizar ni simplificar procesos."
+    ejemplos_si: ["Simplificar procesos administrativos sin necesidad de formatos y diligenciamiento físico", "automatización y optimización en los tiempos de contratación"]
+
+  - id: plataformas_conectividad
+    nombre: "Integración de plataformas, conectividad y acceso remoto"
+    componente: "Ecosistemas digitales"
+    justificacion: "Componente 'Ecosistemas digitales': unificar plataformas, conectividad, acceso remoto (VPN), información centralizada en la nube."
+    critico: false
+    instruccion: "¿El `comentario` pide integrar o unificar plataformas, mejor conectividad o acceso remoto a los sistemas?"
+    criterio_true: "Menciona integración o unificación de plataformas, conectividad, acceso desde cualquier lugar, VPN, nube, información centralizada o universidad sin fronteras."
+    criterio_false: "No habla de plataformas, conectividad ni acceso remoto."
+    ejemplos_si: ["Unificación de plataformas institucionales", "Que se pudiera ingresar desde cualquier lugar"]
+
+  - id: capacitacion_tecnologica
+    nombre: "Capacitación en tecnología para docentes, administrativos y estudiantes"
+    componente: "Experiencia digital de la comunidad universitaria"
+    justificacion: "Componente 'Experiencia digital de la comunidad universitaria': formar a toda la comunidad en tecnologías emergentes e IA."
+    critico: false
+    instruccion: "¿El `comentario` pide capacitación o formación en tecnología o en IA para docentes, administrativos o estudiantes?"
+    criterio_true: "Menciona capacitación, capacitaciones o formación en tecnología, tecnologías emergentes o IA para docentes, gestores, administrativos o estudiantes."
+    criterio_false: "No habla de capacitar en tecnología."
+    ejemplos_si: ["Formación en tecnología para los gestores del conocimiento", "Capacitación en tecnologías emergentes (Uso adecuado de la IA)"]
+
+  - id: tecnologias_aprendizaje
+    nombre: "Tecnologías emergentes y software para aprender"
+    componente: "Tecnologías emergentes"
+    justificacion: "Componente 'Tecnologías emergentes': software propio e innovador, herramientas digitales interactivas, CAI en tecnologías emergentes y tecnología para todas las carreras."
+    critico: false
+    instruccion: "¿El `comentario` pide tecnologías emergentes, software o herramientas digitales para el aprendizaje?"
+    criterio_true: "Menciona tecnologías emergentes o nuevas, software propio o innovador, herramientas digitales, algoritmos, interactividad en el aprendizaje, CAI en tecnologías o software, o más tecnología para las carreras."
+    criterio_false: "No habla de tecnologías ni software para aprender. Pedir solo IA tiene su propio tema."
+    ejemplos_si: ["Que la universidad tenga software propio creado por los creadores de oportunidades", "Incentivar el uso de las tecnologías emergentes"]
+
+  - id: salas_laboratorios
+    nombre: "Laboratorios, salas y aulas inteligentes"
+    componente: "fortalecer el aprendizaje"
+    justificacion: "'Qué busca': transformación digital 'para fortalecer el aprendizaje': laboratorios integrados, salas de holografía, licencias para la sala de computación, aulas inteligentes."
+    critico: false
+    instruccion: "¿El `comentario` pide laboratorios, salas especiales, licencias de software para salas o aulas inteligentes?"
+    criterio_true: "Menciona laboratorios, salas de holografía, sala de computación, licencias, aulas u oficinas inteligentes."
+    criterio_false: "No menciona laboratorios, salas ni aulas."
+    ejemplos_si: ["Salas holograficas", "Mejorar sistemas de licencias para el desarrollo de trabajos en la sala de computación"]
+
+  - id: datos_ciberseguridad
+    nombre: "Información en tiempo real, datos y ciberseguridad"
+    componente: "Transformación digital"
+    justificacion: "Componente 'Transformación digital': información disponible en tiempo real, administración de datos, ciberseguridad y manejo de la basura digital."
+    critico: false
+    instruccion: "¿El `comentario` habla de datos, información en tiempo real, ciberseguridad o basura digital?"
+    criterio_true: "Menciona información en tiempo real, administración u optimización de datos, ciberseguridad o basura digital."
+    criterio_false: "No menciona datos, información en tiempo real ni ciberseguridad."
+    ejemplos_si: ["Administración y optimización de datos", "El manejo del la basura digital"]
+
+  - id: servicios_digitales_graduados
+    nombre: "Servicios digitales para graduados y tienda virtual"
+    componente: "Servicios digitales"
+    justificacion: "Componente 'Servicios digitales': acceso de los graduados a herramientas como la IA, plataformas para graduados y tienda virtual de la unidad agroambiental."
+    critico: false
+    instruccion: "¿El `comentario` pide servicios o herramientas digitales para los graduados o una tienda virtual?"
+    criterio_true: "Menciona herramientas, plataformas o IA para graduados, red de graduados, actualización de egresados o tienda virtual."
+    criterio_false: "No menciona servicios digitales para graduados ni tienda virtual."
+    ejemplos_si: ["El acceso del graduado a herramientas como IA", "Tienda virtual para la unidad agroambiental"]
+
+  - id: ajustes_humano_etica
+    nombre: "Límites de la tecnología: lo humano, la ética y la desconexión"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre el enfoque de la transformación: evitar la deshumanización, que la tecnología no reemplace el trabajo humano, ética de la IA, descanso digital y desacuerdo con el 'cero papel'."
+    critico: false
+    instruccion: "¿El `comentario` advierte sobre los riesgos o límites de la tecnología (deshumanización, ética, desconexión) o está en desacuerdo con algún componente de la transformación?"
+    criterio_true: "Menciona deshumanización, que la tecnología no reemplace el trabajo humano o la educación centrada en las personas, enfoque ético de la IA, descanso o desintoxicación de tecnología, o desacuerdo con el cero papel."
+    criterio_false: "Solo pide más tecnología sin advertir sus límites ni discrepar de la transformación."
+    ejemplos_si: ["No estamos de acuerdo en el componente de CERO PAPEL", "La deshumanización tecnológica"]
+
+  - id: ajustes_planteamiento
+    nombre: "Ajustes al planteamiento: metas reales y agilismo"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre el planteamiento de la transformación: que responda a dónde llegar en 2037, que se cumpla lo escrito, que las metas sean reales y que incluya la agilidad."
+    critico: false
+    instruccion: "¿El `comentario` propone cambiar cómo está planteada la transformación (metas claras o reales, cumplir lo escrito, agregar conceptos)?"
+    criterio_true: "Propone que el plan diga a dónde se quiere llegar en 2037, que se realice lo escrito, aterrizar los lineamientos en metas reales o incluir conceptos como el agilismo."
+    criterio_false: "No se refiere al planteamiento de la transformación."
+    ejemplos_si: ["Realizar lo que supuestamente esta por escrito", "Que el Plan Estratégico responda a la pregunta: ¿A donde quieres ir o llegar en 2037?"]
+
+  - id: ambiente_energias
+    nombre: "Medio ambiente y energías renovables"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Digital ni en otra transformación de forma explícita."
+    critico: false
+    instruccion: "¿El `comentario` habla del medio ambiente o de energías renovables?"
+    criterio_true: "Menciona medio ambiente, cuidado del ambiente o energías renovables."
+    criterio_false: "No menciona el ambiente ni las energías renovables."
+    ejemplos_si: ["Falta consideración con el medio ambiente, con el cuidado y energías renovables", "Incentivar el uso de las tecnologías emergentes y cuidado del medio ambiente"]
+
+  - id: empleo_empresas
+    nombre: "Habilidades laborales y vínculo con empresas"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Digital; el documento lo ubica en UC Emprendedora e Innovadora."
+    critico: false
+    instruccion: "¿El `comentario` habla del ámbito laboral, el dinamismo empresarial o la articulación con empresas?"
+    criterio_true: "Menciona expresamente el empleo, el ámbito o campo laboral, el dinamismo empresarial, empresas o multinacionales, o hacer empresa."
+    criterio_false: "No menciona expresamente el empleo ni las empresas. Hablar de tecnología, capacitación, IA o innovación sin referirse al trabajo o a empresas no cuenta."
+    ejemplos_si: ["Habilidades fuertes para la salida al ámbito laboral", "Articulación con empresas multinacionales en tecnología"]
+
+  - id: convenios_otras_universidades
+    nombre: "Convenios y relación con otras universidades"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Digital; el documento lo ubica en UC Translocal ('Redes y cooperación')."
+    critico: false
+    instruccion: "¿El `comentario` pide convenios o relación con otras universidades u organizaciones?"
+    criterio_true: "Menciona convenios con otras organizaciones, incluir a otras universidades o diálogo translocal."
+    criterio_false: "No menciona otras universidades ni convenios."
+    ejemplos_si: ["potenciar y mejorar convenios con otras organizaciones", "deben incluir más las otras universidades"]
+
+  - id: innovacion_ideas_propias
+    nombre: "Innovación e ideas propias de la universidad"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Digital; el documento lo ubica en UC Emprendedora e Innovadora ('Innovación')."
+    critico: false
+    instruccion: "¿El `comentario` pide proyectos de innovación o desarrollar ideas propias de la universidad?"
+    criterio_true: "Menciona expresamente proyectos de innovación, ideas propias de la universidad o incentivos para desarrollar el conocimiento propio."
+    criterio_false: "No menciona expresamente innovación ni ideas propias. Pedir tecnologías emergentes, software o IA no cuenta."
+    ejemplos_si: ["Acelerar proyectos de innovación con impacto global", "Promover ideas que sean exclusivamente de la universidad"]
+
+  - id: condiciones_administrativos
+    nombre: "Condiciones y reconocimiento del personal administrativo"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Digital; el documento lo ubica en UC para la Vida ('Desarrollo del talento humano')."
+    critico: false
+    instruccion: "¿El `comentario` habla de la remuneración, las horas extras, las entregas de cargo o las oportunidades del personal administrativo?"
+    criterio_true: "Menciona remuneración administrativa, reconocimiento de horas extras, entregas de cargo, socializaciones al personal o avances profesionales de los administrativos."
+    criterio_false: "No habla de las condiciones del personal administrativo."
+    ejemplos_si: ["mejor remuneración administrativa", "un reconocimiento de las horas extras"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

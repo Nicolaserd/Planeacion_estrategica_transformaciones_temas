@@ -1,0 +1,200 @@
+{
+  "protocolo_segun_regla": {
+    "N_s": 44,
+    "n_muestra_requerida": 39.6,
+    "fraccion": 0.899,
+    "protocolo": "B_censo"
+  },
+  "completitud": "44/44",
+  "modelos": [
+    "jev-1.13.0"
+  ],
+  "por_transformacion_noul": {
+    "T1": {
+      "n": 6,
+      "ic95": [
+        0.064,
+        0.267
+      ]
+    },
+    "T2": {
+      "n": 8,
+      "ic95": [
+        0.095,
+        0.32
+      ]
+    },
+    "T3": {
+      "n": 2,
+      "ic95": [
+        0.013,
+        0.151
+      ]
+    },
+    "T4": {
+      "n": 21,
+      "ic95": [
+        0.338,
+        0.621
+      ]
+    },
+    "T5": {
+      "n": 26,
+      "ic95": [
+        0.444,
+        0.723
+      ]
+    }
+  },
+  "principal": {
+    "T5": 19,
+    "T4": 11,
+    "T2": 5,
+    "T1": 3,
+    "ninguna": 3,
+    "T3": 3
+  },
+  "por_tema": {
+    "calidad_exigencia_academica": {
+      "n": 11,
+      "ic95": [
+        0.146,
+        0.394
+      ]
+    },
+    "pertinencia_territorial": {
+      "n": 4,
+      "ic95": [
+        0.036,
+        0.212
+      ]
+    },
+    "movilidad_redes_cooperacion": {
+      "n": 3,
+      "ic95": [
+        0.023,
+        0.182
+      ]
+    },
+    "segunda_lengua": {
+      "n": 3,
+      "ic95": [
+        0.023,
+        0.182
+      ]
+    },
+    "tecnologia_digitalizacion": {
+      "n": 3,
+      "ic95": [
+        0.023,
+        0.182
+      ]
+    },
+    "practicas_formacion_aplicada": {
+      "n": 16,
+      "ic95": [
+        0.238,
+        0.511
+      ]
+    },
+    "empleabilidad": {
+      "n": 18,
+      "ic95": [
+        0.277,
+        0.556
+      ]
+    },
+    "vinculos_empresas_sector": {
+      "n": 12,
+      "ic95": [
+        0.163,
+        0.418
+      ]
+    },
+    "emprendimiento_innovacion": {
+      "n": 5,
+      "ic95": [
+        0.05,
+        0.24
+      ]
+    },
+    "bienestar_salud_mental": {
+      "n": 10,
+      "ic95": [
+        0.128,
+        0.37
+      ]
+    },
+    "condiciones_laborales_administrativos": {
+      "n": 5,
+      "ic95": [
+        0.05,
+        0.24
+      ]
+    },
+    "formacion_continua_talento_humano": {
+      "n": 6,
+      "ic95": [
+        0.064,
+        0.267
+      ]
+    },
+    "formacion_integral_desarrollo_personal": {
+      "n": 24,
+      "ic95": [
+        0.401,
+        0.683
+      ]
+    },
+    "convivencia_comunidad": {
+      "n": 11,
+      "ic95": [
+        0.146,
+        0.394
+      ]
+    },
+    "participacion_comunicacion": {
+      "n": 7,
+      "ic95": [
+        0.079,
+        0.294
+      ]
+    },
+    "ajustes_enfoque_transformacion": {
+      "n": 10,
+      "ic95": [
+        0.128,
+        0.37
+      ]
+    }
+  },
+  "tipo": {
+    "oportunidad_de_mejora": 30,
+    "reconocimiento": 10,
+    "neutro_observacion": 4
+  },
+  "sin_contenido": 1,
+  "residual": {
+    "n": 0,
+    "ic95": [
+      0.0,
+      0.08
+    ]
+  },
+  "coherencia": {
+    "n": 24,
+    "ic95": [
+      0.401,
+      0.683
+    ]
+  },
+  "revisar": 28,
+  "revisar_por_motivo": {
+    "incoherente": 20,
+    "baja_confianza_tipo": 8,
+    "baja_confianza_principal": 7,
+    "principal_incoherente": 4
+  },
+  "tokens_reales": 182896,
+  "costo_real_usd": 0.00768
+}

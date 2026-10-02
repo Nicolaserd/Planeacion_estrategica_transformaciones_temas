@@ -1,0 +1,53 @@
+slug: soacha_2026-09-14_a_2026-09-15_uc_digital
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_. (UC
+  DIGITAL)(1-576) (1).xlsx
+sha256_archivo: 42da8c1102bd203dc2dae9fe8fbc2da8176d34fa9a6f0fb0caa653d597763c0a
+transformacion:
+  id: T3
+  nombre_oficial: UC Digital
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 3. UC Digital' · líneas 66-82
+unidad: Soacha
+fechas:
+- '2026-09-14'
+- '2026-09-15'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 74
+N_s: 71
+textos_unicos: 71
+excluidos:
+  vacio: 3
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 71
+  n_muestra_requerida: 60.1
+  fraccion: 0.846
+  protocolo: B_censo
+informe_filtro:
+  filas: 74
+  unidades_que_coinciden:
+  - Extensión Soacha
+  transformacion_vacia_asumida: 7
+  fuera_de_fecha_no_incluidas: []
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Soacha_2026-09-14_a_2026-09-15_UC_Digital.xlsx
+  clasificacion: Clasificacion_Soacha_2026-09-14_a_2026-09-15_UC_Digital.xlsx
+  hoja: Soacha 14-15 sep 2026
+preparado: '2026-10-01'

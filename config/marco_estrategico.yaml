@@ -1,0 +1,236 @@
+- id: T1
+  nombre_oficial: UC Inteligente
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 1. UC Inteligente' · líneas 26-42
+  definicion_textual: |-
+    **Enunciado estratégico**
+    Gobernanza inteligente enfocada a resultados, para la toma de decisiones basada en datos, el aseguramiento de la calidad y la excelencia institucional.
+
+    **Qué busca**
+    Fortalecer la capacidad de la Universidad para orientar su gestión hacia resultados. Se apoya en una gobernanza inteligente y en decisiones basadas en datos, con inteligencia institucional, inteligencia artificial e innovación organizacional, y en un sistema de aseguramiento de la calidad que impulse la mejora continua y la excelencia.
+
+    **Componentes preliminares**
+    - Gobernanza estratégica
+    - Gestión orientada a resultados
+    - Inteligencia institucional
+    - Gobierno y uso estratégico de los datos
+    - Inteligencia artificial
+    - SIAC (Sistema de Aseguramiento de la Calidad)
+    - Acreditación institucional
+    - Calidad y mejora continua
+  enunciado_estrategico: Gobernanza inteligente enfocada a resultados, para la toma de decisiones basada en datos,
+    el aseguramiento de la calidad y la excelencia institucional.
+  que_busca: Fortalecer la capacidad de la Universidad para orientar su gestión hacia resultados. Se apoya en una
+    gobernanza inteligente y en decisiones basadas en datos, con inteligencia institucional, inteligencia artificial
+    e innovación organizacional, y en un sistema de aseguramiento de la calidad que impulse la mejora continua y
+    la excelencia.
+  sintesis_documento: Busca que la Universidad oriente su gestión hacia resultados mediante una gobernanza inteligente
+    y decisiones basadas en datos, apoyadas en inteligencia institucional, inteligencia artificial e innovación
+    organizacional. Incluye un sistema de aseguramiento de la calidad (SIAC) que impulse la mejora continua, la
+    acreditación institucional y la excelencia.
+  conceptos_clave:
+  - Gobernanza estratégica
+  - Gestión orientada a resultados
+  - Inteligencia institucional
+  - Gobierno y uso estratégico de los datos
+  - Inteligencia artificial
+  - SIAC (Sistema de Aseguramiento de la Calidad)
+  - Acreditación institucional
+  - Calidad y mejora continua
+  instruccion: ¿El `comentario` habla de cómo se dirige, se organiza o se administra la universidad, de cómo toma
+    decisiones (por ejemplo con datos, información, indicadores o resultados medibles) o de la calidad y la acreditación
+    de la institución?
+  criterio_true: Menciona la dirección o la gestión de la universidad, la planeación, el seguimiento de metas, indicadores
+    o resultados, el uso de datos o información para decidir, la evaluación o la calidad de los procesos académicos
+    o administrativos, la calidad de la educación o la exigencia académica, la acreditación institucional o los
+    planes de mejora, aunque lo diga con palabras sencillas o con errores de ortografía.
+  criterio_false: No habla de dirección, decisiones, datos, resultados ni calidad institucional. No basta con pedir
+    plataformas, sistemas o trámites digitales (eso es tecnología digital), ni con hablar del bienestar o el trato
+    a las personas, ni con hablar del impacto de la sede en la región.
+- id: T2
+  nombre_oficial: UC Translocal
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 2. UC Translocal' · líneas 46-62
+  definicion_textual: |-
+    **Enunciado estratégico**
+    Pensamiento transmoderno e identidad translocal mediante la articulación de las funciones sustantivas para generar impacto y proyección territorial, nacional y latinoamericana.
+
+    **Qué busca**
+    Consolidar el pensamiento transmoderno y la identidad translocal, articulando las funciones sustantivas con las realidades de los territorios y reconociendo su diversidad. Cada sede, seccional, extensión y unidad académica expresa esa identidad desde su propia realidad y aporta al impacto y a la proyección de la Universidad en el territorio, en el país y en Latinoamérica.
+
+    **Componentes preliminares**
+    - Formación y aprendizaje
+    - Ciencia, tecnología e innovación
+    - Interacción Social Universitaria
+    - Impacto territorial
+    - Internacionalización
+    - Redes y cooperación
+    - Acreditación internacional de programas
+    - Identidad translocal
+  enunciado_estrategico: Pensamiento transmoderno e identidad translocal mediante la articulación de las funciones
+    sustantivas para generar impacto y proyección territorial, nacional y latinoamericana.
+  que_busca: Consolidar el pensamiento transmoderno y la identidad translocal, articulando las funciones sustantivas
+    con las realidades de los territorios y reconociendo su diversidad. Cada sede, seccional, extensión y unidad
+    académica expresa esa identidad desde su propia realidad y aporta al impacto y a la proyección de la Universidad
+    en el territorio, en el país y en Latinoamérica.
+  sintesis_documento: Busca consolidar el pensamiento transmoderno y la identidad translocal, articulando la formación,
+    la investigación y la interacción social con las realidades y la diversidad de los territorios. Cada sede, seccional,
+    extensión y unidad aporta desde su realidad al impacto y la proyección de la Universidad en el territorio, el
+    país y Latinoamérica, incluida la internacionalización y las redes.
+  conceptos_clave:
+  - Formación y aprendizaje
+  - Ciencia, tecnología e innovación
+  - Interacción Social Universitaria
+  - Impacto territorial
+  - Internacionalización
+  - Redes y cooperación
+  - Acreditación internacional de programas
+  - Identidad translocal
+  instruccion: ¿El `comentario` habla de la relación de la universidad o de una sede con su municipio, su región
+    o su territorio, de su impacto o proyección en la región, el país o el exterior, o de que la formación, la investigación
+    o la proyección social respondan a la realidad local?
+  criterio_true: Menciona las particularidades o necesidades de la sede, seccional o extensión, del municipio, la
+    provincia o la región; la proyección o extensión social a la comunidad; que los programas o la investigación
+    respondan al territorio o a sus problemas reales; que la oferta de carreras corresponda a la región; la identidad
+    o el sentido de pertenencia regional; la internacionalización, la movilidad, los convenios, las redes o la cooperación
+    con otras instituciones, el aprendizaje de una segunda lengua, o la acreditación internacional de programas.
+  criterio_false: No relaciona la universidad con el territorio, la región ni lo internacional. Nombrar la sede
+    solo como el lugar donde ocurre un problema (por ejemplo "en la sede falta…") no basta. Tampoco basta hablar
+    de emprendimiento o de alianzas con empresas para crear oportunidades, que es otra transformación.
+- id: T3
+  nombre_oficial: UC Digital
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 3. UC Digital' · líneas 66-82
+  definicion_textual: |-
+    **Enunciado estratégico**
+    Transformación digital para el aprendizaje, el servicio en tiempo real y efectivo, y el posicionamiento institucional.
+
+    **Qué busca**
+    Impulsar la transformación digital de la Universidad para fortalecer el aprendizaje, ofrecer servicios efectivos en tiempo real y contribuir al posicionamiento institucional. Para ello propone apropiar tecnologías emergentes e inteligencia artificial, y digitalizar y automatizar procesos y servicios.
+
+    **Componentes preliminares**
+    - Transformación digital
+    - Tecnologías emergentes
+    - Inteligencia artificial
+    - Ecosistemas digitales
+    - Automatización de procesos
+    - Servicios digitales
+    - Cero papel
+    - Experiencia digital de la comunidad universitaria
+  enunciado_estrategico: Transformación digital para el aprendizaje, el servicio en tiempo real y efectivo, y el
+    posicionamiento institucional.
+  que_busca: Impulsar la transformación digital de la Universidad para fortalecer el aprendizaje, ofrecer servicios
+    efectivos en tiempo real y contribuir al posicionamiento institucional. Para ello propone apropiar tecnologías
+    emergentes e inteligencia artificial, y digitalizar y automatizar procesos y servicios.
+  sintesis_documento: Busca impulsar la transformación digital de la Universidad para fortalecer el aprendizaje,
+    ofrecer servicios efectivos en tiempo real y contribuir al posicionamiento institucional, apropiando tecnologías
+    emergentes e inteligencia artificial y digitalizando y automatizando procesos y servicios (cero papel, ecosistemas
+    digitales, experiencia digital de la comunidad).
+  conceptos_clave:
+  - Transformación digital
+  - Tecnologías emergentes
+  - Inteligencia artificial
+  - Ecosistemas digitales
+  - Automatización de procesos
+  - Servicios digitales
+  - Cero papel
+  - Experiencia digital de la comunidad universitaria
+  instruccion: ¿El `comentario` habla del uso de tecnología digital en la universidad, como plataformas, sistemas
+    de información, internet, trámites o servicios en línea, clases o aprendizaje con herramientas digitales, automatización
+    de procesos o inteligencia artificial?
+  criterio_true: Menciona plataformas, aulas virtuales, sistemas o aplicaciones de la universidad, internet o wifi,
+    equipos de cómputo o software, trámites o servicios en línea, respuesta rápida por medios digitales, eliminar
+    el papel, simplificar trámites o tareas repetitivas con tecnología, formación virtual, herramientas digitales
+    para aprender, automatizar procesos, mantenerse actualizada en tecnologías nuevas o inteligencia artificial.
+  criterio_false: No menciona tecnología digital. Si habla de datos o inteligencia artificial solo para dirigir
+    la universidad o medir resultados, eso es gestión institucional. La innovación o el emprendimiento sin componente
+    digital tampoco cuentan.
+- id: T4
+  nombre_oficial: UC Emprendedora e Innovadora
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 4. UC Emprendedora e Innovadora' · líneas 86-100
+  definicion_textual: |-
+    **Enunciado estratégico**
+    Emprendimiento e innovación para crear oportunidades y aportar al desarrollo de los territorios.
+
+    **Qué busca**
+    Promover una cultura institucional emprendedora e innovadora que facilite crear oportunidades, desarrollar soluciones y articularse con los sectores sociales, productivos, públicos y comunitarios para aportar al desarrollo del territorio.
+
+    **Componentes preliminares**
+    - Emprendimiento
+    - Innovación
+    - Creación de oportunidades
+    - Innovación social
+    - Ecosistemas de innovación
+    - Relacionamiento con los sectores sociales, productivos, públicos y comunitarios
+  enunciado_estrategico: Emprendimiento e innovación para crear oportunidades y aportar al desarrollo de los territorios.
+  que_busca: Promover una cultura institucional emprendedora e innovadora que facilite crear oportunidades, desarrollar
+    soluciones y articularse con los sectores sociales, productivos, públicos y comunitarios para aportar al desarrollo
+    del territorio.
+  sintesis_documento: Busca promover una cultura institucional emprendedora e innovadora que facilite crear oportunidades
+    y desarrollar soluciones, articulándose con los sectores sociales, productivos, públicos y comunitarios para
+    aportar al desarrollo del territorio (emprendimiento, innovación, innovación social y ecosistemas de innovación).
+  conceptos_clave:
+  - Emprendimiento
+  - Innovación
+  - Creación de oportunidades
+  - Innovación social
+  - Ecosistemas de innovación
+  - Relacionamiento con los sectores sociales, productivos, públicos y comunitarios
+  instruccion: ¿El `comentario` habla de emprendimiento, de innovación o de crear oportunidades y soluciones junto
+    con empresas, el sector productivo, entidades públicas u organizaciones de la comunidad?
+  criterio_true: Menciona emprender o crear empresa, apoyo a emprendedores, innovar, proyectos que resuelvan problemas
+    reales, innovación social, impulsar las ideas propias de los estudiantes, vínculos, prácticas, pasantías o alianzas
+    con empresas, el sector productivo, el gobierno o las comunidades, una formación más práctica orientada al mundo
+    laboral, empleabilidad, vinculación laboral al graduarse, oportunidades laborales o de negocio para estudiantes
+    o graduados, redes de graduados para el empleo, o transferencia de conocimiento y patentes.
+  criterio_false: No menciona emprendimiento, innovación, prácticas, empleo ni alianzas con sectores externos para
+    crear oportunidades. No cuenta usar "Creadores de Oportunidades" solo como nombre de los estudiantes, ni hablar
+    del salario, la estabilidad o las condiciones de trabajo del personal de la universidad. Tampoco cuenta hablar
+    del impacto de la sede en la región sin emprendimiento ni innovación, ni digitalizar trámites internos.
+- id: T5
+  nombre_oficial: UC para la Vida
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 5. UC para la Vida' · líneas 104-121
+  definicion_textual: |-
+    **Enunciado estratégico**
+    Cultura institucional para la vida, la felicidad, el bienestar y la formación de la Persona Transhumana.
+
+    **Qué busca**
+    Consolidar una cultura institucional orientada a la vida, la felicidad y el bienestar de la comunidad universitaria, con condiciones que favorezcan el aprendizaje, la convivencia y la formación de la Persona Transhumana.
+
+    **Componentes preliminares**
+    - Persona Transhumana
+    - Felicidad y bienestar
+    - Creadores de Oportunidades
+    - Gestores del Conocimiento y el Aprendizaje
+    - Desarrollo del talento humano
+    - Cultura institucional
+    - Valores democráticos
+    - Libertad
+    - Convivencia
+  enunciado_estrategico: Cultura institucional para la vida, la felicidad, el bienestar y la formación de la Persona
+    Transhumana.
+  que_busca: Consolidar una cultura institucional orientada a la vida, la felicidad y el bienestar de la comunidad
+    universitaria, con condiciones que favorezcan el aprendizaje, la convivencia y la formación de la Persona Transhumana.
+  sintesis_documento: Busca consolidar una cultura institucional orientada a la vida, la felicidad y el bienestar
+    de la comunidad universitaria, con condiciones que favorezcan el aprendizaje, la convivencia y la formación
+    de la Persona Transhumana. Abarca el desarrollo del talento humano, la cultura institucional, los valores democráticos,
+    la libertad y la convivencia.
+  conceptos_clave:
+  - Persona Transhumana
+  - Felicidad y bienestar
+  - Creadores de Oportunidades
+  - Gestores del Conocimiento y el Aprendizaje
+  - Desarrollo del talento humano
+  - Cultura institucional
+  - Valores democráticos
+  - Libertad
+  - Convivencia
+  instruccion: ¿El `comentario` habla del bienestar, la salud física o mental, la felicidad, la convivencia, los
+    valores, la cultura institucional o el desarrollo personal y humano de estudiantes, docentes, administrativos
+    o graduados?
+  criterio_true: Menciona bienestar universitario, salud mental o emocional, deporte, arte, cultura o recreación,
+    felicidad o calidad de vida, convivencia, respeto, trato digno, inclusión, valores, democracia, participación
+    o libertad, escuchar a la comunidad en las decisiones, la comunicación interna, el sentido de comunidad o pertenencia,
+    la cultura de la institución, la formación integral o para la vida, el desarrollo personal o el proyecto de
+    vida, el desarrollo o la capacitación del personal, la carga de trabajo, la estabilidad laboral, el salario
+    o el salario emocional del personal, la permanencia de los estudiantes, condiciones que favorezcan el aprendizaje
+    y la convivencia, o los conceptos de la transformación (la felicidad, la Persona Transhumana).
+  criterio_false: No habla del bienestar ni del desarrollo humano de las personas. No basta con pedir tecnología
+    o plataformas, oportunidades de empleo o emprendimiento con empresas, o mejoras de gestión y calidad de la institución.

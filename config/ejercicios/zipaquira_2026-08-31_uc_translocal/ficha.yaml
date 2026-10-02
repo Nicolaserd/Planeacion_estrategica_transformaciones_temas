@@ -1,0 +1,58 @@
+slug: zipaquira_2026-08-31_uc_translocal
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_.
+  (UC TRANSLOCAL)(1-648) (1).xlsx
+sha256_archivo: 7762409541f57ca6132403022797482c53bcd776cc8fd6f960aee62d7fc5d476
+transformacion:
+  id: T2
+  nombre_oficial: UC Translocal
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 2. UC Translocal' · líneas 46-62
+unidad: Zipaquirá
+fechas:
+- '2026-08-31'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 18
+N_s: 17
+textos_unicos: 17
+excluidos:
+  vacio: 1
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 17
+  n_muestra_requerida: 16.3
+  fraccion: 0.96
+  protocolo: B_censo
+informe_filtro:
+  filas: 18
+  unidades_que_coinciden:
+  - Extensión Zipaquirá
+  transformacion_vacia_asumida: 0
+  fuera_de_fecha_no_incluidas:
+  - ID: 411
+    fecha: '2026-09-22'
+  - ID: 412
+    fecha: '2026-09-22'
+  - ID: 413
+    fecha: '2026-09-22'
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Zipaquira_2026-08-31_UC_Translocal.xlsx
+  clasificacion: Clasificacion_Zipaquira_2026-08-31_UC_Translocal.xlsx
+  hoja: Zipaquirá 31 ago 2026
+preparado: '2026-10-01'

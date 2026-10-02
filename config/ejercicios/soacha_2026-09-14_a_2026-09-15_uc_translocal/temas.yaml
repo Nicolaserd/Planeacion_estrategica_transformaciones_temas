@@ -1,0 +1,125 @@
+# Temas v2 de Soacha · UC Translocal (lista propia de esta unidad).
+# Versión 2: menos temas (máx. 10) por fusión de los de la versión 1 (respaldada en temas_v1.yaml).
+# Anclados a Transformaciones_estrategicas_5_frentes.md · '## 2. UC Translocal' · líneas 46-62.
+transformacion: UC Translocal
+version: 2
+temas:
+- id: red_sedes_proyeccion
+  nombre: 'Una sola universidad en red: sedes, movilidad y proyección nacional e internacional'
+  componente: Identidad translocal
+  otros_componentes:
+  - Internacionalización
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (una sola universidad en red: interacción y movilidad entre sedes; proyección nacional e internacional). Ancla: componente ''Identidad translocal'';
+    también toca: Internacionalización.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: una sola universidad en red: interacción y movilidad entre sedes; proyección nacional e internacional?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Una sola universidad en red: interacción y movilidad entre sedes: menciona interacción, integración, conexión o red entre sedes, dejar de trabajar
+    como sedes aisladas, movilidad, viajes, transporte o intercambios entre sedes, proyectos conjuntos entre programas de distintas sedes, o gestión unificada entre sedes. (2) Proyección nacional e internacional:
+    menciona nivel internacional, ecosistema global o conexión con universidades nacionales e internacionales.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - dejamos de trabajar como sedes aisladas y logramos que el conocimiento de un lugar potencie a los demás
+  - Conexión entre sedes, y universidades nacionales e internacionales
+  fusiona_v1:
+  - articulacion_sedes
+  - proyeccion_internacional
+- id: necesidades_territorio_investigacion
+  nombre: Responder a las necesidades del territorio con impacto e investigación local
+  componente: Impacto territorial
+  otros_componentes:
+  - Ciencia, tecnología e innovación
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (responder a las necesidades del territorio e impacto territorial; investigación local con impacto). Ancla: componente ''Impacto territorial'';
+    también toca: Ciencia, tecnología e innovación.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: responder a las necesidades del territorio e impacto territorial; investigación local con impacto?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Responder a las necesidades del territorio e impacto territorial: menciona necesidades o problemáticas del territorio, del entorno o de las
+    comunidades, impacto territorial, impacto en la sociedad, bancos de problemas translocales, soluciones para el territorio o el contexto local. (2) Investigación local con impacto: menciona investigación,
+    investigación local o adaptar la investigación a las necesidades locales.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Manejar impacto territorial en base a las necesidades de la comunidades que lo rodean.
+  - Impulsar y promover la investigación local
+  fusiona_v1:
+  - necesidades_impacto_territorio
+  - investigacion_local
+- id: identidad_cultura_pertenencia
+  nombre: Identidad, cultura, diversidad y sentido de pertenencia
+  componente: reconociendo su diversidad
+  justificacion: '''Qué busca'': reconocer la diversidad de los territorios: reconocimiento de lo propio, sentido de pertenencia, intercambios culturales y patrimonio de cada unidad regional.'
+  critico: false
+  instruccion: ¿El `comentario` habla de identidad, cultura, diversidad, patrimonio o sentido de pertenencia?
+  criterio_true: Menciona identidad, reconocimiento de lo propio, sentido de pertenencia, orgullo de dónde se viene, cultura del territorio, intercambios o muestras culturales, diversidad, inclusión o patrimonio
+    y procesos ancestrales.
+  criterio_false: No habla de identidad, cultura ni pertenencia.
+  ejemplos_si:
+  - Reconocimiento de lo propio - Sentido de pertenencia
+  - Nada, sólo agregar más intercambios culturales
+- id: articulacion_actores_externos
+  nombre: Articulación con la comunidad, el Estado y otros actores
+  componente: Interacción Social Universitaria
+  justificacion: 'Componente ''Interacción Social Universitaria'': articularse con el Estado, el mercado y la población, actividades con entidades, extensión y participación de comunidades rurales.'
+  critico: false
+  instruccion: ¿El `comentario` pide articularse con la comunidad, el Estado, entidades u otros actores externos, o programas de extensión para comunidades?
+  criterio_true: Menciona articulación con el Estado, el mercado, la población, el POT, entidades o actores externos, programas de extensión o educación continua para comunidades, participación de comunidades
+    rurales o escuchar a la comunidad.
+  criterio_false: No habla de actores externos ni de la comunidad.
+  ejemplos_si:
+  - Articulación con el estado, mercado, población y POT.
+  - Impulsar programas de extensión y educación continua para comunidades
+- id: formacion_pertinente
+  nombre: Formación pertinente, flexible y llevada a todas las sedes
+  componente: Formación y aprendizaje
+  justificacion: 'Componente ''Formación y aprendizaje'': experiencias formativas aterrizadas a la realidad, oferta técnica y tecnológica, y programas (como ciencias del deporte) en otras sedes.'
+  critico: false
+  instruccion: ¿El `comentario` pide una formación más pertinente o flexible, o ampliar la oferta de programas a otras sedes o niveles?
+  criterio_true: Menciona experiencias formativas aterrizadas a la realidad, lineamientos flexibles, formación que responda a la realidad, enfoque práctico, ofrecer programas técnicos y tecnológicos o llevar
+    programas a otras sedes.
+  criterio_false: No habla de la formación ni de la oferta de programas.
+  ejemplos_si:
+  - Ampliar el proceso desde las técnico y tecnólogo
+  - implementar este programa en las otras sedes para los estudiantes interesados
+- id: ajustes_enfoque
+  nombre: 'Ajustes al enfoque: concretar, cocrear y atender lo actual'
+  componente: transformacion_en_general
+  justificacion: 'Comentarios sobre la transformación como un todo: que las propuestas se concreten, que los ejes se construyan en cocreación y atender primero lo actual.'
+  critico: false
+  instruccion: ¿El `comentario` cuestiona o propone cambiar la forma en que se plantea la transformación (concretarla, cocrearla o atender primero lo actual)?
+  criterio_true: Propone que las propuestas se concreten, que los ejes se planteen en cocreación con tiempo, o critica que se mire muy a futuro y no lo actual.
+  criterio_false: Pide acciones concretas sin referirse a cómo se plantea la transformación.
+  ejemplos_si:
+  - En que las propuestas se concreten en algo
+  - Están viendo muy a futuro, primero deberíamos enfocarnos en lo actual
+- id: conformidad
+  nombre: Conformidad con la transformación (sin ajustes)
+  componente: transformacion_en_general
+  justificacion: 'Comentarios sobre la transformación como un todo: dicen expresamente que no ajustarían o que la universidad va bien.'
+  critico: false
+  instruccion: ¿El `comentario` dice expresamente que no haría ajustes o que la universidad ya trabaja bien en esta transformación?
+  criterio_true: Dice de forma explícita que no ajustaría nada o que la universidad está trabajando bien, sin pedir cambios.
+  criterio_false: Pide, propone o menciona cualquier cosa por mejorar.
+  ejemplos_si:
+  - Ninguna, considero que la universidad está trabajando bien para que todos los territorios sean considerados
+- id: otros_fuera
+  nombre: Otros asuntos fuera de la transformación
+  componente: fuera_de_la_transformacion
+  justificacion: 'Asuntos sin anclaje en la sección de UC Translocal del documento marco, cada uno con menos del 10 % de los comentarios; se agrupan en un solo tema (versión 2). Incluye: tecnología, internet
+    y sistemas; infraestructura, descanso y bienestar; medio ambiente y sostenibilidad; emprendimiento, prácticas y realidad laboral.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Translocal: tecnología, internet y sistemas; infraestructura, descanso y bienestar; medio ambiente y
+    sostenibilidad; emprendimiento, prácticas y realidad laboral?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Tecnología, internet y sistemas: menciona tecnología, internet, computadores, tableros digitales, registro digital, sistemas o modelo administrativo
+    con tecnología. (2) Infraestructura, descanso y bienestar: menciona infraestructura, ampliación de sedes, dormitorios, laboratorios, lugares de descanso, bienestar o una cultura humana. (3) Medio ambiente
+    y sostenibilidad: menciona medio ambiente, zonas verdes o desarrollo sostenible. (4) Emprendimiento, prácticas y realidad laboral: menciona emprendimiento, empresas para prácticas o la realidad laboral
+    y competitiva.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Mejorar la condición del internet de la universidad y tener libre acceso a los computadores
+  - Mejor infraestructura, ampliación de las sedes, con dormitorios
+  - Más cuidado al medio ambiente
+  - empresas que reconozcan a la universidad y la tengan en cuenta para que los estudiantes hagan sus prácticas
+  fusiona_v1:
+  - tecnologia_sistemas
+  - infraestructura_bienestar
+  - ambiente_sostenibilidad
+  - emprendimiento_practicas
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?

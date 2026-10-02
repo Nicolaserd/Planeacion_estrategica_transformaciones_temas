@@ -1,0 +1,16 @@
+nombre_ejercicio: "Experiencia 'Transformaciones que nos conectan' - formulario UC para la Vida - Seccional Ubaté"
+fechas_desarrollo: ["2026-08-18", "2026-08-19"]
+lugar_desarrollo: "Ubaté"
+poblacion: "Creadores de Oportunidades (estudiantes), Gestores del Conocimiento y el Aprendizaje (docentes), administrativos y graduados"
+archivo_datos: "data/raw/experiencia_uc_para_la_vida.xlsx"
+columna_transformacion: "Transformación"
+documento_marco: "contexto/Transformaciones_estrategicas_5_frentes.md"
+observaciones: >-
+  El Excel original (649 filas) mezcla 6 unidades regionales y 10 fechas (2026-08-18 a 2026-09-28).
+  Este ejercicio corresponde a Seccional Ubaté (sesión del 18 y 19 de agosto de 2026).
+  columna_unidad_regional: 'Unidad Regional' (valor 'Seccional Ubaté');
+  columna_fecha: 'Hora de inicio'.
+  Decisión de Nicolás (PC2, 2026-10-01): se incluyen también las 2 respuestas de Ubaté registradas fuera
+  de esas fechas (ID 408 del 2026-09-21 e ID 493 del 2026-09-28); el ejercicio = todas las filas de
+  Seccional Ubaté (67). Protocolo B (censo): validación con las 45 respuestas, sin división dev/test.
+incluir_ids_fuera_de_fecha: [408, 493]

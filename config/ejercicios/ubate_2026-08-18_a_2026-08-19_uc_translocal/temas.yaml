@@ -1,0 +1,140 @@
+# Temas v2 de Ubaté · UC Translocal (lista propia de esta unidad).
+# Versión 2: menos temas (máx. 10) por fusión de los de la versión 1 (respaldada en temas_v1.yaml).
+# Anclados a Transformaciones_estrategicas_5_frentes.md · '## 2. UC Translocal' · líneas 46-62.
+transformacion: UC Translocal
+version: 2
+temas:
+- id: necesidades_impacto_territorio
+  nombre: Conocer y atender las necesidades de cada territorio para generar impacto
+  componente: realidades de los territorios
+  otros_componentes:
+  - Impacto territorial
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (conocer las necesidades y particularidades de cada territorio y sede; impacto y desarrollo territorial). Ancla: componente ''realidades de los
+    territorios''; también toca: Impacto territorial.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: conocer las necesidades y particularidades de cada territorio y sede; impacto y desarrollo territorial?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Conocer las necesidades y particularidades de cada territorio y sede: menciona conocer o reconocer las necesidades, particularidades culturales,
+    sociales o económicas, potencialidades o identidad de cada territorio, región, municipio o sede, o datos actualizados de la región. (2) Impacto y desarrollo territorial: menciona desarrollo territorial
+    o de la región, impacto en el territorio, solucionar problemáticas locales o translocales, cambios sociales o culturales en el territorio, o que el egresado aporte al desarrollo de su región.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Que la universidad conozca tambien su territorio e identifique las necesidades
+  - Desarrollo territorial que incluya lo económico social ambiental y cultural
+  fusiona_v1:
+  - conocer_necesidades_territorio
+  - impacto_territorial
+- id: interaccion_comunidad
+  nombre: Interacción y vínculo con la comunidad
+  componente: Interacción Social Universitaria
+  justificacion: 'Componente ''Interacción Social Universitaria'': conectar con líderes comunitarios, vincular a los estudiantes con la comunidad y lograr una interacción real con la comunidad impactada.'
+  critico: false
+  instruccion: ¿El `comentario` pide más interacción o vínculo de la universidad y sus estudiantes con la comunidad?
+  criterio_true: Menciona interacción con la comunidad, líderes comunitarios, vincular a los estudiantes con la comunidad, unión con comunidades y sectores aledaños o interacción social universitaria (ISU).
+  criterio_false: No habla de la interacción con la comunidad.
+  ejemplos_si:
+  - Conectar con líderes comunitarios
+  - Interacción real de la comunidad impactada con los procesos
+- id: articulacion_comunicacion_sedes
+  nombre: Articulación, intercambio y comunicación entre sedes
+  componente: Identidad translocal
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (articulación e intercambio entre sedes; comunicación clara dentro de la institución y entre sedes). Ancla: componente ''Identidad translocal''.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: articulación e intercambio entre sedes; comunicación clara dentro de la institución y entre sedes?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Articulación e intercambio entre sedes: menciona unión o engranaje de sedes, seccionales o extensiones, trabajo en equipo entre ellas, socializar
+    proyectos o problemáticas entre sedes, encuentros entre graduados de otras sedes o intercambio de saberes. (2) Comunicación clara dentro de la institución y entre sedes: menciona comunicación interna,
+    que la institución hable de manera clara y oportuna, o herramientas de comunicación entre sedes.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Realizar un engranaje de todas las secciónales para crear un apoyo entre todos sin perder la esencia de cada una
+  - La manera de comunicarse dentro de la institución debe ser optimizada
+  fusiona_v1:
+  - articulacion_sedes
+  - comunicacion_interna
+- id: formacion_acreditacion
+  nombre: Programas pertinentes y acreditados para cada sede
+  componente: Formación y aprendizaje
+  otros_componentes:
+  - Acreditación internacional de programas
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (programas y formación pertinentes para cada sede; acreditación (también internacional) de programas). Ancla: componente ''Formación y aprendizaje'';
+    también toca: Acreditación internacional de programas.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: programas y formación pertinentes para cada sede; acreditación (también internacional) de programas?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Programas y formación pertinentes para cada sede: menciona programas o carreras según el entorno de cada sede, más especializaciones, formar
+    profesionales con habilidades para problemas regionales, cambios en el aprendizaje o formación alineada a las necesidades de cada sede. (2) Acreditación (también internacional) de programas: menciona
+    acreditación o acreditaciones, incluida la acreditación internacional de programas.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Programas que fortalezcan o estén más encaminados, asociados y especializados dependiendo del aprovechamiento del entorno
+  - Acreditación internacional del programó
+  fusiona_v1:
+  - formacion_pertinente_sedes
+  - acreditacion
+- id: internacionalizacion_proyeccion
+  nombre: Internacionalización, redes y proyección regional y nacional
+  componente: Internacionalización
+  otros_componentes:
+  - proyección de la Universidad
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (internacionalización y redes de cooperación; visibilidad y proyección regional y nacional). Ancla: componente ''Internacionalización''; también
+    toca: proyección de la Universidad.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: internacionalización y redes de cooperación; visibilidad y proyección regional y nacional?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Internacionalización y redes de cooperación: menciona nivel internacional, redes de cooperación, alianzas extranjeras, volverse global o reconocimiento
+    internacional. (2) Visibilidad y proyección regional y nacional: menciona divulgar el trabajo de la universidad, visibilidad, posicionarse, ser reconocida a nivel regional, departamental, nacional o
+    internacional, o llegar más lejos.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Importante el trascender a nivel internacional, buscar la forma de articularse con redes de cooperación
+  - Esto permitirá posicionarnos y tener mayor visibilidad en la región, en el Departamento y en el Pais
+  fusiona_v1:
+  - internacionalizacion
+  - visibilidad_proyeccion
+- id: recursos_descentralizados
+  nombre: Recursos y decisiones descentralizadas para cada territorio
+  componente: desde su propia realidad
+  justificacion: '''Qué busca'': cada sede ''expresa esa identidad desde su propia realidad'': piden descentralizar los recursos y una política de recursos para estrategias translocales.'
+  critico: false
+  instruccion: ¿El `comentario` pide descentralizar o asignar recursos (económicos o logísticos) para las estrategias de cada territorio?
+  criterio_true: Menciona descentralizar recursos, asignar recursos logísticos o económicos de manera ágil, o una política de manejo de recursos para estrategias translocales.
+  criterio_false: No menciona recursos ni su descentralización.
+  ejemplos_si:
+  - evaluar la forma de descentralizar los recursos con el fin de solucionar necesidades de cada territorio
+  - Implementar un política con respecto al manejo de los recursos para diferentes estrategias translocales
+- id: investigacion_innovacion
+  nombre: Investigación e innovación con alcance territorial
+  componente: Ciencia, tecnología e innovación
+  justificacion: 'Componente ''Ciencia, tecnología e innovación'': que la investigación y la innovación lleguen a todos los sectores y aporten conocimiento.'
+  critico: false
+  instruccion: ¿El `comentario` pide investigación, innovación o ciencia que llegue a los sectores o al territorio?
+  criterio_true: Menciona investigación, innovación, ciencia, CTI o aportar conocimiento e innovación.
+  criterio_false: No menciona investigación, ciencia ni innovación.
+  ejemplos_si:
+  - El ámbito de investigación llegar a todos los sectores
+  - aportando más conocimiento e innovación
+- id: conformidad
+  nombre: Conformidad con la transformación (sin ajustes)
+  componente: transformacion_en_general
+  justificacion: 'Comentarios sobre la transformación como un todo: dicen expresamente que está completa o muy bien.'
+  critico: false
+  instruccion: ¿El `comentario` dice expresamente que la transformación está completa o muy bien y no pide cambios?
+  criterio_true: Dice de forma explícita que la transformación está completa, muy buena o bien, sin pedir ningún cambio.
+  criterio_false: Pide, propone o menciona cualquier cosa por mejorar o agregar.
+  ejemplos_si:
+  - Se encuentra completo UC translocal 2
+  - Muy bueno
+- id: otros_fuera
+  nombre: Otros asuntos fuera de la transformación
+  componente: fuera_de_la_transformacion
+  justificacion: 'Asuntos sin anclaje en la sección de UC Translocal del documento marco, cada uno con menos del 10 % de los comentarios; se agrupan en un solo tema (versión 2). Incluye: empleabilidad,
+    empresas y emprendimiento regional; herramientas digitales y tecnología.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Translocal: empleabilidad, empresas y emprendimiento regional; herramientas digitales y tecnología?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Empleabilidad, empresas y emprendimiento regional: menciona empleabilidad, convenios con empresas o entidades, alianzas con empresas, desarrollo
+    empresarial o emprendimientos. (2) Herramientas digitales y tecnología: menciona herramientas digitales o de fácil acceso, tecnología o integración tecnológica.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - ampliar convenios para temas de empleabilidad
+  - A través de las Herramientas Digitales aprovecharlas para realizar encuentros
+  fusiona_v1:
+  - empleabilidad_empresas
+  - herramientas_tecnologia
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?

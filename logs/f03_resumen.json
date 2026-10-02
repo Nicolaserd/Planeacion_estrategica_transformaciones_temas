@@ -1,0 +1,20 @@
+{
+  "N_filas": 67,
+  "N_s": 44,
+  "excluidos_por_motivo": {
+    "vacio": 22,
+    "no_respuesta": 1
+  },
+  "reemplazos": {
+    "CORREO": 0,
+    "URL": 0,
+    "TELEFONO": 0,
+    "PERSONA": 0
+  },
+  "filas_con_token_de_nombre_tras_anonimizar": 0,
+  "textos_unicos": 44,
+  "transformacion_declarada": {
+    "T5": 67
+  },
+  "fuera_de_fechas_ficha": 2
+}

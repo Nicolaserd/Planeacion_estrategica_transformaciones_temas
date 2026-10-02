@@ -1,0 +1,55 @@
+slug: chia_2026-09-21_a_2026-09-22_uc_inteligente
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_.
+  (UC INTELIGENTE)(1-589) (1).xlsx
+sha256_archivo: f686c38a876dd0da2ecf472c82dd4027460dbff8feec7503ad6a03b62d86fdcc
+transformacion:
+  id: T1
+  nombre_oficial: UC Inteligente
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 1. UC Inteligente' · líneas 26-42
+unidad: Chía
+fechas:
+- '2026-09-21'
+- '2026-09-22'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 98
+N_s: 92
+textos_unicos: 92
+excluidos:
+  solo_signos_o_numeros: 3
+  vacio: 2
+  menos_de_3_letras: 1
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 92
+  n_muestra_requerida: 74.4
+  fraccion: 0.808
+  protocolo: B_censo
+informe_filtro:
+  filas: 98
+  unidades_que_coinciden:
+  - Extensión Chía
+  transformacion_vacia_asumida: 11
+  fuera_de_fecha_no_incluidas: []
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Chia_2026-09-21_a_2026-09-22_UC_Inteligente.xlsx
+  clasificacion: Clasificacion_Chia_2026-09-21_a_2026-09-22_UC_Inteligente.xlsx
+  hoja: Chía 21-22 sep 2026
+preparado: '2026-10-01'

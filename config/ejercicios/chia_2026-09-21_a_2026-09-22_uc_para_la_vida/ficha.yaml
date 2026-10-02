@@ -1,0 +1,54 @@
+slug: chia_2026-09-21_a_2026-09-22_uc_para_la_vida
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\experiencia_uc_para_la_vida.xlsx
+sha256_archivo: 8c88a892a5ca9ff1d6ea8fc93792c520a4ab9581eccac5a6a165560bc8fdbf0f
+transformacion:
+  id: T5
+  nombre_oficial: UC para la Vida
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 5. UC para la Vida' · líneas 104-121
+unidad: Chía
+fechas:
+- '2026-09-21'
+- '2026-09-22'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 98
+N_s: 81
+textos_unicos: 81
+excluidos:
+  vacio: 14
+  no_respuesta: 2
+  solo_signos_o_numeros: 1
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 81
+  n_muestra_requerida: 67.0
+  fraccion: 0.828
+  protocolo: B_censo
+informe_filtro:
+  filas: 98
+  unidades_que_coinciden:
+  - Extensión Chía
+  transformacion_vacia_asumida: 9
+  fuera_de_fecha_no_incluidas: []
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Chia_2026-09-21_a_2026-09-22_UC_para_la_Vida.xlsx
+  clasificacion: Clasificacion_Chia_2026-09-21_a_2026-09-22_UC_para_la_Vida.xlsx
+  hoja: Chía 21-22 sep 2026
+preparado: '2026-10-01'

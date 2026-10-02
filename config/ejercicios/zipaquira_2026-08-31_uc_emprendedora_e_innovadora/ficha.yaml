@@ -1,0 +1,60 @@
+slug: zipaquira_2026-08-31_uc_emprendedora_e_innovadora
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_. (UC
+  EMPRENDEDORA E INNOVADORA)(1-537) (1).xlsx
+sha256_archivo: a8d2796d8d7125da0e67fb5c048ed2f03b0c33e45bf7c7815e23f0b406238695
+transformacion:
+  id: T4
+  nombre_oficial: UC Emprendedora e Innovadora
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 4. UC Emprendedora e Innovadora' · líneas 86-100
+unidad: Zipaquirá
+fechas:
+- '2026-08-31'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 23
+N_s: 21
+textos_unicos: 21
+excluidos:
+  vacio: 2
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 21
+  n_muestra_requerida: 20.0
+  fraccion: 0.951
+  protocolo: B_censo
+informe_filtro:
+  filas: 23
+  unidades_que_coinciden:
+  - Extensión Zipaquirá
+  transformacion_vacia_asumida: 0
+  fuera_de_fecha_no_incluidas:
+  - ID: 402
+    fecha: '2026-09-22'
+  - ID: 404
+    fecha: '2026-09-22'
+  - ID: 416
+    fecha: '2026-09-22'
+  - ID: 417
+    fecha: '2026-09-22'
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Zipaquira_2026-08-31_UC_Emprendedora_e_Innovadora.xlsx
+  clasificacion: Clasificacion_Zipaquira_2026-08-31_UC_Emprendedora_e_Innovadora.xlsx
+  hoja: Zipaquirá 31 ago 2026
+preparado: '2026-10-01'

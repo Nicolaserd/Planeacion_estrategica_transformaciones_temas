@@ -1,0 +1,161 @@
+# Redacción operativa del marco (Fase 1). La definición textual, el nombre oficial y la referencia
+# NO están aquí: src/f01_marco.py los extrae literalmente de contexto/Transformaciones_estrategicas_5_frentes.md.
+# Fuente única: ese archivo. Lo marcado [Anexo] proviene de la tabla de apoyo de las líneas 125-135,
+# que el propio documento describe como "lectura de apoyo, hecha por afinidad temática".
+
+transformaciones:
+  T1:
+    sintesis_documento: >-
+      Busca que la Universidad oriente su gestión hacia resultados mediante una gobernanza inteligente
+      y decisiones basadas en datos, apoyadas en inteligencia institucional, inteligencia artificial e
+      innovación organizacional. Incluye un sistema de aseguramiento de la calidad (SIAC) que impulse la
+      mejora continua, la acreditación institucional y la excelencia.
+    instruccion: >-
+      ¿El `comentario` habla de cómo se dirige, se organiza o se administra la universidad, de cómo toma
+      decisiones (por ejemplo con datos, información, indicadores o resultados medibles) o de la calidad
+      y la acreditación de la institución?
+    criterio_true: >-
+      Menciona la dirección o la gestión de la universidad, la planeación, el seguimiento de metas,
+      indicadores o resultados, el uso de datos o información para decidir, la evaluación o la calidad
+      de los procesos académicos o administrativos, la calidad de la educación o la exigencia
+      académica, la acreditación institucional o los planes de mejora, aunque lo diga con palabras
+      sencillas o con errores de ortografía.
+    criterio_false: >-
+      No habla de dirección, decisiones, datos, resultados ni calidad institucional. No basta con pedir
+      plataformas, sistemas o trámites digitales (eso es tecnología digital), ni con hablar del
+      bienestar o el trato a las personas, ni con hablar del impacto de la sede en la región.
+
+  T2:
+    sintesis_documento: >-
+      Busca consolidar el pensamiento transmoderno y la identidad translocal, articulando la formación,
+      la investigación y la interacción social con las realidades y la diversidad de los territorios.
+      Cada sede, seccional, extensión y unidad aporta desde su realidad al impacto y la proyección de la
+      Universidad en el territorio, el país y Latinoamérica, incluida la internacionalización y las redes.
+    instruccion: >-
+      ¿El `comentario` habla de la relación de la universidad o de una sede con su municipio, su región
+      o su territorio, de su impacto o proyección en la región, el país o el exterior, o de que la
+      formación, la investigación o la proyección social respondan a la realidad local?
+    criterio_true: >-
+      Menciona las particularidades o necesidades de la sede, seccional o extensión, del municipio, la
+      provincia o la región; la proyección o extensión social a la comunidad; que los programas o la
+      investigación respondan al territorio o a sus problemas reales; que la oferta de carreras
+      corresponda a la región; la identidad o el sentido de pertenencia regional; la
+      internacionalización, la movilidad, los convenios, las redes o la cooperación con otras
+      instituciones, el aprendizaje de una segunda lengua, o la acreditación internacional de programas.
+    criterio_false: >-
+      No relaciona la universidad con el territorio, la región ni lo internacional. Nombrar la sede solo
+      como el lugar donde ocurre un problema (por ejemplo "en la sede falta…") no basta. Tampoco basta
+      hablar de emprendimiento o de alianzas con empresas para crear oportunidades, que es otra
+      transformación.
+
+  T3:
+    sintesis_documento: >-
+      Busca impulsar la transformación digital de la Universidad para fortalecer el aprendizaje, ofrecer
+      servicios efectivos en tiempo real y contribuir al posicionamiento institucional, apropiando
+      tecnologías emergentes e inteligencia artificial y digitalizando y automatizando procesos y
+      servicios (cero papel, ecosistemas digitales, experiencia digital de la comunidad).
+    instruccion: >-
+      ¿El `comentario` habla del uso de tecnología digital en la universidad, como plataformas, sistemas
+      de información, internet, trámites o servicios en línea, clases o aprendizaje con herramientas
+      digitales, automatización de procesos o inteligencia artificial?
+    criterio_true: >-
+      Menciona plataformas, aulas virtuales, sistemas o aplicaciones de la universidad, internet o wifi,
+      equipos de cómputo o software, trámites o servicios en línea, respuesta rápida por medios
+      digitales, eliminar el papel, simplificar trámites o tareas repetitivas con tecnología, formación
+      virtual, herramientas digitales para aprender, automatizar procesos, mantenerse actualizada en
+      tecnologías nuevas o inteligencia artificial.
+    criterio_false: >-
+      No menciona tecnología digital. Si habla de datos o inteligencia artificial solo para dirigir la
+      universidad o medir resultados, eso es gestión institucional. La innovación o el emprendimiento
+      sin componente digital tampoco cuentan.
+
+  T4:
+    sintesis_documento: >-
+      Busca promover una cultura institucional emprendedora e innovadora que facilite crear
+      oportunidades y desarrollar soluciones, articulándose con los sectores sociales, productivos,
+      públicos y comunitarios para aportar al desarrollo del territorio (emprendimiento, innovación,
+      innovación social y ecosistemas de innovación).
+    instruccion: >-
+      ¿El `comentario` habla de emprendimiento, de innovación o de crear oportunidades y soluciones junto
+      con empresas, el sector productivo, entidades públicas u organizaciones de la comunidad?
+    criterio_true: >-
+      Menciona emprender o crear empresa, apoyo a emprendedores, innovar, proyectos que resuelvan
+      problemas reales, innovación social, impulsar las ideas propias de los estudiantes, vínculos,
+      prácticas, pasantías o alianzas con empresas, el sector productivo, el gobierno o las
+      comunidades, una formación más práctica orientada al mundo laboral, empleabilidad, vinculación
+      laboral al graduarse, oportunidades laborales o de negocio para estudiantes o graduados, redes
+      de graduados para el empleo, o transferencia de conocimiento y patentes.
+    criterio_false: >-
+      No menciona emprendimiento, innovación, prácticas, empleo ni alianzas con sectores externos
+      para crear oportunidades. No cuenta usar "Creadores de Oportunidades" solo como nombre de los
+      estudiantes, ni hablar del salario, la estabilidad o las condiciones de trabajo del personal de
+      la universidad. Tampoco cuenta hablar del impacto de la sede en la región sin emprendimiento ni
+      innovación, ni digitalizar trámites internos.
+
+  T5:
+    sintesis_documento: >-
+      Busca consolidar una cultura institucional orientada a la vida, la felicidad y el bienestar de la
+      comunidad universitaria, con condiciones que favorezcan el aprendizaje, la convivencia y la
+      formación de la Persona Transhumana. Abarca el desarrollo del talento humano, la cultura
+      institucional, los valores democráticos, la libertad y la convivencia.
+    instruccion: >-
+      ¿El `comentario` habla del bienestar, la salud física o mental, la felicidad, la convivencia, los
+      valores, la cultura institucional o el desarrollo personal y humano de estudiantes, docentes,
+      administrativos o graduados?
+    criterio_true: >-
+      Menciona bienestar universitario, salud mental o emocional, deporte, arte, cultura o recreación,
+      felicidad o calidad de vida, convivencia, respeto, trato digno, inclusión, valores, democracia,
+      participación o libertad, escuchar a la comunidad en las decisiones, la comunicación interna, el
+      sentido de comunidad o pertenencia, la cultura de la institución, la formación integral o para
+      la vida, el desarrollo personal o el proyecto de vida, el desarrollo o la capacitación del
+      personal, la carga de trabajo, la estabilidad laboral, el salario o el salario emocional del
+      personal, la permanencia de los estudiantes, condiciones que favorezcan el aprendizaje y la
+      convivencia, o los conceptos de la transformación (la felicidad, la Persona Transhumana).
+    criterio_false: >-
+      No habla del bienestar ni del desarrollo humano de las personas. No basta con pedir tecnología o
+      plataformas, oportunidades de empleo o emprendimiento con empresas, o mejoras de gestión y
+      calidad de la institución.
+
+# Matriz de fronteras: una frase por par para distinguirlas. Alimenta los criterio_false.
+fronteras:
+  T1-T2: >-
+    T1 trata de cómo la institución se gobierna, decide y asegura su calidad; T2, de cómo la
+    universidad y cada sede se vinculan con su territorio y proyectan su impacto. La acreditación
+    institucional es T1; la acreditación internacional de programas es T2 (así aparece en el documento).
+  T1-T3: >-
+    Los datos y la inteligencia artificial usados para decidir, medir resultados o asegurar la calidad
+    son T1; la tecnología como medio para aprender, prestar servicios o automatizar procesos es T3. La
+    inteligencia artificial figura en los componentes de ambas: un comentario puede tocar las dos, y la
+    principal depende del propósito que exprese.
+  T1-T4: >-
+    La innovación organizacional para mejorar la gestión interna es T1; la innovación y el
+    emprendimiento hacia afuera, para crear oportunidades y soluciones con los sectores, son T4.
+  T1-T5: >-
+    Los procesos, la gestión y la calidad son T1; las personas (bienestar, cultura, talento humano,
+    convivencia) son T5. La carga burocrática es T5 cuando el comentario habla de su efecto sobre las
+    personas [Anexo: "reducir la carga burocrática del GCA"] y T1 cuando habla de la eficiencia del proceso.
+  T2-T3: >-
+    El alcance y la presencia en el territorio son T2; los medios digitales son T3. La educación
+    virtual para llegar a otros municipios puede tocar ambas; la principal depende de si el énfasis está
+    en el territorio o en la herramienta.
+  T2-T4: >-
+    T2 es la pertinencia y el impacto de la formación, la investigación y la proyección social en el
+    territorio, y la internacionalización; T4 es crear oportunidades y soluciones con los sectores
+    mediante emprendimiento o innovación. Si el fin es emprender o innovar, es T4; si es estar presente
+    o responder a la región, es T2.
+  T2-T5: >-
+    La identidad y el sentido de pertenencia con la región o la sede son T2; la cultura institucional,
+    la convivencia y el bienestar de la comunidad universitaria son T5.
+  T3-T4: >-
+    Digitalizar procesos, servicios o el aprendizaje dentro de la universidad es T3; la innovación y el
+    emprendimiento orientados a crear oportunidades con actores externos son T4. Los "ecosistemas
+    digitales" son T3 y los "ecosistemas de innovación" son T4.
+  T3-T5: >-
+    La tecnología es T3; el bienestar y el desarrollo humano son T5. Un servicio digital de bienestar
+    puede tocar ambas; la principal depende de si se pide la herramienta o la atención a las personas.
+  T4-T5: >-
+    Crear oportunidades de empleo, negocio o innovación con los sectores es T4; la formación de la
+    persona, su bienestar y sus valores son T5. "Creadores de Oportunidades" y "Gestores del
+    Conocimiento y el Aprendizaje" figuran como componentes de T5 y coinciden con los nombres de los
+    tipos de actor del Excel (estudiantes y docentes): se leen como formación de esas personas, no como
+    emprendimiento.

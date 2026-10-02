@@ -1,0 +1,66 @@
+# Temas de Zipaquirá · 31 ago 2026 · UC Translocal (lista propia de esta unidad).
+# Anclados a los componentes de "UC Translocal" en contexto/Transformaciones_estrategicas_5_frentes.md (líneas 46-62).
+transformacion: UC Translocal
+version: 1
+temas:
+  - id: identidad_cultural_musical
+    nombre: "Identidad cultural y musical del territorio"
+    componente: "Identidad translocal"
+    justificacion: "Componente 'Identidad translocal': dar relevancia a la música y el folclor, recopilar músicas tradicionales, sentido de pertenencia y autonomía de cada territorio sin fragmentar la universidad."
+    critico: false
+    instruccion: "¿El `comentario` habla de la identidad cultural, la música, el folclor o la autonomía e identidad de cada territorio?"
+    criterio_true: "Menciona identidad cultural o territorial, música, folclor, músicas tradicionales, agrupaciones representativas, sentido de pertenencia, o identidad y autonomía de cada territorio."
+    criterio_false: "No habla de identidad, cultura ni música."
+    ejemplos_si: ["Desarrollar una recopilación de músicas tradicionales a nivel regional como identidad del territorio", "Identidad cultural Sentido de pertenencia"]
+
+  - id: red_sedes_redes_academicas
+    nombre: "Red de conocimiento entre sedes y redes académicas"
+    componente: "Redes y cooperación"
+    justificacion: "Componente 'Redes y cooperación': entender la UdeC como una red de conocimiento, conectar las extensiones desconectadas, convenios y redes académicas."
+    critico: false
+    instruccion: "¿El `comentario` pide conectar las sedes como una red, interactuar con otras seccionales o participar en convenios y redes académicas?"
+    criterio_true: "Menciona red de conocimiento, conectar o articular sedes o extensiones, interacción con otras seccionales, convenios, redes de cooperación o redes académicas."
+    criterio_false: "No habla de redes, convenios ni conexión entre sedes."
+    ejemplos_si: ["empezar a entender la UdeC como una red de conocimiento", "todo mejoraria con la articulación de redes de cooperación entre todas las extensiones que se encuentran totalmente desconectadas"]
+
+  - id: apertura_internacional
+    nombre: "Apertura al mundo e internacionalización (tan local como universal)"
+    componente: "Internacionalización"
+    justificacion: "Componente 'Internacionalización': internacionalizar los procesos formativos y abrirse al mundo; algunos grupos señalan que el concepto de identidad translocal es ambiguo y que no debe limitarse a Cundinamarca."
+    critico: false
+    instruccion: "¿El `comentario` pide internacionalizar o abrirse al mundo, o cuestiona que la transformación se limite a lo local?"
+    criterio_true: "Menciona internacionalizar, abrirse al mundo, ser tan local como universal, no limitarse a Cundinamarca o lo local, o que el concepto de identidad o de lo propio es ambiguo."
+    criterio_false: "No habla de lo internacional ni de la apertura al mundo."
+    ejemplos_si: ["en nuestra área se debe pensar en internacionalizar los procesos formativos", "Se tiene que ser tan local como universal"]
+
+  - id: facultad_artes
+    nombre: "Facultad de artes y vínculo con las escuelas artísticas"
+    componente: "Formación y aprendizaje"
+    justificacion: "Componente 'Formación y aprendizaje': crear una facultad de artes o conservatorio que vincule la música con otras artes y con las escuelas de formación artística del departamento."
+    critico: false
+    instruccion: "¿El `comentario` pide crear una facultad de artes o un conservatorio, o vincularse con escuelas de formación artística?"
+    criterio_true: "Menciona facultad de artes, conservatorio, danza, teatro, artes plásticas o escuelas de formación artística."
+    criterio_false: "No menciona una facultad de artes ni escuelas artísticas."
+    ejemplos_si: ["Constituir la facultad de artes", "La carrera de música debería pertenecer a una facultad de artes o un conservatorio"]
+
+  - id: visibilidad_programas
+    nombre: "Visibilidad y divulgación de los programas en el territorio"
+    componente: "proyección de la Universidad"
+    justificacion: "'Qué busca': aportar 'a la proyección de la Universidad en el territorio': divulgar los programas y la riqueza cultural de los estudiantes."
+    critico: false
+    instruccion: "¿El `comentario` pide más visibilidad o divulgación de los programas, carreras u oportunidades de la universidad en el territorio?"
+    criterio_true: "Menciona visibilidad, divulgación o dar a conocer los programas, carreras u oportunidades de la universidad en el territorio."
+    criterio_false: "No habla de visibilidad ni divulgación."
+    ejemplos_si: ["Buscar más visibilidad de las oportunidades y carreras que ofrece la universidad", "a través de la divulgación de todos sus programas en el territorio"]
+
+  - id: investigacion_semilleros
+    nombre: "Investigación, innovación y semilleros compartidos"
+    componente: "Ciencia, tecnología e innovación"
+    justificacion: "Componente 'Ciencia, tecnología e innovación': apoyar la investigación, la innovación y los semilleros con otras seccionales y redes."
+    critico: false
+    instruccion: "¿El `comentario` habla de investigación, innovación o semilleros de investigación?"
+    criterio_true: "Menciona investigación, innovación o semilleros de investigación."
+    criterio_false: "No menciona investigación ni innovación."
+    ejemplos_si: ["apoyar los procesos de aprendizaje como la investigación, innovación y enseñanza", "proyectos de los semilleros de investigación"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

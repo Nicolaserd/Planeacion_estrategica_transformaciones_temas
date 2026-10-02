@@ -1,0 +1,96 @@
+# Temas v2 de Zipaquirá · UC Inteligente (lista propia de esta unidad).
+# Versión 2: menos temas (máx. 10) por fusión de los de la versión 1 (respaldada en temas_v1.yaml).
+# Anclados a Transformaciones_estrategicas_5_frentes.md · '## 1. UC Inteligente' · líneas 26-42.
+transformacion: UC Inteligente
+version: 2
+temas:
+- id: procesos_digitalizacion
+  nombre: Agilidad de procesos y digitalización de trámites y servicios
+  componente: Gestión orientada a resultados
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (agilidad y eficiencia de los procesos administrativos y logísticos; digitalización y automatización de trámites y servicios). Ancla: componente
+    ''Gestión orientada a resultados''.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: agilidad y eficiencia de los procesos administrativos y logísticos; digitalización y automatización de trámites y servicios?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Agilidad y eficiencia de los procesos administrativos y logísticos: menciona agilizar procesos o trámites, procesos ágiles y eficientes, menos
+    intermediarios, reducir carga administrativa, inteligencia logística, optimizar procesos internos o mejorar la toma de asistencia. (2) Digitalización y automatización de trámites y servicios: menciona
+    solicitudes digitales, aplicaciones o plataformas de servicios, carné electrónico, generar formatos desde la plataforma, o sistemas automatizados de asignación o préstamo.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Procesos más ágiles y con menos intermediarios
+  - Pedir solicitudes administrativas de manera digital
+  fusiona_v1:
+  - procesos_agiles
+  - digitalizacion_tramites
+- id: datos_ia
+  nombre: Datos para conocer a estudiantes y egresados, e inteligencia artificial
+  componente: Gobierno y uso estratégico de los datos
+  otros_componentes:
+  - Inteligencia artificial
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (uso de datos para conocer a estudiantes y egresados y medir impacto; inteligencia artificial en la creación y sus límites en la educación). Ancla:
+    componente ''Gobierno y uso estratégico de los datos''; también toca: Inteligencia artificial.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: uso de datos para conocer a estudiantes y egresados y medir impacto; inteligencia artificial en la creación y sus límites en
+    la educación?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Uso de datos para conocer a estudiantes y egresados y medir impacto: menciona recopilar o analizar datos de los estudiantes, inteligencia de
+    datos, medir el impacto cultural o la empleabilidad, o escuchar la experiencia de los egresados para no repetir obstáculos. (2) Inteligencia artificial en la creación y sus límites en la educación:
+    menciona inteligencia artificial o IA, su uso en la creación o la producción, o los retos de su uso excesivo.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - contar con la capacidad tecnológica para recopilar, analizar y utilizar de manera estratégica los datos de cada estudiante
+  - Orientar la IA a la creación sonora
+  fusiona_v1:
+  - datos_personalizacion
+  - inteligencia_artificial
+- id: decisiones_concertadas_programa
+  nombre: Decisiones concertadas y ajustadas a cada programa
+  componente: Gobernanza estratégica
+  justificacion: 'Componente ''Gobernanza estratégica'': decisiones tomadas desde el campo específico, concertadas, sin cambios innecesarios y con diálogo sobre el modelo.'
+  critico: false
+  instruccion: ¿El `comentario` pide que las decisiones o cambios institucionales se concierten, se ajusten a las particularidades de cada programa o eviten cambios innecesarios?
+  criterio_true: Menciona concertar las decisiones, decidir desde el campo específico, especializarse según cada programa, no cambiar lo que funciona, no cambiar términos que confunden, libertad de cátedra,
+    o diálogo para aplicar el modelo educativo.
+  criterio_false: No habla de cómo se toman o se concertan las decisiones institucionales.
+  ejemplos_si:
+  - Concertar las decisiones para ser funcionales
+  - Cambiar las cosas cuando están funcionando bien, hace que sea algo innecesario
+- id: retroalimentacion_mejora
+  nombre: Retroalimentación, autocrítica y adaptación al cambio
+  componente: Calidad y mejora continua
+  justificacion: 'Componente ''Calidad y mejora continua'': capacidad de autocrítica, corrección y adaptación, y espacios para recibir retroalimentación sobre avances y falencias.'
+  critico: false
+  instruccion: ¿El `comentario` pide retroalimentación, autocrítica, corrección o adaptación al cambio para mejorar?
+  criterio_true: Menciona autocrítica, corrección, adaptación al cambio, opinar sobre avances y falencias o espacios de retroalimentación.
+  criterio_false: No habla de retroalimentación ni de mejora continua.
+  ejemplos_si:
+  - con capacidad de autocrítica, corrección y adaptación
+  - Espacios donde el músico sea participe de mas fogueos y opinen sobre nuestro avance y falencias
+- id: tecnologia_equipos
+  nombre: Tecnología, equipos e infraestructura para la música
+  componente: fuera_de_la_transformacion
+  justificacion: No figura en la sección de UC Inteligente; el documento lo ubica en UC Digital ('Tecnologías emergentes') y en las condiciones para el aprendizaje.
+  critico: false
+  instruccion: ¿El `comentario` pide equipos, tecnología, estudios de grabación, instrumentos o infraestructura?
+  criterio_true: Menciona equipos actualizados, herramientas tecnológicas, estudio de grabación, dotación de instrumentos, infraestructura o nuevas tecnologías.
+  criterio_false: No menciona equipos, tecnología ni infraestructura.
+  ejemplos_si:
+  - es necesario contar con equipos actualizados
+  - generar el espacio de un estudio de grabación
+- id: otros_fuera
+  nombre: Otros asuntos fuera de la transformación
+  componente: fuera_de_la_transformacion
+  justificacion: 'Asuntos sin anclaje en la sección de UC Inteligente del documento marco, cada uno con menos del 10 % de los comentarios; se agrupan en un solo tema (versión 2). Incluye: currículo pertinente
+    y proyección laboral de los egresados; humanización, trato digno y ética en la gestión.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Inteligente: currículo pertinente y proyección laboral de los egresados; humanización, trato digno y
+    ética en la gestión?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Currículo pertinente y proyección laboral de los egresados: menciona el campo laboral, el pensum que responda a lo que la sociedad necesita,
+    oportunidades laborales, inserción laboral, conexiones con el mercado o proyección profesional de los egresados. (2) Humanización, trato digno y ética en la gestión: menciona humanización, humanidad,
+    trato digno a estudiantes y docentes, ética o el bienestar de las personas.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Estar actualizado en el frente del campo laboral
+  - la humanización, es una parte importante para la educación, en donde se vea un trato digno
+  fusiona_v1:
+  - pertinencia_empleo
+  - humanizacion
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?

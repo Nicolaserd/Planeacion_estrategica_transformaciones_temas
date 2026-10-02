@@ -1,0 +1,116 @@
+# Temas de Soacha · 14-15 sep 2026 · UC Emprendedora e Innovadora (lista propia de esta unidad).
+# Anclados a los componentes de "UC Emprendedora e Innovadora" en contexto/Transformaciones_estrategicas_5_frentes.md (líneas 86-100).
+transformacion: UC Emprendedora e Innovadora
+version: 1
+temas:
+  - id: acompanamiento_incubacion
+    nombre: "Acompañamiento, estudio de viabilidad e incubación de ideas"
+    componente: "Ecosistemas de innovación"
+    justificacion: "Componente 'Ecosistemas de innovación': conocer la idea, estudiar su viabilidad, modelo de incubación, mentoría y seguimiento continuo hasta la implementación."
+    critico: false
+    instruccion: "¿El `comentario` pide acompañamiento, asesoría, mentoría, incubación o un estudio de viabilidad para las ideas o proyectos?"
+    criterio_true: "Menciona acompañamiento, asesoría, mentoría, guía, orientación, seguimiento, incubación, estructurar la idea, analizar o verificar la viabilidad, un programa o grupo que estudie las propuestas, o escuchar, identificar, planear y apoyar."
+    criterio_false: "No habla de acompañar, asesorar ni estudiar la viabilidad de ideas. Pedir solo dinero tiene su propio tema."
+    ejemplos_si: ["La universidad debe estructurar un modelo de incubación que brinde asesoría especializada", "Generar acompañamientos para verificar viabilidad de proyectos"]
+
+  - id: financiacion
+    nombre: "Financiación y apoyo económico a los emprendedores"
+    componente: "Emprendimiento"
+    justificacion: "Componente 'Emprendimiento': más inversión, ayuda monetaria, financiamiento, patrocinio y recursos para llevar a cabo las ideas."
+    critico: false
+    instruccion: "¿El `comentario` pide financiación, inversión, patrocinio o apoyo económico para ideas o emprendimientos?"
+    criterio_true: "Menciona financiamiento, financiación, inversión, ayuda o apoyo económico o monetario, patrocinio, recursos necesarios para ejecutar o gestionar recursos."
+    criterio_false: "No menciona dinero, financiación ni recursos económicos."
+    ejemplos_si: ["Más apoyo financiero para los emprendedores", "Implementar una ayuda monetaria además de seguir la idea del creador de oportunidades"]
+
+  - id: banco_problemas_territorio
+    nombre: "Banco de problemas y soluciones para el territorio de Soacha"
+    componente: "Innovación social"
+    justificacion: "Componente 'Innovación social': actualizar y sistematizar el banco de problemas translocales, conocer el territorio, involucrar a los afectados y dar soluciones reales (informalidad, seguridad y movilidad)."
+    critico: false
+    instruccion: "¿El `comentario` pide conocer los problemas del territorio o la comunidad, un banco de problemas o soluciones reales para ellos?"
+    criterio_true: "Menciona el banco de problemas o de propuestas, problemas translocales o del territorio, Soacha, contextos reales, necesidades de la población, involucrar a los afectados o a la comunidad, o soluciones reales a problemáticas como la informalidad o la seguridad."
+    criterio_false: "No menciona el territorio, la comunidad ni problemas sociales."
+    ejemplos_si: ["Actualización de banco de problemas traslocales", "Brindar soluciones reales a las problemáticas que aquejan los territorios dónde están ubicadas las sedes"]
+
+  - id: alianzas_redes
+    nombre: "Alianzas, contactos y redes con empresas y entidades"
+    componente: "Relacionamiento con los sectores sociales, productivos, públicos y comunitarios"
+    justificacion: "Componente 'Relacionamiento con los sectores sociales, productivos, públicos y comunitarios': cámara de comercio, micronegocios, alcaldía y entes territoriales, empresas, inversionistas y convenios."
+    critico: false
+    instruccion: "¿El `comentario` pide alianzas, convenios, contactos o redes con empresas, entidades públicas, inversionistas o la alcaldía?"
+    criterio_true: "Menciona alianzas o convenios, contactos o redes, empresas, micronegocios, cámara de comercio, inversionistas, la alcaldía, entes territoriales o el gobierno."
+    criterio_false: "No menciona entidades externas, empresas ni contactos."
+    ejemplos_si: ["Diálogo con los micro negocios, tener un consultorio empresarial con apoyo de la camara de comercio", "Acercamiento y trabajo cocreativo con los entes territoriales"]
+
+  - id: divulgacion_ruta_emprendedora
+    nombre: "Divulgar la ruta emprendedora y dar a conocer los proyectos"
+    componente: "cultura institucional emprendedora"
+    justificacion: "'Qué busca': promover 'una cultura institucional emprendedora': divulgación, socialización de la oferta y de la ruta emprendedora, y espacios para mostrar los proyectos."
+    critico: false
+    instruccion: "¿El `comentario` pide más información, divulgación o socialización sobre el emprendimiento, la ruta emprendedora o los proyectos?"
+    criterio_true: "Menciona divulgar, dar a conocer, socializar o informar sobre el emprendimiento, la ruta emprendedora, los programas u oferta, o espacios y eventos para mostrar los proyectos."
+    criterio_false: "No habla de divulgación ni de información sobre el emprendimiento."
+    ejemplos_si: ["Una mejor información de la ruta emprendedora de la universidad", "Generar estrategias de divulgación y acciones para identificar y reconocer el emprendimiento en la U"]
+
+  - id: emprendimiento_administrativos
+    nombre: "Emprendimiento también para el personal administrativo"
+    componente: "Creación de oportunidades"
+    justificacion: "Componente 'Creación de oportunidades': incluir a los administrativos en la ruta emprendedora, enseñarles a construir empresa y acompañarlos."
+    critico: false
+    instruccion: "¿El `comentario` pide incluir al personal administrativo en el emprendimiento o en la información y formación para emprender?"
+    criterio_true: "Menciona a los administrativos o al personal administrativo, su inclusión, socializaciones o información para ellos, o enseñarles a emprender o construir empresa."
+    criterio_false: "No menciona al personal administrativo."
+    ejemplos_si: ["Realizar Socializaciones de la oferta de emprendimiento e innovación, para administrativos", "Capacitar y acompañar al emprendedor administrativo"]
+
+  - id: capacitacion_emprender
+    nombre: "Formación para emprender y construir empresa"
+    componente: "Emprendimiento"
+    justificacion: "Componente 'Emprendimiento': formación para emprender, vender una idea de negocio y construir empresa desde cero."
+    critico: false
+    instruccion: "¿El `comentario` pide formación o capacitación para emprender, vender una idea o construir empresa?"
+    criterio_true: "Menciona capacitar o formar para emprender, aprender a vender una idea de negocio, construir empresa desde cero o una ruta de conocimientos para emprender."
+    criterio_false: "No habla de formar para emprender."
+    ejemplos_si: ["Me gustaría que la universidad de cundinamarca nos enseñe como vender una idea de negocio.", "aprender a construir empresa desde cero"]
+
+  - id: conformidad
+    nombre: "Conformidad con la transformación (sin ajustes)"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: dicen expresamente que está perfecta o que por ahora no ajustarían nada."
+    critico: false
+    instruccion: "¿El `comentario` dice expresamente que no haría ajustes o que la transformación está perfecta?"
+    criterio_true: "Dice de forma explícita que todo está perfecto o que por el momento no ajustaría nada."
+    criterio_false: "Pide, propone o menciona cualquier cosa por mejorar."
+    ejemplos_si: ["Todo está perfecto", "Por momento nada me gustaría ver cómo avanza"]
+
+  - id: investigacion
+    nombre: "Investigación y semilleros al servicio de las ideas"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Emprendedora; el documento lo ubica en UC Translocal ('Ciencia, tecnología e innovación')."
+    critico: false
+    instruccion: "¿El `comentario` pide investigación, líneas o grupos de investigación, semilleros o laboratorios?"
+    criterio_true: "Menciona investigación, líneas o grupos de investigación, semilleros o laboratorios."
+    criterio_false: "No menciona la investigación."
+    ejemplos_si: ["Crear un grupo de investigación en la universidad específicamente enfocado en la idea planeada", "vinculacion con lineas de unvestigacion - laboratorios en general"]
+
+  - id: burocracia
+    nombre: "Menos burocracia en los procesos"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Emprendedora; el documento lo ubica en UC Inteligente y UC Digital."
+    critico: false
+    instruccion: "¿El `comentario` pide menos burocracia o gestión documental en los procesos?"
+    criterio_true: "Menciona burocracia o minimizar la gestión documental."
+    criterio_false: "No menciona la burocracia."
+    ejemplos_si: ["evitando la burocracia que bloquean el avance", "bajarle a la burocracia dentro de los procesos"]
+
+  - id: infraestructura_tecnologia
+    nombre: "Infraestructura, equipos y espacios tecnológicos"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Emprendedora; el documento lo ubica en UC Digital."
+    critico: false
+    instruccion: "¿El `comentario` pide infraestructura, equipos, instalaciones o espacios y competencias tecnológicas?"
+    criterio_true: "Menciona infraestructura, equipos, instalaciones, logística, espacios tecnológicos, realidad aumentada o competencias digitales."
+    criterio_false: "No menciona infraestructura ni tecnología."
+    ejemplos_si: ["Más equipo e instalaciones", "Mejora de los espacios tecnológicos"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

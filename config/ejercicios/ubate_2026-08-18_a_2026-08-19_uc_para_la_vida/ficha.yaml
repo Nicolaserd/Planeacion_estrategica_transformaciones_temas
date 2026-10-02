@@ -1,0 +1,57 @@
+slug: ubate_2026-08-18_a_2026-08-19_uc_para_la_vida
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\experiencia_uc_para_la_vida.xlsx
+sha256_archivo: 8c88a892a5ca9ff1d6ea8fc93792c520a4ab9581eccac5a6a165560bc8fdbf0f
+transformacion:
+  id: T5
+  nombre_oficial: UC para la Vida
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 5. UC para la Vida' · líneas 104-121
+unidad: Ubaté
+fechas:
+- '2026-08-18'
+- '2026-08-19'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 65
+N_s: 43
+textos_unicos: 43
+excluidos:
+  vacio: 21
+  no_respuesta: 1
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 43
+  n_muestra_requerida: 38.8
+  fraccion: 0.901
+  protocolo: B_censo
+informe_filtro:
+  filas: 65
+  unidades_que_coinciden:
+  - Seccional Ubaté
+  transformacion_vacia_asumida: 7
+  fuera_de_fecha_no_incluidas:
+  - ID: 408
+    fecha: '2026-09-21'
+  - ID: 493
+    fecha: '2026-09-28'
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Ubate_2026-08-18_a_2026-08-19_UC_para_la_Vida.xlsx
+  clasificacion: Clasificacion_Ubate_2026-08-18_a_2026-08-19_UC_para_la_Vida.xlsx
+  hoja: Ubaté 18-19 ago 2026
+preparado: '2026-10-01'

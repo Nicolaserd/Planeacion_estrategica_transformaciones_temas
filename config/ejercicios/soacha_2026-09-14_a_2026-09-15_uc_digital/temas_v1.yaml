@@ -1,0 +1,126 @@
+# Temas de Soacha · 14-15 sep 2026 · UC Digital (lista propia de esta unidad).
+# Anclados a los componentes de "UC Digital" en contexto/Transformaciones_estrategicas_5_frentes.md (líneas 66-82).
+transformacion: UC Digital
+version: 1
+temas:
+  - id: acceso_recursos_tecnologicos
+    nombre: "Acceso libre a equipos, software y recursos que ya existen"
+    componente: "Experiencia digital de la comunidad universitaria"
+    justificacion: "Componente 'Experiencia digital de la comunidad universitaria': libre acceso a computadores, portátiles, tabletas, suscripciones de software y laboratorios; los recursos existen pero el acceso es limitado."
+    critico: false
+    instruccion: "¿El `comentario` pide acceso o préstamo de equipos, software, laboratorios o recursos tecnológicos de la universidad para los estudiantes?"
+    criterio_true: "Menciona acceso libre o préstamo de computadores, portátiles, tabletas o equipos, suscripciones o licencias de software para estudiantes, acceso remoto a programas, acceso a laboratorios o recursos que hoy son limitados o solo para docentes."
+    criterio_false: "No habla del acceso de los estudiantes a recursos tecnológicos. Pedir más o mejor tecnología en general no basta."
+    ejemplos_si: ["la universidad tiene los recursos pero muchos estudiantes se gradúan sin usar ni conocer los recursos disponibles", "Tener acceso libre a los portátiles de la biblioteca"]
+
+  - id: laboratorios_actualizados
+    nombre: "Laboratorios actualizados y especializados"
+    componente: "fortalecer el aprendizaje"
+    justificacion: "'Qué busca': transformación digital 'para fortalecer el aprendizaje': actualizar laboratorios (fisiología, informática, has), laboratorios con simulación, virtuales y para materializar ideas."
+    critico: false
+    instruccion: "¿El `comentario` pide laboratorios nuevos, actualizados o especializados?"
+    criterio_true: "Menciona laboratorios (de fisiología, informática, datos, simulación, virtuales o para ideas), equipos o maquinaria especializada, torres de computación o escenarios de entrenamiento."
+    criterio_false: "No menciona laboratorios ni equipos especializados."
+    ejemplos_si: ["Es necesario laboratorios que sean funcionales y que estén a la vanguardia", "Más laboratorios para así poder ampliar nuestros conocimientos"]
+
+  - id: automatizacion_tramites
+    nombre: "Automatización de trámites y procesos administrativos"
+    componente: "Automatización de procesos"
+    justificacion: "Componente 'Automatización de procesos': certificados y contratación automatizados, menos burocracia y papel, registro digital de asistencia, gestión de inventarios centralizada."
+    critico: false
+    instruccion: "¿El `comentario` pide automatizar o agilizar trámites y procesos administrativos?"
+    criterio_true: "Menciona automatizar procesos o trámites, certificados más rápidos, contratación, menos burocracia o papel, registro digital de asistencia, optimizar tiempos, gestión de inventarios o aplicaciones administrativas."
+    criterio_false: "No habla de trámites ni de procesos administrativos."
+    ejemplos_si: ["Minimización de la burocracia y extinción de los procesos con papel.", "Que los trámites para una certificación sea más ligero"]
+
+  - id: inteligencia_artificial
+    nombre: "Inteligencia artificial propia y en las aulas"
+    componente: "Inteligencia artificial"
+    justificacion: "Componente 'Inteligencia artificial': IA propia, asistente IA por programa alimentado con los proyectos, IA en las aulas, como tutor y en la investigación."
+    critico: false
+    instruccion: "¿El `comentario` habla de la inteligencia artificial (IA)?"
+    criterio_true: "Menciona inteligencia artificial o IA: IA propia, asistente IA, IA en las aulas, tutores, investigación o herramientas con IA, o capacitación en IA."
+    criterio_false: "No menciona la inteligencia artificial."
+    ejemplos_si: ["Creación de inteligencia artificial propia para no depender de terceros", "la creación de un asistente IA que ayude a los estudiantes de cada programa"]
+
+  - id: capacitacion_tecnologica
+    nombre: "Capacitación en tecnología para estudiantes y personal"
+    componente: "Experiencia digital de la comunidad universitaria"
+    justificacion: "Componente 'Experiencia digital de la comunidad universitaria': capacitar desde servicios generales hasta directivos, clases sobre tecnologías, saber usar lo que existe y convenios de capacitación."
+    critico: false
+    instruccion: "¿El `comentario` pide capacitación, clases u orientación sobre el uso de la tecnología?"
+    criterio_true: "Menciona capacitación, clases, formación u orientación en tecnología o tecnologías emergentes, aprender a usar las tecnologías existentes o convenios de capacitación."
+    criterio_false: "No habla de capacitar en tecnología."
+    ejemplos_si: ["capacitar desde el área de servicios generales hasta los altos directivos", "Mas clases a los estudiantes sobre específicamente estás tecnologías"]
+
+  - id: conectividad
+    nombre: "Conectividad, wifi y nube"
+    componente: "Ecosistemas digitales"
+    justificacion: "Componente 'Ecosistemas digitales': mejor internet y wifi, conectividad de las sedes y servicios en la nube."
+    critico: false
+    instruccion: "¿El `comentario` pide mejor internet, wifi, conectividad o servicios en la nube?"
+    criterio_true: "Menciona internet, wifi, conectividad de alta velocidad o de las sedes, o servicios en la nube."
+    criterio_false: "No menciona internet, conectividad ni nube."
+    ejemplos_si: ["Mejorar la condición del internet de la universidad", "Desplegar arquitecturas de conectividad de alta velocidad (Wi-Fi 7)"]
+
+  - id: plataformas_integradas
+    nombre: "Plataformas institucionales actualizadas e integradas"
+    componente: "Ecosistemas digitales"
+    justificacion: "Componente 'Ecosistemas digitales': mantenimiento de la plataforma y del CMA, plataformas integradas y sistemas alineados con la gestión."
+    critico: false
+    instruccion: "¿El `comentario` pide actualizar, mantener o integrar las plataformas o sistemas institucionales?"
+    criterio_true: "Menciona mantener o actualizar las plataformas o el campo multidimensional de aprendizaje, plataformas integradas, ecosistemas digitales alineados con los sistemas de gestión o aplicaciones integradas."
+    criterio_false: "No menciona las plataformas ni los sistemas institucionales."
+    ejemplos_si: ["Mantenimiento y actualización constante a las plataformas", "Aplicación tecnológica integrada interactiva para la parte administrativa"]
+
+  - id: tecnologia_vanguardia
+    nombre: "Más tecnología y de vanguardia"
+    componente: "Tecnologías emergentes"
+    justificacion: "Componente 'Tecnologías emergentes': implementar mejores y más tecnologías, estar a la vanguardia y convertirse en referente tecnológico."
+    critico: false
+    instruccion: "¿El `comentario` pide, de forma general, más o mejores tecnologías o estar a la vanguardia tecnológica?"
+    criterio_true: "Menciona implementar más o mejores tecnologías, tecnología avanzada o de vanguardia, capacidad tecnológica o ser referente tecnológico."
+    criterio_false: "No pide tecnología en general. Pedir laboratorios, IA o acceso a equipos tiene su propio tema."
+    ejemplos_si: ["Implementación de más tecnologías", "Tecnologías a vanguardia actualizadas"]
+
+  - id: equilibrio_hibrido
+    nombre: "Equilibrio: modelo híbrido, uso adecuado y valor de lo físico"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre el enfoque de la transformación: estar parcialmente de acuerdo, que sea híbrido, que lo digital no evada la interacción social, el uso adecuado y el pensamiento crítico."
+    critico: false
+    instruccion: "¿El `comentario` pide equilibrio entre lo digital y lo físico o presencial, un uso adecuado, o está solo parcialmente de acuerdo con la transformación?"
+    criterio_true: "Menciona que debe ser híbrido, la importancia de los recursos físicos, la interacción social frente a lo digital, el uso adecuado, el pensamiento crítico o estar parcialmente de acuerdo."
+    criterio_false: "Solo pide más tecnología sin señalar límites ni equilibrio."
+    ejemplos_si: ["Tiene que ser híbrido, debido a que todo digital se evade el tema de interacción social", "Estoy parcialmente de acuerdo"]
+
+  - id: tecnologia_territorio
+    nombre: "Tecnología al servicio del territorio y la comunidad"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Digital; el documento lo ubica en UC Translocal ('Impacto territorial')."
+    critico: false
+    instruccion: "¿El `comentario` pide usar la tecnología para conocer o resolver problemas del territorio o servir a la comunidad?"
+    criterio_true: "Menciona el territorio, Soacha, la comunidad, la sociedad, problemas translocales o del entorno, o un centro tecnológico para la comunidad."
+    criterio_false: "No menciona el territorio ni la comunidad externa."
+    ejemplos_si: ["Sistema inteligente de información territorial de Soacha", "La tecnología debe permitir que los creadores de conocimiento CREEN como parte de la solución de problemas del territorio"]
+
+  - id: proyectos_ideas
+    nombre: "Apoyo a proyectos e ideas de los estudiantes"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Digital; el documento lo ubica en UC Emprendedora e Innovadora."
+    critico: false
+    instruccion: "¿El `comentario` pide apoyar o materializar proyectos e ideas de los estudiantes?"
+    criterio_true: "Menciona apoyar la creación de proyectos, materializar ideas, proyectos entre carreras o un programa que reciba propuestas."
+    criterio_false: "No habla de proyectos ni ideas de los estudiantes."
+    ejemplos_si: ["Dar la posibilidad de generar y apoyar a la creación de proyecto", "Hacer proyectos en uno solo uniendo todas las carreras"]
+
+  - id: compartir_entre_sedes
+    nombre: "Compartir instalaciones y conocimientos entre sedes"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Digital; el documento lo ubica en UC Translocal ('Identidad translocal')."
+    critico: false
+    instruccion: "¿El `comentario` pide compartir instalaciones, recursos o conocimientos entre las sedes?"
+    criterio_true: "Menciona compartir instalaciones o conocimientos entre sedes o acceder a recursos de otras sedes."
+    criterio_false: "No habla de otras sedes."
+    ejemplos_si: ["que entre las sedes de la u Cundinamarca se compartan sus instalaciones y conocimientos"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

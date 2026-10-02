@@ -1,0 +1,133 @@
+# Temas v2 de Soacha · UC Digital (lista propia de esta unidad).
+# Versión 2: menos temas (máx. 10) por fusión de los de la versión 1 (respaldada en temas_v1.yaml).
+# Anclados a Transformaciones_estrategicas_5_frentes.md · '## 3. UC Digital' · líneas 66-82.
+transformacion: UC Digital
+version: 2
+temas:
+- id: acceso_recursos_tecnologicos
+  nombre: Acceso libre a equipos, software y recursos que ya existen
+  componente: Experiencia digital de la comunidad universitaria
+  justificacion: 'Componente ''Experiencia digital de la comunidad universitaria'': libre acceso a computadores, portátiles, tabletas, suscripciones de software y laboratorios; los recursos existen pero
+    el acceso es limitado.'
+  critico: false
+  instruccion: ¿El `comentario` pide acceso o préstamo de equipos, software, laboratorios o recursos tecnológicos de la universidad para los estudiantes?
+  criterio_true: Menciona acceso libre o préstamo de computadores, portátiles, tabletas o equipos, suscripciones o licencias de software para estudiantes, acceso remoto a programas, acceso a laboratorios
+    o recursos que hoy son limitados o solo para docentes.
+  criterio_false: No habla del acceso de los estudiantes a recursos tecnológicos. Pedir más o mejor tecnología en general no basta.
+  ejemplos_si:
+  - la universidad tiene los recursos pero muchos estudiantes se gradúan sin usar ni conocer los recursos disponibles
+  - Tener acceso libre a los portátiles de la biblioteca
+- id: laboratorios_actualizados
+  nombre: Laboratorios actualizados y especializados
+  componente: fortalecer el aprendizaje
+  justificacion: '''Qué busca'': transformación digital ''para fortalecer el aprendizaje'': actualizar laboratorios (fisiología, informática, has), laboratorios con simulación, virtuales y para materializar
+    ideas.'
+  critico: false
+  instruccion: ¿El `comentario` pide laboratorios nuevos, actualizados o especializados?
+  criterio_true: Menciona laboratorios (de fisiología, informática, datos, simulación, virtuales o para ideas), equipos o maquinaria especializada, torres de computación o escenarios de entrenamiento.
+  criterio_false: No menciona laboratorios ni equipos especializados.
+  ejemplos_si:
+  - Es necesario laboratorios que sean funcionales y que estén a la vanguardia
+  - Más laboratorios para así poder ampliar nuestros conocimientos
+- id: automatizacion_tramites
+  nombre: Automatización de trámites y procesos administrativos
+  componente: Automatización de procesos
+  justificacion: 'Componente ''Automatización de procesos'': certificados y contratación automatizados, menos burocracia y papel, registro digital de asistencia, gestión de inventarios centralizada.'
+  critico: false
+  instruccion: ¿El `comentario` pide automatizar o agilizar trámites y procesos administrativos?
+  criterio_true: Menciona automatizar procesos o trámites, certificados más rápidos, contratación, menos burocracia o papel, registro digital de asistencia, optimizar tiempos, gestión de inventarios o aplicaciones
+    administrativas.
+  criterio_false: No habla de trámites ni de procesos administrativos.
+  ejemplos_si:
+  - Minimización de la burocracia y extinción de los procesos con papel.
+  - Que los trámites para una certificación sea más ligero
+- id: inteligencia_artificial
+  nombre: Inteligencia artificial propia y en las aulas
+  componente: Inteligencia artificial
+  justificacion: 'Componente ''Inteligencia artificial'': IA propia, asistente IA por programa alimentado con los proyectos, IA en las aulas, como tutor y en la investigación.'
+  critico: false
+  instruccion: ¿El `comentario` habla de la inteligencia artificial (IA)?
+  criterio_true: 'Menciona inteligencia artificial o IA: IA propia, asistente IA, IA en las aulas, tutores, investigación o herramientas con IA, o capacitación en IA.'
+  criterio_false: No menciona la inteligencia artificial.
+  ejemplos_si:
+  - Creación de inteligencia artificial propia para no depender de terceros
+  - la creación de un asistente IA que ayude a los estudiantes de cada programa
+- id: capacitacion_tecnologica
+  nombre: Capacitación en tecnología para estudiantes y personal
+  componente: Experiencia digital de la comunidad universitaria
+  justificacion: 'Componente ''Experiencia digital de la comunidad universitaria'': capacitar desde servicios generales hasta directivos, clases sobre tecnologías, saber usar lo que existe y convenios de
+    capacitación.'
+  critico: false
+  instruccion: ¿El `comentario` pide capacitación, clases u orientación sobre el uso de la tecnología?
+  criterio_true: Menciona capacitación, clases, formación u orientación en tecnología o tecnologías emergentes, aprender a usar las tecnologías existentes o convenios de capacitación.
+  criterio_false: No habla de capacitar en tecnología.
+  ejemplos_si:
+  - capacitar desde el área de servicios generales hasta los altos directivos
+  - Mas clases a los estudiantes sobre específicamente estás tecnologías
+- id: tecnologia_vanguardia
+  nombre: Más tecnología y de vanguardia
+  componente: Tecnologías emergentes
+  justificacion: 'Componente ''Tecnologías emergentes'': implementar mejores y más tecnologías, estar a la vanguardia y convertirse en referente tecnológico.'
+  critico: false
+  instruccion: ¿El `comentario` pide, de forma general, más o mejores tecnologías o estar a la vanguardia tecnológica?
+  criterio_true: Menciona implementar más o mejores tecnologías, tecnología avanzada o de vanguardia, capacidad tecnológica o ser referente tecnológico.
+  criterio_false: No pide tecnología en general. Pedir laboratorios, IA o acceso a equipos tiene su propio tema.
+  ejemplos_si:
+  - Implementación de más tecnologías
+  - Tecnologías a vanguardia actualizadas
+- id: conectividad_plataformas
+  nombre: Conectividad, nube y plataformas integradas
+  componente: Ecosistemas digitales
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (conectividad, wifi y nube; plataformas institucionales actualizadas e integradas). Ancla: componente ''Ecosistemas digitales''.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: conectividad, wifi y nube; plataformas institucionales actualizadas e integradas?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Conectividad, wifi y nube: menciona internet, wifi, conectividad de alta velocidad o de las sedes, o servicios en la nube. (2) Plataformas
+    institucionales actualizadas e integradas: menciona mantener o actualizar las plataformas o el campo multidimensional de aprendizaje, plataformas integradas, ecosistemas digitales alineados con los
+    sistemas de gestión o aplicaciones integradas.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Mejorar la condición del internet de la universidad
+  - Mantenimiento y actualización constante a las plataformas
+  fusiona_v1:
+  - conectividad
+  - plataformas_integradas
+- id: equilibrio_hibrido
+  nombre: 'Equilibrio: modelo híbrido, uso adecuado y valor de lo físico'
+  componente: transformacion_en_general
+  justificacion: 'Comentarios sobre el enfoque de la transformación: estar parcialmente de acuerdo, que sea híbrido, que lo digital no evada la interacción social, el uso adecuado y el pensamiento crítico.'
+  critico: false
+  instruccion: ¿El `comentario` pide equilibrio entre lo digital y lo físico o presencial, un uso adecuado, o está solo parcialmente de acuerdo con la transformación?
+  criterio_true: Menciona que debe ser híbrido, la importancia de los recursos físicos, la interacción social frente a lo digital, el uso adecuado, el pensamiento crítico o estar parcialmente de acuerdo.
+  criterio_false: Solo pide más tecnología sin señalar límites ni equilibrio.
+  ejemplos_si:
+  - Tiene que ser híbrido, debido a que todo digital se evade el tema de interacción social
+  - Estoy parcialmente de acuerdo
+- id: tecnologia_territorio
+  nombre: Tecnología al servicio del territorio y la comunidad
+  componente: fuera_de_la_transformacion
+  justificacion: No figura en la sección de UC Digital; el documento lo ubica en UC Translocal ('Impacto territorial').
+  critico: false
+  instruccion: ¿El `comentario` pide usar la tecnología para conocer o resolver problemas del territorio o servir a la comunidad?
+  criterio_true: Menciona el territorio, Soacha, la comunidad, la sociedad, problemas translocales o del entorno, o un centro tecnológico para la comunidad.
+  criterio_false: No menciona el territorio ni la comunidad externa.
+  ejemplos_si:
+  - Sistema inteligente de información territorial de Soacha
+  - La tecnología debe permitir que los creadores de conocimiento CREEN como parte de la solución de problemas del territorio
+- id: otros_fuera
+  nombre: Otros asuntos fuera de la transformación
+  componente: fuera_de_la_transformacion
+  justificacion: 'Asuntos sin anclaje en la sección de UC Digital del documento marco, cada uno con menos del 10 % de los comentarios; se agrupan en un solo tema (versión 2). Incluye: apoyo a proyectos
+    e ideas de los estudiantes; compartir instalaciones y conocimientos entre sedes.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Digital: apoyo a proyectos e ideas de los estudiantes; compartir instalaciones y conocimientos entre
+    sedes?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Apoyo a proyectos e ideas de los estudiantes: menciona apoyar la creación de proyectos, materializar ideas, proyectos entre carreras o un programa
+    que reciba propuestas. (2) Compartir instalaciones y conocimientos entre sedes: menciona compartir instalaciones o conocimientos entre sedes o acceder a recursos de otras sedes.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Dar la posibilidad de generar y apoyar a la creación de proyecto
+  - que entre las sedes de la u Cundinamarca se compartan sus instalaciones y conocimientos
+  fusiona_v1:
+  - proyectos_ideas
+  - compartir_entre_sedes
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?

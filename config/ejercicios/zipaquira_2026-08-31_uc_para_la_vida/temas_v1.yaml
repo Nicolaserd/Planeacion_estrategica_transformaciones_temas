@@ -1,0 +1,128 @@
+# Temas de Zipaquirá · 31 ago 2026 · UC para la Vida (lista propia de esta unidad).
+# Definidos con los 20 comentarios del ejercicio y anclados a los componentes (o a "Qué busca") de
+# "UC para la Vida" en contexto/Transformaciones_estrategicas_5_frentes.md (líneas 104-121).
+# Lo que no tiene anclaje en esa sección queda como fuera_de_la_transformacion. Los ejemplos no se envían a Jev.
+transformacion: UC para la Vida
+version: 1
+temas:
+  - id: condiciones_laborales_docentes
+    nombre: "Estabilidad laboral y condiciones de trabajo de los docentes"
+    componente: "Desarrollo del talento humano"
+    justificacion: "Componente 'Desarrollo del talento humano': los grupos piden estabilidad, continuidad, remuneración equitativa y mejores condiciones para los docentes (hora cátedra y ocasionales)."
+    critico: false
+    instruccion: "¿El `comentario` habla de la estabilidad laboral, el salario, la contratación o las condiciones de trabajo de los docentes o del personal de la universidad?"
+    criterio_true: "Menciona estabilidad o continuidad laboral, contratación, salario o remuneración, docentes hora cátedra u ocasionales, políticas laborales, mejores condiciones laborales, o que la universidad sea una fuente de trabajo estable para sus docentes."
+    criterio_false: "No habla del trabajo del personal de la universidad. Las oportunidades de empleo para estudiantes o egresados no cuentan."
+    ejemplos_si: ["Mejorar la estabilidad laboral", "Transformar los acuerdos de contratación para brindar mayor equidad en la remuneración docente"]
+
+  - id: reconocimiento_ambiente_docente
+    nombre: "Reconocimiento, respeto y ambiente laboral sano para los docentes"
+    componente: "Gestores del Conocimiento y el Aprendizaje"
+    justificacion: "Componente 'Gestores del Conocimiento y el Aprendizaje' (los docentes): piden respeto por su labor, cercanía con la universidad y un ambiente laboral sano."
+    critico: false
+    instruccion: "¿El `comentario` pide respeto, reconocimiento o cercanía hacia los docentes, o un ambiente de trabajo sano para ellos?"
+    criterio_true: "Menciona respeto o reconocimiento a la labor docente, el sentido humano o la cercanía entre los docentes (gestores del conocimiento) y la universidad, o un ambiente laboral sano y agradable."
+    criterio_false: "No habla del trato, el reconocimiento ni el ambiente de trabajo de los docentes. Pedir solo estabilidad o salario no basta."
+    ejemplos_si: ["Recibir respeto absoluto por la labor docente", "Fortalecer el sentido humano de cercanía entre los gestores del conocimiento y la Universidad"]
+
+  - id: formacion_investigacion_docente
+    nombre: "Formación e investigación para los docentes"
+    componente: "Gestores del Conocimiento y el Aprendizaje"
+    justificacion: "Componente 'Gestores del Conocimiento y el Aprendizaje': capacitación docente, Escuela de Formación Docente y acceso de todos los docentes a la investigación."
+    critico: false
+    instruccion: "¿El `comentario` pide capacitación o formación para los docentes, o que los docentes tengan más oportunidades de hacer investigación?"
+    criterio_true: "Menciona capacitación o formación docente, una escuela de formación docente, cursos para docentes, convocatorias de investigación o que todos los docentes (cátedra o tiempo completo) puedan investigar."
+    criterio_false: "No habla de formar a los docentes ni de su acceso a la investigación. Los posgrados para estudiantes o egresados no cuentan."
+    ejemplos_si: ["ampliar las oportunidades de capacitación docente", "que la convocatoria de investigación se haga semestralmente y puedan aplicar los docentes cátedra y tiempo completo"]
+
+  - id: bienestar_salud
+    nombre: "Bienestar, salud mental y salud física"
+    componente: "Felicidad y bienestar"
+    justificacion: "Componente 'Felicidad y bienestar': acompañamiento psicológico permanente, salud mental para estudiantes y docentes, fisioterapia del músico, espacios de esparcimiento y caja de compensación."
+    critico: false
+    instruccion: "¿El `comentario` pide o menciona el bienestar, la salud mental o física, el acompañamiento psicológico o servicios de bienestar para la comunidad?"
+    criterio_true: "Menciona salud mental, acompañamiento psicológico, fisioterapia o salud física, bienestar o felicidad de estudiantes o docentes, espacios de esparcimiento, o servicios como la caja de compensación."
+    criterio_false: "No menciona bienestar ni salud. Hablar solo de salario o estabilidad laboral no cuenta."
+    ejemplos_si: ["Acompañamiento permanente psicológico", "Atención y seguimiento de fisioterapia del músico"]
+
+  - id: insercion_laboral
+    nombre: "Inserción laboral y conexión con el mundo profesional"
+    componente: "Creadores de Oportunidades"
+    justificacion: "Componente 'Creadores de Oportunidades': escenarios reales de inserción profesional, apertura a la industria y conexión con las exigencias laborales."
+    critico: false
+    instruccion: "¿El `comentario` pide abrir oportunidades laborales o profesionales a estudiantes o egresados, o conectarlos con el mundo laboral y la industria?"
+    criterio_true: "Menciona oportunidades en el mundo laboral, inserción a la vida profesional, exigencias laborales, competitividad en el mercado, apertura a la industria, circulación profesional o convenios para trabajar."
+    criterio_false: "No habla del empleo o la vida profesional de estudiantes o egresados. La estabilidad laboral de los docentes no cuenta."
+    ejemplos_si: ["Es fundamental que la universidad propicie escenarios reales de inserción a la vida profesional", "Abre oportunidades al mundo laboral, aún estando vinculado a la universidad"]
+
+  - id: emprendimiento_economia
+    nombre: "Emprendimiento y formación económica para el profesional"
+    componente: "Creadores de Oportunidades"
+    justificacion: "Componente 'Creadores de Oportunidades': formar en sostenibilidad financiera, propiedad intelectual, emprendimiento y economía real ('saber cobrar')."
+    critico: false
+    instruccion: "¿El `comentario` pide formación en emprendimiento, finanzas, propiedad intelectual o economía, o espacios ligados a actividades económicas?"
+    criterio_true: "Menciona emprendimiento, sostenibilidad financiera, propiedad intelectual, economía real, saber cobrar por el trabajo, o espacios relacionados con actividades económicas."
+    criterio_false: "No menciona emprendimiento, finanzas ni economía. Pedir solo empleo no basta."
+    ejemplos_si: ["formando en sostenibilidad financiera, propiedad intelectual y emprendimiento", "Enfoque de conocimientos en economía real para saber cobrar"]
+
+  - id: posgrados_educacion_continua
+    nombre: "Posgrados, profundizaciones y educación continua"
+    componente: "Desarrollo del talento humano"
+    justificacion: "Componente 'Desarrollo del talento humano': maestrías, profundizaciones y educación continua para el área."
+    critico: false
+    instruccion: "¿El `comentario` pide posgrados, maestrías, profundizaciones o educación continua?"
+    criterio_true: "Menciona maestrías, posgrados, profundizaciones, especializaciones o educación continua."
+    criterio_false: "No menciona posgrados ni educación continua. La capacitación de los docentes tiene su propio tema."
+    ejemplos_si: ["Una educación continua con espacios de posgrados para nuestra area", "se propone la creación de maestrías desde una perspectiva translocal"]
+
+  - id: vision_transformacion_vida
+    nombre: "Visión de la transformación de la vida (ciclos, proyecto de vida, tranquilidad)"
+    componente: "Persona Transhumana"
+    justificacion: "Componente 'Persona Transhumana': los grupos reflexionan sobre qué significa transformar la vida (ciclos, momentos de la vida, plan de vida, tranquilidad como personas transhumanas)."
+    critico: false
+    instruccion: "¿El `comentario` reflexiona sobre qué significa transformar la vida o ser Persona Transhumana, o habla del plan o proyecto de vida?"
+    criterio_true: "Menciona que la transformación de la vida depende de los momentos o ciclos de la vida, el plan o proyecto de vida, o la tranquilidad o el desarrollo como personas transhumanas."
+    criterio_false: "Pide acciones concretas (salario, empleo, bienestar) sin reflexionar sobre la transformación de la vida o la Persona Transhumana."
+    ejemplos_si: ["Depende de los momentos de la vida se da la 'transformación de la vida'", "Las transformaciones son ciclos dependiendo del punto en el que se encuentre el docente"]
+
+  - id: convivencia_vinculos
+    nombre: "Convivencia y vínculos humanos en la comunidad"
+    componente: "Convivencia"
+    justificacion: "Componente 'Convivencia': conocer personas, crear vínculos más allá del aula y compartir con otros."
+    critico: false
+    instruccion: "¿El `comentario` habla de conocer personas, crear vínculos humanos o compartir con otros dentro de la comunidad universitaria?"
+    criterio_true: "Menciona conocer personas, vínculos o cercanía humana, relaciones más allá del aula, o compartir con otros."
+    criterio_false: "No habla de relaciones entre personas. Los contactos para conseguir empleo no cuentan."
+    ejemplos_si: ["creando vínculos que vas más allá del aula de clase", "La universidad es un espacio donde podemos conocer personas"]
+
+  - id: espacios_estudio_esparcimiento
+    nombre: "Espacios para estudiar y para el esparcimiento"
+    componente: "condiciones que favorezcan el aprendizaje"
+    justificacion: "'Qué busca': 'condiciones que favorezcan el aprendizaje'. Piden espacios abiertos 24 horas para estudio y espacios de esparcimiento más cómodos."
+    critico: false
+    instruccion: "¿El `comentario` pide espacios físicos, infraestructura u horarios para estudiar, ensayar o descansar en la universidad?"
+    criterio_true: "Menciona espacios de estudio o de esparcimiento, infraestructura, comodidad de los espacios, o espacios abiertos más horas."
+    criterio_false: "No menciona espacios físicos ni infraestructura."
+    ejemplos_si: ["espacios 24 horas para estudio y gestión de labores educativas", "mayor comodidad en los espacios de esparcimiento"]
+
+  - id: movilidad_intercambios
+    nombre: "Intercambios, salidas y contacto con músicos de otros lugares"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC para la Vida; el documento lo ubica en UC Translocal ('Internacionalización', 'Redes y cooperación')."
+    critico: false
+    instruccion: "¿El `comentario` pide salidas, intercambios o movilidad local o internacional, o traer artistas o personas de otros lugares?"
+    criterio_true: "Menciona salidas locales o internacionales, intercambios, movilidad, conocer o traer músicos o personas de otros lugares o del mundo."
+    criterio_false: "No menciona salidas, intercambios ni movilidad."
+    ejemplos_si: ["sería bueno sería hacer salidas, intercambios conocer músicos de otros lugares", "Mejorar las políticas de salidas locales o internacionales para docentes"]
+
+  - id: territorio
+    nombre: "Presencia y reciprocidad con el territorio"
+    componente: fuera_de_la_transformacion
+    justificacion: "La sección de UC para la Vida no menciona el territorio; el documento lo ubica en UC Translocal ('Impacto territorial')."
+    critico: false
+    instruccion: "¿El `comentario` habla del territorio, el municipio o la región, o de la relación de la universidad con la comunidad local?"
+    criterio_true: "Menciona el territorio, Zipaquirá y sus alrededores, la región, o la reciprocidad de la universidad con el territorio y la comunidad."
+    criterio_false: "No menciona el territorio, el municipio ni la región."
+    ejemplos_si: ["reciprocidad con el territorio y la comunidad", "más presente en el territorio de Zipaquirá y sus alrededores"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

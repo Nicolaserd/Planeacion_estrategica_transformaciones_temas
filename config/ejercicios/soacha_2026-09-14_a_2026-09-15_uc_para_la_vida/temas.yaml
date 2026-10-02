@@ -1,0 +1,168 @@
+# Temas v2 de Soacha · UC para la Vida (lista propia de esta unidad).
+# Versión 2: menos temas (máx. 10) por fusión de los de la versión 1 (respaldada en temas_v1.yaml).
+# Anclados a Transformaciones_estrategicas_5_frentes.md · '## 5. UC para la Vida' · líneas 104-121.
+transformacion: UC para la Vida
+version: 2.2
+temas:
+- id: condiciones_reconocimiento_personal
+  nombre: Estabilidad laboral, remuneración y reconocimiento del personal
+  componente: Desarrollo del talento humano
+  otros_componentes:
+  - Gestores del Conocimiento y el Aprendizaje
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (estabilidad laboral, contratación y remuneración de docentes y administrativos; reconocimiento y valoración de los docentes (Gestores del Conocimiento)).
+    Ancla: componente ''Desarrollo del talento humano''; también toca: Gestores del Conocimiento y el Aprendizaje.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: estabilidad laboral, contratación y remuneración de docentes y administrativos; reconocimiento y valoración de los docentes (Gestores
+    del Conocimiento)?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Estabilidad laboral, contratación y remuneración de docentes y administrativos: menciona estabilidad laboral o económica, contratación, contratos
+    de 12 meses, concurso o planta docente, carga de trabajo equilibrada, salario o remuneración, reconocimiento económico o condiciones laborales del personal. (2) Reconocimiento y valoración de los docentes
+    (Gestores del Conocimiento): menciona sentirse valorado o reconocido como docente o gestor, el aprecio por su dedicación, que su trabajo deje huella en los estudiantes, o que no se les vea solo como
+    un indicador.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita. El empleo de estudiantes o egresados no cuenta.
+  ejemplos_si:
+  - Brindar estabilidad laboral y carga equilibrada para contribuir a la calidad de vida de los gestores del conocimiento
+  - sentirme valorado tanto en el ámbito profesional como en el personal
+  fusiona_v1:
+  - condiciones_laborales_personal
+  - reconocimiento_docentes
+- id: formacion_crecimiento_personal_u
+  nombre: Formación y crecimiento profesional del personal
+  componente: Desarrollo del talento humano
+  justificacion: 'Componente ''Desarrollo del talento humano'': capacitación, planes de crecimiento profesional y oportunidades de estudio para docentes y administrativos.'
+  critico: false
+  instruccion: ¿El `comentario` pide capacitación, formación, estudio o crecimiento profesional para los docentes o administrativos?
+  criterio_true: Menciona capacitación, formación o estudio para el personal, planes de crecimiento profesional, desarrollo académico o profesional de los docentes, o fortalecimiento del talento humano.
+  criterio_false: No habla de formar al personal de la universidad. La formación de los estudiantes no cuenta.
+  ejemplos_si:
+  - Más capacitación para administrativos
+  - Que se generen planes de crecimiento profesional orientados a la comunidad administrativa
+- id: bienestar_apoyos
+  nombre: Bienestar, felicidad y apoyos socioeconómicos
+  componente: Felicidad y bienestar
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (bienestar, felicidad y calidad de vida de la comunidad; apoyos socioeconómicos (matrícula cero, alimentación, ayudas)). Ancla: componente ''Felicidad
+    y bienestar''.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: bienestar, felicidad y calidad de vida de la comunidad; apoyos socioeconómicos (matrícula cero, alimentación, ayudas)?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Bienestar, felicidad y calidad de vida de la comunidad: menciona bienestar universitario o docente, felicidad, calidad de vida, estabilidad
+    emocional, espacios deportivos o de esparcimiento, o ser incluidos en las actividades de bienestar. (2) Apoyos socioeconómicos (matrícula cero, alimentación, ayudas): menciona matrícula cero, ayuda
+    o apoyo económico, alimentación, apoyos para estudiar, o incentivar la educación pública.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Mayor apoyo por parte de bienestar universitario
+  - Una forma para mejorar su futuro gracias a la matrícula cero
+  fusiona_v1:
+  - bienestar_felicidad
+  - apoyos_socioeconomicos
+- id: ensenanza_condiciones_aprendizaje
+  nombre: 'Enseñanza y condiciones para aprender: prácticas, salidas, recursos y modelo educativo'
+  componente: condiciones que favorezcan el aprendizaje
+  otros_componentes:
+  - Gestores del Conocimiento y el Aprendizaje
+  justificacion: 'Fusión de 3 temas afines de la versión 1 (prácticas, salidas pedagógicas y experiencias de campo; recursos, laboratorios y tecnología para aprender; modelo educativo (MEDIT) y forma de
+    enseñar). Ancla: componente ''condiciones que favorezcan el aprendizaje''; también toca: Gestores del Conocimiento y el Aprendizaje.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: prácticas, salidas pedagógicas y experiencias de campo; recursos, laboratorios y tecnología para aprender; modelo educativo (MEDIT)
+    y forma de enseñar?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Prácticas, salidas pedagógicas y experiencias de campo: menciona prácticas, convenios de práctica, salidas pedagógicas, académicas o de campo,
+    experiencias de campo, acercamiento a la vida real de la carrera, o más práctica y no esperar al último semestre. (2) Recursos, laboratorios y tecnología para aprender: menciona laboratorios, elementos
+    o materiales, internet, recursos electrónicos, calidad del aprendizaje, nuevas tecnologías, o ajustar la digitalización frente a la presencialidad. (3) Modelo educativo (MEDIT) y forma de enseñar: menciona
+    el MEDIT, la cocreación, la evaluación del aprendizaje, docentes o gestores a la vanguardia, o actividades que hagan el conocimiento divertido.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita. Pedir empleo al graduarse sin mencionar prácticas no cuenta.
+  ejemplos_si:
+  - MÁS PRÁCTICA DURANTE LA CARRERA CON LA VIDA LABORAL REAL
+  - Aportes en internet, materiales, recursos electrónicos y calidad de aprendizaje
+  - Dominar el Medit desde los GCA y los creadores logrando concretar la cocreación
+  fusiona_v1:
+  - practicas_salidas
+  - recursos_tecnologia
+  - modelo_educativo_ensenanza
+- id: empleabilidad_emprendimiento
+  nombre: Empleabilidad, vínculos con empresas y emprendimiento
+  componente: Creadores de Oportunidades
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (empleabilidad y vínculos con empresas; emprendimiento y visibilidad de proyectos). Ancla: componente ''Creadores de Oportunidades''.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: empleabilidad y vínculos con empresas; emprendimiento y visibilidad de proyectos?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Empleabilidad y vínculos con empresas: menciona trabajo, inclusión o vinculación laboral, mercado laboral, convenios o alianzas con empresas,
+    llegada de empresas, integración en empresas, hoja de vida, oportunidades al graduarse o éxito profesional. (2) Emprendimiento y visibilidad de proyectos: menciona emprendimiento, crear su propio emprendimiento,
+    visibilidad de proyectos, proyectos para la vida real o visibilizar la investigación y la tecnología de los programas.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita. Las condiciones del personal de la universidad no cuentan.
+  ejemplos_si:
+  - la universidad necesita implementar convenios con empresas
+  - la opción de poder crear uno mismo su emprendimiento
+  fusiona_v1:
+  - empleabilidad_empresas
+  - emprendimiento_proyectos
+- id: crecimiento_personal_formacion_integral
+  nombre: Crecimiento personal y formación integral
+  componente: Persona Transhumana
+  justificacion: 'Componente ''Persona Transhumana'': crecer como persona, salir de la zona de confort, formación social e integral, proyecto de vida y descubrir el propio talento.'
+  critico: false
+  instruccion: ¿El `comentario` habla del crecimiento o la transformación personal, la formación integral o social, o de formar mejores personas además de profesionales?
+  criterio_true: Menciona crecer o transformarse personalmente, responsabilidad, salir de la zona de confort, formación integral o social, mejores personas, encontrar el propio talento, superar barreras,
+    realizar objetivos o la Persona Transhumana.
+  criterio_false: Solo habla de empleo, prácticas, salario o recursos, sin referirse al crecimiento de la persona.
+  ejemplos_si:
+  - permite crecer tanto académicamente como personalmente
+  - que no nos ven como solo estudiantes sino que forman profesionales y mejores personas
+- id: convivencia_participacion
+  nombre: Convivencia, integración y participación
+  componente: Convivencia
+  otros_componentes:
+  - Valores democráticos
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (convivencia, integración y relaciones interpersonales; participación y tiempo para participar). Ancla: componente ''Convivencia''; también toca:
+    Valores democráticos.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: convivencia, integración y relaciones interpersonales; participación y tiempo para participar?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Convivencia, integración y relaciones interpersonales: menciona unión, integración, trabajo en equipo, relaciones interpersonales o sociales,
+    conocer personas, o actividades de integración para estudiantes o personal. (2) Participación y tiempo para participar: menciona la participación, que no sea tan corto el tiempo para tratar estos temas,
+    o los horarios de las actividades para poder participar.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - La union
+  - La participación
+  fusiona_v1:
+  - convivencia_integracion
+  - participacion
+- id: ajustes_enfoque
+  nombre: Ajustes al enfoque de la transformación
+  componente: transformacion_en_general
+  justificacion: 'Comentarios sobre la transformación como un todo: incluir el frente ambiental, enfocar la felicidad en la valoración de la persona y medir la calidad de vida.'
+  critico: false
+  instruccion: ¿El `comentario` propone de forma explícita cambiar el planteamiento o los conceptos de la transformación misma (no pedir acciones concretas)?
+  criterio_true: 'Propone explícitamente modificar el enfoque o los conceptos de la transformación: agregar un nuevo frente o a otros actores (familia, administrativos), redefinir la felicidad o la Persona
+    Transhumana, o exigir que el discurso de la transformación se traduzca en condiciones reales.'
+  criterio_false: Pide acciones concretas (bienestar, contratos, salario, prácticas, herramientas, recursos, formación) sin cuestionar el planteamiento de la transformación. Describir experiencias, valorar
+    la universidad o una sola palabra sin contexto tampoco cuentan.
+  ejemplos_si:
+  - propondríamos la inclusión del frente ambiental
+  - La felicidad y bienestar esta bien pero necesita enfocarse mas en la valoración
+- id: conformidad
+  nombre: Conformidad y valoración positiva (sin ajustes)
+  componente: transformacion_en_general
+  justificacion: 'Comentarios sobre la transformación como un todo: consideran que se ajusta, no proponen cambios o valoran lo que la universidad ya hace.'
+  critico: false
+  instruccion: El `comentario` responde a la pregunta '¿Qué ajustaría en esta transformación?'. ¿Responde que no ajustaría nada o que está de acuerdo con la transformación tal como está?
+  criterio_true: 'Responde que no ajustaría nada o que está de acuerdo, aunque sea con pocas palabras: ''nada'', ''ninguno'', ''ninguna, está perfecta'', ''no se me ocurre nada'', ''no hay nada en particular'',
+    ''consideramos que sí se ajusta'', ''así como se planteó está bien''; o solo agradece o valora la transformación, sin pedir ningún cambio.'
+  criterio_false: Pide, propone o menciona cualquier ajuste o cosa por mejorar o fortalecer (contratos, bienestar, prácticas, empleo, recursos, etc.), aunque empiece con 'nada' o elogie la transformación.
+    Describir experiencias o lo que aporta la universidad sin decir que no ajustaría nada o que está de acuerdo tampoco cuenta.
+  ejemplos_si:
+  - Consideramos que si se ajusta
+  - No hay nada en particular
+- id: otros_fuera
+  nombre: Otros asuntos fuera de la transformación
+  componente: fuera_de_la_transformacion
+  justificacion: 'Asuntos sin anclaje en la sección de UC para la Vida del documento marco, cada uno con menos del 10 % de los comentarios; se agrupan en un solo tema (versión 2). Incluye: intercambio y
+    experiencia internacional; vínculo con el territorio y la comunidad.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC para la Vida: intercambio y experiencia internacional; vínculo con el territorio y la comunidad?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Intercambio y experiencia internacional: menciona intercambio, movilidad académica, experiencia internacional o con otras universidades nacionales
+    o internacionales. (2) Vínculo con el territorio y la comunidad: menciona el territorio, el municipio, lo translocal, la comunidad, la sociedad o el desarrollo del entorno.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Intercambios con otras universidades nacionales e internacionales
+  - el tema trans local que articula la academia con la comunidad
+  fusiona_v1:
+  - internacionalizacion
+  - territorio_comunidad
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?

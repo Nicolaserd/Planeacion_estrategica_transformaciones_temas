@@ -1,0 +1,67 @@
+# Temas v2 de Zipaquirá · UC Translocal (lista propia de esta unidad).
+# Versión 2: menos temas (máx. 10) por fusión de los de la versión 1 (respaldada en temas_v1.yaml).
+# Anclados a Transformaciones_estrategicas_5_frentes.md · '## 2. UC Translocal' · líneas 46-62.
+transformacion: UC Translocal
+version: 2
+temas:
+- id: identidad_cultural_musical
+  nombre: Identidad cultural y musical del territorio
+  componente: Identidad translocal
+  justificacion: 'Componente ''Identidad translocal'': dar relevancia a la música y el folclor, recopilar músicas tradicionales, sentido de pertenencia y autonomía de cada territorio sin fragmentar la universidad.'
+  critico: false
+  instruccion: ¿El `comentario` habla de la identidad cultural, la música, el folclor o la autonomía e identidad de cada territorio?
+  criterio_true: Menciona identidad cultural o territorial, música, folclor, músicas tradicionales, agrupaciones representativas, sentido de pertenencia, o identidad y autonomía de cada territorio.
+  criterio_false: No habla de identidad, cultura ni música.
+  ejemplos_si:
+  - Desarrollar una recopilación de músicas tradicionales a nivel regional como identidad del territorio
+  - Identidad cultural Sentido de pertenencia
+- id: red_conocimiento_investigacion
+  nombre: Red de conocimiento entre sedes, redes académicas e investigación compartida
+  componente: Redes y cooperación
+  otros_componentes:
+  - Ciencia, tecnología e innovación
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (red de conocimiento entre sedes y redes académicas; investigación, innovación y semilleros compartidos). Ancla: componente ''Redes y cooperación'';
+    también toca: Ciencia, tecnología e innovación.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: red de conocimiento entre sedes y redes académicas; investigación, innovación y semilleros compartidos?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Red de conocimiento entre sedes y redes académicas: menciona red de conocimiento, conectar o articular sedes o extensiones, interacción con
+    otras seccionales, convenios, redes de cooperación o redes académicas. (2) Investigación, innovación y semilleros compartidos: menciona investigación, innovación o semilleros de investigación.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - empezar a entender la UdeC como una red de conocimiento
+  - apoyar los procesos de aprendizaje como la investigación, innovación y enseñanza
+  fusiona_v1:
+  - red_sedes_redes_academicas
+  - investigacion_semilleros
+- id: apertura_internacional
+  nombre: Apertura al mundo e internacionalización (tan local como universal)
+  componente: Internacionalización
+  justificacion: 'Componente ''Internacionalización'': internacionalizar los procesos formativos y abrirse al mundo; algunos grupos señalan que el concepto de identidad translocal es ambiguo y que no debe
+    limitarse a Cundinamarca.'
+  critico: false
+  instruccion: ¿El `comentario` pide internacionalizar o abrirse al mundo, o cuestiona que la transformación se limite a lo local?
+  criterio_true: Menciona internacionalizar, abrirse al mundo, ser tan local como universal, no limitarse a Cundinamarca o lo local, o que el concepto de identidad o de lo propio es ambiguo.
+  criterio_false: No habla de lo internacional ni de la apertura al mundo.
+  ejemplos_si:
+  - en nuestra área se debe pensar en internacionalizar los procesos formativos
+  - Se tiene que ser tan local como universal
+- id: artes_divulgacion
+  nombre: Facultad de artes, escuelas artísticas y divulgación de los programas
+  componente: Formación y aprendizaje
+  otros_componentes:
+  - proyección de la Universidad
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (facultad de artes y vínculo con las escuelas artísticas; visibilidad y divulgación de los programas en el territorio). Ancla: componente ''Formación
+    y aprendizaje''; también toca: proyección de la Universidad.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: facultad de artes y vínculo con las escuelas artísticas; visibilidad y divulgación de los programas en el territorio?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Facultad de artes y vínculo con las escuelas artísticas: menciona facultad de artes, conservatorio, danza, teatro, artes plásticas o escuelas
+    de formación artística. (2) Visibilidad y divulgación de los programas en el territorio: menciona visibilidad, divulgación o dar a conocer los programas, carreras u oportunidades de la universidad en
+    el territorio.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita.
+  ejemplos_si:
+  - Constituir la facultad de artes
+  - Buscar más visibilidad de las oportunidades y carreras que ofrece la universidad
+  fusiona_v1:
+  - facultad_artes
+  - visibilidad_programas
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?

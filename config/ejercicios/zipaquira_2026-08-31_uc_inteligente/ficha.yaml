@@ -1,0 +1,59 @@
+slug: zipaquira_2026-08-31_uc_inteligente
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_.
+  (UC INTELIGENTE)(1-589) (1).xlsx
+sha256_archivo: f686c38a876dd0da2ecf472c82dd4027460dbff8feec7503ad6a03b62d86fdcc
+transformacion:
+  id: T1
+  nombre_oficial: UC Inteligente
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 1. UC Inteligente' · líneas 26-42
+unidad: Zipaquirá
+fechas:
+- '2026-08-31'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 21
+N_s: 21
+textos_unicos: 21
+excluidos: {}
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 21
+  n_muestra_requerida: 20.0
+  fraccion: 0.951
+  protocolo: B_censo
+informe_filtro:
+  filas: 21
+  unidades_que_coinciden:
+  - Extensión Zipaquirá
+  transformacion_vacia_asumida: 1
+  fuera_de_fecha_no_incluidas:
+  - ID: 412
+    fecha: '2026-09-22'
+  - ID: 413
+    fecha: '2026-09-22'
+  - ID: 414
+    fecha: '2026-09-22'
+  - ID: 415
+    fecha: '2026-09-22'
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Zipaquira_2026-08-31_UC_Inteligente.xlsx
+  clasificacion: Clasificacion_Zipaquira_2026-08-31_UC_Inteligente.xlsx
+  hoja: Zipaquirá 31 ago 2026
+preparado: '2026-10-01'

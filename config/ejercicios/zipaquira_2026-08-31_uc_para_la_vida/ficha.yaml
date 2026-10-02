@@ -1,0 +1,60 @@
+slug: zipaquira_2026-08-31_uc_para_la_vida
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\experiencia_uc_para_la_vida.xlsx
+sha256_archivo: 8c88a892a5ca9ff1d6ea8fc93792c520a4ab9581eccac5a6a165560bc8fdbf0f
+transformacion:
+  id: T5
+  nombre_oficial: UC para la Vida
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 5. UC para la Vida' · líneas 104-121
+unidad: Zipaquirá
+fechas:
+- '2026-08-31'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 20
+N_s: 20
+textos_unicos: 20
+excluidos: {}
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 20
+  n_muestra_requerida: 19.1
+  fraccion: 0.953
+  protocolo: B_censo
+informe_filtro:
+  filas: 20
+  unidades_que_coinciden:
+  - Extensión Zipaquirá
+  transformacion_vacia_asumida: 0
+  fuera_de_fecha_no_incluidas:
+  - ID: 423
+    fecha: '2026-09-22'
+  - ID: 424
+    fecha: '2026-09-22'
+  - ID: 425
+    fecha: '2026-09-22'
+  - ID: 426
+    fecha: '2026-09-22'
+  - ID: 427
+    fecha: '2026-09-22'
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Zipaquira_2026-08-31_UC_para_la_Vida.xlsx
+  clasificacion: Clasificacion_Zipaquira_2026-08-31_UC_para_la_Vida.xlsx
+  hoja: Zipaquirá 31 ago 2026
+preparado: '2026-10-01'

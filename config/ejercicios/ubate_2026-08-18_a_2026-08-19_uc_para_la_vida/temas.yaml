@@ -1,0 +1,146 @@
+# Temas v2 de Ubaté · UC para la Vida (lista propia de esta unidad).
+# Versión 2: menos temas (máx. 10) por fusión de los de la versión 1 (respaldada en temas_v1.yaml).
+# Anclados a Transformaciones_estrategicas_5_frentes.md · '## 5. UC para la Vida' · líneas 104-121.
+transformacion: UC para la Vida
+version: 2.2
+temas:
+- id: empleabilidad_empresas_emprendimiento
+  nombre: Empleabilidad, vínculos con empresas y emprendimiento
+  componente: Creadores de Oportunidades
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (empleabilidad y proyección profesional de estudiantes y graduados; vínculos con empresas, emprendimiento e ideas propias). Ancla: componente ''Creadores
+    de Oportunidades''.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: empleabilidad y proyección profesional de estudiantes y graduados; vínculos con empresas, emprendimiento e ideas propias?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Empleabilidad y proyección profesional de estudiantes y graduados: menciona empleo, empleabilidad, vinculación o inclusión laboral, oportunidades
+    laborales o profesionales, asesoría para conseguir trabajo, redes de graduados para el empleo, o más énfasis en el ámbito o la realidad laboral. (2) Vínculos con empresas, emprendimiento e ideas propias:
+    menciona acercarse a empresas, conexiones con empresas del sector, impactar al sector o al mercado real, gestionar proyectos con actores de fuera de la universidad, emprender, innovar o impulsar ideas
+    o iniciativas propias.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita. No cuenta si habla del salario, la estabilidad o las condiciones de trabajo del personal de la universidad.
+  ejemplos_si:
+  - la vinculación laboral al momento de terminar la carrera
+  - Como grupo nos gustaría que la universidad impulsará las ideas personales
+  fusiona_v1:
+  - empleabilidad_proyeccion_profesional
+  - vinculos_empresas_emprendimiento
+- id: practicas_calidad_academica
+  nombre: Prácticas, aprendizaje aplicado y calidad académica
+  componente: condiciones que favorezcan el aprendizaje
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (prácticas y aprendizaje aplicado a la realidad; calidad y exigencia académica). Ancla: componente ''condiciones que favorezcan el aprendizaje''.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: prácticas y aprendizaje aplicado a la realidad; calidad y exigencia académica?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Prácticas y aprendizaje aplicado a la realidad: menciona prácticas, pasantías, convenios de prácticas, experiencias en campo o reales, aplicar
+    lo aprendido, espacios o entornos prácticos, o que la carrera sea más práctica y no solo teórica. (2) Calidad y exigencia académica: menciona educación de alta calidad, más exigencia académica, mejor
+    nivel académico o actualizar la formación al contexto.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita. Pedir empleo al graduarse sin mencionar prácticas, formación práctica o calidad no cuenta; tampoco recordar o valorar experiencias que
+    la universidad ya dio, ni la mejora de procesos administrativos.
+  ejemplos_si:
+  - Que sea más práctica la carrera para poner en práctica los conocimientos
+  - Educación de alta calidad con experiencia innovadoras
+  fusiona_v1:
+  - practicas_aprendizaje_aplicado
+  - calidad_academica
+- id: formacion_integral_persona
+  nombre: Formación integral y desarrollo de la persona
+  componente: Persona Transhumana
+  justificacion: 'Componente ''Persona Transhumana'' y ''Qué busca'': ''la formación de la Persona Transhumana''. Los grupos piden formar a la persona más allá de lo profesional.'
+  critico: false
+  instruccion: ¿El `comentario` pide o valora expresamente formar o desarrollar a la persona más allá de lo profesional (crecimiento personal o humano, formación integral, proyecto de vida, formar personas
+    autónomas)?
+  criterio_true: Menciona expresamente desarrollo o crecimiento personal o humano, formación integral o más allá de lo profesional, formar personas autónomas, transformar a la persona o el ser, el proyecto
+    de vida, o cómo la universidad cambió la vida de alguien como persona.
+  criterio_false: No se refiere al desarrollo de la persona. Pedir experiencias reales, prácticas, bienestar, salud mental, convivencia o sentido de pertenencia no cuenta (tienen su propio tema); tampoco
+    mencionar 'experiencias' o 'transformar' sin hablar del desarrollo de la persona.
+  ejemplos_si:
+  - Que forme también personas autónomas
+  - Haber vivido experiencias que transformaron su ser y su criterio propio
+- id: bienestar_salud_mental
+  nombre: Bienestar, salud mental y acompañamiento
+  componente: Felicidad y bienestar
+  justificacion: 'Componente ''Felicidad y bienestar'' y ''Qué busca'': ''el bienestar de la comunidad universitaria''.'
+  critico: false
+  instruccion: ¿El `comentario` pide o menciona el bienestar universitario, la salud mental o emocional, o el acompañamiento a las personas?
+  criterio_true: Menciona bienestar, programas de bienestar universitario, salud mental o emocional, lo emocional, prevención, acompañamiento a estudiantes o a la comunidad, o que se tenga en cuenta el
+    bienestar de todos.
+  criterio_false: No menciona bienestar, salud mental ni acompañamiento. Hablar solo de salario o estabilidad laboral no cuenta aquí.
+  ejemplos_si:
+  - bienestar más preventivo sobretodo salud mental
+  - Socialización programas de bienestar universitario
+- id: convivencia_participacion
+  nombre: Convivencia, comunidad, participación y comunicación
+  componente: Convivencia
+  otros_componentes:
+  - Valores democráticos
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (convivencia, comunidad y sentido de pertenencia; participación, escucha y comunicación en la comunidad). Ancla: componente ''Convivencia''; también
+    toca: Valores democráticos.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: convivencia, comunidad y sentido de pertenencia; participación, escucha y comunicación en la comunidad?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Convivencia, comunidad y sentido de pertenencia: menciona convivencia, convivir, compartir con otras personas, conocer personas, sentirse parte
+    de una comunidad, sentido de pertenencia, reconocer las diferencias, o pensar en la comunidad y no solo en el individuo. (2) Participación, escucha y comunicación en la comunidad: menciona participar
+    o aportar en la retroalimentación o en las decisiones, escuchar y valorar las ideas del personal o de la comunidad, buena comunicación entre la comunidad educativa, comunicación interna, o espacios
+    de interacción y comunicación.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita. Las redes de contactos para conseguir empleo no cuentan. Difundir los programas de bienestar no basta.
+  ejemplos_si:
+  - Reconocerse en el otro y sentirse parte de una comunidad
+  - Escuchar y valorar al personal administrativo, haciendo que sus ideas aporten a las decisiones
+  fusiona_v1:
+  - convivencia_comunidad
+  - participacion_comunicacion
+- id: condiciones_formacion_personal
+  nombre: Condiciones laborales y formación continua del personal
+  componente: Desarrollo del talento humano
+  justificacion: 'Fusión de 2 temas afines de la versión 1 (condiciones laborales y reconocimiento del personal administrativo; formación continua del personal y los graduados). Ancla: componente ''Desarrollo
+    del talento humano''.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos: condiciones laborales y reconocimiento del personal administrativo; formación continua del personal y los graduados?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Condiciones laborales y reconocimiento del personal administrativo: menciona estabilidad laboral, nombramiento o carrera administrativa, nivelación
+    salarial, salario emocional, beneficios, estabilidad económica, o que se tenga en cuenta o no se olvide a los administrativos. (2) Formación continua del personal y los graduados: menciona capacitar
+    o formar al personal administrativo o docente, posgrados o maestrías para el personal, actualización profesional, mentorías, o procesos de formación y crecimiento continuo.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita. Las oportunidades de empleo para estudiantes o graduados no cuentan; tampoco la formación de los estudiantes durante su carrera.
+  ejemplos_si:
+  - mejorar la estabilidad laboral en plantas y mejorar la nivelación salarial de los administrativos
+  - Fomentar la formación profesional del personal administrativo
+  fusiona_v1:
+  - condiciones_laborales_personal
+  - formacion_continua_personal
+- id: conceptos_transformacion
+  nombre: Ajustes a los conceptos de la transformación (felicidad, Persona Transhumana)
+  componente: Persona Transhumana
+  justificacion: 'Comentarios sobre el enunciado mismo de UC para la Vida: aterrizar la ''Persona Transhumana'' y la ''felicidad'', e incluir la comunidad y la familia. Insumo directo para revisar la redacción.'
+  critico: false
+  instruccion: ¿El `comentario` propone cambiar, ampliar o aterrizar los conceptos o principios de la transformación, como la felicidad, la Persona Transhumana o el desarrollo personal?
+  criterio_true: Propone ajustar un concepto (por ejemplo, la felicidad), agregar una temática, incluir la comunidad o la familia además de la persona, o que los principios sean aplicables a la vida real.
+  criterio_false: Pide acciones concretas de la universidad (prácticas, bienestar, empleo) sin referirse a los conceptos o principios de la transformación.
+  ejemplos_si:
+  - Ajustar el concepto de felicidad, enmacarlo a los logros y éxito de la ruta desde lo personal
+  - Los principios que se mencionan en la transformación son buenos pero lo ideal es que estos sean aplicables a la vida real
+- id: idiomas_movilidad
+  nombre: Segunda lengua, movilidad y alianzas académicas
+  componente: fuera_de_la_transformacion
+  justificacion: No figura en la sección de UC para la Vida; el documento lo ubica en UC Translocal ('Internacionalización', 'Redes y cooperación').
+  critico: false
+  instruccion: ¿El `comentario` pide aprender una segunda lengua o idiomas, movilidad nacional o internacional, o alianzas con otras universidades o instituciones?
+  criterio_true: Menciona segundo idioma, segunda lengua, inglés u otros idiomas, movilidad o intercambio nacional o internacional, relaciones o convenios con otras instituciones académicas, o alianzas
+    para acceder a posgrados.
+  criterio_false: No menciona idiomas, movilidad ni alianzas con otras instituciones. Los convenios de prácticas con empresas no cuentan.
+  ejemplos_si:
+  - Segundo idioma obligatorio
+  - oportunidades en movilidad nacional e internacional
+- id: otros_fuera
+  nombre: Otros asuntos fuera de la transformación
+  componente: fuera_de_la_transformacion
+  justificacion: 'Asuntos sin anclaje en la sección de UC para la Vida del documento marco, cada uno con menos del 10 % de los comentarios; se agrupan en un solo tema (versión 2). Incluye: pertinencia de
+    la formación para la región; tecnología, digitalización y mejora de procesos.'
+  critico: false
+  instruccion: '¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC para la Vida: pertinencia de la formación para la región; tecnología, digitalización y mejora de procesos?'
+  criterio_true: 'Se cumple con cualquiera de estos casos. (1) Pertinencia de la formación para la región: menciona la región, el territorio, el municipio o sus problemáticas reales en relación con lo que
+    se enseña, se investiga o las carreras que se ofrecen; por ejemplo, transformar el territorio con el conocimiento o evitar que sobren egresados de una carrera en la región. (2) Tecnología, digitalización
+    y mejora de procesos: menciona nuevas tecnologías, mejoras en temas tecnológicos, digitalizar o simplificar procesos y trámites, reducir tareas repetitivas, o la mejora continua de los procesos.'
+  criterio_false: No cumple ninguno de esos casos de forma explícita. Para la región, hablar de la 'realidad laboral' o del 'mundo real' sin referirse a la región no cuenta; para la tecnología, mencionar
+    'una pantalla' solo para pedir experiencias presenciales no cuenta.
+  ejemplos_si:
+  - aplicada a las problemáticas reales de la región
+  - Mejora continua en cada uno de los procesos
+  fusiona_v1:
+  - pertinencia_territorial
+  - tecnologia_procesos
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?
