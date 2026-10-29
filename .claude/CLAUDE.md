@@ -12,7 +12,7 @@ Necesitas cuatro datos: **archivo** (.xlsx de Forms en `data/raw/`), **transform
 
 | Paso | Qué hacer | Detalle |
 |---|---|---|
-| 1 | `python src/ejercicio.py preparar --archivo … --transformacion "…" --unidad "…" --fechas …` | `01_procedimiento.md` |
+| 1 | `python src/ejercicio.py preparar --archivo … --transformacion "…" --unidad "…" --fechas …` y después `python scripts/revisar_nombres.py <slug>` (debe dar 0) | `01_procedimiento.md`, `05_privacidad.md` |
 | 2 | Leer **todos** los comentarios anonimizados, definir los temas y codificar cada comentario | `02_temas.md` |
 | 3 | `python src/ejercicio.py validar --ejercicio <slug>`, y corregir hasta que pase | `02_temas.md` |
 | 4 | `python src/ejercicio.py clasificar --ejercicio <slug>` | `03_jev.md` |
@@ -21,6 +21,12 @@ Necesitas cuatro datos: **archivo** (.xlsx de Forms en `data/raw/`), **transform
 | 7 | Reportar a Nicolás: archivos, temas por componente (n y %), temas fuera de la transformación, componentes sin comentarios, filas fuera de fecha y costo | `01_procedimiento.md` |
 
 Usa siempre `.venv\Scripts\python.exe`. Para varios ejercicios a la vez: `python scripts/lote.py validar|clasificar|exportar|verificar [filtro]`.
+
+**Formulario general "UCundinamarca"** ("Comparte aquí tu aporte"). No es de una transformación y se procesa como un solo ejercicio de todas las unidades y fechas:
+```
+python src/ejercicio.py preparar --archivo <xlsx UCUNDINAMARCA> --transformacion "UCundinamarca" --unidad "Todas" --fechas todas --columna-comentario "Comparte aquí tu aporte:"
+```
+Sus temas se anclan a una de las 5 transformaciones: el `componente` es el nombre de la transformación.
 
 ## Reglas que nunca se rompen
 
@@ -39,7 +45,8 @@ Usa siempre `.venv\Scripts\python.exe`. Para varios ejercicios a la vez: `python
   - el Excel de clasificación es solo para uso local; lo que se comparte o publica es su copia `…_anonimizado.xlsx`.
 - **Clave de TypeSafe:** se lee de `.env` y nunca se imprime.
 - **Modelo fijo:** `jev-1.13.0` (`config/params.yaml`), nunca `jev-latest`.
-- **No borres nada sin confirmar.** Antes de regenerar con temas distintos, respalda los Excel en `outputs/<transformación>/version_N/`.
+- **No borres nada sin confirmar.** En `outputs/` solo queda lo definitivo (decisión de Nicolás, 2026-10-29: se borraron las carpetas `version_1/`). Si vas a regenerar un ejercicio con temas distintos, pregúntale antes si quiere conservar la versión anterior.
+- **Revisa nombres antes de clasificar.** La anonimización automática no reconoce todos los nombres; ya aparecieron firmas y encabezados de WhatsApp. Corre `scripts/revisar_nombres.py` después de cada `preparar`.
 - **Bitácora:** registra cada decisión de Nicolás en `logs/<slug>/decisiones.md`, y las generales en `logs/decisiones.md`.
 
 ## Git y la carpeta `.claude/` (hooks)

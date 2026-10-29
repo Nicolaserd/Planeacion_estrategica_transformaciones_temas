@@ -1,0 +1,56 @@
+slug: facatativa_2026-10-26_a_2026-10-27_uc_inteligente
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_.
+  (UC INTELIGENTE)(1-757).xlsx
+sha256_archivo: 9bbf16a1e15595d7cfade6d3812c3bcdf2d300aee9db9d7794c098a9f9e31356
+transformacion:
+  id: T1
+  nombre_oficial: UC Inteligente
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 1. UC Inteligente' · líneas 26-42
+unidad: Facatativá
+fechas:
+- '2026-10-26'
+- '2026-10-27'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 114
+N_s: 104
+textos_unicos: 104
+excluidos:
+  solo_signos_o_numeros: 4
+  no_respuesta: 3
+  menos_de_3_letras: 2
+  vacio: 1
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 104
+  n_muestra_requerida: 82.0
+  fraccion: 0.789
+  protocolo: B_censo
+informe_filtro:
+  filas: 114
+  unidades_que_coinciden:
+  - Extensión Facatativá
+  transformacion_vacia_asumida: 12
+  fuera_de_fecha_no_incluidas: []
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Facatativa_2026-10-26_a_2026-10-27_UC_Inteligente.xlsx
+  clasificacion: Clasificacion_Facatativa_2026-10-26_a_2026-10-27_UC_Inteligente.xlsx
+  hoja: Facatativá 26-27 oct 2026
+preparado: '2026-10-29'

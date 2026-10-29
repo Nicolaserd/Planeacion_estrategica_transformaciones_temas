@@ -2,16 +2,19 @@
 
 ## Dónde y cómo se nombran
 
-- **Carpeta:** `outputs/<nombre oficial de la transformación>/`, por ejemplo `outputs/UC para la Vida/`. `exportar` la crea si no existe.
+- **Carpeta:** `outputs/<nombre oficial de la transformación>/`, por ejemplo `outputs/UC para la Vida/`. El formulario general va en `outputs/UCundinamarca/`. `exportar` la crea si no existe.
 - **Nombres:**
   - `Temas_<Unidad>_<fechas>_<Transformacion>.xlsx`
   - `Clasificacion_<Unidad>_<fechas>_<Transformacion>.xlsx`
 
   El nombre va sin tildes y con guiones bajos, por ejemplo `Temas_Ubate_2026-08-18_a_2026-08-19_UC_para_la_Vida.xlsx`. Las fechas son las que dio Nicolás: `AAAA-MM-DD_a_AAAA-MM-DD`, o una sola fecha.
-- **Versiones anteriores:** en `outputs/<transformación>/version_N/`, con los mismos nombres.
-  - `version_1/` guarda la primera entrega: temas sin consolidar y "Otros temas" en una sola celda.
-  - Nunca se borran. Antes de regenerar un ejercicio con **otros temas**, copia sus Excel a `version_<N+1>/`.
-  - Si solo cambia el formato y los temas son los mismos, se puede sobrescribir.
+- **Solo lo definitivo.** En `outputs/` quedan únicamente los Excel vigentes (decisión de Nicolás, 2026-10-29). Las carpetas `version_1/` de la primera entrega se borraron, y sus temas siguen en `config/ejercicios/<ejercicio>/temas_v1.yaml`.
+  - Si solo cambia el formato y los temas son los mismos, se sobrescribe.
+  - Si cambian los temas, pregunta a Nicolás antes de sobrescribir.
+- **Por cada ejercicio hay tres archivos:**
+  - `Temas_…`;
+  - `Clasificacion_…`, que es local y tiene datos personales;
+  - `Clasificacion_…_anonimizado`, que se publica.
 
 ## Excel 1 · Temas (1 hoja, "Temas")
 

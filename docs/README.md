@@ -15,7 +15,9 @@ El proyecto toma esas respuestas por **unidad regional y fechas** y:
 
 Basta con decirle a Claude, en este proyecto, cuatro datos:
 
-> "Archivo: el de UC Digital en data/raw. Transformación: UC Digital. Unidad: Fusagasugá. Fechas: 28 de septiembre de 2026."
+> "Archivo: el de UC Digital en data/raw. Transformación: UC Digital. Unidad: Facatativá. Fechas: 26 y 27 de octubre de 2026."
+
+Si subes archivos nuevos a `data/raw/`, Claude revisa si cambian los ejercicios ya hechos y te pregunta las fechas de las unidades nuevas.
 
 Claude hace el resto con las reglas de `.claude/CLAUDE.md` y `.claude/rules/`, y al final reporta:
 - los temas, con el número de comentarios;
@@ -61,23 +63,27 @@ Otros valores posibles del tema principal:
 
 Junto a él está su **copia anonimizada**, `Clasificacion_…_anonimizado.xlsx`. Tiene las mismas columnas, pero Nombre y Correo aparecen como "[NOMBRE]" y "[CORREO]", y el comentario está anonimizado. Esa es la que se publica en GitHub y la que puedes compartir.
 
-### Versiones anteriores
+### Formulario general "UCundinamarca"
 
-`outputs/<transformación>/version_1/` guarda la primera entrega. Allí había más temas (hasta 19 por unidad) y los temas secundarios iban en una sola celda. No se borra.
+Las respuestas a "Comparte aquí tu aporte" (de todas las unidades) están en `outputs/UCundinamarca/`, con los mismos tres archivos. Cada tema se liga a una de las 5 transformaciones del Plan, al Plan en general o queda fuera de ellas. Para ver una sola sede, filtra la columna "Unidad Regional" en el Excel de clasificación.
 
-## Estado actual (2 de octubre de 2026)
+### Solo lo definitivo
+
+En `outputs/` solo están los Excel vigentes. La primera entrega (`version_1/`) se borró el 29 de octubre de 2026.
+
+## Estado actual (29 de octubre de 2026)
 
 Cada celda indica el número de temas y, entre paréntesis, los comentarios con contenido.
 
-| Transformación | Ubaté (18-19 ago) | Zipaquirá (31 ago) | Girardot (7-8 sep) | Soacha (14-15 sep) | Chía (21-22 sep) |
-|---|---|---|---|---|---|
-| UC Digital | 8 (56) | 6 (23) | 10 (118) | 10 (71) | 8 (93) |
-| UC Emprendedora e Innovadora | 8 (50) | 6 (21) | 9 (98) | 9 (75) | 9 (78) |
-| UC Inteligente | 9 (40) | 6 (21) | 10 (119) | 10 (76) | 10 (92) |
-| UC para la Vida | 9 (43) | 5 (20) | 10 (106) | 10 (77) | 10 (81) |
-| UC Translocal | 9 (42) | 4 (17) | 9 (117) | 8 (64) | 10 (86) |
+| Transformación | Ubaté (18-19 ago) | Zipaquirá (31 ago) | Girardot (7-8 sep) | Soacha (14-15 sep) | Chía (21-22 sep) | Fusagasugá (28 sep y 19 oct) | Facatativá (26-27 oct) |
+|---|---|---|---|---|---|---|---|
+| UC Digital | 8 (56) | 6 (23) | 10 (118) | 10 (71) | 8 (93) | 9 (169) | 9 (91) |
+| UC Emprendedora e Innovadora | 8 (50) | 6 (21) | 9 (98) | 9 (75) | 9 (78) | 10 (139) | 9 (84) |
+| UC Inteligente | 9 (40) | 6 (21) | 10 (119) | 10 (76) | 10 (92) | 10 (197) | 10 (104) |
+| UC para la Vida | 9 (43) | 5 (20) | 10 (106) | 10 (77) | 10 (81) | 9 (202) | 8 (82) |
+| UC Translocal | 9 (42) | 4 (17) | 9 (117) | 8 (64) | 10 (86) | 10 (220) | 9 (92) |
 
-Pendiente: **Fusagasugá (28 sep)**, en las cinco transformaciones.
+Formulario general **UCundinamarca**: 10 temas, con 157 aportes de todas las unidades (31 ago a 27 oct).
 
 ## Cómo leer los resultados con cuidado
 
@@ -103,9 +109,10 @@ config/params.yaml            Parámetros: modelo de Jev, umbral de 70 %, regla 
 config/ejercicios/<ejercicio>/  Ficha del ejercicio y lista de temas (temas.yaml; temas_v1.yaml = versión 1)
 logs/decisiones.md            Bitácora general del proyecto
 logs/<ejercicio>/             Bitácora del ejercicio y lectura de referencia (codificacion.jsonl)
-outputs/<transformación>/     Los Excel entregados (version_1/ = primera entrega)
+outputs/<transformación>/     Los Excel definitivos (outputs/UCundinamarca/ = formulario general)
 src/ejercicio.py              Programa principal: preparar, validar, clasificar y exportar
-scripts/                      Herramientas: lote.py (varios ejercicios) y revisar_jev.py (control de calidad)
+scripts/                      Herramientas: lote.py (varios ejercicios), revisar_jev.py (calidad de Jev),
+                              revisar_nombres.py (nombres sin anonimizar) y anonimizar_outputs.py
 tests/                        Pruebas automáticas
 cache/                        Respuestas de Jev guardadas (evitan pagar dos veces)
 ```

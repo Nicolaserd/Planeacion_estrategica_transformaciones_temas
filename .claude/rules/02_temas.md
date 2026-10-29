@@ -10,6 +10,7 @@ Los temas los defines tú (Claude) leyendo los comentarios, **nunca con palabras
    - `fuera_de_la_transformacion`: lo que no tiene anclaje en esa sección. Nunca se fuerza un anclaje.
    - `transformacion_en_general`: lo que se refiere a la transformación como un todo, como la conformidad ("ningún ajuste") o la claridad de sus conceptos.
 4. **Haz una lista nueva por cada unidad.** No reutilices los temas de otra unidad, ni siquiera dentro de la misma transformación.
+5. **Formulario general (UCundinamarca).** El `componente` es el nombre de una de las 5 transformaciones (por ejemplo `"UC Digital"`) o una frase literal del documento. `transformacion_en_general` se lee como "El Plan y la universidad en general", y `fuera_de_la_transformacion` como "Fuera de las 5 transformaciones". Allí, la valoración positiva del encuentro es un tema en sí.
 
 ## Cuántos temas (decisión de Nicolás, 2026-10-02; `validar` lo exige)
 
@@ -22,7 +23,7 @@ Los temas los defines tú (Claude) leyendo los comentarios, **nunca con palabras
 | Fuera de la transformación | **Un solo tema**, `id: otros_fuera` ("Otros asuntos fuera de la transformación"). Un asunto solo puede tener tema propio si reúne el **10 % de N_s** o más. |
 | Solapamiento | Si dos temas se solapan con Jaccard > 0,5 en tu codificación, fusiónalos |
 
-Con estas reglas, los 25 ejercicios de 2026 quedaron con entre 4 y 10 temas (212 en total, 342 antes de consolidar).
+Con estas reglas, los 36 ejercicios de 2026 quedaron con entre 4 y 10 temas. Los 25 primeros tenían 342 temas antes de consolidar y 212 después.
 
 ## Archivos que escribes
 
@@ -61,7 +62,11 @@ El "Qué incluye" del Excel de temas es el `criterio_true`, así que redáctalo 
   - Sin eso, Jev no reconoce "Ninguna, está perfecta" (p = 0,04).
 - **La `instruccion` debe cubrir lo mismo que el `criterio_true`.** Si la pregunta es más estrecha que el criterio, Jev se queda justo por debajo del 70 %.
 - **Pon las exclusiones en `criterio_false`** cuando dos temas se tocan, por ejemplo: "pedir solo dinero tiene su propio tema".
-- **"Menciona X" es literal para Jev.** Si basta con mencionarlo de paso, Jev lo asigna. Cuando importe, escribe "debe pedir o proponer X; mencionarlo de paso no basta".
+- **"Menciona X" es literal para Jev.** Si basta con mencionarlo de paso, Jev lo asigna. Cuando importe, escribe "debe pedir o proponer X; mencionarlo de paso no basta". Ejemplos:
+  - "procesos" en Facatativá · UC Inteligente: Jev 27 frente a 14 de la lectura;
+  - "tecnología" en UCundinamarca: Jev 28 frente a 15. Jev la asignaba ante cualquier mención del MEDIT, la plataforma o los datos.
+- **No te pases al endurecer.** Exigir una "afirmación explícita" en un tema concreto puede hundirlo: "procesos" bajó a 5 frente a 14. Prefiere la redacción normal más exclusiones explícitas hacia los temas vecinos.
+- **Los testimonios no son conformidad.** En UC para la Vida muchos grupos cuentan cómo la universidad les cambió la vida. La conformidad debe exigir que el comentario diga que no ajustaría nada o que está de acuerdo, y excluir los testimonios y agradecimientos. En Fusagasugá pasó de 42 a 12 (lectura: 18).
 
 ## Fusionar temas
 
@@ -69,7 +74,7 @@ El "Qué incluye" del Excel de temas es el `criterio_true`, así que redáctalo 
 - **Conserva en `criterio_false` las exclusiones de los temas originales que apunten a temas que siguen aparte.** En Soacha · UC Inteligente, sin "hablar solo de IA tiene su propio tema", "Tecnología e infraestructura" subió a 44 frente a 25 de la lectura.
 - Descarta las exclusiones que apuntaban a temas que quedaron dentro de la misma fusión.
 - Traslada la codificación: cada comentario recibe el tema nuevo que contiene a sus temas anteriores.
-- Antes de reemplazar una lista, guarda la anterior como `temas_vN.yaml` y `codificacion_vN.jsonl`, y los Excel en `outputs/<transformación>/version_N/`.
+- Antes de reemplazar una lista, guarda la anterior como `temas_vN.yaml` y `codificacion_vN.jsonl`. Sobre los Excel anteriores, pregunta a Nicolás: en `outputs/` solo queda lo definitivo.
 
 ## Modelo a seguir
 

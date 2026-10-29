@@ -1,0 +1,108 @@
+# Temas de Fusagasugá · 28 sep y 19 oct 2026 · UC Inteligente (lista propia de esta unidad).
+# Anclados a los componentes de "UC Inteligente" en contexto/Transformaciones_estrategicas_5_frentes.md.
+transformacion: UC Inteligente
+version: 2
+temas:
+  - id: anticipacion_decisiones_datos
+    nombre: "Anticiparse a los problemas y decidir con datos"
+    componente: "Inteligencia institucional"
+    otros_componentes: ["Gobierno y uso estratégico de los datos"]
+    justificacion: "Componentes 'Inteligencia institucional' y 'Gobierno y uso estratégico de los datos': anticipar y prevenir problemas, prepararse para riesgos y cambios, datos en tiempo real, unificados y sistematizados, modelos predictivos y decisiones informadas."
+    critico: false
+    instruccion: "¿El `comentario` pide que la universidad se anticipe o prevenga problemas, o que tome decisiones con base en datos, información o diagnósticos?"
+    criterio_true: "Menciona anticipar, anticiparse, prevenir, prepararse ante riesgos, desastres o cambios, detectar dificultades a tiempo, proactividad; o datos, información en tiempo real, unificar o sistematizar datos, modelos predictivos, diagnósticos, o tomar decisiones informadas, asertivas o basadas en datos o resultados."
+    criterio_false: "No habla de anticiparse ni de decidir con datos. Aprender de errores ya ocurridos, sin hablar de prevenir, tiene su propio tema; conocer los problemas del territorio también."
+    ejemplos_si: ["Sería una universidad capaz de anticiparse, no solo de reaccionar; de convertir los datos en decisiones", "toma de decisiones informada partir de la recolección de datos en los procesos"]
+
+  - id: calidad_mejora_reconocimiento
+    nombre: "Aprender de los errores, mejora continua, calidad y reconocimiento"
+    componente: "Calidad y mejora continua"
+    otros_componentes: ["Acreditación institucional"]
+    justificacion: "Componentes 'Calidad y mejora continua' y 'Acreditación institucional': reconocer y corregir errores, acciones de mejora, ruta de mejora continua, alta calidad, comparación con otras universidades, posicionamiento y reconocimiento del título."
+    critico: false
+    instruccion: "¿El `comentario` pide aprender de los errores, mejora continua o alta calidad, o más reconocimiento y posicionamiento de la universidad?"
+    criterio_true: "Menciona aprender de lo vivido o de los errores, reconocer o corregir errores, acciones de mejora, mejora continua o permanente, alta calidad, comparar sus métodos con otras universidades, o reconocimiento, posicionamiento, competitividad o mostrar los logros de la universidad."
+    criterio_false: "No habla de errores, mejora, calidad ni reconocimiento. Anticipar problemas futuros tiene su propio tema; mejorar procesos administrativos también."
+    ejemplos_si: ["Una ruta de mejora continua", "El hecho de que la Universidad reconozca los errores y problemas, y pueda solucionarlos, habla muy bien de ella"]
+
+  - id: inteligencia_artificial
+    nombre: "Inteligencia artificial: IA propia, uso ético y capacitación"
+    componente: "Inteligencia artificial"
+    justificacion: "Componente 'Inteligencia artificial': implementar IA, desarrollar una IA propia de la universidad con ética definida, automatizar con agentes de IA, capacitación certificada en su manejo y laboratorios de IA."
+    critico: false
+    instruccion: "¿El `comentario` habla expresamente de la inteligencia artificial (IA)?"
+    criterio_true: "Menciona inteligencia artificial, IA, AI o agentes de IA: implementarla, desarrollar una IA propia, usarla en procesos o estudios, capacitarse en su manejo ético, o sus límites."
+    criterio_false: "No menciona la inteligencia artificial. Hablar solo de tecnología o de datos no cuenta."
+    ejemplos_si: ["Desarrollo de una IA de la universidad que permita la gestión ética de estás herramientas", "La automatización de procesos con agentes de Inteligencia artificial."]
+
+  - id: procesos_resultados
+    nombre: "Procesos ágiles, menos burocracia y gestión con resultados medibles"
+    componente: "Gestión orientada a resultados"
+    justificacion: "Componente 'Gestión orientada a resultados': mejorar y reinventar procesos administrativos, reducir trámites, herramientas unificadas, capacitación e inducción en los procesos, personal idóneo, metodologías como OKR, resultados medibles y evaluación del plan."
+    critico: false
+    instruccion: "¿El `comentario` pide procesos más ágiles o eficientes, menos trámites, mejor gestión de recursos o una gestión con objetivos y resultados medibles?"
+    criterio_true: "Menciona procesos (administrativos o institucionales), eficiencia, burocracia o trámites, reducir procedimientos, herramientas unificadas y no repetitivas, capacitación o inducción en los procesos, optimizar recursos o tiempos, personal idóneo, OKR, resultados medibles, objetivos adaptativos o evaluar el plan de desarrollo."
+    criterio_false: "No habla de procesos, eficiencia ni resultados de gestión. Pedir solo IA o solo datos tiene su propio tema."
+    ejemplos_si: ["Mejora de procesos administrativos", "Definir el modelo de gobierno de la gestión estratégica de resultados, por ejemplo metodología OKR"]
+
+  - id: escucha_participacion
+    nombre: "Escuchar a la comunidad: participación, diálogo y gobernanza"
+    componente: "Gobernanza estratégica"
+    justificacion: "Componente 'Gobernanza estratégica': escuchar a estudiantes, docentes y graduados, tener en cuenta su opinión, libertad de expresión, espacios de conversación, comunicación entre áreas y gobernanza institucional."
+    critico: false
+    instruccion: "¿El `comentario` pide escuchar a la comunidad, tener en cuenta su opinión, más diálogo y comunicación, o una gobernanza participativa?"
+    criterio_true: "Menciona escuchar o la escucha a estudiantes, docentes, graduados o la comunidad, tener en cuenta su opinión, libertad de expresión, espacios de conversación o diálogo, comunicación (entre áreas o con quejas y reclamos), interacción con los graduados, aporte de todos los docentes o gobernanza (estratégica o institucional)."
+    criterio_false: "No habla de escucha, participación, diálogo ni gobernanza. La interacción humana frente a la tecnología tiene su propio tema."
+    ejemplos_si: ["Tener más en cuenta la opinión estudiantil", "Deberia escuchar activamente a su comunidad"]
+
+  - id: oferta_flexible_pertinente
+    nombre: "Programas y formación que evolucionan: nuevas carreras, flexibilidad y pertinencia"
+    componente: "Inteligencia institucional"
+    justificacion: "Componente 'Inteligencia institucional': actualizar y crear programas según las necesidades del entorno y del sector productivo, nuevos cursos y carreras, metodologías diversas, aprendizaje flexible y coherencia entre presencialidad y virtualidad."
+    critico: false
+    instruccion: "¿El `comentario` pide nuevos programas, carreras o cursos, mejorar o actualizar los programas, o una formación más flexible o pertinente?"
+    criterio_true: "Menciona programas académicos (nuevos, mejores, que evolucionen o se actualicen), nuevas carreras o cursos, ampliar la oferta, metodologías de enseñanza, aprendizaje flexible, presencialidad y virtualidad, o una educación pertinente a las necesidades del entorno o del sector productivo."
+    criterio_false: "No habla de la oferta académica ni de la forma de formar."
+    ejemplos_si: ["La oportunidad de integrar nuevos cursos o nuevas carreras dentro de la universidad", "Una universidad que esté a la vanguardia de la necesidad del entorno interno u externo creando nuevos programas académicos."]
+
+  - id: transformacion_humana
+    nombre: "Una transformación humana: tecnología e IA sin perder el ser"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre el enfoque de la transformación como un todo: que la universidad inteligente y digital no pierda lo humano, el ser, la interacción cara a cara ni las habilidades blandas."
+    critico: false
+    instruccion: "¿El `comentario` dice expresamente que la transformación no debe perder lo humano, el ser o el contacto entre personas, o que la tecnología debe ser un apoyo y no un reemplazo?"
+    criterio_true: "Dice de forma explícita que no se pierda lo humano, el ser, la esencia, la calidad humana, el enfoque humano o las habilidades blandas; que la tecnología o la IA sean una herramienta y no un reemplazo; humanizar los procesos; más interacción humana o cara a cara."
+    criterio_false: "No habla de conservar lo humano. Pedir IA o tecnología sin poner ese límite no cuenta."
+    ejemplos_si: ["Que no se pierda el Ser", "Digital , pero humana"]
+
+  - id: conformidad
+    nombre: "Conformidad con la transformación (sin ajustes)"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: dicen expresamente que no ajustarían nada, que están de acuerdo o que todo está bien."
+    critico: false
+    instruccion: "El `comentario` responde a la pregunta '¿Qué ajustaría en esta transformación?'. ¿Dice expresamente que no ajustaría nada, que está de acuerdo o que todo está bien?"
+    criterio_true: "Dice de forma explícita que no ajustaría nada ('no ajustaría nada', 'nada por el momento'), que está de acuerdo ('estoy totalmente de acuerdo', 'por supuesto que sí', 'sí responde') o que todo está bien o perfecto."
+    criterio_false: "No expresa acuerdo ni dice que no haría ajustes. Describir lo que la universidad sería capaz de hacer no basta."
+    ejemplos_si: ["No ajustaría nada", "Diría que todo está bien, miran bastante al futuro"]
+
+  - id: problemas_territorio
+    nombre: "Conocer los problemas del territorio y de la comunidad y darles solución"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Inteligente (el documento lo ubica en UC Translocal, 'Impacto territorial'); reúne más del 10 % de los comentarios, por eso tiene tema propio."
+    critico: false
+    instruccion: "¿El `comentario` pide conocer los problemas reales del territorio, la región o la comunidad, o resolverlos con proyectos y soluciones?"
+    criterio_true: "Menciona conocer, identificar o reconocer problemas o problemáticas del territorio, la región, el campo o la comunidad; darles solución con proyectos o conocimiento; asesorar a las comunidades; salir a terreno; o transformar la región."
+    criterio_false: "No habla del territorio, la región ni la comunidad. Anticipar problemas de la propia universidad tiene su propio tema."
+    ejemplos_si: ["Conocer las diferentes problemáticas del territorio para  dar una mejor solución", "Pasar de los bancos de problemas a los bancos de soluciones"]
+
+  - id: otros_fuera
+    nombre: "Otros asuntos fuera de la transformación"
+    componente: fuera_de_la_transformacion
+    justificacion: "Asuntos sin anclaje en la sección de UC Inteligente, cada uno con menos del 10 % de los comentarios: integración de las sedes, infraestructura y tecnología, ambiente, estudiantes extranjeros, ética docente, investigación, empleo y convenios, inclusión y convivencia."
+    critico: false
+    instruccion: "¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Inteligente: integración o interacción entre sedes; infraestructura, instalaciones o tecnología; ambiente, agua o energía; estudiantes extranjeros; ética de los docentes; investigación o cultura del conocimiento; empleo, convenios o empresas; inclusión, acceso a la educación o necesidades especiales; convivencia?"
+    criterio_true: "Se cumple con cualquiera de esos casos: integración de las sedes; infraestructura, instalaciones, espacios, ventilación o equipos tecnológicos; ambiente, residuos, agua o energía; organización para estudiantes extranjeros; ética de los profesores; investigación, ciencia abierta o lectura; empleo, convenios con empresas o con el SENA; inclusión o accesibilidad a la educación; convivencia entre facultades."
+    criterio_false: "No trata ninguno de esos asuntos de forma explícita. Los problemas del territorio tienen su propio tema."
+    ejemplos_si: ["Integración de las diferentes sedes", "La reducción del consumo energético, gestión del agua, residuos, movilidad sostenible y construcciones adecuadas ."]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

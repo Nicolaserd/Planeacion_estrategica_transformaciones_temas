@@ -1,0 +1,57 @@
+slug: facatativa_2026-10-26_a_2026-10-27_uc_translocal
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_.
+  (UC TRANSLOCAL)(1-843) (1).xlsx
+sha256_archivo: d29a400561f490dfbb34862f3160eade8f5f646ec779a4dda4546ea1c82fb74a
+transformacion:
+  id: T2
+  nombre_oficial: UC Translocal
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 2. UC Translocal' · líneas 46-62
+unidad: Facatativá
+fechas:
+- '2026-10-26'
+- '2026-10-27'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 112
+N_s: 92
+textos_unicos: 92
+excluidos:
+  vacio: 13
+  no_respuesta: 5
+  solo_signos_o_numeros: 2
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 92
+  n_muestra_requerida: 74.4
+  fraccion: 0.808
+  protocolo: B_censo
+informe_filtro:
+  filas: 112
+  unidades_que_coinciden:
+  - Extensión Facatativá
+  transformacion_vacia_asumida: 15
+  fuera_de_fecha_no_incluidas:
+  - ID: 730
+    fecha: '2026-10-20'
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Facatativa_2026-10-26_a_2026-10-27_UC_Translocal.xlsx
+  clasificacion: Clasificacion_Facatativa_2026-10-26_a_2026-10-27_UC_Translocal.xlsx
+  hoja: Facatativá 26-27 oct 2026
+preparado: '2026-10-29'

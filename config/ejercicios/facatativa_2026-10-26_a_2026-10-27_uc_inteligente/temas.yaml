@@ -1,0 +1,107 @@
+# Temas de Facatativá · 26-27 oct 2026 · UC Inteligente (lista propia de esta unidad).
+# Anclados a los componentes de "UC Inteligente" en contexto/Transformaciones_estrategicas_5_frentes.md.
+transformacion: UC Inteligente
+version: 2
+temas:
+  - id: datos_decisiones
+    nombre: "Datos confiables, unificados y accesibles para tomar decisiones"
+    componente: "Gobierno y uso estratégico de los datos"
+    justificacion: "Componente 'Gobierno y uso estratégico de los datos': calidad y unificación de datos, centro de datos, información disponible en todas las sedes y decisiones basadas en evidencia."
+    critico: false
+    instruccion: "¿El `comentario` pide recolectar, unificar, mejorar la calidad o dar acceso a datos e información, o tomar decisiones basadas en datos y análisis?"
+    criterio_true: "Menciona datos, información, estadísticas, análisis de resultados, centro o plataforma única de información, calidad o unificación de los datos, acceso a la información en las sedes, o decisiones basadas en datos, evidencias o análisis."
+    criterio_false: "No habla de datos, información ni decisiones basadas en ellos. Pedir equipos o tecnología sin hablar de datos tiene su propio tema; usar inteligencia artificial también."
+    ejemplos_si: ["revisar la calidad de los datos para utilizar en una UC inteligente para tomar decisiones adecuadas", "Unificar la información en un centro de datos inteligente"]
+
+  - id: anticipacion_prevencion
+    nombre: "Anticiparse a los problemas y prevenir riesgos"
+    componente: "Inteligencia institucional"
+    justificacion: "Componente 'Inteligencia institucional': anticipar resultados y problemas, prevenir riesgos, planes de contingencia y preparación ante los cambios."
+    critico: false
+    instruccion: "¿El `comentario` pide que la universidad se anticipe, prevenga riesgos o problemas, o esté preparada para los cambios y eventos futuros?"
+    criterio_true: "Menciona anticipar, anticiparse, prevenir, prevención, predecir, prepararse para eventos o cambios futuros, mitigar obstáculos, planes de contingencia o planeación anticipada."
+    criterio_false: "No habla de anticipar ni prevenir. Aprender de errores ya ocurridos sin hablar de prevenir o anticiparse tiene su propio tema."
+    ejemplos_si: ["Una universidad que sea capaz de anticipar resultados, puede estar preparada en caso de un evento desafortunado", "Realizar la planeación anticipada a un cierre fiscal eficiente"]
+
+  - id: calidad_mejora_reconocimiento
+    nombre: "Calidad, aprender de los errores, mejora continua y reconocimiento"
+    componente: "Calidad y mejora continua"
+    otros_componentes: ["Acreditación institucional"]
+    justificacion: "Componente 'Calidad y mejora continua' (y 'Acreditación institucional'): aprender de los errores, autocrítica, mejora continua de la calidad y reconocimiento nacional de la universidad."
+    critico: false
+    instruccion: "¿El `comentario` pide mejorar la calidad, aprender de los errores, hacer autocrítica o mejora continua, o que la universidad sea reconocida o referente?"
+    criterio_true: "Menciona calidad, mejora continua, aprender de los errores o de la experiencia, autocrítica, identificar falencias para mejorar, reevaluar el modelo, o que la universidad sea reconocida, referente o visible a nivel nacional."
+    criterio_false: "No habla de calidad, errores, mejora continua ni reconocimiento. Anticipar problemas futuros tiene su propio tema; mejorar procesos administrativos o resultados de gestión también."
+    ejemplos_si: ["Calidad y mejora continua", "Si no tropiezan con la misma piedra dos veces y realmente mejoran en base al empirismo entonces obtendrán el reconocimiento merecido"]
+
+  - id: inteligencia_artificial
+    nombre: "Inteligencia artificial: formación, uso ético y planeación"
+    componente: "Inteligencia artificial"
+    justificacion: "Componente 'Inteligencia artificial': cursos de IA por carrera, IA propia, uso ético y detección de uso indebido, planeación del uso de IA y su impacto."
+    critico: false
+    instruccion: "¿El `comentario` habla expresamente de la inteligencia artificial (IA) o de herramientas inteligentes?"
+    criterio_true: "Menciona inteligencia artificial, IA o herramientas inteligentes: aprenderla, enseñarla, usarla, regularla, planear su uso, su ética o su impacto."
+    criterio_false: "No menciona la inteligencia artificial ni herramientas inteligentes. Hablar solo de tecnología, equipos o datos no cuenta."
+    ejemplos_si: ["Realizar una planeación estratégica para el uso de IA", "Herramientas de deteccion de uso de IA indebido o no etico"]
+
+  - id: gobernanza_autonomia_participacion
+    nombre: "Gobernanza cercana: autonomía de la extensión, participación y comunicación"
+    componente: "Gobernanza estratégica"
+    justificacion: "Componente 'Gobernanza estratégica': autonomía de la extensión y de los docentes para decidir, decisiones más ágiles, interacción entre sedes, mesas de diálogo y comunicación y transparencia con estudiantes y egresados."
+    critico: false
+    instruccion: "¿El `comentario` pide autonomía para la extensión o los docentes, decisiones más ágiles o descentralizadas, más participación y diálogo, o mejor comunicación y transparencia con la comunidad?"
+    criterio_true: "Menciona autonomía o libertad de decisión de la sede, la extensión o los docentes, descentralizar, decisiones más rápidas, gobernanza regional, espacios de debate o mesas de diálogo, integrar la opinión de estudiantes o egresados, conexión entre administrativos y estudiantes, comunicación con los egresados o hacer públicos los resultados."
+    criterio_false: "No habla de autonomía, participación, diálogo ni comunicación con la comunidad. Pedir datos o información para decidir, sin hablar de autonomía ni participación, tiene su propio tema."
+    ejemplos_si: ["Generar  autonomía para la toma de decisiones y acceso a la información para extensiones", "Fomentar mesas de diálogo más frecuentes"]
+
+  - id: procesos_resultados
+    nombre: "Procesos eficientes, planeación y gestión orientada a resultados"
+    componente: "Gestión orientada a resultados"
+    justificacion: "Componente 'Gestión orientada a resultados': procesos eficaces y eficientes, planeación estratégica, metodologías ágiles, gestión de proyectos y recursos y seguimiento a los resultados."
+    critico: false
+    instruccion: "¿El `comentario` pide mejorar la gestión: procesos más eficientes, planeación, gestión de proyectos o recursos, o resultados frente a objetivos?"
+    criterio_true: "Menciona mejorar, optimizar o reestructurar procesos; procesos eficaces o eficientes; planeación estratégica o un plan de estrategias; metodologías ágiles; gestión de proyectos o recursos; productividad; mantenimiento planificado; o resultados frente a objetivos."
+    criterio_false: "No pide mejorar la gestión. Anticiparse o hacer planes de contingencia, unificar o analizar datos e información, usar IA y la mejora continua de la calidad tienen su propio tema: mencionar 'procesos' solo como parte de esos temas no cuenta."
+    ejemplos_si: ["Qué los procesos sean más eficaces  y eficientes para tener mejores resultados", "Todo va enfocado a resultados"]
+
+  - id: oferta_pertinente_entorno
+    nombre: "Leer el entorno: oferta y formación pertinentes al territorio y al mercado"
+    componente: "Inteligencia institucional"
+    justificacion: "Componente 'Inteligencia institucional': analizar el entorno y las tendencias para ajustar los programas, ampliar la oferta, formación práctica, perfiles laborales del mercado y enfoque según los sectores económicos de cada zona."
+    critico: false
+    instruccion: "¿El `comentario` pide ajustar la oferta académica, los programas o la formación al entorno, las tendencias, el territorio o el mercado laboral?"
+    criterio_true: "Menciona programas, carreras, oferta académica, especializaciones, cursos o formación ajustados al entorno, a las tendencias, a los sectores económicos de la zona o al mercado laboral; analizar el entorno; nuevos programas; formación más práctica o pertinente."
+    criterio_false: "No habla de la oferta académica ni de ajustar la formación al entorno. Pedir solo empleo u oportunidades laborales, sin hablar de la formación, no cuenta."
+    ejemplos_si: ["Conocer los diferentes perfiles laborales del mercado asi se tiene una mejor idea de la formación correcta", "darle un enfoque a cada una de acuerdo a los sectores económicos que se encuentran en la zona de cada extensión"]
+
+  - id: conformidad
+    nombre: "Conformidad con la transformación (sin ajustes)"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: dicen expresamente que no ajustarían nada o que están de acuerdo."
+    critico: false
+    instruccion: "El `comentario` responde a la pregunta '¿Qué ajustaría en esta transformación?'. ¿Responde que no ajustaría nada o que está de acuerdo con la transformación tal como está?"
+    criterio_true: "Responde que no ajustaría nada o que está de acuerdo, aunque sea con pocas palabras: 'ningún ajuste', 'así está bien', 'me parece apropiada', 'está perfecta'; o solo valora la transformación sin pedir ningún cambio."
+    criterio_false: "Pide, propone o menciona cualquier ajuste o cosa por mejorar, aunque también elogie la transformación."
+    ejemplos_si: ["Ningún ajuste", "Asi está bien"]
+
+  - id: tecnologia_infraestructura
+    nombre: "Tecnología, equipos e infraestructura"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Inteligente (el documento lo ubica en UC Digital); reúne más del 10 % de los comentarios, por eso tiene tema propio."
+    critico: false
+    instruccion: "¿El `comentario` pide más o mejor tecnología, equipos, dispositivos, plataformas o infraestructura física?"
+    criterio_true: "Debe pedir o proponer tecnología, nuevas tecnologías, equipos de cómputo, dispositivos, herramientas tecnológicas o digitales, plataformas que funcionen, automatizar con tecnología, o infraestructura física (auditorio, instalaciones)."
+    criterio_false: "No pide tecnología ni infraestructura; mencionarla de paso no basta. Hablar solo de inteligencia artificial, o de datos e información para decidir, tiene su propio tema."
+    ejemplos_si: ["un cambio de equipos de cómputo cada 3 años", "la universidad en su extensión de Facatativá se muestra deteriorada en infraestructura"]
+
+  - id: otros_fuera
+    nombre: "Otros asuntos fuera de la transformación"
+    componente: fuera_de_la_transformacion
+    justificacion: "Asuntos sin anclaje en la sección de UC Inteligente, cada uno con menos del 10 % de los comentarios: oportunidades laborales y convenios para egresados, programa de Psicología, salarios, lo humano, ambiente, colaboración entre sedes e innovación."
+    critico: false
+    instruccion: "¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Inteligente: oportunidades laborales o convenios con empresas para estudiantes y egresados; atención, presupuesto o reconocimiento de un programa; salarios del personal; el componente humano; ambiente o sostenibilidad; colaboración entre sedes; capacitación o innovación en general?"
+    criterio_true: "Se cumple con cualquiera de esos casos: oportunidades laborales, empleo o convenios con empresas; abandono, presupuesto o reconocimiento de un programa (por ejemplo Psicología); salarios de los empleados; no dejar atrás el componente humano o el pilar transhumano; ambiente o ranking verde; colaboración entre sedes; capacitación o innovación en general."
+    criterio_false: "No trata ninguno de esos asuntos de forma explícita. Ajustar la formación o la oferta académica al mercado tiene su propio tema; la tecnología y la infraestructura también."
+    ejemplos_si: ["Oportunidades Laborales una vez egresados.", "El análisis del presupuesto asignado para los salarios de los empleados"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

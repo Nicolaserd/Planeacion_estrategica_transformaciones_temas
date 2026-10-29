@@ -1,0 +1,69 @@
+slug: todas_2026-08-31_a_2026-10-27_ucundinamarca
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_.
+  (UCUNDINAMARCA)(1-169) (1).xlsx
+sha256_archivo: 2215c946d2b676a757cf23194be276523d9264e63ab12951dbac9ff5133e9f0c
+transformacion:
+  id: T0
+  nombre_oficial: UCundinamarca
+  referencia: Transformaciones_estrategicas_5_frentes.md · las 5 transformaciones
+  general: true
+unidad: Todas
+fechas:
+- '2026-08-31'
+- '2026-09-07'
+- '2026-09-08'
+- '2026-09-14'
+- '2026-09-15'
+- '2026-09-21'
+- '2026-09-22'
+- '2026-09-28'
+- '2026-10-19'
+- '2026-10-26'
+- '2026-10-27'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- 'Comparte aquí tu aporte:'
+columna_comentario: 'Comparte aquí tu aporte:'
+N_filas: 169
+N_s: 157
+textos_unicos: 157
+excluidos:
+  no_respuesta: 5
+  menos_de_3_letras: 3
+  solo_signos_o_numeros: 2
+  vacio: 2
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 1
+  PERSONA: 3
+protocolo:
+  N_s: 157
+  n_muestra_requerida: 111.7
+  fraccion: 0.711
+  protocolo: B_censo
+informe_filtro:
+  filas: 169
+  unidades_que_coinciden:
+  - (vacío)
+  - Extensión Chía
+  - Extensión Facatativá
+  - Extensión Soacha
+  - Extensión Zipaquirá
+  - Seccional Girardot
+  - Sede Fusagasugá
+  transformacion_vacia_asumida: 169
+  fuera_de_fecha_no_incluidas: []
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Todas_2026-08-31_a_2026-10-27_UCundinamarca.xlsx
+  clasificacion: Clasificacion_Todas_2026-08-31_a_2026-10-27_UCundinamarca.xlsx
+  hoja: Todas 31 ago-27 oct 2026
+preparado: '2026-10-29'

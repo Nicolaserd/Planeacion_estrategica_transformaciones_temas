@@ -49,9 +49,26 @@ Este es el resumen de las decisiones de Nicolás y de lo aprendido en el proyect
   - **Aprobación previa** para cualquier cambio en `.claude/`, mediante el hook `.claude/hooks/proteger_carpeta_claude.py`.
   - Hay pruebas en `tests/test_hooks.py`.
 
+## 2026-10-29 · Datos nuevos: Facatativá, Fusagasugá y el formulario general
+
+- **Datos nuevos:** Nicolás subió nuevas exportaciones de los 5 formularios, con más respuestas, y un formulario nuevo, "UCUNDINAMARCA" ("Comparte aquí tu aporte", 169 respuestas). Los 25 ejercicios hechos **no cambiaron**: en sus unidades y fechas están los mismos ID.
+- **Decisiones de Nicolás:**
+  - **Fusagasugá:** un solo ejercicio por transformación con sus dos jornadas, 28 sep y 19 oct.
+  - **Facatativá:** 26 y 27 oct.
+  - **UCundinamarca:** un solo ejercicio con los 157 aportes de todas las unidades, y temas anclados a las 5 transformaciones. Requirió adaptar `src/ejercicio.py` con `--unidad Todas`, `--fechas todas`, `--columna-comentario` y el anclaje a las 5 transformaciones.
+  - **Solo lo definitivo en `outputs/`:** se borraron del todo las carpetas `version_1/`, 75 archivos.
+- **Resultado:**
+  - 11 ejercicios nuevos con entre 8 y 10 temas cada uno: 36 ejercicios en total.
+  - Acuerdo de Jev con la lectura de referencia: de 0,77 a 0,89.
+  - Afinaciones de redacción:
+    - "procesos" en Facatativá · UC Inteligente;
+    - "conformidad" en Fusagasugá · UC para la Vida, donde Jev contaba los testimonios;
+    - "tecnología" en UCundinamarca, donde Jev lo asignaba por menciones de paso del MEDIT o la plataforma.
+- **Privacidad:** se encontraron dos nombres completos que la anonimización no detectaba: un encabezado de WhatsApp pegado y una firma. Se agregaron esas dos reglas a la anonimización y la herramienta `scripts/revisar_nombres.py`, que debe dar 0 antes de clasificar. Ninguno de los dos llegó a Jev ni a un Excel.
+
 ## Pendientes y puntos abiertos
 
-- **Fusagasugá (28 sep):** falta en las 5 transformaciones.
+- **Sin unidades pendientes** con los datos del 29 oct 2026: Ubaté, Zipaquirá, Girardot, Soacha, Chía, Fusagasugá y Facatativá están procesadas en las 5 transformaciones.
 - **Temas algo altos (versión 2):** Jev supera la lectura de referencia en 8 o más comentarios en estos temas:
   - Soacha · UC Digital, "Más tecnología y de vanguardia": 20 frente a 11;
   - Soacha · UC Inteligente, "Tecnología, infraestructura y espacios": 33 frente a 25;

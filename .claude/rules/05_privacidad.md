@@ -41,6 +41,13 @@ Antes de que nadie lea los comentarios, se reemplaza:
 | Celulares (`3xx xxx xxxx`, con o sin +57) y fijos | `[TELEFONO]` |
 | Secuencias de 6 a 11 dígitos (cédulas, códigos), salvo montos con `$`, "pesos" o "mil" | `[NUMERO_ID]` |
 | Título + nombre con mayúscula (profesor, docente, ingeniera, Dr., señor, coordinador, decano, rector…) | `título [PERSONA]` |
+| Encabezados de mensajes de WhatsApp pegados: "[19/10, 10:06 a. m.] Nombre Apellido:" | `[19/10, 10:06 a. m.] [PERSONA]:` |
+| Firmas: 2 a 5 palabras con mayúscula seguidas de coma y un rol o dependencia ("…, facultad", "…, docente") | `[PERSONA], facultad …` |
+
+La anonimización automática **no reconoce todos los nombres**. Las dos últimas reglas se agregaron el 2026-10-29 tras encontrar una firma y un encabezado de WhatsApp con nombres completos. Por eso, después de cada `preparar` se corre `python scripts/revisar_nombres.py <slug>`, que debe dar 0.
+- El script busca encabezados, firmas y secuencias de 3 o más palabras con mayúscula que empiezan por un nombre de pila de las encuestas.
+- Imprime solo el ejercicio y el `id_com`, nunca el texto.
+- Si encuentra algo, amplía `f03_limpieza_anonimizacion.py`, agrega una prueba en `tests/test_ejercicio.py` y repite `preparar`.
 
 - Cuántos reemplazos hubo queda en `ficha.yaml` (`anonimizacion`) y en la bitácora.
 - `preparar` marca con `<<token de nombre>>` los comentarios que contienen una palabra de la columna Nombre. **Revísalos al leer:** si es el nombre de una persona, no lo copies en los temas, los ejemplos ni los reportes.

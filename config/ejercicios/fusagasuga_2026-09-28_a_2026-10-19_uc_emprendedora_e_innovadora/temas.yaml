@@ -1,0 +1,108 @@
+# Temas de Fusagasugá · 28 sep y 19 oct 2026 · UC Emprendedora e Innovadora (lista propia de esta unidad).
+# Anclados a los componentes de "UC Emprendedora e Innovadora" en contexto/Transformaciones_estrategicas_5_frentes.md.
+transformacion: UC Emprendedora e Innovadora
+version: 2
+temas:
+  - id: ruta_acompanamiento
+    nombre: "Una ruta clara y acompañamiento para desarrollar las ideas (asesoría, incubadora)"
+    componente: "Ecosistemas de innovación"
+    otros_componentes: ["desarrollar soluciones"]
+    justificacion: "Componente 'Ecosistemas de innovación' y 'Qué busca' ('desarrollar soluciones'): una ruta para pasar de la idea a la solución, escuchar y orientar, asesoría y tutorías, estudio de viabilidad, incubadora de proyectos, oficina receptora de ideas y mesas interdisciplinares."
+    critico: false
+    instruccion: "¿El `comentario` pide una ruta, acompañamiento, asesoría, orientación, una incubadora o una oficina para desarrollar las ideas o resolver el problema?"
+    criterio_true: "Menciona una ruta (de emprendimiento, de acción o para resolver el problema), acompañar, orientar, escuchar las ideas, asesoría, tutorías, grupo asesor, estudiar la viabilidad o factibilidad, estructurar o reestructurar la idea, incubadora, oficina receptora de ideas, mesas de trabajo para guiar la solución, o ecosistemas de innovación."
+    criterio_false: "No habla de rutas, acompañamiento ni asesoría. Pedir solo dinero o recursos tiene su propio tema."
+    ejemplos_si: ["Plantear una ruta para resolver el problema", "Me gustaría que se creara una incubadora de proyectos y pymes"]
+
+  - id: financiacion_recursos
+    nombre: "Financiación, fondos y recursos para los proyectos"
+    componente: "Emprendimiento"
+    justificacion: "Componente 'Emprendimiento': apoyo económico, fondos de emprendimiento y participativos, presupuesto, inversión y asignación de recursos humanos, financieros y tecnológicos."
+    critico: false
+    instruccion: "¿El `comentario` pide apoyo económico, financiación, fondos, presupuesto, inversión o recursos para las ideas o proyectos?"
+    criterio_true: "Menciona apoyo o ayuda económica, apoyo financiero, financiación, fondos (de emprendimiento o participativos), presupuesto (participativo), inversión, o recursos (económicos, físicos, humanos o necesarios) para los proyectos."
+    criterio_false: "No menciona dinero, presupuesto ni recursos."
+    ejemplos_si: ["Apoyo económico a la idea", "Creación de fondos de emprediento y fondos participativos"]
+
+  - id: territorio_comunidad
+    nombre: "Innovación con y para el territorio y la comunidad"
+    componente: "Innovación social"
+    otros_componentes: ["desarrollo del territorio"]
+    justificacion: "Componente 'Innovación social' y 'Qué busca' ('desarrollo del territorio'): llevar las ideas a la comunidad, reconocer las realidades del territorio, resolver sus problemas (agropecuarios, ambientales), diálogo de saberes e incluir a la comunidad externa."
+    critico: false
+    instruccion: "¿El `comentario` pide que las ideas o proyectos se orienten a la comunidad o al territorio, a sus realidades o a resolver sus problemas?"
+    criterio_true: "Menciona el territorio, los territorios, la región, la comunidad (externa o del territorio), el entorno, problemas o necesidades territoriales, regionales o de la comunidad, diálogo de saberes, o transformar el territorio."
+    criterio_false: "No habla del territorio ni de la comunidad. Las alianzas con empresas o entidades tienen su propio tema; los proyectos ISU e investigación también."
+    ejemplos_si: ["Reconocer las realidades socioculturales de los territorios", "Propiciar el diálogo de saberes con las comunidades y apoyar sus iniciativas"]
+
+  - id: alianzas_convenios
+    nombre: "Alianzas y convenios con empresas, el Estado y otras instituciones"
+    componente: "Relacionamiento con los sectores sociales, productivos, públicos y comunitarios"
+    justificacion: "Componente 'Relacionamiento con los sectores...': convenios de cooperación (nacionales, internacionales, financieros), alianzas con el sector externo, empresas privadas y entidades públicas, contactos y continuidad de los vínculos."
+    critico: false
+    instruccion: "¿El `comentario` pide alianzas, convenios o contactos con empresas, entidades públicas, el sector externo u otras instituciones?"
+    criterio_true: "Menciona alianzas (estratégicas), convenios (de cooperación, internacionales o con empresas), aliados, contactos, entidades públicas, empresa privada, sector externo, apoyo de empresas externas o cooperación interinstitucional."
+    criterio_false: "No habla de alianzas, convenios ni actores externos."
+    ejemplos_si: ["Implementar soluciones mediante convenios de cooperación interinstitucional", "Establecer lianzas con el sector externo para identificar los problemas en los sectores"]
+
+  - id: divulgacion_banco_ideas
+    nombre: "Divulgar los apoyos, visibilizar los emprendimientos y un banco de ideas"
+    componente: "cultura institucional emprendedora"
+    justificacion: "'Qué busca': promover 'una cultura institucional emprendedora': difundir los apoyos y beneficios, visibilizar avances y emprendimientos, eventos, espacios para aportar ideas, banco de ideas o de proyectos y formación en emprendimiento."
+    critico: false
+    instruccion: "¿El `comentario` pide divulgar o visibilizar los apoyos, beneficios, avances o emprendimientos, un banco de ideas o proyectos, o espacios y formación que promuevan la cultura emprendedora?"
+    criterio_true: "Menciona difusión, divulgación, información, visibilidad o visibilización de los apoyos, beneficios, redes de apoyo, avances o emprendimientos; banco de ideas o de proyectos; presentar en eventos; espacios para aportar ideas; cursos o formación en innovación y emprendimiento."
+    criterio_false: "No habla de divulgar, visibilizar ni promover la cultura emprendedora."
+    ejemplos_si: ["Fortalecimiento en la visibilizacion de los empredimientos", "Un banco de ideas y divulgación a la población administrativa de sus beneficios"]
+
+  - id: oportunidades_para_todos
+    nombre: "Oportunidades de emprender para todos: administrativos, graduados y estudiantes"
+    componente: "Creación de oportunidades"
+    justificacion: "Componente 'Creación de oportunidades': incluir al personal administrativo (apoyo, estudios, condiciones para emprender), apoyar microempresas de estudiantes y graduados, banco de oportunidades y oportunidades laborales."
+    critico: false
+    instruccion: "¿El `comentario` pide incluir y apoyar a los administrativos, graduados o estudiantes para emprender, o crear más oportunidades para ellos?"
+    criterio_true: "Menciona incluir o apoyar a los administrativos (beneficios, estudios, condiciones para emprender, grupo asesor), apoyar a graduados o estudiantes próximos a graduarse, microempresas de estudiantes y graduados, banco de oportunidades, más oportunidades u oportunidades laborales."
+    criterio_false: "No habla de incluir a esos actores ni de crear oportunidades."
+    ejemplos_si: ["Incluir dentro de los procesos planteados al personal administrativo", "Mayor apoyo a microempresas de estudiantes y graduados"]
+
+  - id: procesos_agiles
+    nombre: "Procesos y trámites ágiles para apoyar las iniciativas"
+    componente: "Ecosistemas de innovación"
+    justificacion: "Componente 'Ecosistemas de innovación': agilidad en los procesos, trámites y convenios, menos protocolo para solicitar recursos, reingeniería de procesos internos y compromiso de todas las dependencias."
+    critico: false
+    instruccion: "¿El `comentario` pide agilizar procesos, trámites o convenios, o reducir la burocracia y el protocolo administrativo?"
+    criterio_true: "Menciona agilidad o agilizar, dinamizar o facilitar los procesos, trámites o convenios; disminuir el protocolo administrativo; reingeniería de procesos; o compromiso y diagnóstico de las dependencias."
+    criterio_false: "No habla de procesos ni trámites. Pedir una ruta para desarrollar las ideas tiene su propio tema."
+    ejemplos_si: ["Mayor agilidad en los procesos", "Desarrollar un proceso de reingeniería para hacer los procesos internos más eficaces"]
+
+  - id: conformidad
+    nombre: "Conformidad con la transformación (sin ajustes)"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: dicen que no ajustarían nada, que están de acuerdo o que está bien enfocada."
+    critico: false
+    instruccion: "El `comentario` responde a la pregunta '¿Qué ajustaría en esta transformación?'. ¿Responde que no ajustaría nada, que está de acuerdo o que la transformación está bien?"
+    criterio_true: "Responde que no ajustaría nada o que está de acuerdo, aunque sea con pocas palabras: 'nada por el momento', 'nada, estoy de acuerdo', 'así está bien fundamentado', 'excelente', 'cumple', 'está bien enfocado el propósito'; sin pedir ningún cambio."
+    criterio_false: "Pide, propone o menciona cualquier ajuste o cosa por mejorar, aunque empiece con 'nada'."
+    ejemplos_si: ["Nada estoy de acuerdo", "Considero que está bien enfocado el propósito."]
+
+  - id: isu_investigacion
+    nombre: "Proyectos ISU e investigación continuos y con recursos"
+    componente: fuera_de_la_transformacion
+    justificacion: "No figura en la sección de UC Emprendedora e Innovadora (el documento lo ubica en UC Translocal: 'Interacción Social Universitaria' y 'Ciencia, tecnología e innovación'); reúne más del 10 % de los comentarios, por eso tiene tema propio."
+    critico: false
+    instruccion: "¿El `comentario` pide fortalecer la investigación, los grupos o semilleros de investigación, la CTeI o los proyectos de interacción social (ISU), o darles continuidad?"
+    criterio_true: "Menciona investigación, grupos, semilleros o banco de investigación, ciencia, tecnología e innovación (CTeI), proyectos ISU o de interacción o proyección social, su continuidad o los espacios para investigar."
+    criterio_false: "No habla de investigación ni de ISU. Pedir dinero sin hablar de investigación o ISU tiene su propio tema."
+    ejemplos_si: ["Continuidad de proyectos ISU para lograr una transformación Real del territorio", "Fortalecer los grupos de investigación de la universidad"]
+
+  - id: otros_fuera
+    nombre: "Otros asuntos fuera de la transformación"
+    componente: fuera_de_la_transformacion
+    justificacion: "Asuntos sin anclaje en la sección de UC Emprendedora e Innovadora, cada uno con menos del 10 % de los comentarios: infraestructura y bienestar, tecnología, acceso a la educación, metodología, sostenibilidad, salidas y escucha a los estudiantes."
+    critico: false
+    instruccion: "¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Emprendedora e Innovadora: infraestructura, espacios o bienestar; tecnología o tecnologías emergentes; acceso a la educación; metodología o escenarios de aprendizaje; desarrollo sostenible; salidas o igualdad entre carreras; escuchar y acompañar a los estudiantes en general?"
+    criterio_true: "Se cumple con cualquiera de esos casos: espacios públicos, infraestructura o bienestar estudiantil; tecnología o tecnologías emergentes; acceso a la educación; metodología o escenarios inmersivos; desarrollo sostenible; salidas académicas o igualdad de condiciones entre carreras; saber escuchar o comunicación y acompañamiento a los estudiantes en general."
+    criterio_false: "No trata ninguno de esos asuntos de forma explícita."
+    ejemplos_si: ["Mas recursos hacia los espacios publicos de la Universidad", "Mejorar accedo a la educación."]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

@@ -1,0 +1,5 @@
+# Bitácora · facatativa_2026-10-26_a_2026-10-27_uc_para_la_vida
+
+- **2026-10-29** · preparar: Experiencia_ _Transformaciones que nos conectan_. (UC PARA LA VIDA)(1-812) (1).xlsx · UC para la Vida (T5) · Facatativá · ['2026-10-26', '2026-10-27'] · incluir_ids=[]. N=99, N_s=82, excluidos={'vacio': 11, 'solo_signos_o_numeros': 3, 'no_respuesta': 2, 'menos_de_3_letras': 1}, anonimización={'CORREO': 0, 'URL': 0, 'TELEFONO': 0, 'PERSONA': 0}, protocolo=B_censo. Fuera de fecha no incluidas: [].
+- **2026-10-29** · clasificar: Jev (jev-1.13.0) · 82/82 textos únicos válidos · 8 temas + sin_contenido · llamadas nuevas 82 · tokens 123551 · costo USD 0.00519.
+- **2026-10-29** · exportar: Temas_Facatativa_2026-10-26_a_2026-10-27_UC_para_la_Vida.xlsx (1 hoja, 8 temas, 104 asignaciones, 8 sin tema) y Clasificacion_Facatativa_2026-10-26_a_2026-10-27_UC_para_la_Vida.xlsx (1 hoja 'Facatativá 26-27 oct 2026', 99 filas = respuestas, una columna por tema; incluye Nombre y Correo: archivo solo para uso local) y su copia publicable Clasificacion_Facatativa_2026-10-26_a_2026-10-27_UC_para_la_Vida_anonimizado.xlsx (sin Nombre ni Correo, comentario anonimizado).

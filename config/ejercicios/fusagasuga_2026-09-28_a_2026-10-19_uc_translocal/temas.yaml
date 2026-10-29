@@ -1,0 +1,112 @@
+# Temas de Fusagasugá · 28 sep y 19 oct 2026 · UC Translocal (lista propia de esta unidad).
+# Anclados a los componentes de "UC Translocal" en contexto/Transformaciones_estrategicas_5_frentes.md.
+transformacion: UC Translocal
+version: 2
+temas:
+  - id: territorio_necesidades
+    nombre: "Conocer y atender el territorio: sus necesidades, comunidades y gobiernos locales"
+    componente: "realidades de los territorios"
+    otros_componentes: ["Impacto territorial"]
+    justificacion: "'Qué busca' ('las realidades de los territorios') y componente 'Impacto territorial': salir al territorio, conocer sus necesidades y problemáticas, conectar con municipios, comunidades y el sector productivo de la región, incidir en los gobiernos locales y generar impacto social."
+    critico: false
+    instruccion: "¿El `comentario` pide conocer o atender las necesidades, problemáticas o realidades del territorio, los municipios o las comunidades, o generar impacto en ellos?"
+    criterio_true: "Menciona el territorio, los territorios, municipios, la región, comunidades (externas, rurales o invisibilizadas), sus necesidades o problemáticas, salir al territorio, el sector productivo o las empresas de la región, el gobierno municipal o departamental, impacto social o en el territorio, o la relación con el territorio."
+    criterio_false: "No habla del territorio ni de las comunidades. La cultura y la identidad de los territorios tienen su propio tema; los proyectos de ISU e investigación también."
+    ejemplos_si: ["salir más al territorio para conocer mas de frente sus verdaderas necesidades", "Que la Universidad y su comunidad insida en la gobernanza de nuestros territorios"]
+
+  - id: diversidad_identidad
+    nombre: "Diversidad cultural, identidad territorial y sentido de pertenencia"
+    componente: "reconociendo su diversidad"
+    otros_componentes: ["Identidad translocal"]
+    justificacion: "'Qué busca' ('reconociendo su diversidad') y componente 'Identidad translocal': culturas, gastronomía, arte y festivales de cada municipio, integración con personas de otras regiones, identidad de cada territorio y sentido de pertenencia."
+    critico: false
+    instruccion: "¿El `comentario` pide reconocer o vivir la diversidad cultural de los territorios (cultura, tradiciones, gastronomía, arte) o fortalecer la identidad y el sentido de pertenencia?"
+    criterio_true: "Menciona cultura, culturas, tradiciones, gastronomía o comida tradicional, arte, festivales, diversidad, historia territorial, integración cultural con personas de otras regiones, identidad (territorial o UCundinamarca) o sentido de pertenencia."
+    criterio_false: "No habla de cultura, diversidad, identidad ni pertenencia. La integración entre sedes o procesos tiene su propio tema."
+    ejemplos_si: ["Más espacios de integración cultural", "Cultivar la identidad Ucundinamarca, apropiarse de la identidad translocal"]
+
+  - id: internacionalizacion_idiomas
+    nombre: "Internacionalización, segunda lengua y proyección de la universidad"
+    componente: "Internacionalización"
+    otros_componentes: ["proyección de la Universidad"]
+    justificacion: "Componente 'Internacionalización' y 'Qué busca' ('proyección de la Universidad'): inglés y segunda lengua, programas bilingües, intercambios y convenios internacionales, alianzas con otros continentes, divulgación y reconocimiento nacional e internacional."
+    critico: false
+    instruccion: "¿El `comentario` pide internacionalizar la universidad, más inglés o segunda lengua, intercambios o convenios con otras universidades, o darla a conocer y posicionarla?"
+    criterio_true: "Menciona internacionalización, relaciones o alianzas internacionales, inglés, segunda lengua, otros idiomas, bilingüe, intercambios, convenios con otras universidades (nacionales o extranjeras), presencia nacional o internacional, divulgación, darse a conocer, reconocimiento o posicionamiento."
+    criterio_false: "No habla de internacionalización, idiomas, convenios con otras universidades ni visibilidad."
+    ejemplos_si: ["Proveer estrategias para el perfeccionamiento de un segundo idioma", "Mayor convenios con universidades que no sean hispanoparlantes"]
+
+  - id: practicas_formacion
+    nombre: "Prácticas, salidas, laboratorios y metodología (MEDIT)"
+    componente: "Formación y aprendizaje"
+    justificacion: "Componente 'Formación y aprendizaje': pasantías y prácticas, salidas pedagógicas y de campo, visitas técnicas, laboratorios, clases dinámicas y la metodología MEDIT."
+    critico: false
+    instruccion: "¿El `comentario` pide prácticas, pasantías, salidas de campo o pedagógicas, laboratorios, o mejorar la metodología o el MEDIT?"
+    criterio_true: "Menciona prácticas (académicas, empresariales o en campo), pasantías, salidas pedagógicas, académicas o de campo, viajes o visitas técnicas, laboratorios, clases o dinámicas interactivas, la metodología, el MEDIT o la formación."
+    criterio_false: "No habla de prácticas, salidas, laboratorios ni de la forma de enseñar. Ofrecer más programas o en otras sedes tiene su propio tema."
+    ejemplos_si: ["Más salidas académicas para el tema de prácticas", "Mejorar el medit"]
+
+  - id: integracion_sedes
+    nombre: "Una sola universidad en red: integración de sedes, programas y administrativos"
+    componente: "Redes y cooperación"
+    otros_componentes: ["Identidad translocal"]
+    justificacion: "Componentes 'Redes y cooperación' e 'Identidad translocal': integración y canales de comunicación entre sedes, unificar procesos y convenios, compartir saberes entre regiones, integrar carreras y programas e incluir a los administrativos en la translocalidad."
+    critico: false
+    instruccion: "¿El `comentario` pide integrar o conectar las sedes, los programas, los procesos o a los administrativos como una sola universidad?"
+    criterio_true: "Menciona integración, conexión, sinergia, redes o canales de comunicación entre sedes, seccionales o programas; unificar procesos, sistemas o convenios; compartir conocimientos entre sedes o regiones; actividades entre carreras; o incluir e involucrar a los administrativos."
+    criterio_false: "No habla de integrar sedes, programas, procesos ni administrativos. La integración cultural con personas de otras regiones tiene su propio tema."
+    ejemplos_si: ["Canales de comunicación entre sedes.", "Integración de procesos académicos y administrativos de forma que permita participar por los administrativos"]
+
+  - id: isu_investigacion
+    nombre: "Proyectos de interacción social, investigación y CTeI (con gestores vinculados más tiempo)"
+    componente: "Interacción Social Universitaria"
+    otros_componentes: ["Ciencia, tecnología e innovación"]
+    justificacion: "Componentes 'Interacción Social Universitaria' y 'Ciencia, tecnología e innovación': proyectos ISU, banco de proyectos con los territorios, investigación y CTeI, transferencia de tecnología y contratos de 11 meses para los gestores que trabajan en ISU."
+    critico: false
+    instruccion: "¿El `comentario` pide fortalecer los proyectos de interacción social (ISU), la investigación o la ciencia, tecnología e innovación?"
+    criterio_true: "Menciona interacción social universitaria, ISU, proyectos de interacción social, banco de proyectos, investigación, ciencia, tecnología e innovación (CTeI), transferencia de tecnología, innovación tecnológica local o contratos más largos para los gestores de ISU."
+    criterio_false: "No habla de ISU, investigación ni CTeI. Atender el territorio sin hablar de proyectos o investigación tiene su propio tema."
+    ejemplos_si: ["Fortalecimiento de proyectos ISU", "ISU también tenga el reconocimiento de contratación 11 meses, así mismo se articule con investigación para transferencia de tecnología."]
+
+  - id: cobertura_programas
+    nombre: "Cobertura: todos los programas en todas las sedes, más programas y virtualidad"
+    componente: "desde su propia realidad"
+    otros_componentes: ["Formación y aprendizaje"]
+    justificacion: "'Qué busca': cada sede aporta 'desde su propia realidad'; que todas las sedes ofrezcan los mismos programas, abrir nuevos programas y posgrados, pregrados virtuales, llegar a más municipios y garantizar acceso y calidad sin importar la ubicación."
+    critico: false
+    instruccion: "¿El `comentario` pide más programas, que todos los programas se ofrezcan en todas las sedes, programas virtuales o ampliar la cobertura y el acceso a la universidad?"
+    criterio_true: "Menciona ampliar o abrir programas o posgrados, que todas las sedes tengan las mismas carreras o programas, programas virtuales o modalidades flexibles, ampliar la cobertura, llegar a más municipios o regiones, o acceso a la educación sin límites económicos o geográficos."
+    criterio_false: "No habla de programas, cobertura ni acceso."
+    ejemplos_si: ["Todos los programas académicos de la universidad sean brindados en todas las sedes seccionales y extensiones.", "Ofrecer programas de pregrado virtuales"]
+
+  - id: conformidad
+    nombre: "Conformidad con la transformación (sin ajustes)"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: dicen expresamente que no ajustarían nada o que está bien."
+    critico: false
+    instruccion: "El `comentario` responde a la pregunta '¿Qué ajustaría en esta transformación?'. ¿Responde que no ajustaría nada o que está de acuerdo con la transformación tal como está?"
+    criterio_true: "Responde que no ajustaría nada o que está de acuerdo, aunque sea con pocas palabras: 'nada por destacar', 'nada, es perfecto', 'nada, todo está bien', 'nada por el momento', 'sí responde al plan', 'está bien', 'no, hay que impulsarla'."
+    criterio_false: "Pide, propone o menciona cualquier ajuste o cosa por mejorar, aunque empiece con 'nada'."
+    ejemplos_si: ["Nada, es perfecto", "Nada por el momento"]
+
+  - id: claridad_concepto
+    nombre: "Explicar y completar el concepto de translocalidad"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: faltó contexto al explicarla o el concepto de translocalidad debe complementarse."
+    critico: false
+    instruccion: "¿El `comentario` dice expresamente que faltó explicar la transformación o que el concepto de translocalidad debe aclararse o complementarse?"
+    criterio_true: "Dice de forma explícita que faltó contexto o explicación de la transformación, que no todos conocen sus pilares, o que el concepto de translocalidad debe complementarse con otros elementos."
+    criterio_false: "No habla de la claridad ni del concepto de la transformación."
+    ejemplos_si: ["Faltó contexto en la explicación del frente", "El concepto de translocalidad debe ser muy bien complementado con otros elementos"]
+
+  - id: otros_fuera
+    nombre: "Otros asuntos fuera de la transformación"
+    componente: fuera_de_la_transformacion
+    justificacion: "Asuntos sin anclaje en la sección de UC Translocal, cada uno con menos del 10 % de los comentarios: espacios e infraestructura (descanso, parqueadero, zonas verdes), bienestar y atención médica, empleo y trabajos para estudiantes, IA y digitalización, condiciones y contratación de docentes, alojamiento, ingreso y cupos, ambiente, inclusión y burocracia."
+    critico: false
+    instruccion: "¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Translocal: espacios físicos o infraestructura; bienestar o atención médica; empleo o trabajos para estudiantes; inteligencia artificial, tecnología o digitalización; condiciones, permanencia o contratación de docentes; alojamiento, ingreso o cupos; ambiente; inclusión de personas con discapacidad; burocracia?"
+    criterio_true: "Se cumple con cualquiera de esos casos: espacios de descanso, parqueadero, zonas verdes, caminos o infraestructura; bienestar o atención médica; trabajos de medio tiempo, oportunidades laborales o redes de apoyo laboral; IA, herramientas tecnológicas, digitalización o automatización; permanencia, contratación o estudios de los docentes; alojamiento, ingreso o cupos; ambiente o árboles; personas con discapacidad; burocracia; ferias de emprendimiento."
+    criterio_false: "No trata ninguno de esos asuntos de forma explícita."
+    ejemplos_si: ["Espacios de descanso", "La permanencia laboral de los docentes"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

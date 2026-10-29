@@ -1,0 +1,88 @@
+# Temas de Facatativá · 26-27 oct 2026 · UC para la Vida (lista propia de esta unidad).
+# Anclados a los componentes de "UC para la Vida" en contexto/Transformaciones_estrategicas_5_frentes.md.
+transformacion: UC para la Vida
+version: 2
+temas:
+  - id: crecimiento_personal
+    nombre: "Crecimiento personal y formación integral (formar personas, no solo profesionales)"
+    componente: "Persona Transhumana"
+    justificacion: "Componente 'Persona Transhumana': formar personas, madurar, pensamiento crítico, valores, proyecto de vida, sentido humano y responsabilidad; la universidad como experiencia que transforma a la persona."
+    critico: false
+    instruccion: "¿El `comentario` habla expresamente del crecimiento o la transformación de la persona (su forma de pensar, madurez, valores, sentido humano o proyecto de vida), más allá de lo profesional?"
+    criterio_true: "Menciona expresamente formar personas o mejores seres humanos, crecer o transformarse como persona, madurar, la forma de pensar o de ver el mundo, pensamiento crítico, valores, responsabilidad, proyecto de vida, la Persona Transhumana, el factor o sentido humano, o la formación integral."
+    criterio_false: "No se refiere al desarrollo de la persona. Pedir salidas o prácticas, bienestar, salud mental o convivencia no cuenta (tienen su propio tema); tampoco mencionar 'experiencias' sin hablar de cómo cambian a la persona."
+    ejemplos_si: ["El mayor objetivo es transformar vidas, formar personas", "Me a hecho madurar entorno la la realidad que me rodea, y a pensar por mi mismo"]
+
+  - id: salud_mental_bienestar
+    nombre: "Salud mental, bienestar emocional y actividades de bienestar"
+    componente: "Felicidad y bienestar"
+    justificacion: "Componente 'Felicidad y bienestar': acompañamiento psicológico, salud mental, inteligencia emocional, actividades recreativas y de bienestar afines a la comunidad, bienestar de gestores y funcionarios y difusión de los programas de bienestar."
+    critico: false
+    instruccion: "¿El `comentario` pide atender la salud mental, el bienestar emocional o psicológico, o mejorar o difundir las actividades y programas de bienestar?"
+    criterio_true: "Menciona salud mental, enfermedades mentales, acompañamiento psicológico, bienestar (emocional, mental, estudiantil o de los funcionarios), felicidad, inteligencia emocional, autocuidado, actividades recreativas o programas de bienestar."
+    criterio_false: "No habla de salud mental ni de bienestar. Pedir solo mejor salario tiene su propio tema."
+    ejemplos_si: ["Cátedras sobre salud mental en todos los programas en los primeros semestres", "podría mejorarse con mejor acompañamiento psicológico y de bienestar"]
+
+  - id: experiencias_formativas
+    nombre: "Experiencias formativas reales: salidas, prácticas, pasantías y proyección laboral"
+    componente: "condiciones que favorezcan el aprendizaje"
+    otros_componentes: ["Creadores de Oportunidades"]
+    justificacion: "'Qué busca' ('condiciones que favorezcan el aprendizaje') y componente 'Creadores de Oportunidades': salidas pedagógicas y académicas, prácticas y pasantías, trabajo con comunidades, movilidad, opciones de grado, oportunidades laborales y seguimiento a egresados."
+    critico: false
+    instruccion: "¿El `comentario` pide más salidas pedagógicas, prácticas, pasantías u otras experiencias formativas reales, o apoyo para la vida laboral de estudiantes y egresados?"
+    criterio_true: "Menciona salidas pedagógicas, académicas o de campo, prácticas, pasantías, convenios para la opción de grado, experiencias formativas o reales con el territorio, las comunidades o las empresas, movilidad internacional, opciones de grado, oportunidades laborales o seguimiento a egresados."
+    criterio_false: "No habla de experiencias formativas, prácticas ni de la vida laboral. Describir cómo la universidad cambió a la persona tiene su propio tema."
+    ejemplos_si: ["Que se puedan ampliar mas experiencias formativas (salidas pedagógica)", "Fomentando más la investigación, articulando mejor las practicas y pasantias"]
+
+  - id: condiciones_personal
+    nombre: "Condiciones laborales, salarios y desarrollo del personal"
+    componente: "Desarrollo del talento humano"
+    justificacion: "Componente 'Desarrollo del talento humano': salarios y nivelación salarial, estabilidad y permanencia de docentes, condiciones por cargo, incentivos y ascensos, apoyos para formación posgradual y personal idóneo."
+    critico: false
+    instruccion: "¿El `comentario` pide mejores condiciones laborales, salario, estabilidad, incentivos o apoyos de formación para docentes, administrativos o funcionarios?"
+    criterio_true: "Menciona salario, nivelación o reconocimiento salarial, estabilidad o permanencia laboral, condiciones laborales, garantías, incentivos, ascensos, reglas de categorización para los trabajadores, apoyos posgraduales o beneficios de formación para el personal, o vincular personas idóneas."
+    criterio_false: "No habla de las condiciones del personal. Las oportunidades laborales para estudiantes o egresados no cuentan."
+    ejemplos_si: ["Generar bienestar laboral para administrativos y nivelación salarial", "Mayores permanencias de los docentes"]
+
+  - id: docencia_metodologia
+    nombre: "Docencia y metodología: MEDIT, métodos y formación actualizada"
+    componente: "Gestores del Conocimiento y el Aprendizaje"
+    justificacion: "Componente 'Gestores del Conocimiento y el Aprendizaje': aplicar el modelo MEDIT, estrategias lúdicas y métodos evaluativos, innovar en las clases, formación actualizada al entorno y relación docente-estudiante."
+    critico: false
+    instruccion: "¿El `comentario` habla de la forma de enseñar, del modelo MEDIT, de los métodos de aprendizaje o evaluación, o de actualizar la formación académica?"
+    criterio_true: "Menciona MEDIT, metodología, estrategias lúdicas, métodos evaluativos, relación docente-estudiante, innovar en las actividades académicas, aprendizaje académico, enseñar herramientas para el futuro profesional o actualizar las formaciones al entorno."
+    criterio_false: "No habla de la docencia ni de los métodos. Las salidas y prácticas tienen su propio tema."
+    ejemplos_si: ["Mantener la base medit, estrategias lúdicas, métodos evaluativos", "La universidad tiene la metodología MEDIT que esta bien formulada pero a dia de hoy hace falta un poco mas en la aplicación"]
+
+  - id: convivencia_participacion
+    nombre: "Convivencia, comunicación, integración y participación"
+    componente: "Convivencia"
+    otros_componentes: ["Valores democráticos"]
+    justificacion: "Componente 'Convivencia' (y 'Valores democráticos'): relaciones, empatía y compañerismo, comunicación entre estudiantes, espacios de integración y diálogo, evitar conflictos y que la voz de los estudiantes sea escuchada."
+    critico: false
+    instruccion: "¿El `comentario` pide mejorar la convivencia, la comunicación, la integración o la participación de la comunidad?"
+    criterio_true: "Menciona convivencia, relaciones, empatía, compañerismo, comunicación entre estudiantes, espacios de integración o de diálogo, evitar conflictos, participación o que la voz de los estudiantes sea escuchada."
+    criterio_false: "No habla de convivencia, comunicación ni participación."
+    ejemplos_si: ["La convivencia en términos de relaciones, responsabilidad compromisoemo empatía compañerismo", "La comunicación entre estudiantes"]
+
+  - id: conformidad
+    nombre: "Conformidad y valoración positiva (sin ajustes)"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: dicen que no ajustarían nada o solo valoran lo que ya ofrece la universidad."
+    critico: false
+    instruccion: "El `comentario` responde a la pregunta '¿Qué ajustaría en esta transformación?'. ¿Responde que no ajustaría nada, que está de acuerdo o solo valora positivamente lo que ya existe, sin pedir ningún cambio?"
+    criterio_true: "Responde que no ajustaría nada o que está de acuerdo, aunque sea con pocas palabras: 'ningún ajuste', 'todo perfecto', 'la universidad ya tiene las herramientas para esta transformación'; sin pedir ningún cambio."
+    criterio_false: "Pide, propone o menciona cualquier ajuste o cosa por mejorar, aunque también elogie la transformación."
+    ejemplos_si: ["Ningún ajuste", "Todo perfecto"]
+
+  - id: otros_fuera
+    nombre: "Otros asuntos fuera de la transformación"
+    componente: fuera_de_la_transformacion
+    justificacion: "Asuntos sin anclaje en la sección de UC para la Vida, cada uno con menos del 10 % de los comentarios: espacios físicos e infraestructura, IA y tecnologías, fuentes de financiación y alianzas, y proyección a los colegios."
+    critico: false
+    instruccion: "¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC para la Vida: espacios físicos o infraestructura (auditorio, parqueaderos, zonas verdes); inteligencia artificial o tecnologías emergentes; fondos o alianzas público-privadas; llegar a la comunidad escolar?"
+    criterio_true: "Se cumple con cualquiera de esos casos: auditorio, parqueaderos, zonas verdes o espacios físicos; IA, tecnologías emergentes o ciberresiliencia; fondos gubernamentales o alianzas con empresas; impacto en colegios o comunidad escolar."
+    criterio_false: "No trata ninguno de esos asuntos de forma explícita."
+    ejemplos_si: ["La universidad debe apostarle a la ia de una forma más articulado en todos sus programas", "Combinar recursos propios con fondos gubernamentales y alianzas público-privadas"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

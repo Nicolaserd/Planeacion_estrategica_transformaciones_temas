@@ -1,0 +1,56 @@
+slug: facatativa_2026-10-26_a_2026-10-27_uc_digital
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_. (UC
+  DIGITAL)(1-753) (1).xlsx
+sha256_archivo: 3d76dc58b599658f2ea0718f11eb577deade05b35deb8354ff80676afbeb5055
+transformacion:
+  id: T3
+  nombre_oficial: UC Digital
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 3. UC Digital' · líneas 66-82
+unidad: Facatativá
+fechas:
+- '2026-10-26'
+- '2026-10-27'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 110
+N_s: 91
+textos_unicos: 91
+excluidos:
+  vacio: 12
+  no_respuesta: 3
+  solo_signos_o_numeros: 3
+  menos_de_3_letras: 1
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 91
+  n_muestra_requerida: 73.7
+  fraccion: 0.81
+  protocolo: B_censo
+informe_filtro:
+  filas: 110
+  unidades_que_coinciden:
+  - Extensión Facatativá
+  transformacion_vacia_asumida: 15
+  fuera_de_fecha_no_incluidas: []
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Facatativa_2026-10-26_a_2026-10-27_UC_Digital.xlsx
+  clasificacion: Clasificacion_Facatativa_2026-10-26_a_2026-10-27_UC_Digital.xlsx
+  hoja: Facatativá 26-27 oct 2026
+preparado: '2026-10-29'

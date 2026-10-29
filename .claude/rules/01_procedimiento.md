@@ -12,7 +12,12 @@ Un **ejercicio** es una transformación, en una unidad regional y unas fechas. S
 | Fechas de desarrollo (una o varias) | `2026-08-18 2026-08-19` | preguntar |
 
 - **Documento marco**, la única fuente de las transformaciones: `contexto/Transformaciones_estrategicas_5_frentes.md`. Hay 5 transformaciones: UC Inteligente, UC Translocal, UC Digital, UC Emprendedora e Innovadora y UC para la Vida.
-- **Archivos de Forms.** Hay uno por transformación en `data/raw/`. Sus nombres originales traen espacios raros (espacio duro `\xa0`), así que búscalos con `glob`, por ejemplo `*(UC DIGITAL)*.xlsx`, o cópialos con un nombre simple.
+- **Archivos de Forms.** En `data/raw/` hay uno por transformación, más el formulario general `(UCUNDINAMARCA)`. Sus nombres traen espacios raros (espacio duro `\xa0`), así que búscalos con `glob`, por ejemplo `*(UC DIGITAL)*.xlsx`.
+- **Si Nicolás sube archivos nuevos**, que suelen ser exportaciones más largas de los mismos formularios:
+  - comprueba que los ejercicios hechos no cambian, es decir, mismos ID en sus unidades y fechas;
+  - busca unidades o fechas nuevas;
+  - pregúntale las fechas de las unidades nuevas.
+  - El 29 oct 2026 los 25 ejercicios anteriores no cambiaron.
 - **Fechas usadas hasta hoy:**
 
   | Unidad | Fechas |
@@ -22,7 +27,9 @@ Un **ejercicio** es una transformación, en una unidad regional y unas fechas. S
   | Girardot | 7 y 8 sep |
   | Soacha | 14 y 15 sep |
   | Chía | 21 y 22 sep |
-  | Fusagasugá | 28 sep (sin procesar) |
+  | Fusagasugá | 28 sep y 19 oct (dos jornadas, un solo ejercicio por decisión de Nicolás) |
+  | Facatativá | 26 y 27 oct |
+  | UCundinamarca (formulario general) | todas las unidades y fechas (31 ago a 27 oct), un solo ejercicio |
 
 ## Pasos (con `.venv\Scripts\python.exe`)
 
@@ -38,6 +45,18 @@ El script:
 - imprime los componentes de la transformación y los comentarios anonimizados (con `--silencioso` no los imprime).
 
 Usa **solo las fechas que dio Nicolás**. Si el script reporta filas de la unidad en otras fechas (`fuera_de_fecha_no_incluidas`), menciónalas en el reporte, pero no las incluyas salvo que Nicolás lo pida. Si lo pide, repite el paso con `--incluir-ids <ID> ...`.
+
+Opciones especiales:
+- `--unidad Todas`: no filtra por unidad.
+- `--fechas todas`: toma todas las fechas en que la unidad respondió.
+- `--columna-comentario "<pregunta>"`: indica la pregunta abierta cuando no es "¿Qué ajustaría en esta transformación?".
+- Para el formulario UCundinamarca, `--transformacion "UCundinamarca"` ancla los temas a las 5 transformaciones. El comando completo está en `CLAUDE.md`.
+
+### 1b. Revisar nombres
+```
+python scripts/revisar_nombres.py <slug>
+```
+Debe dar 0. Si marca comentarios, revísalos sin copiar el nombre. Luego amplía la anonimización en `src/f03_limpieza_anonimizacion.py`, agrega una prueba y repite `preparar`. Ver `05_privacidad.md`.
 
 ### 2. Definir los temas y codificar
 Lee todos los comentarios y escribe `config/ejercicios/<slug>/temas.yaml` y `logs/<slug>/codificacion.jsonl`. Las reglas están en `02_temas.md`.
@@ -70,7 +89,7 @@ Si un tema sale INFLADO o SUBDETECTADO, corrige su redacción en `temas.yaml` y 
 ```
 python src/ejercicio.py exportar --ejercicio <slug>
 ```
-Genera los dos Excel en `outputs/<transformación>/`. El formato está en `04_salidas.md`. Si ya existían Excel de ese ejercicio con **otros temas**, respáldalos antes en `outputs/<transformación>/version_N/`.
+Genera en `outputs/<transformación>/` los dos Excel y la copia anonimizada del de clasificación. El formato está en `04_salidas.md`. En `outputs/` solo queda lo definitivo: si ya existían Excel de ese ejercicio con **otros temas**, pregunta a Nicolás antes de sobrescribirlos.
 
 ### 7. Reportar a Nicolás
 - la ruta de los dos archivos;

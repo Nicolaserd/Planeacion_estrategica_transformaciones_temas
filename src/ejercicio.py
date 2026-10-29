@@ -42,6 +42,11 @@ DOC_MARCO = RAIZ / "contexto" / "Transformaciones_estrategicas_5_frentes.md"
 FUERA = "fuera_de_la_transformacion"
 GENERAL = "transformacion_en_general"   # el comentario se refiere a la transformación como un todo
 ETIQUETA_ANCLA = {FUERA: "Fuera de la transformación", GENERAL: "La transformación en general"}
+# Formularios que no son de una transformación (p. ej. "Comparte aquí tu aporte"): sus temas se anclan a cualquiera de
+# las 5 transformaciones del documento marco. Clave = slug del nombre que se pasa en --transformacion.
+FORMULARIOS_GENERALES = {"ucundinamarca": "UCundinamarca"}
+ETIQUETA_ANCLA_GENERAL = {FUERA: "Fuera de las 5 transformaciones", GENERAL: "El Plan y la universidad en general"}
+TODAS = "todas"   # --unidad Todas (sin filtro de unidad) y --fechas todas (todas las fechas)
 SIN_CONTENIDO = ("¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', "
                  "un 'todo bien' sin más detalle o un texto sin sentido?")
 TAU_POR_DEFECTO = 0.7   # params.yaml > umbral_tema_ejercicio (ver la justificación allí)
@@ -62,6 +67,18 @@ def resolver_transformacion(nombre: str, ruta: Path = DOC_MARCO) -> dict:
     """Busca la transformación en el documento marco (sin importar tildes ni mayúsculas)."""
     secciones = extraer_secciones(ruta.read_text(encoding="utf-8").splitlines())
     buscado = slug(nombre)
+    if buscado in FORMULARIOS_GENERALES:
+        # Formulario general: las "componentes" son las 5 transformaciones y vale cualquier frase literal del documento
+        return {
+            "id": "T0",
+            "nombre_oficial": FORMULARIOS_GENERALES[buscado],
+            "referencia": f"{ruta.name} · las {len(secciones)} transformaciones",
+            "enunciado": "",
+            "que_busca": "",
+            "componentes": [x["nombre"] for x in secciones],
+            "texto_seccion": "\n".join(f"{x['nombre']}\n" + "\n".join(x["cuerpo"]) for x in secciones),
+            "general": True,
+        }
     s = next((s for s in secciones if slug(s["nombre"]) == buscado), None)
     if s is None:
         raise SystemExit(f"La transformación '{nombre}' no está en {ruta.name}. "
@@ -75,6 +92,13 @@ def resolver_transformacion(nombre: str, ruta: Path = DOC_MARCO) -> dict:
         "componentes": [x.lstrip("- ").strip() for x in bloque(s["cuerpo"], "Componentes preliminares")],
         "texto_seccion": "\n".join(s["cuerpo"]),
     }
+
+
+def etiquetas_ancla(transformacion: dict) -> tuple[dict, str]:
+    """Etiquetas de las anclas especiales y título de la columna de componente (cambian en un formulario general)."""
+    if transformacion.get("general"):
+        return ETIQUETA_ANCLA_GENERAL, "Transformación del Plan"
+    return ETIQUETA_ANCLA, "Componente de la transformación"
 
 
 def componente_valido(componente: str, transformacion: dict) -> bool:
@@ -154,12 +178,18 @@ def filtrar(df: pd.DataFrame, mapeo: dict, unidad: str, fechas: list[str], trans
             incluir_ids=()) -> tuple[pd.DataFrame, dict]:
     """Filas del ejercicio: unidad + fechas (+ ids incluidos a mano) + transformación del formulario."""
     col_u, col_f, col_t, col_id = mapeo["unidad_regional"], mapeo["fecha"], mapeo["transformacion_declarada"], mapeo["id_resp"]
-    es_unidad = df[col_u].fillna("").map(slug).str.contains(slug(unidad), regex=False)
+    if slug(unidad) == TODAS:
+        es_unidad = pd.Series(True, index=df.index)
+    else:
+        es_unidad = df[col_u].fillna("").map(slug).str.contains(slug(unidad), regex=False)
     if not es_unidad.any():
         raise SystemExit(f"No hay filas de la unidad '{unidad}'. Unidades: {sorted(df[col_u].dropna().unique())}")
     dia = df[col_f].dt.strftime("%Y-%m-%d")
     objetivo = slug(transformacion)
-    t_slug = df[col_t].map(lambda v: slug(v) if isinstance(v, str) and v.strip() else "")
+    if col_t in df.columns:
+        t_slug = df[col_t].map(lambda v: slug(v) if isinstance(v, str) and v.strip() else "")
+    else:   # formulario sin columna de transformación (p. ej. el general): todas sus filas son de ese formulario
+        t_slug = pd.Series("", index=df.index)
     valores = set(t_slug[es_unidad]) - {""}
     otros = valores - {objetivo}
     vacios_unidad = int((es_unidad & (t_slug == "")).sum())
@@ -176,8 +206,8 @@ def filtrar(df: pd.DataFrame, mapeo: dict, unidad: str, fechas: list[str], trans
     fuera = df[es_unidad & es_t & ~dia.isin(fechas)]
     informe = {
         "filas": len(sub),
-        "unidades_que_coinciden": sorted(df.loc[es_unidad, col_u].unique()),
-        "transformacion_vacia_asumida": int((sub[col_t].isna()).sum()),
+        "unidades_que_coinciden": sorted(df.loc[es_unidad, col_u].fillna("(vacío)").unique()),
+        "transformacion_vacia_asumida": int((sub[col_t].isna()).sum()) if col_t in sub.columns else len(sub),
         "fuera_de_fecha_no_incluidas": [{"ID": int(r[col_id]), "fecha": dia[i]} for i, r in fuera.iterrows()
                                         if r[col_id] not in set(incluir_ids)],
         "fuera_de_fecha_incluidas": [{"ID": int(r[col_id]), "fecha": dia[i]} for i, r in fuera.iterrows()
@@ -226,20 +256,25 @@ def cargar(slug_ej: str) -> tuple[dict, dict]:
 
 def preparar(a):
     trans = resolver_transformacion(a.transformacion)
-    fechas = sorted(pd.to_datetime(a.fechas).strftime("%Y-%m-%d"))
+    archivo = Path(a.archivo).resolve()
+    mapeo = yaml.safe_load((RAIZ / "config" / "mapeo_columnas.yaml").read_text(encoding="utf-8"))
+    df = pd.read_excel(archivo)
+    col_com = a.columna_comentario or mapeo["comentarios"][0]["columna"]
+    claves = ["id_resp", "grupo", "unidad_regional", "fecha"] + ([] if trans.get("general") else ["transformacion_declarada"])
+    faltan = [c for c in [mapeo[k] for k in claves] + [col_com] if c not in df.columns]
+    if faltan:
+        raise SystemExit(f"Columnas esperadas que no están en el Excel: {faltan}. Columnas del archivo: {list(df.columns)}")
+    if [f.lower() for f in a.fechas] == [TODAS]:   # todas las fechas en que la unidad (o todas) respondió
+        u = df[mapeo["unidad_regional"]].fillna("").map(slug)
+        en_unidad = u.str.len() >= 0 if slug(a.unidad) == TODAS else u.str.contains(slug(a.unidad), regex=False)
+        fechas = sorted(df.loc[en_unidad, mapeo["fecha"]].dt.strftime("%Y-%m-%d").unique())
+    else:
+        fechas = sorted(pd.to_datetime(a.fechas).strftime("%Y-%m-%d"))
     slug_ej = slug_ejercicio(a.unidad, fechas, trans["nombre_oficial"])
     r = rutas(slug_ej)
     for k in ("config", "interim", "logs"):
         r[k].mkdir(parents=True, exist_ok=True)
 
-    archivo = Path(a.archivo).resolve()
-    mapeo = yaml.safe_load((RAIZ / "config" / "mapeo_columnas.yaml").read_text(encoding="utf-8"))
-    df = pd.read_excel(archivo)
-    col_com = mapeo["comentarios"][0]["columna"]
-    faltan = [c for c in [mapeo[k] for k in ("id_resp", "grupo", "unidad_regional", "fecha", "transformacion_declarada")]
-              + [col_com] if c not in df.columns]
-    if faltan:
-        raise SystemExit(f"Columnas esperadas que no están en el Excel: {faltan}")
     sub, informe = filtrar(df, mapeo, a.unidad, fechas, trans["nombre_oficial"], a.incluir_ids or [])
     cols_encuesta = [c for c in df.columns if df[c].notna().any()]  # sin las columnas vacías de Forms
 
@@ -272,7 +307,8 @@ def preparar(a):
         "slug": slug_ej,
         "archivo": str(archivo),
         "sha256_archivo": hashlib.sha256(archivo.read_bytes()).hexdigest(),
-        "transformacion": {k: trans[k] for k in ("id", "nombre_oficial", "referencia")},
+        "transformacion": {k: trans[k] for k in ("id", "nombre_oficial", "referencia")} | (
+            {"general": True} if trans.get("general") else {}),
         "unidad": a.unidad,
         "fechas": fechas,
         "incluir_ids": list(a.incluir_ids or []),
@@ -432,8 +468,13 @@ def exportar(slug_ej: str):
     fechas_txt = " y ".join(ficha["fechas"])
     tard = ficha["informe_filtro"]["fuera_de_fecha_incluidas"]
     extra_tard = f" (+ {len(tard)} respuesta(s) de otra fecha incluidas: ID {', '.join(str(x['ID']) for x in tard)})" if tard else ""
-    rotulo = (f"{ficha['unidad']} · {fechas_txt}{extra_tard} · Transformación: {trans['nombre_oficial']} · "
-              f"{N} respuestas, {N_s} con comentario · Clasificado por Jev ({modelo})")
+    general = bool(trans.get("general"))
+    anclas, titulo_comp = etiquetas_ancla(trans)
+    unidad_txt = "Todas las unidades regionales" if slug(ficha["unidad"]) == TODAS else ficha["unidad"]
+    if general and len(ficha["fechas"]) > 2:
+        fechas_txt = f"{ficha['fechas'][0]} a {ficha['fechas'][-1]} ({len(ficha['fechas'])} fechas)"
+    rotulo = (f"{unidad_txt} · {fechas_txt}{extra_tard} · {'Formulario' if general else 'Transformación'}: "
+              f"{trans['nombre_oficial']} · {N} respuestas, {N_s} con comentario · Clasificado por Jev ({modelo})")
 
     # Asignación por comentario
     params = yaml.safe_load((RAIZ / "config" / "params.yaml").read_text(encoding="utf-8"))
@@ -444,10 +485,10 @@ def exportar(slug_ej: str):
         ps = sorted(((k, float(x[f"p_{k}"])) for k in ids), key=lambda kv: -kv[1])
         asign[x.id_com] = {"asignados": [(k, p) for k, p in ps if p >= tau], "max": ps[0]}
     etiqueta = lambda k: por_id[k]["nombre"]  # noqa: E731
-    comp = lambda k: ETIQUETA_ANCLA.get(por_id[k]["componente"], por_id[k]["componente"])  # noqa: E731
+    comp = lambda k: anclas.get(por_id[k]["componente"], por_id[k]["componente"])  # noqa: E731
 
     def comp_con_otros(k):
-        otros = [x for x in por_id[k].get("otros_componentes", []) if x not in ETIQUETA_ANCLA]
+        otros = [x for x in por_id[k].get("otros_componentes", []) if x not in anclas]
         return comp(k) + (f" (también: {'; '.join(otros)})" if otros else "")
 
     # ---------- Excel 1: lista de temas (1 hoja) ----------
@@ -470,18 +511,22 @@ def exportar(slug_ej: str):
                        float(np.mean([p for _, p in con_tema])) if n else None, texto_mejor])
     con_tema_algun = {x for t in lista for x in componentes_del_tema(t)}
     for comp_vacio in [x for x in orden_comp if x not in con_tema_algun]:
-        filas1.append([comp_vacio, "— Ningún comentario de esta unidad trató este componente", "", 0, 0.0, None, None, None, ""])
+        vacio = ("— Ningún aporte trató esta transformación" if general
+                 else "— Ningún comentario de esta unidad trató este componente")
+        filas1.append([comp_vacio, vacio, "", 0, 0.0, None, None, None, ""])
     sin_tema = sum(1 for a in asign.values() if not a["asignados"])
 
     wb = Workbook()
     ws = wb.active
     ws.title = "Temas"
-    titulo(ws, [f"Temas · {trans['nombre_oficial']} · {ficha['unidad']} · {fechas_txt}", rotulo,
-                f"Temas definidos a partir de los comentarios y anclados a los componentes de {trans['nombre_oficial']} "
+    ancla_txt = ("a las 5 transformaciones del Plan" if general
+                 else f"a los componentes de {trans['nombre_oficial']}")
+    titulo(ws, [f"Temas · {trans['nombre_oficial']} · {unidad_txt} · {fechas_txt}", rotulo,
+                f"Temas definidos a partir de los comentarios y anclados {ancla_txt} "
                 f"({trans['referencia']}). Comentarios = cuántos comentarios clasificó Jev en el tema (confianza ≥ {tau:.0%}; un "
                 f"comentario puede tener varios temas). % sobre {N_s} comentarios. Sin tema asignado: {sin_tema}. Cada respuesta "
                 "es de un grupo de 5 a 8 personas. Confianza = probabilidad que asigna Jev, no exactitud."], 9)
-    ult = tabla(ws, 5, ["Componente de la transformación", "Tema", "Qué incluye", "Comentarios", "% de comentarios",
+    ult = tabla(ws, 5, [titulo_comp, "Tema", "Qué incluye", "Comentarios", "% de comentarios",
                         "IC 95 % inf.", "IC 95 % sup.", "Confianza media (Jev)", "Comentario con mayor confianza (anonimizado)"],
                 filas1, [30, 40, 60, 11, 11, 9, 9, 12, 80], pct_cols=(5, 6, 7, 8), wrap_cols=(1, 2, 3, 9))
     ws.conditional_formatting.add(f"H6:H{ult}", ColorScaleRule(**ESCALA_CONF))
@@ -497,7 +542,7 @@ def exportar(slug_ej: str):
     cols = [x for x in ficha["columnas_encuesta"]]
     ids_orden = [t["id"] for t in orden_temas]
     encabezados = ["Rol (Tipo de actor)" if x == "Tipo de actor" else x for x in cols] + [
-        "Tema principal (Jev)", "Componente de la transformación", "% confianza (Jev)"] + [etiqueta(k) for k in ids_orden]
+        "Tema principal (Jev)", titulo_comp, "% confianza (Jev)"] + [etiqueta(k) for k in ids_orden]
     filas2 = []
     for _, e in enc.iterrows():
         x = info.loc[e.id_com]
@@ -557,6 +602,9 @@ def main():
     pp.add_argument("--fechas", nargs="+", required=True)
     pp.add_argument("--incluir-ids", nargs="*", type=int, default=[])
     pp.add_argument("--silencioso", action="store_true", help="no imprimir los comentarios")
+    pp.add_argument("--columna-comentario", default=None,
+                    help="pregunta abierta a clasificar si no es la de config/mapeo_columnas.yaml "
+                         "(p. ej. 'Comparte aquí tu aporte:' en el formulario UCundinamarca)")
     for nombre in ("validar", "clasificar", "exportar"):
         sp.add_parser(nombre).add_argument("--ejercicio", required=True)
     a = p.parse_args()

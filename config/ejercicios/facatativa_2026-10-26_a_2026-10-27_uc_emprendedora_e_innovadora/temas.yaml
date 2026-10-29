@@ -1,0 +1,97 @@
+# Temas de Facatativá · 26-27 oct 2026 · UC Emprendedora e Innovadora (lista propia de esta unidad).
+# Anclados a los componentes de "UC Emprendedora e Innovadora" en contexto/Transformaciones_estrategicas_5_frentes.md.
+transformacion: UC Emprendedora e Innovadora
+version: 2
+temas:
+  - id: acompanamiento_viabilidad
+    nombre: "Acompañar, asesorar y evaluar la viabilidad de las ideas hasta materializarlas"
+    componente: "Ecosistemas de innovación"
+    justificacion: "Componente 'Ecosistemas de innovación': asesoría de docentes y expertos, mentorías, capacitaciones, estudios de viabilidad y factibilidad, seguimiento y programas de aceleración."
+    critico: false
+    instruccion: "¿El `comentario` pide acompañar, asesorar, capacitar o hacer seguimiento a las ideas o proyectos, o evaluar su viabilidad?"
+    criterio_true: "Menciona acompañamiento, asesoría o asesorías, mentoría, capacitaciones para desarrollar ideas, seguimiento a las ideas o proyectos, estudio de viabilidad o factibilidad, programas de aceleración, analizar y gestionar las ideas, o darles solidez y llevarlas a la práctica."
+    criterio_false: "No habla de acompañar, asesorar ni evaluar ideas. Pedir solo dinero o recursos tiene su propio tema."
+    ejemplos_si: ["Acompañamiento y apoyo al momento de tener la idea", "Estudio de factibilidad del mercado"]
+
+  - id: financiacion_recursos
+    nombre: "Financiación, presupuesto y recursos para los proyectos"
+    componente: "Emprendimiento"
+    justificacion: "Componente 'Emprendimiento': financiación, fondos, inversión, capital semilla, presupuesto y recursos para las ideas y proyectos."
+    critico: false
+    instruccion: "¿El `comentario` pide financiación, presupuesto, inversión o recursos para las ideas o proyectos?"
+    criterio_true: "Menciona financiación, financiamiento, fondos, fondo de emprendimiento, inversión, invertir, capital o financiación semilla, presupuesto, apoyo económico o recursos (económicos o necesarios) para los proyectos."
+    criterio_false: "No menciona dinero, presupuesto ni recursos."
+    ejemplos_si: ["Inyección de presupuesto.", "Articulación estatal y un fondo de emprendimiento institucional"]
+
+  - id: comunidad_territorio
+    nombre: "Innovación con y para la comunidad y el territorio"
+    componente: "Innovación social"
+    otros_componentes: ["desarrollo del territorio"]
+    justificacion: "Componente 'Innovación social' y 'Qué busca' ('desarrollo del territorio'): articularse con las comunidades, resolver problemas reales del municipio (agua, movilidad), apoyar a emprendedores y microempresarios locales e incluir a la comunidad externa."
+    critico: false
+    instruccion: "¿El `comentario` pide que el emprendimiento o la innovación se articulen con la comunidad o el territorio, o resuelvan sus problemas?"
+    criterio_true: "Menciona la comunidad (interna o externa), el entorno, el territorio, la región, el medio, problemas reales del municipio, emprendedores o microempresarios locales, capacitación a la comunidad externa, trabajo comunitario o interacción social."
+    criterio_false: "No habla de la comunidad, el entorno ni el territorio. Las alianzas con empresas o entidades tienen su propio tema."
+    ejemplos_si: ["Articulaciones entre las comunidades y la universidad.", "Concierto importante que no sólo se apoyen los emprendimientos si no a los microempresarios locales"]
+
+  - id: alianzas_sectores
+    nombre: "Alianzas con empresas, el Estado y otras instituciones"
+    componente: "Relacionamiento con los sectores sociales, productivos, públicos y comunitarios"
+    justificacion: "Componente 'Relacionamiento con los sectores...': alianzas y convenios con empresas, la Alcaldía, el sector público y privado y otras universidades para apoyar las iniciativas."
+    critico: false
+    instruccion: "¿El `comentario` pide alianzas, convenios o articulación con empresas, el sector público o privado, el Estado u otras instituciones?"
+    criterio_true: "Menciona alianzas, convenios, articulación estatal, conectar con empresas, sector externo, sector público o privado, Alcaldía, sectores de la economía, beneficios a las empresas que apoyen o colaboración con otras universidades."
+    criterio_false: "No habla de alianzas ni de relaciones con actores externos. La comunidad o el territorio tienen su propio tema."
+    ejemplos_si: ["Fortalecer las alianzas y convenios con el sector externo ofreciendo soluciones estratégicas", "Colaboración con otras universidades"]
+
+  - id: divulgacion_cultura
+    nombre: "Divulgar los apoyos y promover la cultura emprendedora"
+    componente: "cultura institucional emprendedora"
+    justificacion: "'Qué busca': promover 'una cultura institucional emprendedora': divulgar los apoyos, la financiación y los proyectos, transparencia en las opciones, espacios y concursos de ideas."
+    critico: false
+    instruccion: "¿El `comentario` pide divulgar, difundir o socializar los apoyos, procesos o proyectos de emprendimiento, o crear espacios y concursos que promuevan la cultura emprendedora?"
+    criterio_true: "Menciona divulgación, difusión, promoción, socializar, dar a conocer o más información sobre los apoyos, ayudas, financiación o proyectos; transparencia; o espacios, competencias o lluvias de ideas de emprendimiento."
+    criterio_false: "No habla de divulgar ni de promover espacios de emprendimiento."
+    ejemplos_si: ["Mayor difusión de Las diferentes ayudas", "Mayor divulgación promovedora de los proyectos emprendedores"]
+
+  - id: oportunidades_inclusion
+    nombre: "Más oportunidades: emprendimiento para administrativos y todas las carreras, y empleo para egresados"
+    componente: "Creación de oportunidades"
+    justificacion: "Componente 'Creación de oportunidades': incluir a administrativos (también contratos APA) y a todas las carreras en el emprendimiento, y crear oportunidades laborales para los egresados."
+    critico: false
+    instruccion: "¿El `comentario` pide incluir en el emprendimiento a los administrativos o a carreras poco atendidas, o crear oportunidades laborales para estudiantes y egresados?"
+    criterio_true: "Menciona vincular o apoyar los emprendimientos de administrativos o gestores, contratos APA, carreras que hoy tienen poco apoyo (por ejemplo ingeniería agronómica), creación de oportunidades, oportunidad laboral o un banco de oportunidades para egresados."
+    criterio_false: "No habla de incluir a esos actores ni de oportunidades laborales."
+    ejemplos_si: ["Vincular en los procesos de emprendimiento e innovación a los administrativos", "Cfeación ee oportunidades laborales, a través de un banco de oportunidades para egresados."]
+
+  - id: ruta_menos_burocracia
+    nombre: "Una ruta clara y menos burocracia para presentar y apoyar proyectos"
+    componente: "Ecosistemas de innovación"
+    justificacion: "Componente 'Ecosistemas de innovación': ruta establecida para atender las iniciativas, requisitos claros, menos burocracia y mejor articulación entre las áreas que apoyan el emprendimiento."
+    critico: false
+    instruccion: "¿El `comentario` pide menos burocracia, procesos más flexibles, una ruta clara o mejor articulación entre áreas para presentar y apoyar proyectos?"
+    criterio_true: "Menciona burocracia, flexibilidad de los procesos, una ruta establecida, requisitos de participación, articulación entre las áreas de emprendimiento e innovación o con la planeación."
+    criterio_false: "No habla de procesos, burocracia ni rutas. Pedir acompañamiento o dinero tiene su propio tema."
+    ejemplos_si: ["Mayor flexibilidad y menos burocracia en los procesos de la universidad", "Universidad abierta al Medio  y que exista una ruta establecida para atender la iniciativa o problemática"]
+
+  - id: conformidad
+    nombre: "Conformidad y valoración positiva (sin ajustes)"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: dicen que no ajustarían nada o solo la valoran positivamente sin pedir cambios."
+    critico: false
+    instruccion: "El `comentario` responde a la pregunta '¿Qué ajustaría en esta transformación?'. ¿Responde que no ajustaría nada, que está de acuerdo o solo valora positivamente la transformación sin pedir ningún cambio?"
+    criterio_true: "Responde que no ajustaría nada o que está de acuerdo, aunque sea con pocas palabras: 'ningún ajuste', 'por el momento nada', 'así como está está bien', 'excelente', 'me gusta', 'felicitaciones'; sin pedir ningún cambio."
+    criterio_false: "Pide, propone o menciona cualquier ajuste o cosa por mejorar, aunque también elogie la transformación."
+    ejemplos_si: ["Ningún ajuste", "La propuestas así como está está bien"]
+
+  - id: otros_fuera
+    nombre: "Otros asuntos fuera de la transformación"
+    componente: fuera_de_la_transformacion
+    justificacion: "Asuntos sin anclaje en la sección de UC Emprendedora e Innovadora, cada uno con menos del 10 % de los comentarios: investigación, equipos e IA, cupos en una carrera y estabilidad laboral."
+    critico: false
+    instruccion: "¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Emprendedora e Innovadora: fortalecer la investigación o los proyectos de investigación; equipos, tecnología o inteligencia artificial; cupos en una carrera; estabilidad laboral o remuneración?"
+    criterio_true: "Se cumple con cualquiera de esos casos: investigación, proyectos de investigación o desarrollo; mejores equipos, tecnología o IA; cupos en una carrera; estabilidad laboral o buena remuneración."
+    criterio_false: "No trata ninguno de esos asuntos de forma explícita. Pedir financiación tiene su propio tema."
+    ejemplos_si: ["Fortalecer y fomentar la investigación", "Estabilidad laboral y buena remuneración"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

@@ -11,7 +11,7 @@ Cada fila de la encuesta es la respuesta de un **grupo de 5 a 8 personas**, no d
 
 | Comentarios con contenido (N_s) | Protocolo |
 |---|---|
-| ≤ 385 | **Censo**: se leen y clasifican todos (todos los ejercicios de 2026 tienen entre 17 y 119) |
+| ≤ 385 | **Censo**: se leen y clasifican todos (todos los ejercicios de 2026 tienen entre 17 y 220) |
 | 386 a 1.199 | Muestreo reducido: no alcanzan muestras disjuntas de descubrimiento, validación y estándar de oro |
 | ≥ 1.200 | Diseño completo del prompt maestro (`PROMPT_clasificacion_jev_v2 (5).md`) |
 
@@ -27,7 +27,10 @@ Con 385 o menos, la muestra necesaria para ±5 pp con 95 % de confianza sería m
 ## Calidad de la clasificación
 
 - **Referencia:** la lectura de Claude (`logs/<slug>/codificacion.jsonl`), comparada con `scripts/revisar_jev.py`.
-- **Resultado:** acuerdo micro-F1 medio de 0,87 en la versión 2 (mínimo 0,80).
+- **Resultado:**
+  - en los 25 primeros ejercicios (versión 2), el acuerdo micro-F1 medio es 0,87 (mínimo 0,80);
+  - en los 11 de octubre (Facatativá, Fusagasugá y UCundinamarca), va de 0,77 a 0,89.
+  - Fusagasugá, con más comentarios y más testimonios, tiene los valores más bajos.
 - **Es indicativo:** la lectura de Claude no es un etiquetado humano a ciegas. Si Nicolás quiere una medida de exactitud real, una persona que no haya visto los resultados de Jev etiqueta unos 30 comentarios por transformación y se compara.
 
 ## Validación metodológica completa (opcional)

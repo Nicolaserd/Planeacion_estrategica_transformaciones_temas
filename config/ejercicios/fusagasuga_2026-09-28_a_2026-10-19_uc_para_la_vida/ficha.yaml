@@ -1,0 +1,66 @@
+slug: fusagasuga_2026-09-28_a_2026-10-19_uc_para_la_vida
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_. (UC
+  PARA LA VIDA)(1-812) (1).xlsx
+sha256_archivo: 732bec97dc21bf9edabfb68105b511ab4ca299b7c61f993d964d920796d07fd1
+transformacion:
+  id: T5
+  nombre_oficial: UC para la Vida
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 5. UC para la Vida' · líneas 104-121
+unidad: Fusagasugá
+fechas:
+- '2026-09-28'
+- '2026-10-19'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 280
+N_s: 202
+textos_unicos: 201
+excluidos:
+  vacio: 47
+  no_respuesta: 23
+  solo_signos_o_numeros: 6
+  menos_de_3_letras: 2
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 202
+  n_muestra_requerida: 132.6
+  fraccion: 0.656
+  protocolo: B_censo
+informe_filtro:
+  filas: 280
+  unidades_que_coinciden:
+  - Sede Fusagasugá
+  transformacion_vacia_asumida: 27
+  fuera_de_fecha_no_incluidas:
+  - ID: 206
+    fecha: '2026-09-07'
+  - ID: 210
+    fecha: '2026-09-07'
+  - ID: 254
+    fecha: '2026-09-14'
+  - ID: 311
+    fecha: '2026-09-14'
+  - ID: 790
+    fecha: '2026-10-26'
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Fusagasuga_2026-09-28_a_2026-10-19_UC_para_la_Vida.xlsx
+  clasificacion: Clasificacion_Fusagasuga_2026-09-28_a_2026-10-19_UC_para_la_Vida.xlsx
+  hoja: Fusagasugá 28 sep-19 oct 2026
+preparado: '2026-10-29'

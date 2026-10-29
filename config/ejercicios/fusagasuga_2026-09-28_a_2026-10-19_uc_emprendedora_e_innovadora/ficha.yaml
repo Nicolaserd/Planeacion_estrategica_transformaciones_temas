@@ -1,0 +1,63 @@
+slug: fusagasuga_2026-09-28_a_2026-10-19_uc_emprendedora_e_innovadora
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_. (UC
+  EMPRENDEDORA E INNOVADORA)(1-706) (1).xlsx
+sha256_archivo: ef3d8b146ecbaecbdae8c4e24a1ae48afccccdf43fa454a7f9c7a07cb7af7ab6
+transformacion:
+  id: T4
+  nombre_oficial: UC Emprendedora e Innovadora
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 4. UC Emprendedora e Innovadora' · líneas 86-100
+unidad: Fusagasugá
+fechas:
+- '2026-09-28'
+- '2026-10-19'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 185
+N_s: 139
+textos_unicos: 137
+excluidos:
+  vacio: 34
+  no_respuesta: 7
+  solo_signos_o_numeros: 5
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 2
+protocolo:
+  N_s: 139
+  n_muestra_requerida: 102.3
+  fraccion: 0.736
+  protocolo: B_censo
+informe_filtro:
+  filas: 185
+  unidades_que_coinciden:
+  - Sede Fusagasugá
+  transformacion_vacia_asumida: 21
+  fuera_de_fecha_no_incluidas:
+  - ID: 227
+    fecha: '2026-09-14'
+  - ID: 293
+    fecha: '2026-09-14'
+  - ID: 301
+    fecha: '2026-09-15'
+  - ID: 684
+    fecha: '2026-10-26'
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Fusagasuga_2026-09-28_a_2026-10-19_UC_Emprendedora_e_Innovadora.xlsx
+  clasificacion: Clasificacion_Fusagasuga_2026-09-28_a_2026-10-19_UC_Emprendedora_e_Innovadora.xlsx
+  hoja: Fusagasugá 28 sep-19 oct 2026
+preparado: '2026-10-29'

@@ -1,0 +1,67 @@
+slug: fusagasuga_2026-09-28_a_2026-10-19_uc_inteligente
+archivo: D:\ninchaustegui\Desktop\Planeacióm_estrategica\data\raw\Experiencia_ _Transformaciones que nos conectan_.
+  (UC INTELIGENTE)(1-757).xlsx
+sha256_archivo: 9bbf16a1e15595d7cfade6d3812c3bcdf2d300aee9db9d7794c098a9f9e31356
+transformacion:
+  id: T1
+  nombre_oficial: UC Inteligente
+  referencia: Transformaciones_estrategicas_5_frentes.md · '## 1. UC Inteligente' · líneas 26-42
+unidad: Fusagasugá
+fechas:
+- '2026-09-28'
+- '2026-10-19'
+incluir_ids: []
+columnas_encuesta:
+- ID
+- Hora de inicio
+- Hora de finalización
+- Correo electrónico
+- Nombre
+- Tipo de actor
+- De que programa eres graduado
+- Unidad Regional
+- Transformación
+- ¿Consideran que esta transformación responde a lo que la UCundinamarca necesita del 2027 al 2037?
+- ¿Qué ajustaría en esta transformación?
+columna_comentario: ¿Qué ajustaría en esta transformación?
+N_filas: 220
+N_s: 197
+textos_unicos: 195
+excluidos:
+  no_respuesta: 11
+  solo_signos_o_numeros: 7
+  menos_de_3_letras: 5
+anonimizacion:
+  CORREO: 0
+  URL: 0
+  TELEFONO: 0
+  PERSONA: 0
+protocolo:
+  N_s: 197
+  n_muestra_requerida: 130.4
+  fraccion: 0.662
+  protocolo: B_censo
+informe_filtro:
+  filas: 220
+  unidades_que_coinciden:
+  - Sede Fusagasugá
+  transformacion_vacia_asumida: 29
+  fuera_de_fecha_no_incluidas:
+  - ID: 202
+    fecha: '2026-09-07'
+  - ID: 206
+    fecha: '2026-09-07'
+  - ID: 239
+    fecha: '2026-09-14'
+  - ID: 302
+    fecha: '2026-09-14'
+  - ID: 386
+    fecha: '2026-09-21'
+  - ID: 710
+    fecha: '2026-10-26'
+  fuera_de_fecha_incluidas: []
+archivos_salida:
+  temas: Temas_Fusagasuga_2026-09-28_a_2026-10-19_UC_Inteligente.xlsx
+  clasificacion: Clasificacion_Fusagasuga_2026-09-28_a_2026-10-19_UC_Inteligente.xlsx
+  hoja: Fusagasugá 28 sep-19 oct 2026
+preparado: '2026-10-29'

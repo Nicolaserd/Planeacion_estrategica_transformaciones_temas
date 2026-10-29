@@ -1,0 +1,5 @@
+# Bitácora · facatativa_2026-10-26_a_2026-10-27_uc_translocal
+
+- **2026-10-29** · preparar: Experiencia_ _Transformaciones que nos conectan_. (UC TRANSLOCAL)(1-843) (1).xlsx · UC Translocal (T2) · Facatativá · ['2026-10-26', '2026-10-27'] · incluir_ids=[]. N=112, N_s=92, excluidos={'vacio': 13, 'no_respuesta': 5, 'solo_signos_o_numeros': 2}, anonimización={'CORREO': 0, 'URL': 0, 'TELEFONO': 0, 'PERSONA': 0}, protocolo=B_censo. Fuera de fecha no incluidas: [{'ID': 730, 'fecha': '2026-10-20'}].
+- **2026-10-29** · clasificar: Jev (jev-1.13.0) · 92/92 textos únicos válidos · 9 temas + sin_contenido · llamadas nuevas 92 · tokens 153589 · costo USD 0.00645.
+- **2026-10-29** · exportar: Temas_Facatativa_2026-10-26_a_2026-10-27_UC_Translocal.xlsx (1 hoja, 9 temas, 127 asignaciones, 8 sin tema) y Clasificacion_Facatativa_2026-10-26_a_2026-10-27_UC_Translocal.xlsx (1 hoja 'Facatativá 26-27 oct 2026', 112 filas = respuestas, una columna por tema; incluye Nombre y Correo: archivo solo para uso local) y su copia publicable Clasificacion_Facatativa_2026-10-26_a_2026-10-27_UC_Translocal_anonimizado.xlsx (sin Nombre ni Correo, comentario anonimizado).

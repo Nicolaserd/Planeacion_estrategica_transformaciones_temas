@@ -9,7 +9,7 @@ RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "src"))
 import ejercicio as ej  # noqa: E402
 
-DATOS = RAIZ / "data" / "raw" / "experiencia_uc_para_la_vida.xlsx"
+DATOS = next(iter(sorted((RAIZ / "data" / "raw").glob("*(UC PARA LA VIDA)*.xlsx"))), RAIZ / "data" / "raw" / "no_existe.xlsx")
 
 
 def test_resolver_transformacion_uc_para_la_vida():
@@ -22,6 +22,27 @@ def test_resolver_transformacion_uc_para_la_vida():
 def test_resolver_transformacion_inexistente():
     with pytest.raises(SystemExit):
         ej.resolver_transformacion("UC Inexistente")
+
+
+def test_anonimiza_encabezados_whatsapp():
+    from f03_limpieza_anonimizacion import anonimizar
+    conteo = {}
+    t = anonimizar("[19/10, 10:06 a. m.] Ana María Pérez Gómez: Conexión a Internet", conteo)
+    assert t == "[19/10, 10:06 a. m.] [PERSONA]: Conexión a Internet" and conteo["PERSONA"] == 1
+    firma = anonimizar("Con gusto ayudo…Ana María Pérez Gómez, facultad de ciencias", {})
+    assert firma == "Con gusto ayudo…[PERSONA], facultad de ciencias"
+    assert anonimizar("Más inglés, programa bilingüe", {}) == "Más inglés, programa bilingüe"   # una sola palabra: no es firma
+
+
+def test_formulario_general_ucundinamarca():
+    t = ej.resolver_transformacion("UCundinamarca")
+    assert t["general"] and t["nombre_oficial"] == "UCundinamarca"
+    assert t["componentes"] == ["UC Inteligente", "UC Translocal", "UC Digital", "UC Emprendedora e Innovadora",
+                                "UC para la Vida"]
+    assert ej.componente_valido("UC Digital", t) and ej.componente_valido("Felicidad y bienestar", t)
+    assert ej.etiquetas_ancla(t)[1] == "Transformación del Plan"
+    assert ej.slug_ejercicio("Todas", ["2026-08-31", "2026-10-27"], "UCundinamarca") == \
+        "todas_2026-08-31_a_2026-10-27_ucundinamarca"
 
 
 def test_componente_valido():

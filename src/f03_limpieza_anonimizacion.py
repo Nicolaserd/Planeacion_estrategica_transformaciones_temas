@@ -69,6 +69,15 @@ def anonimizar(t: str, conteo: dict) -> str:
     t = re.sub(r"(?<![\d.])\d{1,3}(?:\.\d{3}){1,3}(?![\d.])|(?<!\d)\d{6,11}(?!\d)",
                lambda m: _id(m) if 6 <= len(re.sub(r"\D", "", m.group(0))) <= 11 else m.group(0), t)
 
+    # Encabezados de mensajes pegados de WhatsApp: "[19/10, 10:06 a. m.] Nombre Apellido:" -> "[19/10, 10:06 a. m.] [PERSONA]:"
+    t = sub(r"(\[\d{1,2}/\d{1,2}(?:/\d{2,4})?,?\s*\d{1,2}:\d{2}[^\]]*\])\s*[^:\[\]\n]{2,60}:",
+            lambda m: f"{m.group(1)} [PERSONA]:", t, "PERSONA")
+
+    # Firmas: "Nombre Apellido, facultad ..." (2 a 5 palabras con mayúscula seguidas de coma y un rol o dependencia)
+    t = sub(rf"\b[{MAYUS}][{MINUS}]+(?:\s+[{MAYUS}][{MINUS}]+){{1,4}}(?=\s*,\s*(?i:facultad|programa|docente|gestora?|"
+            r"coordinadora?|decana?|directora?|estudiante|egresad[oa]|graduad[oa]|administrativ[oa])\b)",
+            "[PERSONA]", t, "PERSONA")
+
     # Título + palabra(s) con mayúscula inicial -> [PERSONA]
     # solo el título ignora mayúsculas; el nombre exige mayúscula inicial
     t = sub(rf"\b((?i:{TITULOS}))\s+[{MAYUS}][{MINUS}]+(\s+[{MAYUS}][{MINUS}]+)?",

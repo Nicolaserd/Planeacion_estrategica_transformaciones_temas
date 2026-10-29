@@ -1,0 +1,99 @@
+# Temas de Fusagasugá · 28 sep y 19 oct 2026 · UC para la Vida (lista propia de esta unidad).
+# Anclados a los componentes de "UC para la Vida" en contexto/Transformaciones_estrategicas_5_frentes.md.
+transformacion: UC para la Vida
+version: 2
+temas:
+  - id: estabilidad_contratacion
+    nombre: "Estabilidad laboral, contratación, salario y reconocimiento del personal"
+    componente: "Desarrollo del talento humano"
+    justificacion: "Componente 'Desarrollo del talento humano': estabilidad y permanencia laboral, contratos de 11 meses o de planta, salario y puntos salariales, ascensos meritorios, reconocer la trayectoria, ambiente laboral sano, jornada laboral y calidad de vida del personal."
+    critico: false
+    instruccion: "¿El `comentario` pide mejorar la estabilidad laboral, la contratación, el salario, los ascensos, el reconocimiento o las condiciones laborales de docentes o administrativos?"
+    criterio_true: "Menciona estabilidad o permanencia laboral, tipo de contratación, contratos (de 4, 10,5 u 11 meses, a término indefinido o de planta), salario o puntos salariales, ascensos, reconocimiento de la trayectoria, ambiente laboral, jornada laboral, funciones del personal, condiciones o calidad de vida laboral de docentes o administrativos."
+    criterio_false: "No habla de las condiciones laborales del personal. El apoyo para estudios posgraduales tiene su propio tema; las oportunidades laborales de estudiantes o egresados no cuentan."
+    ejemplos_si: ["Estabilidad laboral, contratos a 11 meses minimo", "Mejorar la estabilidad laboral y remuneración de los docentes"]
+
+  - id: apoyo_posgradual
+    nombre: "Apoyo para la formación posgradual de gestores y administrativos"
+    componente: "Desarrollo del talento humano"
+    otros_componentes: ["Gestores del Conocimiento y el Aprendizaje"]
+    justificacion: "Componentes 'Desarrollo del talento humano' y 'Gestores del Conocimiento y el Aprendizaje': mayor porcentaje de apoyo para maestrías y doctorados, horas para estudiar, posgrados más económicos, educación no formal, movilidad y oportunidad de estudiar para administrativos."
+    critico: false
+    instruccion: "¿El `comentario` pide apoyo para que docentes o administrativos estudien (posgrados, maestrías, doctorados u otra formación)?"
+    criterio_true: "Menciona apoyo posgradual o para la formación académica de gestores o administrativos, porcentaje de descuento o de apoyo, maestría, doctorado, MSc o PhD, horas o tiempo para estudiar, posgrados más económicos, educación no formal, movilidad u oportunidad de estudiar y crecer profesionalmente."
+    criterio_false: "No habla de que el personal estudie. La estabilidad, la contratación y el salario tienen su propio tema."
+    ejemplos_si: ["Apoyo a formación porsgradual.", "Aumentar el % de descuento para estudiar un doctorado o maestria"]
+
+  - id: crecimiento_personal
+    nombre: "Crecimiento personal y formación integral (la persona transhumana)"
+    componente: "Persona Transhumana"
+    justificacion: "Componente 'Persona Transhumana': crecer como persona, cambiar la forma de pensar, valores, pensamiento crítico, autonomía, confianza, expresarse, proyecto de vida y formación integral, más allá de lo profesional."
+    critico: false
+    instruccion: "¿El `comentario` habla expresamente del crecimiento o la transformación de la persona (forma de pensar, valores, carácter, confianza, proyecto de vida) o de la persona transhumana?"
+    criterio_true: "Menciona expresamente crecer o transformarse como persona, cambiar la forma de pensar, valores, pensamiento crítico, ética, autonomía, carácter, confianza en sí mismo, expresarse, manejo de emociones, proyecto de vida, formación integral o humana, la dimensión del ser o la persona transhumana."
+    criterio_false: "No se refiere al desarrollo de la persona. Prácticas e intercambios, bienestar y apoyos económicos o convivencia no cuentan (tienen su propio tema); tampoco mencionar 'experiencias' sin hablar de cómo cambian a la persona."
+    ejemplos_si: ["Ser mejores personas transhumana", "Formación de un pensamiento crítico, ética, autonomía y la capacidad de impactar positivamente en la comunidad"]
+
+  - id: bienestar_apoyos
+    nombre: "Bienestar, salud mental y apoyos socioeconómicos (incluido el transporte)"
+    componente: "Felicidad y bienestar"
+    justificacion: "Componente 'Felicidad y bienestar': programas y asesoras de bienestar, ayudas y apoyos socioeconómicos, auxilio de transporte, salud mental de estudiantes y docentes, bienestar de gestores y familias, felicidad y calidad de vida."
+    critico: false
+    instruccion: "¿El `comentario` habla del bienestar, la salud mental, la felicidad o los apoyos socioeconómicos y de transporte?"
+    criterio_true: "Menciona bienestar (universitario, de gestores o de la comunidad), salud mental, felicidad, calidad de vida, ayudas o apoyos socioeconómicos, apoyo psicológico, auxilio o beneficios de transporte, programas de bienestar o involucrar a la familia."
+    criterio_false: "No habla de bienestar, salud mental ni apoyos. La estabilidad laboral y el salario tienen su propio tema."
+    ejemplos_si: ["Las ayudas socioeconómicas que brinda la universidad desde el espacio de bienestar", "Haría falta más beneficios de transporte"]
+
+  - id: experiencias_formativas
+    nombre: "Experiencias formativas: prácticas, salidas, intercambios y oportunidades"
+    componente: "condiciones que favorezcan el aprendizaje"
+    otros_componentes: ["Creadores de Oportunidades"]
+    justificacion: "'Qué busca' ('condiciones que favorezcan el aprendizaje') y componente 'Creadores de Oportunidades': prácticas y etapas prácticas, experiencias en campo y reales, intercambios nacionales e internacionales, monitorías y pasantías, proyectos y oportunidades para crecer profesionalmente."
+    critico: false
+    instruccion: "¿El `comentario` pide o valora prácticas, salidas, experiencias reales o en campo, intercambios, pasantías u oportunidades para la vida profesional?"
+    criterio_true: "Menciona prácticas, etapas prácticas, salidas, experiencias en campo, reales o formativas, intercambios (nacionales o internacionales), monitorías, pasantías, proyectos de investigación o extensión, oportunidades o vínculos para la vida profesional."
+    criterio_false: "No habla de prácticas, intercambios ni experiencias formativas. Describir cómo cambió la forma de pensar tiene su propio tema."
+    ejemplos_si: ["Tener intercambios nacionales como internacionales, priorizando las experiencias formativas del territorio.", "La universidad transformó mi vida al darme la oportunidad de  tener experiencias en campo"]
+
+  - id: convivencia_valores
+    nombre: "Convivencia, relaciones, interculturalidad y valores democráticos"
+    componente: "Convivencia"
+    otros_componentes: ["Valores democráticos"]
+    justificacion: "Componentes 'Convivencia' y 'Valores democráticos': dinámicas sociales, integración de toda la comunidad, empatía, amistades, intercambio cultural e interculturalidad, ser escuchado y respetar las ideologías, valores democráticos."
+    critico: false
+    instruccion: "¿El `comentario` habla de la convivencia, las relaciones entre personas, la integración, la empatía, la interculturalidad o los valores democráticos?"
+    criterio_true: "Menciona convivir o convivencia, relaciones o interacciones sociales, dinámicas sociales, integración de la comunidad, empatía, amistades o conocer personas, intercambio cultural, interculturalismo, eventos culturales, ser escuchado, respeto por las ideologías o valores democráticos."
+    criterio_false: "No habla de convivencia, relaciones, cultura ni valores democráticos."
+    ejemplos_si: ["Es importante implementar la empatía entre los pertenecientes de la universidad", "Ser escuchado y respetando las ideologías de las personas"]
+
+  - id: docencia_medit
+    nombre: "Docencia, evaluación, horarios y MEDIT"
+    componente: "Gestores del Conocimiento y el Aprendizaje"
+    justificacion: "Componente 'Gestores del Conocimiento y el Aprendizaje': forma de enseñar y evaluar, horarios que no sobrecarguen, tutorías, buenos profesores, el MEDIT y la autonomía docente, evaluación docente y carga administrativa de la docencia."
+    critico: false
+    instruccion: "¿El `comentario` habla de la forma de enseñar o evaluar, los horarios de clase, las tutorías, los profesores, el MEDIT o la evaluación y carga de los docentes?"
+    criterio_true: "Menciona la manera de enseñar o de evaluar, énfasis en el aprendizaje, horarios académicos, tutorías, profesores buenos o la calidad humana de los gestores, el MEDIT, los CADIS, la autonomía docente, la evaluación docente o la carga administrativa de la docencia."
+    criterio_false: "No habla de la docencia ni del modelo pedagógico. La contratación y el salario de los docentes tienen su propio tema."
+    ejemplos_si: ["El Medit es un modelo que incluye muchos aspectos, pero limita la  autonomía docente", "Mejorar horarios para no sobrecargar a los estudiantes"]
+
+  - id: conformidad
+    nombre: "Conformidad y valoración positiva (sin ajustes)"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: dicen que no ajustarían nada, que está bien o la valoran positivamente sin pedir cambios."
+    critico: false
+    instruccion: "El `comentario` responde a la pregunta '¿Qué ajustaría en esta transformación?'. ¿Dice expresamente que no ajustaría nada a la transformación o que está de acuerdo con ella tal como está?"
+    criterio_true: "Dice de forma explícita que no ajustaría nada o que está de acuerdo con la transformación o el plan, aunque sea con pocas palabras: 'nada por el momento', 'ningún ajuste', 'no ajustaría nada', 'así está bien', 'todo está adecuado', 'sí, responde', 'nada, todo excelente', 'el plan es una excelente implementación'."
+    criterio_false: "No dice expresamente que no ajustaría nada ni que está de acuerdo con la transformación. Contar cómo la universidad cambió la vida, dar un testimonio o agradecer a la universidad no cuenta, aunque sea positivo; pedir o proponer cualquier cosa tampoco."
+    ejemplos_si: ["En el momento no vería ningún ajuste ante la transformación", "Considero que es un concepto integral y muy bien definido, no ajustaría nada."]
+
+  - id: otros_fuera
+    nombre: "Otros asuntos fuera de la transformación"
+    componente: fuera_de_la_transformacion
+    justificacion: "Asuntos sin anclaje en la sección de UC para la Vida, cada uno con menos del 10 % de los comentarios: investigación y proyectos ISU, espacios y laboratorios, tecnología, IA y conectividad, más sedes, organización, cercanía al entorno y egresados en la región."
+    critico: false
+    instruccion: "¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC para la Vida: investigación, CTeI o proyectos ISU; espacios, laboratorios o sonido; tecnología, IA, datos o conectividad; más sedes o acceso a la universidad; organización; el entorno o la región; impacto de los egresados en la región?"
+    criterio_true: "Se cumple con cualquiera de esos casos: investigación, ciencia, tecnología e innovación o proyectos ISU; espacios, laboratorios o el sonido en los encuentros; tecnología, IA, herramientas tecnológicas, datos o conectividad; crecer con más sedes u oportunidades de ingresar; mejor organización; cercanía al entorno o a la región; translocalidad; impacto de los egresados en la región."
+    criterio_false: "No trata ninguno de esos asuntos de forma explícita."
+    ejemplos_si: ["Los proyectos de ISU deben tener un mayor tiempo de ejecución", "Ajustaría los mecanismos de conectividad para garantizar que el modelo digital llegue con la misma infraestructura"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

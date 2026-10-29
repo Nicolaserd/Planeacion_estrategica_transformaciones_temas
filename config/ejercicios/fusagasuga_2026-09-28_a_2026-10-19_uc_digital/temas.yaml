@@ -1,0 +1,99 @@
+# Temas de Fusagasugá · 28 sep y 19 oct 2026 · UC Digital (lista propia de esta unidad).
+# Anclados a los componentes de "UC Digital" en contexto/Transformaciones_estrategicas_5_frentes.md.
+transformacion: UC Digital
+version: 2
+temas:
+  - id: tecnologia_aprendizaje
+    nombre: "Tecnología para aprender: equipos, laboratorios, infraestructura y clases virtuales"
+    componente: "fortalecer el aprendizaje"
+    otros_componentes: ["Tecnologías emergentes"]
+    justificacion: "'Qué busca' ('fortalecer el aprendizaje') y componente 'Tecnologías emergentes': equipos y dispositivos actualizados, préstamo de computadores, laboratorios físicos y virtuales, infraestructura tecnológica en las aulas, tecnología de vanguardia y clases virtuales o híbridas."
+    critico: false
+    instruccion: "¿El `comentario` pide equipos, dispositivos, laboratorios, infraestructura tecnológica, tecnología de vanguardia o clases virtuales para aprender y enseñar?"
+    criterio_true: "Menciona equipos, computadores o dispositivos (actualizados o en préstamo), laboratorios (físicos, virtuales o inteligentes), infraestructura tecnológica, herramientas tecnológicas o digitales, tecnología de vanguardia, acceso a las tecnologías para la formación, clases dinámicas con tecnología, clases o programas virtuales o híbridos."
+    criterio_false: "No pide equipos, laboratorios, infraestructura tecnológica ni clases virtuales. La conectividad o el internet, la IA, la capacitación y los sistemas de información tienen su propio tema."
+    ejemplos_si: ["Mejorar actualizar los dispotovos que hay dentro de la institución", "laboratorios virtuales para fisiología vegetal, entomología, química, ciencias de la salud e ingeniería"]
+
+  - id: capacitacion_digital
+    nombre: "Capacitación en tecnologías e IA para gestores, estudiantes y administrativos"
+    componente: "Experiencia digital de la comunidad universitaria"
+    justificacion: "Componente 'Experiencia digital de la comunidad universitaria': capacitar y certificar a los gestores, habilidades digitales mínimas para todos los estudiantes, capacitación del personal administrativo, cultura digital y cierre de brechas en zonas rurales."
+    critico: false
+    instruccion: "¿El `comentario` pide capacitar, formar o enseñar a la comunidad (gestores, estudiantes, administrativos o la región) en el uso de tecnologías, herramientas digitales o IA?"
+    criterio_true: "Menciona capacitación, capacitar, cursos, seminarios, diplomados, certificación, formación o enseñar el manejo de tecnologías, herramientas digitales, bases de datos o IA; habilidades digitales mínimas; profesores preparados en tecnología; cultura digital o apropiación de las tecnologías."
+    criterio_false: "No habla de capacitar ni enseñar. Pedir solo la herramienta, el equipo o la conectividad no cuenta."
+    ejemplos_si: ["Mayor capacitación a los gestores del conocimiento, certificada en las nuevas tecnologías", "Tener todos los estudiantes las mismas habilidades mínimas de la tecnología"]
+
+  - id: sistemas_integrados_oficina
+    nombre: "Sistemas de información integrados y una oficina que lidere la transformación digital"
+    componente: "Transformación digital"
+    otros_componentes: ["Servicios digitales", "Ecosistemas digitales"]
+    justificacion: "Componentes 'Transformación digital', 'Servicios digitales' y 'Ecosistemas digitales': una plataforma y un sistema de información únicos e integrados (académico, administrativo, financiero), una sola base de datos, interoperabilidad, mejores plataformas y servicios digitales y una oficina o dirección que lidere la transformación digital."
+    critico: false
+    instruccion: "¿El `comentario` pide integrar o unificar plataformas, sistemas o bases de datos, mejorar las plataformas y servicios digitales, o crear una oficina que lidere la transformación digital?"
+    criterio_true: "Menciona plataforma o plataformas institucionales, sistema de información integrado o único, una sola base de datos, integrar o unificar sistemas, interoperabilidad, ecosistema digital, servicios o espacios digitales, o una oficina o dirección de transformación digital."
+    criterio_false: "No habla de plataformas, sistemas de información ni de quién lidera la transformación. La conectividad y los equipos tienen su propio tema."
+    ejemplos_si: ["Un sistema integrado de información centralizado que de respuesta a los procesos institucionales.", "creación de una oficina de transformación digital como organismo responsable"]
+
+  - id: inteligencia_artificial
+    nombre: "Inteligencia artificial: tutores, agentes, acceso y cursos"
+    componente: "Inteligencia artificial"
+    justificacion: "Componente 'Inteligencia artificial': implementar la IA en la enseñanza y en los procesos, tutores y agentes de IA, acceso a modelos actuales, cursos de IA y su regulación."
+    critico: false
+    instruccion: "¿El `comentario` habla expresamente de la inteligencia artificial (IA)?"
+    criterio_true: "Menciona inteligencia artificial, IA, agentes o tutores de IA, modelos de IA o un CADI de IA: implementarla, usarla, aprender a usarla, regularla o legislar su uso."
+    criterio_false: "No menciona la inteligencia artificial. Hablar solo de tecnología, plataformas o capacitación general no cuenta."
+    ejemplos_si: ["Tutores y asistentes con IA: resuelven dudas 24/7", "Legislación de la Universidad de cundinamarca del uso de la inteligencia artificial"]
+
+  - id: conectividad_internet
+    nombre: "Conectividad e internet que funcione, también en zonas rurales"
+    componente: "Ecosistemas digitales"
+    justificacion: "Componente 'Ecosistemas digitales': internet de calidad en todos los bloques y sedes, red estable, conectividad rural e internet satelital para los municipios."
+    critico: false
+    instruccion: "¿El `comentario` pide mejorar la conectividad, el internet o la red?"
+    criterio_true: "Menciona conectividad, internet, red o redes, cobertura de internet, fallas de internet, internet satelital o conectividad rural."
+    criterio_false: "No habla de conectividad ni de internet."
+    ejemplos_si: ["Mejorar la conectividad y calidad de internet", "La Universidad debe de generar espacios que garanticen la conectividad en escenarios rurales"]
+
+  - id: automatizacion_procesos
+    nombre: "Automatizar y digitalizar procesos administrativos, trámites y cero papel"
+    componente: "Automatización de procesos"
+    otros_componentes: ["Cero papel"]
+    justificacion: "Componentes 'Automatización de procesos' y 'Cero papel': digitalizar y automatizar procesos, agilizar trámites, agentes para tareas diarias, flujo documental sin fricción y la política de cero papel (a favor o en contra)."
+    critico: false
+    instruccion: "¿El `comentario` pide automatizar, digitalizar o agilizar procesos y trámites administrativos, o se pronuncia sobre la política de cero papel?"
+    criterio_true: "Menciona automatizar o automatización, digitalización de procesos, agilizar u optimizar procesos o trámites, procesos administrativos, agentes que atiendan tareas, flujo de documentación, materiales digitales en lugar de físicos, o la política de cero papel (a favor o en contra)."
+    criterio_false: "No habla de procesos, trámites ni papel. Los sistemas de información integrados tienen su propio tema."
+    ejemplos_si: ["Mejorar y automatizar los procesos", "Tal vez que no se implemente el \"cero papel\""]
+
+  - id: tecnologia_humana_etica
+    nombre: "Una tecnología humana, ética y regulada"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre el enfoque de la transformación como un todo: la tecnología y la IA al servicio de lo humano y de lo misional, sin reemplazar el talento humano, con uso responsable, regulado y crítico."
+    critico: false
+    instruccion: "¿El `comentario` dice expresamente que la tecnología o la IA deben ser éticas, responsables, reguladas o humanizadas, o que no deben reemplazar al talento humano?"
+    criterio_true: "Dice de forma explícita que se necesita un uso ético, responsable, crítico o regulado de la tecnología o la IA (normatividad, legislación, buen uso); que no reemplace ni deje de lado el talento o el factor humano; que la tecnología es solo una herramienta al servicio de lo misional; que no genere dependencia; o que no hay que enfocarse solo en lo digital."
+    criterio_false: "No pone límites éticos ni humanos. Pedir más tecnología, IA o capacitación sin esa condición no cuenta."
+    ejemplos_si: ["La digitalización es muy importante, pero talento humano mucho más.", "Entender que la comunicación es humana y que la tecnología es sólo una herramienta que debe ser racionalizada y controlada desde valoraciones éticas."]
+
+  - id: conformidad
+    nombre: "Conformidad con la transformación (sin ajustes)"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: dicen que no ajustarían nada o que la propuesta es viable y responde."
+    critico: false
+    instruccion: "El `comentario` responde a la pregunta '¿Qué ajustaría en esta transformación?'. ¿Responde que no ajustaría nada o que está de acuerdo con la transformación tal como está?"
+    criterio_true: "Responde que no ajustaría nada o que está de acuerdo, aunque sea con pocas palabras: 'nada por el momento', 'nada, la propuesta es concreta', 'sí es viable', 'sí, ya brinda un ecosistema'; sin pedir ningún cambio."
+    criterio_false: "Pide, propone o menciona cualquier ajuste o cosa por mejorar, aunque empiece con 'sí' o con 'nada'."
+    ejemplos_si: ["Nada por el momento", "Nada, se me hace que la propuesta es concreta frente a las necesidades de los usuarios"]
+
+  - id: otros_fuera
+    nombre: "Otros asuntos fuera de la transformación"
+    componente: fuera_de_la_transformacion
+    justificacion: "Asuntos sin anclaje en la sección de UC Digital, cada uno con menos del 10 % de los comentarios: cooperación entre facultades y carreras, apoyo socioeconómico, escucha a los estudiantes, inclusión, reconocimiento, presencia en los territorios, vías y pertenencia."
+    critico: false
+    instruccion: "¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Digital: cooperación o proyectos entre facultades y carreras; apoyo socioeconómico a estudiantes; escuchar a los estudiantes; inclusión; reconocimiento o congresos; presencia de la universidad en los territorios; vías o modalidades de trabajo; sentido de pertenencia?"
+    criterio_true: "Se cumple con cualquiera de esos casos: cooperación, correlación o mesas entre facultades o carreras; apoyo socioeconómico o económico a estudiantes; escuchar las ideas o necesidades de los estudiantes; tecnología inclusiva; reconocimiento, congresos o espacios internacionales; actuar en los territorios; mejoramiento vial; nuevas modalidades de trabajo; sentido de pertenencia."
+    criterio_false: "No trata ninguno de esos asuntos de forma explícita. La tecnología, la IA, la conectividad, las plataformas y la capacitación tienen su propio tema."
+    ejemplos_si: ["Posibilidad de cooperación entre las distintas facultades", "Lo primero sería más apoyo socio económico"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

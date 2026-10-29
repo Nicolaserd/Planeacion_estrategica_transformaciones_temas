@@ -1,0 +1,107 @@
+# Temas del formulario general UCundinamarca ("Comparte aquí tu aporte") · todas las unidades · 31 ago a 27 oct 2026.
+# Formulario sin transformación: cada tema se ancla a una de las 5 transformaciones del documento marco
+# (contexto/Transformaciones_estrategicas_5_frentes.md), al Plan en general o queda fuera de las 5.
+transformacion: UCundinamarca
+version: 2
+temas:
+  - id: gestion_procesos
+    nombre: "Gestión inteligente: simplificar procesos, menos burocracia, datos y acreditación"
+    componente: "UC Inteligente"
+    justificacion: "UC Inteligente ('Gestión orientada a resultados', 'Gobierno y uso estratégico de los datos', 'Acreditación institucional'): simplificar procesos, formatos y autorizaciones, eliminar reprocesos y burocracia, menos carga de la plataforma, gestión y calidad de los datos, registros de alta calidad y acreditación."
+    critico: false
+    instruccion: "¿El `comentario` pide simplificar o agilizar procesos, formatos o trámites, reducir la burocracia o los reprocesos, mejorar la gestión de los datos o avanzar en la acreditación?"
+    criterio_true: "Menciona simplificar, optimizar, agilizar o automatizar procesos, formatos, autorizaciones, informes o registros; burocracia; duplicación de información o reprocesos; carga de la plataforma; racionalización administrativa; gestión o calidad de los datos; o registros de alta calidad y acreditación."
+    criterio_false: "No habla de procesos, trámites, datos ni acreditación. Pedir IA o tecnología para aprender tiene su propio tema."
+    ejemplos_si: ["Simplificar los procesos, autorizaciones y formatos y formatos.  Esto nos quita tiempo y recursos.", "Eliminación de la burocracia rígida"]
+
+  - id: personas_docentes_bienestar
+    nombre: "Personas: estabilidad y calidad docente, y bienestar de la comunidad"
+    componente: "UC para la Vida"
+    justificacion: "UC para la Vida ('Desarrollo del talento humano', 'Gestores del Conocimiento y el Aprendizaje', 'Felicidad y bienestar'): estabilidad laboral y contratos de 12 meses, formalización de planta, calidad y trato de los docentes, crecimiento del personal, actividades de integración, bienestar e inteligencia emocional."
+    critico: false
+    instruccion: "¿El `comentario` pide estabilidad laboral o mejor contratación, mejorar la calidad o el trato de los docentes, o más bienestar para la comunidad?"
+    criterio_true: "Menciona estabilidad o continuidad laboral, contratos (de 4 o 12 meses, de planta), remuneración, rotación docente, planta docente, calidad, filtro o trato de los docentes o gestores, crecimiento del personal, bienestar, integración entre compañeros, inteligencia emocional, felicidad o espacios lúdicos."
+    criterio_false: "No habla de las condiciones del personal, de los docentes ni del bienestar."
+    ejemplos_si: ["Mejorar las garantías para los docentes y reducir la rotación", "Que haya una cátedra de inteligencia emocional y felicidad"]
+
+  - id: oportunidades_practicas
+    nombre: "Oportunidades: prácticas, empleo, alianzas con empresas y emprendimiento"
+    componente: "UC Emprendedora e Innovadora"
+    justificacion: "UC Emprendedora e Innovadora ('Creación de oportunidades', 'Relacionamiento con los sectores...', 'Emprendimiento'): pasantías y prácticas, salidas, convenios y conexiones con empresas, apoyo laboral a graduados, alianzas multiactor y emprendimiento."
+    critico: false
+    instruccion: "¿El `comentario` pide prácticas, pasantías, salidas, oportunidades laborales, convenios con empresas, apoyo a graduados o apoyo al emprendimiento?"
+    criterio_true: "Menciona prácticas, pasantías, salidas pedagógicas o de campo, oportunidades o campos laborales, apoyo laboral a los graduados o recién egresados, seguimiento a graduados, convenios o conexiones con empresas, alianzas multiactor, emprendimiento o convertir ideas en negocios."
+    criterio_false: "No habla de prácticas, empleo, empresas ni emprendimiento. Abrir nuevos programas tiene su propio tema."
+    ejemplos_si: ["La universidad debería priorizar las pasantías o las prácticas laborales de los estudiantes", "Necesitamos conexiones empresariales que nos permitan adquirir experiencia laboral"]
+
+  - id: translocal_territorio
+    nombre: "Universidad translocal: articulada con el territorio e integrada entre sedes"
+    componente: "UC Translocal"
+    justificacion: "UC Translocal ('Impacto territorial', 'Identidad translocal'): llegar al territorio, articularse con los planes de desarrollo y los gobiernos, banco de problemáticas, descentralizar decisiones, integrar las sedes y trabajar como una sola universidad."
+    critico: false
+    instruccion: "¿El `comentario` pide llegar o impactar al territorio, articularse con los gobiernos o planes de desarrollo, descentralizar, o integrar las sedes como una sola universidad?"
+    criterio_true: "Menciona el territorio, la provincia, la sociedad, la región, planes de desarrollo territorial, gobierno municipal, departamental o nacional, banco de problemáticas, descentralizar decisiones o autonomía de seccionales y extensiones, unión o integración entre sedes, no trabajar como islas, o una universidad unida y conectada."
+    criterio_false: "No habla del territorio, la descentralización ni la integración entre sedes."
+    ejemplos_si: ["La soluciones a los problemas del territorio se deberían articular directamente con los planes de desarrollo territorial", "Todos hablemos el mismo idioma. Trabajemos para la universidad y que no se vea como islas"]
+
+  - id: oferta_programas
+    nombre: "Oferta académica: nuevos programas, posgrados, jornadas y currículos actualizados"
+    componente: "UC Translocal"
+    justificacion: "UC Translocal ('Formación y aprendizaje'): abrir programas y carreras, especialidades, maestrías y doctorados, jornada nocturna, actualizar los currículos, horarios de los CAI y CADI y promoción de la oferta académica."
+    critico: false
+    instruccion: "¿El `comentario` pide nuevos programas, carreras, especialidades o posgrados, cambios en los currículos o jornadas, o promocionar la oferta académica?"
+    criterio_true: "Menciona abrir o añadir programas, carreras, especialidades, profundizaciones, maestrías o doctorados; jornada nocturna; más materias o actualizar un programa; horarios de los CAI o CADI; atención a un programa (música, administración, psicología); o una oficina de promoción de la oferta académica."
+    criterio_false: "No habla de la oferta académica ni de los currículos."
+    ejemplos_si: ["Poner a disposición la carrera de música en jornada nocturna", "Me gustaría que en un plazo de tiempo a futuro añadieran más especialidades"]
+
+  - id: tecnologia_ia
+    nombre: "Tecnología e IA al servicio del aprendizaje (con ética y sin perder lo humano)"
+    componente: "UC Digital"
+    justificacion: "UC Digital ('Inteligencia artificial', 'Ecosistemas digitales'): educación en IA, normas para su uso, conectividad y servidores, tecnología como facilitadora, dotación digital con vigilancia ética y lo digital sin dejar lo humano."
+    critico: false
+    instruccion: "¿El `comentario` pide o propone algo sobre la inteligencia artificial, la tecnología o la conectividad para aprender o para la universidad, o sobre su uso ético y humano?"
+    criterio_true: "Debe pedir o proponer de forma explícita: educación o estrategias de IA, normas para su uso, herramientas digitales o tecnológicas para aprender, conectividad o servidores, dotación digital, reemplazo de prácticas por simulaciones virtuales, o que lo digital no deje de lado lo humano."
+    criterio_false: "Mencionar de paso 'digital', el MEDIT, la plataforma como carga de trabajo, los datos, la automatización de procesos o los computadores en préstamo no basta: simplificar procesos y datos tienen su propio tema. Laboratorios y equipos físicos van en infraestructura; las redes sociales, en otros asuntos."
+    ejemplos_si: ["Implementación de programas para fortalecer la educación sobre la IA", "Enfocar la universidad a lo digital sin dejar de lado lo humano"]
+
+  - id: investigacion_arte
+    nombre: "Investigación, creación artística y cultura"
+    componente: "UC Translocal"
+    justificacion: "UC Translocal ('Ciencia, tecnología e innovación', 'Identidad translocal'): fortalecer la investigación y las líneas investigativas, publicaciones de alto impacto, el Sistema de Creación Artística y el arte y la música en la identidad institucional."
+    critico: false
+    instruccion: "¿El `comentario` pide fortalecer la investigación, la creación artística o el arte y la cultura en la universidad?"
+    criterio_true: "Menciona investigación, líneas o grupos de investigación, publicaciones, investigación-creación, creación artística, arte, música o cultura como parte de la identidad institucional, o recursos para proyectos ISU."
+    criterio_false: "No habla de investigación, arte ni cultura."
+    ejemplos_si: ["Fortalecimiento de la investigación, ya que la docencia y la extensión se fortalecen", "Trabajar en la inclusión del arte y la música como parte de la perspectiva e identidad institucional"]
+
+  - id: construccion_del_plan
+    nombre: "Cómo se construye el Plan: participación, tiempo, socialización y redacción de misión y visión"
+    componente: transformacion_en_general
+    justificacion: "Aportes sobre el Plan y la universidad en general: co-creación en consenso y en varias sesiones, más tiempo y espacios para las ideas, socializar los ejes, visibilizar los aportes, cultura UdeC, y ajustes a la redacción de la misión y la visión (ser humano, sociedad, calidad, propósito)."
+    critico: false
+    instruccion: "¿El `comentario` habla de cómo se construye o comunica el Plan (participación, tiempo, socialización, consenso) o propone cambios a la redacción de la misión, la visión o los valores?"
+    criterio_true: "Menciona co-creación, consenso, más tiempo o espacios para las ideas, socializar o profundizar en los ejes, continuidad del plan, visibilizar los aportes, cultura UdeC, equilibrio entre las 5 transformaciones, o la redacción de la misión, la visión o los valores (ser humano, sociedad, calidad, propósito)."
+    criterio_false: "No habla del proceso del Plan ni de su redacción. Solo felicitar el encuentro no cuenta."
+    ejemplos_si: ["El sentido de co-creacion institucional del plan estratégico, debe desarrollarse dentro del consenso y en varias sesiones.", "Me gustaría que en la Misión o la Visión, la palabra \"Sociedad\"pareciera textualmente"]
+
+  - id: valoracion_positiva
+    nombre: "Valoración positiva del encuentro y del Plan (sin propuestas)"
+    componente: transformacion_en_general
+    justificacion: "Aportes sobre el Plan y la universidad en general: felicitan o valoran el encuentro, la charla o el Plan sin proponer cambios."
+    critico: false
+    instruccion: "¿El `comentario` solo felicita, agradece o valora positivamente el encuentro, la charla, el Plan o la universidad, sin proponer ningún cambio?"
+    criterio_true: "Solo expresa valoración positiva o agradecimiento: 'excelente', 'muy bueno', 'buena charla', 'muy interesante', 'gracias', 'me gusta cómo va la universidad', 'buena misión y visión', 'todo perfecto'; sin proponer nada."
+    criterio_false: "Propone, pide o critica algo concreto, aunque también felicite."
+    ejemplos_si: ["Fue una buena charla, creo que fue un buen plan para la universidad", "Muy enfocada, todo perfecto"]
+
+  - id: otros_fuera
+    nombre: "Fuera de las 5 transformaciones: infraestructura, laboratorios y espacios"
+    componente: fuera_de_la_transformacion
+    justificacion: "Asuntos sin anclaje en ninguna de las 5 transformaciones, cada uno con menos del 10 % de los aportes: infraestructura, edificios y campus, laboratorios y equipos, planta eléctrica, agua y energía, zonas verdes y redes sociales."
+    critico: false
+    instruccion: "¿El `comentario` pide mejorar la infraestructura, los edificios, los laboratorios, los equipos o los espacios físicos, o trata del ambiente o de las redes sociales?"
+    criterio_true: "Menciona infraestructura, edificios, campus, sede (ampliarla), laboratorios, equipos, salones, zonas verdes o recreativas, planta eléctrica, cortes de energía, agua lluvia, energías renovables, prácticas sostenibles o las redes sociales para visibilizar la universidad."
+    criterio_false: "No trata ninguno de esos asuntos de forma explícita."
+    ejemplos_si: ["Me gustaría que mejoraran un poco la estructura de la universidad que hubiera un mejor campus", "Invertir en las instalaciones mejorando los laboratorios"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

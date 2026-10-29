@@ -1,0 +1,99 @@
+# Temas de Facatativá · 26-27 oct 2026 · UC Translocal (lista propia de esta unidad).
+# Anclados a los componentes de "UC Translocal" en contexto/Transformaciones_estrategicas_5_frentes.md.
+transformacion: UC Translocal
+version: 2
+temas:
+  - id: proyectos_isu_investigacion
+    nombre: "Proyectos, investigación e interacción social para resolver problemas del territorio"
+    componente: "Interacción Social Universitaria"
+    otros_componentes: ["Ciencia, tecnología e innovación", "Impacto territorial"]
+    justificacion: "Componentes 'Interacción Social Universitaria', 'Ciencia, tecnología e innovación' e 'Impacto territorial': proyectos de investigación e ISU aplicados a problemas reales, alianzas con municipios y entidades, regalías, asesoría a la comunidad y seguimiento a los proyectos."
+    critico: false
+    instruccion: "¿El `comentario` pide proyectos, investigación, interacción social o alianzas para resolver problemas de la comunidad o del territorio?"
+    criterio_true: "Menciona proyectos (de investigación, de ISU, conjuntos, de regalías), investigación, interacción social universitaria, apoyo o asesoría a la comunidad, alianzas o comunicación con municipios, veredas, empresas o entidades públicas, resolver problemas del territorio o de la comunidad, o el seguimiento a los proyectos."
+    criterio_false: "No habla de proyectos, investigación, interacción social ni de resolver problemas del territorio. Solo conocer o identificar las necesidades del territorio, sin hablar de proyectos o soluciones, tiene su propio tema."
+    ejemplos_si: ["Generando nuevos proyectos de investigacion y proyectos ISU enfocados aplicados a resolver problemas reales del sector", "Participación en los proyectos DE REGALÍAS"]
+
+  - id: red_sedes_unidad
+    nombre: "Una sola universidad en red: integración, sinergia y colaboración entre sedes y carreras"
+    componente: "Identidad translocal"
+    justificacion: "Componente 'Identidad translocal': integración e interacción entre sedes, sinergia, intercambio, benchmarking, colaboración entre carreras y trabajar como una universidad unida."
+    critico: false
+    instruccion: "¿El `comentario` pide integración, conexión, colaboración o sinergia entre las sedes, las carreras o los actores de la universidad, como una sola universidad?"
+    criterio_true: "Menciona integrar o conectar las sedes, interacción o intercambio entre sedes, sinergia, benchmarking entre sedes, colaboración o apoyo entre carreras, trabajo colaborativo, unidad de la universidad o una metodología común."
+    criterio_false: "No habla de integrar ni conectar sedes, carreras o actores. Repartir recursos o dar autonomía a la extensión tiene su propio tema."
+    ejemplos_si: ["Manejar mas interacción entre cedes", "Sinergia entre todas las sedes en donde el trabajo colectivo se haga más evidente"]
+
+  - id: conocer_territorio
+    nombre: "Conocer las realidades y necesidades de cada territorio"
+    componente: "realidades de los territorios"
+    otros_componentes: ["Impacto territorial"]
+    justificacion: "'Qué busca': articular las funciones sustantivas con 'las realidades de los territorios': conocer los contextos sociales, los sectores y las necesidades del entorno e identificar sus problemáticas."
+    critico: false
+    instruccion: "¿El `comentario` pide conocer, entender o identificar las realidades, contextos, sectores, necesidades o problemáticas del territorio o del entorno?"
+    criterio_true: "Menciona conocer o entender el territorio, el entorno o los sectores; identificar contextos sociales, necesidades o problemáticas territoriales; acercarse al entorno; evaluar las necesidades de los territorios; o ajustar a ellas la acción de la universidad."
+    criterio_false: "No habla de conocer ni identificar el territorio o sus necesidades. Pedir proyectos para resolver problemas, sin hablar de conocerlos, tiene su propio tema."
+    ejemplos_si: ["Se necesita tener un mayor conocimiento de nuestros territorios y espacios para así mismo saber cómo actuar", "Un mayor acercamiento con el entorno para conocer la necesidades"]
+
+  - id: formacion_practicas
+    nombre: "Formación práctica y pertinente: salidas de campo, programas y clases"
+    componente: "Formación y aprendizaje"
+    justificacion: "Componente 'Formación y aprendizaje': salidas de campo, prácticas, programas ajustados al territorio y al mercado, más programas, clases exigentes e interesantes, capacitación docente."
+    critico: false
+    instruccion: "¿El `comentario` pide salidas de campo, prácticas, mejores clases o programas académicos ajustados a las necesidades?"
+    criterio_true: "Menciona salidas de campo, prácticas, formación práctica, simulación empresarial, clases más exigentes o menos monótonas, capacitación docente, nuevos programas, oferta académica o programas ajustados al territorio o al mercado."
+    criterio_false: "No habla de la formación, las prácticas, las clases ni los programas académicos."
+    ejemplos_si: ["Dar más oportunidades de salida a campo estudiantes de carreras que no ofrecen tantas", "el ajuste de los programas a las necesidadss del territorio"]
+
+  - id: diversidad_identidad
+    nombre: "Reconocer la diversidad cultural y la identidad de cada territorio"
+    componente: "reconociendo su diversidad"
+    justificacion: "'Qué busca': consolidar la identidad translocal 'reconociendo su diversidad': culturas y tradiciones de cada territorio, diversidad étnica, identidad y sentido de pertenencia."
+    critico: false
+    instruccion: "¿El `comentario` pide reconocer o conocer la diversidad cultural, las culturas y tradiciones de los territorios, o fortalecer la identidad y el sentido de pertenencia?"
+    criterio_true: "Menciona cultura o culturas, tradiciones, diversidad (étnica, cultural, de Cundinamarca), intercambios culturales, identidad o sentido de pertenencia con la institución."
+    criterio_false: "No habla de cultura, diversidad ni identidad."
+    ejemplos_si: ["Que se reconozca la cultura y tradición de cada territorio", "genera identidad y pertinencia de la comunidad hacia la institución"]
+
+  - id: equidad_descentralizacion
+    nombre: "Equidad y descentralización: recursos, programas y voz para cada sede"
+    componente: "desde su propia realidad"
+    justificacion: "'Qué busca': cada sede, seccional y extensión expresa la identidad 'desde su propia realidad': descentralización, recursos y financiación equitativos, programas y acceso a herramientas en todas las sedes, escuchar a las extensiones."
+    critico: false
+    instruccion: "¿El `comentario` pide descentralizar, autonomía o voz para las extensiones, o repartir de forma equitativa los recursos, los programas o el acceso entre las sedes?"
+    criterio_true: "Menciona descentralizar o descentralización, extensión descentralizada, escuchar a las extensiones, financiación o recursos justos o equitativos para cada sede, programas o acceso iguales en todas las sedes, abrir programas en la sede o una oficina propia en la extensión."
+    criterio_false: "No habla de descentralización, equidad entre sedes ni autonomía de la extensión. Integrar o conectar las sedes tiene su propio tema."
+    ejemplos_si: ["Qué la extensión sea descentralizada", "El alcance de los programas académicos de manera equitativa a todas las sedes"]
+
+  - id: proyeccion_internacional
+    nombre: "Visibilidad, reconocimiento e internacionalización"
+    componente: "Internacionalización"
+    otros_componentes: ["proyección de la Universidad"]
+    justificacion: "Componente 'Internacionalización' y 'Qué busca' ('proyección de la Universidad'): divulgar y posicionar la universidad, reconocimiento de egresados, convenios internacionales y apertura al mundo."
+    critico: false
+    instruccion: "¿El `comentario` pide divulgar, posicionar o dar reconocimiento a la universidad o a sus egresados, o internacionalizarla?"
+    criterio_true: "Menciona divulgación, publicidad, marca, posicionamiento, visibilidad o reconocimiento de la universidad, de sus estudiantes o egresados; internacionalización, convenios con universidades del mundo o apertura al mundo."
+    criterio_false: "No habla de visibilidad, reconocimiento ni internacionalización."
+    ejemplos_si: ["Reconocimiento, internacionalización, posicionamiento,", "Publicitando el alto impacto de la universidad y construyendo marca, a nivel nacional e internacional"]
+
+  - id: conformidad
+    nombre: "Conformidad con la transformación (sin ajustes)"
+    componente: transformacion_en_general
+    justificacion: "Comentarios sobre la transformación como un todo: dicen expresamente que no ajustarían nada, que está completa o bien planteada."
+    critico: false
+    instruccion: "El `comentario` responde a la pregunta '¿Qué ajustaría en esta transformación?'. ¿Responde que no ajustaría nada o que está de acuerdo con la transformación tal como está?"
+    criterio_true: "Responde que no ajustaría nada o que está de acuerdo, aunque sea con pocas palabras: 'ningún ajuste', 'nada, está planteada de forma correcta', 'está muy completo'; o solo valora la transformación sin pedir ningún cambio."
+    criterio_false: "Pide, propone o menciona cualquier ajuste o cosa por mejorar, aunque también elogie la transformación."
+    ejemplos_si: ["Ningún ajuste", "Me parece que está muy completo"]
+
+  - id: otros_fuera
+    nombre: "Otros asuntos fuera de la transformación"
+    componente: fuera_de_la_transformacion
+    justificacion: "Asuntos sin anclaje en la sección de UC Translocal, cada uno con menos del 10 % de los comentarios: tecnología, IA y conectividad; salarios y clima laboral; oportunidades laborales y vínculo con empresas; programa de Psicología; mentorías de egresados; procesos administrativos; innovación y empatía."
+    critico: false
+    instruccion: "¿El `comentario` trata expresamente alguno de estos asuntos, que no son propios de UC Translocal: tecnología, inteligencia artificial, herramientas o conectividad; salarios o clima laboral; oportunidades laborales o vínculo con empresas; un programa académico concreto; mentorías de egresados; procesos administrativos; innovación o empatía?"
+    criterio_true: "Se cumple con cualquiera de esos casos: nuevas tecnologías, IA, herramientas de trabajo, conectividad o campus digital; condiciones salariales o clima laboral; oportunidades laborales o interacción con empresas; atención a un programa (por ejemplo Psicología); mentores egresados; optimizar procesos administrativos; innovación; empatía."
+    criterio_false: "No trata ninguno de esos asuntos de forma explícita. Proyectos e investigación para el territorio tienen su propio tema; la formación práctica también."
+    ejemplos_si: ["La implementaron de nuevas tecnologías", "Mejorar las condiciones salariales de los funcionarios"]
+
+sin_contenido: "¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien' sin más detalle o un texto sin sentido?"

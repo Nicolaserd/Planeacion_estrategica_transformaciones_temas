@@ -1,0 +1,8 @@
+# Bitácora · facatativa_2026-10-26_a_2026-10-27_uc_inteligente
+
+- **2026-10-29** · preparar: Experiencia_ _Transformaciones que nos conectan_. (UC INTELIGENTE)(1-757).xlsx · UC Inteligente (T1) · Facatativá · ['2026-10-26', '2026-10-27'] · incluir_ids=[]. N=114, N_s=104, excluidos={'solo_signos_o_numeros': 4, 'no_respuesta': 3, 'menos_de_3_letras': 2, 'vacio': 1}, anonimización={'CORREO': 0, 'URL': 0, 'TELEFONO': 0, 'PERSONA': 0}, protocolo=B_censo. Fuera de fecha no incluidas: [].
+- **2026-10-29** · clasificar: Jev (jev-1.13.0) · 104/104 textos únicos válidos · 10 temas + sin_contenido · llamadas nuevas 104 · tokens 190197 · costo USD 0.00799.
+- **2026-10-29** · clasificar: Jev (jev-1.13.0) · 104/104 textos únicos válidos · 10 temas + sin_contenido · llamadas nuevas 104 · tokens 195189 · costo USD 0.00820.
+- **2026-10-29** · temas: procesos_resultados exige pedir expresamente mejorar la gestión (Jev 27 frente a 14 de la lectura: lo asignaba a menciones de paso de procesos, planes o estrategias).
+- **2026-10-29** · clasificar: Jev (jev-1.13.0) · 104/104 textos únicos válidos · 10 temas + sin_contenido · llamadas nuevas 104 · tokens 193941 · costo USD 0.00815.
+- **2026-10-29** · exportar: Temas_Facatativa_2026-10-26_a_2026-10-27_UC_Inteligente.xlsx (1 hoja, 10 temas, 162 asignaciones, 8 sin tema) y Clasificacion_Facatativa_2026-10-26_a_2026-10-27_UC_Inteligente.xlsx (1 hoja 'Facatativá 26-27 oct 2026', 114 filas = respuestas, una columna por tema; incluye Nombre y Correo: archivo solo para uso local) y su copia publicable Clasificacion_Facatativa_2026-10-26_a_2026-10-27_UC_Inteligente_anonimizado.xlsx (sin Nombre ni Correo, comentario anonimizado).
