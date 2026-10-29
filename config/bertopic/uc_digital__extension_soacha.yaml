@@ -1,0 +1,14 @@
+grupo: uc_digital__extension_soacha
+transformacion: UC Digital
+unidad: Extensión Soacha
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: tecnologías, conocimiento, laboratorios, inteligencia artificial, creadores
+    oportunidades
+  nombre: Capacitación en tecnologías emergentes y tecnología para resolver problemas
+- tema: 1
+  firma: acceso, digital, aulas, automatización, laboratorios
+  nombre: Acceso a plataformas, aulas y laboratorios virtuales; trámites automatizados

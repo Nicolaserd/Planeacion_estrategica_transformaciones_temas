@@ -66,6 +66,21 @@ Este es el resumen de las decisiones de Nicolás y de lo aprendido en el proyect
     - "tecnología" en UCundinamarca, donde Jev lo asignaba por menciones de paso del MEDIT o la plataforma.
 - **Privacidad:** se encontraron dos nombres completos que la anonimización no detectaba: un encabezado de WhatsApp pegado y una firma. Se agregaron esas dos reglas a la anonimización y la herramienta `scripts/revisar_nombres.py`, que debe dar 0 antes de clasificar. Ninguno de los dos llegó a Jev ni a un Excel.
 
+## 2026-10-29 · Análisis paralelo con BERT (BERTopic)
+
+A pedido de Nicolás, se hizo un análisis **paralelo e independiente** de la clasificación con Jev. Parte solo de los datos en crudo (todas las fechas) y busca, con BERT, el número óptimo de temas y los temas de cada unidad regional × transformación y de cada transformación (todas las unidades juntas).
+
+- **Método:**
+  - vectores BERT multilingües, calculados en el equipo;
+  - agrupamiento KMeans y palabras clave c-TF-IDF (BERTopic);
+  - nombres legibles redactados por Claude.
+- **Número óptimo:** el mayor número de temas en el que todos los temas se reproducen al remuestrear (estabilidad por tema, Hennig 2007). El primer criterio, el mejor promedio de silhouette y NPMI, se descartó: daba 2 temas casi siempre y separaba los comentarios cortos de los largos, no por tema.
+- **Resultado:** 45 grupos modelados y 113 temas. Los modelos por transformación tienen de 2 a 5 temas y todos son estables. Las unidades con pocos comentarios tienen temas moderados o débiles, que se leen como orientativos.
+- **Dónde está:**
+  - código: `scripts/bertopic_temas.py`;
+  - guía: `docs/bertopic.md`;
+  - Excel: `outputs_bertopic/` (lista única de temas, resumen y un archivo por grupo).
+
 ## Pendientes y puntos abiertos
 
 - **Sin unidades pendientes** con los datos del 29 oct 2026: Ubaté, Zipaquirá, Girardot, Soacha, Chía, Fusagasugá y Facatativá están procesadas en las 5 transformaciones.

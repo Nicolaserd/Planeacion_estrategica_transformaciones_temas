@@ -1,0 +1,13 @@
+grupo: uc_para_la_vida__extension_soacha
+transformacion: UC para la Vida
+unidad: Extensión Soacha
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: vida, aprendizaje, estudiantes, conocimientos, docente
+  nombre: Experiencias de aprendizaje y formación más allá del aula
+- tema: 1
+  firma: experiencia, gestores, bienestar, plan, estabilidad laboral
+  nombre: Estabilidad laboral, formación del personal y movilidad

@@ -1,0 +1,17 @@
+grupo: uc_para_la_vida__extension_chia
+transformacion: UC para la Vida
+unidad: Extensión Chía
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: laboral, bienestar, profesional, beneficios, conocimientos
+  nombre: Bienestar, reconocimiento y condiciones laborales del personal
+- tema: 1
+  firma: vida, experiencias, conocimiento, estudiantes, aprendizaje
+  nombre: Experiencias y aprendizajes para la vida personal y profesional
+- tema: 2
+  firma: agregele inclusión, apasionado caso, completo, caso personal, coherencia
+    ningun
+  nombre: 'Conformidad: está perfecta'

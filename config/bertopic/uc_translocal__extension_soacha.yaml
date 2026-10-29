@@ -1,0 +1,13 @@
+grupo: uc_translocal__extension_soacha
+transformacion: UC Translocal
+unidad: Extensión Soacha
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: entorno, conocimiento, territorial, comunidades, necesidades
+  nombre: 'Impacto territorial: conocer y atender las necesidades del entorno'
+- tema: 1
+  firma: estudiantes, conocimiento, identidad, comunidad, deportivos
+  nombre: Identidad, sentido de pertenencia y vínculo cultural con la comunidad

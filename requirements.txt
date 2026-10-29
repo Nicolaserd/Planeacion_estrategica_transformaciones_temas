@@ -55,3 +55,11 @@ typing-inspection==0.4.4
 typing_extensions==4.16.0
 tzdata==2026.4
 wrapt==2.5.0
+wordcloud==1.9.6
+# Temas con BERT (scripts/bertopic_temas.py)
+bertopic==0.17.4
+sentence-transformers==6.2.0
+torch==2.15.0
+transformers==5.22.0
+umap-learn==0.5.12
+hdbscan==0.8.44

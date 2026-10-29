@@ -1,0 +1,13 @@
+grupo: uc_emprendedora_e_innovadora__extension_facatativa
+transformacion: UC Emprendedora e Innovadora
+unidad: Extensión Facatativá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: emprendimiento, proyectos, ideas, estudiantes, comunidad
+  nombre: Apoyo a ideas y emprendimientos de estudiantes y comunidad
+- tema: 1
+  firma: recursos, procesos, fortalecer alianzas, burocracia procesos, laboral
+  nombre: Viabilidad, recursos y financiación de los proyectos

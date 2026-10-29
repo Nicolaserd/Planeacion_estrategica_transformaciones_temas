@@ -1,0 +1,13 @@
+grupo: ucundinamarca__todas_las_unidades
+transformacion: UCundinamarca
+unidad: Todas las unidades
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: territorio, plan, mejorar, programas, laboral
+  nombre: 'Propuestas para el Plan: territorio, programas y condiciones laborales'
+- tema: 1
+  firma: procesos, recursos, calidad, mejorar, datos
+  nombre: Procesos, recursos y calidad; valoraciones breves del encuentro

@@ -1,0 +1,15 @@
+grupo: uc_digital__seccional_ubate
+transformacion: UC Digital
+unidad: Seccional Ubaté
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: procesos, administrativos, tecnologías, procesos administrativos, inteligencia
+    artificial
+  nombre: Procesos administrativos digitales e infraestructura tecnológica
+- tema: 1
+  firma: aprendizaje, tecnologías, conocimiento, habilidades, graduados
+  nombre: Aprendizaje con herramientas digitales e inteligencia artificial (incluye
+    graduados)

@@ -1,0 +1,13 @@
+grupo: uc_para_la_vida__extension_zipaquira
+transformacion: UC para la Vida
+unidad: Extensión Zipaquirá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: oportunidades, docentes, profesional, investigación, estabilidad laboral
+  nombre: Oportunidades laborales, salud mental y estabilidad de docentes
+- tema: 1
+  firma: aprender, lugares, allá aula, adultos, aula clase
+  nombre: 'Aprender más allá del aula: intercambios y salidas'

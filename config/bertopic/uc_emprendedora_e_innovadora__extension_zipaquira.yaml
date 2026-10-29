@@ -1,0 +1,13 @@
+grupo: uc_emprendedora_e_innovadora__extension_zipaquira
+transformacion: UC Emprendedora e Innovadora
+unidad: Extensión Zipaquirá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: investigación, docentes, ideas, proyectos, conocimiento
+  nombre: Espacios y acompañamiento para resolver problemas del territorio
+- tema: 1
+  firma: casas cultura, convenios, alianzas estratégicas, talleres, instituciones
+  nombre: Alianzas con casas de la cultura e industria musical

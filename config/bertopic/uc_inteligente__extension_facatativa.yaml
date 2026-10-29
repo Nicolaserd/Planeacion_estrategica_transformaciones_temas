@@ -1,0 +1,13 @@
+grupo: uc_inteligente__extension_facatativa
+transformacion: UC Inteligente
+unidad: Extensión Facatativá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: datos, procesos, decisiones, información, uso
+  nombre: Uso de datos e información para la gestión y la toma de decisiones
+- tema: 1
+  firma: oportunidades, calidad, programas, mejorar, inteligencia
+  nombre: Calidad, mejora continua y oportunidades para los programas académicos

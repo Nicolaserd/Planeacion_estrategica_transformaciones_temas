@@ -1,0 +1,20 @@
+grupo: uc_para_la_vida__todas_las_unidades
+transformacion: UC para la Vida
+unidad: Todas las unidades
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: vida, estudiantes, bienestar, oportunidades, aprendizaje
+  nombre: Formación práctica, acompañamiento y bienestar de los estudiantes
+- tema: 1
+  firma: vida, personas, experiencias, bienestar, transhumana
+  nombre: Experiencias y crecimiento personal (persona transhumana)
+- tema: 2
+  firma: gestores, bienestar, estabilidad laboral, formación, administrativos
+  nombre: Estabilidad laboral, contratación y bienestar del personal
+- tema: 3
+  firma: actividades, ahora, actividades recreativas, personas transhumanas, valores
+    democráticos
+  nombre: Conformidad y actividades recreativas

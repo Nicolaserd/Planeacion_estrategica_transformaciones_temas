@@ -1,0 +1,19 @@
+grupo: uc_emprendedora_e_innovadora__todas_las_unidades
+transformacion: UC Emprendedora e Innovadora
+unidad: Todas las unidades
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: recursos, idea, problemas, proyectos, ideas
+  nombre: Seguimiento, viabilidad y recursos para ejecutar las ideas
+- tema: 1
+  firma: comunidad, estudiantes, investigación, ideas, soluciones
+  nombre: Acompañamiento y orientación a la comunidad desde el inicio de la idea
+- tema: 2
+  firma: emprendimiento, oportunidades, emprendimientos, innovación, proyectos
+  nombre: Fomento del emprendimiento y la innovación
+- tema: 3
+  firma: momento, acuerdo, excelente, saber escuchar, enfocado
+  nombre: Sin ajustes por ahora o conformidad

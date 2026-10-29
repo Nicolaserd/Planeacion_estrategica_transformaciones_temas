@@ -1,0 +1,13 @@
+grupo: uc_digital__extension_chia
+transformacion: UC Digital
+unidad: Extensión Chía
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: recursos, uso, desarrollar, institucionales, tecnologías
+  nombre: Optimización de procesos e infraestructura tecnológica institucional
+- tema: 1
+  firma: digital, estudiantes, acceso, aprendizaje, laboratorios
+  nombre: Acceso digital, laboratorios y tecnología para aprender

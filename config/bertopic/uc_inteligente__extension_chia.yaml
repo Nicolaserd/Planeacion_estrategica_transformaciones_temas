@@ -1,0 +1,13 @@
+grupo: uc_inteligente__extension_chia
+transformacion: UC Inteligente
+unidad: Extensión Chía
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: tomar decisiones, estudiantes, comunidad, necesidades, educación
+  nombre: Universidad que se anticipa y responde a las necesidades de la comunidad
+- tema: 1
+  firma: datos, futuro, inteligencia, digital, inteligencia artificial
+  nombre: Datos, inteligencia artificial y actualización para decidir mejor

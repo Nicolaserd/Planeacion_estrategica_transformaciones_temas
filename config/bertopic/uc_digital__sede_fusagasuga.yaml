@@ -1,0 +1,16 @@
+grupo: uc_digital__sede_fusagasuga
+transformacion: UC Digital
+unidad: Sede Fusagasugá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: tecnología, tecnologías, capacitación, conocimiento, estudiantes
+  nombre: Capacitación tecnológica para la comunidad universitaria
+- tema: 1
+  firma: digital, conectividad, tecnología, digitales, internet
+  nombre: Conectividad, infraestructura y sistema de información integral
+- tema: 2
+  firma: inteligencia artificial, inteligencia, automatización, implementación, automatizados
+  nombre: Buen uso de la inteligencia artificial

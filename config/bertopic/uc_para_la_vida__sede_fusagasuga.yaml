@@ -1,0 +1,13 @@
+grupo: uc_para_la_vida__sede_fusagasuga
+transformacion: UC para la Vida
+unidad: Sede Fusagasugá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: vida, formación, laboral, bienestar, oportunidades
+  nombre: Formación, contratación docente, acompañamiento y calidad de vida
+- tema: 1
+  firma: personas, vida, experiencias, valores, oportunidades
+  nombre: Experiencias, valores y transformación personal

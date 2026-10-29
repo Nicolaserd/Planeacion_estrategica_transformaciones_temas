@@ -1,0 +1,13 @@
+grupo: uc_inteligente__seccional_ubate
+transformacion: UC Inteligente
+unidad: Seccional Ubaté
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: datos, información, decisiones, toma decisiones, mejora continua
+  nombre: Datos y gobernanza para la toma de decisiones
+- tema: 1
+  firma: necesidades, comunidad, evolución, calidad educativa, comunicación
+  nombre: Anticiparse a las necesidades y comunicarse con la comunidad estudiantil

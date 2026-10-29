@@ -14,3 +14,5 @@ __pycache__/
 **/Experiencia*.xlsx
 # Documento del Plan Estratégico: no se publica (decisión de Nicolás, 2026-10-02)
 **/06. PLAN ESTRAT*
+# Archivos temporales de Office (se crean al abrir un Word o Excel)
+~$*

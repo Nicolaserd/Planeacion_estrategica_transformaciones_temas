@@ -1,0 +1,13 @@
+grupo: uc_para_la_vida__seccional_girardot
+transformacion: UC para la Vida
+unidad: Seccional Girardot
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: laboral, vida, experiencias, oportunidades, mejorar
+  nombre: 'Oportunidades reales: prácticas, pasantías y vida laboral'
+- tema: 1
+  firma: creadores, experiencias, creadores oportunidades, conocimiento, pensar
+  nombre: Experiencias que transforman a los creadores de oportunidades

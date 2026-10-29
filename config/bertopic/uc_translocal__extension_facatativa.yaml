@@ -1,0 +1,13 @@
+grupo: uc_translocal__extension_facatativa
+transformacion: UC Translocal
+unidad: Extensión Facatativá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: proyectos, interacción, necesidades, ideas, innovación
+  nombre: Proyectos conjuntos e interacción entre sedes para el territorio
+- tema: 1
+  firma: estudiantes, procesos, funcionarios, necesidades, programas
+  nombre: Articulación de sedes, programas y funcionarios (incluye clima laboral)

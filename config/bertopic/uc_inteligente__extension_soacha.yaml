@@ -1,0 +1,13 @@
+grupo: uc_inteligente__extension_soacha
+transformacion: UC Inteligente
+unidad: Extensión Soacha
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: estudiantes, mejorar, conocimiento, infraestructura, prácticas
+  nombre: Formación, infraestructura y aprendizaje institucional para los estudiantes
+- tema: 1
+  firma: procesos, datos, administrativos, inteligencia artificial, mejoramiento
+  nombre: Datos, inteligencia artificial y mejora de procesos administrativos

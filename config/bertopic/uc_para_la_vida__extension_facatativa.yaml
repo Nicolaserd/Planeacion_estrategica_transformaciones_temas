@@ -1,0 +1,16 @@
+grupo: uc_para_la_vida__extension_facatativa
+transformacion: UC para la Vida
+unidad: Extensión Facatativá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: bienestar, estudiantes, experiencias, actividades, programas
+  nombre: Bienestar, salud mental y experiencias formativas (salidas pedagógicas)
+- tema: 1
+  firma: vida, pensamiento, cambio, creadores, experiencias
+  nombre: Transformar vidas y formas de pensar
+- tema: 2
+  firma: bienestar, oportunidades, salarial, talento humano, beneficios
+  nombre: Bienestar laboral y nivelación salarial de administrativos

@@ -1,0 +1,16 @@
+grupo: uc_digital__seccional_girardot
+transformacion: UC Digital
+unidad: Seccional Girardot
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: tecnología, acceso, aprendizaje, servicios, conectividad
+  nombre: Acceso a tecnología y conectividad sin deshumanizar la educación
+- tema: 1
+  firma: automatización, implementación, tecnologías, automatización procesos, administrativos
+  nombre: Automatización de procesos administrativos
+- tema: 2
+  firma: enfermería, simulación, simuladores, laboratorios, prácticas
+  nombre: Simulación y realidad virtual para enfermería

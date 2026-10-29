@@ -1,0 +1,18 @@
+grupo: uc_inteligente__extension_zipaquira
+transformacion: UC Inteligente
+unidad: Extensión Zipaquirá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: inteligente, estudiantes, educación, docentes, formación
+  nombre: Universidad inteligente al servicio de estudiantes y docentes
+- tema: 1
+  firma: procesos, mejora continua, adaptación mejoraria, autocrítica corrección,
+    anticiparse cambios
+  nombre: Procesos ágiles, autocrítica y mejora continua
+- tema: 2
+  firma: producción musical, escuchar experiencias, ampliar datos, artificial directamente,
+    artística empleabilidad
+  nombre: 'Música: escuchar a los egresados y empleabilidad artística'

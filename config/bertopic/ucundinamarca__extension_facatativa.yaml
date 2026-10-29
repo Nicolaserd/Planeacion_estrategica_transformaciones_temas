@@ -1,0 +1,13 @@
+grupo: ucundinamarca__extension_facatativa
+transformacion: UCundinamarca
+unidad: Extensión Facatativá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: laboratorios, laborales, mejoras, infraestructura, oportunidades
+  nombre: Laboratorios, infraestructura y formalización laboral docente
+- tema: 1
+  firma: buena, buena gracias, buena orientacion, encuenta bueno, encuentros excelente
+  nombre: Valoración positiva del encuentro

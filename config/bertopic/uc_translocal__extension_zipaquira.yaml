@@ -1,0 +1,14 @@
+grupo: uc_translocal__extension_zipaquira
+transformacion: UC Translocal
+unidad: Extensión Zipaquirá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: local, comunidad, heterogéneo, proyectos, conocimiento
+  nombre: Identidad local abierta al mundo
+- tema: 1
+  firma: estudiantes, interacción, facultad artes, artes conservatorio, aplicación
+    tecnologías
+  nombre: 'Música, artes y conservatorio: visibilidad e interacción con otras sedes'

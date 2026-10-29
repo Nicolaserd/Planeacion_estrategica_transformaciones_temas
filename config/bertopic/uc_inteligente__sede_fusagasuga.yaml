@@ -1,0 +1,13 @@
+grupo: uc_inteligente__sede_fusagasuga
+transformacion: UC Inteligente
+unidad: Sede Fusagasugá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: gestión, integración, comunidad, datos, problemas reales
+  nombre: Gestión, integración y respuesta a problemas reales del territorio
+- tema: 1
+  firma: estudiantes, comunidad, conocimiento, necesidades, mejorar
+  nombre: Universidad que aprende, se anticipa y responde a la comunidad

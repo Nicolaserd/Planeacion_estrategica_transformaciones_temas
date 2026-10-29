@@ -1,0 +1,16 @@
+grupo: uc_translocal__seccional_girardot
+transformacion: UC Translocal
+unidad: Seccional Girardot
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: necesidades, soluciones, oportunidades, integración, desarrollo
+  nombre: Interacción entre sedes y territorios para el desarrollo
+- tema: 1
+  firma: territorios, necesidades, comunidad, conocimiento, proyectos
+  nombre: Solución de problemas territoriales con la comunidad
+- tema: 2
+  firma: acuerdo, encuentra
+  nombre: 'Conformidad: no cambiaría nada'

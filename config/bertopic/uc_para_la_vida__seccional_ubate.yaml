@@ -1,0 +1,14 @@
+grupo: uc_para_la_vida__seccional_ubate
+transformacion: UC para la Vida
+unidad: Seccional Ubaté
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: bienestar, oportunidades, administrativos, aprendizaje, enfoque
+  nombre: Formación práctica y preparación para el mundo laboral
+- tema: 1
+  firma: experiencias, adquiriendo personas, aplicables vida, bienestar familia, aporte
+    diferentes
+  nombre: Experiencias de vida y aplicación a la realidad

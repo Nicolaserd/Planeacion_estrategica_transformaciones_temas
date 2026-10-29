@@ -1,0 +1,18 @@
+grupo: ucundinamarca__extension_chia
+transformacion: UCundinamarca
+unidad: Extensión Chía
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: docentes, misión, académicamente estructuralmente, amplio entendimiento,
+    apoyo estudiantes
+  nombre: Infraestructura y campus para nuevas carreras
+- tema: 1
+  firma: procesos, información, agua lluvia, alianzas multiactor, automatización procesos
+  nombre: Procesos más ágiles y automatización
+- tema: 2
+  firma: billar mantengan, excelente buena, gracias ambiente, gracias hablemos, habilitado
+    salón
+  nombre: Agradecimientos y valoración del encuentro

@@ -1,0 +1,14 @@
+grupo: uc_translocal__seccional_ubate
+transformacion: UC Translocal
+unidad: Seccional Ubaté
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: desarrollo, necesidades, región, comunidad, estrategias
+  nombre: Desarrollo regional, identidad e internacionalización
+- tema: 1
+  firma: graduados, acuerdo habrían, actualizada información, aprendizaje valore,
+    beneficios seguir
+  nombre: Aprendizaje, convenios y conocimiento del territorio (temas varios)

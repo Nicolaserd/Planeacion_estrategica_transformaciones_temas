@@ -1,0 +1,22 @@
+grupo: uc_inteligente__todas_las_unidades
+transformacion: UC Inteligente
+unidad: Todas las unidades
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: datos, gobernanza, gestión, toma decisiones, estrategias
+  nombre: Datos, gobernanza y gestión para la toma de decisiones
+- tema: 1
+  firma: estudiantes, mejorar, oportunidades, necesidades, comunidad
+  nombre: Aprender de la comunidad y anticiparse a sus necesidades
+- tema: 2
+  firma: estudiantes, aprendizaje, oportunidades, educación, docentes
+  nombre: Aprendizaje, formación y experiencia de estudiantes y egresados
+- tema: 3
+  firma: tiempo, futuro, humanidad, mejora continua, interacción
+  nombre: 'Comentarios breves: acuerdo, visión de futuro y no perder lo humano'
+- tema: 4
+  firma: inteligencia, inteligencia artificial, artificial, modelos, decisiones
+  nombre: Inteligencia artificial y analítica de datos

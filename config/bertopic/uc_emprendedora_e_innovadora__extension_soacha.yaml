@@ -1,0 +1,16 @@
+grupo: uc_emprendedora_e_innovadora__extension_soacha
+transformacion: UC Emprendedora e Innovadora
+unidad: Extensión Soacha
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: recursos, proyectos, soluciones, investigación, oportunidades
+  nombre: Acompañamiento y recursos para convertir ideas en soluciones
+- tema: 1
+  firma: aumentar información, emprender, formación, seguridad, administrativos
+  nombre: Información y formación para el personal administrativo
+- tema: 2
+  firma: emprendimiento, emprendedores, emprendedora, emprendimiento innovación, emprendedor
+  nombre: Divulgar y apoyar el emprendimiento (incluye administrativos)

@@ -1,0 +1,19 @@
+grupo: uc_translocal__todas_las_unidades
+transformacion: UC Translocal
+unidad: Todas las unidades
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: estudiantes, comunidad, oportunidades, necesidades, identidad
+  nombre: Comunidad, identidad y oportunidades para los estudiantes en cada territorio
+- tema: 1
+  firma: necesidades, territorios, comunidades, región, proyectos
+  nombre: Necesidades de los territorios y la región (de lo local a lo internacional)
+- tema: 2
+  firma: programas, proyectos, aprendizaje, innovación, implementación
+  nombre: Integración entre sedes y programas mediante proyectos e innovación
+- tema: 3
+  firma: descanso, general, espacios, mejorar, adecuado
+  nombre: Conformidad y espacios de bienestar (descanso, parqueadero)

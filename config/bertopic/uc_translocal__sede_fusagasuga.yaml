@@ -1,0 +1,16 @@
+grupo: uc_translocal__sede_fusagasuga
+transformacion: UC Translocal
+unidad: Sede Fusagasugá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: comunidades, territorios, proyectos, necesidades, internacional
+  nombre: Integración cultural entre comunidades y territorios
+- tema: 1
+  firma: tecnología, proyectos, innovación, desarrollo, gestores conocimiento
+  nombre: Tecnología, innovación y proyectos entre programas
+- tema: 2
+  firma: estudiantes, oportunidades, administrativos, comunidad, prácticas
+  nombre: Comunidad universitaria unida y conectada entre sedes

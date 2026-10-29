@@ -1,0 +1,14 @@
+grupo: uc_digital__extension_facatativa
+transformacion: UC Digital
+unidad: Extensión Facatativá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: tecnología, digital, tecnologías, digitales, internet
+  nombre: Infraestructura, conectividad y uso ético de tecnologías emergentes
+- tema: 1
+  firma: inteligencia artificial, artificial, laboratorios, seguridad, capacitaciones
+    uso
+  nombre: 'Inteligencia artificial: capacitación y uso responsable'

@@ -1,0 +1,16 @@
+grupo: uc_digital__extension_zipaquira
+transformacion: UC Digital
+unidad: Extensión Zipaquirá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: tecnología, registros, oportunidades, desarrollo, libertad cátedra
+  nombre: Tecnología para la formación y menos registros para docentes
+- tema: 1
+  firma: software, servicios, comunidad, procesos digitales, trabajo remoto
+  nombre: Aplicación institucional, trámites digitales y trabajo remoto
+- tema: 2
+  firma: tecnológico, tecnológicas, musical, herramientas tecnológicas, digital
+  nombre: Tecnología especializada para la música

@@ -1,0 +1,13 @@
+grupo: ucundinamarca__seccional_girardot
+transformacion: UCundinamarca
+unidad: Seccional Girardot
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: programa, computadores, gestores, estudiantes, enfoque
+  nombre: Aprendizaje digital, calidad docente y continuidad del Plan
+- tema: 1
+  firma: futuro, estudiantes, tesis artículo, charlas, prácticas
+  nombre: Prácticas laborales, nuevas especialidades y futuro de los estudiantes

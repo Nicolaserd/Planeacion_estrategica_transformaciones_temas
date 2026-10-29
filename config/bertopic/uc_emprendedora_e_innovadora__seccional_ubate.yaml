@@ -1,0 +1,13 @@
+grupo: uc_emprendedora_e_innovadora__seccional_ubate
+transformacion: UC Emprendedora e Innovadora
+unidad: Seccional Ubaté
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: comunidad, investigación, ideas, oportunidades, interacción
+  nombre: Puente entre ideas, investigación y necesidades de la comunidad
+- tema: 1
+  firma: emprendimiento, planeación, desarrollo, apoyo capital, apoyo económico
+  nombre: Capital semilla, financiación y planeación emprendedora

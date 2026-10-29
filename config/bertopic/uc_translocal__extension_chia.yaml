@@ -1,0 +1,13 @@
+grupo: uc_translocal__extension_chia
+transformacion: UC Translocal
+unidad: Extensión Chía
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: territorios, problemáticas, proyectos, municipios, creadores oportunidades
+  nombre: Integración de sedes y territorios respetando la identidad de cada región
+- tema: 1
+  firma: estudiantes, oportunidades, innovación, comunidad, universidades
+  nombre: Oportunidades para estudiantes y soluciones a problemáticas locales

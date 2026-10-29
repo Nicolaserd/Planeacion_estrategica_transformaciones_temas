@@ -1,0 +1,16 @@
+grupo: uc_digital__todas_las_unidades
+transformacion: UC Digital
+unidad: Todas las unidades
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: tecnologías, digitales, conectividad, infraestructura, implementación
+  nombre: Infraestructura, conectividad y automatización de procesos
+- tema: 1
+  firma: tecnología, estudiantes, aprendizaje, tecnologías, capacitación
+  nombre: Tecnología para aprender y capacitación de la comunidad
+- tema: 2
+  firma: inteligencia, inteligencia artificial, herramientas, automatización, conocimiento
+  nombre: 'Inteligencia artificial: formación y uso'

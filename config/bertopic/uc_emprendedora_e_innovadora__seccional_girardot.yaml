@@ -1,0 +1,14 @@
+grupo: uc_emprendedora_e_innovadora__seccional_girardot
+transformacion: UC Emprendedora e Innovadora
+unidad: Seccional Girardot
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: comunidad, oportunidades, emprendimiento, recursos, proyectos
+  nombre: Acompañamiento, asesoría y recursos para desarrollar las ideas
+- tema: 1
+  firma: administrativos eficientes, colegios, completo enfoque, colegios aportes,
+    acompañamiento gestores
+  nombre: Conformidad y comentarios breves

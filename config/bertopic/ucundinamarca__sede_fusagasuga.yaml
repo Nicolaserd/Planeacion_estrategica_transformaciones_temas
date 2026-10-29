@@ -1,0 +1,18 @@
+grupo: ucundinamarca__sede_fusagasuga
+transformacion: UCundinamarca
+unidad: Sede Fusagasugá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: investigación, oportunidad, profesionales, educación, universidades
+  nombre: Investigación, oferta de programas e impacto en la sociedad
+- tema: 1
+  firma: planes desarrollo, administrativo, administrativo dialogue, articulación
+    gobierno, competitividad traslocal
+  nombre: Articulación con los planes de desarrollo territorial
+- tema: 2
+  firma: aprendido, aprendido importantes, ayudan gusto, ciencias deporte, conecte
+    agradecimiento
+  nombre: Agradecimientos y ofrecimientos de apoyo

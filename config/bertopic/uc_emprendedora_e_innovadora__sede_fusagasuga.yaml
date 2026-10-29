@@ -1,0 +1,13 @@
+grupo: uc_emprendedora_e_innovadora__sede_fusagasuga
+transformacion: UC Emprendedora e Innovadora
+unidad: Sede Fusagasugá
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: recursos, proyectos, investigación, ideas, necesidades
+  nombre: 'Apoyo a las ideas: banco de ideas, asesoría y recursos'
+- tema: 1
+  firma: proceso, convenios, recursos, solución problemas, proyectos
+  nombre: Ruta para la solución de problemas

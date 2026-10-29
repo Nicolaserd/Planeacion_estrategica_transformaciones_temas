@@ -1,0 +1,16 @@
+grupo: uc_inteligente__seccional_girardot
+transformacion: UC Inteligente
+unidad: Seccional Girardot
+nota: Nombres redactados por Claude leyendo las palabras clave y los comentarios representativos
+  (anonimizados). Si la firma no coincide con el modelo, exportar usa las palabras
+  clave.
+temas:
+- tema: 0
+  firma: inteligencia artificial, datos, procesos, tecnología, región
+  nombre: Tecnología, inteligencia artificial y prevención de errores con datos
+- tema: 1
+  firma: estudiantes, comunidad, necesidades, oportunidades, participación
+  nombre: Escuchar a la comunidad y anticiparse a sus necesidades
+- tema: 2
+  firma: bueno, proyección
+  nombre: Aprobación breve («está bien», «vamos bien»)
