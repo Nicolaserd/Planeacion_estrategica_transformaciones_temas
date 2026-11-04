@@ -72,6 +72,22 @@ BERT asigna **un** tema por comentario y Jev puede asignar **varios**, así que 
 | SUBDETECTADO | BERT − Jev ≥ 4 y Jev ≤ la mitad de BERT | Jev reconoce el tema en pocos comentarios: alinear la pregunta con el criterio |
 | ALTO | Jev − BERT ≥ 8 sin llegar al doble | Conteo algo alto: informarlo |
 
+## Versión por rol (2026-11-04)
+
+Con temas por unidad × transformación (2 o 3 temas, cada uno ligado a un componente), las tablas por unidad y por actor mostraban ceros por diseño. Por eso, a pedido de Nicolás, los informes por unidad usan la versión por rol:
+
+| Paso | Comando | Qué hace |
+|---|---|---|
+| 1 | `python flujo_bert_jev/flujo.py bert_roles` | BERT por rol × transformación, con las 7 unidades juntas (24 grupos). Si un grupo tiene menos de 20 comentarios o no tiene un k válido, usa los temas de la transformación completa. |
+| 2 | `python flujo_bert_jev/flujo.py mostrar_roles [filtro]` | Muestra los temas de cada rol, con comentarios representativos y el tema más parecido de otro rol. |
+| 3 | (Claude) | Escribe `temas_roles/<transformación>.yaml`: una **lista común y breve** (3 a 5 temas) que fusiona los temas parecidos. Cada tema lleva `origen` (grupo y número de BERT). La conformidad se marca como `especial` y se reporta aparte. |
+| 4 | `python flujo_bert_jev/flujo.py firmar_roles` y `validar_roles` | Completan y verifican las firmas de BERT, los campos, los componentes y la cobertura de todos los temas de BERT. |
+| 5 | `python flujo_bert_jev/flujo.py clasificar_roles` | Jev clasifica todos los comentarios de cada transformación con la misma lista. |
+| 6 | `python flujo_bert_jev/flujo.py revisar_roles` | Compara Jev con BERT, rol por rol. |
+| 7 | `candidatos_sin_contenido` y `mostrar_ceros` | Muestran los comentarios que Claude lee para decidir cuáles no tienen contenido evaluable (`revision/sin_contenido.jsonl`) y para verificar cada celda en 0 % (`revision/ceros.jsonl`). Solo se guardan `id_com` y la decisión. |
+| 8 | `python flujo_bert_jev/flujo.py coherencia` | Falla si un comentario no tiene probabilidad para algún tema, si las sumas por rol no cuadran o si queda un 0 % sin verificar. |
+| 9 | `python flujo_bert_jev/flujo.py exportar_roles` | Genera `salidas_roles/<T>/Temas_por_rol_<T>.xlsx`, con las hojas Temas, Por unidad y rol y Clasificación. Lleva solo texto anonimizado. |
+
 ## Archivos de este flujo
 
 | Ruta | Contenido | ¿Se sube? |
@@ -81,5 +97,11 @@ BERT asigna **un** tema por comentario y Jev puede asignar **varios**, así que 
 | `flujo_bert_jev/salidas/` | Excel de temas, copias anonimizadas y resumen | Sí, salvo `Clasificacion_*.xlsx` sin anonimizar |
 | `flujo_bert_jev/bitacora.md` | Registro de cada paso, con el costo de Jev | Sí |
 | `flujo_bert_jev/informe/` | Informe Word del flujo con mapas de vectores y matrices BERT × Jev, y sus figuras | Sí |
-| `data/flujo_bert_jev/` | Respuestas, modelos BERT y respuestas de Jev | No (`data/` está en `.gitignore`) |
+| `flujo_bert_jev/informe/por_unidad_regional/` | Un informe Word por unidad regional: marco conceptual y metodológico, participación por actor (asistencia frente a la muestra), sus transformaciones con análisis por actor y coincidencias | Sí |
+| `flujo_bert_jev/informe/formatos/` | Los 7 informes por unidad dentro de la plantilla institucional `informe/Formato.docx`. El contenido va solo en la zona editable del cuerpo y la plantilla conserva su protección. Va en Arial, con títulos y textos en negro, y tablas y gráficas con sus colores | Sí |
+| `flujo_bert_jev/informe/asistencia/` | Registro de asistencia y diseño muestral por unidad: traen nombres, documentos y correos. Los informes solo usan conteos agregados | **No** (`.gitignore`) |
+| `flujo_bert_jev/temas_roles/` | Listas comunes por transformación (versión por rol), con las versiones anteriores en `v2/` y `v3/` | Sí |
+| `flujo_bert_jev/revision/` | Lectura de Claude: comentarios sin contenido evaluable y ceros verificados (solo `id_com` y decisión) | Sí |
+| `flujo_bert_jev/salidas_roles/` | Excel por transformación de la versión por rol (solo texto anonimizado) | Sí |
+| `data/flujo_bert_jev/` | Respuestas, modelos BERT (`bert/`, `bert_roles/`) y respuestas de Jev (`jev/`, `jev_roles/`) | No (`data/` está en `.gitignore`) |
 | `cache/jev_flujo_bert_jev.jsonl` | Caché de Jev de este flujo | No |

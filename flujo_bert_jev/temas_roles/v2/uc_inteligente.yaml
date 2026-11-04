@@ -1,0 +1,139 @@
+transformacion: UC Inteligente
+version: 2
+nota: Lista común y amplia (pocos temas, sin ceros por diseño) a partir de los temas de BERT por rol con las 7 unidades juntas;
+  Jev la aplica a todos los comentarios del formulario. La conformidad (especial) se reporta aparte.
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: anticipacion_necesidades
+  nombre: Universidad que aprende y se anticipa a las necesidades de la comunidad
+  componente: Inteligencia institucional
+  origen:
+  - grupo: uc_inteligente__rol_estudiantes
+    tema_bert: 0
+    firma: estudiantes, oportunidades, mejorar, necesidades, educación
+  - grupo: uc_inteligente__rol_administrativos
+    tema_bert: 1
+    firma: datos, necesidades, información, comunidad, tomar decisiones
+  - grupo: uc_inteligente__rol_graduados
+    tema_bert: 0
+    firma: profesionales, tecnología, necesidades, soluciones, datos
+  justificacion: Los comentarios describen una universidad que aprende de su comunidad y de su entorno, identifica necesidades
+    y se anticipa con soluciones, que es lo que el documento marco llama inteligencia institucional.
+  instruccion: ¿El `comentario` trata de una universidad que escucha o aprende de su comunidad (estudiantes, docentes, graduados
+    o territorio), identifica sus necesidades o se anticipa a los problemas para responder con soluciones, oportunidades o
+    una mejor educación?
+  criterio_true: Habla de anticiparse, prever o prevenir problemas, escuchar o analizar lo que pasa en la comunidad o el territorio,
+    identificar necesidades, aprender de la experiencia o responder a las necesidades de estudiantes, docentes, graduados
+    o la sociedad con soluciones u oportunidades.
+  criterio_false: No habla de anticiparse ni de responder a necesidades de la comunidad. Pedir solo inteligencia artificial
+    o tecnología tiene su propio tema; mejorar procesos, programas o trámites sin referirse a las necesidades de la comunidad
+    tiene su propio tema.
+  ejemplos_si:
+  - Una universidad así sería capaz de aprender de las experiencias de sus estudiantes, docentes y comunidad, identificar
+    necesidades y anticiparse a posibles problemas
+  - La universidad debería ser capaz de anticiparse a las necesidades de su comunidad, analizando información para tomar decisiones
+    oportunas
+  critico: false
+- id: decisiones_datos_gobernanza
+  nombre: Decisiones basadas en datos y gobernanza participativa
+  componente: Gobierno y uso estratégico de los datos
+  otros_componentes:
+  - Gobernanza estratégica
+  origen:
+  - grupo: uc_inteligente__rol_docentes
+    tema_bert: 0
+    firma: decisiones, datos, gobernanza, institucional, toma decisiones
+  justificacion: Los comentarios piden que la universidad decida y se gobierne con datos, evidencia e indicadores, y que la
+    comunidad participe en esas decisiones; corresponde al gobierno y uso estratégico de los datos y a la gobernanza estratégica.
+  instruccion: ¿El `comentario` trata de cómo la universidad toma decisiones o se gobierna con base en datos, información,
+    evidencia o indicadores, o de la participación de la comunidad en esas decisiones?
+  criterio_true: Menciona tomar decisiones con datos, información, evidencia, cifras o indicadores; la gobernanza, la planeación
+    o la gestión institucional basada en información; sistemas para recopilar y analizar datos; o que docentes, estudiantes
+    y administrativos participen en las decisiones.
+  criterio_false: Mencionar los datos de paso no basta; debe referirse a decidir, gobernar o gestionar con ellos. Hablar solo
+    de inteligencia artificial tiene su propio tema; mejorar procesos o trámites sin hablar de datos ni de decisiones tiene
+    su propio tema.
+  ejemplos_si:
+  - Ajustaría el enfoque para que, además de la toma de decisiones basada en datos, se fortalezca la participación de docentes,
+    estudiantes y administrativos en la interpretación de esa información
+  critico: false
+- id: inteligencia_artificial_humana
+  nombre: Inteligencia artificial y tecnología con uso ético y humano
+  componente: Inteligencia artificial
+  origen:
+  - grupo: uc_inteligente__rol_docentes
+    tema_bert: 1
+    firma: datos, inteligencia, inteligencia artificial, gestión, estudiantes
+  - grupo: uc_inteligente__rol_administrativos
+    tema_bert: 3
+    firma: inteligencia artificial, institucional, uso inteligencia, digital, toma decisiones
+  - grupo: uc_inteligente__rol_administrativos
+    tema_bert: 2
+    firma: conexión, bienestar, generar soluciones, comunidades, olvidar
+  justificacion: Los comentarios piden incorporar la inteligencia artificial y la tecnología en la universidad, con reglas,
+    uso ético y sin perder la dimensión humana, que es el componente de inteligencia artificial.
+  instruccion: ¿El `comentario` trata de incorporar la inteligencia artificial o nuevas tecnologías en la universidad, de
+    crear una IA propia, de regular, capacitar o usar esas herramientas de forma ética, o de hacerlo sin perder la dimensión
+    humana?
+  criterio_true: Menciona la inteligencia artificial, la IA o nuevas tecnologías como herramientas de la universidad, su implementación,
+    una IA institucional, políticas, regulación, ética o capacitación para usarlas, o pide que la tecnología no haga perder
+    el ser, la esencia o la conexión entre las personas.
+  criterio_false: No habla de inteligencia artificial ni de incorporar tecnología. Usar datos para decidir, sin hablar de
+    IA ni de tecnología, tiene su propio tema.
+  ejemplos_si:
+  - Desarrollo de una IA de la universidad que permita la gestión ética de estás herramientas
+  - Que se haga uso de las tecnologías sin perder el SER
+  critico: false
+- id: mejora_continua_procesos
+  nombre: 'Mejora continua: procesos, programas y conocimientos actualizados'
+  componente: Calidad y mejora continua
+  otros_componentes:
+  - Gestión orientada a resultados
+  origen:
+  - grupo: uc_inteligente__rol_estudiantes
+    tema_bert: 1
+    firma: conocimiento, inteligencia artificial, datos, implementación, inteligencia
+  - grupo: uc_inteligente__rol_graduados
+    tema_bert: 1
+    firma: datos, necesidades, artificial, digital, inteligencia
+  - grupo: uc_inteligente__rol_administrativos
+    tema_bert: 0
+    firma: procesos, información, toma decisiones, administrativos, mantenimiento
+  justificacion: Los comentarios piden mejorar de forma continua los procesos administrativos, los programas y los conocimientos,
+    actualizarlos y aprender de los errores, lo que corresponde a la calidad y mejora continua y a la gestión orientada a
+    resultados.
+  instruccion: ¿El `comentario` trata de mejorar de forma continua la universidad, por ejemplo actualizar los programas, el
+    pensum o los conocimientos, mejorar o agilizar los procesos administrativos, aplicar acciones de mejora, capacitar al
+    personal o prevenir errores?
+  criterio_true: Menciona la mejora continua, planes o acciones de mejora, actualizar programas, pensum, conocimientos o tecnologías,
+    mejorar, simplificar u optimizar procesos y recursos, la calidad de la gestión o de la educación, capacitar al personal
+    o aprender de los errores para no repetirlos.
+  criterio_false: No habla de mejorar procesos, programas ni la calidad. Anticiparse a las necesidades de la comunidad tiene
+    su propio tema; las decisiones con datos tienen su propio tema; la inteligencia artificial tiene su propio tema.
+  ejemplos_si:
+  - Tener un plan de mejoramiento concecutivo que nos aporte mejores conocimientos y apoyos para no repetir errores o problemas
+    futuros
+  - Realmente aplicar las acciones de mejora, para tener resultados de alta calidad administrativa
+  critico: false
+- id: conformidad_esta_bien
+  nombre: 'Conformidad: la transformación está bien así'
+  componente: transformacion_en_general
+  especial: conformidad
+  origen:
+  - grupo: uc_inteligente__rol_estudiantes
+    tema_bert: 2
+    firma: será, reconocido nivel, reconocido, abiertos, ahora
+  justificacion: Los comentarios expresan acuerdo con la transformación sin proponer ajustes; se refieren a la transformación
+    como un todo.
+  instruccion: La pregunta de la encuesta fue «¿Qué ajustaría en esta transformación?». ¿El `comentario` responde que no haría
+    ajustes o que está de acuerdo con la transformación tal como está, por ejemplo «está bien», «así está bien», «vamos bien»,
+    «de acuerdo» o «ninguno, está perfecta»?
+  criterio_true: Dice expresamente que no ajustaría nada, que está bien así o que está de acuerdo con la transformación, aunque
+    sea en pocas palabras.
+  criterio_false: Propone, pide o critica algo concreto, aunque empiece con «está bien». Los agradecimientos o testimonios
+    que no dicen que está de acuerdo no cuentan.
+  ejemplos_si:
+  - Está bien
+  - Vamos bien
+  critico: false

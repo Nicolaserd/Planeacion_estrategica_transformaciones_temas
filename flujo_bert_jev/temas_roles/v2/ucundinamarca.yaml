@@ -1,0 +1,112 @@
+transformacion: UCundinamarca
+version: 2
+nota: Formulario general (aportes libres). Lista común y amplia a partir de los temas de BERT por rol con las 7 unidades juntas;
+  los temas se anclan a una de las 5 transformaciones, al Plan en general o fuera de las 5.
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: infraestructura_oferta_academica
+  nombre: Infraestructura, laboratorios y oferta académica
+  componente: fuera_de_la_transformacion
+  origen:
+  - grupo: ucundinamarca__rol_estudiantes
+    tema_bert: 0
+    firma: estudiantes, desarrollo, mejorar, programas, laboratorios
+  justificacion: Los comentarios piden mejores laboratorios, salones y zonas, equipos actualizados y más programas o especialidades;
+    son necesidades de infraestructura y oferta que no corresponden a una sola transformación.
+  instruccion: ¿El `comentario` trata de la infraestructura o la oferta académica de la universidad, por ejemplo laboratorios,
+    salones, equipos, campus, zonas recreativas, nuevas carreras, especialidades o programas?
+  criterio_true: Menciona mejorar o ampliar laboratorios, salones, equipos, campus o espacios físicos, o abrir nuevas carreras,
+    especialidades, posgrados o programas.
+  criterio_false: No habla de infraestructura ni de oferta académica. Las condiciones laborales de los docentes tienen su
+    propio tema; los procesos y trámites tienen su propio tema.
+  ejemplos_si:
+  - Se recomienda la mejora en la infraestructura de los laboratorios además de un equipamiento actualizado
+  - Me gustaría que en un plazo de tiempo a futuro añadieran más especialidades para atraer a más personas
+  critico: false
+- id: condiciones_docentes_investigacion
+  nombre: Condiciones laborales docentes e investigación
+  componente: UC para la Vida
+  otros_componentes:
+  - UC Translocal
+  origen:
+  - grupo: ucundinamarca__rol_docentes
+    tema_bert: 0
+    firma: institucional, digital, creación artística, institución, comunidad
+  justificacion: Los comentarios piden formalizar la vinculación de los docentes y no dejar de lado la investigación y las
+    publicaciones; se ligan a UC para la Vida (desarrollo del talento humano) y a UC Translocal (ciencia, tecnología e innovación).
+  instruccion: ¿El `comentario` trata de las condiciones laborales de los docentes o del personal (formalización, planta,
+    estabilidad, carga) o del apoyo a la investigación y las publicaciones?
+  criterio_true: Menciona la formalización laboral, la vinculación a planta, la estabilidad, la contratación o la carga de
+    los docentes o del personal, o el apoyo a la investigación, los semilleros o las publicaciones.
+  criterio_false: No habla del personal ni de la investigación. Las propuestas generales sobre el Plan o el territorio tienen
+    su propio tema.
+  ejemplos_si:
+  - Continuar con la formalización laboral de los docentes TCO para alcanzar su vinculación q la nómina de planta.
+  - No dejen a un lado la investigación.
+  critico: false
+- id: plan_territorio_continuidad
+  nombre: Continuidad del Plan y articulación con el territorio
+  componente: transformacion_en_general
+  origen:
+  - grupo: ucundinamarca__rol_docentes
+    tema_bert: 1
+    firma: planes desarrollo, emprendimiento, estabilidad, plan estratégico, gestores conocimiento
+  - grupo: ucundinamarca__rol_administrativos
+    tema_bert: 0
+    firma: territorio, plan, mejorar, programas, laboral
+  justificacion: Los comentarios proponen dar continuidad al Plan, integrar las cinco transformaciones y articular la universidad
+    con los planes de desarrollo y el territorio; se refieren al Plan y a la universidad en general.
+  instruccion: ¿El `comentario` hace una propuesta o un comentario sobre el Plan Estratégico o sobre la universidad en general,
+    por ejemplo su continuidad, integrar las transformaciones, articularse con los planes de desarrollo, llegar más al territorio
+    o mejorar los programas y la gestión?
+  criterio_true: Menciona el Plan o las transformaciones en conjunto, su continuidad o seguimiento, la articulación con planes
+    de desarrollo, gobiernos o comunidades, llegar más al territorio, o propuestas generales de mejora de la universidad.
+  criterio_false: No hace propuestas sobre el Plan ni sobre la universidad en general. Solo valorar o agradecer el encuentro
+    tiene su propio tema; la infraestructura y la oferta académica tienen su propio tema; los procesos y trámites tienen su
+    propio tema.
+  ejemplos_si:
+  - Articulación con los planes de desarrollo para ser realmente un sujeto actuante y transformador
+  - Considero que la Universidad de Cundinamarca debe integrar los cinco caminos
+  critico: false
+- id: procesos_agiles_calidad
+  nombre: Procesos más ágiles, automatizados y de calidad
+  componente: UC Digital
+  otros_componentes:
+  - UC Inteligente
+  origen:
+  - grupo: ucundinamarca__rol_docentes
+    tema_bert: 2
+    firma: procesos, simplificar, automatizar procesos, asistencia computador, coordinación sumando
+  - grupo: ucundinamarca__rol_administrativos
+    tema_bert: 1
+    firma: procesos, recursos, calidad, mejorar, datos
+  justificacion: Los comentarios piden automatizar y simplificar procesos, autorizaciones y formatos, optimizar recursos y
+    mejorar la calidad de la gestión; se ligan a UC Digital (automatización de procesos) y a UC Inteligente (calidad y gestión).
+  instruccion: ¿El `comentario` trata de los procesos, trámites o recursos de la universidad, por ejemplo automatizarlos,
+    simplificar autorizaciones y formatos, optimizar el tiempo, mejorar plataformas o datos, o la calidad de la gestión?
+  criterio_true: Menciona automatizar, simplificar o agilizar procesos, trámites, autorizaciones o formatos, optimizar recursos
+    o tiempo, mejorar plataformas, sistemas o datos, o la calidad de la gestión.
+  criterio_false: No habla de procesos, trámites ni gestión. Solo valorar el encuentro tiene su propio tema.
+  ejemplos_si:
+  - Automatizar algunos procesos para mejorar y disminuir tiempo de trabajo
+  - Simplificar los procesos, autorizaciones y formatos y formatos.
+  critico: false
+- id: valoracion_encuentro
+  nombre: Valoración positiva del encuentro
+  componente: transformacion_en_general
+  origen:
+  - grupo: ucundinamarca__rol_estudiantes
+    tema_bert: 1
+    firma: buena, charla, buena charla, actividad reunieron, ayuda personas
+  justificacion: Los comentarios valoran positivamente el encuentro, la presentación o el Plan, o agradecen, sin proponer
+    nada concreto; se refieren al Plan y a la universidad en general.
+  instruccion: ¿El `comentario` valora positivamente el encuentro, la charla, la presentación o el Plan, o agradece, por ejemplo
+    «muy bueno», «excelente», «buena presentación» o «gracias por todo»?
+  criterio_true: Expresa una valoración positiva del encuentro, la actividad, la presentación, la orientación o el Plan, o
+    agradece, aunque sea en pocas palabras.
+  criterio_false: No valora ni agradece. Si además hace una propuesta concreta, esa propuesta se clasifica en su propio tema.
+  ejemplos_si:
+  - Muy buena presentacion
+  - Excelente
+  critico: false

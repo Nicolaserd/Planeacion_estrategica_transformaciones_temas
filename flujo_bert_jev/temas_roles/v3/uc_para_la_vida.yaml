@@ -1,0 +1,122 @@
+transformacion: UC para la Vida
+version: 3
+nota: Lista común y amplia (pocos temas, sin ceros por diseño) a partir de los temas de BERT por rol con las 7 unidades juntas;
+  Jev la aplica a todos los comentarios del formulario. La conformidad (especial) se reporta aparte.
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: oportunidades_practicas_formacion
+  nombre: Oportunidades, prácticas y experiencias formativas para la vida profesional
+  componente: Creadores de Oportunidades
+  otros_componentes:
+  - Gestores del Conocimiento y el Aprendizaje
+  origen:
+  - grupo: uc_para_la_vida__rol_estudiantes
+    tema_bert: 0
+    firma: vida, estudiantes, oportunidades, desarrollo, bienestar
+  - grupo: uc_para_la_vida__rol_estudiantes
+    tema_bert: 1
+    firma: laboral, bienestar, estudiantes, proyectos, experiencia
+  - grupo: uc_para_la_vida__rol_graduados
+    tema_bert: 1
+    firma: oportunidades, bienestar, experiencia, exigencias, sociedad
+  justificacion: Los comentarios piden oportunidades reales, prácticas, salidas pedagógicas, movilidad y una formación que
+    vaya más allá de lo teórico y prepare para la vida y el trabajo, lo que corresponde al componente Creadores de Oportunidades.
+  instruccion: ¿El `comentario` habla, aunque sea brevemente, de oportunidades o experiencias formativas, por ejemplo prácticas,
+    pasantías, empleo, salidas pedagógicas, movilidad, eventos, formación práctica o integral, acompañamiento o preparación
+    para la vida y el trabajo?
+  criterio_true: Menciona oportunidades, prácticas, pasantías, empleo o vinculación laboral, salidas pedagógicas, movilidad
+    o intercambios, eventos o espacios formativos, formación práctica o integral, acompañamiento, o preparación para el trabajo
+    y la vida.
+  criterio_false: No menciona oportunidades ni experiencias formativas.
+  ejemplos_si:
+  - Poder tener más experiencia de salidas pedagógicas ya que permite unir la teoría con la práctica
+  - Necesidades de los egresados, y poder gestionar oportunidades de manera laboral
+  critico: false
+- id: bienestar_salud_mental
+  nombre: Bienestar, salud mental y calidad de vida de la comunidad
+  componente: Felicidad y bienestar
+  origen:
+  - grupo: uc_para_la_vida__rol_docentes
+    tema_bert: 1
+    firma: bienestar, laboral, gestores, estabilidad laboral, experiencias
+  - grupo: uc_para_la_vida__rol_graduados
+    tema_bert: 0
+    firma: bienestar, experiencias, graduados, oportunidades, estudiantes
+  justificacion: Los comentarios piden fortalecer el bienestar, la salud mental, el equilibrio entre trabajo y vida y la calidad
+    de vida de estudiantes, docentes, administrativos y graduados, lo que corresponde a felicidad y bienestar.
+  instruccion: ¿El `comentario` habla, aunque sea brevemente, del bienestar, la salud física o mental, la calidad de vida,
+    la felicidad, la convivencia o el equilibrio entre trabajo y vida de la comunidad universitaria?
+  criterio_true: Menciona bienestar, salud mental o emocional, calidad de vida, felicidad, convivencia, deporte o recreación,
+    acompañamiento psicológico, equilibrio entre trabajo y vida, o una universidad más humana con sus integrantes.
+  criterio_false: No menciona bienestar ni salud.
+  ejemplos_si:
+  - Propongo que la Universidad de Cundinamarca fortalezca, durante los próximos diez años, una cultura institucional que
+    priorice la salud mental, el bienestar
+  - Siendo más humana con el gestor y poder hacer un equilibro entre el bienestar y el trabajo.
+  critico: false
+- id: condiciones_talento_humano
+  nombre: Condiciones laborales, estabilidad y formación del personal
+  componente: Desarrollo del talento humano
+  otros_componentes:
+  - Gestores del Conocimiento y el Aprendizaje
+  origen:
+  - grupo: uc_para_la_vida__rol_docentes
+    tema_bert: 0
+    firma: formación, gestores, laboral, oportunidades, contratación
+  - grupo: uc_para_la_vida__rol_administrativos
+    tema_bert: 0
+    firma: laboral, bienestar, administrativos, mejorar, experiencia
+  justificacion: Los comentarios piden estabilidad laboral, mejor contratación y remuneración, y oportunidades de formación
+    y crecimiento para docentes y administrativos, lo que corresponde al desarrollo del talento humano.
+  instruccion: ¿El `comentario` habla, aunque sea brevemente, de las condiciones del personal (docentes o administrativos),
+    por ejemplo contratación, estabilidad, salario, carga de trabajo, reconocimiento, formación o crecimiento profesional?
+  criterio_true: Menciona contratación, planta, provisionalidad, estabilidad laboral, salario o remuneración, carga laboral,
+    incentivos o reconocimiento, apoyo para estudios o formación del personal, o crecimiento laboral de docentes o administrativos.
+  criterio_false: No menciona las condiciones del personal.
+  ejemplos_si:
+  - Mayor estabilidad laboral, ampliar las oportunidades de estudio y formación para el personal
+  - Provisionalidad en la contratación docente, apoyo en la formación académica, calidad de vida
+  critico: false
+- id: transformacion_personal
+  nombre: La universidad que transforma la vida y la forma de pensar
+  componente: Persona Transhumana
+  origen:
+  - grupo: uc_para_la_vida__rol_estudiantes
+    tema_bert: 2
+    firma: experiencias, vida, conocimientos, experiencia, pensamiento
+  - grupo: uc_para_la_vida__rol_administrativos
+    tema_bert: 1
+    firma: vida, aprendizaje, bienestar, comunidad, oportunidades
+  justificacion: Los comentarios cuentan cómo la universidad transforma la vida, los valores y la forma de pensar de las personas,
+    lo que corresponde a la formación de la Persona Transhumana.
+  instruccion: ¿El `comentario` habla, aunque sea brevemente, de cómo la universidad transforma la vida, los valores, la forma
+    de pensar o el crecimiento personal, o cuenta una experiencia de ese cambio?
+  criterio_true: Cuenta o propone que la universidad cambia la vida, la manera de pensar, los valores o la forma de relacionarse,
+    que forma personas más allá de lo académico, o describe experiencias que dejaron un aprendizaje para la vida.
+  criterio_false: No menciona una transformación personal.
+  ejemplos_si:
+  - Conocer diferentes realidades de vida permite transformar el pensamiento
+  - La universidad transforma la vida por los valores que enseñan honestidad transparencia.
+  critico: false
+- id: conformidad_esta_bien
+  nombre: 'Conformidad: la transformación está bien así'
+  componente: transformacion_en_general
+  especial: conformidad
+  origen:
+  - grupo: uc_para_la_vida__rol_estudiantes
+    tema_bert: 3
+    firma: parece, encuentro, adecuado, términos, organización
+  justificacion: Los comentarios expresan acuerdo con la transformación sin proponer ajustes; se refieren a la transformación
+    como un todo.
+  instruccion: La pregunta de la encuesta fue «¿Qué ajustaría en esta transformación?». ¿El `comentario` responde que no haría
+    ajustes, que está de acuerdo o que la transformación está bien enfocada, que no tiene propuestas por ahora, o la valora
+    positivamente sin pedir cambios, por ejemplo «está bien», «de acuerdo», «nada por el momento», «excelente» o «está bien
+    enfocado el propósito»?
+  criterio_true: Dice que no ajustaría nada, que está de acuerdo, que está bien o bien enfocada, que no tiene propuestas por
+    ahora, o la valora positivamente sin pedir cambios, aunque sea en pocas palabras.
+  criterio_false: Propone, pide o critica algo concreto. Un agradecimiento solo («gracias») no cuenta.
+  ejemplos_si:
+  - Esta bien
+  - Creo que todo está adecuado
+  critico: false

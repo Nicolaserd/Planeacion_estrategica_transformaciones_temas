@@ -1,0 +1,105 @@
+transformacion: UC Digital
+version: 3
+nota: Lista común y amplia (pocos temas, sin ceros por diseño) a partir de los temas de BERT por rol con las 7 unidades juntas;
+  Jev la aplica a todos los comentarios del formulario.
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: infraestructura_conectividad
+  nombre: Infraestructura tecnológica, conectividad y laboratorios
+  componente: Ecosistemas digitales
+  otros_componentes:
+  - Tecnologías emergentes
+  origen:
+  - grupo: uc_digital__rol_estudiantes
+    tema_bert: 1
+    firma: digital, laboratorios, proyectos, tecnologías, datos
+  - grupo: uc_digital__rol_docentes
+    tema_bert: 0
+    firma: digital, conectividad, conocimiento, datos, inteligencia artificial
+  - grupo: uc_digital__rol_graduados
+    tema_bert: 0
+    firma: tecnologías, tecnología, tecnológica, capacitación, digitales
+  justificacion: Los comentarios piden implementar más y mejores tecnologías, modernizar la red y la conectividad, y dotar
+    laboratorios, salones y equipos, lo que corresponde a los ecosistemas digitales y las tecnologías emergentes.
+  instruccion: ¿El `comentario` habla, aunque sea brevemente, de la infraestructura o los recursos tecnológicos, por ejemplo
+    tecnologías, equipos, computadores, software, plataformas, laboratorios, salones, internet, conectividad o redes?
+  criterio_true: Menciona implementar, modernizar, mejorar o dar acceso a tecnologías, equipos, computadores, software, plataformas,
+    laboratorios, salones o espacios tecnológicos, internet, wifi, conectividad o redes.
+  criterio_false: No menciona infraestructura ni recursos tecnológicos.
+  ejemplos_si:
+  - La implementación de mejores tecnologías y mejores usos de los espacios que son un poco limitados
+  - Modernizacion de red digital, modernizacion de conectividad en sedes
+  critico: false
+- id: capacitacion_aprendizaje_digital
+  nombre: Capacitación y aprendizaje con tecnologías emergentes
+  componente: Experiencia digital de la comunidad universitaria
+  otros_componentes:
+  - Tecnologías emergentes
+  origen:
+  - grupo: uc_digital__rol_estudiantes
+    tema_bert: 0
+    firma: tecnología, conocimiento, tecnologías, herramientas, desarrollo
+  - grupo: uc_digital__rol_docentes
+    tema_bert: 1
+    firma: capacitación, internet, aprendizaje, digital, tecnologías
+  - grupo: uc_digital__rol_administrativos
+    tema_bert: 1
+    firma: talento humano, artificial, inteligencia artificial, tecnológica, infraestructura tecnológica
+  justificacion: Los comentarios piden capacitar a estudiantes, docentes y administrativos en tecnologías emergentes y usar
+    la tecnología para aprender mejor, sin deshumanizar la educación, lo que corresponde a la experiencia digital de la comunidad
+    universitaria.
+  instruccion: ¿El `comentario` habla, aunque sea brevemente, de capacitar o formar a la comunidad en tecnología, de aprender
+    o enseñar con herramientas digitales, de habilidades digitales o de no deshumanizar la educación con la tecnología?
+  criterio_true: Menciona capacitación, formación, cursos o habilidades en tecnología o herramientas digitales, aprender o
+    enseñar con tecnología, metodologías con mediación tecnológica, o mantener lo humano en la educación digital.
+  criterio_false: No menciona capacitación ni aprendizaje con tecnología.
+  ejemplos_si:
+  - Integracion con Los Estudiantes para aprnder a manejar de manera correcta todas estas nuevas tecnologias que intregra
+    la universidad
+  - Que nos capaciten en tecnologías emergentes, que estemos en la vanguardia
+  critico: false
+- id: automatizacion_tramites
+  nombre: Automatización de procesos y servicios digitales ágiles
+  componente: Automatización de procesos
+  otros_componentes:
+  - Servicios digitales
+  - Cero papel
+  origen:
+  - grupo: uc_digital__rol_administrativos
+    tema_bert: 0
+    firma: procesos, administrativos, automatización, implementación, digitales
+  - grupo: uc_digital__rol_graduados
+    tema_bert: 1
+    firma: graduados, estudiantes, formación, profesionales, comunicación
+  justificacion: Los comentarios piden automatizar y simplificar los procesos administrativos, eliminar formatos físicos y
+    ofrecer servicios digitales ágiles, también para los graduados, lo que corresponde a la automatización de procesos, los
+    servicios digitales y el cero papel.
+  instruccion: ¿El `comentario` habla, aunque sea brevemente, de los procesos, trámites o servicios de la universidad, por
+    ejemplo automatizarlos, digitalizarlos, simplificarlos o agilizarlos, eliminar el papel o facilitar el acceso en línea?
+  criterio_true: Menciona procesos, trámites, procedimientos, formatos o servicios, su automatización, digitalización, simplificación
+    o agilidad, el cero papel, plataformas o sistemas para trámites, o servicios en línea para la comunidad o los graduados.
+  criterio_false: No menciona procesos, trámites ni servicios.
+  ejemplos_si:
+  - Simplificar procesos administrativos sin necesidad de formatos y diligenciamiento físico mediante fortalecimiento de la
+    infraestructura tecnológica.
+  - Poder implementar la automatización de procesos en las áreas administrativas para la optimización de tiempos y costos
+  critico: false
+- id: inteligencia_artificial_aprendizaje
+  nombre: Inteligencia artificial para aprender y trabajar, con uso responsable
+  componente: Inteligencia artificial
+  origen:
+  - grupo: uc_digital__rol_graduados
+    tema_bert: 2
+    firma: aprendizaje, desarrollo, inteligencia, inteligencia artificial, conocimiento
+  justificacion: Los comentarios proponen apoyarse en la inteligencia artificial para aprender, trabajar y articular el conocimiento,
+    con una IA institucional y un uso responsable, que es el componente de inteligencia artificial.
+  instruccion: ¿El `comentario` menciona la inteligencia artificial o la IA, por ejemplo usarla, aprender con ella, capacitar
+    en ella, crear una IA propia o regular su uso?
+  criterio_true: 'Menciona la inteligencia artificial o la IA de cualquier forma: su uso, aprendizaje, capacitación, regulación,
+    ética o una IA institucional.'
+  criterio_false: No menciona la inteligencia artificial.
+  ejemplos_si:
+  - Actualizar en temas y apoyarse en la IA para formas profesionales actualizados y competentes
+  - Implementar el uso de tecnologías emergentes, como IA regulada y responsable
+  critico: false

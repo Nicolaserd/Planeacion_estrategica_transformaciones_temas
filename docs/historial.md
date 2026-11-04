@@ -97,6 +97,23 @@ A pedido de Nicolás, se creó un tercer flujo en `flujo_bert_jev/`, independien
   - Excel de temas y de clasificación por unidad en `flujo_bert_jev/salidas/`; la clasificación con Nombre y Correo no se sube, su copia anonimizada sí;
   - informe Word con mapas de vectores, curvas de estabilidad, nubes de palabras y gráficas de repetición en `flujo_bert_jev/informe/`.
 
+## 2026-11-04 · Informes por unidad y versión por rol del flujo BERT → Jev
+
+- **Informes por unidad regional** (7 Word en `flujo_bert_jev/informe/por_unidad_regional/`), a pedido de Nicolás:
+  - marco conceptual y metodológico, citas y referencias APA;
+  - participación por actor con el registro de asistencia y el diseño muestral. La asistencia es la medida de personas, porque cada respuesta de Forms es de un grupo. La carpeta `asistencia/` trae nombres y documentos, así que no se sube; los informes solo usan conteos;
+  - análisis por actor con los nombres institucionales.
+- **Problema:** con 2 o 3 temas por unidad × transformación, cada uno ligado a un componente, aparecían ceros por diseño en transformaciones, componentes y roles.
+- **Versión por rol (decisión de Nicolás):**
+  - BERT busca los temas de cada rol en cada transformación con las 7 unidades juntas (24 grupos);
+  - Claude los reúne en una **lista común y breve** por transformación (3 a 5 temas, más la conformidad aparte);
+  - Jev clasifica todos los comentarios con esa misma lista.
+- **Resultado:**
+  - ninguna combinación unidad × transformación × rol quedó sin temas;
+  - de las 58 celdas en 0 %, 51 son ceros reales y 7 son omisiones de Jev, marcadas † en los informes;
+  - 21 comentarios se consideraron sin contenido evaluable tras leer 245 candidatos.
+  - Costo de Jev: 0,44 USD.
+
 ## Pendientes y puntos abiertos
 
 - **Sin unidades pendientes** con los datos del 29 oct 2026: Ubaté, Zipaquirá, Girardot, Soacha, Chía, Fusagasugá y Facatativá están procesadas en las 5 transformaciones.

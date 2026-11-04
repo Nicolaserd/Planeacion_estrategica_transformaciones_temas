@@ -1,0 +1,134 @@
+transformacion: UC Translocal
+version: 2
+nota: Lista común y amplia (pocos temas, sin ceros por diseño) a partir de los temas de BERT por rol con las 7 unidades juntas;
+  Jev la aplica a todos los comentarios del formulario. La conformidad (especial) se reporta aparte.
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: territorio_necesidades_soluciones
+  nombre: Conexión con el territorio y soluciones a sus necesidades
+  componente: Impacto territorial
+  otros_componentes:
+  - Interacción Social Universitaria
+  origen:
+  - grupo: uc_translocal__rol_estudiantes
+    tema_bert: 0
+    firma: estudiantes, necesidades, interacción, soluciones, comunidad
+  - grupo: uc_translocal__rol_docentes
+    tema_bert: 1
+    firma: territorio, proyectos, conocimiento, comunidad, investigación
+  - grupo: uc_translocal__rol_administrativos
+    tema_bert: 1
+    firma: comunidad, programas, administrativos, necesidades, educación
+  - grupo: uc_translocal__rol_graduados
+    tema_bert: 1
+    firma: estudiantes, social, universitaria, universidades, región
+  justificacion: Los comentarios piden que la universidad conozca las realidades de cada territorio y responda a sus necesidades
+    con formación, investigación, proyectos u oportunidades, que es el impacto territorial de la transformación.
+  instruccion: ¿El `comentario` trata de conectar la universidad con las realidades y necesidades de su territorio, municipio,
+    región o comunidad, o de generar allí soluciones, oportunidades, proyectos o impacto social?
+  criterio_true: Habla de conocer o identificar las necesidades o problemáticas del territorio o de la comunidad, de responder
+    a ellas con soluciones, proyectos, investigación, formación u oportunidades, de la presencia o el impacto de la universidad
+    en los municipios o la región, o de la interacción con la comunidad local.
+  criterio_false: No relaciona a la universidad con su territorio ni con su comunidad. La integración entre sedes y las redes
+    tienen su propio tema; la cultura y la identidad de cada región tienen su propio tema; los programas y proyectos académicos
+    tienen su propio tema.
+  ejemplos_si:
+  - Una universidad así podría fortalecer la identidad de cada territorio, aprovechar sus recursos y conectar a las comunidades
+    para generar oportunidades y soluciones a sus necesidades.
+  - Que la universidad conozca tambien su territorio e identifique las necesidades con las que conviven sus estudiantes
+  critico: false
+- id: integracion_sedes_redes
+  nombre: Integración entre sedes, actores y regiones; redes y cooperación
+  componente: Redes y cooperación
+  otros_componentes:
+  - Internacionalización
+  origen:
+  - grupo: uc_translocal__rol_docentes
+    tema_bert: 0
+    firma: redes, comunidades, problemáticas, territorios, internacional
+  - grupo: uc_translocal__rol_administrativos
+    tema_bert: 0
+    firma: necesidades, regionales, internacional, nacional, comunidades
+  - grupo: uc_translocal__rol_administrativos
+    tema_bert: 2
+    firma: procesos, administrativa, administrativos, optimizar, institucional
+  justificacion: Los comentarios piden integrar las sedes, seccionales y extensiones y a todos sus actores, crear sinergias
+    y redes, y cooperar con otras instituciones en el país y en el exterior, que corresponde a redes y cooperación e internacionalización.
+  instruccion: ¿El `comentario` trata de integrar o conectar las sedes, seccionales y extensiones o a sus actores (estudiantes,
+    docentes, administrativos, graduados), de crear redes, sinergias o intercambios, o de cooperar con otras instituciones
+    o redes nacionales o internacionales?
+  criterio_true: Menciona la integración, articulación o interacción entre sedes, regiones o actores de la universidad, involucrar
+    a los administrativos u otros actores, el intercambio de saberes, recursos o buenas prácticas, las redes de cooperación,
+    los convenios o la proyección nacional o internacional.
+  criterio_false: No habla de integración, redes ni cooperación. Responder a las necesidades del territorio tiene su propio
+    tema; la cultura de cada región tiene su propio tema.
+  ejemplos_si:
+  - Mayor integración entre sus sedes y territorios, reconociendo las necesidades particulares de cada región.
+  - Involucrar de manera más dinámica a los administrativos
+  critico: false
+- id: programas_proyectos_pertinentes
+  nombre: Programas, proyectos y prácticas pertinentes al territorio
+  componente: Formación y aprendizaje
+  otros_componentes:
+  - Ciencia, tecnología e innovación
+  origen:
+  - grupo: uc_translocal__rol_estudiantes
+    tema_bert: 1
+    firma: programas, proyectos, entorno, conocimiento, necesidades
+  - grupo: uc_translocal__rol_graduados
+    tema_bert: 0
+    firma: necesidades, desarrollo, empresarial, oportunidades, servicios
+  justificacion: Los comentarios proponen programas, proyectos conjuntos, semilleros y prácticas que respondan a la realidad
+    del territorio y del mercado laboral, lo que corresponde a formación y aprendizaje y a ciencia, tecnología e innovación.
+  instruccion: ¿El `comentario` trata de los programas académicos, la oferta, los proyectos conjuntos entre programas o sedes,
+    los semilleros, las prácticas o la investigación, y de que respondan a la realidad del territorio o del mercado laboral?
+  criterio_true: Menciona programas u oferta académica, su actualización o pertinencia, proyectos formativos o de investigación
+    compartidos, semilleros, prácticas, eventos colaborativos, empleabilidad o emprendimiento de los egresados.
+  criterio_false: No habla de programas, proyectos, prácticas ni investigación. Integrar las sedes sin hablar de programas
+    o proyectos tiene su propio tema; responder a las necesidades del territorio sin referirse a lo académico tiene su propio
+    tema.
+  ejemplos_si:
+  - Poder de esta manera realizar proyectos conjuntos desde los diferentes programas articulando conocimientos
+  - La coherencia, la afinidad a la realidad y el ajuste de los programas a las necesidadss del territorio
+  critico: false
+- id: cultura_identidad_regional
+  nombre: Cultura e identidad de cada territorio
+  componente: Identidad translocal
+  origen:
+  - grupo: uc_translocal__rol_estudiantes
+    tema_bert: 2
+    firma: cultura, cultural, culturas, territorios, integración
+  justificacion: Los comentarios piden reconocer y respetar la cultura, las tradiciones, la diversidad y el sentido de pertenencia
+    de cada territorio, que es la identidad translocal.
+  instruccion: ¿El `comentario` trata de la cultura, las tradiciones, la diversidad, la identidad o el sentido de pertenencia
+    de cada territorio o región, o de espacios de integración cultural?
+  criterio_true: Menciona la cultura, la tradición, la diversidad, la identidad de los territorios o de la universidad, reconocerla
+    o respetarla, el sentido de pertenencia o espacios de integración cultural.
+  criterio_false: No habla de cultura, identidad ni pertenencia. Integrar las sedes sin referirse a la cultura o la identidad
+    tiene su propio tema.
+  ejemplos_si:
+  - Respetar la cultura de cada territorio y tomar decisiones tomando en cuenta sus necesidades translocales
+  - Más espacios de integración cultural
+  critico: false
+- id: conformidad_sin_propuestas
+  nombre: Conformidad o sin propuestas por ahora
+  componente: transformacion_en_general
+  especial: conformidad
+  origen:
+  - grupo: uc_translocal__rol_estudiantes
+    tema_bert: 3
+    firma: inglés, espacios, mejorar, orden, opciones
+  justificacion: Los comentarios dicen que no harían ajustes, que la transformación está completa o que no tienen propuestas
+    por ahora; se refieren a la transformación como un todo.
+  instruccion: La pregunta de la encuesta fue «¿Qué ajustaría en esta transformación?». ¿El `comentario` responde que no haría
+    ajustes, que está de acuerdo con la transformación tal como está o que no tiene propuestas por ahora, por ejemplo «ninguna,
+    todo está completo», «nada por el momento», «no sé» o «está bien»?
+  criterio_true: Dice expresamente que no ajustaría nada, que está de acuerdo o que todo está bien, o que no sabe o no tiene
+    propuestas por ahora, aunque sea en pocas palabras.
+  criterio_false: Propone, pide o critica algo concreto, aunque también diga que todo está bien. Los agradecimientos o testimonios
+    que no dicen que está de acuerdo no cuentan.
+  ejemplos_si:
+  - Ninguna, todo está completo
+  - Nada por el momento
+  critico: false

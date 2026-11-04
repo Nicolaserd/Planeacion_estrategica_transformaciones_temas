@@ -546,9 +546,473 @@ def exportar(filtro: str):
         print(f"OK  Resumen_flujo_BERT_Jev.xlsx ({len(resumen)} grupos)")
 
 
+# ---------------------------------------------------------------------------------------------
+# Versión por rol (decisión de Nicolás, 2026-11-04): temas de BERT por rol × transformación (todas las unidades
+# juntas) y una lista común por transformación que Jev aplica a todos los comentarios, para que unidad,
+# transformación y rol se midan con las mismas categorías (sin ceros por diseño).
+# ---------------------------------------------------------------------------------------------
+
+DIR_BERT_ROLES = DIR_DATOS / "bert_roles"
+DIR_JEV_ROLES = DIR_DATOS / "jev_roles"
+DIR_TEMAS_ROLES = CARPETA / "temas_roles"
+DIR_REVISION = CARPETA / "revision"
+DIR_SALIDAS_ROLES = CARPETA / "salidas_roles"
+ROLES = ["Estudiantes", "Docentes", "Administrativos", "Graduados"]
+NOMBRE_ROL = {"Estudiantes": "Creadores de Oportunidades (estudiantes)",
+              "Docentes": "Gestores del Conocimiento y el Aprendizaje (docentes)",
+              "Administrativos": "Administrativos", "Graduados": "Graduados"}
+ROL_FORMS = {"Creadores de Oportunidades (estudiantes)": "Estudiantes", "Creador de Oportunidades (estudiante)": "Estudiantes",
+             "Gestores del Conocimiento y el Aprendizaje": "Docentes", "Gestor del Conocimiento y el Aprendizaje": "Docentes",
+             "Administrativos": "Administrativos", "Administrativo": "Administrativos",
+             "Graduados": "Graduados", "Graduado": "Graduados"}
+SIN_ROL = "Sin rol declarado"
+
+
+def rol_actor(serie: pd.Series) -> pd.Series:
+    """Rol declarado por el grupo en el formulario -> uno de los 4 actores (o «Sin rol declarado»)."""
+    return serie.map(ROL_FORMS).fillna(SIN_ROL)
+
+
+def grupos_roles(filtro: str = "") -> list[dict]:
+    lista = [dict(id=f"{bt.slug(T)}__rol_{bt.slug(r)}", T=T, rol=r) for T in bt.ORDEN_T for r in ROLES]
+    return [g for g in lista if filtro in g["id"]]
+
+
+def comentarios_con_rol() -> pd.DataFrame:
+    res = respuestas()
+    com = res[res.excluido == 0].copy()
+    com["actor"] = rol_actor(com.rol)
+    return com
+
+
+def modelo_base_rol(gid: str) -> dict:
+    info = leer_json(DIR_BERT_ROLES / f"{gid}.json")
+    return leer_json(DIR_BERT_ROLES / f"{info['temas_de']}.json") if info.get("temas_de") else info
+
+
+def bert_roles(filtro: str):
+    """BERT por rol × transformación con las 7 unidades juntas (y las filas sin unidad)."""
+    bt.DIR_MODELOS = DIR_BERT_ROLES
+    DIR_BERT_ROLES.mkdir(parents=True, exist_ok=True)
+    com = comentarios_con_rol()
+    for g in grupos_roles(filtro):
+        idx = com[(com.transformacion == g["T"]) & (com.actor == g["rol"])].index
+        info = (bt.modelar_grupo(dict(id=g["id"], nivel="rol", T=g["T"], U=bt.TODAS, idx=idx), com) | {"rol": g["rol"]}
+                if len(idx) >= bt.N_MIN_GRUPO else
+                dict(id=g["id"], nivel="rol", T=g["T"], U=bt.TODAS, rol=g["rol"], N=int(len(idx)), modelado=False,
+                     motivo=f"menos de {bt.N_MIN_GRUPO} comentarios"))
+        if not info["modelado"]:      # grupo chico o sin un k válido: usa los temas de la transformación completa
+            pid = f"{bt.slug(g['T'])}__todas_las_unidades"
+            if not (DIR_BERT_ROLES / f"{pid}.json").exists():
+                pinfo = bt.modelar_grupo(dict(id=pid, nivel="transformacion", T=g["T"], U=bt.TODAS,
+                                              idx=com[com.transformacion == g["T"]].index), com)
+                (DIR_BERT_ROLES / f"{pid}.json").write_text(json.dumps(pinfo, ensure_ascii=False, indent=1), encoding="utf-8")
+            info["temas_de"] = pid
+        (DIR_BERT_ROLES / f"{g['id']}.json").write_text(json.dumps(info, ensure_ascii=False, indent=1), encoding="utf-8")
+        base = modelo_base_rol(g["id"])
+        origen = f"temas de {base['id']} ({info['motivo']})" if info.get("temas_de") else "temas propios"
+        print(f"OK  {g['id']:<58} N={info['N']:<4} k={base['k']} ({base['nivel_estabilidad']}, "
+              f"{base['estabilidad']:.2f}) · {origen}")
+        bitacora(f"bert_roles {g['id']}: N={info['N']}, {base['k']} temas, estabilidad {base['estabilidad']:.2f} "
+                 f"({base['nivel_estabilidad']}), {origen}.")
+
+
+def centroides_roles(T: str) -> dict:
+    """Centroide normalizado de cada tema de BERT de los roles de una transformación: {(gid, tema): vector}."""
+    com = comentarios_con_rol().set_index("id_com")
+    out = {}
+    for g in grupos_roles(bt.slug(T) + "__rol_"):
+        if g["T"] != T:
+            continue
+        base = modelo_base_rol(g["id"])
+        asig = pd.read_parquet(DIR_BERT_ROLES / f"{base['id']}_asignaciones.parquet")
+        E = bt.vectores(list(com.loc[asig.id_com, "comentario_anon"]))
+        for t in base["temas"]:
+            v = E[(asig.tema == t["tema"]).to_numpy()].mean(axis=0)
+            out[(g["id"], t["tema"])] = v / (np.linalg.norm(v) or 1)
+    return out
+
+
+def mostrar_roles(filtro: str):
+    """Temas de BERT por rol con palabras y comentarios representativos (anonimizados), y el tema más parecido de
+    otro rol de la misma transformación, para redactar la lista común."""
+    com = comentarios_con_rol().set_index("id_com")
+    for T in bt.ORDEN_T:
+        if filtro and filtro not in bt.slug(T):
+            continue
+        cen = centroides_roles(T)
+        print(f"\n######## {T}")
+        for g in grupos_roles(bt.slug(T) + "__rol_"):
+            if g["T"] != T:
+                continue
+            info, base = leer_json(DIR_BERT_ROLES / f"{g['id']}.json"), modelo_base_rol(g["id"])
+            print(f"\n=== {g['rol']} · N={info['N']} · k={base['k']} · estabilidad {base['estabilidad']:.2f} ({base['nivel_estabilidad']})"
+                  + (f" · usa {base['id']}" if info.get("temas_de") else ""))
+            asig = pd.read_parquet(DIR_BERT_ROLES / f"{base['id']}_asignaciones.parquet")
+            for t in base["temas"]:
+                k = (g["id"], t["tema"])
+                otros = sorted(((float(cen[k] @ v), kk) for kk, v in cen.items() if kk[0] != g["id"]), reverse=True)[:2]
+                print(f"  [{t['tema']}] n={t['n']} estab={t['estabilidad']:.2f} · {bt.firma(t['palabras'])} | {', '.join(t['palabras'][5:])}")
+                print("      parecido a: " + "; ".join(f"{kk[0].split('__rol_')[1]}[{kk[1]}] {s:.2f}" for s, kk in otros))
+                miembros = asig[asig.tema == t["tema"]].sort_values("afinidad", ascending=False).id_com
+                for c in list(miembros[:4]):
+                    print("      -", com.loc[c, "comentario_anon"][:230].replace("\n", " "))
+
+
+def transformaciones(filtro: str = "") -> list[str]:
+    return [T for T in bt.ORDEN_T if not filtro or filtro in bt.slug(T)]
+
+
+def cargar_temas_roles(T: str) -> dict:
+    ruta = DIR_TEMAS_ROLES / f"{bt.slug(T)}.yaml"
+    if not ruta.exists():
+        raise SystemExit(f"Falta {ruta.relative_to(RAIZ)}: Claude redacta la lista común de {T}.")
+    return yaml.safe_load(ruta.read_text(encoding="utf-8"))
+
+
+def origen_modelo(o: dict) -> str:
+    """Modelo de BERT de un origen de la lista común ({grupo, tema_bert, firma}): el del grupo o el que usa."""
+    return modelo_base_rol(o["grupo"])["id"]
+
+
+def firmar_roles(filtro: str):
+    """Completa la firma (palabras clave de BERT) de cada origen de la lista común, a partir de grupo y tema_bert."""
+    for T in transformaciones(filtro):
+        ruta = DIR_TEMAS_ROLES / f"{bt.slug(T)}.yaml"
+        datos = cargar_temas_roles(T)
+        for t in datos["temas"]:
+            for o in t["origen"]:
+                base = modelo_base_rol(o["grupo"])
+                o["firma"] = bt.firma(next(x["palabras"] for x in base["temas"] if x["tema"] == int(o["tema_bert"])))
+        ruta.write_text(yaml.safe_dump(datos, allow_unicode=True, sort_keys=False, width=120), encoding="utf-8")
+        print(f"OK  {ruta.name}: firmas completadas")
+
+
+def temas_bert_roles(T: str) -> dict:
+    """{(id del modelo base, número de tema): firma} de los modelos de BERT que usan los 4 roles de T."""
+    out = {}
+    for g in grupos_roles(bt.slug(T) + "__rol_"):
+        if g["T"] == T:
+            base = modelo_base_rol(g["id"])
+            out |= {(base["id"], t["tema"]): bt.firma(t["palabras"]) for t in base["temas"]}
+    return out
+
+
+def errores_temas_roles(T: str) -> list[str]:
+    temas = cargar_temas_roles(T)
+    trans = ej.resolver_transformacion(T)
+    lista, errores = temas["temas"], []
+    ids = [t.get("id") for t in lista]
+    if len(ids) != len(set(ids)):
+        errores.append("ids de tema repetidos")
+    for t in lista:
+        vacios = [k for k in CAMPOS if not t.get(k)] + ([] if t.get("origen") else ["origen"])
+        if vacios:
+            errores.append(f"{t.get('id')}: faltan o están vacíos {vacios}")
+        for c in ej.componentes_del_tema(t) if t.get("componente") else []:
+            if not ej.componente_valido(c, trans):
+                errores.append(f"{t['id']}: el componente '{c}' no está en {trans['nombre_oficial']} (documento marco)")
+    if len(lista) > ej.MAX_TEMAS:
+        errores.append(f"{len(lista)} temas: el máximo es {ej.MAX_TEMAS}")
+    esperados = temas_bert_roles(T)
+    cubiertos = [(origen_modelo(o), int(o["tema_bert"])) for t in lista for o in t.get("origen", [])]
+    if sorted(cubiertos) != sorted(set(cubiertos)):
+        errores.append("un tema de BERT está en el origen de más de un tema de la lista")
+    if set(cubiertos) != set(esperados):
+        errores.append(f"temas de BERT sin cubrir: {sorted(set(esperados) - set(cubiertos))}; "
+                       f"sobrantes: {sorted(set(cubiertos) - set(esperados))}")
+    errores += [f"{t['id']}: la firma de {o['grupo']}[{o['tema_bert']}] no coincide con BERT (correr firmar_roles si es nuevo)"
+                for t in lista for o in t.get("origen", [])
+                if (origen_modelo(o), int(o["tema_bert"])) in esperados
+                and o.get("firma") != esperados[(origen_modelo(o), int(o["tema_bert"]))]]
+    return errores
+
+
+def validar_roles(filtro: str, imprimir: bool = True) -> int:
+    malos = 0
+    for T in transformaciones(filtro):
+        errores = errores_temas_roles(T)
+        if errores:
+            malos += 1
+            print(f"FALLA {T}\n  - " + "\n  - ".join(errores))
+        elif imprimir:
+            print(f"OK    {T}: {len(cargar_temas_roles(T)['temas'])} temas en la lista común")
+    if malos:
+        raise SystemExit(f"{malos} transformación(es) con temas inválidos.")
+    return 0
+
+
+def clasificar_roles(filtro: str):
+    """Jev con la lista común de cada transformación, para todos sus comentarios (todas las unidades y roles)."""
+    from jev_cliente import Cache, cargar_clave, clasificar_preguntas, construir_preguntas_temas
+
+    validar_roles(filtro, imprimir=False)
+    cargar_clave()
+    p = params()
+    modelo = p["modelo_jev"]
+    com_all = comentarios_con_rol()
+    DIR_JEV_ROLES.mkdir(parents=True, exist_ok=True)
+    cache = Cache(CACHE_JEV)
+    for T in transformaciones(filtro):
+        temas = cargar_temas_roles(T)
+        lista, sin_cont = temas["temas"], temas["sin_contenido"]
+        preguntas = construir_preguntas_temas(lista, sin_cont)
+        ids_noul = [t["id"] for t in lista] + ["sin_contenido"]
+        config = {"flujo": FLUJO + "_roles", "sin_contenido": sin_cont,
+                  "temas": [{k: t[k] for k in ("id", "instruccion", "criterio_true", "criterio_false")} for t in lista]}
+        com = com_all[com_all.transformacion == T].copy()
+        mapa = {k: f"U{i + 1:04d}" for i, k in enumerate(dict.fromkeys(com.comentario_anon))}
+        com["id_texto_unico"] = com.comentario_anon.map(mapa)
+        unicos = com.drop_duplicates("id_texto_unico")[["id_texto_unico", "comentario_anon"]].to_dict("records")
+        antes = len(cache._d)
+        extra = {"flujo": FLUJO + "_roles", "transformacion": T}
+        ok, errores = asyncio.run(clasificar_preguntas(unicos, preguntas, ids_noul, [], config, modelo, cache,
+                                                       p["concurrencia_jev"], extra))
+        if errores:
+            pendientes = [u for u in unicos if u["id_texto_unico"] in {e[0] for e in errores}]
+            ok2, errores = asyncio.run(clasificar_preguntas(pendientes, preguntas, ids_noul, [], config, modelo, cache, 2, extra))
+            ok += ok2
+        validas = {f["id_texto_unico"]: f for f in ok
+                   if set(f["nouls"]) == set(ids_noul) and all(0 <= v <= 1 for v in f["nouls"].values())}
+        if errores or len(validas) != len(unicos):
+            raise SystemExit(f"{T}: completitud fallida {len(validas)}/{len(unicos)}; errores={errores}")
+        filas = [{"id_texto_unico": k, **{f"p_{q}": v for q, v in f["nouls"].items()}, "modelo": f["modelo"],
+                  "input_tokens": f["input_tokens"]} for k, f in validas.items()]
+        com.merge(pd.DataFrame(filas), on="id_texto_unico", how="left").to_parquet(
+            DIR_JEV_ROLES / f"{bt.slug(T)}.parquet", index=False)
+        nuevas = len(cache._d) - antes
+        tokens = int(sum(f["input_tokens"] for f in validas.values()))
+        costo = tokens * p["precio_usd_por_millon_tokens"] / 1e6
+        print(f"OK  {T:<30} {len(validas)}/{len(unicos)} textos · {len(lista)} temas · llamadas nuevas {nuevas} · USD {costo:.5f}")
+        bitacora(f"clasificar_roles {T}: Jev ({modelo}) · {len(validas)}/{len(unicos)} textos únicos válidos · "
+                 f"lista común de {len(lista)} temas + sin_contenido · llamadas nuevas {nuevas} · tokens {tokens} · costo USD {costo:.5f}.")
+
+
+def sin_contenido_revisado() -> dict:
+    """{id_com: decisión} de la lectura de Claude (revision/sin_contenido.jsonl): 'sin_contenido' o 'con_contenido'."""
+    ruta = DIR_REVISION / "sin_contenido.jsonl"
+    if not ruta.exists():
+        return {}
+    filas = [json.loads(x) for x in ruta.read_text(encoding="utf-8").splitlines() if x.strip()]
+    return {f["id_com"]: f["decision"] for f in filas}
+
+
+def asignaciones_roles(T: str) -> tuple[pd.DataFrame, list, float]:
+    """Comentarios de T con su probabilidad por tema, sin los que Claude marcó como «sin contenido evaluable»."""
+    lista = cargar_temas_roles(T)["temas"]
+    tau = float(params().get("umbral_tema_ejercicio", ej.TAU_POR_DEFECTO))
+    c = pd.read_parquet(DIR_JEV_ROLES / f"{bt.slug(T)}.parquet")
+    revisado = sin_contenido_revisado()
+    c["sin_contenido_revisado"] = c.id_com.map(lambda i: revisado.get(i) == "sin_contenido")
+    for t in lista:
+        c[f"a_{t['id']}"] = c[f"p_{t['id']}"] >= tau
+    c["n_temas"] = c[[f"a_{t['id']}" for t in lista]].sum(axis=1)
+    return c, lista, tau
+
+
+def revisar_roles(filtro: str):
+    """Jev (lista común) frente a la agrupación de BERT de cada rol, tema por tema."""
+    for T in transformaciones(filtro):
+        c, lista, _ = asignaciones_roles(T)
+        c = c[~c.sin_contenido_revisado]
+        de_origen = {(origen_modelo(o), int(o["tema_bert"])): t["id"] for t in lista for o in t["origen"]}
+        print(f"\n######## {T} · N={len(c)} · sin tema (Jev) {int((c.n_temas == 0).sum())} ({(c.n_temas == 0).mean():.0%})")
+        for t in lista:
+            col = "a_" + t["id"]
+            print(f"   {t['id']:<44} Jev {int(c[col].sum()):>4} ({c[col].mean():.0%})")
+        for g in grupos_roles(bt.slug(T) + "__rol_"):
+            if g["T"] != T:
+                continue
+            base = modelo_base_rol(g["id"])
+            asig = pd.read_parquet(DIR_BERT_ROLES / f"{base['id']}_asignaciones.parquet").set_index("id_com")
+            cr = c[(c.actor == g["rol"]) & c.id_com.isin(asig.index)]
+            aciertos = [bool(cr.loc[i, f"a_{de_origen[(base['id'], int(asig.loc[cr.loc[i, 'id_com'], 'tema']))]}"])
+                        for i in cr.index]
+            print(f"   -- {g['rol']:<16} N={len(cr):<4} acuerdo BERT–Jev {np.mean(aciertos) if aciertos else 0:.0%}")
+            for tb in base["temas"]:
+                tid = de_origen[(base["id"], tb["tema"])]
+                ids_b = asig[asig.tema == tb["tema"]].index
+                n_bert = int(cr.id_com.isin(ids_b).sum())
+                n_jev = int(cr[f"a_{tid}"].sum())
+                ambos = int(cr[cr.id_com.isin(ids_b)][f"a_{tid}"].sum())
+                marca = ("INFLADO" if n_jev >= 2 * n_bert and n_jev - n_bert >= 8 else
+                         "SUBDETECTADO" if n_bert - n_jev >= 4 and n_jev <= 0.5 * n_bert else
+                         "ALTO" if n_jev - n_bert >= 8 else "")
+                print(f"      [{tb['tema']}] -> {tid:<40} BERT {n_bert:>3} · Jev {n_jev:>3} · en ambos {ambos:>3} {marca}")
+
+
+def candidatos_sin_contenido(filtro: str):
+    """Comentarios de 1 a 3 palabras o con p(sin_contenido) ≥ τ: Claude los lee y decide (texto anonimizado)."""
+    for T in transformaciones(filtro):
+        c, _, tau = asignaciones_roles(T)
+        pal = c.comentario_anon.str.split().str.len()
+        cand = c[(pal <= 3) | (c.p_sin_contenido >= tau)]
+        print(f"\n######## {T}: {len(cand)} candidatos")
+        for _, x in cand.drop_duplicates("comentario_anon").iterrows():
+            print(f"  {x.id_com} | p_sc={x.p_sin_contenido:.2f} | temas={int(x.n_temas)} | {x.comentario_anon[:140]}")
+
+
+def celdas_roles(T: str) -> pd.DataFrame:
+    """Una fila por unidad × rol × tema: comentarios del rol en la unidad, asignados al tema y % (sin contenido revisado fuera)."""
+    c, lista, _ = asignaciones_roles(T)
+    c = c[~c.sin_contenido_revisado & (c.unidad != bt.SIN_UNIDAD)]
+    filas = []
+    for U in sorted(c.unidad.unique()):
+        for r in ROLES:
+            cr = c[(c.unidad == U) & (c.actor == r)]
+            for t in lista:
+                n = int(cr[f"a_{t['id']}"].sum())
+                filas.append(dict(T=T, U=U, rol=r, tema=t["id"], N=len(cr), n=n, pct=(100 * n / len(cr)) if len(cr) else None))
+    return pd.DataFrame(filas)
+
+
+def ceros_verificados() -> dict:
+    ruta = DIR_REVISION / "ceros.jsonl"
+    if not ruta.exists():
+        return {}
+    filas = [json.loads(x) for x in ruta.read_text(encoding="utf-8").splitlines() if x.strip()]
+    return {(f["T"], f["U"], f["rol"], f["tema"]): f for f in filas}
+
+
+def detectar_ceros(cel: pd.DataFrame, peso: dict, n_min: int = 5, umbral: float = 15.0) -> pd.DataFrame:
+    """Celdas con n_min comentarios o más y 0 % en un tema cuyo peso en el conjunto es ≥ umbral (%)."""
+    return cel[(cel.N >= n_min) & (cel.n == 0) & cel.tema.map(lambda k: peso.get(k, 0) >= umbral)]
+
+
+def ceros_a_revisar(T: str) -> pd.DataFrame:
+    """Celdas con 5 comentarios o más y 0 % en un tema que tiene ≥ 15 % en el conjunto de la transformación."""
+    cel = celdas_roles(T)
+    c, lista, _ = asignaciones_roles(T)
+    c = c[~c.sin_contenido_revisado]
+    # la conformidad (especial) se reporta aparte y no cuenta como tema que deba aparecer en cada celda
+    return detectar_ceros(cel, {t["id"]: 100 * c[f"a_{t['id']}"].mean() for t in lista if not t.get("especial")})
+
+
+def mostrar_ceros(filtro: str):
+    """Comentarios (anonimizados) de cada celda en 0 % que hay que verificar, con la probabilidad del tema."""
+    ver = ceros_verificados()
+    for T in transformaciones(filtro):
+        c, lista, _ = asignaciones_roles(T)
+        nombres = {t["id"]: t["nombre"] for t in lista}
+        for _, z in ceros_a_revisar(T).iterrows():
+            if (z["T"], z["U"], z["rol"], z["tema"]) in ver:
+                continue
+            cr = c[(c.unidad == z.U) & (c.actor == z.rol) & ~c.sin_contenido_revisado]
+            print(f"\n=== {T} · {z.U} · {z.rol} · tema «{nombres[z.tema]}» · {z.N} comentarios")
+            for _, x in cr.sort_values(f"p_{z.tema}", ascending=False).iterrows():
+                print(f"   p={x[f'p_{z.tema}']:.2f} | {x.comentario_anon[:170]}")
+
+
+def coherencia(filtro: str):
+    """Falla si hay comentarios sin probabilidad para algún tema, sumas que no cuadran o ceros sin verificar."""
+    problemas = []
+    ver = ceros_verificados()
+    com_all = comentarios_con_rol()
+    for T in transformaciones(filtro):
+        c, lista, _ = asignaciones_roles(T)
+        faltan = [t["id"] for t in lista if c[f"p_{t['id']}"].isna().any()]
+        if faltan:
+            problemas.append(f"{T}: comentarios sin probabilidad para {faltan}")
+        if len(c) != int((com_all.transformacion == T).sum()):
+            problemas.append(f"{T}: {len(c)} comentarios clasificados frente a {int((com_all.transformacion == T).sum())} con contenido")
+        cel = celdas_roles(T)
+        for (U, r), N in cel.groupby(["U", "rol"]).N.first().items():
+            esperado = int(((c.unidad == U) & (c.actor == r) & ~c.sin_contenido_revisado).sum())
+            if N != esperado:
+                problemas.append(f"{T} · {U} · {r}: suma {N} ≠ {esperado}")
+        pend = [z for _, z in ceros_a_revisar(T).iterrows() if (z["T"], z["U"], z["rol"], z["tema"]) not in ver]
+        if pend:
+            problemas.append(f"{T}: {len(pend)} celda(s) en 0 % sin verificar (python flujo_bert_jev/flujo.py mostrar_ceros)")
+        n_min = {t["id"]: int(c[~c.sin_contenido_revisado][f"a_{t['id']}"].sum()) for t in lista if not t.get("especial")}
+        bajos = [k for k, v in n_min.items() if v < 3]
+        if bajos:
+            problemas.append(f"{T}: temas con menos de 3 comentarios en Jev: {bajos}")
+    if problemas:
+        raise SystemExit("COHERENCIA: FALLA\n  - " + "\n  - ".join(problemas))
+    print("COHERENCIA: OK (misma lista para todas las celdas, sumas cuadradas y ceros verificados)")
+
+
+def roles_origen(T: str, t: dict) -> list[str]:
+    """Roles cuyos temas de BERT dieron origen al tema de la lista común."""
+    usa = {}
+    for g in grupos_roles(bt.slug(T) + "__rol_"):
+        if g["T"] == T:
+            usa.setdefault(modelo_base_rol(g["id"])["id"], []).append(g["rol"])
+    roles = {r for o in t["origen"] for r in usa.get(origen_modelo(o), [])}
+    return [r for r in ROLES if r in roles]
+
+
+def exportar_roles(filtro: str):
+    """Un Excel por transformación (solo texto anonimizado): lista común, % por unidad y rol, y clasificación."""
+    p = params()
+    for T in transformaciones(filtro):
+        c, lista, tau = asignaciones_roles(T)
+        cc = c[~c.sin_contenido_revisado].copy()
+        trans = ej.resolver_transformacion(T)
+        anclas, titulo_comp = ej.etiquetas_ancla(trans)
+        unidades = sorted(u for u in cc.unidad.unique() if u != bt.SIN_UNIDAD)
+        wb = Workbook()
+        ws = wb.active
+        ws.title = "Temas"
+        enc = [titulo_comp, "Tema", "Roles de origen (BERT)", "Qué incluye", "Comentarios (Jev)", "% del total"] + unidades
+        titulo(ws, [f"Lista común de temas · {T} · todas las unidades y roles",
+                    f"{len(cc)} comentarios con contenido · temas: BERT por rol con las 7 unidades juntas · "
+                    f"clasificación: Jev ({p['modelo_jev']}, confianza ≥ {tau:.0%}) con la misma lista para todos los comentarios",
+                    "Cada respuesta es de un grupo de 5 a 8 personas. Un comentario puede tener varios temas o ninguno; "
+                    "% sobre los comentarios con contenido de cada unidad."], len(enc))
+        filas = []
+        for t in lista:
+            a = cc[f"a_{t['id']}"]
+            filas.append([anclas.get(t["componente"], t["componente"]), t["nombre"],
+                          ", ".join(NOMBRE_ROL[r] for r in roles_origen(T, t)), t["criterio_true"], int(a.sum()), float(a.mean())]
+                         + [float(cc[cc.unidad == U][f"a_{t['id']}"].mean()) for U in unidades])
+        sin = cc.n_temas == 0
+        filas.append(["—", "Sin tema asignado", "—", f"Ningún tema con confianza ≥ {tau:.0%}", int(sin.sum()), float(sin.mean())]
+                     + [float((cc[cc.unidad == U].n_temas == 0).mean()) for U in unidades])
+        pcols = (6, *range(7, 7 + len(unidades)))
+        tabla(ws, 5, enc, filas, [26, 34, 30, 60, 12, 10] + [13] * len(unidades), pct_cols=pcols, wrap_cols=(1, 2, 3, 4))
+        ws2 = wb.create_sheet("Por unidad y rol")
+        enc2 = ["Unidad regional", "Actor", "Comentarios"] + [t["nombre"] for t in lista] + ["Sin tema"]
+        filas2 = []
+        for U in unidades:
+            for r in ROLES:
+                cr = cc[(cc.unidad == U) & (cc.actor == r)]
+                filas2.append([U, NOMBRE_ROL[r], len(cr)]
+                              + [(float(cr[f"a_{t['id']}"].mean()) if len(cr) else None) for t in lista]
+                              + [float((cr.n_temas == 0).mean()) if len(cr) else None])
+        tabla(ws2, 1, enc2, filas2, [22, 34, 12] + [18] * (len(lista) + 1), pct_cols=tuple(range(4, 5 + len(lista))),
+              wrap_cols=tuple(range(1, 5 + len(lista))))
+        ws3 = wb.create_sheet("Clasificación")
+        enc3 = ["ID", "Unidad regional", "Fecha", "Actor", "Comentario (anonimizado)", "Tema principal (Jev)", "% confianza (Jev)"] \
+            + [t["nombre"] for t in lista]
+        filas3 = []
+        for _, x in c.sort_values(["unidad", "fecha"]).iterrows():
+            ps = sorted(((t["nombre"], float(x[f"p_{t['id']}"])) for t in lista), key=lambda kv: -kv[1])
+            if x.sin_contenido_revisado:
+                principal, conf = "(sin contenido evaluable, revisado)", None
+            elif ps[0][1] >= tau:
+                principal, conf = ps[0]
+            else:
+                principal, conf = f"Sin tema asignado (más cercano: {ps[0][0]})", ps[0][1]
+            filas3.append([x.id_resp, x.unidad, str(x.fecha)[:10], NOMBRE_ROL.get(x.actor, x.actor), x.comentario_anon, principal, conf]
+                          + [(float(x[f"p_{t['id']}"]) if x[f"p_{t['id']}"] >= tau and not x.sin_contenido_revisado else None) for t in lista])
+        tabla(ws3, 1, enc3, filas3, [10, 20, 12, 30, 70, 40, 11] + [16] * len(lista),
+              pct_cols=tuple(range(7, 8 + len(lista))), wrap_cols=(5, 6))
+        carpeta = DIR_SALIDAS_ROLES / T
+        carpeta.mkdir(parents=True, exist_ok=True)
+        ruta = carpeta / f"Temas_por_rol_{bt.limpio(T)}.xlsx"
+        wb.save(ruta)
+        print(f"OK  {ruta.relative_to(RAIZ)}")
+
+
 def main():
     pasos = {"preparar": lambda f: preparar(), "bert": bert, "borrador": borrador, "validar": validar,
-             "clasificar": clasificar, "revisar": revisar, "exportar": exportar}
+             "clasificar": clasificar, "revisar": revisar, "exportar": exportar,
+             "bert_roles": bert_roles, "mostrar_roles": mostrar_roles, "firmar_roles": firmar_roles,
+             "validar_roles": validar_roles,
+             "clasificar_roles": clasificar_roles, "revisar_roles": revisar_roles,
+             "candidatos_sin_contenido": candidatos_sin_contenido, "mostrar_ceros": mostrar_ceros,
+             "coherencia": coherencia, "exportar_roles": exportar_roles}
     if len(sys.argv) < 2 or sys.argv[1] not in pasos:
         raise SystemExit(__doc__)
     pasos[sys.argv[1]](sys.argv[2] if len(sys.argv) > 2 else "")

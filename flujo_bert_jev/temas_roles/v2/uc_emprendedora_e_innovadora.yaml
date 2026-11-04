@@ -1,0 +1,112 @@
+transformacion: UC Emprendedora e Innovadora
+version: 2
+nota: Lista común y amplia (pocos temas, sin ceros por diseño) a partir de los temas de BERT por rol con las 7 unidades juntas;
+  Jev la aplica a todos los comentarios del formulario. La conformidad (especial) se reporta aparte.
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: acompanamiento_ideas
+  nombre: Acompañamiento, asesoría y recursos para llevar las ideas a soluciones
+  componente: Ecosistemas de innovación
+  otros_componentes:
+  - Innovación social
+  origen:
+  - grupo: uc_emprendedora_e_innovadora__rol_estudiantes
+    tema_bert: 0
+    firma: ideas, comunidad, propuesta, problemáticas, ayuda
+  - grupo: uc_emprendedora_e_innovadora__rol_estudiantes
+    tema_bert: 1
+    firma: idea, investigación, comunidad, estudiantes, soluciones
+  - grupo: uc_emprendedora_e_innovadora__rol_docentes
+    tema_bert: 0
+    firma: proyectos, emprendimiento, comunidad, recursos, soluciones
+  - grupo: uc_emprendedora_e_innovadora__rol_administrativos
+    tema_bert: 0
+    firma: comunidad, ideas, investigación, aportar, conocimiento
+  - grupo: uc_emprendedora_e_innovadora__rol_graduados
+    tema_bert: 0
+    firma: necesidades, comunidad, emprendimiento, oportunidades, ideas
+  - grupo: uc_emprendedora_e_innovadora__rol_graduados
+    tema_bert: 1
+    firma: estudiantes, graduados, proyectos, ideas, investigación
+  justificacion: Los comentarios piden que la universidad escuche las ideas de la comunidad y las acompañe con asesoría, investigación,
+    recursos y seguimiento hasta convertirlas en soluciones para el territorio, lo que corresponde a los ecosistemas de innovación
+    y la innovación social.
+  instruccion: ¿El `comentario` trata de cómo la universidad debería apoyar las ideas o propuestas de la comunidad, por ejemplo
+    escucharlas, orientarlas, asesorarlas, investigarlas, darles recursos o acompañarlas y hacerles seguimiento hasta convertirlas
+    en soluciones?
+  criterio_true: Menciona escuchar, evaluar o diagnosticar una idea o propuesta, acompañamiento, orientación, asesoría de
+    docentes o expertos, mentoría, investigación, espacios de innovación, recursos, herramientas o seguimiento para desarrollar
+    ideas o proyectos que resuelvan problemas.
+  criterio_false: No habla de apoyar ideas o proyectos. Pedir solo dinero o financiación para emprender tiene su propio tema;
+    los convenios, alianzas y trámites tienen su propio tema.
+  ejemplos_si:
+  - Escuchar, asesorar, brindar los recursos necesarios para ejecutar la idea planteada
+  - La universidad debería escuchar y acompañar la idea desde el inicio, brindando orientación, espacios de innovación, formación,
+    asesoría y recursos
+  critico: false
+- id: apoyo_emprendimiento
+  nombre: 'Apoyo al emprendimiento: financiación, divulgación y vinculación de toda la comunidad'
+  componente: Emprendimiento
+  origen:
+  - grupo: uc_emprendedora_e_innovadora__rol_estudiantes
+    tema_bert: 2
+    firma: emprendimiento, económico, creador oportunidades, ideas, emprendimientos
+  - grupo: uc_emprendedora_e_innovadora__rol_administrativos
+    tema_bert: 1
+    firma: emprendimiento, innovación, información, oportunidades, conocimiento
+  justificacion: Los comentarios piden apoyo económico y financiero para los emprendimientos, divulgar la oferta de emprendimiento
+    e innovación y vincular a toda la comunidad, incluidos los administrativos, lo que corresponde al componente de emprendimiento.
+  instruccion: ¿El `comentario` trata del emprendimiento en la universidad, por ejemplo apoyo económico, financiación o inversión
+    para emprendedores, rutas de emprendimiento, divulgar la oferta de emprendimiento e innovación o vincular a estudiantes,
+    graduados y administrativos en ella?
+  criterio_true: Menciona emprendimiento o emprendedores, apoyo económico, financiero, capital semilla o inversión, rutas
+    o procesos para emprender, socializar o divulgar la oferta de emprendimiento e innovación, o incluir a toda la comunidad
+    en ella.
+  criterio_false: No habla de emprendimiento ni de financiación. Acompañar o asesorar ideas sin referirse al emprendimiento
+    o a la financiación tiene su propio tema.
+  ejemplos_si:
+  - Puede apoyar, consolidando la idea, apoyando y dirigiendo al creador de oportunidades, también puede ayudar económicamente
+  - Realizar Socializaciones de la oferta de emprendimiento e innovación, para administrativos
+  critico: false
+- id: convenios_alianzas_procesos
+  nombre: Convenios, alianzas y procesos ágiles para ejecutar los proyectos
+  componente: Relacionamiento con los sectores sociales, productivos, públicos y comunitarios
+  origen:
+  - grupo: uc_emprendedora_e_innovadora__rol_docentes
+    tema_bert: 1
+    firma: procesos, recursos, necesidades, proyectos, convenios
+  justificacion: Los comentarios piden agilizar los convenios y los procesos, definir estrategias de seguimiento y articularse
+    con empresas, entidades y comunidades para ejecutar las propuestas, lo que corresponde al relacionamiento con los sectores
+    sociales, productivos, públicos y comunitarios.
+  instruccion: ¿El `comentario` trata de convenios o alianzas con empresas, entidades públicas, instituciones o comunidades,
+    o de agilizar los procesos, estrategias y tiempos para ejecutar los proyectos y hacerles seguimiento?
+  criterio_true: Menciona convenios, alianzas, vínculos con empresas, el sector productivo, entidades públicas o comunidades,
+    agilizar u optimizar procesos y trámites, estrategias de seguimiento o tiempos y espacios para cumplir lo propuesto.
+  criterio_false: No habla de convenios, alianzas ni procesos para ejecutar proyectos. Asesorar o acompañar ideas sin referirse
+    a alianzas o procesos tiene su propio tema.
+  ejemplos_si:
+  - La parte del agilizar los procesos de convenio
+  - Evaluar estrategias de seguimiento y concretar las decisiones tomadas
+  critico: false
+- id: conformidad_sin_propuestas
+  nombre: Conformidad o sin propuestas por ahora
+  componente: transformacion_en_general
+  especial: conformidad
+  origen:
+  - grupo: uc_emprendedora_e_innovadora__rol_estudiantes
+    tema_bert: 3
+    firma: momento, semilla, dan, aplicar, buscar
+  justificacion: Los comentarios dicen que no harían ajustes o que no tienen propuestas por ahora; se refieren a la transformación
+    como un todo.
+  instruccion: La pregunta de la encuesta fue «¿Qué ajustaría en esta transformación?». ¿El `comentario` responde que no haría
+    ajustes, que está de acuerdo con la transformación tal como está o que no tiene propuestas por ahora, por ejemplo «nada
+    de momento», «por el momento nada», «ninguna, es perfecto» o «está bien»?
+  criterio_true: Dice expresamente que no ajustaría nada, que está de acuerdo o que todo está bien, o que no tiene propuestas
+    por ahora, aunque sea en pocas palabras.
+  criterio_false: Propone, pide o critica algo concreto. Los agradecimientos o testimonios que no dicen que está de acuerdo
+    no cuentan.
+  ejemplos_si:
+  - Nada de momento
+  - Por el momento nada
+  critico: false
