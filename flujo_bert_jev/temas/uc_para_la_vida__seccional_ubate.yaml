@@ -1,0 +1,74 @@
+grupo: uc_para_la_vida__seccional_ubate
+transformacion: UC para la Vida
+unidad: Seccional Ubaté
+temas_de: null
+bert:
+  N: 44
+  k: 2
+  estabilidad: 0.599
+  nivel: débil
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_formacion_practica_preparacion_para
+  nombre: Formación práctica y preparación para el mundo laboral
+  tema_bert: 0
+  firma: bienestar, oportunidades, administrativos, aprendizaje, enfoque
+  palabras:
+  - bienestar
+  - oportunidades
+  - administrativos
+  - aprendizaje
+  - enfoque
+  - experiencia
+  - laborales
+  - comunicación
+  n_bert: 30
+  componente: Creadores de Oportunidades
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: bienestar, oportunidades, administrativos, aprendizaje, enfoque);
+    tratan de que el comentario trata de formación práctica, bienestar, oportunidades laborales, aprendizaje o comunicación,
+    lo que corresponde a «Creadores de Oportunidades».'
+  instruccion: ¿El `comentario` trata de formación práctica, bienestar, oportunidades laborales, aprendizaje o comunicación?
+  criterio_true: Sí cuando el comentario trata de formación práctica, bienestar, oportunidades laborales, aprendizaje o comunicación.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Experiencias de vida y aplicación a la realidad».
+  ejemplos_si:
+  - La Universidad de Cundinamarca no debe limitar la formación de sus estudiantes al componente teórico. Es fundamental implementar
+    actividades, espacios y entornos prácticos que permitan tener un acercamiento a las condiciones y desafíos de la vida
+    laboral real. De esta manera, los estudiantes podrán desarrollar competencias, adquirir experiencia y fortalecer su capacidad
+    para enfrentar de manera efectiva las necesidades del entorno  profesional.
+  - Más apoyo para pasantia y relaciones con otras entidades académicas y laborales nacionales e internacionales. Fortalecer
+    las experiencias que sean cercanas al ámbito laboral para formar profesionales preparadas para crecer personal como profesionalmente
+  - Que se enfatiza más el ámbito laboral y se pueda proyectar más a los estudiantes a genera o buscar empleos relacionados
+    a lo aprendido
+  critico: false
+- id: t2_experiencias_vida_aplicacion_realidad
+  nombre: Experiencias de vida y aplicación a la realidad
+  tema_bert: 1
+  firma: experiencias, adquiriendo personas, aplicables vida, bienestar familia, aporte diferentes
+  palabras:
+  - experiencias
+  - adquiriendo personas
+  - aplicables vida
+  - bienestar familia
+  - aporte diferentes
+  - adquirimos proceso
+  - compone convivencia
+  - concepto felicidad
+  n_bert: 14
+  componente: Persona Transhumana
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: experiencias, adquiriendo personas, aplicables vida, bienestar
+    familia, aporte diferentes); tratan de que el comentario trata de las experiencias de vida, las personas, la familia,
+    la convivencia o la felicidad en la etapa universitaria, lo que corresponde a «Persona Transhumana».'
+  instruccion: ¿El `comentario` trata de las experiencias de vida, las personas, la familia, la convivencia o la felicidad
+    en la etapa universitaria?
+  criterio_true: Sí cuando el comentario trata de las experiencias de vida, las personas, la familia, la convivencia o la
+    felicidad en la etapa universitaria.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Formación práctica y preparación para el mundo
+    laboral».
+  ejemplos_si:
+  - Las experiencias que adquirimos en el proceso ,los nuevos conocimientos que vamos adquiriendo y ls personas con las que
+    compartimos esta etapa.
+  - Más énfasis a lo laborar o a la realidad que vamos a enfrentar
+  - Los principios que se mencionan en la transformación son buenos pero lo ideal es que estos sean aplicables a la vida real
+  critico: false

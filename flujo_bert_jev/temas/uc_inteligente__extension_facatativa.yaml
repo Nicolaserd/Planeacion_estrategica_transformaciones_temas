@@ -1,0 +1,76 @@
+grupo: uc_inteligente__extension_facatativa
+transformacion: UC Inteligente
+unidad: Extensión Facatativá
+temas_de: null
+bert:
+  N: 104
+  k: 2
+  estabilidad: 0.723
+  nivel: moderada
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_uso_datos_informacion_para
+  nombre: Uso de datos e información para la gestión y la toma de decisiones
+  tema_bert: 0
+  firma: datos, procesos, decisiones, información, uso
+  palabras:
+  - datos
+  - procesos
+  - decisiones
+  - información
+  - uso
+  - analizar
+  - toma decisiones
+  - tomar decisiones
+  n_bert: 54
+  componente: Gobierno y uso estratégico de los datos
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: datos, procesos, decisiones, información, uso); tratan de
+    que el comentario trata de datos, información, procesos, análisis, gestión o toma de decisiones, lo que corresponde a
+    «Gobierno y uso estratégico de los datos».'
+  instruccion: ¿El `comentario` trata de datos, información, procesos, análisis, gestión o toma de decisiones?
+  criterio_true: Sí cuando el comentario trata de datos, información, procesos, análisis, gestión o toma de decisiones.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Calidad, mejora continua y oportunidades para
+    los programas académicos».
+  ejemplos_si:
+  - Mas espacios de debate en el que se de tiempo para analizar qué pasa hacia adentro. Debe existir un equilibrio entre los
+    procesos que ayudan a generar datos centralizados al nivel Universidad y flexibilidad para que los programas también puedan
+    generar datos relevantes a sus metas específicas
+  - Que los datos utilizados para mejora de procesos, creación de indicadores midiendo riesgos, se pueda tener la información
+    a la mano en todas las sedes debido a que cierta información se concentra en la sede principal la cual nos dificulta tomar
+    decisiones d e manera autónoma como sede
+  - Genera un mejor criteria al tomar decisiones y mejor gestión de proyectos-recursos
+  critico: false
+- id: t2_calidad_mejora_continua_oportunidades
+  nombre: Calidad, mejora continua y oportunidades para los programas académicos
+  tema_bert: 1
+  firma: oportunidades, calidad, programas, mejorar, inteligencia
+  palabras:
+  - oportunidades
+  - calidad
+  - programas
+  - mejorar
+  - inteligencia
+  - inteligencia artificial
+  - reconocimiento
+  - mejora continua
+  n_bert: 50
+  componente: Calidad y mejora continua
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: oportunidades, calidad, programas, mejorar, inteligencia);
+    tratan de que el comentario trata de la calidad, la mejora, los programas académicos, la formación, las herramientas o
+    las oportunidades que ofrece la universidad, lo que corresponde a «Calidad y mejora continua».'
+  instruccion: ¿El `comentario` trata de la calidad, la mejora, los programas académicos, la formación, las herramientas o
+    las oportunidades que ofrece la universidad?
+  criterio_true: Sí cuando el comentario trata de la calidad, la mejora, los programas académicos, la formación, las herramientas
+    o las oportunidades que ofrece la universidad.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Uso de datos e información para la gestión y la
+    toma de decisiones».
+  ejemplos_si:
+  - Es una buena estrategia para conocer las falencias que presenta la universidad y mejorar su formación de profesionales
+  - Una mejora en todo ámbito de los programas académicos frente a las herramientas inteligentes
+  - Estoy decuerdo debido a que se me gustaría ver esa mejora continua y con mejores oportunidades en la infraestructura para
+    cada carrera dada para abrochar los recursos suministrado por la universidad generando soluciones a problemas mas complejos
+    asi dado una mejora en la calidad y con el uso y ayuda continua de nuevas tecnologias dando una mejor gestión a los resultados
+    y con una estrategia clara
+  critico: false

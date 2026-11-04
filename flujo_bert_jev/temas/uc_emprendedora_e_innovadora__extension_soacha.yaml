@@ -1,0 +1,108 @@
+grupo: uc_emprendedora_e_innovadora__extension_soacha
+transformacion: UC Emprendedora e Innovadora
+unidad: Extensión Soacha
+temas_de: null
+bert:
+  N: 75
+  k: 3
+  estabilidad: 0.768
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_acompanamiento_recursos_para_convertir
+  nombre: Acompañamiento y recursos para convertir ideas en soluciones
+  tema_bert: 0
+  firma: recursos, proyectos, soluciones, investigación, oportunidades
+  palabras:
+  - recursos
+  - proyectos
+  - soluciones
+  - investigación
+  - oportunidades
+  - convertir idea
+  - necesidades
+  - comunidad
+  n_bert: 31
+  componente: Ecosistemas de innovación
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: recursos, proyectos, soluciones, investigación, oportunidades);
+    tratan de que el comentario trata de convertir ideas en soluciones con recursos, proyectos, investigación, acompañamiento
+    o seguimiento, lo que corresponde a «Ecosistemas de innovación».'
+  instruccion: ¿El `comentario` trata de convertir ideas en soluciones con recursos, proyectos, investigación, acompañamiento
+    o seguimiento?
+  criterio_true: Sí cuando el comentario trata de convertir ideas en soluciones con recursos, proyectos, investigación, acompañamiento
+    o seguimiento.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Información y formación para el personal administrativo»
+    o cuando trata principalmente de otro asunto del grupo, «Divulgar y apoyar el emprendimiento (incluye administrativos)».
+  ejemplos_si:
+  - Ajustaría la transformación para garantizar un acompañamiento continuo a las ideas que surgen de los territorios, con
+    orientación, recursos, mentoría y seguimiento hasta su implementación. Así, la Universidad no solo identifica buenas ideas,
+    sino que ayuda a convertirlas en soluciones sostenibles que generen un impacto real en la comunidad.
+  - Para convertir una idea comunitaria en una solución real, la universidad debe articular el desarrollo tecnológico con
+    la visión de negocios. Desde el programa de ingeniería de software, los estudiantes pueden construir el Producto Mínimo
+    Viable (MVP) de la idea mediante proyectos de grado, semilleros o hackatones enfocados en los problemas del territorio.
+    Simultáneamente, a través de su ecosistema de emprendimiento, la institución debe brindar incubación, mentoría interdisciplinaria
+    y conexión con inversionistas para asegurar que ese software se transforme en un modelo de negocio escalable y sostenible
+    para la región.
+  - La universidad tiene que conocer la idea, así mismo plantear un plan de soluciones, ver si los recursos son viables para
+    este entorno y llegar a una solución
+  critico: false
+- id: t2_informacion_formacion_para_personal
+  nombre: Información y formación para el personal administrativo
+  tema_bert: 1
+  firma: aumentar información, emprender, formación, seguridad, administrativos
+  palabras:
+  - aumentar información
+  - emprender
+  - formación
+  - seguridad
+  - administrativos
+  - conocimiento
+  - acercarse contextos
+  - acercamiento trabajo
+  n_bert: 24
+  componente: Creación de oportunidades
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: aumentar información, emprender, formación, seguridad, administrativos);
+    tratan de que el comentario trata de información, formación o conocimiento para el personal administrativo, o de acercar
+    la academia a sus contextos, lo que corresponde a «Creación de oportunidades».'
+  instruccion: ¿El `comentario` trata de información, formación o conocimiento para el personal administrativo, o de acercar
+    la academia a sus contextos?
+  criterio_true: Sí cuando el comentario trata de información, formación o conocimiento para el personal administrativo, o
+    de acercar la academia a sus contextos.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Acompañamiento y recursos para convertir ideas
+    en soluciones» o cuando trata principalmente de otro asunto del grupo, «Divulgar y apoyar el emprendimiento (incluye administrativos)».
+  ejemplos_si:
+  - Aumentar información para así los administrativos tengan conocimientos
+  - Más inclusión administrativa/ En ocasiones el conocimiento se ajusta más a la academia
+  - Aumentar información de los procesos que tienes la universidad para el área administrativa
+  critico: false
+- id: t3_divulgar_apoyar_emprendimiento_incluye
+  nombre: Divulgar y apoyar el emprendimiento (incluye administrativos)
+  tema_bert: 2
+  firma: emprendimiento, emprendedores, emprendedora, emprendimiento innovación, emprendedor
+  palabras:
+  - emprendimiento
+  - emprendedores
+  - emprendedora
+  - emprendimiento innovación
+  - emprendedor
+  - empresarial
+  - apoyo proyectos
+  - aportar formativa
+  n_bert: 20
+  componente: Emprendimiento
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: emprendimiento, emprendedores, emprendedora, emprendimiento
+    innovación, emprendedor); tratan de que el comentario trata del emprendimiento, los emprendedores o la innovación empresarial,
+    y de cómo divulgarlos o apoyarlos, lo que corresponde a «Emprendimiento».'
+  instruccion: ¿El `comentario` trata del emprendimiento, los emprendedores o la innovación empresarial, y de cómo divulgarlos
+    o apoyarlos?
+  criterio_true: Sí cuando el comentario trata del emprendimiento, los emprendedores o la innovación empresarial, y de cómo
+    divulgarlos o apoyarlos.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Acompañamiento y recursos para convertir ideas
+    en soluciones» o cuando trata principalmente de otro asunto del grupo, «Información y formación para el personal administrativo».
+  ejemplos_si:
+  - Que se haga conocer más el emprendimiento
+  - Capacitar y acompañar al emprendedor administrativo en cuanto a conocimiento y financieramente.
+  - Realizar Socializaciones de la oferta de emprendimiento e innovación, para administrativos
+  critico: false

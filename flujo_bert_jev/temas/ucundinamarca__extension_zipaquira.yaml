@@ -1,0 +1,72 @@
+grupo: ucundinamarca__extension_zipaquira
+transformacion: UCundinamarca
+unidad: Extensión Zipaquirá
+temas_de: ucundinamarca__todas_las_unidades
+bert:
+  N: 11
+  k: 2
+  estabilidad: 0.787
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_propuestas_para_plan_territorio
+  nombre: 'Propuestas para el Plan: territorio, programas y condiciones laborales'
+  tema_bert: 0
+  firma: territorio, plan, mejorar, programas, laboral
+  palabras:
+  - territorio
+  - plan
+  - mejorar
+  - programas
+  - laboral
+  - experiencia
+  - gestión
+  - plan estratégico
+  n_bert: 9
+  componente: transformacion_en_general
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: territorio, plan, mejorar, programas, laboral); tratan de
+    que el comentario hace una propuesta o un comentario sobre el Plan o la universidad: territorio, programas, gestión, condiciones
+    laborales u otras mejoras, lo que corresponde a «la transformación en general».'
+  instruccion: '¿El `comentario` hace una propuesta o un comentario sobre el Plan o la universidad: territorio, programas,
+    gestión, condiciones laborales u otras mejoras?'
+  criterio_true: 'Sí cuando el comentario hace una propuesta o un comentario sobre el Plan o la universidad: territorio, programas,
+    gestión, condiciones laborales u otras mejoras.'
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Procesos, recursos y calidad; valoraciones breves
+    del encuentro».
+  ejemplos_si:
+  - Que la tecnología sea un facilitador para que los procesos se agilicen y no se vuelvan un obstaculo para el desarrollo
+    de las actividades académicas. Que se piense dentro de la visión mejorar la contratación docente priorizando la continuidad
+    y una remuneración económica acorde a su perfil y que se actualice constantemente.
+  critico: false
+- id: t2_procesos_recursos_calidad_valoraciones
+  nombre: Procesos, recursos y calidad; valoraciones breves del encuentro
+  tema_bert: 1
+  firma: procesos, recursos, calidad, mejorar, datos
+  palabras:
+  - procesos
+  - recursos
+  - calidad
+  - mejorar
+  - datos
+  - plataforma
+  - experiencia
+  - agradezco
+  n_bert: 2
+  componente: UC Inteligente
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: procesos, recursos, calidad, mejorar, datos); tratan de que
+    el comentario trata de procesos, recursos, calidad, datos o plataformas, o valora o agradece el encuentro, lo que corresponde
+    a «UC Inteligente».'
+  instruccion: ¿El `comentario` trata de procesos, recursos, calidad, datos o plataformas, o valora o agradece el encuentro?
+  criterio_true: Sí cuando el comentario trata de procesos, recursos, calidad, datos o plataformas, o valora o agradece el
+    encuentro.
+  criterio_false: 'No cuando trata principalmente de otro asunto del grupo, «Propuestas para el Plan: territorio, programas
+    y condiciones laborales».'
+  ejemplos_si:
+  - Agradezco mucho la reunión llevada a cabo durante esta mañana, queria reforzar la observación sobre la falta de viabilidad
+    y el malestar que está generando el tema del registro de asistencia en el computador que se encuentra en la oficina de
+    Coordinación, sumando a la perdida de tiempo en las clases, sumo que debido a una situación fisica en las rodillas, me
+    resulta muy complejo y en contra de la salud estar dirigiendome cada hora del 2o. piso al 4o.
+  - Poner a disposición la carrera de música en jornada nocturna, esto nos ayuda a las personas que debemos trabajar y sostenernos
+  critico: false

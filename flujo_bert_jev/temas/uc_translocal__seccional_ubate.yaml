@@ -1,0 +1,79 @@
+grupo: uc_translocal__seccional_ubate
+transformacion: UC Translocal
+unidad: Seccional Ubaté
+temas_de: null
+bert:
+  N: 43
+  k: 2
+  estabilidad: 0.43
+  nivel: débil
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_desarrollo_regional_identidad_internacionalizacion
+  nombre: Desarrollo regional, identidad e internacionalización
+  tema_bert: 0
+  firma: desarrollo, necesidades, región, comunidad, estrategias
+  palabras:
+  - desarrollo
+  - necesidades
+  - región
+  - comunidad
+  - estrategias
+  - institución
+  - cultural
+  - local
+  n_bert: 29
+  componente: Impacto territorial
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: desarrollo, necesidades, región, comunidad, estrategias);
+    tratan de que el comentario trata del desarrollo de la región, las necesidades de la comunidad local, la cultura, la identidad
+    o las estrategias de la institución en el territorio, lo que corresponde a «Impacto territorial».'
+  instruccion: ¿El `comentario` trata del desarrollo de la región, las necesidades de la comunidad local, la cultura, la identidad
+    o las estrategias de la institución en el territorio?
+  criterio_true: Sí cuando el comentario trata del desarrollo de la región, las necesidades de la comunidad local, la cultura,
+    la identidad o las estrategias de la institución en el territorio.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Aprendizaje, convenios y conocimiento del territorio
+    (temas varios)».
+  ejemplos_si:
+  - Al fortalecer la conexión con el territorio local y promover el desarrollo integral de los estudiantes, es necesario implementar
+    herramientas de fácil acceso que faciliten su participación e interacción con la comunidad. La universidad, como alma
+    mater y formadora de futuros profesionales, debe propiciar espacios y estrategias que permitan vincular a los estudiantes
+    con las necesidades, problemáticas y oportunidades del entorno local, fortaleciendo así su formación académica, social
+    y profesional y generando un impacto positivo en la comunidad.
+  - Importante el trascender a nivel internacional, buscar la forma de articularse con redes de cooperación y evaluar la forma
+    de descentralizar los recursos con el fin de solucionar necesidades de cada territorio acorde a su identidad cultural
+    y sus particularidades sociales
+  - 1. Si dada la importancia de la identidad de cada territorio, respetando cada espacio de manera debida y aportando más
+    conocimiento e innovación
+  critico: false
+  otros_componentes:
+  - Internacionalización
+- id: t2_aprendizaje_convenios_conocimiento_del
+  nombre: Aprendizaje, convenios y conocimiento del territorio (temas varios)
+  tema_bert: 1
+  firma: graduados, acuerdo habrían, actualizada información, aprendizaje valore, beneficios seguir
+  palabras:
+  - graduados
+  - acuerdo habrían
+  - actualizada información
+  - aprendizaje valore
+  - beneficios seguir
+  - ampliar convenios
+  - acreditación internacional
+  - completo translocal
+  n_bert: 14
+  componente: Formación y aprendizaje
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: graduados, acuerdo habrían, actualizada información, aprendizaje
+    valore, beneficios seguir); tratan de que el comentario trata del aprendizaje, los graduados, los convenios, la información,
+    el intercambio de saberes o el reconocimiento internacional, lo que corresponde a «Formación y aprendizaje».'
+  instruccion: ¿El `comentario` trata del aprendizaje, los graduados, los convenios, la información, el intercambio de saberes
+    o el reconocimiento internacional?
+  criterio_true: Sí cuando el comentario trata del aprendizaje, los graduados, los convenios, la información, el intercambio
+    de saberes o el reconocimiento internacional.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Desarrollo regional, identidad e internacionalización».
+  ejemplos_si:
+  - La universidad valore y se pueda lograr ajustar a las distintas ocasiones del momento
+  - Que la universidad conozca tambien su territorio e identifique las necesidades con las que conviven sus estudiantes
+  - Intercambio de saberes de la comunidad universitaria
+  critico: false

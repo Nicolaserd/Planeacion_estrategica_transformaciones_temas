@@ -1,0 +1,75 @@
+grupo: uc_digital__extension_facatativa
+transformacion: UC Digital
+unidad: Extensión Facatativá
+temas_de: null
+bert:
+  N: 91
+  k: 2
+  estabilidad: 0.94
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_infraestructura_conectividad_uso_etico
+  nombre: Infraestructura, conectividad y uso ético de tecnologías emergentes
+  tema_bert: 0
+  firma: tecnología, digital, tecnologías, digitales, internet
+  palabras:
+  - tecnología
+  - digital
+  - tecnologías
+  - digitales
+  - internet
+  - infraestructura
+  - conectividad
+  - tecnologías emergentes
+  n_bert: 65
+  componente: Ecosistemas digitales
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: tecnología, digital, tecnologías, digitales, internet); tratan
+    de que el comentario trata de tecnología, lo digital, internet, conectividad, infraestructura o tecnologías emergentes,
+    lo que corresponde a «Ecosistemas digitales».'
+  instruccion: ¿El `comentario` trata de tecnología, lo digital, internet, conectividad, infraestructura o tecnologías emergentes?
+  criterio_true: Sí cuando el comentario trata de tecnología, lo digital, internet, conectividad, infraestructura o tecnologías
+    emergentes.
+  criterio_false: 'No cuando trata principalmente de otro asunto del grupo, «Inteligencia artificial: capacitación y uso responsable».'
+  ejemplos_si:
+  - Mejoramiento de la infraestructura física y digital para mejorar el acceso a la tecnología. Control de la misma tecnología
+    para que no llegue a reemplazar al gestor del conocimiento
+  - 5. Que toda la comunidad académica, tenga habilidades en tecnologías emergentes, con uso ético de estas, posibilitando
+    una experiencia transformadora en el campo digital, con una infraestructura conectada con los cambios a manera global
+    y servicios institucionales ágiles y automatizados.
+  - Reglamentar el uso de tecnologías emergentes, interacción y prestaciones de Aulas con inmersión digital, para estar a
+    la vanguardia de las necesidades de la educación digital
+  critico: false
+  otros_componentes:
+  - Tecnologías emergentes
+- id: t2_inteligencia_artificial_capacitacion_uso
+  nombre: 'Inteligencia artificial: capacitación y uso responsable'
+  tema_bert: 1
+  firma: inteligencia artificial, artificial, laboratorios, seguridad, capacitaciones uso
+  palabras:
+  - inteligencia artificial
+  - artificial
+  - laboratorios
+  - seguridad
+  - capacitaciones uso
+  - aprender
+  - herramientas inteligencia
+  - modernizacion
+  n_bert: 26
+  componente: Inteligencia artificial
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: inteligencia artificial, artificial, laboratorios, seguridad,
+    capacitaciones uso); tratan de que el comentario trata de inteligencia artificial, su aprendizaje o capacitación, laboratorios,
+    seguridad o modernización, lo que corresponde a «Inteligencia artificial».'
+  instruccion: ¿El `comentario` trata de inteligencia artificial, su aprendizaje o capacitación, laboratorios, seguridad o
+    modernización?
+  criterio_true: Sí cuando el comentario trata de inteligencia artificial, su aprendizaje o capacitación, laboratorios, seguridad
+    o modernización.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Infraestructura, conectividad y uso ético de tecnologías
+    emergentes».
+  ejemplos_si:
+  - Crear programas que fomenten el aprendizaje sobre el uso de IA, y el bienestar de la IA
+  - Mejorar la capacidad de saber utilizar de mejor manera las tecnologías y la inteligencia artificial
+  - Actualizar en temas y apoyarse en la IA para formas profesionales actualizados y competentes
+  critico: false

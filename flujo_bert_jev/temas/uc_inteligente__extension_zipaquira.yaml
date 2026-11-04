@@ -1,0 +1,116 @@
+grupo: uc_inteligente__extension_zipaquira
+transformacion: UC Inteligente
+unidad: Extensión Zipaquirá
+temas_de: null
+bert:
+  N: 25
+  k: 3
+  estabilidad: 0.636
+  nivel: moderada
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_universidad_inteligente_servicio_estudiantes
+  nombre: Universidad inteligente al servicio de estudiantes y docentes
+  tema_bert: 0
+  firma: inteligente, estudiantes, educación, docentes, formación
+  palabras:
+  - inteligente
+  - estudiantes
+  - educación
+  - docentes
+  - formación
+  - estudiantes docentes
+  - graduados
+  - laborales
+  n_bert: 12
+  componente: Inteligencia institucional
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: inteligente, estudiantes, educación, docentes, formación);
+    tratan de que el comentario trata de una universidad inteligente al servicio de estudiantes, docentes o graduados: formación,
+    educación, datos, logística o agilidad, lo que corresponde a «Inteligencia institucional».'
+  instruccion: '¿El `comentario` trata de una universidad inteligente al servicio de estudiantes, docentes o graduados: formación,
+    educación, datos, logística o agilidad?'
+  criterio_true: 'Sí cuando el comentario trata de una universidad inteligente al servicio de estudiantes, docentes o graduados:
+    formación, educación, datos, logística o agilidad.'
+  criterio_false: 'No cuando trata principalmente de otro asunto del grupo, «Procesos ágiles, autocrítica y mejora continua»
+    o cuando trata principalmente de otro asunto del grupo, «Música: escuchar a los egresados y empleabilidad artística».'
+  ejemplos_si:
+  - Una universidad inteligente debe contar con la capacidad tecnológica para recopilar, analizar y utilizar de manera estratégica
+    los datos de cada estudiante,  con el propósito de identificar sus habilidades, intereses y potencialidades.  Esto permitirá
+    orientar y personalizar su proceso formativo, enfocándolo hacia el  reconocimiento de competencias y experiencias laborales
+    que contribuyan a una formación integral y a una mejor preparación para su incorporación al mundo profesiona
+  - '[31/8Se necesita una universidad más ágil en sus procesos, en cuestión de nuestra carrera, que se pudiese lograr inteligencia
+    logística, que se pueda aprovechar el tiempo para nosotros y nuestro maestros. También, lograr convenios con otras universidades
+    que permitan más opciones para creación de aplicaciones que nos ayuden con nuestro progreso de estudio'
+  - -Procesos más ágiles y con menos intermediarios. Adaptaciones más ágiles al cambio tanto tecnológico como educativo. Una
+    universidad que investiga debe saber redactar.
+  critico: false
+- id: t2_procesos_agiles_autocritica_mejora
+  nombre: Procesos ágiles, autocrítica y mejora continua
+  tema_bert: 1
+  firma: procesos, mejora continua, adaptación mejoraria, autocrítica corrección, anticiparse cambios
+  palabras:
+  - procesos
+  - mejora continua
+  - adaptación mejoraria
+  - autocrítica corrección
+  - anticiparse cambios
+  - apoyo inteligencia
+  - aprendizaje optimizar
+  - administrativas digital
+  n_bert: 7
+  componente: Calidad y mejora continua
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: procesos, mejora continua, adaptación mejoraria, autocrítica
+    corrección, anticiparse cambios); tratan de que el comentario trata de procesos, mejora continua, adaptación, autocrítica,
+    anticipación o eficiencia de la gestión, lo que corresponde a «Calidad y mejora continua».'
+  instruccion: ¿El `comentario` trata de procesos, mejora continua, adaptación, autocrítica, anticipación o eficiencia de
+    la gestión?
+  criterio_true: Sí cuando el comentario trata de procesos, mejora continua, adaptación, autocrítica, anticipación o eficiencia
+    de la gestión.
+  criterio_false: 'No cuando trata principalmente de otro asunto del grupo, «Universidad inteligente al servicio de estudiantes
+    y docentes» o cuando trata principalmente de otro asunto del grupo, «Música: escuchar a los egresados y empleabilidad
+    artística».'
+  ejemplos_si:
+  - Ajustaría a que los procesos sean dw forma agil y eficiente, con un nivel de satiafacción muy alto, con capacidad de autocrítica,
+    corrección y adaptación que mejoraria la calidad de vida de la comunidad.
+  - Prever en el proceso de ley de garantías, la optimización de procesos en la contratación. Para ello sería fundamental
+    contar con más personal administrativo en las áreas que llevan a cabo este proceso.
+  - '> *Predecir escenarios mediante inteligencia institucional, garantizando la calidad de cada proceso bajo un modelo de
+    gobernanza estratégica. Fortalecer el aprendizaje y optimizar la toma de decisiones con apoyo de la inteligencia artificial,
+    orientado a la calidad y la mejora continua.*'
+  critico: false
+  otros_componentes:
+  - Gestión orientada a resultados
+- id: t3_musica_escuchar_los_egresados
+  nombre: 'Música: escuchar a los egresados y empleabilidad artística'
+  tema_bert: 2
+  firma: producción musical, escuchar experiencias, ampliar datos, artificial directamente, artística empleabilidad
+  palabras:
+  - producción musical
+  - escuchar experiencias
+  - ampliar datos
+  - artificial directamente
+  - artística empleabilidad
+  - beneficios
+  - automatizado asignación
+  - aumentado competencia
+  n_bert: 6
+  componente: fuera_de_la_transformacion
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: producción musical, escuchar experiencias, ampliar datos,
+    artificial directamente, artística empleabilidad); tratan de que el comentario habla del programa de música: escuchar
+    a sus egresados, la empleabilidad de los músicos o espacios para que participen y opinen, lo que corresponde a «fuera
+    de la transformación».'
+  instruccion: '¿El `comentario` habla del programa de música: escuchar a sus egresados, la empleabilidad de los músicos o
+    espacios para que participen y opinen?'
+  criterio_true: 'Sí cuando el comentario habla del programa de música: escuchar a sus egresados, la empleabilidad de los
+    músicos o espacios para que participen y opinen.'
+  criterio_false: No cuando no se refiere a la música, a los músicos ni a sus egresados. Mencionar el asunto de paso, sin
+    pedirlo ni proponerlo, no basta.
+  ejemplos_si:
+  - Una universidad inteligente tiene una correcta comunicación y diálogo para utilizar los beneficios del MEDIT la carrera
+    de música
+  - '> La universidad debería escuchar las experiencias de sus egresados para no repetir los mismos obstáculos en la inserción
+    laboral, especialmente ahora que el índice de profesionales en música ha aumentado y la competencia en el medio es mayor.'
+  - Espacios donde el músico sea participe de mas fogueos y opinen sobre nuestro avance y falencias que capten
+  critico: false

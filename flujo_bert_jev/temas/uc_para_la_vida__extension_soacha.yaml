@@ -1,0 +1,85 @@
+grupo: uc_para_la_vida__extension_soacha
+transformacion: UC para la Vida
+unidad: Extensión Soacha
+temas_de: null
+bert:
+  N: 77
+  k: 2
+  estabilidad: 0.923
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_experiencias_aprendizaje_formacion_mas
+  nombre: Experiencias de aprendizaje y formación más allá del aula
+  tema_bert: 0
+  firma: vida, aprendizaje, estudiantes, conocimientos, docente
+  palabras:
+  - vida
+  - aprendizaje
+  - estudiantes
+  - conocimientos
+  - docente
+  - laboral
+  - experiencia
+  - oportunidad
+  n_bert: 41
+  componente: Creadores de Oportunidades
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: vida, aprendizaje, estudiantes, conocimientos, docente);
+    tratan de que el comentario trata de experiencias de aprendizaje y conocimientos de los estudiantes, la labor docente
+    o la preparación para la vida y el trabajo, lo que corresponde a «Creadores de Oportunidades».'
+  instruccion: ¿El `comentario` trata de experiencias de aprendizaje y conocimientos de los estudiantes, la labor docente
+    o la preparación para la vida y el trabajo?
+  criterio_true: Sí cuando el comentario trata de experiencias de aprendizaje y conocimientos de los estudiantes, la labor
+    docente o la preparación para la vida y el trabajo.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Estabilidad laboral, formación del personal y
+    movilidad».
+  ejemplos_si:
+  - Como tal la universidad brinda una experiencia gratificante por el simple hecho de esas personas que logran que ese proceso
+    se dé de tal manera, considerando que se debería poder salir a más salidas pedagógicas que logren fortalecer esos procesos
+    pedagógicos y experenciales, además de poder buscar la manera de fortalecer la hoja de vida con el fin de terminar la
+    carrera y tener un buen trabajo
+  - Dominar el Medit desde los GCA y los creadores logrando concretar la cocreación y el proceso de evaluación que logré y
+    permita el crecimiento del conocimiento. Al igual, lograr que los egresados sean voz viva de las buenas vivencias en la
+    universidad. Fortalecimiento constante y de mejora del talento humano sus valores y beneficios por parte de la universidad.
+  - Integrar mayores experiencias dentro del campus y no solo lo académico, que profesionalmente la universidad nos lleve
+    al éxito, que la universidad nos ayude en el proceso de adaptación de las nuevas tecnologías al pasar del tipo integrando
+    diferentes áreas del conocimiento, mejorar las relaciones que tenemos entre las personas, la sociedad e instituciones
+    así como una red o un ecosistema completo, incluyendo mejores gestores del conocimiento que estén a la vanguardia
+  critico: false
+  otros_componentes:
+  - Persona Transhumana
+- id: t2_estabilidad_laboral_formacion_del
+  nombre: Estabilidad laboral, formación del personal y movilidad
+  tema_bert: 1
+  firma: experiencia, gestores, bienestar, plan, estabilidad laboral
+  palabras:
+  - experiencia
+  - gestores
+  - bienestar
+  - plan
+  - estabilidad laboral
+  - integración
+  - laborales
+  - gestores conocimiento
+  n_bert: 36
+  componente: Desarrollo del talento humano
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: experiencia, gestores, bienestar, plan, estabilidad laboral);
+    tratan de que el comentario trata de la estabilidad laboral, el bienestar, la integración o la formación del personal,
+    o de la movilidad académica, lo que corresponde a «Desarrollo del talento humano».'
+  instruccion: ¿El `comentario` trata de la estabilidad laboral, el bienestar, la integración o la formación del personal,
+    o de la movilidad académica?
+  criterio_true: Sí cuando el comentario trata de la estabilidad laboral, el bienestar, la integración o la formación del
+    personal, o de la movilidad académica.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Experiencias de aprendizaje y formación más allá
+    del aula».
+  ejemplos_si:
+  - impulsar enriquecedoras experiencias de movilidad académica que amplíen la perspectiva global de los estudiantes. A la
+    par, fortalecemos de manera integral su posicionamiento en el mercado laboral mediante alianzas estratégicas, vinculando
+    directamente a nuestros egresados con empresas líderes para asegurar una transición exitosa y destacada hacia su futuro
+    profesional.
+  - Mayor estabilidad laboral, ampliar las oportunidades de estudio y formación para el personal, fortalecer las actividades
+    de integración para el personal
+  - Que se implementará más un proceso enfocado hacia la vida real para un trabajo
+  critico: false

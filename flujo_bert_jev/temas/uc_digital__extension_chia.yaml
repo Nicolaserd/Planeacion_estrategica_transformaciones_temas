@@ -1,0 +1,75 @@
+grupo: uc_digital__extension_chia
+transformacion: UC Digital
+unidad: Extensión Chía
+temas_de: null
+bert:
+  N: 93
+  k: 2
+  estabilidad: 0.843
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_optimizacion_procesos_infraestructura_tecnologica
+  nombre: Optimización de procesos e infraestructura tecnológica institucional
+  tema_bert: 0
+  firma: recursos, uso, desarrollar, institucionales, tecnologías
+  palabras:
+  - recursos
+  - uso
+  - desarrollar
+  - institucionales
+  - tecnologías
+  - uso herramientas
+  - flexibilidad
+  - calidad vida
+  n_bert: 48
+  componente: Automatización de procesos
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: recursos, uso, desarrollar, institucionales, tecnologías);
+    tratan de que el comentario trata de recursos, herramientas o infraestructura tecnológica de la institución, su uso y
+    la optimización de procesos, lo que corresponde a «Automatización de procesos».'
+  instruccion: ¿El `comentario` trata de recursos, herramientas o infraestructura tecnológica de la institución, su uso y
+    la optimización de procesos?
+  criterio_true: Sí cuando el comentario trata de recursos, herramientas o infraestructura tecnológica de la institución,
+    su uso y la optimización de procesos.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Acceso digital, laboratorios y tecnología para
+    aprender».
+  ejemplos_si:
+  - Con lo de la transformación de la tecnología buscaríamos más semilleros para hablar más de investigaciones y usar la tecnología
+    más adecuada
+  - Si bien es cierto contamos con Excelente tecnología, debemos Optimizar más  el talento humano para la agilización de procesos.
+  - Optimzacuon de procesos y fortalecimiento de la infraestructura tecnológica.
+  critico: false
+  otros_componentes:
+  - Ecosistemas digitales
+- id: t2_acceso_digital_laboratorios_tecnologia
+  nombre: Acceso digital, laboratorios y tecnología para aprender
+  tema_bert: 1
+  firma: digital, estudiantes, acceso, aprendizaje, laboratorios
+  palabras:
+  - digital
+  - estudiantes
+  - acceso
+  - aprendizaje
+  - laboratorios
+  - tecnologia
+  - comunicación
+  - internet
+  n_bert: 45
+  componente: Experiencia digital de la comunidad universitaria
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: digital, estudiantes, acceso, aprendizaje, laboratorios);
+    tratan de que el comentario trata de lo digital para los estudiantes: acceso, aprendizaje, laboratorios, internet, comunicación
+    o procesos digitales, lo que corresponde a «Experiencia digital de la comunidad universitaria».'
+  instruccion: '¿El `comentario` trata de lo digital para los estudiantes: acceso, aprendizaje, laboratorios, internet, comunicación
+    o procesos digitales?'
+  criterio_true: 'Sí cuando el comentario trata de lo digital para los estudiantes: acceso, aprendizaje, laboratorios, internet,
+    comunicación o procesos digitales.'
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Optimización de procesos e infraestructura tecnológica
+    institucional».
+  ejemplos_si:
+  - En una universidad así se podría mejorar la metodología de estudio,  ampliar nuestro conocimientos,Habilitando los espacios
+    tecnológicos de manera libre a los estudiantes
+  - El aprendizaje facilitado gracias ala ayuda tecnologia proporciona por la universidad
+  - Permitir procesos digitales que faciliten la interacción de la universidad
+  critico: false

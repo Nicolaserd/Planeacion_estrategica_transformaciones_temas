@@ -1,0 +1,81 @@
+grupo: uc_inteligente__extension_chia
+transformacion: UC Inteligente
+unidad: Extensión Chía
+temas_de: null
+bert:
+  N: 92
+  k: 2
+  estabilidad: 0.876
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_universidad_que_anticipa_responde
+  nombre: Universidad que se anticipa y responde a las necesidades de la comunidad
+  tema_bert: 0
+  firma: tomar decisiones, estudiantes, comunidad, necesidades, educación
+  palabras:
+  - tomar decisiones
+  - estudiantes
+  - comunidad
+  - necesidades
+  - educación
+  - aprendizaje
+  - conocimiento
+  - instituciones
+  n_bert: 55
+  componente: Inteligencia institucional
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: tomar decisiones, estudiantes, comunidad, necesidades, educación);
+    tratan de que el comentario trata de una universidad que se anticipa, aprende de lo que pasa y responde a las necesidades
+    de estudiantes, comunidad o territorio con soluciones, educación u oportunidades, lo que corresponde a «Inteligencia institucional».'
+  instruccion: ¿El `comentario` trata de una universidad que se anticipa, aprende de lo que pasa y responde a las necesidades
+    de estudiantes, comunidad o territorio con soluciones, educación u oportunidades?
+  criterio_true: Sí cuando el comentario trata de una universidad que se anticipa, aprende de lo que pasa y responde a las
+    necesidades de estudiantes, comunidad o territorio con soluciones, educación u oportunidades.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Datos, inteligencia artificial y actualización
+    para decidir mejor».
+  ejemplos_si:
+  - Una universidad que se anticipa sus problemáticas eso puede intentar avanzar En una amplias cantidad de temas también
+    puede ayudar tanto al estudio como a la formación de futuros profesionales
+  - ‎Una universidad oportuna para formular soluciones reales, concretas y realizables, a partir de la retroalimentación,
+    creación de momentos de participación activa y generación de oportunidades dadas para el cambio continuo.
+  - Sería una universidad capaz de aprender de lo que pasa en cada territorio, anticiparse a los cambios y tomar decisiones
+    para crear soluciones y oportunidades para sus comunidades.
+  critico: false
+- id: t2_datos_inteligencia_artificial_actualizacion
+  nombre: Datos, inteligencia artificial y actualización para decidir mejor
+  tema_bert: 1
+  firma: datos, futuro, inteligencia, digital, inteligencia artificial
+  palabras:
+  - datos
+  - futuro
+  - inteligencia
+  - digital
+  - inteligencia artificial
+  - desarrollo
+  - información
+  - optimizar procesos
+  n_bert: 37
+  componente: Gobierno y uso estratégico de los datos
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: datos, futuro, inteligencia, digital, inteligencia artificial);
+    tratan de que el comentario trata de datos, información, tecnología, inteligencia artificial, digitalización u optimización
+    de procesos para mejorar, actualizarse o decidir, lo que corresponde a «Gobierno y uso estratégico de los datos».'
+  instruccion: ¿El `comentario` trata de datos, información, tecnología, inteligencia artificial, digitalización u optimización
+    de procesos para mejorar, actualizarse o decidir?
+  criterio_true: Sí cuando el comentario trata de datos, información, tecnología, inteligencia artificial, digitalización
+    u optimización de procesos para mejorar, actualizarse o decidir.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Universidad que se anticipa y responde a las necesidades
+    de la comunidad».
+  ejemplos_si:
+  - Crear un software que recopile daros estadísticos para mejorar, aprender y tomar mejores decisiones utilizando los nuevos
+    medios tecnológicos como la IA. La universidad será capaz de innovar y anticiparse a las problemáticas que se presenten
+  - Considero para transformar desde estos campos se debe generar un impacto de actualización a la información incluida en
+    cada pensum sin desconocer los procesos ya incluido pero si manteniendo una actualidad conforme a lo que exige hoy en
+    día el mercado actual
+  - Pensar más sobre los datos actuales con fines de tener más certeza y de lo que ya se tiene solucionado rápido con fines
+    de dar un gran éxito más ágil y oportuno adicional que mediante esto mismo se puedan determinar diferentes campos a los
+    cuales se podrían optimizar procesos o algunas soluciones similares
+  critico: false
+  otros_componentes:
+  - Inteligencia artificial

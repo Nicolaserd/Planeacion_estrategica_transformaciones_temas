@@ -1,0 +1,75 @@
+grupo: uc_emprendedora_e_innovadora__extension_facatativa
+transformacion: UC Emprendedora e Innovadora
+unidad: Extensión Facatativá
+temas_de: null
+bert:
+  N: 84
+  k: 2
+  estabilidad: 0.744
+  nivel: moderada
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_apoyo_ideas_emprendimientos_estudiantes
+  nombre: Apoyo a ideas y emprendimientos de estudiantes y comunidad
+  tema_bert: 0
+  firma: emprendimiento, proyectos, ideas, estudiantes, comunidad
+  palabras:
+  - emprendimiento
+  - proyectos
+  - ideas
+  - estudiantes
+  - comunidad
+  - emprendimientos
+  - innovación
+  - emprendimiento innovación
+  n_bert: 50
+  componente: Emprendimiento
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: emprendimiento, proyectos, ideas, estudiantes, comunidad);
+    tratan de que el comentario trata del emprendimiento, los proyectos, las ideas o la innovación de estudiantes y comunidad,
+    lo que corresponde a «Emprendimiento».'
+  instruccion: ¿El `comentario` trata del emprendimiento, los proyectos, las ideas o la innovación de estudiantes y comunidad?
+  criterio_true: Sí cuando el comentario trata del emprendimiento, los proyectos, las ideas o la innovación de estudiantes
+    y comunidad.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Viabilidad, recursos y financiación de los proyectos».
+  ejemplos_si:
+  - 'Es posible definirlo como una línea de acción, y los proyectos reconocen el trabajo comunitario. Desde ese punto se pueden
+    construir y atender las preguntas expuestas con la comunidad, resolviéndolas en el ámbito académico que la universidad
+    pone a disposición. Las ideas deben plantearse de forma integral: el trabajo con cada CAB debe incorporar igualmente ciencia,
+    tecnología e innovación. Reitero la necesidad de avanzar hacia un producto viable que aporte valor a la Universidad y
+    a los investigadores, aprovechando las investigaciones y desarrollos en curso.'
+  - A través del aprovechamiento de los recursos que brinda la universidad poder dar apoyo a las ideas innovadoras de los
+    estudiantes, teniendo relación con el emprendimiento local y comunitario del territorio
+  - La creación de oportunidades y apoyo para emprendimientos proyectos de investigación proyectos de grado mejorando la oportunidad
+  critico: false
+  otros_componentes:
+  - Innovación social
+- id: t2_viabilidad_recursos_financiacion_los
+  nombre: Viabilidad, recursos y financiación de los proyectos
+  tema_bert: 1
+  firma: recursos, procesos, fortalecer alianzas, burocracia procesos, laboral
+  palabras:
+  - recursos
+  - procesos
+  - fortalecer alianzas
+  - burocracia procesos
+  - laboral
+  - financiación
+  - oportunidades
+  - proyectos
+  n_bert: 34
+  componente: Ecosistemas de innovación
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: recursos, procesos, fortalecer alianzas, burocracia procesos,
+    laboral); tratan de que el comentario trata de recursos, financiación, viabilidad, procesos, alianzas o asesorías para
+    los proyectos, lo que corresponde a «Ecosistemas de innovación».'
+  instruccion: ¿El `comentario` trata de recursos, financiación, viabilidad, procesos, alianzas o asesorías para los proyectos?
+  criterio_true: Sí cuando el comentario trata de recursos, financiación, viabilidad, procesos, alianzas o asesorías para
+    los proyectos.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Apoyo a ideas y emprendimientos de estudiantes
+    y comunidad».
+  ejemplos_si:
+  - Estudiar la viabilidad y posteriormente destinar los recursos pertinentes
+  - Básicamente ver si el proyecto es viable o no para obtener los recursos necesarios para aplicarlo
+  - Asesorías continuas y modernización con ia
+  critico: false

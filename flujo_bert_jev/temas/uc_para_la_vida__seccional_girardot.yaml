@@ -1,0 +1,83 @@
+grupo: uc_para_la_vida__seccional_girardot
+transformacion: UC para la Vida
+unidad: Seccional Girardot
+temas_de: null
+bert:
+  N: 106
+  k: 2
+  estabilidad: 0.84
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_oportunidades_reales_practicas_pasantias
+  nombre: 'Oportunidades reales: prácticas, pasantías y vida laboral'
+  tema_bert: 0
+  firma: laboral, vida, experiencias, oportunidades, mejorar
+  palabras:
+  - laboral
+  - vida
+  - experiencias
+  - oportunidades
+  - mejorar
+  - aprendizaje
+  - comunidad
+  - transformó vida
+  n_bert: 55
+  componente: Creadores de Oportunidades
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: laboral, vida, experiencias, oportunidades, mejorar); tratan
+    de que el comentario trata de oportunidades, prácticas, aprendizaje o experiencias que preparan para la vida y el trabajo,
+    lo que corresponde a «Creadores de Oportunidades».'
+  instruccion: ¿El `comentario` trata de oportunidades, prácticas, aprendizaje o experiencias que preparan para la vida y
+    el trabajo?
+  criterio_true: Sí cuando el comentario trata de oportunidades, prácticas, aprendizaje o experiencias que preparan para la
+    vida y el trabajo.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Experiencias que transforman a los creadores de
+    oportunidades».
+  ejemplos_si:
+  - La universidad transformó mi vida porque me dio la oportunidad de aprender de crecer tanto a nivel personal a través de
+    reforzar principios y valores como el respeto para la sana convivencia profesional.  Se debe pensar a futuro en establecer
+    la política de bienestar emocional para que no solamente a los funcionarios se le asignen Actividades laborales, se debe
+    fortalecer en brindar beneficios y espacios para que los funcionarios sean felices cada día en su trabajo para lograr
+    los resultados.
+  - “La universidad puede transformar nuestra vida, pero esa transformación también depende de que nos dé oportunidades reales.
+    Necesitamos más y mejores campos de práctica, y mayores posibilidades de vinculación a través de pasantías y convenios.
+    No basta con formarnos académicamente; también necesitamos que la universidad nos ayude a dar el paso entre ser estudiantes
+    y convertirnos en profesionales con experiencia y oportunidades laborales.”
+  - ​La evolución planteada evidencia que la práctica pedagógica trasciende la simple cátedra magistral cuando se concibe
+    como un ecosistema compartido. Al permitir que el estudiante construya activamente sobre su experiencia, el docente no
+    solo cualifica su método de enseñanza, sino que fortalece su propia trayectoria profesional e investigativa dentro de
+    la comunidad universitaria.
+  critico: false
+- id: t2_experiencias_que_transforman_los
+  nombre: Experiencias que transforman a los creadores de oportunidades
+  tema_bert: 1
+  firma: creadores, experiencias, creadores oportunidades, conocimiento, pensar
+  palabras:
+  - creadores
+  - experiencias
+  - creadores oportunidades
+  - conocimiento
+  - pensar
+  - transformar vida
+  - actividades
+  - mejorar
+  n_bert: 51
+  componente: Persona Transhumana
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: creadores, experiencias, creadores oportunidades, conocimiento,
+    pensar); tratan de que el comentario trata de las experiencias de los creadores de oportunidades y de cómo la universidad
+    transforma su vida, su conocimiento o su forma de pensar, lo que corresponde a «Persona Transhumana».'
+  instruccion: ¿El `comentario` trata de las experiencias de los creadores de oportunidades y de cómo la universidad transforma
+    su vida, su conocimiento o su forma de pensar?
+  criterio_true: Sí cuando el comentario trata de las experiencias de los creadores de oportunidades y de cómo la universidad
+    transforma su vida, su conocimiento o su forma de pensar.
+  criterio_false: 'No cuando trata principalmente de otro asunto del grupo, «Oportunidades reales: prácticas, pasantías y
+    vida laboral».'
+  ejemplos_si:
+  - Más creatividad y llamativo para ser de esta transformación más interesante
+  - Nada, está transformación nos enriquece como creadores de oportunidades al permitirnos tener experiencias que nos aportan
+    en nuestra vida personal y laboral al estar en diversos campos de desarrollo, poder compartir estás mismas experiencias
+    con los demás creadores de oportunidades
+  - Modifica nuestro punto de vista
+  critico: false

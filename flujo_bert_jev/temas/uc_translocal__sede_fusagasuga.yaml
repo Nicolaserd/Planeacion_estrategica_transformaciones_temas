@@ -1,0 +1,110 @@
+grupo: uc_translocal__sede_fusagasuga
+transformacion: UC Translocal
+unidad: Sede Fusagasugá
+temas_de: null
+bert:
+  N: 226
+  k: 3
+  estabilidad: 0.898
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_integracion_cultural_entre_comunidades
+  nombre: Integración cultural entre comunidades y territorios
+  tema_bert: 0
+  firma: comunidades, territorios, proyectos, necesidades, internacional
+  palabras:
+  - comunidades
+  - territorios
+  - proyectos
+  - necesidades
+  - internacional
+  - integración
+  - conocimiento
+  - cultural
+  n_bert: 76
+  componente: Identidad translocal
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: comunidades, territorios, proyectos, necesidades, internacional);
+    tratan de que el comentario trata de las comunidades y los territorios, su cultura, sus necesidades, la integración entre
+    regiones o la proyección internacional, lo que corresponde a «Identidad translocal».'
+  instruccion: ¿El `comentario` trata de las comunidades y los territorios, su cultura, sus necesidades, la integración entre
+    regiones o la proyección internacional?
+  criterio_true: Sí cuando el comentario trata de las comunidades y los territorios, su cultura, sus necesidades, la integración
+    entre regiones o la proyección internacional.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Tecnología, innovación y proyectos entre programas»
+    o cuando trata principalmente de otro asunto del grupo, «Comunidad universitaria unida y conectada entre sedes».
+  ejemplos_si:
+  - Un poco más de culturalizacion e integración con personas de otras regiones
+  - Compartir un poco más la perspectiva dependiendo las cualidades de sus territorios y como se pueden vincular en la transformación
+    grupal
+  - '* Reconocer las necesidades y fortalezas de cada territorio, evitando aplicar soluciones iguales para realidades diferentes.
+    * Conectar saberes y experiencias entre estudiantes, docentes, comunidades y diferentes extensiones. * Generar proyectos
+    de investigación y extensión con impacto real, orientados a resolver problemáticas propias de cada región. * Compartir
+    el conocimiento entre los territorios, de manera que una experiencia exitosa en una extensión pueda convertirse en aprendizaje
+    para las demás. * Fortalecer el sentido de pertenencia, entendiendo que somos diferentes territorios, pero hacemos parte
+    de una misma universidad. * Formar profesionales capaces de transformar su entorno, con una visión local pero también
+    regional y global.'
+  critico: false
+- id: t2_tecnologia_innovacion_proyectos_entre
+  nombre: Tecnología, innovación y proyectos entre programas
+  tema_bert: 1
+  firma: tecnología, proyectos, innovación, desarrollo, gestores conocimiento
+  palabras:
+  - tecnología
+  - proyectos
+  - innovación
+  - desarrollo
+  - gestores conocimiento
+  - implementación
+  - tecnología innovación
+  - laboratorios
+  n_bert: 76
+  componente: Ciencia, tecnología e innovación
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: tecnología, proyectos, innovación, desarrollo, gestores conocimiento);
+    tratan de que el comentario trata de tecnología, innovación, proyectos, laboratorios, metodologías o integración entre
+    programas y sedes, lo que corresponde a «Ciencia, tecnología e innovación».'
+  instruccion: ¿El `comentario` trata de tecnología, innovación, proyectos, laboratorios, metodologías o integración entre
+    programas y sedes?
+  criterio_true: Sí cuando el comentario trata de tecnología, innovación, proyectos, laboratorios, metodologías o integración
+    entre programas y sedes.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Integración cultural entre comunidades y territorios»
+    o cuando trata principalmente de otro asunto del grupo, «Comunidad universitaria unida y conectada entre sedes».
+  ejemplos_si:
+  - Tecnologías despórtivas aplicadas
+  - La metodología
+  - Más integración entre los diferentes programas y sedes en proyectos
+  critico: false
+- id: t3_comunidad_universitaria_unida_conectada
+  nombre: Comunidad universitaria unida y conectada entre sedes
+  tema_bert: 2
+  firma: estudiantes, oportunidades, administrativos, comunidad, prácticas
+  palabras:
+  - estudiantes
+  - oportunidades
+  - administrativos
+  - comunidad
+  - prácticas
+  - docentes
+  - municipios
+  - conocimientos
+  n_bert: 74
+  componente: Redes y cooperación
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: estudiantes, oportunidades, administrativos, comunidad, prácticas);
+    tratan de que el comentario trata de la comunidad universitaria, lo que corresponde a «Redes y cooperación».'
+  instruccion: '¿El `comentario` trata de la comunidad universitaria (estudiantes, docentes, administrativos): su unión, bienestar,
+    oportunidades, prácticas o intercambio de conocimientos entre sedes?'
+  criterio_true: 'Sí cuando el comentario trata de la comunidad universitaria (estudiantes, docentes, administrativos): su
+    unión, bienestar, oportunidades, prácticas o intercambio de conocimientos entre sedes.'
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Integración cultural entre comunidades y territorios»
+    o cuando trata principalmente de otro asunto del grupo, «Tecnología, innovación y proyectos entre programas».
+  ejemplos_si:
+  - La universidad podría lograr una comunidad más unida, participativa y comprometida. También podría mejorar la atención
+    y el bienestar de estudiantes, docentes y administrativos, fortaleciendo la confianza y el sentido de pertenencia.  Así,
+    se podrían generar cambios positivos que permitan una universidad más cercana, humana y orientada a las necesidades de
+    toda la comunidad.
+  - Me gusta pensar en una universidad mas conectada entre sedes y seccionales en donde los estudiantes activos, los graduados
+    y demás actores de la universidad puedan conocer los procesos de cada sede e intercambiar saberes y actuaciones
+  - cómo universidad translocal. compartir conocimientos entre regiones
+  critico: false

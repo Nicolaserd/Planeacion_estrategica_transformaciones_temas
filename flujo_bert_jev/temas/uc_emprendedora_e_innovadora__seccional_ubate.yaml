@@ -1,0 +1,77 @@
+grupo: uc_emprendedora_e_innovadora__seccional_ubate
+transformacion: UC Emprendedora e Innovadora
+unidad: Seccional Ubaté
+temas_de: null
+bert:
+  N: 51
+  k: 2
+  estabilidad: 0.644
+  nivel: moderada
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_puente_entre_ideas_investigacion
+  nombre: Puente entre ideas, investigación y necesidades de la comunidad
+  tema_bert: 0
+  firma: comunidad, investigación, ideas, oportunidades, interacción
+  palabras:
+  - comunidad
+  - investigación
+  - ideas
+  - oportunidades
+  - interacción
+  - emprendimiento
+  - proyectos
+  - dar solución
+  n_bert: 30
+  componente: Innovación social
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: comunidad, investigación, ideas, oportunidades, interacción);
+    tratan de que el comentario trata de las ideas, la investigación y la interacción con la comunidad para darle soluciones,
+    lo que corresponde a «Innovación social».'
+  instruccion: ¿El `comentario` trata de las ideas, la investigación y la interacción con la comunidad para darle soluciones?
+  criterio_true: Sí cuando el comentario trata de las ideas, la investigación y la interacción con la comunidad para darle
+    soluciones.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Capital semilla, financiación y planeación emprendedora».
+  ejemplos_si:
+  - Aunque la innovación y el emprendimiento hacen parte fundamental de la formación profesional, no podemos dejar de lado
+    la investigación. La Universidad de Cundinamarca, bajo su modelo educativo MEDIT, debe participar activamente en el fortalecimiento
+    de los procesos investigativos, brindando apoyo, recursos y equipos que permitan a los estudiantes y docentes desarrollar
+    sus ideas. De esta manera, la investigación puede orientarse hacia la identificación y solución de problemáticas del territorio
+    local, transformando las propuestas académicas en soluciones reales que generen impacto y contribuyan al desarrollo de
+    la comunidad.
+  - Ajustaría el acompañamiento de la universidad, para que las ideas de los estudiantes no se queden solo en propuestas,
+    sino que tengan más apoyo, recursos y seguimiento para convertirse en soluciones reales para la comunid
+  - La Universidad debe ser un puente entre las ideas y necesidades de la comunidad para lograr alianzas y conocimientos que
+    permitan a los propuestas o necesidades dar término que permita responde a las solicitudes de la comunidad
+  critico: false
+- id: t2_capital_semilla_financiacion_planeacion
+  nombre: Capital semilla, financiación y planeación emprendedora
+  tema_bert: 1
+  firma: emprendimiento, planeación, desarrollo, apoyo capital, apoyo económico
+  palabras:
+  - emprendimiento
+  - planeación
+  - desarrollo
+  - apoyo capital
+  - apoyo económico
+  - semilla financiamiento
+  - solución propuesta
+  - servicio ofertar
+  n_bert: 21
+  componente: Emprendimiento
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: emprendimiento, planeación, desarrollo, apoyo capital, apoyo
+    económico); tratan de que el comentario trata del emprendimiento, su planeación, desarrollo o financiación, lo que corresponde
+    a «Emprendimiento».'
+  instruccion: ¿El `comentario` trata del emprendimiento, su planeación, desarrollo o financiación (capital semilla, apoyo
+    económico)?
+  criterio_true: Sí cuando el comentario trata del emprendimiento, su planeación, desarrollo o financiación (capital semilla,
+    apoyo económico).
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Puente entre ideas, investigación y necesidades
+    de la comunidad».
+  ejemplos_si:
+  - Gestionar los recursos, acompañamiento, apoyo con capital semilla para los emprendedores y que cada sede, seccional o
+    extensión tenga un producto o servicio que ofertar a nivel departamental o nacional que contribuya e impacte la comunidad
+  - Incluir la Gestión de Recursos como un capital inicial para iniciar la transformación
+  - Necesita una mejor planeación emprendedora para fomentar las empresas en la zona
+  critico: false

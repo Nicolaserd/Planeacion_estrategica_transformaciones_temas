@@ -1,0 +1,104 @@
+grupo: ucundinamarca__extension_chia
+transformacion: UCundinamarca
+unidad: Extensión Chía
+temas_de: null
+bert:
+  N: 32
+  k: 3
+  estabilidad: 0.77
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_infraestructura_campus_para_nuevas
+  nombre: Infraestructura y campus para nuevas carreras
+  tema_bert: 0
+  firma: docentes, misión, académicamente estructuralmente, amplio entendimiento, apoyo estudiantes
+  palabras:
+  - docentes
+  - misión
+  - académicamente estructuralmente
+  - amplio entendimiento
+  - apoyo estudiantes
+  - bienestar mejorar
+  - administración
+  - adquirir experiencia
+  n_bert: 13
+  componente: fuera_de_la_transformacion
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: docentes, misión, académicamente estructuralmente, amplio
+    entendimiento, apoyo estudiantes); tratan de que el comentario trata de mejorar la estructura, la infraestructura, el
+    campus, la administración o el apoyo a estudiantes y docentes, lo que corresponde a «fuera de la transformación».'
+  instruccion: ¿El `comentario` trata de mejorar la estructura, la infraestructura, el campus, la administración o el apoyo
+    a estudiantes y docentes?
+  criterio_true: Sí cuando el comentario trata de mejorar la estructura, la infraestructura, el campus, la administración
+    o el apoyo a estudiantes y docentes.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Procesos más ágiles y automatización» o cuando
+    solo dice que no ajustaría nada o solo valora el encuentro.
+  ejemplos_si:
+  - Claro, cómo universidad deberíamos de mejorar no solo académicamente sino estructuralmente crear más edificios para dar
+    oportunidades a nuevas carreras.
+  - Me parece que la universidad de cundinamarca va encaminada hacia la mejora para el territorio, debemos enfocarnos más
+    en la acción
+  - Me gustaría que mejoraran un poco la estructura de la universidad que hubiera un mejor campus
+  critico: false
+- id: t2_procesos_mas_agiles_automatizacion
+  nombre: Procesos más ágiles y automatización
+  tema_bert: 1
+  firma: procesos, información, agua lluvia, alianzas multiactor, automatización procesos
+  palabras:
+  - procesos
+  - información
+  - agua lluvia
+  - alianzas multiactor
+  - automatización procesos
+  - automatización
+  - calidad datos
+  - calidad programas
+  n_bert: 11
+  componente: UC Digital
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: procesos, información, agua lluvia, alianzas multiactor,
+    automatización procesos); tratan de que el comentario trata de procesos, información, automatización, alianzas o la calidad
+    de los datos y los programas, lo que corresponde a «UC Digital».'
+  instruccion: ¿El `comentario` trata de procesos, información, automatización, alianzas o la calidad de los datos y los programas?
+  criterio_true: Sí cuando el comentario trata de procesos, información, automatización, alianzas o la calidad de los datos
+    y los programas.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Infraestructura y campus para nuevas carreras»
+    o cuando solo dice que no ajustaría nada o solo valora el encuentro.
+  ejemplos_si:
+  - Mayor efectividad en los procesos
+  - Optimizar recursos como el tiempo
+  - Automatización de procesos
+  critico: false
+  otros_componentes:
+  - UC Inteligente
+- id: t3_agradecimientos_valoracion_del_encuentro
+  nombre: Agradecimientos y valoración del encuentro
+  tema_bert: 2
+  firma: billar mantengan, excelente buena, gracias ambiente, gracias hablemos, habilitado salón
+  palabras:
+  - billar mantengan
+  - excelente buena
+  - gracias ambiente
+  - gracias hablemos
+  - habilitado salón
+  - hablemos idioma
+  - islas
+  - lúdico excelente
+  n_bert: 8
+  componente: transformacion_en_general
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: billar mantengan, excelente buena, gracias ambiente, gracias
+    hablemos, habilitado salón); tratan de que el comentario valora positivamente el encuentro, la presentación o el Plan,
+    o agradece, sin proponer nada concreto, lo que corresponde a «la transformación en general».'
+  instruccion: '¿El `comentario` valora positivamente el encuentro, la presentación o el Plan, o agradece, sin proponer nada
+    concreto (el comentario responde a «Comparte aquí tu aporte»; ejemplos: «excelente», «muy buena orientación», «gracias
+    por todo»)?'
+  criterio_true: 'Sí cuando el comentario valora positivamente el encuentro, la presentación o el Plan, o agradece, sin proponer
+    nada concreto (el comentario responde a «Comparte aquí tu aporte»; ejemplos: «excelente», «muy buena orientación», «gracias
+    por todo»).'
+  criterio_false: No cuando propone o pide algo concreto para la universidad, aunque también agradezca.
+  ejemplos_si:
+  - Excelente
+  - Muchas gracias
+  - Gracias por todo
+  critico: false

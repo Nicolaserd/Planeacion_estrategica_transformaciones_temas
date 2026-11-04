@@ -1,0 +1,100 @@
+grupo: uc_digital__sede_fusagasuga
+transformacion: UC Digital
+unidad: Sede Fusagasugá
+temas_de: null
+bert:
+  N: 174
+  k: 3
+  estabilidad: 0.803
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_capacitacion_tecnologica_para_comunidad
+  nombre: Capacitación tecnológica para la comunidad universitaria
+  tema_bert: 0
+  firma: tecnología, tecnologías, capacitación, conocimiento, estudiantes
+  palabras:
+  - tecnología
+  - tecnologías
+  - capacitación
+  - conocimiento
+  - estudiantes
+  - tecnológica
+  - internet
+  - digitales
+  n_bert: 81
+  componente: Experiencia digital de la comunidad universitaria
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: tecnología, tecnologías, capacitación, conocimiento, estudiantes);
+    tratan de que el comentario trata de tecnología, capacitación tecnológica, conocimiento o el uso de las tecnologías por
+    estudiantes y comunidad, lo que corresponde a «Experiencia digital de la comunidad universitaria».'
+  instruccion: ¿El `comentario` trata de tecnología, capacitación tecnológica, conocimiento o el uso de las tecnologías por
+    estudiantes y comunidad?
+  criterio_true: Sí cuando el comentario trata de tecnología, capacitación tecnológica, conocimiento o el uso de las tecnologías
+    por estudiantes y comunidad.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Conectividad, infraestructura y sistema de información
+    integral» o cuando trata principalmente de otro asunto del grupo, «Buen uso de la inteligencia artificial».
+  ejemplos_si:
+  - Robustecer la conectividad, y capacitación tecnológica, lo que permite hacer uso eficiente e incluir nuevas tecnologías
+    que mejorará el qué hacer universitario
+  - Integracion con Los Estudiantes para aprnder a manejar de manera correcta todas estas nuevas tecnologias que intregra
+    la universidad
+  - Se espera que la tecnología funcione como apoyo para nuestra formación académica y debe ser accesible para todos
+  critico: false
+- id: t2_conectividad_infraestructura_sistema_informacion
+  nombre: Conectividad, infraestructura y sistema de información integral
+  tema_bert: 1
+  firma: digital, conectividad, tecnología, digitales, internet
+  palabras:
+  - digital
+  - conectividad
+  - tecnología
+  - digitales
+  - internet
+  - sistemas
+  - infraestructura
+  - digitalización
+  n_bert: 67
+  componente: Ecosistemas digitales
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: digital, conectividad, tecnología, digitales, internet);
+    tratan de que el comentario trata de lo digital, la conectividad, internet, los sistemas, la infraestructura o la digitalización,
+    lo que corresponde a «Ecosistemas digitales».'
+  instruccion: ¿El `comentario` trata de lo digital, la conectividad, internet, los sistemas, la infraestructura o la digitalización?
+  criterio_true: Sí cuando el comentario trata de lo digital, la conectividad, internet, los sistemas, la infraestructura
+    o la digitalización.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Capacitación tecnológica para la comunidad universitaria»
+    o cuando trata principalmente de otro asunto del grupo, «Buen uso de la inteligencia artificial».
+  ejemplos_si:
+  - Mejorar la fluidez de red, para que lo digital funcione mejor
+  - Robustecer  la   infraestructura tecnológica, y contar con un sistema de información integral
+  - Debe existir una oficina que gestione el proceso digital y se acorte esa brecha digital que existe en el momentos con
+    esas transformación  digital y y el eso de las tecnologias
+  critico: false
+- id: t3_buen_uso_inteligencia_artificial
+  nombre: Buen uso de la inteligencia artificial
+  tema_bert: 2
+  firma: inteligencia artificial, inteligencia, automatización, implementación, automatizados
+  palabras:
+  - inteligencia artificial
+  - inteligencia
+  - automatización
+  - implementación
+  - automatizados
+  - automatización procesos
+  - procesos formación
+  - capacitación
+  n_bert: 26
+  componente: Inteligencia artificial
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: inteligencia artificial, inteligencia, automatización, implementación,
+    automatizados); tratan de que el comentario trata de inteligencia artificial, automatización o su uso en procesos y formación,
+    lo que corresponde a «Inteligencia artificial».'
+  instruccion: ¿El `comentario` trata de inteligencia artificial, automatización o su uso en procesos y formación?
+  criterio_true: Sí cuando el comentario trata de inteligencia artificial, automatización o su uso en procesos y formación.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Capacitación tecnológica para la comunidad universitaria»
+    o cuando trata principalmente de otro asunto del grupo, «Conectividad, infraestructura y sistema de información integral».
+  ejemplos_si:
+  - Establecer e institucionalizar el "buen uso de la IA".
+  - Un uso más práctico para la inteligencia artificial
+  - El uso racional mediante la tecnología de innovación de la inteligencia artificial sin dejar de lado en factor humano
+  critico: false

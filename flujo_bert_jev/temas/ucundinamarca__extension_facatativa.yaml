@@ -1,0 +1,79 @@
+grupo: ucundinamarca__extension_facatativa
+transformacion: UCundinamarca
+unidad: Extensión Facatativá
+temas_de: null
+bert:
+  N: 40
+  k: 2
+  estabilidad: 0.85
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_laboratorios_infraestructura_formalizacion_laboral
+  nombre: Laboratorios, infraestructura y formalización laboral docente
+  tema_bert: 0
+  firma: laboratorios, laborales, mejoras, infraestructura, oportunidades
+  palabras:
+  - laboratorios
+  - laborales
+  - mejoras
+  - infraestructura
+  - oportunidades
+  - universidades
+  - graduados
+  - crecimiento
+  n_bert: 30
+  componente: UC para la Vida
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: laboratorios, laborales, mejoras, infraestructura, oportunidades);
+    tratan de que el comentario hace propuestas concretas de mejora: laboratorios, infraestructura, condiciones laborales,
+    oportunidades, graduados o crecimiento de la universidad, lo que corresponde a «UC para la Vida».'
+  instruccion: '¿El `comentario` hace propuestas concretas de mejora: laboratorios, infraestructura, condiciones laborales,
+    oportunidades, graduados o crecimiento de la universidad?'
+  criterio_true: 'Sí cuando el comentario hace propuestas concretas de mejora: laboratorios, infraestructura, condiciones
+    laborales, oportunidades, graduados o crecimiento de la universidad.'
+  criterio_false: No cuando solo dice que no ajustaría nada o solo valora el encuentro.
+  ejemplos_si:
+  - Continuar con la formalización laboral de los docentes TCO para alcanzar su vinculación q la nómina de planta. Esto con
+    el fin de continuar con el recurso humano que conoce el medit y puede fortalecer los procesos de acreditación y resignificación
+    de los programas
+  - Considero que la Universidad de Cundinamarca debe integrar los cinco caminos, fortaleciendo la transformación digital,
+    la conexión con las necesidades de cada territorio, los servicios ágiles, el emprendimiento y la formación basada en competencias
+    prácticas. Propongo incorporar más alianzas con empresas, proyectos reales y seguimiento a los graduados para evaluar
+    su desempeño e impacto profesional. Así, la universidad podrá responder a los cambios tecnológicos y laborales, manteniendo
+    la calidad educativa y la mejora continua.
+  - Se recomienda la mejora en la infraestructura de los laboratorios además de un equipamiento actualizado, infraestructura
+    de los salones, las zonas recreativas y culturales. Implementar carreras de humanidades, reconsiderar el funcionamiento
+    del MEDIT. Y una vinculación con demás universidades que puedan complementar la formación
+  critico: false
+- id: t2_valoracion_positiva_del_encuentro
+  nombre: Valoración positiva del encuentro
+  tema_bert: 1
+  firma: buena, buena gracias, buena orientacion, encuenta bueno, encuentros excelente
+  palabras:
+  - buena
+  - buena gracias
+  - buena orientacion
+  - encuenta bueno
+  - encuentros excelente
+  - excelente
+  - integralidad felicitaciones
+  - estratégico mejorar
+  n_bert: 10
+  componente: transformacion_en_general
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: buena, buena gracias, buena orientacion, encuenta bueno,
+    encuentros excelente); tratan de que el comentario valora positivamente el encuentro, la presentación o el Plan, o agradece,
+    sin proponer nada concreto, lo que corresponde a «la transformación en general».'
+  instruccion: '¿El `comentario` valora positivamente el encuentro, la presentación o el Plan, o agradece, sin proponer nada
+    concreto (el comentario responde a «Comparte aquí tu aporte»; ejemplos: «excelente», «muy buena orientación», «gracias
+    por todo»)?'
+  criterio_true: 'Sí cuando el comentario valora positivamente el encuentro, la presentación o el Plan, o agradece, sin proponer
+    nada concreto (el comentario responde a «Comparte aquí tu aporte»; ejemplos: «excelente», «muy buena orientación», «gracias
+    por todo»).'
+  criterio_false: No cuando propone o pide algo concreto para la universidad, aunque también agradezca.
+  ejemplos_si:
+  - buena
+  - Muy bueno
+  - Muy buena orientacion
+  critico: false

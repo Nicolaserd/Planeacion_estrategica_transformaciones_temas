@@ -1,0 +1,85 @@
+grupo: uc_inteligente__sede_fusagasuga
+transformacion: UC Inteligente
+unidad: Sede Fusagasugá
+temas_de: null
+bert:
+  N: 203
+  k: 2
+  estabilidad: 0.971
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_gestion_integracion_respuesta_problemas
+  nombre: Gestión, integración y respuesta a problemas reales del territorio
+  tema_bert: 0
+  firma: gestión, integración, comunidad, datos, problemas reales
+  palabras:
+  - gestión
+  - integración
+  - comunidad
+  - datos
+  - problemas reales
+  - práctica
+  - interacción
+  - conocimiento
+  n_bert: 114
+  componente: Gestión orientada a resultados
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: gestión, integración, comunidad, datos, problemas reales);
+    tratan de que el comentario trata de la gestión, los procesos, la integración, la articulación con otros actores o planes,
+    los datos o los problemas reales del territorio, lo que corresponde a «Gestión orientada a resultados».'
+  instruccion: ¿El `comentario` trata de la gestión, los procesos, la integración, la articulación con otros actores o planes,
+    los datos o los problemas reales del territorio?
+  criterio_true: Sí cuando el comentario trata de la gestión, los procesos, la integración, la articulación con otros actores
+    o planes, los datos o los problemas reales del territorio.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Universidad que aprende, se anticipa y responde
+    a la comunidad».
+  ejemplos_si:
+  - Trascender y acoger diferentes perspectivas que promuevan la anticipación en la toma de desiciones de una manera trasnlocal
+    que aporte a la comunidad, al ambiente, al sector productivo, a la investigación, de una manera integral, acogiendo tecnologías
+    que reúnan todos los puntos de vista, en pro de una toma de decisiones eficaz.
+  - Ajustar los convenios. Generar la I.A. institucional.
+  - Resuelve Las problematicaa del territorio permitiendo mejorara constantememte sin quedarse atras TE sin
+  critico: false
+- id: t2_universidad_que_aprende_anticipa
+  nombre: Universidad que aprende, se anticipa y responde a la comunidad
+  tema_bert: 1
+  firma: estudiantes, comunidad, conocimiento, necesidades, mejorar
+  palabras:
+  - estudiantes
+  - comunidad
+  - conocimiento
+  - necesidades
+  - mejorar
+  - problemáticas
+  - integración diferentes
+  - oportunidades
+  n_bert: 89
+  componente: Inteligencia institucional
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: estudiantes, comunidad, conocimiento, necesidades, mejorar);
+    tratan de que el comentario trata de una universidad que aprende, se anticipa, mejora y responde a las necesidades y problemáticas
+    de estudiantes y comunidad, lo que corresponde a «Inteligencia institucional».'
+  instruccion: ¿El `comentario` trata de una universidad que aprende, se anticipa, mejora y responde a las necesidades y problemáticas
+    de estudiantes y comunidad?
+  criterio_true: Sí cuando el comentario trata de una universidad que aprende, se anticipa, mejora y responde a las necesidades
+    y problemáticas de estudiantes y comunidad.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Gestión, integración y respuesta a problemas reales
+    del territorio».
+  ejemplos_si:
+  - PSi la Universidad de Cundinamarca logra reconocerse a sí misma y reconocer su terFortalecer una educación más pertinente,
+    contextualizada y comprometida con las necesidades de la comunidad. Esto permitiría comprender las realidades sociales,
+    culturales, ambientales y económicas de cada territorio, reconociendo sus particularidades y potencialidades.  De esta
+    manera, la Universidad no solo transmitiría conocimientos, sino que contribuiría a transformar positivamente su entorno,
+    promoviendo la participación, la identidad territorial, el sentido de pertenencia y la responsabilidad social. Reconocer
+    nuestro territorio significa entender que la formación de los estudiantes debe estar conectada con las realidades que
+    viven sus comunidades y con los desafíos que enfrenta la región.  En este sentido, el MEDIT orienta a la Universidad hacia
+    una formación que trasciende las aulas y busca generar impacto en el territorio, formando personas capaces de aportar
+    a la transformación de su contexto desde el conocimiento, la innovación y el compromiso con su comunidad.
+  - Una universidad así es capaz de prevenir problemas grandes, se adapta a las diferente circunstancias que se le puede presentar
+    en el diferentes camino, consiente de tomar decisiones y es capaz de progresar. Los encuentros son importantes, porque
+    estos encuentros hablan desde nuestra experiencia y escuchar a los demás. Determinar los problemas del territorio y de
+    la comunidad universitaria
+  - Una universidad así sería capaz de aprender del presente, anticiparse al futuro y transformar las necesidades en oportunidades
+    para su comunidad.
+  critico: false

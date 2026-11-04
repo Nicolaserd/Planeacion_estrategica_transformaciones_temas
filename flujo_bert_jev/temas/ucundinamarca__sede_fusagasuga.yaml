@@ -1,0 +1,118 @@
+grupo: ucundinamarca__sede_fusagasuga
+transformacion: UCundinamarca
+unidad: Sede Fusagasugá
+temas_de: null
+bert:
+  N: 21
+  k: 3
+  estabilidad: 0.737
+  nivel: moderada
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_investigacion_oferta_programas_impacto
+  nombre: Investigación, oferta de programas e impacto en la sociedad
+  tema_bert: 0
+  firma: investigación, oportunidad, profesionales, educación, universidades
+  palabras:
+  - investigación
+  - oportunidad
+  - profesionales
+  - educación
+  - universidades
+  - estudiantes
+  - aportar producción
+  - títulos experiencia
+  n_bert: 9
+  componente: UC Translocal
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: investigación, oportunidad, profesionales, educación, universidades);
+    tratan de que el comentario trata de investigación, educación, oferta de programas, oportunidades profesionales o el impacto
+    de la universidad, lo que corresponde a «UC Translocal».'
+  instruccion: ¿El `comentario` trata de investigación, educación, oferta de programas, oportunidades profesionales o el impacto
+    de la universidad?
+  criterio_true: Sí cuando el comentario trata de investigación, educación, oferta de programas, oportunidades profesionales
+    o el impacto de la universidad.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Articulación con los planes de desarrollo territorial»
+    o cuando solo dice que no ajustaría nada o solo valora el encuentro.
+  ejemplos_si:
+  - Mi aportes es, considero que la universidad para lograr mayor creditacion debería abrir más convocatoria de programas,
+    ya que siento que esa es la debilidad que tenemos, que al momento de que los jóvenes salgan del colegio no hay esas oportunidad
+    para entrar a los programas que a ellos les gusten, estamos perdiendo a esos nuevos creadores de oportunidad por qué buscan
+    en otra universidad, la pregunta que tiene la Udec que a mí me guste sino no está la carrera no que yo quiero, con ese
+    pensamiento se van buscando nuevas carreras en otro lado, también otro aporte desde la carrera de administración de empresas,
+    es el tema de salidas pedagógicas, es limitante y eso que salimos para ser los nuevos empresarios de crear nuestros propios
+    negocios, pero si no nos enfocamos en nuestra propia ciudad, de ver qué es lo que tiene, de lo que podemos aportar en
+    el sentido de producción, tenemos exportación de aguacate, nuestros alrededores exportaciones de Uchiva pero si no nos
+    da la oportunidad de conocer, de que desde primeros semestres salgamos a ver la producción,  sino vemos la realidad de
+    como es una empresa como vamos a ser profesionales, si nos vemos la realidad de una organización, de que sea solo teórico
+    de 4 paredes, sino venga que veamos cómo es dentro el negocio,
+  - La universidad debe trabajar para generar un impacto mayor y más significativo en la sociedad. Ejemplo, los resultados
+    en pruebas estandarizadas son cada año peores y la facultad de educación no ha aportado en absoluto a la mejora.
+  - No dejen a un lado la investigación. Si bien, es translocal, no impide que podamos hacer publicaciones de alto impacto.
+    Si quieren superar otras universidades hay que ser buenos en investigación.  Es la mayor representación de las universidades
+    en cuanto a ranking nacional e internacional.  Así que fortalecer esa parte de investigación. Obviamente valorar a los
+    docentes con títulos y experiencia en este campo y apoyarlos en sus ideas.
+  critico: false
+- id: t2_articulacion_con_los_planes
+  nombre: Articulación con los planes de desarrollo territorial
+  tema_bert: 1
+  firma: planes desarrollo, administrativo, administrativo dialogue, articulación gobierno, competitividad traslocal
+  palabras:
+  - planes desarrollo
+  - administrativo
+  - administrativo dialogue
+  - articulación gobierno
+  - competitividad traslocal
+  - café estrategia
+  - desarrollo institucional
+  - desarrollo territorial
+  n_bert: 7
+  componente: UC Translocal
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: planes desarrollo, administrativo, administrativo dialogue,
+    articulación gobierno, competitividad traslocal); tratan de que el comentario trata de articular la universidad con los
+    planes de desarrollo, el gobierno o el desarrollo territorial, lo que corresponde a «UC Translocal».'
+  instruccion: ¿El `comentario` trata de articular la universidad con los planes de desarrollo, el gobierno o el desarrollo
+    territorial?
+  criterio_true: Sí cuando el comentario trata de articular la universidad con los planes de desarrollo, el gobierno o el
+    desarrollo territorial.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Investigación, oferta de programas e impacto en
+    la sociedad» o cuando solo dice que no ajustaría nada o solo valora el encuentro.
+  ejemplos_si:
+  - Pienso que la Sede de Fusagasugá debe tener un Director administrativo que dialogue con la provincia, para lograr la visión
+    propuesta en nuestro nuevo Plan de Desarrollo Institucional
+  - La soluciones a los problemas del territorio se deberían articular directamente con los planes de desarrollo territorial
+    en el área de influencia
+  - Articulación con los planes de desarrollo para ser realmente un sujeto actuante y transformador
+  critico: false
+- id: t3_agradecimientos_ofrecimientos_apoyo
+  nombre: Agradecimientos y ofrecimientos de apoyo
+  tema_bert: 2
+  firma: aprendido, aprendido importantes, ayudan gusto, ciencias deporte, conecte agradecimiento
+  palabras:
+  - aprendido
+  - aprendido importantes
+  - ayudan gusto
+  - ciencias deporte
+  - conecte agradecimiento
+  - conocimiento
+  - cultive conocimiento
+  - cátedra inteligencia
+  n_bert: 5
+  componente: transformacion_en_general
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: aprendido, aprendido importantes, ayudan gusto, ciencias
+    deporte, conecte agradecimiento); tratan de que el comentario valora positivamente el encuentro, la presentación o el
+    Plan, o agradece, sin proponer nada concreto, lo que corresponde a «la transformación en general».'
+  instruccion: '¿El `comentario` valora positivamente el encuentro, la presentación o el Plan, o agradece, sin proponer nada
+    concreto (el comentario responde a «Comparte aquí tu aporte»; ejemplos: «excelente», «muy buena orientación», «gracias
+    por todo») o se ofrece a ayudar?'
+  criterio_true: 'Sí cuando el comentario valora positivamente el encuentro, la presentación o el Plan, o agradece, sin proponer
+    nada concreto (el comentario responde a «Comparte aquí tu aporte»; ejemplos: «excelente», «muy buena orientación», «gracias
+    por todo») o se ofrece a ayudar.'
+  criterio_false: No cuando propone o pide algo concreto para la universidad, aunque también agradezca.
+  ejemplos_si:
+  - Gracias, he aprendido aspectos importantes de la proyección de la UDEC
+  - Muy buena presentacion
+  - Me encanta el tema de creea estrategias IA y normas para su uso, si necesitan ayudan con gusto estoy dispuesto hacerlo…[PERSONA],
+    facultad ciencias del deporte
+  critico: false

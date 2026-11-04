@@ -1,0 +1,86 @@
+grupo: uc_translocal__extension_facatativa
+transformacion: UC Translocal
+unidad: Extensión Facatativá
+temas_de: null
+bert:
+  N: 93
+  k: 2
+  estabilidad: 0.917
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_proyectos_conjuntos_interaccion_entre
+  nombre: Proyectos conjuntos e interacción entre sedes para el territorio
+  tema_bert: 0
+  firma: proyectos, interacción, necesidades, ideas, innovación
+  palabras:
+  - proyectos
+  - interacción
+  - necesidades
+  - ideas
+  - innovación
+  - territorios
+  - territoriales
+  - contextos
+  n_bert: 61
+  componente: Interacción Social Universitaria
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: proyectos, interacción, necesidades, ideas, innovación);
+    tratan de que el comentario trata de proyectos, ideas, innovación o interacción con los territorios, sus contextos y sus
+    necesidades, lo que corresponde a «Interacción Social Universitaria».'
+  instruccion: ¿El `comentario` trata de proyectos, ideas, innovación o interacción con los territorios, sus contextos y sus
+    necesidades?
+  criterio_true: Sí cuando el comentario trata de proyectos, ideas, innovación o interacción con los territorios, sus contextos
+    y sus necesidades.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Articulación de sedes, programas y funcionarios
+    (incluye clima laboral)».
+  ejemplos_si:
+  - Generar espacios en donde se socialicen losmoribelmas lo alea entre todas las sedes, lo cual permitiría tener sinergias
+    entre todos los actores dea UdeC y de esta manera propiciar posibles soluciones a los problemas planteados. Además de
+    eso establecer proyectos conjuntos que impacten en toda Cundinamarca
+  - Ayudar a fortalecer el territorio en aspectos culturales digitales y sociales para apoyar el desarrollo del mismo.  Ayudar
+    a identificar problemáticas cercanas para poder globalizarlas.
+  - Podríamos proponer mejores proyectos porque entenderíamos mejor los diferentes contextos de los lugares, y que se podría
+    tener mejor colaboración entre todos
+  critico: false
+  otros_componentes:
+  - Impacto territorial
+- id: t2_articulacion_sedes_programas_funcionarios
+  nombre: Articulación de sedes, programas y funcionarios (incluye clima laboral)
+  tema_bert: 1
+  firma: estudiantes, procesos, funcionarios, necesidades, programas
+  palabras:
+  - estudiantes
+  - procesos
+  - funcionarios
+  - necesidades
+  - programas
+  - diferentes territorios
+  - formación
+  - convenios
+  n_bert: 32
+  componente: Redes y cooperación
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: estudiantes, procesos, funcionarios, necesidades, programas);
+    tratan de que el comentario trata de articular sedes, programas, procesos, funcionarios o convenios, de la formación o
+    de las necesidades de estudiantes y personal, lo que corresponde a «Redes y cooperación».'
+  instruccion: ¿El `comentario` trata de articular sedes, programas, procesos, funcionarios o convenios, de la formación o
+    de las necesidades de estudiantes y personal?
+  criterio_true: Sí cuando el comentario trata de articular sedes, programas, procesos, funcionarios o convenios, de la formación
+    o de las necesidades de estudiantes y personal.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Proyectos conjuntos e interacción entre sedes
+    para el territorio».
+  ejemplos_si:
+  - Propongo fortalecer la formación práctica, la investigación y la interacción social universitaria mediante el uso de datos
+    e inteligencia artificial, conectando las sedes y extensiones con las necesidades de cada territorio. Asimismo, crear
+    redes de colaboración entre estudiantes, docentes, graduados y empresas para compartir conocimientos, impulsar la innovación
+    y responder a los retos regionales e internacionales, manteniendo una identidad institucional común y promoviendo la mejora
+    continua de la calidad educativa.
+  - La conexión entre diferentes sedes de la propia universidad y las diferentes universidades para identificar y relacionar
+    problemáticas en los diferentes territorios
+  - La universidad requiere prestar más atención al clima laboral si se fortalece se logra trabajar de manera más articulada
+    y equilibrada, optimizando procesos aportando desde las cualidades de cada rol y cada cargo , potencializando capacidades
+    y reconociendo las, no solo del personal con altos cargos sino también de cargos desde servicios generales, mantenimiento,
+    contratos APA... Si se reconocen de forma equitativa y se empieza un trabajo articulado logramos impactar y alcanzar objetivos
+    institucionales de manera traslocal.
+  critico: false

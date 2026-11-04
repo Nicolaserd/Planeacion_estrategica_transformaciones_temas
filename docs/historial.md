@@ -81,6 +81,22 @@ A pedido de Nicolás, se hizo un análisis **paralelo e independiente** de la cl
   - guía: `docs/bertopic.md`;
   - Excel: `outputs_bertopic/` (lista única de temas, resumen y un archivo por grupo).
 
+## 2026-10-29 · Flujo combinado BERTopic → Jev
+
+A pedido de Nicolás, se creó un tercer flujo en `flujo_bert_jev/`, independiente de los dos anteriores. Escribe solo en su carpeta, en `data/flujo_bert_jev/` y en su propia caché de Jev.
+
+- **Cómo funciona:**
+  - **BERT** encuentra, con los datos en crudo y todas las fechas, el número óptimo de temas y los temas de cada unidad × transformación (41 grupos, 95 temas);
+  - **Claude** liga cada tema a un componente de la transformación y redacta su pregunta;
+  - **Jev** clasifica cada comentario con umbral 0,70 y varios temas por comentario.
+- **Control:** el acuerdo BERT–Jev es el % de comentarios que tienen en Jev el tema que les dio BERT.
+  - Con preguntas específicas era 30 %. Al redactarlas con la amplitud de cada grupo de BERT («trata de …») subió a 56 %.
+  - El resto son, sobre todo, comentarios que BERT tuvo que ubicar en algún grupo sin que traten del tema.
+- **Costo de Jev:** 0,18 USD en dos rondas.
+- **Salidas:**
+  - Excel de temas y de clasificación por unidad en `flujo_bert_jev/salidas/`; la clasificación con Nombre y Correo no se sube, su copia anonimizada sí;
+  - informe Word con mapas de vectores, curvas de estabilidad, nubes de palabras y gráficas de repetición en `flujo_bert_jev/informe/`.
+
 ## Pendientes y puntos abiertos
 
 - **Sin unidades pendientes** con los datos del 29 oct 2026: Ubaté, Zipaquirá, Girardot, Soacha, Chía, Fusagasugá y Facatativá están procesadas en las 5 transformaciones.

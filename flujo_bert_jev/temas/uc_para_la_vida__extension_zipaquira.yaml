@@ -1,0 +1,81 @@
+grupo: uc_para_la_vida__extension_zipaquira
+transformacion: UC para la Vida
+unidad: Extensión Zipaquirá
+temas_de: null
+bert:
+  N: 25
+  k: 2
+  estabilidad: 0.606
+  nivel: moderada
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_oportunidades_laborales_salud_mental
+  nombre: Oportunidades laborales, salud mental y estabilidad de docentes
+  tema_bert: 0
+  firma: oportunidades, docentes, profesional, investigación, estabilidad laboral
+  palabras:
+  - oportunidades
+  - docentes
+  - profesional
+  - investigación
+  - estabilidad laboral
+  - conocimiento
+  - capacitación
+  - esperamos
+  n_bert: 19
+  componente: Desarrollo del talento humano
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: oportunidades, docentes, profesional, investigación, estabilidad
+    laboral); tratan de que el comentario trata de oportunidades profesionales y laborales, investigación, capacitación o
+    la estabilidad y salud mental de los docentes, lo que corresponde a «Desarrollo del talento humano».'
+  instruccion: ¿El `comentario` trata de oportunidades profesionales y laborales, investigación, capacitación o la estabilidad
+    y salud mental de los docentes?
+  criterio_true: Sí cuando el comentario trata de oportunidades profesionales y laborales, investigación, capacitación o la
+    estabilidad y salud mental de los docentes.
+  criterio_false: 'No cuando trata principalmente de otro asunto del grupo, «Aprender más allá del aula: intercambios y salidas».'
+  ejemplos_si:
+  - Brindar oportunidades de crecimiento personal y profesional, apoyando a los recién graduados en la construcción de su
+    primera experiencia laboral y abriendo las puertas a profesionales de diferentes áreas, con el propósito de conformar
+    un equipo diverso, capacitado y comprometido con la transformación y el desarrollo de la comunidad. Un. Modelo de contratacion
+    mas prolongado el cual pueda generar una mayos estabilidad
+  - Abre oportunidades al mundo laboral, aún estando vinculado a la universidad. Tambien ayudando a tener convenios con diferentes
+    instituciones
+  - Creo que una universidad que realmente transforma vidas también debe cuidar a quienes la hacen posible. Eso implica fortalecer
+    el acompañamiento en salud mental, no solo para los estudiantes, sino también para los docentes; generar verdaderas oportunidades
+    por parte de la institución; y consolidar una Escuela de Formación Docente más pertinente, con cursos que respondan a
+    todas las áreas del conocimiento. Mejores oportunidades de estabilidad laboral y mejores oportunidades como docentes para
+    acceder a investigación
+  critico: false
+  otros_componentes:
+  - Felicidad y bienestar
+- id: t2_aprender_mas_alla_del
+  nombre: 'Aprender más allá del aula: intercambios y salidas'
+  tema_bert: 1
+  firma: aprender, lugares, allá aula, adultos, aula clase
+  palabras:
+  - aprender
+  - lugares
+  - allá aula
+  - adultos
+  - aula clase
+  - bienestar colectivo
+  - aprender música
+  - aprendizaje
+  n_bert: 6
+  componente: Creadores de Oportunidades
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: aprender, lugares, allá aula, adultos, aula clase); tratan
+    de que el comentario trata de aprender más allá del aula, con salidas, intercambios, otros lugares o personas, lo que
+    corresponde a «Creadores de Oportunidades».'
+  instruccion: ¿El `comentario` trata de aprender más allá del aula, con salidas, intercambios, otros lugares o personas?
+  criterio_true: Sí cuando el comentario trata de aprender más allá del aula, con salidas, intercambios, otros lugares o personas.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Oportunidades laborales, salud mental y estabilidad
+    de docentes».
+  ejemplos_si:
+  - La universidad es un espacio donde podemos conocer personas, pero también los estudiantes se esfuerzan por salir adelante,
+    muchos de nosotros trabajamos para sembrar en otras personas, niños y adultos las ganas de estudiar y aprender la música.
+  - Fortalecer el sentido humano de cercanía entre los gestores del conocimiento y la Universidad creando vínculos que vas
+    más allá del aula de clase
+  - Siento que es más de lo mismo, algo que sería bueno sería hacer salidas, intercambios conocer músicos de otros lugares,
+    que traigan músicos famosos, que todo sea enfocado en aprender más y con gente de más lugares del mundo
+  critico: false

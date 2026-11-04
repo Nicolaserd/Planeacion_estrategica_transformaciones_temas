@@ -1,0 +1,77 @@
+grupo: uc_para_la_vida__sede_fusagasuga
+transformacion: UC para la Vida
+unidad: Sede Fusagasugá
+temas_de: null
+bert:
+  N: 207
+  k: 2
+  estabilidad: 0.852
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_formacion_contratacion_docente_acompanamiento
+  nombre: Formación, contratación docente, acompañamiento y calidad de vida
+  tema_bert: 0
+  firma: vida, formación, laboral, bienestar, oportunidades
+  palabras:
+  - vida
+  - formación
+  - laboral
+  - bienestar
+  - oportunidades
+  - conocimientos
+  - comunidad
+  - crecimiento
+  n_bert: 135
+  componente: Desarrollo del talento humano
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: vida, formación, laboral, bienestar, oportunidades); tratan
+    de que el comentario trata de la formación, las condiciones laborales, el bienestar, el acompañamiento o las oportunidades
+    de crecimiento de la comunidad universitaria, lo que corresponde a «Desarrollo del talento humano».'
+  instruccion: ¿El `comentario` trata de la formación, las condiciones laborales, el bienestar, el acompañamiento o las oportunidades
+    de crecimiento de la comunidad universitaria?
+  criterio_true: Sí cuando el comentario trata de la formación, las condiciones laborales, el bienestar, el acompañamiento
+    o las oportunidades de crecimiento de la comunidad universitaria.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Experiencias, valores y transformación personal».
+  ejemplos_si:
+  - Mejorar el porcentaje de apoyo posgradual del 90% y de horas para trabajar en esa formación. Mejorar la contratación docente
+    en contratar a los docentes que llevan años trabajando han la udec y dejan personas externas. Mejorar el estatuto docente.
+    Que los proyectos de investigación, apoyos mejoren
+  - Creo que la universidad tendría que mejorar el acompañamiento al estudiante, la comunicación y las oportunidades prácticas.
+    No solo se trata de recibir clases, sino de sentir que la universidad realmente nos prepara y nos escucha para enfrentar
+    el mundo laboral
+  - Provisionalidad en la contratación docente, apoyo en la formación académica, calidad de vida
+  critico: false
+  otros_componentes:
+  - Felicidad y bienestar
+- id: t2_experiencias_valores_transformacion_personal
+  nombre: Experiencias, valores y transformación personal
+  tema_bert: 1
+  firma: personas, vida, experiencias, valores, oportunidades
+  palabras:
+  - personas
+  - vida
+  - experiencias
+  - valores
+  - oportunidades
+  - ideas
+  - bienestar
+  - tecnología
+  n_bert: 72
+  componente: Persona Transhumana
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: personas, vida, experiencias, valores, oportunidades); tratan
+    de que el comentario trata de las personas, los valores, las experiencias o de cómo la universidad transforma la vida,
+    lo que corresponde a «Persona Transhumana».'
+  instruccion: ¿El `comentario` trata de las personas, los valores, las experiencias o de cómo la universidad transforma la
+    vida?
+  criterio_true: Sí cuando el comentario trata de las personas, los valores, las experiencias o de cómo la universidad transforma
+    la vida.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Formación, contratación docente, acompañamiento
+    y calidad de vida».
+  ejemplos_si:
+  - La posiblidad de transformar hacia lo cultural, de que no solamente nos quedamos en 4 paredes sino vivir la experiencia
+    de la realidad, de la sociedad
+  - Que nos cambia la vida
+  - Conocer diferentes realidades de vida permite transformar el pensamiento
+  critico: false

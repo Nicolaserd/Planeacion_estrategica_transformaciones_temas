@@ -1,0 +1,82 @@
+grupo: ucundinamarca__seccional_girardot
+transformacion: UCundinamarca
+unidad: Seccional Girardot
+temas_de: null
+bert:
+  N: 41
+  k: 2
+  estabilidad: 0.517
+  nivel: débil
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_aprendizaje_digital_calidad_docente
+  nombre: Aprendizaje digital, calidad docente y continuidad del Plan
+  tema_bert: 0
+  firma: programa, computadores, gestores, estudiantes, enfoque
+  palabras:
+  - programa
+  - computadores
+  - gestores
+  - estudiantes
+  - enfoque
+  - aprendizaje
+  - ingeniería
+  - ingeniería software
+  n_bert: 24
+  componente: transformacion_en_general
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: programa, computadores, gestores, estudiantes, enfoque);
+    tratan de que el comentario trata de los programas, el aprendizaje, recursos como computadores, la calidad de los gestores
+    o la continuidad del Plan, lo que corresponde a «la transformación en general».'
+  instruccion: ¿El `comentario` trata de los programas, el aprendizaje, recursos como computadores, la calidad de los gestores
+    o la continuidad del Plan?
+  criterio_true: Sí cuando el comentario trata de los programas, el aprendizaje, recursos como computadores, la calidad de
+    los gestores o la continuidad del Plan.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Prácticas laborales, nuevas especialidades y futuro
+    de los estudiantes».
+  ejemplos_si:
+  - Implementar un aprendizaje de las herramientas digitales (IAs), a través de los valores como responsabilidad y el autoaprendizaje
+    cognitivo, con un enfoque en el desarrollo de habilidades investigativas. Además, no solo un enfoque inteligente, sino,
+    con un mejoramiento y desarrollo auto sostenible, de está manera la solución de problemas de carácter mundial. Para el
+    ámbito translocal  es recomendable realizar un banco de problemáticas unidos cona comunidades y administraciones municipales
+    y departamentales
+  - Pienso que localmente en Girardot se debe evaluar la calidad de docentes y personal administrativo que hay, hablan de
+    un MEDIT pero algunas personas que están acá en el plantel en especial gestores de aprendizaje, vienen a hacer nada, a
+    sentarse a dejar un trabajo y que lo suban a plataforma y ya, eso no es MEDIT, hace falta intervención por parte de el
+    alto mando, y hay otros casos más que dejan mucho que pensar.
+  - Continuidad en la construcción del plan estratégico, es importante hacer visibles los aportes de los gestores de conocimiento
+    y creadores de oportunidades.
+  critico: false
+- id: t2_practicas_laborales_nuevas_especialidades
+  nombre: Prácticas laborales, nuevas especialidades y futuro de los estudiantes
+  tema_bert: 1
+  firma: futuro, estudiantes, tesis artículo, charlas, prácticas
+  palabras:
+  - futuro
+  - estudiantes
+  - tesis artículo
+  - charlas
+  - prácticas
+  - laboral
+  - adecuado
+  - vivir diferente
+  n_bert: 17
+  componente: UC para la Vida
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: futuro, estudiantes, tesis artículo, charlas, prácticas);
+    tratan de que el comentario trata del futuro de los estudiantes: prácticas, pasantías, opciones de grado, especialidades
+    o charlas, lo que corresponde a «UC para la Vida».'
+  instruccion: '¿El `comentario` trata del futuro de los estudiantes: prácticas, pasantías, opciones de grado, especialidades
+    o charlas?'
+  criterio_true: 'Sí cuando el comentario trata del futuro de los estudiantes: prácticas, pasantías, opciones de grado, especialidades
+    o charlas.'
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Aprendizaje digital, calidad docente y continuidad
+    del Plan».
+  ejemplos_si:
+  - La universidad debería priorizar las pasantías o las prácticas laborales de los estudiantes. No intimidar lo y proponerle
+    repetidamente hacer tesis o artículo como si la pasantía fuera lo peor. Enfocarse en convenios y estar pendiente de renovarlos.
+    En su defecto hacer que la pasantía sea obligatoria y ahí si exigir tesis o artículo
+  - Me gustaría que en un plazo de tiempo a futuro añadieran más especialidades para atraer a más personas y así la universidad
+    tuviera más poder educativo
+  - Excelente las propuestas como universidad trasmoderna
+  critico: false

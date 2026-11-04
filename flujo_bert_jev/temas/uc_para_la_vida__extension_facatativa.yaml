@@ -1,0 +1,111 @@
+grupo: uc_para_la_vida__extension_facatativa
+transformacion: UC para la Vida
+unidad: Extensión Facatativá
+temas_de: null
+bert:
+  N: 82
+  k: 3
+  estabilidad: 0.727
+  nivel: moderada
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_bienestar_salud_mental_experiencias
+  nombre: Bienestar, salud mental y experiencias formativas (salidas pedagógicas)
+  tema_bert: 0
+  firma: bienestar, estudiantes, experiencias, actividades, programas
+  palabras:
+  - bienestar
+  - estudiantes
+  - experiencias
+  - actividades
+  - programas
+  - aprendizaje
+  - biblioteca
+  - docentes
+  n_bert: 34
+  componente: Felicidad y bienestar
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: bienestar, estudiantes, experiencias, actividades, programas);
+    tratan de que el comentario trata del bienestar, la salud mental, las actividades, los programas o las experiencias formativas
+    de estudiantes y docentes, lo que corresponde a «Felicidad y bienestar».'
+  instruccion: ¿El `comentario` trata del bienestar, la salud mental, las actividades, los programas o las experiencias formativas
+    de estudiantes y docentes?
+  criterio_true: Sí cuando el comentario trata del bienestar, la salud mental, las actividades, los programas o las experiencias
+    formativas de estudiantes y docentes.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Transformar vidas y formas de pensar» o cuando
+    trata principalmente de otro asunto del grupo, «Bienestar laboral y nivelación salarial de administrativos».
+  ejemplos_si:
+  - Que se puedan ampliar mas experiencias formativas (salidas pedagógica)
+  - Poder tener más experiencia de salidas pedagógicas ya que permite unir la teoría con la práctica y así poder brindar un
+    bienestar general tanto para el creador de oportunidades y comunidad en general
+  - Propongo que la Universidad de Cundinamarca fortalezca, durante los próximos diez años, una cultura institucional que
+    priorice la salud mental, el bienestar emocional y la felicidad de estudiantes, docentes y graduados. Para lograrlo, puede
+    ofrecer acompañamiento psicológico, espacios de integración, programas de autocuidado y estrategias que promuevan el equilibrio
+    entre la vida personal y profesional. Una universidad que forme excelentes profesionales, pero que también cuide a las
+    personas y contribuya a una sociedad más humana, feliz y saludable.
+  critico: false
+- id: t2_transformar_vidas_formas_pensar
+  nombre: Transformar vidas y formas de pensar
+  tema_bert: 1
+  firma: vida, pensamiento, cambio, creadores, experiencias
+  palabras:
+  - vida
+  - pensamiento
+  - cambio
+  - creadores
+  - experiencias
+  - ver mundo
+  - pensamiento crítico
+  - contribuir
+  n_bert: 30
+  componente: Persona Transhumana
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: vida, pensamiento, cambio, creadores, experiencias); tratan
+    de que el comentario trata de transformar vidas, formas de pensar o de ver el mundo a través de experiencias, lo que corresponde
+    a «Persona Transhumana».'
+  instruccion: ¿El `comentario` trata de transformar vidas, formas de pensar o de ver el mundo a través de experiencias?
+  criterio_true: Sí cuando el comentario trata de transformar vidas, formas de pensar o de ver el mundo a través de experiencias.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Bienestar, salud mental y experiencias formativas
+    (salidas pedagógicas)» o cuando trata principalmente de otro asunto del grupo, «Bienestar laboral y nivelación salarial
+    de administrativos».
+  ejemplos_si:
+  - Una suma de experiencias transformadores y generadoras  de conciencia de cómo desarrollarse en un entorno de vida saludable
+    y exitoso
+  - La manera de pensar, y saber afrontarlos los desafíos de la vida...
+  - El mayor objetivo es transformar vidas, formar personas
+  critico: false
+- id: t3_bienestar_laboral_nivelacion_salarial
+  nombre: Bienestar laboral y nivelación salarial de administrativos
+  tema_bert: 2
+  firma: bienestar, oportunidades, salarial, talento humano, beneficios
+  palabras:
+  - bienestar
+  - oportunidades
+  - salarial
+  - talento humano
+  - beneficios
+  - cambiaría
+  - administrativos
+  - económicos
+  n_bert: 18
+  componente: Desarrollo del talento humano
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: bienestar, oportunidades, salarial, talento humano, beneficios);
+    tratan de que el comentario trata del bienestar laboral, el salario, los beneficios, los incentivos o las oportunidades
+    del talento humano y los administrativos, lo que corresponde a «Desarrollo del talento humano».'
+  instruccion: ¿El `comentario` trata del bienestar laboral, el salario, los beneficios, los incentivos o las oportunidades
+    del talento humano y los administrativos?
+  criterio_true: Sí cuando el comentario trata del bienestar laboral, el salario, los beneficios, los incentivos o las oportunidades
+    del talento humano y los administrativos.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Bienestar, salud mental y experiencias formativas
+    (salidas pedagógicas)» o cuando trata principalmente de otro asunto del grupo, «Transformar vidas y formas de pensar».
+  ejemplos_si:
+  - Así como los Gestores del Conocimiento y el Aprendizaje tienen una categorización basada en formación profesional, producción
+    académica y experiencia, debería haber reglas claras, para que los trabajadores puedan tener mejores condiciones salariales,
+    basado en sus evaluaciones de desempeño, experiencia en el área y formación académica. Transformar la vida también significa
+    ofrecer beneficios reales (iguales o superiores al 65% de descuento) para su formación en pregrado o postgrado. Acciones
+    en pro del bienestar de los trabajadores con inversión específica y real, pues los beneficios EFR solo son un documento
+    que no se aplica en la Universidad
+  - Generar bienestar laboral para administrativos y nivelación salarial
+  - Que se mejore y se valore a los funcionarios administrativos que se encuentren actualmente ayudando al progreso personal
+    de cada uno mediante incentivos económicos y ascensos en sus puestos de trabajo
+  critico: false

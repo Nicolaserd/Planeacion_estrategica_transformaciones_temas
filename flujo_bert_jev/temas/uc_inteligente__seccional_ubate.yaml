@@ -1,0 +1,82 @@
+grupo: uc_inteligente__seccional_ubate
+transformacion: UC Inteligente
+unidad: Seccional Ubaté
+temas_de: null
+bert:
+  N: 41
+  k: 2
+  estabilidad: 0.851
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_datos_gobernanza_para_toma
+  nombre: Datos y gobernanza para la toma de decisiones
+  tema_bert: 0
+  firma: datos, información, decisiones, toma decisiones, mejora continua
+  palabras:
+  - datos
+  - información
+  - decisiones
+  - toma decisiones
+  - mejora continua
+  - institucional
+  - gobernanza
+  - gestión
+  n_bert: 24
+  componente: Gobierno y uso estratégico de los datos
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: datos, información, decisiones, toma decisiones, mejora continua);
+    tratan de que el comentario trata de datos, información, gobernanza, gestión institucional, mejora continua o toma de
+    decisiones, lo que corresponde a «Gobierno y uso estratégico de los datos».'
+  instruccion: ¿El `comentario` trata de datos, información, gobernanza, gestión institucional, mejora continua o toma de
+    decisiones?
+  criterio_true: Sí cuando el comentario trata de datos, información, gobernanza, gestión institucional, mejora continua o
+    toma de decisiones.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Anticiparse a las necesidades y comunicarse con
+    la comunidad estudiantil».
+  ejemplos_si:
+  - Para la toma de decisiones debemos estar atentos a los datos y cifras que se proyectan para el cambio institucional,optimizando
+    los recursos que se tienen en cuenta para avanzar.
+  - Estar a la vanguardia de los sucesos que se pueden dar, y una universidad así podría anticiparse a los posibles problemas
+    y plantear una solución, es como estar un paso adelante. También sería esencial para hacer acciones basadas en datos y
+    así mismos tomar decisiones acertadas junto a esos datos.
+  - Realizar procesos de transformación de la información, convirtiendola en medidas estratégicas para la toma de decisiones
+    que generen impacto y beneficio en cada región.
+  critico: false
+  otros_componentes:
+  - Gobernanza estratégica
+- id: t2_anticiparse_las_necesidades_comunicarse
+  nombre: Anticiparse a las necesidades y comunicarse con la comunidad estudiantil
+  tema_bert: 1
+  firma: necesidades, comunidad, evolución, calidad educativa, comunicación
+  palabras:
+  - necesidades
+  - comunidad
+  - evolución
+  - calidad educativa
+  - comunicación
+  - factores
+  - decisiones basadas
+  - estudiantes docentes
+  n_bert: 17
+  componente: Inteligencia institucional
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: necesidades, comunidad, evolución, calidad educativa, comunicación);
+    tratan de que el comentario trata de las necesidades de la comunidad, la calidad educativa, la comunicación con estudiantes
+    y docentes o la capacidad de anticiparse y adaptarse, lo que corresponde a «Inteligencia institucional».'
+  instruccion: ¿El `comentario` trata de las necesidades de la comunidad, la calidad educativa, la comunicación con estudiantes
+    y docentes o la capacidad de anticiparse y adaptarse?
+  criterio_true: Sí cuando el comentario trata de las necesidades de la comunidad, la calidad educativa, la comunicación con
+    estudiantes y docentes o la capacidad de anticiparse y adaptarse.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Datos y gobernanza para la toma de decisiones».
+  ejemplos_si:
+  - Una universidad así sería capaz de anticiparse a las necesidades de sus estudiantes y de la sociedad, tomar decisiones
+    basadas en datos y aprender continuamente de sus experiencias. También podría innovar, adaptarse a los cambios y conectar
+    mejor a estudiantes, docentes, comunidad y entorno para generar soluciones con mayor impacto.
+  - Mejorar la planeación y administración de salidas académicas ,y mantener más informados a los estudiantes ,
+  - La Universidad de Cundinamarca, junto con sus entes administrativos, no debe dejar de lado la comunicación abierta y permanente
+    con la comunidad estudiantil. Fortalecer el diálogo y la participación de los estudiantes es fundamental para conocer
+    de primera mano las dificultades, necesidades y conflictos que se presentan en el entorno educativo e institucional. Escuchar
+    activamente a quienes viven estas situaciones permite construir soluciones más pertinentes, fortalecer la confianza y
+    promover una universidad más participativa, cercana y comprometida con su comunidad.
+  critico: false

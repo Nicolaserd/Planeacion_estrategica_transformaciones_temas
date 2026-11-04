@@ -1,0 +1,80 @@
+grupo: uc_digital__extension_soacha
+transformacion: UC Digital
+unidad: Extensión Soacha
+temas_de: null
+bert:
+  N: 71
+  k: 2
+  estabilidad: 0.497
+  nivel: débil
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_capacitacion_tecnologias_emergentes_tecnologia
+  nombre: Capacitación en tecnologías emergentes y tecnología para resolver problemas
+  tema_bert: 0
+  firma: tecnologías, conocimiento, laboratorios, inteligencia artificial, creadores oportunidades
+  palabras:
+  - tecnologías
+  - conocimiento
+  - laboratorios
+  - inteligencia artificial
+  - creadores oportunidades
+  - implementación tecnologías
+  - ideas
+  - proyectos
+  n_bert: 45
+  componente: Tecnologías emergentes
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: tecnologías, conocimiento, laboratorios, inteligencia artificial,
+    creadores oportunidades); tratan de que el comentario trata de tecnologías, inteligencia artificial, conocimiento, laboratorios,
+    proyectos o capacitación para usar la tecnología, lo que corresponde a «Tecnologías emergentes».'
+  instruccion: ¿El `comentario` trata de tecnologías, inteligencia artificial, conocimiento, laboratorios, proyectos o capacitación
+    para usar la tecnología?
+  criterio_true: Sí cuando el comentario trata de tecnologías, inteligencia artificial, conocimiento, laboratorios, proyectos
+    o capacitación para usar la tecnología.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Acceso a plataformas, aulas y laboratorios virtuales;
+    trámites automatizados».
+  ejemplos_si:
+  - Que nos capaciten en tecnologías emergentes, que estemos en la vanguardia, que sea del conocimiento de todos y además
+    que sus sistemas sean más intuitivos para el manejo pidiendo explotar todas las tecnologías
+  - Tecnologia  Que universidad deberia ser posible asi  Con tecnologia  Que podriamos mediar a traves de la tecnología.  -
+    recolecuon de datos  - Fortalecimiento de proyectos educativos  - mejorar metodologias - optimizar procesos - llevar este
+    conocimiento a la comunidad  - procesos especificos en tecnología desde la investigacion  - que sea una linea transversal
+    independientemente nuestras ñineas de trabajo
+  - La tecnología debe permitir que los creadores de conocimiento CREEN como parte de la solución de problemas del territorio.  Uso
+    de la tecnología nuevas perspectivas para resolver problemas reales y adaptadas a las necesidades del entorno.
+  critico: false
+- id: t2_acceso_plataformas_aulas_laboratorios
+  nombre: Acceso a plataformas, aulas y laboratorios virtuales; trámites automatizados
+  tema_bert: 1
+  firma: acceso, digital, aulas, automatización, laboratorios
+  palabras:
+  - acceso
+  - digital
+  - aulas
+  - automatización
+  - laboratorios
+  - optimizar tiempo
+  - procesos administrativos
+  - programas
+  n_bert: 26
+  componente: Servicios digitales
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: acceso, digital, aulas, automatización, laboratorios); tratan
+    de que el comentario trata del acceso digital, aulas, laboratorios, plataformas, programas o la automatización de procesos
+    administrativos, lo que corresponde a «Servicios digitales».'
+  instruccion: ¿El `comentario` trata del acceso digital, aulas, laboratorios, plataformas, programas o la automatización
+    de procesos administrativos?
+  criterio_true: Sí cuando el comentario trata del acceso digital, aulas, laboratorios, plataformas, programas o la automatización
+    de procesos administrativos.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Capacitación en tecnologías emergentes y tecnología
+    para resolver problemas».
+  ejemplos_si:
+  - Debería ser posible acceder a laboratorios virtuales y plataformas integradas que automaticen trámites, faciliten la colaboración
+    remota y personalicen el aprendizaje continuo. Adecuar las aulas del bloque A
+  - Conectividad y mejora de procesos por medio de las tecnologías, generando más oportunidades a los estudiantes
+  - Suscripciones que tenga la universidad a plataformas para que cómo estudiantes tengamos acceso (Ejem. Autocad, Flexis),
+    préstamo de equipos portales para usarlos dentro de todo el Campo universitario.
+  critico: false
+  otros_componentes:
+  - Automatización de procesos

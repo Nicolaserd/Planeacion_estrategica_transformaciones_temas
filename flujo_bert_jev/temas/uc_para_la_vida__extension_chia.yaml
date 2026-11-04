@@ -1,0 +1,113 @@
+grupo: uc_para_la_vida__extension_chia
+transformacion: UC para la Vida
+unidad: Extensión Chía
+temas_de: null
+bert:
+  N: 81
+  k: 3
+  estabilidad: 0.619
+  nivel: moderada
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_bienestar_reconocimiento_condiciones_laborales
+  nombre: Bienestar, reconocimiento y condiciones laborales del personal
+  tema_bert: 0
+  firma: laboral, bienestar, profesional, beneficios, conocimientos
+  palabras:
+  - laboral
+  - bienestar
+  - profesional
+  - beneficios
+  - conocimientos
+  - gestores
+  - nuevas oportunidades
+  - persona transhumana
+  n_bert: 39
+  componente: Desarrollo del talento humano
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: laboral, bienestar, profesional, beneficios, conocimientos);
+    tratan de que el comentario trata del bienestar, las condiciones laborales, los beneficios o el reconocimiento del personal,
+    o del desarrollo profesional, lo que corresponde a «Desarrollo del talento humano».'
+  instruccion: ¿El `comentario` trata del bienestar, las condiciones laborales, los beneficios o el reconocimiento del personal,
+    o del desarrollo profesional?
+  criterio_true: Sí cuando el comentario trata del bienestar, las condiciones laborales, los beneficios o el reconocimiento
+    del personal, o del desarrollo profesional.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Experiencias y aprendizajes para la vida personal
+    y profesional» o cuando solo dice que no ajustaría nada o solo valora el encuentro.
+  ejemplos_si:
+  - Creemos que todo el MEDIT y el plan estratégico está centrado en creadores de oportunidades y gestores del conocimiento.
+    Es importante que el ser persona, empático, respetuoso y comunicativo, este ligado al bienestar de administrativos. Hay
+    una percepción de clasismo a depender del rol o rango laboral.
+  - Mejorar el bienestar y actuar en la sociedad para aprender mejor de nosotros y la comunidad
+  - Si bien existen algunos mecanismos de reconocimiento y beneficios, estos están sujetos a condiciones que el Gestor del
+    Conocimiento debe aceptar ante la limitada disponibilidad de alternativas, como contratos de corta duración y la asignación
+    de responsabilidades administrativas que no corresponden plenamente a su rol. En este contexto, la apuesta por una Universidad
+    Transhumana requiere traducirse en condiciones y mecanismos de reconocimiento coherentes con la realidad y las necesidades
+    de los Gestores del Conocimiento.
+  critico: false
+  otros_componentes:
+  - Felicidad y bienestar
+- id: t2_experiencias_aprendizajes_para_vida
+  nombre: Experiencias y aprendizajes para la vida personal y profesional
+  tema_bert: 1
+  firma: vida, experiencias, conocimiento, estudiantes, aprendizaje
+  palabras:
+  - vida
+  - experiencias
+  - conocimiento
+  - estudiantes
+  - aprendizaje
+  - oportunidades
+  - enseñanza
+  - formación
+  n_bert: 31
+  componente: Persona Transhumana
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: vida, experiencias, conocimiento, estudiantes, aprendizaje);
+    tratan de que el comentario trata de experiencias, aprendizajes o formación para la vida de los estudiantes, lo que corresponde
+    a «Persona Transhumana».'
+  instruccion: ¿El `comentario` trata de experiencias, aprendizajes o formación para la vida de los estudiantes?
+  criterio_true: Sí cuando el comentario trata de experiencias, aprendizajes o formación para la vida de los estudiantes.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Bienestar, reconocimiento y condiciones laborales
+    del personal» o cuando solo dice que no ajustaría nada o solo valora el encuentro.
+  ejemplos_si:
+  - Experiencias a lo largo de la carrera dentro de lo académico como lo personal, y así afrontar situaciones que se nos pueda
+    presentar tanto en la universidad como en nuestro entorno
+  - En la universidad hemos vivido experiencias inspiradoras que nos permiten afrontar retos en la enseñanza y aprendizaje  Un
+    mundo que cambia constantemente con nuevas herramientas  Nos hemos convertido en facilitadoras que aprenden constantemente
+    de sus errores gracias a un nuevo modelo de enseñanza centrado en el creador de oportunidades
+  - Que la universidad nos ayude a pensar como personas y no como profecionales y nos brinde herramientas para la vida cotidiana
+    o de la vida laboral
+  critico: false
+- id: t3_conformidad_esta_perfecta
+  nombre: 'Conformidad: está perfecta'
+  tema_bert: 2
+  firma: agregele inclusión, apasionado caso, completo, caso personal, coherencia ningun
+  palabras:
+  - agregele inclusión
+  - apasionado caso
+  - completo
+  - caso personal
+  - coherencia ningun
+  - estable apasionado
+  - personal perfecta
+  - solidaridad carreras
+  n_bert: 11
+  componente: transformacion_en_general
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: agregele inclusión, apasionado caso, completo, caso personal,
+    coherencia ningun); tratan de que el comentario dice que no haría ajustes o que está de acuerdo con la transformación
+    tal como está, lo que corresponde a «la transformación en general».'
+  instruccion: ¿El `comentario` dice que no haría ajustes o que está de acuerdo con la transformación tal como está (El comentario
+    responde a la pregunta «¿Qué ajustaría en esta transformación?»; cuentan respuestas cortas como «nada», «ninguno», «está
+    bien así», «vamos bien», «ninguna, está perfecta», «por el momento nada» o «me parece muy bien como está proyectada»)?
+  criterio_true: Sí cuando el comentario dice que no haría ajustes o que está de acuerdo con la transformación tal como está
+    (El comentario responde a la pregunta «¿Qué ajustaría en esta transformación?»; cuentan respuestas cortas como «nada»,
+    «ninguno», «está bien así», «vamos bien», «ninguna, está perfecta», «por el momento nada» o «me parece muy bien como está
+    proyectada»).
+  criterio_false: No cuando propone o pide cualquier ajuste concreto, aunque empiece aprobando, o cuenta un testimonio o agradece
+    sin decir que no ajustaría nada.
+  ejemplos_si:
+  - Ninguna esa está perfecta
+  - Nada me parece que todo esta bien y bastante completo
+  - Nada está perfecto como está
+  critico: false

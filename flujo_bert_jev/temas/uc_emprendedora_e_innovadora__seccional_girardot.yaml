@@ -1,0 +1,80 @@
+grupo: uc_emprendedora_e_innovadora__seccional_girardot
+transformacion: UC Emprendedora e Innovadora
+unidad: Seccional Girardot
+temas_de: null
+bert:
+  N: 98
+  k: 2
+  estabilidad: 0.827
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_acompanamiento_asesoria_recursos_para
+  nombre: Acompañamiento, asesoría y recursos para desarrollar las ideas
+  tema_bert: 0
+  firma: comunidad, oportunidades, emprendimiento, recursos, proyectos
+  palabras:
+  - comunidad
+  - oportunidades
+  - emprendimiento
+  - recursos
+  - proyectos
+  - soluciones
+  - ideas
+  - innovación
+  n_bert: 73
+  componente: Ecosistemas de innovación
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: comunidad, oportunidades, emprendimiento, recursos, proyectos);
+    tratan de que el comentario trata del apoyo de la universidad a las ideas, los proyectos o los emprendimientos de la comunidad:
+    acompañamiento, recursos, oportunidades o soluciones, lo que corresponde a «Ecosistemas de innovación».'
+  instruccion: '¿El `comentario` trata del apoyo de la universidad a las ideas, los proyectos o los emprendimientos de la
+    comunidad: acompañamiento, recursos, oportunidades o soluciones?'
+  criterio_true: 'Sí cuando el comentario trata del apoyo de la universidad a las ideas, los proyectos o los emprendimientos
+    de la comunidad: acompañamiento, recursos, oportunidades o soluciones.'
+  criterio_false: No cuando solo dice que no ajustaría nada o solo valora el encuentro.
+  ejemplos_si:
+  - La universidad tendría que brindar acompañamiento y orientación para desarrollar la idea, facilitando espacios de investigación,
+    asesoría de docentes y expertos, recursos tecnológicos y apoyo financiero. Además, debería conectar a la persona con la
+    comunidad y con entidades externas para probar la propuesta, mejorarla y convertirla en una solución viable que responda
+    realmente a las necesidades del territorio.
+  - La universidad debería brindar acompañamiento y orientación a la comunidad, ofreciendo espacios de capacitación, asesoría
+    de docentes y profesionales, recursos y herramientas para desarrollar la idea. También podría facilitar alianzas con empresas,
+    instituciones y entidades del territorio para conseguir apoyo y poner en práctica el proyecto. De esta manera, una idea
+    que nace de una necesidad real podría convertirse en una solución que genere un impacto positivo en la comunidad.
+  - Dar la oportunidad para desarrollar las ideas, conocer la institución para saber hacia donde dirigir para poder lograr
+    el objetivo y que la universidad brinde el apoyo para realizar y llevar a cabo el objetivo
+  critico: false
+- id: t2_conformidad_comentarios_breves
+  nombre: Conformidad y comentarios breves
+  tema_bert: 1
+  firma: administrativos eficientes, colegios, completo enfoque, colegios aportes, acompañamiento gestores
+  palabras:
+  - administrativos eficientes
+  - colegios
+  - completo enfoque
+  - colegios aportes
+  - acompañamiento gestores
+  - enfoque salud
+  - contexto presupuesto
+  - creamos propio
+  n_bert: 25
+  componente: transformacion_en_general
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: administrativos eficientes, colegios, completo enfoque, colegios
+    aportes, acompañamiento gestores); tratan de que el comentario dice que no haría ajustes o que está de acuerdo con la
+    transformación tal como está, lo que corresponde a «la transformación en general».'
+  instruccion: ¿El `comentario` dice que no haría ajustes o que está de acuerdo con la transformación tal como está (El comentario
+    responde a la pregunta «¿Qué ajustaría en esta transformación?»; cuentan respuestas cortas como «nada», «ninguno», «está
+    bien así», «vamos bien», «ninguna, está perfecta», «por el momento nada» o «me parece muy bien como está proyectada»)?
+  criterio_true: Sí cuando el comentario dice que no haría ajustes o que está de acuerdo con la transformación tal como está
+    (El comentario responde a la pregunta «¿Qué ajustaría en esta transformación?»; cuentan respuestas cortas como «nada»,
+    «ninguno», «está bien así», «vamos bien», «ninguna, está perfecta», «por el momento nada» o «me parece muy bien como está
+    proyectada»).
+  criterio_false: No cuando propone o pide cualquier ajuste concreto, aunque empiece aprobando, o cuenta un testimonio o agradece
+    sin decir que no ajustaría nada.
+  ejemplos_si:
+  - Que sea más reconocida
+  - Si me parece muy bien como está proyectada a futuro
+  - ta bien
+  critico: false

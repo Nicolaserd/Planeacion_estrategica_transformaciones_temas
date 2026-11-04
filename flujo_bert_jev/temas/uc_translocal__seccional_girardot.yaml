@@ -1,0 +1,108 @@
+grupo: uc_translocal__seccional_girardot
+transformacion: UC Translocal
+unidad: Seccional Girardot
+temas_de: null
+bert:
+  N: 118
+  k: 3
+  estabilidad: 0.801
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_interaccion_entre_sedes_territorios
+  nombre: Interacción entre sedes y territorios para el desarrollo
+  tema_bert: 0
+  firma: necesidades, soluciones, oportunidades, integración, desarrollo
+  palabras:
+  - necesidades
+  - soluciones
+  - oportunidades
+  - integración
+  - desarrollo
+  - territorios
+  - ambiental
+  - institución
+  n_bert: 59
+  componente: Redes y cooperación
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: necesidades, soluciones, oportunidades, integración, desarrollo);
+    tratan de que el comentario trata de integración, interacción entre sedes o territorios, desarrollo, soluciones u oportunidades
+    para la región, lo que corresponde a «Redes y cooperación».'
+  instruccion: ¿El `comentario` trata de integración, interacción entre sedes o territorios, desarrollo, soluciones u oportunidades
+    para la región?
+  criterio_true: Sí cuando el comentario trata de integración, interacción entre sedes o territorios, desarrollo, soluciones
+    u oportunidades para la región.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Solución de problemas territoriales con la comunidad»
+    o cuando solo dice que no ajustaría nada o solo valora el encuentro.
+  ejemplos_si:
+  - Interactuar entre sedes y llevar lo representativo de nuestra región interactuando entre todos para transformar territorios
+  - Conectarnos con diferentes territorios y interactuar a nivel internacional
+  - Integra las acciones sustantivas para ser un motor de desarrollo y resolución de problemas en el mismo territorio
+  critico: false
+  otros_componentes:
+  - Internacionalización
+- id: t2_solucion_problemas_territoriales_con
+  nombre: Solución de problemas territoriales con la comunidad
+  tema_bert: 1
+  firma: territorios, necesidades, comunidad, conocimiento, proyectos
+  palabras:
+  - territorios
+  - necesidades
+  - comunidad
+  - conocimiento
+  - proyectos
+  - región
+  - innovación
+  - interacción
+  n_bert: 43
+  componente: Impacto territorial
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: territorios, necesidades, comunidad, conocimiento, proyectos);
+    tratan de que el comentario trata de los problemas y necesidades de los territorios y la comunidad, y de proyectos, conocimiento
+    o innovación para resolverlos, lo que corresponde a «Impacto territorial».'
+  instruccion: ¿El `comentario` trata de los problemas y necesidades de los territorios y la comunidad, y de proyectos, conocimiento
+    o innovación para resolverlos?
+  criterio_true: Sí cuando el comentario trata de los problemas y necesidades de los territorios y la comunidad, y de proyectos,
+    conocimiento o innovación para resolverlos.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Interacción entre sedes y territorios para el
+    desarrollo» o cuando solo dice que no ajustaría nada o solo valora el encuentro.
+  ejemplos_si:
+  - El ajuste en esta transformación que sugerimos sería en una mejor interacción social universitaria para poder hallar problemáticas
+    y sus posibles soluciones, permitiendo un mayor impacto territorial
+  - ¿Que podría lograr una universidad así? Solución de problemas territoriales donde se enlaza la población rural y urbana,
+    extendiendo está misma a otros territorios con situaciones similares, además de la implementación de diferentes puntos
+    de vista a partir de la investigación.
+  - La Universidad podría lograr que cada territorio sea reconocido por lo que es, por sus saberes, su cultura y sus necesidades,
+    pero que al mismo tiempo todos estén conectados como parte de una misma comunidad. No se trata de hacer que todos los
+    territorios sean iguales, sino de aprovechar sus diferencias para compartir conocimientos, generar innovación y construir
+    soluciones que beneficien a todos. Así tendríamos una Universidad unida en su propósito, pero diversa en sus formas de
+    aprender, enseñar y transformar.
+  critico: false
+  otros_componentes:
+  - Interacción Social Universitaria
+- id: t3_conformidad_cambiaria_nada
+  nombre: 'Conformidad: no cambiaría nada'
+  tema_bert: 2
+  firma: acuerdo, encuentra
+  palabras:
+  - acuerdo
+  - encuentra
+  n_bert: 16
+  componente: transformacion_en_general
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: acuerdo, encuentra); tratan de que el comentario dice que
+    no haría ajustes o que está de acuerdo con la transformación tal como está, lo que corresponde a «la transformación en
+    general».'
+  instruccion: ¿El `comentario` dice que no haría ajustes o que está de acuerdo con la transformación tal como está (El comentario
+    responde a la pregunta «¿Qué ajustaría en esta transformación?»; cuentan respuestas cortas como «nada», «ninguno», «está
+    bien así», «vamos bien», «ninguna, está perfecta», «por el momento nada» o «me parece muy bien como está proyectada»)?
+  criterio_true: Sí cuando el comentario dice que no haría ajustes o que está de acuerdo con la transformación tal como está
+    (El comentario responde a la pregunta «¿Qué ajustaría en esta transformación?»; cuentan respuestas cortas como «nada»,
+    «ninguno», «está bien así», «vamos bien», «ninguna, está perfecta», «por el momento nada» o «me parece muy bien como está
+    proyectada»).
+  criterio_false: No cuando propone o pide cualquier ajuste concreto, aunque empiece aprobando, o cuenta un testimonio o agradece
+    sin decir que no ajustaría nada.
+  ejemplos_si:
+  - Yo creería que nada
+  - No cambiaria nada así como esta se encuentra bien
+  - Ajustar un poco más a lo local pero todo bien
+  critico: false

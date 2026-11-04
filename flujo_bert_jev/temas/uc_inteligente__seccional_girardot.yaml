@@ -1,0 +1,109 @@
+grupo: uc_inteligente__seccional_girardot
+transformacion: UC Inteligente
+unidad: Seccional Girardot
+temas_de: null
+bert:
+  N: 119
+  k: 3
+  estabilidad: 0.839
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_tecnologia_inteligencia_artificial_prevencion
+  nombre: Tecnología, inteligencia artificial y prevención de errores con datos
+  tema_bert: 0
+  firma: inteligencia artificial, datos, procesos, tecnología, región
+  palabras:
+  - inteligencia artificial
+  - datos
+  - procesos
+  - tecnología
+  - región
+  - errores
+  - decisiones
+  - institucionales
+  n_bert: 54
+  componente: Inteligencia artificial
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: inteligencia artificial, datos, procesos, tecnología, región);
+    tratan de que el comentario trata de tecnología, inteligencia artificial, datos, procesos, mejora o prevención de errores
+    y problemas, lo que corresponde a «Inteligencia artificial».'
+  instruccion: ¿El `comentario` trata de tecnología, inteligencia artificial, datos, procesos, mejora o prevención de errores
+    y problemas?
+  criterio_true: Sí cuando el comentario trata de tecnología, inteligencia artificial, datos, procesos, mejora o prevención
+    de errores y problemas.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Escuchar a la comunidad y anticiparse a sus necesidades»
+    o cuando solo dice que no ajustaría nada o solo valora el encuentro.
+  ejemplos_si:
+  - Ya que viendo lo anterior, se realiza una mejora o una idea para que aquello no suceda y se vean afectados
+  - mas anticipación a la vanguardia en tecnología y capacitación
+  - Tener un plan de mejoramiento concecutivo que nos aporte mejores conocimientos y apoyos para no repetir errores o problemas
+    futuros para poder tener apoyos de prevención.
+  critico: false
+  otros_componentes:
+  - Calidad y mejora continua
+- id: t2_escuchar_comunidad_anticiparse_sus
+  nombre: Escuchar a la comunidad y anticiparse a sus necesidades
+  tema_bert: 1
+  firma: estudiantes, comunidad, necesidades, oportunidades, participación
+  palabras:
+  - estudiantes
+  - comunidad
+  - necesidades
+  - oportunidades
+  - participación
+  - conocimiento
+  - investigación
+  - comunicación
+  n_bert: 53
+  componente: Inteligencia institucional
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: estudiantes, comunidad, necesidades, oportunidades, participación);
+    tratan de que el comentario trata de la comunidad, los estudiantes, sus necesidades, la participación, la comunicación,
+    la investigación o las oportunidades que la universidad puede generar, lo que corresponde a «Inteligencia institucional».'
+  instruccion: ¿El `comentario` trata de la comunidad, los estudiantes, sus necesidades, la participación, la comunicación,
+    la investigación o las oportunidades que la universidad puede generar?
+  criterio_true: Sí cuando el comentario trata de la comunidad, los estudiantes, sus necesidades, la participación, la comunicación,
+    la investigación o las oportunidades que la universidad puede generar.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Tecnología, inteligencia artificial y prevención
+    de errores con datos» o cuando solo dice que no ajustaría nada o solo valora el encuentro.
+  ejemplos_si:
+  - Una universidad así sería capaz de aprender de las experiencias de sus estudiantes, docentes y comunidad, identificar
+    necesidades y anticiparse a posibles problemas, utilizando la información y los datos para tomar mejores decisiones. Además,
+    podría crear soluciones innovadoras, mejorar continuamente sus procesos y fortalecer la comunicación y participación de
+    toda la comunidad universitaria.
+  - La universidad facilita la solución a problemas de cualquier índole sea de tipo social, educativa lo que permite es capaz
+    de generar soluciones que impacten socialmente a una comunidad a través de emprendimiento e innovaciones.   Con el propósito
+    que cada integrante de la comunidad universitaria pueda crecer y mejorar y tener un impacto sociales no solo a nivel local,
+    sino también nacional.
+  - Como creadores de oportunidades, proponemos una universidad que escuche y analice lo que ocurre dentro y fuera de ella
+    para anticiparse a las necesidades. Por ejemplo, mediante encuestas, sistemas de alertas, espacios de participación y
+    una plataforma de oportunidades, podríamos identificar problemas a tiempo y convertirlos en soluciones que beneficien
+    a los estudiantes y a nuestros territorios
+  critico: false
+- id: t3_aprobacion_breve_esta_bien
+  nombre: Aprobación breve («está bien», «vamos bien»)
+  tema_bert: 2
+  firma: bueno, proyección
+  palabras:
+  - bueno
+  - proyección
+  n_bert: 12
+  componente: transformacion_en_general
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: bueno, proyección); tratan de que el comentario dice que
+    no haría ajustes o que está de acuerdo con la transformación tal como está, lo que corresponde a «la transformación en
+    general».'
+  instruccion: ¿El `comentario` dice que no haría ajustes o que está de acuerdo con la transformación tal como está (El comentario
+    responde a la pregunta «¿Qué ajustaría en esta transformación?»; cuentan respuestas cortas como «nada», «ninguno», «está
+    bien así», «vamos bien», «ninguna, está perfecta», «por el momento nada» o «me parece muy bien como está proyectada»)?
+  criterio_true: Sí cuando el comentario dice que no haría ajustes o que está de acuerdo con la transformación tal como está
+    (El comentario responde a la pregunta «¿Qué ajustaría en esta transformación?»; cuentan respuestas cortas como «nada»,
+    «ninguno», «está bien así», «vamos bien», «ninguna, está perfecta», «por el momento nada» o «me parece muy bien como está
+    proyectada»).
+  criterio_false: No cuando propone o pide cualquier ajuste concreto, aunque empiece aprobando, o cuenta un testimonio o agradece
+    sin decir que no ajustaría nada.
+  ejemplos_si:
+  - Está bien
+  - ta bien
+  - Vamos bien
+  critico: false

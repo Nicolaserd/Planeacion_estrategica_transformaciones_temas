@@ -1,0 +1,84 @@
+grupo: uc_inteligente__extension_soacha
+transformacion: UC Inteligente
+unidad: Extensión Soacha
+temas_de: null
+bert:
+  N: 76
+  k: 2
+  estabilidad: 0.76
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_formacion_infraestructura_aprendizaje_institucional
+  nombre: Formación, infraestructura y aprendizaje institucional para los estudiantes
+  tema_bert: 0
+  firma: estudiantes, mejorar, conocimiento, infraestructura, prácticas
+  palabras:
+  - estudiantes
+  - mejorar
+  - conocimiento
+  - infraestructura
+  - prácticas
+  - tecnologías
+  - oportunidades
+  - institución
+  n_bert: 42
+  componente: Calidad y mejora continua
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: estudiantes, mejorar, conocimiento, infraestructura, prácticas);
+    tratan de que el comentario trata de mejorar la formación, el conocimiento, la infraestructura, las prácticas o las oportunidades
+    de los estudiantes y de la institución, lo que corresponde a «Calidad y mejora continua».'
+  instruccion: ¿El `comentario` trata de mejorar la formación, el conocimiento, la infraestructura, las prácticas o las oportunidades
+    de los estudiantes y de la institución?
+  criterio_true: Sí cuando el comentario trata de mejorar la formación, el conocimiento, la infraestructura, las prácticas
+    o las oportunidades de los estudiantes y de la institución.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Datos, inteligencia artificial y mejora de procesos
+    administrativos».
+  ejemplos_si:
+  - Una universidad orientada al aprendizaje organizacional y la prospectiva estratégica ejerce una gobernanza adaptativa
+    capaz de ejecutar la toma de decisiones basada en evidencia e inteligencia territorial. Mediante la consolidación del
+    modelo de Gestión del Conocimiento y el Aprendizaje, la institución dinamiza la innovación curricular, fortalece la resiliencia
+    institucional frente a las dinámicas del entorno y potencia la vigilancia tecnológica y social, consolidándose como un
+    ecosistema educativo transmoderno de alta pertinencia e impacto multidimensional.
+  - En 10 años, la universidad se consolidará como pionera y pilar fundamental de la industria tecnológica. A través programas
+    de pregrado de alta calidad, establecerá alianzas estratégicas para asegurar el posicionamiento de sus profesionales en
+    el mercado laboral, a la vez que fomentará en ellos el espíritu emprendedor para generar mayores oportunidades de desarrollo
+  - Una universidad que utiliza la información y la experiencia de sus estudiantes, docentes y procesos para identificar necesidades,
+    prevenir dificultades y mejorar continuamente. Así, puede tomar decisiones más oportunas, fortalecer la educación y ofrecer
+    mejores oportunidades a toda su comunidad universitaria.
+  critico: false
+- id: t2_datos_inteligencia_artificial_mejora
+  nombre: Datos, inteligencia artificial y mejora de procesos administrativos
+  tema_bert: 1
+  firma: procesos, datos, administrativos, inteligencia artificial, mejoramiento
+  palabras:
+  - procesos
+  - datos
+  - administrativos
+  - inteligencia artificial
+  - mejoramiento
+  - inteligencia
+  - implementación
+  - decisiones
+  n_bert: 34
+  componente: Gobierno y uso estratégico de los datos
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: procesos, datos, administrativos, inteligencia artificial,
+    mejoramiento); tratan de que el comentario trata de procesos, datos, inteligencia artificial, tecnología o la mejora de
+    la gestión administrativa y las decisiones, lo que corresponde a «Gobierno y uso estratégico de los datos».'
+  instruccion: ¿El `comentario` trata de procesos, datos, inteligencia artificial, tecnología o la mejora de la gestión administrativa
+    y las decisiones?
+  criterio_true: Sí cuando el comentario trata de procesos, datos, inteligencia artificial, tecnología o la mejora de la gestión
+    administrativa y las decisiones.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Formación, infraestructura y aprendizaje institucional
+    para los estudiantes».
+  ejemplos_si:
+  - Ajustaría el enfoque para que, además de la toma de decisiones basada en datos, se fortalezca la participación de docentes,
+    estudiantes y administrativos en la interpretación de esa información. Los datos y la IA deben apoyar las decisiones,
+    pero la experiencia y el conocimiento de las personas que viven los procesos son fundamentales para tomar decisiones pertinentes
+    y generar una mejora realmente continua.
+  - Tener un registro con IA integrada par apoyar con un análisis a futuro y así prevenir y mejorar la calidad de estudio
+  - Implementar más tecnología, herramientas de inteligencia artificial
+  critico: false
+  otros_componentes:
+  - Inteligencia artificial

@@ -1,0 +1,72 @@
+grupo: uc_emprendedora_e_innovadora__sede_fusagasuga
+transformacion: UC Emprendedora e Innovadora
+unidad: Sede Fusagasugá
+temas_de: null
+bert:
+  N: 143
+  k: 2
+  estabilidad: 0.9
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_apoyo_las_ideas_banco
+  nombre: 'Apoyo a las ideas: banco de ideas, asesoría y recursos'
+  tema_bert: 0
+  firma: recursos, proyectos, investigación, ideas, necesidades
+  palabras:
+  - recursos
+  - proyectos
+  - investigación
+  - ideas
+  - necesidades
+  - innovación
+  - económico
+  - desarrollo
+  n_bert: 88
+  componente: Ecosistemas de innovación
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: recursos, proyectos, investigación, ideas, necesidades);
+    tratan de que el comentario trata de apoyar las ideas y los proyectos con recursos, investigación, asesoría o apoyo económico,
+    lo que corresponde a «Ecosistemas de innovación».'
+  instruccion: ¿El `comentario` trata de apoyar las ideas y los proyectos con recursos, investigación, asesoría o apoyo económico?
+  criterio_true: Sí cuando el comentario trata de apoyar las ideas y los proyectos con recursos, investigación, asesoría o
+    apoyo económico.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Ruta para la solución de problemas».
+  ejemplos_si:
+  - Un banco de ideas y divulgación a la población administrativa de sus beneficios como lo es participar en los semilleros
+    de investigación
+  - Ayuda económica hacer una ruta para poder seguir el proceso de la idea
+  - 'Como grupo pensamos que la Universidad tendría que apoyar la idea desde diferentes aspectos: escuchar la propuesta, orientar
+    a la persona, brindar asesoría y los recursos necesarios, y conectarla con profesores, estudiantes o entidades que puedan
+    aportar. También sería importante acompañar el proceso, hacer pruebas y buscar la manera de llevar esa idea a la comunidad
+    para que realmente ayude a solucionar el problema del territorio.'
+  critico: false
+- id: t2_ruta_para_solucion_problemas
+  nombre: Ruta para la solución de problemas
+  tema_bert: 1
+  firma: proceso, convenios, recursos, solución problemas, proyectos
+  palabras:
+  - proceso
+  - convenios
+  - recursos
+  - solución problemas
+  - proyectos
+  - necesidades
+  - agilizar procesos
+  - banco ideas
+  n_bert: 55
+  componente: Innovación social
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: proceso, convenios, recursos, solución problemas, proyectos);
+    tratan de que el comentario trata de rutas, procesos, convenios o procedimientos para identificar y solucionar problemas,
+    lo que corresponde a «Innovación social».'
+  instruccion: ¿El `comentario` trata de rutas, procesos, convenios o procedimientos para identificar y solucionar problemas?
+  criterio_true: Sí cuando el comentario trata de rutas, procesos, convenios o procedimientos para identificar y solucionar
+    problemas.
+  criterio_false: 'No cuando trata principalmente de otro asunto del grupo, «Apoyo a las ideas: banco de ideas, asesoría y
+    recursos».'
+  ejemplos_si:
+  - Ruta para dar visibilidad al problema
+  - Ruta para la solución de problemas
+  - Establecer una ruta para solucionar el problema
+  critico: false

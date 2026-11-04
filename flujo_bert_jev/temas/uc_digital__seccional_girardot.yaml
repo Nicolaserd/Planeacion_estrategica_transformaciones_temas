@@ -1,0 +1,114 @@
+grupo: uc_digital__seccional_girardot
+transformacion: UC Digital
+unidad: Seccional Girardot
+temas_de: null
+bert:
+  N: 118
+  k: 3
+  estabilidad: 0.627
+  nivel: moderada
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_acceso_tecnologia_conectividad_sin
+  nombre: Acceso a tecnología y conectividad sin deshumanizar la educación
+  tema_bert: 0
+  firma: tecnología, acceso, aprendizaje, servicios, conectividad
+  palabras:
+  - tecnología
+  - acceso
+  - aprendizaje
+  - servicios
+  - conectividad
+  - implementar
+  - digitales
+  - comunicación
+  n_bert: 53
+  componente: Experiencia digital de la comunidad universitaria
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: tecnología, acceso, aprendizaje, servicios, conectividad);
+    tratan de que el comentario trata del acceso a la tecnología, la conectividad, los servicios digitales, la comunicación
+    o la tecnología para aprender, lo que corresponde a «Experiencia digital de la comunidad universitaria».'
+  instruccion: ¿El `comentario` trata del acceso a la tecnología, la conectividad, los servicios digitales, la comunicación
+    o la tecnología para aprender?
+  criterio_true: Sí cuando el comentario trata del acceso a la tecnología, la conectividad, los servicios digitales, la comunicación
+    o la tecnología para aprender.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Automatización de procesos administrativos» o
+    cuando trata principalmente de otro asunto del grupo, «Simulación y realidad virtual para enfermería».
+  ejemplos_si:
+  - ¿Que debería ser posible en una universidad así?  Desarrollo de problemáticas de la era actual impulsadas por herramientas
+    digitales y tecnologicas basadas en un pensamiento sostenible
+  - En 10 años, una Universidad 100 % tecnológica debería permitir que la tecnología elimine barreras y amplíe las oportunidades.
+    sin embargo no dejar de lado la humanización , la interacción, sin deshumanizar la educación. Me imagino una Universidad
+    donde cualquier estudiante pueda aprender desde cualquier lugar, tenga acceso a inteligencia artificial, simuladores y
+    laboratorios virtuales, y donde los docentes puedan utilizar la tecnología para personalizar el aprendizaje. Pero, sobre
+    todo, una universidad donde la tecnología esté al servicio de las personas y del territorio, ayudándonos a convertir las
+    necesidades de la comunidad en soluciones reales
+  - 'Acceso a tecnologías, salones inteligentes, programas de capacitación a la sociedad, incluir translocalmente , es decir
+    en el entorno. Conclusión : inversión en equipos e inversion en acercar el conocimiento'
+  critico: false
+  otros_componentes:
+  - Ecosistemas digitales
+- id: t2_automatizacion_procesos_administrativos
+  nombre: Automatización de procesos administrativos
+  tema_bert: 1
+  firma: automatización, implementación, tecnologías, automatización procesos, administrativos
+  palabras:
+  - automatización
+  - implementación
+  - tecnologías
+  - automatización procesos
+  - administrativos
+  - burocracia
+  - laboratorio
+  - universitario
+  n_bert: 40
+  componente: Automatización de procesos
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: automatización, implementación, tecnologías, automatización
+    procesos, administrativos); tratan de que el comentario trata de automatizar o implementar tecnologías en procesos, en
+    especial administrativos, o de reducir la burocracia, lo que corresponde a «Automatización de procesos».'
+  instruccion: ¿El `comentario` trata de automatizar o implementar tecnologías en procesos, en especial administrativos, o
+    de reducir la burocracia?
+  criterio_true: Sí cuando el comentario trata de automatizar o implementar tecnologías en procesos, en especial administrativos,
+    o de reducir la burocracia.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Acceso a tecnología y conectividad sin deshumanizar
+    la educación» o cuando trata principalmente de otro asunto del grupo, «Simulación y realidad virtual para enfermería».
+  ejemplos_si:
+  - Poder implementar la automatización de procesos en las áreas administrativas para la optimización de tiempos y costos,
+    así mismo la implementación al de tecnologías inteligentes para el desarrollo universitario y transformación de aulas
+    y oficinas inteligentes para evitar el consumo residual de los recursos. Mejorar la comunicación tecnológica entre diferentes
+    áreas para alcanzar políticas ambientales necesarias qur nos acercan a la digitalización
+  - Mayor implementación de tecnologías avanzadas en los hambitos
+  - Que la tecnologia facilite los procesos administrativos y no que sea una barrera para langestiin del gestor de conocimiento
+  critico: false
+- id: t3_simulacion_realidad_virtual_para
+  nombre: Simulación y realidad virtual para enfermería
+  tema_bert: 2
+  firma: enfermería, simulación, simuladores, laboratorios, prácticas
+  palabras:
+  - enfermería
+  - simulación
+  - simuladores
+  - laboratorios
+  - prácticas
+  - digitales
+  - aprendizaje
+  - computadores
+  n_bert: 25
+  componente: Tecnologías emergentes
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: enfermería, simulación, simuladores, laboratorios, prácticas);
+    tratan de que el comentario pide simuladores, realidad virtual o aumentada, o laboratorios con escenarios clínicos para
+    enfermería o áreas de la salud, lo que corresponde a «Tecnologías emergentes».'
+  instruccion: ¿El `comentario` pide simuladores, realidad virtual o aumentada, o laboratorios con escenarios clínicos para
+    enfermería o áreas de la salud?
+  criterio_true: Sí cuando el comentario pide simuladores, realidad virtual o aumentada, o laboratorios con escenarios clínicos
+    para enfermería o áreas de la salud.
+  criterio_false: No cuando no se refiere a simulación, realidad virtual ni a la formación en salud. Mencionar el asunto de
+    paso, sin pedirlo ni proponerlo, no basta.
+  ejemplos_si:
+  - Laboratorios de enfermeria con realidad aumentada con los diferentes escenarios clínicos para mayor semejanza a la realida.  Una
+    herramienta tipo ia como ayuda psicológica y bienestar universitario
+  - Ologramas, Educación integral mediante gafas de simulación que se encuentren en una habitación adecuada para su desarrollo.
+  - En relación a la enfermería , implantar una realidad virtual con casos clínicos de difícil simulación y de igual forma
+    que se implemente un vademécum fácil de acceder con información visual y todo lo que corresponde de medicamentos.
+  critico: false

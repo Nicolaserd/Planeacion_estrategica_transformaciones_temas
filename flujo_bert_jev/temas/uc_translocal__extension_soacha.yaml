@@ -1,0 +1,82 @@
+grupo: uc_translocal__extension_soacha
+transformacion: UC Translocal
+unidad: Extensión Soacha
+temas_de: null
+bert:
+  N: 64
+  k: 2
+  estabilidad: 0.855
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_impacto_territorial_conocer_atender
+  nombre: 'Impacto territorial: conocer y atender las necesidades del entorno'
+  tema_bert: 0
+  firma: entorno, conocimiento, territorial, comunidades, necesidades
+  palabras:
+  - entorno
+  - conocimiento
+  - territorial
+  - comunidades
+  - necesidades
+  - impacto territorial
+  - territorio
+  - oportunidades
+  n_bert: 37
+  componente: Impacto territorial
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: entorno, conocimiento, territorial, comunidades, necesidades);
+    tratan de que el comentario trata del impacto en el territorio y el entorno: conocer sus necesidades, integrar la universidad
+    y llevar soluciones a las comunidades, lo que corresponde a «Impacto territorial».'
+  instruccion: '¿El `comentario` trata del impacto en el territorio y el entorno: conocer sus necesidades, integrar la universidad
+    y llevar soluciones a las comunidades?'
+  criterio_true: 'Sí cuando el comentario trata del impacto en el territorio y el entorno: conocer sus necesidades, integrar
+    la universidad y llevar soluciones a las comunidades.'
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Identidad, sentido de pertenencia y vínculo cultural
+    con la comunidad».
+  ejemplos_si:
+  - 'Integrarnos primero cómo universidad, conocer, las sedes, programas, para poder impactar y llevar solución a nuestro
+    territorio. Poder de esta manera realizar proyectos conjuntos desde los diferentes programas articulando conocimientos
+    para ahorrar desde allí soluciones reales a los territorios (ejemplo: universidad de Ubate Agro artícule con programa
+    de ingeniería).'
+  - Reconocer la diversidad y fortalecerla. Lograr objetivos o metas dependiendo del territorio  y funcionar cualidades para
+    fortalecer territorios, entre mas opiniones más oportunidades de mejorar
+  - Generar un impacto territorial conociendo e identificado esas necesidades primordiales
+  critico: false
+- id: t2_identidad_sentido_pertenencia_vinculo
+  nombre: Identidad, sentido de pertenencia y vínculo cultural con la comunidad
+  tema_bert: 1
+  firma: estudiantes, conocimiento, identidad, comunidad, deportivos
+  palabras:
+  - estudiantes
+  - conocimiento
+  - identidad
+  - comunidad
+  - deportivos
+  - diferentes actores
+  - logramos objetivos
+  - formación
+  n_bert: 27
+  componente: Identidad translocal
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: estudiantes, conocimiento, identidad, comunidad, deportivos);
+    tratan de que el comentario trata de la identidad, el sentido de pertenencia, el reconocimiento de la universidad, la
+    formación o los vínculos culturales y deportivos con la comunidad, lo que corresponde a «Identidad translocal».'
+  instruccion: ¿El `comentario` trata de la identidad, el sentido de pertenencia, el reconocimiento de la universidad, la
+    formación o los vínculos culturales y deportivos con la comunidad?
+  criterio_true: Sí cuando el comentario trata de la identidad, el sentido de pertenencia, el reconocimiento de la universidad,
+    la formación o los vínculos culturales y deportivos con la comunidad.
+  criterio_false: 'No cuando trata principalmente de otro asunto del grupo, «Impacto territorial: conocer y atender las necesidades
+    del entorno».'
+  ejemplos_si:
+  - Una universidad que reconoce la identidad de cada territorio y los integra en una sola red potencia su impacto regional
+    al adaptar la formación y la investigación a las necesidades locales. Al aplicar el modelo MEDIT de forma conectada, democratiza
+    el conocimiento, reduce brechas socioeconómicas y se consolida como el principal motor de transformación social y desarrollo
+    sostenible en Cundinamarca.
+  - Mejor identificación de la universidad ante la comunidad que se pueda correlacionar con el territorio y poderse brindar
+    muestras culturales e intercambios con la universidad y la comunidad
+  - 'Hasta donde podria llegar la universidad si logramos dos objetivos Reconocimiento de lo propio  -Sentido de pertenencia
+    por parte de la comunidad, por nosotros y para nosotros  - transformacion y progreso desde la universidad y la comunidad  -
+    mejoras a traves del dialogo de las realidades propias de cada sector  - incentivar a aquel que quiere  impactar su territorio.
+    Transformacion:'
+  critico: false

@@ -1,0 +1,82 @@
+grupo: uc_emprendedora_e_innovadora__extension_zipaquira
+transformacion: UC Emprendedora e Innovadora
+unidad: Extensión Zipaquirá
+temas_de: null
+bert:
+  N: 25
+  k: 2
+  estabilidad: 0.92
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_espacios_acompanamiento_para_resolver
+  nombre: Espacios y acompañamiento para resolver problemas del territorio
+  tema_bert: 0
+  firma: investigación, docentes, ideas, proyectos, conocimiento
+  palabras:
+  - investigación
+  - docentes
+  - ideas
+  - proyectos
+  - conocimiento
+  - comunidad
+  - banco
+  - construcción
+  n_bert: 18
+  componente: Innovación social
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: investigación, docentes, ideas, proyectos, conocimiento);
+    tratan de que el comentario trata de espacios, acompañamiento, investigación o proyectos para resolver problemas del territorio
+    y la comunidad, lo que corresponde a «Innovación social».'
+  instruccion: ¿El `comentario` trata de espacios, acompañamiento, investigación o proyectos para resolver problemas del territorio
+    y la comunidad?
+  criterio_true: Sí cuando el comentario trata de espacios, acompañamiento, investigación o proyectos para resolver problemas
+    del territorio y la comunidad.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Alianzas con casas de la cultura e industria musical».
+  ejemplos_si:
+  - Que hayan espacios donde se discutan los problemas del territorio, de todos los sectores sociales, donde, realmente, se
+    evalúen y se les de una solución óptima. Acompañamiento por parte de la universidad.
+  - Un acompañamiento eficiente que asesore la forma del proyecto, su viabilidad y ejecución a través de recuersos y la asesoria
+    del area de investigación.
+  - Debería tener canales de formación y acompañamiento institucional, Una mesa de trabajo donde se les pueda dar una solución
+    y apoyo interdisciplinario y à su vez  que tenga independencia frente a condiciones políticas.
+  critico: false
+  otros_componentes:
+  - Ecosistemas de innovación
+- id: t2_alianzas_con_casas_cultura
+  nombre: Alianzas con casas de la cultura e industria musical
+  tema_bert: 1
+  firma: casas cultura, convenios, alianzas estratégicas, talleres, instituciones
+  palabras:
+  - casas cultura
+  - convenios
+  - alianzas estratégicas
+  - talleres
+  - instituciones
+  - culturales
+  - profesional graduados
+  - asertiva mejorar
+  n_bert: 7
+  componente: Relacionamiento con los sectores sociales, productivos, públicos y comunitarios
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: casas cultura, convenios, alianzas estratégicas, talleres,
+    instituciones); tratan de que el comentario trata de alianzas o convenios con instituciones culturales, casas de la cultura,
+    la industria musical o los graduados, lo que corresponde a «Relacionamiento con los sectores sociales, productivos, públicos
+    y comunitarios».'
+  instruccion: ¿El `comentario` trata de alianzas o convenios con instituciones culturales, casas de la cultura, la industria
+    musical o los graduados?
+  criterio_true: Sí cuando el comentario trata de alianzas o convenios con instituciones culturales, casas de la cultura,
+    la industria musical o los graduados.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Espacios y acompañamiento para resolver problemas
+    del territorio».
+  ejemplos_si:
+  - Conexión con instituciones más grandes y el sector de la industria musical a nivel nacional. Convenios con las casas de
+    la cultura del departamento. Apoyo a emprendimientos y marketing profesional a los graduados
+  - '> Establecer alianzas estratégicas con las Casas de la Cultura municipales y con la Universidad de Cundinamarca para
+    el desarrollo de talleres de formación, circulación y cualificación artística. Asimismo, promover procesos de internacionalización
+    que brinden oportunidades de movilidad académica, intercambio y proyección profesional para los graduados.  *Versión corta
+    y directa para presentación:*  > Realizar alianzas con las Casas de la Cultura y la Universidad de Cundinamarca para ofertar
+    talleres conjuntos y generar rutas de internacionalizacion  .'
+  - Alianzas estratégicas con instituciones culturales de la región. Tener una comunicación asertiva para mejorar en las transformaciones
+    que se pretenden dar en la universidad
+  critico: false

@@ -1,0 +1,114 @@
+grupo: uc_emprendedora_e_innovadora__extension_chia
+transformacion: UC Emprendedora e Innovadora
+unidad: Extensión Chía
+temas_de: null
+bert:
+  N: 78
+  k: 3
+  estabilidad: 0.745
+  nivel: moderada
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_acompanar_las_ideas_desde
+  nombre: 'Acompañar las ideas desde el inicio: orientación, asesoría y recursos'
+  tema_bert: 0
+  firma: idea, comunidad, conocimiento, ideas, soluciones
+  palabras:
+  - idea
+  - comunidad
+  - conocimiento
+  - ideas
+  - soluciones
+  - problemáticas
+  - oportunidades
+  - innovación
+  n_bert: 43
+  componente: Ecosistemas de innovación
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: idea, comunidad, conocimiento, ideas, soluciones); tratan
+    de que el comentario trata de las ideas de la comunidad y de cómo la universidad las escucha, acompaña, orienta o convierte
+    en soluciones e innovación, lo que corresponde a «Ecosistemas de innovación».'
+  instruccion: ¿El `comentario` trata de las ideas de la comunidad y de cómo la universidad las escucha, acompaña, orienta
+    o convierte en soluciones e innovación?
+  criterio_true: Sí cuando el comentario trata de las ideas de la comunidad y de cómo la universidad las escucha, acompaña,
+    orienta o convierte en soluciones e innovación.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Convenios, planeación y seguimiento para ejecutar
+    las propuestas» o cuando solo dice que no ajustaría nada o solo valora el encuentro.
+  ejemplos_si:
+  - La universidad debería escuchar y acompañar la idea desde el inicio, brindando orientación, espacios de innovación, formación,
+    asesoría y recursos para convertirla en un proyecto viable. También debería conectar a la persona con docentes, estudiantes,
+    graduados, comunidades y aliados que puedan aportar a su desarrollo. Lo más importante es que la Universidad de Cundinamarca
+    no se quede solo en enseñar o proponer, sino que acompañe el proceso hasta lograr que esa idea genere una solución real
+    y tenga un impacto positivo en el territorio.
+  - '*que la universidad brinde las herramientas *que la universidad de el conocimiento para resolver esta cuestión *acompañamiento
+    *dar mayor visibilidad a la problemática'
+  - La. Universidad debería acompañar, conectar y facilitar a los actores involucrados en el proceso de enseñanza y aprendizaje   Acompañanfo
+    la idea de conexiones de conocimiento, con las personas adecuadas, facilitando los recursos necesarios para la labor.  Así
+    una idea se puede convertir en solución.
+  critico: false
+- id: t2_convenios_planeacion_seguimiento_para
+  nombre: Convenios, planeación y seguimiento para ejecutar las propuestas
+  tema_bert: 1
+  firma: metodología, territorio, estratégicas, administrativa, convenios
+  palabras:
+  - metodología
+  - territorio
+  - estratégicas
+  - administrativa
+  - convenios
+  - plan
+  - emprendimiento
+  - tecnológicas infraestructura
+  n_bert: 27
+  componente: Relacionamiento con los sectores sociales, productivos, públicos y comunitarios
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: metodología, territorio, estratégicas, administrativa, convenios);
+    tratan de que el comentario trata de convenios, planes, metodologías, estrategias, seguimiento, presupuesto o infraestructura
+    para ejecutar las propuestas, lo que corresponde a «Relacionamiento con los sectores sociales, productivos, públicos y
+    comunitarios».'
+  instruccion: ¿El `comentario` trata de convenios, planes, metodologías, estrategias, seguimiento, presupuesto o infraestructura
+    para ejecutar las propuestas?
+  criterio_true: Sí cuando el comentario trata de convenios, planes, metodologías, estrategias, seguimiento, presupuesto o
+    infraestructura para ejecutar las propuestas.
+  criterio_false: 'No cuando trata principalmente de otro asunto del grupo, «Acompañar las ideas desde el inicio: orientación,
+    asesoría y recursos» o cuando solo dice que no ajustaría nada o solo valora el encuentro.'
+  ejemplos_si:
+  - Realizar convenios y vínculos para tener conocimiento del contexto real, involucrar a todas las áreas implicadas, dotar
+    de herramientas tecnológicas e infraestructura, estudiar el presupuesto necesario para hacer posible la ejecución de la
+    idea.
+  - Evaluar estrategias de seguimiento y concretar las decisiones tomadas
+  - Se debería implementar un plan para conectar entre diferentes sedes y así poder lograr los objetivos de estás más fácilmente
+  critico: false
+- id: t3_sin_propuestas_por_ahora
+  nombre: Sin propuestas por ahora («nada de momento»)
+  tema_bert: 2
+  firma: brindar mentiría, emprendimiento brindar, asesoria, parece, mentiría asesoria
+  palabras:
+  - brindar mentiría
+  - emprendimiento brindar
+  - asesoria
+  - parece
+  - mentiría asesoria
+  - hola perfecto
+  - favorable momento
+  - momento ningún
+  n_bert: 8
+  componente: transformacion_en_general
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: brindar mentiría, emprendimiento brindar, asesoria, parece,
+    mentiría asesoria); tratan de que el comentario dice que no haría ajustes o que está de acuerdo con la transformación
+    tal como está, lo que corresponde a «la transformación en general».'
+  instruccion: ¿El `comentario` dice que no haría ajustes o que está de acuerdo con la transformación tal como está (El comentario
+    responde a la pregunta «¿Qué ajustaría en esta transformación?»; cuentan respuestas cortas como «nada», «ninguno», «está
+    bien así», «vamos bien», «ninguna, está perfecta», «por el momento nada» o «me parece muy bien como está proyectada»)
+    o dice que no sabe qué ajustar?
+  criterio_true: Sí cuando el comentario dice que no haría ajustes o que está de acuerdo con la transformación tal como está
+    (El comentario responde a la pregunta «¿Qué ajustaría en esta transformación?»; cuentan respuestas cortas como «nada»,
+    «ninguno», «está bien así», «vamos bien», «ninguna, está perfecta», «por el momento nada» o «me parece muy bien como está
+    proyectada») o dice que no sabe qué ajustar.
+  criterio_false: No cuando propone o pide cualquier ajuste concreto, aunque empiece aprobando, o cuenta un testimonio o agradece
+    sin decir que no ajustaría nada.
+  ejemplos_si:
+  - Nada de momento
+  - Por el momento nada
+  - No se
+  critico: false

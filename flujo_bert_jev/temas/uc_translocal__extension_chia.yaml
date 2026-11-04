@@ -1,0 +1,81 @@
+grupo: uc_translocal__extension_chia
+transformacion: UC Translocal
+unidad: Extensión Chía
+temas_de: null
+bert:
+  N: 86
+  k: 2
+  estabilidad: 0.935
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_integracion_sedes_territorios_respetando
+  nombre: Integración de sedes y territorios respetando la identidad de cada región
+  tema_bert: 0
+  firma: territorios, problemáticas, proyectos, municipios, creadores oportunidades
+  palabras:
+  - territorios
+  - problemáticas
+  - proyectos
+  - municipios
+  - creadores oportunidades
+  - región
+  - enfoque territorial
+  - promover identidad
+  n_bert: 44
+  componente: Identidad translocal
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: territorios, problemáticas, proyectos, municipios, creadores
+    oportunidades); tratan de que el comentario trata de los territorios, los municipios y la región: integrar sedes, reconocer
+    su identidad y cultura o desarrollar proyectos según sus problemáticas, lo que corresponde a «Identidad translocal».'
+  instruccion: '¿El `comentario` trata de los territorios, los municipios y la región: integrar sedes, reconocer su identidad
+    y cultura o desarrollar proyectos según sus problemáticas?'
+  criterio_true: 'Sí cuando el comentario trata de los territorios, los municipios y la región: integrar sedes, reconocer
+    su identidad y cultura o desarrollar proyectos según sus problemáticas.'
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Oportunidades para estudiantes y soluciones a
+    problemáticas locales».
+  ejemplos_si:
+  - Mayor integración entre sus sedes y territorios, reconociendo las necesidades particulares de cada región. Fortalecer
+    nuestra imagen e identidad como universidad
+  - Respetar la cultura de cada territorio y tomar decisiones tomando en cuenta sus necesidades translocales
+  - Posiblemente podría mantener territorios conectados, sin dejar a un lugar a un lado su propia identidad. Aprendiendo los
+    de los otros, aportando experiencias, proyectos, adaptándose a las necesidades cambiantes de las comunidades
+  critico: false
+- id: t2_oportunidades_para_estudiantes_soluciones
+  nombre: Oportunidades para estudiantes y soluciones a problemáticas locales
+  tema_bert: 1
+  firma: estudiantes, oportunidades, innovación, comunidad, universidades
+  palabras:
+  - estudiantes
+  - oportunidades
+  - innovación
+  - comunidad
+  - universidades
+  - problemáticas
+  - locales
+  - conocimientos
+  n_bert: 42
+  componente: Impacto territorial
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: estudiantes, oportunidades, innovación, comunidad, universidades);
+    tratan de que el comentario trata de oportunidades, conocimientos, innovación o soluciones para los estudiantes y la comunidad
+    local, incluida la interacción con otras universidades, lo que corresponde a «Impacto territorial».'
+  instruccion: ¿El `comentario` trata de oportunidades, conocimientos, innovación o soluciones para los estudiantes y la comunidad
+    local, incluida la interacción con otras universidades?
+  criterio_true: Sí cuando el comentario trata de oportunidades, conocimientos, innovación o soluciones para los estudiantes
+    y la comunidad local, incluida la interacción con otras universidades.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Integración de sedes y territorios respetando
+    la identidad de cada región».
+  ejemplos_si:
+  - Puede lograr una universidad más conectada con las realidades de cada territorio, capaz de identificar y responder a problemáticas
+    como el desempleo, las desigualdades sociales, las dificultades de acceso a la educación, la falta de oportunidades para
+    los jóvenes, las necesidades ambientales y las brechas entre las zonas urbanas y rurales. Desde el MEDIT, esto permitiría
+    que cada sede y extensión aporte soluciones desde su contexto, pero trabajando de manera articulada como una sola Universidad
+    de Cundinamarca, generando conocimiento, innovación y transformación para la vida.
+  - Como administrativo, considero que una universidad así podría aprovechar los conocimientos, experiencias y culturas de
+    cada región para crear soluciones a las necesidades reales de sus estudiantes,
+  - Que la universidad nos brindará oportunidades sobre nuestra carrera no solamente teórica sino práctica del mismo tiempo
+    haciendo una interacción con otras universidades para aprovechar cada recurso del territorio
+  critico: false
+  otros_componentes:
+  - Formación y aprendizaje

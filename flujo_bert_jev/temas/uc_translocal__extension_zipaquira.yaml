@@ -1,0 +1,84 @@
+grupo: uc_translocal__extension_zipaquira
+transformacion: UC Translocal
+unidad: Extensión Zipaquirá
+temas_de: null
+bert:
+  N: 20
+  k: 2
+  estabilidad: 0.791
+  nivel: estable
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_identidad_local_abierta_mundo
+  nombre: Identidad local abierta al mundo
+  tema_bert: 0
+  firma: local, comunidad, heterogéneo, proyectos, conocimiento
+  palabras:
+  - local
+  - comunidad
+  - heterogéneo
+  - proyectos
+  - conocimiento
+  - redes académicas
+  - territorio luego
+  - cambiariamos identidad
+  n_bert: 13
+  componente: Identidad translocal
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: local, comunidad, heterogéneo, proyectos, conocimiento);
+    tratan de que el comentario trata de lo local y lo heterogéneo, la identidad de cada territorio, la comunidad, las redes
+    académicas o la apertura al mundo, lo que corresponde a «Identidad translocal».'
+  instruccion: ¿El `comentario` trata de lo local y lo heterogéneo, la identidad de cada territorio, la comunidad, las redes
+    académicas o la apertura al mundo?
+  criterio_true: Sí cuando el comentario trata de lo local y lo heterogéneo, la identidad de cada territorio, la comunidad,
+    las redes académicas o la apertura al mundo.
+  criterio_false: 'No cuando trata principalmente de otro asunto del grupo, «Música, artes y conservatorio: visibilidad e
+    interacción con otras sedes».'
+  ejemplos_si:
+  - Conversar con el ecosistema local ayuda a comprender lo heterogéneo y multicultural, para esto es necesario que la universidad
+    sea consistente a nivel interno pero abierta al mundo.  La universidad gana cuando reconoce lo heterogéneo y se abre al
+    mundo.   No sé puede pretender solo cundinamarca. El territorio y la definición de propio no son conceptos homogéneos.  El
+    concepto de identidad translocal tiende a  ser ambiguo. Se puede pensar mejor en una apertura de cara mundo, reconociendo
+    lo local.
+  - Fortalecimiento en identidad y autonomía de cada territorio,sin fragmentar la identidad de la universidad. Contratar las
+    metas propuestas con los elementos que nos ofrece el medit.
+  - El enfoque, pues algunas veces está pensado solo en lo local, pues en nuestra área se debe pensar en internacionalizar
+    los procesos formativos
+  critico: false
+  otros_componentes:
+  - Internacionalización
+- id: t2_musica_artes_conservatorio_visibilidad
+  nombre: 'Música, artes y conservatorio: visibilidad e interacción con otras sedes'
+  tema_bert: 1
+  firma: estudiantes, interacción, facultad artes, artes conservatorio, aplicación tecnologías
+  palabras:
+  - estudiantes
+  - interacción
+  - facultad artes
+  - artes conservatorio
+  - aplicación tecnologías
+  - arte teatro
+  - carrera música
+  - conservatorio involucre
+  n_bert: 7
+  componente: Identidad translocal
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: estudiantes, interacción, facultad artes, artes conservatorio,
+    aplicación tecnologías); tratan de que el comentario trata de la música, el folclor, las artes, el conservatorio o la
+    interacción de esos programas con otras sedes, lo que corresponde a «Identidad translocal».'
+  instruccion: ¿El `comentario` trata de la música, el folclor, las artes, el conservatorio o la interacción de esos programas
+    con otras sedes?
+  criterio_true: Sí cuando el comentario trata de la música, el folclor, las artes, el conservatorio o la interacción de esos
+    programas con otras sedes.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Identidad local abierta al mundo».
+  ejemplos_si:
+  - Desde nuestra perspectiva esperaríamos que la universidad diera más relevancia a la música, nuestro folclor y la aplicación
+    de las tecnologías en las mismas
+  - Buscar más visibilidad de las oportunidades y carreras que ofrece la universidad, dando a conocer la riqueza en conocimiento
+    musical y cultural que corresponde a los estudiantes de la universidad de Cundinamarca y de igual manera sea una oportunidad
+    laboral para los estudiantes y graduados dentro del territorio cundinamarques
+  - la interacción con otras seccionales para apoyar los procesos de aprendizaje como la investigación, innovación y enseñanza.
+    La sede de música no ha tenido tanta interacción en cuestión de los estudiantes.
+  critico: false
+  otros_componentes:
+  - Redes y cooperación

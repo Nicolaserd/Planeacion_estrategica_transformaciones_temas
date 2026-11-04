@@ -1,0 +1,116 @@
+grupo: uc_digital__extension_zipaquira
+transformacion: UC Digital
+unidad: Extensión Zipaquirá
+temas_de: null
+bert:
+  N: 27
+  k: 3
+  estabilidad: 0.668
+  nivel: moderada
+  modelo: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+sin_contenido: ¿El `comentario` carece de contenido evaluable, por ejemplo una respuesta vacía, un 'nada', un 'todo bien'
+  sin más detalle o un texto sin sentido?
+temas:
+- id: t1_tecnologia_para_formacion_menos
+  nombre: Tecnología para la formación y menos registros para docentes
+  tema_bert: 0
+  firma: tecnología, registros, oportunidades, desarrollo, libertad cátedra
+  palabras:
+  - tecnología
+  - registros
+  - oportunidades
+  - desarrollo
+  - libertad cátedra
+  - mejorar procedimiento
+  - formación
+  - tecnológicos experiencia
+  n_bert: 10
+  componente: Experiencia digital de la comunidad universitaria
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: tecnología, registros, oportunidades, desarrollo, libertad
+    cátedra); tratan de que el comentario trata de tecnología para la formación, oportunidades, registros, procedimientos
+    o condiciones de los docentes, lo que corresponde a «Experiencia digital de la comunidad universitaria».'
+  instruccion: ¿El `comentario` trata de tecnología para la formación, oportunidades, registros, procedimientos o condiciones
+    de los docentes?
+  criterio_true: Sí cuando el comentario trata de tecnología para la formación, oportunidades, registros, procedimientos o
+    condiciones de los docentes.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Aplicación institucional, trámites digitales y
+    trabajo remoto» o cuando trata principalmente de otro asunto del grupo, «Tecnología especializada para la música».
+  ejemplos_si:
+  - Aumentar la accesibilidad a las aulas que permiten que la tecnología nos aporte al crecimiento, variedad de opciones para
+    complementar nuestro conocimiento en cuestión digital y desarrollo necesario, abriendo oportunidades de emplearlas y siendo
+    conscientes del compromiso que se adquiere al utilizar las herramientas
+  - Procesos que fortalezcan y faciliten el factor humano apoyándose en tecnología de vanguardia.  Mantener versiones actualizadas
+    en los programas académicos. Fortalecer canales de discusión de las actividades.
+  - Simplificar y reducir registros de ingreso, cumplimiento de parte para los docentes, son cuatro registros para poder iniciar
+    una actividad académica. Favorecer la libertad de cátedra, revisar procesos de cumplimiento. La metodología del Cai, debe
+    servir para abrir nuevas oportunidades en la formación y no poner una camisa de fuerza para el desarrollo de las asignaturas.
+  critico: false
+  otros_componentes:
+  - Automatización de procesos
+- id: t2_aplicacion_institucional_tramites_digitales
+  nombre: Aplicación institucional, trámites digitales y trabajo remoto
+  tema_bert: 1
+  firma: software, servicios, comunidad, procesos digitales, trabajo remoto
+  palabras:
+  - software
+  - servicios
+  - comunidad
+  - procesos digitales
+  - trabajo remoto
+  - registro asistencia
+  - análisis consulta
+  - asistencias organizar
+  n_bert: 10
+  componente: Servicios digitales
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: software, servicios, comunidad, procesos digitales, trabajo
+    remoto); tratan de que el comentario trata de software, servicios o procesos digitales, aplicaciones institucionales,
+    trámites, asistencia o trabajo remoto, lo que corresponde a «Servicios digitales».'
+  instruccion: ¿El `comentario` trata de software, servicios o procesos digitales, aplicaciones institucionales, trámites,
+    asistencia o trabajo remoto?
+  criterio_true: Sí cuando el comentario trata de software, servicios o procesos digitales, aplicaciones institucionales,
+    trámites, asistencia o trabajo remoto.
+  criterio_false: No cuando trata principalmente de otro asunto del grupo, «Tecnología para la formación y menos registros
+    para docentes» o cuando trata principalmente de otro asunto del grupo, «Tecnología especializada para la música».
+  ejemplos_si:
+  - '- Tener una Red de Internet Sólida - Aplicación de trabajo Remoto como acompañamiento del proceso formativo del estudiante
+    por medio de software especializado. - Solicitudes de recursos más efectivos para los procesos institucionales.que faciliten
+    su dinámica.'
+  - Unificación de procesos digitales mediante una aplicación institucional para servicio de los gestores del conocimiento
+  - Implementación de trámites digitales no solo a nivel administrativo, sino para toda la comunidad universitaria. Se propone
+    la creación de un chatbot al servicio de toda la comunidad y la implementación de firma digital para todas las personas
+    que hacen parte de la universidad.
+  critico: false
+- id: t3_tecnologia_especializada_para_musica
+  nombre: Tecnología especializada para la música
+  tema_bert: 2
+  firma: tecnológico, tecnológicas, musical, herramientas tecnológicas, digital
+  palabras:
+  - tecnológico
+  - tecnológicas
+  - musical
+  - herramientas tecnológicas
+  - digital
+  - tecnológicas mano
+  - tecnológico actualizado
+  - tecnológico especializado
+  n_bert: 7
+  componente: Ecosistemas digitales
+  justificacion: 'BERT agrupó estos comentarios (palabras clave: tecnológico, tecnológicas, musical, herramientas tecnológicas,
+    digital); tratan de que el comentario pide equipos, software o espacios tecnológicos especializados para la música, lo
+    que corresponde a «Ecosistemas digitales».'
+  instruccion: ¿El `comentario` pide equipos, software o espacios tecnológicos especializados para la música (producción,
+    composición, portafolio)?
+  criterio_true: Sí cuando el comentario pide equipos, software o espacios tecnológicos especializados para la música (producción,
+    composición, portafolio).
+  criterio_false: No cuando no se refiere a la música. Mencionar el asunto de paso, sin pedirlo ni proponerlo, no basta.
+  ejemplos_si:
+  - 'Infraestructura tecnológica y espacios con dotaciones tecnológicas especializados en el mercado musical y sus diversos
+    campos: producción, composición, dirección, investigación, dirección  entre otros. Observatorio tecnológico especializado
+    en música.'
+  - 'Recurso tecnológico: actualizado en equipos, instrumentos, Daws para el desarrollo profesional y ejecución en el campo
+    laboral. Adquisición de equipos para uso del músico y así evitar papel cero'
+  - Implementar herramientas tecnológicas (software, aps, etc) que permitan a los estudiantes de una universidad de música
+    aprender de forma más eficiente,  así como  construir y desarrollar su propio portafolio profesional digital, en el que
+    puedan presentar de manera organizada e innovadora su trayectoria, habilidades, proyectos, composiciones, interpretaciones,
+    producciones y experiencias.
+  critico: false
