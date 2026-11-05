@@ -33,7 +33,7 @@ temas:
     tema_bert: 0
     firma: institucional, digital, creación artística, institución, comunidad
   justificacion: Los comentarios piden formalizar la vinculación de los docentes y no dejar de lado la investigación y las
-    publicaciones; se ligan a UC para la Vida (desarrollo del talento humano) y a UC Translocal (ciencia, tecnología e innovación).
+    publicaciones; se vinculan con UC para la Vida (desarrollo del talento humano) y con UC Translocal (ciencia, tecnología e innovación).
   instruccion: ¿El `comentario` habla, aunque sea brevemente, de las condiciones del personal (formalización, planta, estabilidad,
     contratación, carga) o de la investigación y las publicaciones?
   criterio_true: Menciona formalización laboral, vinculación a planta, estabilidad, contratación o carga del personal, o investigación,
@@ -79,7 +79,7 @@ temas:
     tema_bert: 1
     firma: procesos, recursos, calidad, mejorar, datos
   justificacion: Los comentarios piden automatizar y simplificar procesos, autorizaciones y formatos, optimizar recursos y
-    mejorar la calidad de la gestión; se ligan a UC Digital (automatización de procesos) y a UC Inteligente (calidad y gestión).
+    mejorar la calidad de la gestión; se vinculan con UC Digital (automatización de procesos) y con UC Inteligente (calidad y gestión).
   instruccion: ¿El `comentario` habla, aunque sea brevemente, de procesos, trámites, recursos, plataformas, datos o calidad
     de la gestión, por ejemplo automatizarlos, simplificarlos u optimizarlos?
   criterio_true: Menciona procesos, trámites, autorizaciones, formatos, recursos, tiempo, plataformas, sistemas, datos o calidad
