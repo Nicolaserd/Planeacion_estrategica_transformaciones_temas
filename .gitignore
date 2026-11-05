@@ -23,3 +23,6 @@ __pycache__/
 **/06. PLAN ESTRAT*
 # Archivos temporales de Office (se crean al abrir un Word o Excel)
 ~$*
+
+# Instrumento de valoración del encuentro (exportación de Microsoft Forms, respuestas abiertas)
+flujo_bert_jev/informe/Valoracion encuentro/
