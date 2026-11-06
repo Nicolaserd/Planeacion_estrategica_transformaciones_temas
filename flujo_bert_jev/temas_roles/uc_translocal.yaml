@@ -36,7 +36,7 @@ temas:
   - Que la universidad conozca tambien su territorio e identifique las necesidades con las que conviven sus estudiantes
   critico: false
 - id: integracion_sedes_redes
-  nombre: Integración entre sedes, actores y regiones; redes y cooperación
+  nombre: Integración entre sedes, grupos de interés y regiones; redes y cooperación
   componente: Redes y cooperación
   otros_componentes:
   - Internacionalización
@@ -50,7 +50,7 @@ temas:
   - grupo: uc_translocal__rol_administrativos
     tema_bert: 2
     firma: procesos, administrativa, administrativos, optimizar, institucional
-  justificacion: Los comentarios piden integrar las sedes, seccionales y extensiones y a todos sus actores, crear sinergias
+  justificacion: Los comentarios piden integrar las sedes, seccionales y extensiones y a todos sus grupos de interés, crear sinergias
     y redes, y cooperar con otras instituciones en el país y en el exterior, que corresponde a redes y cooperación e internacionalización.
   instruccion: ¿El `comentario` habla, aunque sea brevemente, de integrar, articular o conectar las sedes, seccionales, extensiones,
     programas o actores de la universidad, de redes, convenios o cooperación, o de la proyección nacional o internacional?
