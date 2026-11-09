@@ -1,0 +1,66 @@
+{
+  "_metodo": "Lectura de Claude de las solicitudes de los informes de recopilación de las Jornadas de Diálogo Estratégico (conversatorios.json). Cada solicitud de cada unidad se asignó a una sola categoría; todas quedan asignadas. Sin nombres de personas.",
+  "categorias": [
+    {
+      "titulo": "Infraestructura, laboratorios y recursos tecnológicos",
+      "solicitudes": {
+        "Extensión Chía": ["Laboratorios tecnificados", "Conectividad y herramientas digitales oportunas"],
+        "Extensión Facatativá": ["Infraestructura y laboratorios"],
+        "Seccional Girardot": ["Laboratorios y recursos para los programas"],
+        "Seccional Ubaté": ["Salas con mayores capacidades tecnológicas"],
+        "Extensión Zipaquirá": ["Recursos para Música: auditorios, instrumentos y ascensor"]
+      }
+    },
+    {
+      "titulo": "Pertinencia y ampliación de la oferta académica",
+      "solicitudes": {
+        "Extensión Chía": ["Pertinencia de la oferta académica (consulta de los graduados)"],
+        "Extensión Soacha": ["Oferta en ciencias de la salud para Soacha (consulta)"],
+        "Sede Fusagasugá": ["Ampliar las oportunidades de formación", "Fortalecer el aprendizaje de otras lenguas"],
+        "Seccional Girardot": ["Profundizaciones y espacios de práctica en Enfermería", "Contenidos de programación en Ingeniería de Software", "Actualización de las técnicas de enseñanza"]
+      }
+    },
+    {
+      "titulo": "Alianzas, convenios, intercambio y movilidad",
+      "solicitudes": {
+        "Extensión Chía": ["Alianzas con empresas tecnológicas"],
+        "Extensión Soacha": ["Convenios y apoyo externo con empresas, otras universidades e instituciones"],
+        "Extensión Facatativá": ["Oportunidades de intercambio"],
+        "Extensión Zipaquirá": ["Oportunidades de movilidad"]
+      }
+    },
+    {
+      "titulo": "Trámites, procesos, datos y transformación digital",
+      "solicitudes": {
+        "Extensión Chía": ["Simplificación de trámites", "Mayor articulación de la planeación"],
+        "Extensión Facatativá": ["Acceso a datos y simplificación de procesos"],
+        "Seccional Ubaté": ["Fecha de una primera entrega de la transformación digital"],
+        "Extensión Zipaquirá": ["Revisión de trámites que afectan la formación"]
+      }
+    },
+    {
+      "titulo": "Vínculo con los graduados, la comunidad y el territorio",
+      "solicitudes": {
+        "Sede Fusagasugá": ["Mantener el vínculo digital con la comunidad", "Contribuir a las políticas públicas del departamento", "Consolidar las unidades agroambientales"],
+        "Seccional Girardot": ["Relación con el territorio y salidas de campo en Ingeniería Ambiental"],
+        "Seccional Ubaté": ["Información sobre la bolsa de empleo"],
+        "Extensión Zipaquirá": ["Espacios permanentes de relación con los graduados"]
+      }
+    },
+    {
+      "titulo": "Condiciones laborales, bienestar, inclusión y formación del personal",
+      "solicitudes": {
+        "Extensión Facatativá": ["Revisión de las condiciones laborales", "Recursos para el acompañamiento inclusivo"],
+        "Seccional Ubaté": ["Formación del personal administrativo y de servicios generales", "Espacio de vivencia del modelo educativo para el personal administrativo"],
+        "Extensión Zipaquirá": ["Metas verificables de bienestar para los gestores del conocimiento"]
+      }
+    },
+    {
+      "titulo": "Investigación y publicaciones",
+      "solicitudes": {
+        "Extensión Facatativá": ["Fortalecimiento de la investigación"],
+        "Seccional Ubaté": ["Fortalecimiento de las publicaciones"]
+      }
+    }
+  ]
+}
