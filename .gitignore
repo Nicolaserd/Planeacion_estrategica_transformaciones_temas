@@ -26,3 +26,8 @@ __pycache__/
 
 # Instrumento de valoración del encuentro (exportación de Microsoft Forms, respuestas abiertas)
 flujo_bert_jev/informe/Valoracion encuentro/
+
+# Registro de asistencia por persona (sin nombres, pero con edad, rol y programa): solo uso local
+flujo_bert_jev/informe/participacion/
+# Respaldos locales de las presentaciones resumidas
+flujo_bert_jev/informe/presentacionresumida/backup_*/
